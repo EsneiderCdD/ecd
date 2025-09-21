@@ -1,0 +1,38 @@
+.aboutContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header {
+  height: 50px;
+  background-color: #ddd;
+}
+
+.mainContent {
+  display: flex;
+  flex: 1;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #f5f5f5;
+  padding: 10px;
+}
+
+.table {
+  flex: 1;
+  padding: 10px;
+}
+
+.tableRow {
+  display: flex;
+  gap: 10px;
+  padding: 5px 0;
+}
+
+.infoPanel {
+  width: 250px;
+  background-color: #eee;
+  padding: 10px;
+}
