@@ -1,7 +1,13 @@
 import styles from "./About.module.css";
 
-function AboutHeader() {
-  return <div className={styles.header}>Header (vacío por ahora)</div>;
+function AboutSidebar() {
+  return (
+    <div className={styles.sidebar}>
+      <p>Escritorio</p>
+      <p>Sobre mí</p>
+      <p>Proyectos</p>
+    </div>
+  );
 }
 
-export default AboutHeader;
+export default AboutSidebar;

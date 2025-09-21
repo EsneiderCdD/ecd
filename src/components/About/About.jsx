@@ -8,21 +8,12 @@ import styles from "../../components/About/About.module.css";
 function About() {
   return (
     <div className={styles.aboutContainer}>
-      {/* Bloque superior vacío (header) */}
       <AboutHeader />
-
       <div className={styles.mainContent}>
-        {/* Sidebar izquierda */}
         <AboutSidebar />
-
-        {/* Centro: tabla de archivos */}
         <AboutTable />
-
-        {/* Panel derecho */}
         <AboutInfoPanel />
       </div>
-
-      {/* Barra de tareas abajo */}
       <Taskbar />
     </div>
   );
