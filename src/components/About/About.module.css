@@ -36,3 +36,25 @@
   background-color: #eee;
   padding: 10px;
 }
+
+
+
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 10px;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+  padding: 6px 8px;
+  border-radius: 4px;
+}
+
+.active {
+  background-color: #e0e0e0;
+  font-weight: bold;
+}
