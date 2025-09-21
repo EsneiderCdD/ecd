@@ -1,19 +1,9 @@
-
+import AppRouter from './routes/AppRouter'
 import './App.css'
 
 function App() {
-/**
- * App component
- * 
- * @returns {JSX.Element} App component
- */
-
-
   return (
-    <>
-      <h1>Bienvenido crack</h1>
-        
-    </>
+    <AppRouter/>
   )
 }
 
