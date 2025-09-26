@@ -11,7 +11,7 @@ function AboutSidebar() {
           isActive ? `${styles.link} ${styles.active}` : styles.link
         }
       >
-        Escritorio
+        <span role="img" aria-label="Escritorio">🖥️</span> Escritorio
       </NavLink>
 
       <NavLink
@@ -20,7 +20,7 @@ function AboutSidebar() {
           isActive ? `${styles.link} ${styles.active}` : styles.link
         }
       >
-        Sobre mí
+        <span role="img" aria-label="Sobre mí">👤</span> Sobre mí
       </NavLink>
 
       <NavLink
@@ -29,7 +29,7 @@ function AboutSidebar() {
           isActive ? `${styles.link} ${styles.active}` : styles.link
         }
       >
-        Proyectos
+        <span role="img" aria-label="Proyectos">📂</span> Proyectos
       </NavLink>
     </div>
   );
