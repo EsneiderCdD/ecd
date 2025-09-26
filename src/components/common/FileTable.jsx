@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styles from "../About/About.module.css";
 
 function FileTable({ files }) {
@@ -12,15 +13,28 @@ function FileTable({ files }) {
       </div>
 
       {/* Filas dinámicas */}
-      {files.map((file, index) => (
-        <div key={index} className={styles.tableRow}>
-          <span className={styles.icon}>{file.icon}</span>
-          <span className={styles.name}>{file.name}</span>
-          <span className={styles.date}>{file.date}</span>
-          <span className={styles.type}>{file.type}</span>
-          <span className={styles.size}>{file.size}</span>
-        </div>
-      ))}
+      {files.map((file, index) => {
+        const projectId = file.name
+          .toLowerCase()
+          .replace(/\s+/g, "")
+          .replace(/[@]/g, "");
+
+        return (
+          <div key={index} className={styles.tableRow}>
+            <span className={styles.icon}>{file.icon}</span>
+            <span className={styles.name}>
+              {file.type === "Carpeta" ? (
+                <Link to={`/projects/${projectId}`}>{file.name}</Link>
+              ) : (
+                file.name
+              )}
+            </span>
+            <span className={styles.date}>{file.date}</span>
+            <span className={styles.type}>{file.type}</span>
+            <span className={styles.size}>{file.size}</span>
+          </div>
+        );
+      })}
     </div>
   );
 }

@@ -1,7 +1,7 @@
 // src/pages/Project/Project.jsx
 import AboutHeader from "../About/AboutHeader";
 import AboutSidebar from "../About/AboutSidebar";
-import FileTable from "../common/FileTable";
+import FileTable from "../Common/FileTable";
 import AboutInfoPanel from "../About/AboutInfoPanel";
 import Taskbar from "../Taskbar/Taskbar";
 import styles from "../../components/About/About.module.css";
