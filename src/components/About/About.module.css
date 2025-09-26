@@ -14,11 +14,43 @@
   flex: 1;
 }
 
+
+
+
+
+
+/* Sidebar (izquierda) */
 .sidebar {
-  width: 200px;
-  background-color: #f5f5f5;
-  padding: 10px;
+  background: #f3f3f3;
+  border-right: 1px solid #ccc;
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
+
+/* Línea de arrastre en el borde derecho */
+.sidebarResizer {
+  width: 5px;
+  cursor: col-resize;
+  position: absolute;
+  right: 0; /* ahora va al borde derecho del sidebar */
+  top: 0;
+  bottom: 0;
+  background: transparent;
+}
+
+.sidebarResizer:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+
+
+
+
 
 .table {
   flex: 1;
@@ -72,12 +104,32 @@
 
 
 
-
+/* Panel de información */
 .infoPanel {
-  width: 250px;
-  background-color: #eee;
-  padding: 10px;
+  background: #fafafa;
+  border-left: 1px solid #ccc;
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
+
+/* Línea de arrastre */
+.resizer {
+  width: 5px;
+  cursor: col-resize;
+  position: absolute;
+  left: 0; /* porque queremos que esté en el borde izquierdo del panel */
+  top: 0;
+  bottom: 0;
+  background: transparent;
+}
+
+.resizer:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+
+
 
 
 

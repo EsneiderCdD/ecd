@@ -1,10 +1,42 @@
 // src/components/About/AboutSidebar.jsx
 import { NavLink } from "react-router-dom";
+import { useState, useRef, useEffect } from "react";
 import styles from "./About.module.css";
 
 function AboutSidebar() {
+  const [width, setWidth] = useState(200); // ancho inicial
+  const isResizing = useRef(false);
+
+  const handleMouseDown = () => {
+    isResizing.current = true;
+  };
+
+  const handleMouseMove = (e) => {
+    if (!isResizing.current) return;
+    const newWidth = e.clientX; // medimos desde el borde izquierdo
+    if (newWidth > 150 && newWidth < 400) {
+      setWidth(newWidth);
+    }
+  };
+
+  const handleMouseUp = () => {
+    isResizing.current = false;
+  };
+
+  useEffect(() => {
+    window.addEventListener("mousemove", handleMouseMove);
+    window.addEventListener("mouseup", handleMouseUp);
+    return () => {
+      window.removeEventListener("mousemove", handleMouseMove);
+      window.removeEventListener("mouseup", handleMouseUp);
+    };
+  }, []);
+
   return (
-    <div className={styles.sidebar}>
+    <div className={styles.sidebar} style={{ width: `${width}px` }}>
+      {/* Resizer handle */}
+      <div className={styles.sidebarResizer} onMouseDown={handleMouseDown} />
+
       <NavLink
         to="/desktop"
         className={({ isActive }) =>
