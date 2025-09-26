@@ -21,8 +21,8 @@ function FileTable({ files }) {
 
         return (
           <div key={index} className={styles.tableRow}>
-            <span className={styles.icon}>{file.icon}</span>
             <span className={styles.name}>
+              <span className={styles.icon}>{file.icon}</span>
               {file.type === "Carpeta" ? (
                 <Link to={`/projects/${projectId}`}>{file.name}</Link>
               ) : (

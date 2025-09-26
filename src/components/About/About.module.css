@@ -23,13 +23,55 @@
 .table {
   flex: 1;
   padding: 10px;
+  height: 85vh;
 }
 
+/* Todas las filas, incluido el header */
 .tableRow {
-  display: flex;
+  display: grid;
+  grid-template-columns: 350px 2fr 1.5fr 1fr 1fr; 
+  /* 👆 40px para icono, 
+        2fr para nombre (más espacio),
+        1.5fr para fecha,
+        1fr para tipo,
+        1fr para tamaño */
+  align-items: center;
   gap: 10px;
   padding: 5px 0;
+  border-bottom: 1px solid #eee;
 }
+
+.headerRow {
+  font-weight: bold;
+  background: #f0f0f0;
+}
+
+.icon {
+  text-align: center;
+}
+
+.name {
+  min-width: 150px;
+}
+
+.date {
+  min-width: 120px;
+}
+
+.type {
+  min-width: 100px;
+}
+
+.size {
+  min-width: 80px;
+}
+
+
+
+
+
+
+
 
 .infoPanel {
   width: 250px;
