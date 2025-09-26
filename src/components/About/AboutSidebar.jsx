@@ -38,7 +38,7 @@ function AboutSidebar() {
       <div className={styles.sidebarResizer} onMouseDown={handleMouseDown} />
 
       <NavLink
-        to="/desktop"
+        to="/"
         className={({ isActive }) =>
           isActive ? `${styles.link} ${styles.active}` : styles.link
         }

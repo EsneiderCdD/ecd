@@ -114,11 +114,21 @@
 }
 
 /* Línea de arrastre */
+.infoPanel {
+  background: #fafafa;
+  border-left: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  gap: 16px;
+  position: relative;
+}
+
 .resizer {
   width: 5px;
   cursor: col-resize;
   position: absolute;
-  left: 0; /* porque queremos que esté en el borde izquierdo del panel */
+  left: 0;
   top: 0;
   bottom: 0;
   background: transparent;
@@ -128,6 +138,45 @@
   background: rgba(0, 0, 0, 0.1);
 }
 
+/* Imagen */
+.imageBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.previewImage {
+  width: 100%;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+/* Título */
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Botón */
+.button {
+  padding: 8px 12px;
+  background: #0078d4;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #005a9e;
+}
+
+/* Detalles */
+.details {
+  font-size: 14px;
+  line-height: 1.4;
+}
 
 
 
