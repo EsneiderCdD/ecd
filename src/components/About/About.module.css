@@ -58,3 +58,43 @@
   background-color: #e0e0e0;
   font-weight: bold;
 }
+
+.header {
+  display: flex;
+  gap: 12px;
+  /* espacio entre iconos */
+  align-items: center;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.icons1 {
+  display: flex;
+  min-width: 110px;
+}
+
+.icons2 {
+  display: flex;
+  min-width: 265px;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.icons3 {
+  display: flex;
+  min-width: 100px;
+  margin-left: 15px;
+}
+.icons4 {
+  display: flex;
+  min-width: 100px;
+}
+.icons5 {
+  display: flex;
+  min-width: 100px;
+  margin-left: auto;
+}
