@@ -1,4 +1,7 @@
+import { useState } from "react";
 import FileTable from "../common/FileTable";
+import AboutInfoPanel from "./AboutInfoPanel";
+import styles from "./About.module.css";
 
 function AboutTable() {
   const aboutFiles = [
@@ -22,10 +25,26 @@ function AboutTable() {
       date: "25/02/2025 6:53 p.m.",
       type: "Acceso directo",
       size: "3 KB",
+      previewUrl:
+        "https://upload.wikimedia.org/wikipedia/commons/f/fb/Adobe_Illustrator_CC_icon.svg", // 👈 ejemplo de preview específico
     },
   ];
 
-  return <FileTable files={aboutFiles} />;
+  const [selectedFile, setSelectedFile] = useState(null);
+
+  return (
+    <div className={styles.mainContent}>
+      {/* Tabla de archivos */}
+      <FileTable
+        files={aboutFiles}
+        selectedFile={selectedFile}
+        setSelectedFile={setSelectedFile}
+      />
+
+      {/* Panel dinámico */}
+      <AboutInfoPanel file={selectedFile} />
+    </div>
+  );
 }
 
 export default AboutTable;

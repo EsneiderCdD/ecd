@@ -1,7 +1,23 @@
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import styles from "../About/About.module.css";
 
-function FileTable({ files }) {
+function FileTable({ files, selectedFile, setSelectedFile }) {
+  const navigate = useNavigate();
+
+  const handleClick = (file) => {
+    setSelectedFile(file);
+  };
+
+  const handleDoubleClick = (file) => {
+    if (file.type === "Carpeta") {
+      const projectId = file.name
+        .toLowerCase()
+        .replace(/\s+/g, "")
+        .replace(/[@]/g, "");
+      navigate(`/projects/${projectId}`);
+    }
+  };
+
   return (
     <div className={styles.table}>
       {/* Encabezado */}
@@ -13,28 +29,24 @@ function FileTable({ files }) {
       </div>
 
       {/* Filas dinámicas */}
-      {files.map((file, index) => {
-        const projectId = file.name
-          .toLowerCase()
-          .replace(/\s+/g, "")
-          .replace(/[@]/g, "");
-
-        return (
-          <div key={index} className={styles.tableRow}>
-            <span className={styles.name}>
-              <span className={styles.icon}>{file.icon}</span>
-              {file.type === "Carpeta" ? (
-                <Link to={`/projects/${projectId}`}>{file.name}</Link>
-              ) : (
-                file.name
-              )}
-            </span>
-            <span className={styles.date}>{file.date}</span>
-            <span className={styles.type}>{file.type}</span>
-            <span className={styles.size}>{file.size}</span>
-          </div>
-        );
-      })}
+      {files.map((file, index) => (
+        <div
+          key={index}
+          className={`${styles.tableRow} ${
+            selectedFile?.name === file.name ? styles.selectedRow : ""
+          }`}
+          onClick={() => handleClick(file)}
+          onDoubleClick={() => handleDoubleClick(file)}
+        >
+          <span className={styles.name}>
+            <span className={styles.icon}>{file.icon}</span>
+            {file.name}
+          </span>
+          <span className={styles.date}>{file.date}</span>
+          <span className={styles.type}>{file.type}</span>
+          <span className={styles.size}>{file.size}</span>
+        </div>
+      ))}
     </div>
   );
 }

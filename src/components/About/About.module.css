@@ -241,3 +241,13 @@
   min-width: 100px;
   margin-left: auto;
 }
+
+
+
+
+
+
+/* Fila seleccionada */
+.selectedRow {
+  background-color: #e6f0ff;
+}

@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import styles from "./About.module.css";
 
-function AboutInfoPanel() {
+function AboutInfoPanel({ file }) {
   const [width, setWidth] = useState(280); // ancho inicial
   const isResizing = useRef(false);
 
@@ -21,7 +21,6 @@ function AboutInfoPanel() {
     isResizing.current = false;
   };
 
-  // listeners globales
   useEffect(() => {
     window.addEventListener("mousemove", handleMouseMove);
     window.addEventListener("mouseup", handleMouseUp);
@@ -31,21 +30,30 @@ function AboutInfoPanel() {
     };
   }, []);
 
+  if (!file) {
+    return (
+      <div className={styles.infoPanel} style={{ width: `${width}px` }}>
+        <div className={styles.resizer} onMouseDown={handleMouseDown} />
+        <p style={{ padding: "20px", textAlign: "center", color: "#666" }}>
+          Selecciona un archivo o carpeta para ver la información
+        </p>
+      </div>
+    );
+  }
+
   return (
     <div className={styles.infoPanel} style={{ width: `${width}px` }}>
-      {/* Línea de arrastre */}
       <div className={styles.resizer} onMouseDown={handleMouseDown} />
 
-      {/* Contenido principal del panel */}
       <div className={styles.imageBox}>
         <img
-          src="https://via.placeholder.com/200x120"
+          src="https://camarasal.com/wp-content/uploads/2020/08/default-image-5-1.jpg"
           alt="Preview"
           className={styles.previewImage}
         />
       </div>
 
-      <h2 className={styles.title}>Título del Archivo</h2>
+      <h2 className={styles.title}>{file.name}</h2>
 
       <button className={styles.button}>Descargar</button>
 
