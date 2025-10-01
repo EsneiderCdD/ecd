@@ -27,6 +27,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  min-width: 265px ;
 }
 
 /* Línea de arrastre en el borde derecho */
