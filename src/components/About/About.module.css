@@ -6,7 +6,8 @@
 
 .header {
   height: 50px;
-  background-color: #ddd;
+  background-color: #dddddd70;
+
 }
 
 .mainContent {
@@ -33,7 +34,8 @@
   width: 5px;
   cursor: col-resize;
   position: absolute;
-  right: 0; /* ahora va al borde derecho del sidebar */
+  right: 0;
+  /* ahora va al borde derecho del sidebar */
   top: 0;
   bottom: 0;
   background: transparent;
@@ -56,17 +58,13 @@
   flex: 1;
   padding: 10px;
   height: 85vh;
+
 }
 
 /* Todas las filas, incluido el header */
 .tableRow {
   display: grid;
-  grid-template-columns: 350px 2fr 1.5fr 1fr 1fr; 
-  /* 👆 40px para icono, 
-        2fr para nombre (más espacio),
-        1.5fr para fecha,
-        1fr para tipo,
-        1fr para tamaño */
+  grid-template-columns: 350px 2fr 1.5fr 1fr 1fr;
   align-items: center;
   gap: 10px;
   padding: 5px 0;
@@ -76,11 +74,9 @@
 .headerRow {
   font-weight: bold;
   background: #f0f0f0;
+
 }
 
-.icon {
-  text-align: center;
-}
 
 .name {
   min-width: 150px;
@@ -205,41 +201,84 @@
 .header {
   display: flex;
   gap: 12px;
-  /* espacio entre iconos */
   align-items: center;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
 }
 
 .icon {
-  width: 24px;
-  height: 24px;
-  cursor: pointer;
+  width: 15px;
+  height: 15px;
+  text-align: center;
 }
+
 
 .icons1 {
   display: flex;
-  min-width: 110px;
+  width: 115px;
+  border-right: 1px solid gray;
+  align-items: center;
+  padding: 10px;
+  margin-left: 5px;
+  gap: 5px;
+
 }
+
+.icons1 p {
+  font-size: 14px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+
 
 .icons2 {
   display: flex;
   min-width: 265px;
   justify-content: space-between;
   gap: 5px;
+  margin-left: 7px;
+  border-right: 1px solid gray;
+  padding-right: 15px;
+
 }
 
 .icons3 {
   display: flex;
-  min-width: 100px;
-  margin-left: 15px;
+  width: 95px;
+  margin-left: 5px;
+
+  border-right: 1px solid gray;
+  gap: 5px;
+}
+.icons3 {
+  font-size: 14px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.icons4 {
+
+  display: flex;
+  width: 70px;
+  border-right: 1px solid gray;
+  gap: 5px;
 }
 .icons4 {
-  display: flex;
-  min-width: 100px;
+  font-size: 14px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
 .icons5 {
   display: flex;
   min-width: 100px;
   margin-left: auto;
+  gap: 5px;
+}
+
+.icons5 {
+  font-size: 14px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 
