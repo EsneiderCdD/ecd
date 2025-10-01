@@ -1,7 +1,6 @@
 import AboutHeader from "../../components/About/AboutHeader";
 import AboutSidebar from "../../components/About/AboutSidebar";
 import AboutTable from "../../components/About/AboutTable";
-
 import Taskbar from "../../components/Taskbar/Taskbar";
 import styles from "../../components/About/About.module.css";
 
@@ -11,12 +10,11 @@ function About() {
       <AboutHeader />
       <div className={styles.mainContent}>
         <AboutSidebar />
-        <AboutTable />   {/* Ya incluye el panel */}
+        <AboutTable />
       </div>
       <Taskbar />
     </div>
   );
 }
-
 
 export default About;

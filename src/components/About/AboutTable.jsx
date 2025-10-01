@@ -7,10 +7,11 @@ function AboutTable() {
   const aboutFiles = [
     {
       icon: "📁",
-      name: "Repositorio",
+      name: "Proyectos Personales",
       date: "20/09/2025 9:06 p.m.",
       type: "Carpeta de archivos",
       size: "-",
+      path: "/projects",            
     },
     {
       icon: "📁",
@@ -26,7 +27,7 @@ function AboutTable() {
       type: "Acceso directo",
       size: "3 KB",
       previewUrl:
-        "https://upload.wikimedia.org/wikipedia/commons/f/fb/Adobe_Illustrator_CC_icon.svg", // 👈 ejemplo de preview específico
+        "https://upload.wikimedia.org/wikipedia/commons/f/fb/Adobe_Illustrator_CC_icon.svg",
     },
   ];
 
@@ -34,14 +35,11 @@ function AboutTable() {
 
   return (
     <div className={styles.mainContent}>
-      {/* Tabla de archivos */}
       <FileTable
         files={aboutFiles}
         selectedFile={selectedFile}
         setSelectedFile={setSelectedFile}
       />
-
-      {/* Panel dinámico */}
       <AboutInfoPanel file={selectedFile} />
     </div>
   );

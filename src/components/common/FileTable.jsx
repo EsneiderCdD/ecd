@@ -1,3 +1,4 @@
+// src/components/common/FileTable.jsx
 import { useNavigate } from "react-router-dom";
 import styles from "../About/About.module.css";
 
@@ -5,11 +6,17 @@ function FileTable({ files, selectedFile, setSelectedFile }) {
   const navigate = useNavigate();
 
   const handleClick = (file) => {
-    setSelectedFile(file);
+    if (setSelectedFile) setSelectedFile(file);
   };
 
   const handleDoubleClick = (file) => {
-    if (file.type === "Carpeta") {
+  
+    if (file.path) {
+      navigate(file.path);
+      return;
+    }
+
+    if (file.type === "Carpeta" || file.type === "Carpeta de archivos") {
       const projectId = file.name
         .toLowerCase()
         .replace(/\s+/g, "")
@@ -52,3 +59,5 @@ function FileTable({ files, selectedFile, setSelectedFile }) {
 }
 
 export default FileTable;
+
+
