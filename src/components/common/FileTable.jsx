@@ -16,6 +16,11 @@ function FileTable({ files, selectedFile, setSelectedFile }) {
       return;
     }
 
+    if (file.linkUrl) {
+    window.open(file.linkUrl, "_blank");
+    return;
+  }
+
     if (file.type === "Carpeta" || file.type === "Carpeta de archivos") {
       const projectId = file.name
         .toLowerCase()

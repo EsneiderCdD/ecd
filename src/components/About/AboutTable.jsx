@@ -11,7 +11,7 @@ function AboutTable() {
       date: "20/09/2025 9:06 p.m.",
       type: "Carpeta de archivos",
       size: "-",
-      path: "/projects",            
+      path: "/projects",
     },
     {
       icon: "📁",
@@ -22,13 +22,15 @@ function AboutTable() {
     },
     {
       icon: "🖌️",
-      name: "Adobe Illustrator 2024",
+      name: "Hoja de vida",
       date: "25/02/2025 6:53 p.m.",
       type: "Acceso directo",
       size: "3 KB",
-      previewUrl:
-        "https://upload.wikimedia.org/wikipedia/commons/f/fb/Adobe_Illustrator_CC_icon.svg",
-    },
+      previewUrl: "https://upload.wikimedia.org/wikipedia/commons/f/fb/Adobe_Illustrator_CC_icon.svg",
+      linkUrl: "https://flowcv.com/resume/trd93dr5crok", 
+      downloadUrl: "/cv.pdf", 
+    }
+
   ];
 
   const [selectedFile, setSelectedFile] = useState(null);

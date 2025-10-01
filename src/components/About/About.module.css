@@ -27,7 +27,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  min-width: 265px ;
+  min-width: 265px;
 }
 
 /* Línea de arrastre en el borde derecho */
@@ -65,22 +65,47 @@
 /* Todas las filas, incluido el header */
 .tableRow {
   display: grid;
-  grid-template-columns: 350px 2fr 1.5fr 1fr 1fr;
+  grid-template-columns: 275px 1.75fr 1.75fr 0.5fr 0.5fr;
   align-items: center;
   gap: 10px;
   padding: 5px 0;
   border-bottom: 1px solid #eee;
+  font-size: 13px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 400;
 }
+
 
 .headerRow {
   font-weight: bold;
   background: #f0f0f0;
+  font-size: 13px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 100;
+
 
 }
+
+.headerRow .name {
+  border-left: 2px solid #ccc;
+  padding-left: 8px;
+}
+
+.headerRow .date,
+.headerRow .type,
+.headerRow .size {
+  border-left: 1px solid #ddd;
+  padding-left: 8px;
+}
+.tableRow:not(.headerRow) span {
+  padding-left: 5px; /* o el valor que necesites */
+}
+
 
 
 .name {
   min-width: 150px;
+
 }
 
 .date {
@@ -94,6 +119,12 @@
 .size {
   min-width: 80px;
 }
+.tableRow:not(.headerRow):hover {
+  background-color: #f5f9ff; /* un azul clarito estilo Windows */
+  cursor: pointer;
+}
+
+
 
 
 
@@ -211,6 +242,7 @@
   width: 15px;
   height: 15px;
   text-align: center;
+  margin-right: 5px;
 }
 
 
@@ -253,6 +285,7 @@
   border-right: 1px solid gray;
   gap: 5px;
 }
+
 .icons3 {
   font-size: 14px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -265,6 +298,7 @@
   border-right: 1px solid gray;
   gap: 5px;
 }
+
 .icons4 {
   font-size: 14px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
