@@ -30,6 +30,7 @@ function AboutInfoPanel({ file }) {
     };
   }, []);
 
+  // Si no hay archivo seleccionado
   if (!file) {
     return (
       <div className={styles.infoPanel} style={{ width: `${width}px` }}>
@@ -45,24 +46,38 @@ function AboutInfoPanel({ file }) {
     <div className={styles.infoPanel} style={{ width: `${width}px` }}>
       <div className={styles.resizer} onMouseDown={handleMouseDown} />
 
-      <div className={styles.imageBox}>
-        <img
-          src="https://camarasal.com/wp-content/uploads/2020/08/default-image-5-1.jpg"
-          alt="Preview"
-          className={styles.previewImage}
-        />
-      </div>
+      {/* Imagen dinámica */}
+      {file.previewUrl && (
+        <div className={styles.imageBox}>
+          <img
+            src={file.previewUrl}
+            alt={`Vista previa de ${file.name}`}
+            className={styles.previewImage}
+          />
+        </div>
+      )}
 
+      {/* Nombre */}
       <h2 className={styles.title}>{file.name}</h2>
 
-      <button className={styles.button}>Descargar</button>
+      {/* Botón de descarga si existe */}
+      {file.downloadUrl && (
+        <a href={file.downloadUrl} download>
+          <button className={styles.button}>Descargar</button>
+        </a>
+      )}
 
+      {/* Botón de enlace externo si existe */}
+      {file.linkUrl && (
+        <a href={file.linkUrl} target="_blank" rel="noopener noreferrer">
+          <button className={styles.button}>Abrir enlace</button>
+        </a>
+      )}
+
+      {/* Descripción */}
       <div className={styles.details}>
         <h3>Detalles</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
-          odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.
-        </p>
+        <p>{file.description || "No hay detalles disponibles para este archivo."}</p>
       </div>
     </div>
   );
