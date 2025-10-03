@@ -11,7 +11,7 @@ function AboutInfoPanel({ file }) {
 
   const handleMouseMove = (e) => {
     if (!isResizing.current) return;
-    const newWidth = window.innerWidth - e.clientX; // calcular desde borde derecho
+    const newWidth = window.innerWidth - e.clientX;
     if (newWidth > 200 && newWidth < 600) {
       setWidth(newWidth);
     }
@@ -30,7 +30,6 @@ function AboutInfoPanel({ file }) {
     };
   }, []);
 
-  // Si no hay archivo seleccionado
   if (!file) {
     return (
       <div className={styles.infoPanel} style={{ width: `${width}px` }}>
