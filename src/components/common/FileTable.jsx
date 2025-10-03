@@ -37,7 +37,7 @@ function FileTable({ files, selectedFile, setSelectedFile }) {
         <span className={styles.name}>Nombre</span>
         <span className={styles.date}>Fecha de modificación</span>
         <span className={styles.type}>Tipo</span>
-        <span className={styles.size}>Tamaño</span>
+        <span className={styles.size}>Estado</span>
       </div>
 
       {/* Filas dinámicas */}

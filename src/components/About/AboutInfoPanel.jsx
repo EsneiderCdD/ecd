@@ -1,5 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import styles from "./About.module.css";
+import { Download, ExternalLink } from "lucide-react";
+
 
 function AboutInfoPanel({ file }) {
   const [width, setWidth] = useState(280); // ancho inicial
@@ -60,18 +62,24 @@ function AboutInfoPanel({ file }) {
       <h2 className={styles.title}>{file.name}</h2>
 
       {/* Botón de descarga si existe */}
-      {file.downloadUrl && (
-        <a href={file.downloadUrl} download>
-          <button className={styles.button}>Descargar</button>
-        </a>
-      )}
-
-      {/* Botón de enlace externo si existe */}
-      {file.linkUrl && (
-        <a href={file.linkUrl} target="_blank" rel="noopener noreferrer">
-          <button className={styles.button}>Abrir enlace</button>
-        </a>
-      )}
+      <div className={styles.buttons}>
+        {file.downloadUrl && (
+          <a href={file.downloadUrl} download>
+            <button className={styles.winButton}>
+              <Download size={16} style={{ marginRight: "6px" }} />
+              Descargar
+            </button>
+          </a>
+        )}
+        {file.linkUrl && (
+          <a href={file.linkUrl} target="_blank" rel="noopener noreferrer">
+            <button className={styles.winButton}>
+              <ExternalLink size={16} style={{ marginRight: "6px" }} />
+              Abrir enlace
+            </button>
+          </a>
+        )}
+      </div>
 
       {/* Descripción */}
       <div className={styles.details}>
