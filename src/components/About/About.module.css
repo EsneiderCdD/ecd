@@ -176,6 +176,7 @@
   font-size: 18px;
   font-weight: bold;
   text-align: left;
+  margin-bottom: -10px;
 }
 
 /* Botón */
@@ -237,7 +238,7 @@
 }
 
 .details h3 {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .sidebar {
