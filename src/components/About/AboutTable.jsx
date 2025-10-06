@@ -1,8 +1,4 @@
 import { useState } from "react";
-import AboutHeader from "../About/AboutHeader";
-import AboutSidebar from "../About/AboutSidebar";
-import AboutInfoPanel from "../About/AboutInfoPanel";
-import Taskbar from "../Taskbar/Taskbar";
 import styles from "../../components/About/About.module.css";
 import FileTable from "@/components/Common/FileTable"
 import MC from "@/assets/images/MC.png"
@@ -112,24 +108,14 @@ const desktopFiles = [
   },
 ];
 
-function Project() {
-  const [selectedFile, setSelectedFile] = useState(null);
-
+function AboutTable({ selectedFile, setSelectedFile }) {
   return (
-    <div className={styles.container}>
-      <AboutHeader />
-      <div className={styles.mainContent}>
-        <AboutSidebar />
-        <FileTable
-          files={desktopFiles}
-          selectedFile={selectedFile}
-          setSelectedFile={setSelectedFile}
-        />
-        <AboutInfoPanel file={selectedFile} />
-      </div>
-      <Taskbar />
-    </div>
+    <FileTable
+      files={desktopFiles}
+      selectedFile={selectedFile}
+      setSelectedFile={setSelectedFile}
+    />
   );
 }
 
-export default Project;
+export default AboutTable;
