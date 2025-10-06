@@ -220,12 +220,12 @@
 
   display: -webkit-box;       
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 5;      
+  -webkit-line-clamp: 10;      
   
   display: box;               
   box-orient: vertical;
 
-  line-clamp: 3;             
+  line-clamp: 10;             
   
   overflow: hidden;
   text-overflow: ellipsis;
