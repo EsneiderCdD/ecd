@@ -75,7 +75,7 @@ function AboutInfoPanel({ file }) {
           <a href={file.linkUrl} target="_blank" rel="noopener noreferrer">
             <button className={styles.winButton}>
               <ExternalLink size={16} style={{ marginRight: "6px" }} />
-              Abrir enlace
+              Ver
             </button>
           </a>
         )}

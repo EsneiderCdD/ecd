@@ -68,7 +68,7 @@ export const aboutFiles = [
         date: "01/10/2025 10:00 a.m.",
         size: "Actualizado",
         path: null,
-        description: "Email: tumail@ejemplo.com | LinkedIn: linkedin.com/in/tuperfil | GitHub: github.com/tuusuario | Ubicación: Itagüí, Antioquia, Colombia",
+        description: "Email: ecadaviddavid@gmail.com | LinkedIn:  | GitHub: ",
         previewUrl: "https://cdn-icons-png.flaticon.com/512/561/561127.png",
         downloadUrl: null,
         linkUrl: "mailto:tumail@ejemplo.com",
@@ -82,7 +82,7 @@ export const aboutFiles = [
         path: null,
         description: "Descarga mi currículum vitae completo en formato PDF con toda mi experiencia, proyectos y habilidades detalladas.",
         previewUrl: "https://cdn-icons-png.flaticon.com/512/337/337946.png",
-        downloadUrl: "/files/cv.pdf",
-        linkUrl: null,
+        downloadUrl: "/esneider-cd-d.pdf",
+        linkUrl: "https://flowcv.com/resume/trd93dr5crok",
     },
 ];
