@@ -1,5 +1,8 @@
 // src/data/projectsData.js
-import MC from "@/assets/images/MC.png";
+import martina1 from "@/assets/images/martina1.webp";
+import martina2 from "@/assets/images/martina2.webp";
+import martina3 from "@/assets/images/martina3.webp";
+import martina4 from "@/assets/images/martina4.webp";
 import MisterSoldo from "@/assets/images/MisterSoldo.png";
 import PsicoT from "@/assets/images/PsicoT.png";
 
@@ -13,7 +16,7 @@ export const projectsList = [
         size: "Completado",
         path: "/projects/martinaclandestina",
         description: "Martina Clandestina es una marca de almuerzos con identidad local...",
-        previewUrl: MC,
+        previewUrl: martina1,
         downloadUrl: null,
         linkUrl: null,
     },
@@ -91,6 +94,9 @@ export const projectsList = [
     },
 ];
 
+
+
+
 export const projectDetailFiles = {
     martinaclandestina: [
         {
@@ -99,10 +105,10 @@ export const projectDetailFiles = {
             type: "Información",
             date: "20/09/2025 9:06 p.m.",
             size: "Actualizado",
-            description: "Martina Clandestina es una marca de almuerzos con identidad local...",
-            previewUrl: MC,
+            description: "Desarrollé una carta digital dinámica con enfoque Mobile First para una marca de almuerzos local. El sistema permite navegar por los menús de cada día de la semana, señalando automáticamente el día actual, y facilita la realización de pedidos directos vía WhatsApp con autocompletado de datos del cliente y del pedido. La interfaz es ligera, clara y funcional, con animaciones sutiles y rutas dinámicas, optimizada para celulares. El contenido del menú se gestiona fácilmente desde un archivo data.js, eliminando la necesidad de bases de datos o paneles complejos, reduciendo costos y aumentando la autonomía de la marca.",
+            previewUrl: martina4,
             downloadUrl: null,
-            linkUrl: null,
+            linkUrl: "https://example.com/nn",
         },
         {
             icon: "🖼️",
@@ -111,7 +117,7 @@ export const projectDetailFiles = {
             date: "20/09/2025 9:15 p.m.",
             size: "Actualizado",
             description: "Vista representativa de la plataforma.",
-            previewUrl: "https://picsum.photos/400/300?random=1",
+            previewUrl: martina3,
             downloadUrl: null,
             linkUrl: null,
         },
@@ -122,7 +128,18 @@ export const projectDetailFiles = {
             date: "20/09/2025 9:16 p.m.",
             size: "Actualizado",
             description: "Vista adicional representativa.",
-            previewUrl: "https://picsum.photos/400/300?random=2",
+            previewUrl: martina2,
+            downloadUrl: null,
+            linkUrl: null,
+        },
+        {
+            icon: "🖼️",
+            name: "Imagen 3",
+            type: "Imagen",
+            date: "20/09/2025 9:16 p.m.",
+            size: "Actualizado",
+            description: "Vista adicional representativa.",
+            previewUrl: martina1,
             downloadUrl: null,
             linkUrl: null,
         },
@@ -265,7 +282,4 @@ export const projectDetailFiles = {
             linkUrl: null,
         },
     ],
-
-    // Siguen la misma estructura GUAU, framermotionlab, trainittrello, postulamania...
-    // (manteniendo plantilla, cambiando previews/íconos random distintos)
 };
