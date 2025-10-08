@@ -3,9 +3,11 @@ import martina1 from "@/assets/images/martina1.webp";
 import martina2 from "@/assets/images/martina2.webp";
 import martina3 from "@/assets/images/martina3.webp";
 import martina4 from "@/assets/images/martina4.webp";
+
 import MisterSoldo from "@/assets/images/MisterSoldo.png";
 import PsicoT from "@/assets/images/PsicoT.png";
-
+import banner from "@/assets/images/banner.webp";
+import ai from "@/assets/images/ai.png";
 // Lista principal de proyectos (para la vista de Projects)
 export const projectsList = [
     {
@@ -116,7 +118,7 @@ export const projectDetailFiles = {
             type: "Imagen",
             date: "20/09/2025 9:15 p.m.",
             size: "Actualizado",
-            description: "Vista representativa de la plataforma.",
+            description: null,
             previewUrl: martina3,
             downloadUrl: null,
             linkUrl: null,
@@ -127,7 +129,7 @@ export const projectDetailFiles = {
             type: "Imagen",
             date: "20/09/2025 9:16 p.m.",
             size: "Actualizado",
-            description: "Vista adicional representativa.",
+            description: null,
             previewUrl: martina2,
             downloadUrl: null,
             linkUrl: null,
@@ -138,7 +140,7 @@ export const projectDetailFiles = {
             type: "Imagen",
             date: "20/09/2025 9:16 p.m.",
             size: "Actualizado",
-            description: "Vista adicional representativa.",
+            description: null,
             previewUrl: martina1,
             downloadUrl: null,
             linkUrl: null,
@@ -149,8 +151,28 @@ export const projectDetailFiles = {
             type: "Documento",
             date: "20/09/2025 9:20 p.m.",
             size: "Actualizado",
-            description: "React.js, CSS3, WhatsApp API, Responsive Design, Vite",
-            previewUrl: "https://cdn-icons-png.flaticon.com/512/919/919851.png",
+            description: `
+                <div style="display: flex; flex-wrap: wrap; gap: 16px; align-items: center;">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1126/1126012.png" alt="React" style="width: 48px; height: 48px;" title="React.js" />
+                    <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS3" style="width: 48px; height: 48px;" title="CSS3" />
+                    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" style="width: 48px; height: 48px;" title="WhatsApp API" />
+                    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968672.png" alt="Vite" style="width: 48px; height: 48px;" title="Vite" />
+                    <span style="font-size: 14px; color: #555;">Responsive Design</span>
+                </div>
+            `,
+            previewUrl: ai,
+            downloadUrl: null,
+            linkUrl: null,
+        },
+
+                {
+            icon: "📄",
+            name: "Contribuciones",
+            type: "Información",
+            date: "20/09/2025 9:06 p.m.",
+            size: "Actualizado",
+            description: "Desarrollé una carta digital dinámica para una marca de almuerzos local usando React.js, Vite, React Router y CSS, con enfoque Mobile First para facilitar el acceso desde celulares. Implementé navegación por días de la semana con señalización automática del día actual y un sistema de pedidos directo vía WhatsApp con autocompletado de datos del cliente y del pedido, simplificando la experiencia. La interfaz es ligera, clara y funcional, con animaciones sutiles y rutas dinámicas, y el contenido del menú se gestiona fácilmente desde un archivo data.js, evitando bases de datos o paneles complejos, reduciendo costos y aumentando la autonomía de la marca.",
+            previewUrl: banner,
             downloadUrl: null,
             linkUrl: null,
         },
@@ -185,7 +207,7 @@ export const projectDetailFiles = {
             type: "Imagen",
             date: "11/09/2025 12:50 a.m.",
             size: "Actualizado",
-            description: "Vista del diseño de la plataforma musical.",
+            description: null,
             previewUrl: "https://picsum.photos/400/300?random=3",
             downloadUrl: null,
             linkUrl: null,
@@ -196,7 +218,7 @@ export const projectDetailFiles = {
             type: "Imagen",
             date: "11/09/2025 12:51 a.m.",
             size: "Actualizado",
-            description: "Vista adicional de componentes.",
+            description: null,
             previewUrl: "https://picsum.photos/400/300?random=4",
             downloadUrl: null,
             linkUrl: null,
@@ -207,8 +229,15 @@ export const projectDetailFiles = {
             type: "Documento",
             date: "11/09/2025 12:55 a.m.",
             size: "Actualizado",
-            description: "React.js, Swiper.js, YouTube API, Vercel, Responsive Design",
-            previewUrl: "https://cdn-icons-png.flaticon.com/512/919/919851.png",
+            description: `
+                <div style="display: flex; flex-wrap: wrap; gap: 16px; align-items: center;">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1126/1126012.png" alt="React" style="width: 48px; height: 48px;" title="React.js" />
+                    <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" style="width: 48px; height: 48px;" title="YouTube API" />
+                    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968672.png" alt="Vite" style="width: 48px; height: 48px;" title="Vite" />
+                    <span style="font-size: 14px; color: #555;">Swiper.js, Vercel</span>
+                </div>
+            `,
+            previewUrl: "https://cdn-icons-png.flaticon.com/512/2920/2920277.png",
             downloadUrl: null,
             linkUrl: null,
         },
@@ -243,7 +272,7 @@ export const projectDetailFiles = {
             type: "Imagen",
             date: "20/09/2025 9:10 p.m.",
             size: "Actualizado",
-            description: "Vista principal del sitio.",
+            description: null,
             previewUrl: "https://picsum.photos/400/300?random=5",
             downloadUrl: null,
             linkUrl: null,
@@ -254,7 +283,7 @@ export const projectDetailFiles = {
             type: "Imagen",
             date: "20/09/2025 9:11 p.m.",
             size: "Actualizado",
-            description: "Vista adicional con sistema de pagos.",
+            description: null,
             previewUrl: "https://picsum.photos/400/300?random=6",
             downloadUrl: null,
             linkUrl: null,
@@ -265,8 +294,16 @@ export const projectDetailFiles = {
             type: "Documento",
             date: "20/09/2025 9:15 p.m.",
             size: "Actualizado",
-            description: "React.js, Framer Motion, Sistema de Pagos, Google Analytics, Vite",
-            previewUrl: "https://cdn-icons-png.flaticon.com/512/919/919851.png",
+            description: `
+                <div style="display: flex; flex-wrap: wrap; gap: 16px; align-items: center;">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1126/1126012.png" alt="React" style="width: 48px; height: 48px;" title="React.js" />
+                    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968672.png" alt="Vite" style="width: 48px; height: 48px;" title="Vite" />
+                    <img src="https://cdn-icons-png.flaticon.com/512/2991/2991148.png" alt="Analytics" style="width: 48px; height: 48px;" title="Google Analytics" />
+                    <img src="https://cdn-icons-png.flaticon.com/512/2331/2331966.png" alt="Payment" style="width: 48px; height: 48px;" title="Sistema de Pagos" />
+                    <span style="font-size: 14px; color: #555;">Framer Motion</span>
+                </div>
+            `,
+            previewUrl: "https://cdn-icons-png.flaticon.com/512/2920/2920277.png",
             downloadUrl: null,
             linkUrl: null,
         },

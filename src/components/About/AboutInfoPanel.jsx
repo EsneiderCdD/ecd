@@ -43,6 +43,9 @@ function AboutInfoPanel({ file }) {
     );
   }
 
+  // Determinar si es un archivo de imagen sin descripción
+  const isImageOnly = file.type === "Imagen" && !file.description;
+
   return (
     <div className={styles.infoPanel} style={{ width: `${width}px` }}>
       <div className={styles.resizer} onMouseDown={handleMouseDown} />
@@ -58,34 +61,43 @@ function AboutInfoPanel({ file }) {
         </div>
       )}
 
-      {/* Nombre */}
-      <h2 className={styles.title}>{file.name}</h2>
+      {/* Nombre - no mostrar si es imagen sin descripción */}
+      {!isImageOnly && <h2 className={styles.title}>{file.name}</h2>}
 
-      {/* Botón de descarga si existe */}
-      <div className={styles.buttons}>
-        {file.downloadUrl && (
-          <a href={file.downloadUrl} download>
-            <button className={styles.winButton}>
-              <Download size={16} style={{ marginRight: "6px" }} />
-              Descargar
-            </button>
-          </a>
-        )}
-        {file.linkUrl && (
-          <a href={file.linkUrl} target="_blank" rel="noopener noreferrer">
-            <button className={styles.winButton}>
-              <ExternalLink size={16} style={{ marginRight: "6px" }} />
-              Ver
-            </button>
-          </a>
-        )}
-      </div>
+      {/* Botones - mostrar solo si existen */}
+      {(file.downloadUrl || file.linkUrl) && (
+        <div className={styles.buttons}>
+          {file.downloadUrl && (
+            <a href={file.downloadUrl} download>
+              <button className={styles.winButton}>
+                <Download size={16} style={{ marginRight: "6px" }} />
+                Descargar
+              </button>
+            </a>
+          )}
+          {file.linkUrl && (
+            <a href={file.linkUrl} target="_blank" rel="noopener noreferrer">
+              <button className={styles.winButton}>
+                <ExternalLink size={16} style={{ marginRight: "6px" }} />
+                Ver
+              </button>
+            </a>
+          )}
+        </div>
+      )}
 
-      {/* Descripción */}
-      <div className={styles.details}>
-        <h3>Detalles</h3>
-        <p>{file.description || "No hay detalles disponibles para este archivo."}</p>
-      </div>
+      {/* Descripción - no mostrar si es imagen sin descripción */}
+      {!isImageOnly && file.description && (
+        <div className={styles.details}>
+          <h3>Detalles</h3>
+          {/* Renderizar como HTML si contiene tags, sino como texto */}
+          {typeof file.description === 'string' && file.description.includes('<') ? (
+            <div dangerouslySetInnerHTML={{ __html: file.description }} />
+          ) : (
+            <p>{file.description}</p>
+          )}
+        </div>
+      )}
     </div>
   );
 }
