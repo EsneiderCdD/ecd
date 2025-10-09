@@ -1,6 +1,5 @@
 import styles from "./About.module.css";
 import {
-  FilePlus,   // Nuevo
   Scissors,   // Cortar
   Copy,       // Copiar
   ClipboardPaste, // Pegar
@@ -12,13 +11,15 @@ import {
   List,       // Detalles
 } from "lucide-react";
 
+import Dropdown from "./Dropdown/Dropdown";
+
 function AboutHeader() {
   return (
     <div className={styles.header}>
-      <div className={styles.icons1}>
-        <FilePlus className={styles.icon} title="Nuevo" />
-        <p>Nuevo</p>
-      </div>
+      {/* Dropdown */}
+      <Dropdown />
+
+      {/* Sección: Cortar, Copiar, Pegar, etc */}
       <div className={styles.icons2}>
         <Scissors className={styles.icon} title="Cortar" />
         <Copy className={styles.icon} title="Copiar" />
@@ -27,14 +28,20 @@ function AboutHeader() {
         <Share2 className={styles.icon} title="Compartir" />
         <Trash2 className={styles.icon} title="Eliminar" />
       </div>
+
+      {/* Ordenar */}
       <div className={styles.icons3}>
         <ArrowUpDown className={styles.icon} title="Ordenar" />
         <p>Ordenar</p>
       </div>
+
+      {/* Ver */}
       <div className={styles.icons4}>
         <Layout className={styles.icon} title="Ver" />
         <p>Ver</p>
       </div>
+
+      {/* Detalles */}
       <div className={styles.icons5}>
         <List className={styles.icon} title="Detalles" />
         <p>Detalles</p>
