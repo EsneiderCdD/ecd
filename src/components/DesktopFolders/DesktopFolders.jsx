@@ -1,13 +1,112 @@
-import Folder from "../Folder/Folder";
+// src/components/DesktopFolders/DesktopFolders.jsx
+import { useState } from 'react';
+import { DndContext, DragOverlay, rectIntersection } from '@dnd-kit/core';
+import { snapCenterToCursor } from '@dnd-kit/modifiers';
+import DraggableFolder from '../DraggableFolder/DraggableFolder';
+import DroppableCell from '../DroppableCell/DroppableCell';
 import styles from "./DesktopFolders.module.css";
 
+// Configuración de la grilla
+const GRID_CONFIG = {
+  cols: 12,
+  rows: 8,
+};
+
 function DesktopFolders() {
+  const [folders, setFolders] = useState([
+    { id: 'inicio', label: 'Inicio', to: '/', position: { col: 1, row: 1 } },
+    { id: 'sobre-mi', label: 'Sobre mí', to: '/about', position: { col: 1, row: 2 } },
+    { id: 'proyectos', label: 'Proyectos', to: '/projects', position: { col: 1, row: 3 } },
+  ]);
+
+  const [activeId, setActiveId] = useState(null);
+
+  // Generar todas las celdas de la grilla
+  const cells = [];
+  for (let row = 1; row <= GRID_CONFIG.rows; row++) {
+    for (let col = 1; col <= GRID_CONFIG.cols; col++) {
+      cells.push({ col, row });
+    }
+  }
+
+  const handleDragStart = (event) => {
+    setActiveId(event.active.id);
+  };
+
+  const handleDragEnd = (event) => {
+    const { active, over } = event;
+    setActiveId(null);
+
+    if (!over) return;
+
+    // Verificar si se soltó sobre una celda
+    if (over.id.toString().startsWith('cell-')) {
+      const [, col, row] = over.id.split('-').map(Number);
+      
+      // Verificar si la celda ya está ocupada
+      const isCellOccupied = folders.some(
+        f => f.position.col === col && f.position.row === row && f.id !== active.id
+      );
+
+      if (!isCellOccupied) {
+        setFolders((items) =>
+          items.map((item) =>
+            item.id === active.id
+              ? { ...item, position: { col, row } }
+              : item
+          )
+        );
+      }
+    }
+  };
+
+  const activeFolder = folders.find(f => f.id === activeId);
+
+  // Verificar qué celdas están ocupadas
+  const isCellOccupied = (col, row) => {
+    return folders.some(f => f.position.col === col && f.position.row === row);
+  };
+
   return (
-    <div className={styles.container}>
-      <Folder label="Inicio" to="/" />
-      <Folder label="Sobre mí" to="/about" />
-      <Folder label="Proyectos" to="/projects" />
-    </div>
+    <DndContext
+      collisionDetection={rectIntersection}
+      onDragStart={handleDragStart}
+      onDragEnd={handleDragEnd}
+      modifiers={[snapCenterToCursor]}
+    >
+      <div className={styles.container}>
+        {/* Renderizar todas las celdas droppables */}
+        {cells.map(({ col, row }) => (
+          <DroppableCell
+            key={`cell-${col}-${row}`}
+            id={`cell-${col}-${row}`}
+            col={col}
+            row={row}
+            isOccupied={isCellOccupied(col, row)}
+          />
+        ))}
+
+        {/* Renderizar las carpetas */}
+        {folders.map((folder) => (
+          <DraggableFolder
+            key={folder.id}
+            id={folder.id}
+            label={folder.label}
+            to={folder.to}
+            gridPosition={folder.position}
+          />
+        ))}
+      </div>
+
+      <DragOverlay>
+        {activeId && activeFolder ? (
+          <div className={styles.dragOverlay}>
+            <div className={styles.folderIcon}></div>
+            <span className={styles.folderLabel}>{activeFolder.label}</span>
+          </div>
+        ) : null}
+      </DragOverlay>
+    </DndContext>
   );
 }
 

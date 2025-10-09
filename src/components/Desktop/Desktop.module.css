@@ -1,6 +1,10 @@
 .container {
-    width: 100%;
-    height: 100vh;
-    background-image: url('/bg-desktop.webp');
-    
+  width: 100%;
+  height: 100vh;
+  background-image: url('/bg-desktop.webp');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  max-width: 1550px;
+  margin: 0 auto;
 }

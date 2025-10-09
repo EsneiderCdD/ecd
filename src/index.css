@@ -1,7 +1,17 @@
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* border: dotted red 1px;*/
+}
+
+/* Contenedor principal centrado */
+#root {
   max-width: 1550px;
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+}
+
+body {
+  overflow-x: hidden;
 }

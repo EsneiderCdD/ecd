@@ -2,8 +2,47 @@
   position: absolute;
   top: 2rem;
   left: 2rem;
+  right: 2rem;
+  bottom: 70px; /* Espacio para el taskbar */
+  
+  display: grid;
+  grid-template-columns: repeat(12, 100px);
+  grid-template-rows: repeat(8, 100px);
+  gap: 1.5rem;
+  
+  max-width: 1550px;
+  margin: 0 auto;
+  overflow: hidden;
+}
 
+/* Overlay durante el drag */
+.dragOverlay {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  align-items: center;
+  width: 80px;
+  opacity: 0.9;
+  cursor: grabbing;
+  pointer-events: none;
+}
+
+.folderIcon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 0.3rem;
+  background: url("https://cdn-icons-png.flaticon.com/512/716/716784.png") 
+              no-repeat center center;
+  background-size: contain;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+.folderLabel {
+  font-size: 12px;
+  text-align: center;
+  word-wrap: break-word;
+  max-width: 80px;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 2px 4px;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
