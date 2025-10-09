@@ -3,12 +3,16 @@ import martina1 from "@/assets/images/martina1.webp";
 import martina2 from "@/assets/images/martina2.webp";
 import martina3 from "@/assets/images/martina3.webp";
 import martina4 from "@/assets/images/martina4.webp";
-
-import MisterSoldo from "@/assets/images/MisterSoldo.png";
 import PsicoT from "@/assets/images/PsicoT.png";
 import banner from "@/assets/images/banner.webp";
 import ai from "@/assets/images/ai.png";
-// Lista principal de proyectos (para la vista de Projects)
+
+
+import mr from "@/assets/images/mr.png";
+import mr2 from "@/assets/images/mr2.png";
+import mr3 from "@/assets/images/mr3.png";
+
+
 export const projectsList = [
     {
         icon: "📁",
@@ -30,7 +34,7 @@ export const projectsList = [
         size: "Completado",
         path: "/projects/mistersoldo",
         description: "Mister Soldo es una plataforma musical diseñada para ofrecer contenido...",
-        previewUrl: MisterSoldo,
+        previewUrl: mr,
         downloadUrl: null,
         linkUrl: null,
     },
@@ -95,6 +99,9 @@ export const projectsList = [
         linkUrl: null,
     },
 ];
+
+
+
 
 
 
@@ -197,7 +204,7 @@ export const projectDetailFiles = {
             date: "11/09/2025 12:47 a.m.",
             size: "Actualizado",
             description: "Mister Soldo es una plataforma musical diseñada...",
-            previewUrl: MisterSoldo,
+            previewUrl: mr3,
             downloadUrl: null,
             linkUrl: null,
         },
@@ -208,7 +215,7 @@ export const projectDetailFiles = {
             date: "11/09/2025 12:50 a.m.",
             size: "Actualizado",
             description: null,
-            previewUrl: "https://picsum.photos/400/300?random=3",
+            previewUrl: mr,
             downloadUrl: null,
             linkUrl: null,
         },
@@ -219,7 +226,7 @@ export const projectDetailFiles = {
             date: "11/09/2025 12:51 a.m.",
             size: "Actualizado",
             description: null,
-            previewUrl: "https://picsum.photos/400/300?random=4",
+            previewUrl: mr2,
             downloadUrl: null,
             linkUrl: null,
         },
