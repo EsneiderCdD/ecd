@@ -2,7 +2,7 @@ import AboutHeader from "../../components/About/AboutHeader";
 import AboutSidebar from "../../components/About/AboutSidebar";
 import FileTable from "../../components/common/FileTable";
 import AboutInfoPanel from "../../components/About/AboutInfoPanel";
-import Taskbar from "../../components/Taskbar/Taskbar";
+
 import styles from "../../components/About/About.module.css";
 
 
@@ -16,7 +16,7 @@ function DesktopFolder() {
         <FileTable />
         <AboutInfoPanel />
       </div>
-      <Taskbar />
+     
     </div>
   );
 }

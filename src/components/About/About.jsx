@@ -3,7 +3,7 @@ import { useState } from "react";
 import AboutHeader from "./AboutHeader";
 import AboutSidebar from "./AboutSidebar";
 import AboutInfoPanel from "./AboutInfoPanel";
-import Taskbar from "../Taskbar/Taskbar";
+
 import styles from "./About.module.css";
 import FileTable from "@/components/Common/FileTable";
 import { aboutFiles } from "@/data/aboutData";
@@ -23,7 +23,7 @@ function About() {
         />
         <AboutInfoPanel file={selectedFile} />
       </div>
-      <Taskbar />
+  
     </div>
   );
 }

@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 import AboutHeader from "@/components/About/AboutHeader";
 import AboutSidebar from "@/components/About/AboutSidebar";
 import AboutInfoPanel from "@/components/About/AboutInfoPanel";
-import Taskbar from "@/components/Taskbar/Taskbar";
+
 import FileTable from "@/components/common/FileTable";
 import styles from "@/components/About/About.module.css";
 import { projectDetailFiles } from "@/data/projectsData";
@@ -28,7 +28,7 @@ function ProjectDetail() {
         />
         <AboutInfoPanel file={selectedFile} />
       </div>
-      <Taskbar />
+  
     </div>
   );
 }
