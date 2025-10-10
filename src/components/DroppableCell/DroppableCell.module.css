@@ -1,0 +1,20 @@
+/* src/components/DroppableCell/DroppableCell.module.css */
+.cell {
+  width: 100px;
+  height: 100px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+  pointer-events: all;
+}
+
+/* Cuando se arrastra sobre la celda */
+.cellOver {
+  background-color: rgba(255, 255, 255, 0.15);
+  border: 2px dashed rgba(255, 255, 255, 0.4);
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Celda ocupada (opcional, para debug) */
+.cellOccupied {
+  pointer-events: none;
+}

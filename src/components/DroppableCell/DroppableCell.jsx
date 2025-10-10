@@ -1,6 +1,6 @@
 // src/components/DroppableCell/DroppableCell.jsx
 import { useDroppable } from '@dnd-kit/core';
-// import styles from './DroppableCell.module.css';
+import styles from './DroppableCell.module.css';
 
 function DroppableCell({ id, col, row, isOccupied }) {
   const { isOver, setNodeRef } = useDroppable({
