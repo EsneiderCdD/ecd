@@ -1,8 +1,5 @@
 import styles from "./About.module.css";
 import {
-  Scissors,   // Cortar
-  Copy,       // Copiar
-  ClipboardPaste, // Pegar
   Edit3,      // Cambiar nombre
   Share2,     // Compartir
   Trash2,     // Eliminar
@@ -19,11 +16,33 @@ function AboutHeader() {
       {/* Dropdown */}
       <Dropdown />
 
-      {/* Sección: Cortar, Copiar, Pegar, etc */}
+      {/* Sección: GitHub, LinkedIn, Correo, etc */}
       <div className={styles.icons2}>
-        <Scissors className={styles.icon} title="Cortar" />
-        <Copy className={styles.icon} title="Copiar" />
-        <ClipboardPaste className={styles.icon} title="Pegar" />
+        {/* GitHub */}
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/733/733553.png"
+          alt="GitHub"
+          title="GitHub"
+          className={styles.icon}
+        />
+
+        {/* LinkedIn */}
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
+          alt="LinkedIn"
+          title="LinkedIn"
+          className={styles.icon}
+        />
+
+        {/* Correo */}
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/732/732200.png"
+          alt="Correo"
+          title="Correo"
+          className={styles.icon}
+        />
+
+        {/* Mantienes los demás */}
         <Edit3 className={styles.icon} title="Cambiar nombre" />
         <Share2 className={styles.icon} title="Compartir" />
         <Trash2 className={styles.icon} title="Eliminar" />

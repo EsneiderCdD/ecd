@@ -19,6 +19,7 @@
 
 .dropdownToggle:hover {
   background-color: #e5e5e5;
+  width: 100%;
 }
 
 .icon {
@@ -49,4 +50,18 @@
 
 .dropdownItem:hover {
   background-color: #f5f9ff;
+}
+
+
+.chevron {
+  width: 14px;
+  height: 14px;
+  margin-left: 4px;
+  transition: transform 0.2s ease;
+  stroke-width: 2;
+}
+
+/* Rotación cuando el menú está abierto */
+.rotate {
+  transform: rotate(180deg);
 }
