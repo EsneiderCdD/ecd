@@ -30,12 +30,12 @@
 
 .dropdownMenu {
   position: absolute;
-  top: 100%;
-  left: 0;
-  min-width: 220px;
+ top: calc(100% + 7px); /* lo baja */
+  left: -5px;   
+  width: 280px;
   background: #fff;
   border: 1px solid #ccc;
-  border-radius: 2px;
+  border-radius: 4px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.15);
   display: flex;
   flex-direction: column;
@@ -43,15 +43,25 @@
 }
 
 .dropdownItem {
-  padding: 8px 12px;
-  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  font-size: 15px;
   cursor: pointer;
+  transition: background-color 0.2s;
 }
 
 .dropdownItem:hover {
   background-color: #f5f9ff;
 }
 
+.itemIcon {
+  width: 18px;
+  height: 18px;
+  color: #333;
+  flex-shrink: 0;
+}
 
 .chevron {
   width: 14px;
@@ -61,7 +71,6 @@
   stroke-width: 2;
 }
 
-/* Rotación cuando el menú está abierto */
 .rotate {
   transform: rotate(180deg);
 }
