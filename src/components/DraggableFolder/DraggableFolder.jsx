@@ -1,10 +1,12 @@
 // src/components/DraggableFolder/DraggableFolder.jsx
 import { useDraggable } from '@dnd-kit/core';
 import { CSS } from '@dnd-kit/utilities';
-import { Link } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 import styles from './DraggableFolder.module.css';
 
 function DraggableFolder({ id, label, to, gridPosition }) {
+  const navigate = useNavigate();
+  
   const { attributes, listeners, setNodeRef, transform, isDragging } = useDraggable({
     id: id,
   });
@@ -17,18 +19,25 @@ function DraggableFolder({ id, label, to, gridPosition }) {
     zIndex: isDragging ? 1000 : 1,
   };
 
+  const handleDoubleClick = (e) => {
+    e.preventDefault();
+    // Solo navegar si NO está arrastrando
+    if (!isDragging) {
+      navigate(to);
+    }
+  };
+
   return (
     <div
       ref={setNodeRef}
       style={style}
       className={styles.folder}
-      {...listeners}
+      onDoubleClick={handleDoubleClick}
       {...attributes}
+      {...listeners}
     >
-      <Link to={to} className={styles.link} onClick={(e) => isDragging && e.preventDefault()}>
-        <div className={styles.icon}></div>
-        <span className={styles.label}>{label}</span>
-      </Link>
+      <div className={styles.icon}></div>
+      <span className={styles.label}>{label}</span>
     </div>
   );
 }

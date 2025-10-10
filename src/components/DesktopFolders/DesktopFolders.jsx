@@ -1,7 +1,6 @@
 // src/components/DesktopFolders/DesktopFolders.jsx
 import { useState } from 'react';
-import { DndContext, DragOverlay, rectIntersection } from '@dnd-kit/core';
-import { snapCenterToCursor } from '@dnd-kit/modifiers';
+import { DndContext, DragOverlay, rectIntersection, MouseSensor, TouchSensor, useSensor, useSensors } from '@dnd-kit/core';
 import DraggableFolder from '../DraggableFolder/DraggableFolder';
 import DroppableCell from '../DroppableCell/DroppableCell';
 import styles from "./DesktopFolders.module.css";
@@ -20,6 +19,22 @@ function DesktopFolders() {
   ]);
 
   const [activeId, setActiveId] = useState(null);
+
+  // Sensores con restricción: solo drag si se mantiene presionado Y se mueve
+  const mouseSensor = useSensor(MouseSensor, {
+    activationConstraint: {
+      distance: 10, // Debe moverse al menos 10px
+    },
+  });
+
+  const touchSensor = useSensor(TouchSensor, {
+    activationConstraint: {
+      delay: 200, // En móvil, esperar 200ms
+      tolerance: 5,
+    },
+  });
+
+  const sensors = useSensors(mouseSensor, touchSensor);
 
   // Generar todas las celdas de la grilla
   const cells = [];
@@ -69,10 +84,10 @@ function DesktopFolders() {
 
   return (
     <DndContext
+      sensors={sensors}
       collisionDetection={rectIntersection}
       onDragStart={handleDragStart}
       onDragEnd={handleDragEnd}
-      modifiers={[snapCenterToCursor]}
     >
       <div className={styles.container}>
         {/* Renderizar todas las celdas droppables */}
