@@ -3,7 +3,7 @@ import martina1 from "@/assets/images/martina1.webp";
 import martina2 from "@/assets/images/martina2.webp";
 import martina3 from "@/assets/images/martina3.webp";
 import martina4 from "@/assets/images/martina4.webp";
-import PsicoT from "@/assets/images/PsicoT.png";
+
 import banner from "@/assets/images/banner.webp";
 import ai from "@/assets/images/ai.png";
 
@@ -11,6 +11,14 @@ import ai from "@/assets/images/ai.png";
 import mr from "@/assets/images/mr.png";
 import mr2 from "@/assets/images/mr2.png";
 import mr3 from "@/assets/images/mr3.png";
+
+import psicotranspersonal2 from "@/assets/images/psicotranspersonal2.webp";
+import Psicotranspersonal3 from "@/assets/images/Psicotranspersonal3.png";
+import Psicotranspersonal1 from "@/assets/images/Psicotranspersonal1.png";
+
+import Guau from "@/assets/images/Guau.png";
+import Guau2 from "@/assets/images/Guau2.png";
+import Guau3 from "@/assets/images/Guau3.png";
 
 
 export const projectsList = [
@@ -46,7 +54,7 @@ export const projectsList = [
         size: "Completado",
         path: "/projects/psicotranspersonal",
         description: "Desarrollé una plataforma web para una psicóloga independiente...",
-        previewUrl: PsicoT,
+        previewUrl: Psicotranspersonal1,
         downloadUrl: null,
         linkUrl: null,
     },
@@ -58,7 +66,7 @@ export const projectsList = [
         size: "Desarrollo",
         path: "/projects/guau",
         description: "EN DESARROLLO... Plataforma integral de servicios y productos para mascotas...",
-        previewUrl: "https://cdn-icons-png.flaticon.com/512/616/616408.png",
+        previewUrl: Guau,
         downloadUrl: null,
         linkUrl: null,
     },
@@ -172,7 +180,7 @@ export const projectDetailFiles = {
             linkUrl: null,
         },
 
-                {
+        {
             icon: "📄",
             name: "Contribuciones",
             type: "Información",
@@ -266,10 +274,10 @@ export const projectDetailFiles = {
             icon: "📄",
             name: "Descripción del Proyecto",
             type: "Información",
-            date: "20/09/2025 9:06 p.m.",
+            date: "11/09/2025 12:47 a.m.",
             size: "Actualizado",
-            description: "Plataforma web para psicóloga independiente con identidad de marca...",
-            previewUrl: PsicoT,
+            description: "Mister Soldo es una plataforma musical diseñada...",
+            previewUrl: psicotranspersonal2,
             downloadUrl: null,
             linkUrl: null,
         },
@@ -277,10 +285,10 @@ export const projectDetailFiles = {
             icon: "🖼️",
             name: "Imagen 1",
             type: "Imagen",
-            date: "20/09/2025 9:10 p.m.",
+            date: "11/09/2025 12:50 a.m.",
             size: "Actualizado",
             description: null,
-            previewUrl: "https://picsum.photos/400/300?random=5",
+            previewUrl: Psicotranspersonal1,
             downloadUrl: null,
             linkUrl: null,
         },
@@ -288,10 +296,10 @@ export const projectDetailFiles = {
             icon: "🖼️",
             name: "Imagen 2",
             type: "Imagen",
-            date: "20/09/2025 9:11 p.m.",
+            date: "11/09/2025 12:51 a.m.",
             size: "Actualizado",
             description: null,
-            previewUrl: "https://picsum.photos/400/300?random=6",
+            previewUrl: Psicotranspersonal3,
             downloadUrl: null,
             linkUrl: null,
         },
@@ -299,15 +307,14 @@ export const projectDetailFiles = {
             icon: "💻",
             name: "Tecnologías Usadas",
             type: "Documento",
-            date: "20/09/2025 9:15 p.m.",
+            date: "11/09/2025 12:55 a.m.",
             size: "Actualizado",
             description: `
                 <div style="display: flex; flex-wrap: wrap; gap: 16px; align-items: center;">
                     <img src="https://cdn-icons-png.flaticon.com/512/1126/1126012.png" alt="React" style="width: 48px; height: 48px;" title="React.js" />
+                    <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" style="width: 48px; height: 48px;" title="YouTube API" />
                     <img src="https://cdn-icons-png.flaticon.com/512/5968/5968672.png" alt="Vite" style="width: 48px; height: 48px;" title="Vite" />
-                    <img src="https://cdn-icons-png.flaticon.com/512/2991/2991148.png" alt="Analytics" style="width: 48px; height: 48px;" title="Google Analytics" />
-                    <img src="https://cdn-icons-png.flaticon.com/512/2331/2331966.png" alt="Payment" style="width: 48px; height: 48px;" title="Sistema de Pagos" />
-                    <span style="font-size: 14px; color: #555;">Framer Motion</span>
+                    <span style="font-size: 14px; color: #555;">Swiper.js, Vercel</span>
                 </div>
             `,
             previewUrl: "https://cdn-icons-png.flaticon.com/512/2920/2920277.png",
@@ -318,7 +325,7 @@ export const projectDetailFiles = {
             icon: "📑",
             name: "Ficha Técnica",
             type: "Word",
-            date: "20/09/2025 9:20 p.m.",
+            date: "11/09/2025 12:58 a.m.",
             size: "Actualizado",
             description: "Ficha técnica descargable en Word.",
             previewUrl: "https://cdn-icons-png.flaticon.com/512/732/732223.png",
@@ -326,4 +333,70 @@ export const projectDetailFiles = {
             linkUrl: null,
         },
     ],
+     guau: [
+        {
+            icon: "📄",
+            name: "Descripción del Proyecto",
+            type: "Información",
+            date: "11/09/2025 12:47 a.m.",
+            size: "Actualizado",
+            description: "Mister Soldo es una plataforma musical diseñada...",
+            previewUrl: Guau,
+            downloadUrl: null,
+            linkUrl: null,
+        },
+        {
+            icon: "🖼️",
+            name: "Imagen 1",
+            type: "Imagen",
+            date: "11/09/2025 12:50 a.m.",
+            size: "Actualizado",
+            description: null,
+            previewUrl: Guau2,
+            downloadUrl: null,
+            linkUrl: null,
+        },
+        {
+            icon: "🖼️",
+            name: "Imagen 2",
+            type: "Imagen",
+            date: "11/09/2025 12:51 a.m.",
+            size: "Actualizado",
+            description: null,
+            previewUrl: Guau3,
+            downloadUrl: null,
+            linkUrl: null,
+        },
+        {
+            icon: "💻",
+            name: "Tecnologías Usadas",
+            type: "Documento",
+            date: "11/09/2025 12:55 a.m.",
+            size: "Actualizado",
+            description: `
+                <div style="display: flex; flex-wrap: wrap; gap: 16px; align-items: center;">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1126/1126012.png" alt="React" style="width: 48px; height: 48px;" title="React.js" />
+                    <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" style="width: 48px; height: 48px;" title="YouTube API" />
+                    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968672.png" alt="Vite" style="width: 48px; height: 48px;" title="Vite" />
+                    <span style="font-size: 14px; color: #555;">Swiper.js, Vercel</span>
+                </div>
+            `,
+            previewUrl: "https://cdn-icons-png.flaticon.com/512/2920/2920277.png",
+            downloadUrl: null,
+            linkUrl: null,
+        },
+        {
+            icon: "📑",
+            name: "Ficha Técnica",
+            type: "Word",
+            date: "11/09/2025 12:58 a.m.",
+            size: "Actualizado",
+            description: "Ficha técnica descargable en Word.",
+            previewUrl: "https://cdn-icons-png.flaticon.com/512/732/732223.png",
+            downloadUrl: "/ExampleWord.docx",
+            linkUrl: null,
+        },
+    ],
+
+
 };
