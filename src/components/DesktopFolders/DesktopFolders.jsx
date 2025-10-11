@@ -7,8 +7,8 @@ import styles from "./DesktopFolders.module.css";
 
 // Configuración de la grilla
 const GRID_CONFIG = {
-  cols: 12,
-  rows: 8,
+  cols: 10,
+  rows: 6,
 };
 
 function DesktopFolders() {
