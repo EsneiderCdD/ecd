@@ -32,7 +32,7 @@ export const projectsList = [
         icon: "📁",
         name: "Martina Clandestina",
         type: "Proyecto Freelance",
-        date: "20/09/2025 9:06 p.m.",
+        date: "1/03/2025",
         size: "Completado",
         path: "/projects/martinaclandestina",
         description: "Martina Clandestina es una marca de almuerzos con identidad local...",
@@ -42,9 +42,9 @@ export const projectsList = [
     },
     {
         icon: "📁",
-        name: "MisterSoldo",
+        name: "Mister Soldo",
         type: "Proyecto Freelance",
-        date: "11/09/2025 12:47 a.m.",
+        date: "25/03/2025 ",
         size: "Completado",
         path: "/projects/mistersoldo",
         description: "Mister Soldo es una plataforma musical diseñada para ofrecer contenido...",
@@ -56,7 +56,7 @@ export const projectsList = [
         icon: "📁",
         name: "Psicotranspersonal",
         type: "Proyecto Freelance",
-        date: "20/09/2025 9:06 p.m.",
+        date: "20/09/2025 ",
         size: "Completado",
         path: "/projects/psicotranspersonal",
         description: "Desarrollé una plataforma web para una psicóloga independiente...",
@@ -120,6 +120,7 @@ export const projectsList = [
 
 
 
+
 export const projectDetailFiles = {
     martinaclandestina: [
         {
@@ -169,7 +170,7 @@ export const projectDetailFiles = {
         {
             icon: "💻",
             name: "Tecnologías Usadas",
-            type: "Documento",
+            type: "Texto e imagen",
             date: "25/02/2025 ",
             size: "Actualizado",
             description: `
@@ -182,6 +183,17 @@ export const projectDetailFiles = {
 `,
             previewUrl: null,
             downloadUrl: null,
+            linkUrl: null,
+        },
+        {
+            icon: "📑",
+            name: "Ficha Técnica",
+            type: "Word",
+            date: "11/09/2025 12:58 a.m.",
+            size: "Actualizado",
+            description: "Ficha técnica descargable en Word.",
+            previewUrl: "https://cdn-icons-png.flaticon.com/512/732/732223.png",
+            downloadUrl: "/ExampleWord.docx",
             linkUrl: null,
         },
 
@@ -232,55 +244,59 @@ export const projectDetailFiles = {
 
     ],
 
+
+
+
     mistersoldo: [
         {
             icon: "📄",
             name: "Descripción del Proyecto",
-            type: "Información",
-            date: "11/09/2025 12:47 a.m.",
+            type: "Texto",
+            date: "15/02/2025 ",
             size: "Actualizado",
-            description: "Mister Soldo es una plataforma musical diseñada...",
+            description: "Diseñé e implementé una landing page con enfoque Mobile First para el artista Mister Soldo, priorizando la navegación desde smartphones y la visualización rápida de contenido musical. La interfaz organiza la información en secciones claras y fluidas: un carrusel principal con imágenes destacadas, reproductores de video integrados desde YouTube, un apartado de exploración de álbumes con función drag & drop y una sección dedicada al último lanzamiento. Incorporé transiciones suaves y desplazamientos automáticos mediante Swiper.js, optimizando la experiencia visual sin sobrecargar la interfaz. El proyecto fue desplegado en Vercel, garantizando compatibilidad multiplataforma, rendimiento liviano y acceso inmediato desde cualquier dispositivo móvil.",
+            previewUrl: null,
+            downloadUrl: null,
+            linkUrl: null,
+        },
+        {
+            icon: "🖼️",
+            name: "Mister Soldo",
+            type: "Imagen",
+            date: "15/02/2025",
+            size: "Actualizado",
+            description: null,
             previewUrl: mr3,
             downloadUrl: null,
             linkUrl: null,
         },
         {
             icon: "🖼️",
-            name: "Imagen 1",
+            name: "Artista Musical",
             type: "Imagen",
-            date: "11/09/2025 12:50 a.m.",
-            size: "Actualizado",
-            description: null,
-            previewUrl: mr,
-            downloadUrl: null,
-            linkUrl: null,
-        },
-        {
-            icon: "🖼️",
-            name: "Imagen 2",
-            type: "Imagen",
-            date: "11/09/2025 12:51 a.m.",
+            date: "1/03/2025",
             size: "Actualizado",
             description: null,
             previewUrl: mr2,
             downloadUrl: null,
             linkUrl: null,
         },
+
         {
             icon: "💻",
             name: "Tecnologías Usadas",
-            type: "Documento",
-            date: "11/09/2025 12:55 a.m.",
+            type: "Texto e imagen",
+            date: "01/04/2025 ",
             size: "Actualizado",
             description: `
-                <div style="display: flex; flex-wrap: wrap; gap: 16px; align-items: center;">
-                    <img src="https://cdn-icons-png.flaticon.com/512/1126/1126012.png" alt="React" style="width: 48px; height: 48px;" title="React.js" />
-                    <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" style="width: 48px; height: 48px;" title="YouTube API" />
-                    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968672.png" alt="Vite" style="width: 48px; height: 48px;" title="Vite" />
-                    <span style="font-size: 14px; color: #555;">Swiper.js, Vercel</span>
-                </div>
-            `,
-            previewUrl: "https://cdn-icons-png.flaticon.com/512/2920/2920277.png",
+    <div style="display: flex; flex-wrap: wrap; gap: 16px; align-items: center;">
+        <img src="${react}" alt="React" style="width: auto; height: 48px;" title="React.js" />
+        <img src="${css}" alt="CSS3" style="width: auto; height: 48px;" title="CSS3" />
+        <img src="${js}" alt="JavaScript" style="width: auto; height: 48px;" title="JavaScript" />
+        <span style="font-size: 14px; color: #555;">Mobile Design</span>
+    </div>
+`,
+            previewUrl: null,
             downloadUrl: null,
             linkUrl: null,
         },
@@ -288,15 +304,71 @@ export const projectDetailFiles = {
             icon: "📑",
             name: "Ficha Técnica",
             type: "Word",
-            date: "11/09/2025 12:58 a.m.",
+            date: "25/03/2025 ",
             size: "Actualizado",
             description: "Ficha técnica descargable en Word.",
             previewUrl: "https://cdn-icons-png.flaticon.com/512/732/732223.png",
             downloadUrl: "/ExampleWord.docx",
             linkUrl: null,
         },
-    ],
 
+        {
+            icon: "🌐",
+            name: "Video Presentación",
+            type: "YouTube",
+            date: "25/03/2025 ",
+            size: "Actualizado",
+            description: "Recorre el proyecto con un video en YouTube.",
+            previewUrl: banner,
+            downloadUrl: null,
+            linkUrl: "https://www.youtube.com/",
+        },
+        {
+            icon: "🌐",
+            name: "GitHub",
+            type: "GitHub",
+            date: "25/03/2025 ",
+            size: "Actualizado",
+            description: "Repositorio del proyecto: https://github.com/ | Instagram: https://www.instagram.com/ | Website: https://martinacocina.netlify.app/",
+            previewUrl: banner,
+            downloadUrl: null,
+            linkUrl: "https://github.com/",
+        },
+        {
+            icon: "🌐",
+            name: "Instagram",
+            type: "Instagram",
+            date: "25/03/2025 ",
+            size: "Actualizado",
+            description: "Instagram oficial: https://www.instagram.com/ | Web: https://martinacocina.netlify.app/",
+            previewUrl: banner,
+            downloadUrl: null,
+            linkUrl: "https://www.instagram.com/",
+        },
+        {
+            icon: "🌐",
+            name: "Spotify",
+            type: "Spotify",
+            date: "25/03/2025 ",
+            size: "Actualizado",
+            description: "Instagram oficial: https://www.instagram.com/ | Web: https://martinacocina.netlify.app/",
+            previewUrl: banner,
+            downloadUrl: null,
+            linkUrl: "https://www.instagram.com/",
+        },
+        {
+            icon: "🌐",
+            name: "Sitio Web (Vercel)",
+            type: "Vercel",
+            date: "25/03/2025 ",
+            size: "Actualizado",
+            description: "Sitio desplegado en Vercel: https://martinacocina.netlify.app/",
+            previewUrl: banner,
+            downloadUrl: null,
+            linkUrl: "https://martinacocina.netlify.app/",
+        },
+
+    ],
     psicotranspersonal: [
         {
             icon: "📄",
