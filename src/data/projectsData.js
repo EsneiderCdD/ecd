@@ -12,8 +12,6 @@ import react from "@/assets/stack/react.png";
 
 import banner from "@/assets/images/banner.webp";
 
-
-
 import mr from "@/assets/images/mr.png";
 import mr2 from "@/assets/images/mr2.png";
 import mr3 from "@/assets/images/mr3.png";
@@ -56,23 +54,11 @@ export const projectsList = [
         icon: "📁",
         name: "Psicotranspersonal",
         type: "Proyecto Freelance",
-        date: "20/09/2025 ",
+        date: "1/06/2025 ",
         size: "Completado",
         path: "/projects/psicotranspersonal",
         description: "Desarrollé una plataforma web para una psicóloga independiente...",
         previewUrl: Psicotranspersonal1,
-        downloadUrl: null,
-        linkUrl: null,
-    },
-    {
-        icon: "📁",
-        name: "GUAU",
-        type: "Proyecto Personal",
-        date: "11/09/2025 12:47 a.m.",
-        size: "Desarrollo",
-        path: "/projects/guau",
-        description: "EN DESARROLLO... Plataforma integral de servicios y productos para mascotas...",
-        previewUrl: Guau,
         downloadUrl: null,
         linkUrl: null,
     },
@@ -88,6 +74,19 @@ export const projectsList = [
         downloadUrl: null,
         linkUrl: null,
     },
+    {
+        icon: "📁",
+        name: "Guau",
+        type: "Proyecto Personal",
+        date: "11/09/2025 12:47 a.m.",
+        size: "Desarrollo",
+        path: "/projects/guau",
+        description: "EN DESARROLLO... Plataforma integral de servicios y productos para mascotas...",
+        previewUrl: Guau,
+        downloadUrl: null,
+        linkUrl: null,
+    },
+
     {
         icon: "📁",
         name: "Trainit Trello",
@@ -369,55 +368,58 @@ export const projectDetailFiles = {
         },
 
     ],
+
+
     psicotranspersonal: [
         {
             icon: "📄",
             name: "Descripción del Proyecto",
-            type: "Información",
-            date: "11/09/2025 12:47 a.m.",
+            type: "Texto",
+            date: "1/03/2025 ",
             size: "Actualizado",
-            description: "Mister Soldo es una plataforma musical diseñada...",
+            description: "Desarrollé una página web profesional para una psicóloga independiente, utilizando React.js y Framer Motion para crear una interfaz moderna, fluida y alineada con su identidad de marca personal. Implementé un sistema de pagos propio mediante formularios seguros, reduciendo las comisiones de terceros del 10% al 3.5% y mejorando la rentabilidad del servicio. Incorporé métricas con Google Analytics para medir conversiones y analizar el comportamiento de los usuarios, brindando datos estratégicos para optimizar contenido y campañas. El sitio fue optimizado con Vite, logrando tiempos de carga mínimos, excelente rendimiento y una experiencia de navegación ágil tanto en móviles como en escritorio.",
+            previewUrl: null,
+            downloadUrl: null,
+            linkUrl: null,
+        },
+        {
+            icon: "🖼️",
+            name: "PsicoTranspersonal",
+            type: "Imagen",
+            date: "1/03/2025",
+            size: "Actualizado",
+            description: null,
             previewUrl: psicotranspersonal2,
             downloadUrl: null,
             linkUrl: null,
         },
         {
             icon: "🖼️",
-            name: "Imagen 1",
+            name: "Artista Musical",
             type: "Imagen",
-            date: "11/09/2025 12:50 a.m.",
-            size: "Actualizado",
-            description: null,
-            previewUrl: Psicotranspersonal1,
-            downloadUrl: null,
-            linkUrl: null,
-        },
-        {
-            icon: "🖼️",
-            name: "Imagen 2",
-            type: "Imagen",
-            date: "11/09/2025 12:51 a.m.",
+            date: "1/03/2025",
             size: "Actualizado",
             description: null,
             previewUrl: Psicotranspersonal3,
             downloadUrl: null,
             linkUrl: null,
         },
+
         {
             icon: "💻",
             name: "Tecnologías Usadas",
-            type: "Documento",
-            date: "11/09/2025 12:55 a.m.",
+            type: "Texto e imagen",
+            date: "01/04/2025 ",
             size: "Actualizado",
             description: `
-                <div style="display: flex; flex-wrap: wrap; gap: 16px; align-items: center;">
-                    <img src="https://cdn-icons-png.flaticon.com/512/1126/1126012.png" alt="React" style="width: 48px; height: 48px;" title="React.js" />
-                    <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" style="width: 48px; height: 48px;" title="YouTube API" />
-                    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968672.png" alt="Vite" style="width: 48px; height: 48px;" title="Vite" />
-                    <span style="font-size: 14px; color: #555;">Swiper.js, Vercel</span>
-                </div>
-            `,
-            previewUrl: "https://cdn-icons-png.flaticon.com/512/2920/2920277.png",
+    <div style="display: flex; flex-wrap: wrap; gap: 16px; align-items: center;">
+        <img src="${react}" alt="React" style="width: auto; height: 48px;" title="React.js" />
+        <img src="${css}" alt="CSS3" style="width: auto; height: 48px;" title="CSS3" />
+        <img src="${js}" alt="JavaScript" style="width: auto; height: 48px;" title="JavaScript" />
+        <span style="font-size: 14px; color: #555;">Mobile Design</span>
+    </div>
+`,
+            previewUrl: null,
             downloadUrl: null,
             linkUrl: null,
         },
@@ -425,14 +427,77 @@ export const projectDetailFiles = {
             icon: "📑",
             name: "Ficha Técnica",
             type: "Word",
-            date: "11/09/2025 12:58 a.m.",
+            date: "25/03/2025 ",
             size: "Actualizado",
             description: "Ficha técnica descargable en Word.",
             previewUrl: "https://cdn-icons-png.flaticon.com/512/732/732223.png",
             downloadUrl: "/ExampleWord.docx",
             linkUrl: null,
         },
+
+        {
+            icon: "🌐",
+            name: "Video Presentación",
+            type: "YouTube",
+            date: "25/03/2025 ",
+            size: "Actualizado",
+            description: "Recorre el proyecto con un video en YouTube.",
+            previewUrl: banner,
+            downloadUrl: null,
+            linkUrl: "https://www.youtube.com/",
+        },
+        {
+            icon: "🌐",
+            name: "GitHub",
+            type: "GitHub",
+            date: "25/03/2025 ",
+            size: "Actualizado",
+            description: "Repositorio del proyecto: https://github.com/ | Instagram: https://www.instagram.com/ | Website: https://martinacocina.netlify.app/",
+            previewUrl: banner,
+            downloadUrl: null,
+            linkUrl: "https://github.com/",
+        },
+        {
+            icon: "🌐",
+            name: "Instagram",
+            type: "Instagram",
+            date: "25/03/2025 ",
+            size: "Actualizado",
+            description: "Instagram oficial: https://www.instagram.com/ | Web: https://martinacocina.netlify.app/",
+            previewUrl: banner,
+            downloadUrl: null,
+            linkUrl: "https://www.instagram.com/",
+        },
+        {
+            icon: "🌐",
+            name: "Spotify",
+            type: "Spotify",
+            date: "25/03/2025 ",
+            size: "Actualizado",
+            description: "Instagram oficial: https://www.instagram.com/ | Web: https://martinacocina.netlify.app/",
+            previewUrl: banner,
+            downloadUrl: null,
+            linkUrl: "https://www.instagram.com/",
+        },
+        {
+            icon: "🌐",
+            name: "Sitio Web (Vercel)",
+            type: "Vercel",
+            date: "25/03/2025 ",
+            size: "Actualizado",
+            description: "Sitio desplegado en Vercel: https://martinacocina.netlify.app/",
+            previewUrl: banner,
+            downloadUrl: null,
+            linkUrl: "https://martinacocina.netlify.app/",
+        },
+
     ],
+
+
+
+
+
+
     guau: [
         {
             icon: "📄",
@@ -440,7 +505,7 @@ export const projectDetailFiles = {
             type: "Información",
             date: "11/09/2025 12:47 a.m.",
             size: "Actualizado",
-            description: "Mister Soldo es una plataforma musical diseñada...",
+            description: "Plataforma en desarrollo...",
             previewUrl: Guau,
             downloadUrl: null,
             linkUrl: null,
@@ -470,18 +535,18 @@ export const projectDetailFiles = {
         {
             icon: "💻",
             name: "Tecnologías Usadas",
-            type: "Documento",
-            date: "11/09/2025 12:55 a.m.",
+            type: "Texto e imagen",
+            date: "01/04/2025 ",
             size: "Actualizado",
             description: `
-                <div style="display: flex; flex-wrap: wrap; gap: 16px; align-items: center;">
-                    <img src="https://cdn-icons-png.flaticon.com/512/1126/1126012.png" alt="React" style="width: 48px; height: 48px;" title="React.js" />
-                    <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" style="width: 48px; height: 48px;" title="YouTube API" />
-                    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968672.png" alt="Vite" style="width: 48px; height: 48px;" title="Vite" />
-                    <span style="font-size: 14px; color: #555;">Swiper.js, Vercel</span>
-                </div>
-            `,
-            previewUrl: "https://cdn-icons-png.flaticon.com/512/2920/2920277.png",
+    <div style="display: flex; flex-wrap: wrap; gap: 16px; align-items: center;">
+        <img src="${react}" alt="React" style="width: auto; height: 48px;" title="React.js" />
+        <img src="${css}" alt="CSS3" style="width: auto; height: 48px;" title="CSS3" />
+        <img src="${js}" alt="JavaScript" style="width: auto; height: 48px;" title="JavaScript" />
+        <span style="font-size: 14px; color: #555;">Mobile Design</span>
+    </div>
+`,
+            previewUrl: null,
             downloadUrl: null,
             linkUrl: null,
         },
@@ -489,13 +554,14 @@ export const projectDetailFiles = {
             icon: "📑",
             name: "Ficha Técnica",
             type: "Word",
-            date: "11/09/2025 12:58 a.m.",
+            date: "25/03/2025 ",
             size: "Actualizado",
             description: "Ficha técnica descargable en Word.",
             previewUrl: "https://cdn-icons-png.flaticon.com/512/732/732223.png",
             downloadUrl: "/ExampleWord.docx",
             linkUrl: null,
         },
+
     ],
     framermotionlab: [
         {
