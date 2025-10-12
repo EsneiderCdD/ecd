@@ -4,7 +4,7 @@ import { Download, ExternalLink } from "lucide-react";
 
 
 function AboutInfoPanel({ file }) {
-  const [width, setWidth] = useState(280); // ancho inicial
+  const [width, setWidth] = useState(280);
   const isResizing = useRef(false);
 
   const handleMouseDown = () => {
@@ -46,18 +46,45 @@ function AboutInfoPanel({ file }) {
   // Determinar si es un archivo de imagen sin descripción
   const isImageOnly = file.type === "Imagen" && !file.description;
 
+  const getYouTubeEmbedUrl = (url) => {
+    try {
+      if (url.includes("youtu.be")) {
+        const id = url.split("youtu.be/")[1].split("?")[0];
+        return `https://www.youtube.com/embed/${id}`;
+      } else if (url.includes("youtube.com/watch")) {
+        const params = new URL(url).searchParams.get("v");
+        return `https://www.youtube.com/embed/${params}`;
+      }
+      return url;
+    } catch {
+      return url;
+    }
+  };
+
+
   return (
     <div className={styles.infoPanel} style={{ width: `${width}px` }}>
       <div className={styles.resizer} onMouseDown={handleMouseDown} />
 
-      {/* Imagen dinámica */}
+      {/* Imagen o video dinámico */}
       {file.previewUrl && (
         <div className={styles.imageBox}>
-          <img
-            src={file.previewUrl}
-            alt={`Vista previa de ${file.name}`}
-            className={styles.previewImage}
-          />
+          {file.previewUrl.includes("youtube.com") || file.previewUrl.includes("youtu.be") ? (
+            <iframe
+              className={styles.previewImage}
+              src={getYouTubeEmbedUrl(file.previewUrl)}
+              title={file.name}
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+          ) : (
+            <img
+              src={file.previewUrl}
+              alt={`Vista previa de ${file.name}`}
+              className={styles.previewImage}
+            />
+          )}
         </div>
       )}
 

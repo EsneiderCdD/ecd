@@ -20,9 +20,23 @@ import psicotranspersonal2 from "@/assets/images/psicotranspersonal2.webp";
 import Psicotranspersonal3 from "@/assets/images/Psicotranspersonal3.png";
 import Psicotranspersonal1 from "@/assets/images/Psicotranspersonal1.png";
 
+import fm from "@/assets/images/fm.png";
+import fm1 from "@/assets/images/fm1.png";
+import fm2 from "@/assets/images/fm2.png";
+import fm3 from "@/assets/images/fm3.png";
+import fm4 from "@/assets/images/fm4.png";
+
+import trainit from "@/assets/images/trainit.jpg";
+import trainit2 from "@/assets/images/trainit2.jpg";
+
+
 import Guau from "@/assets/images/Guau.png";
 import Guau2 from "@/assets/images/Guau2.png";
 import Guau3 from "@/assets/images/Guau3.png";
+
+import nocountry from "@/assets/images/nocountry.jpg";
+import nocountry2 from "@/assets/images/nocountry2.jpg";
+
 
 
 export const projectsList = [
@@ -64,13 +78,25 @@ export const projectsList = [
     },
     {
         icon: "📁",
-        name: "FramerMotionLab",
+        name: "Framer Motion Lab",
         type: "Proyecto Personal",
-        date: "11/09/2025 12:47 a.m.",
-        size: "Desarrollo",
+        date: "16/06/2025",
+        size: "Pausado",
         path: "/projects/framermotionlab",
         description: "EN DESARROLLO... Laboratorio de animaciones interactivas con Framer Motion...",
-        previewUrl: "https://cdn-icons-png.flaticon.com/512/5968/5968350.png",
+        previewUrl: fm4,
+        downloadUrl: null,
+        linkUrl: null,
+    },
+    {
+        icon: "📁",
+        name: "TrainIT",
+        type: "Proyecto Colaborativo",
+        date: "15/10/2025 12:47 a.m.",
+        size: "Finalizando",
+        path: "/projects/trainittrello",
+        description: "EN DESARROLLO... Plataforma diseñada para centralizar búsqueda y postulación...",
+        previewUrl: trainit,
         downloadUrl: null,
         linkUrl: null,
     },
@@ -86,19 +112,20 @@ export const projectsList = [
         downloadUrl: null,
         linkUrl: null,
     },
-
     {
         icon: "📁",
-        name: "Trainit Trello",
+        name: "NoCountry",
         type: "Proyecto Colaborativo",
-        date: "11/09/2025 12:47 a.m.",
-        size: "Finalizando",
-        path: "/projects/trainittrello",
+        date: "1/11/2025",
+        size: "Desarrollo",
+        path: "/projects/nocountry",
         description: "EN DESARROLLO... Plataforma diseñada para centralizar búsqueda y postulación...",
-        previewUrl: "https://cdn-icons-png.flaticon.com/512/5968/5968906.png",
+        previewUrl: nocountry,
         downloadUrl: null,
         linkUrl: null,
     },
+
+
     {
         icon: "📁",
         name: "Postulamania",
@@ -203,7 +230,7 @@ export const projectDetailFiles = {
             date: "25/02/2025 9:06 p.m.",
             size: "Actualizado",
             description: "Recorre el proyecto con un video en YouTube.",
-            previewUrl: banner,
+            previewUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
             downloadUrl: null,
             linkUrl: "https://www.youtube.com/",
         },
@@ -214,7 +241,7 @@ export const projectDetailFiles = {
             date: "25/02/2025 9:06 p.m.",
             size: "Actualizado",
             description: "Repositorio del proyecto: https://github.com/ | Instagram: https://www.instagram.com/ | Website: https://martinacocina.netlify.app/",
-            previewUrl: banner,
+            previewUrl: "https://img.icons8.com/ios-glyphs/512/github.png",  // ejemplo de icono GitHub
             downloadUrl: null,
             linkUrl: "https://github.com/",
         },
@@ -225,7 +252,7 @@ export const projectDetailFiles = {
             date: "25/02/2025 9:06 p.m.",
             size: "Actualizado",
             description: "Instagram oficial: https://www.instagram.com/ | Web: https://martinacocina.netlify.app/",
-            previewUrl: banner,
+            previewUrl: "https://img.icons8.com/ios-glyphs/512/instagram-new.png",  // ejemplo de icono Instagram
             downloadUrl: null,
             linkUrl: "https://www.instagram.com/",
         },
@@ -236,7 +263,7 @@ export const projectDetailFiles = {
             date: "25/02/2025 9:06 p.m.",
             size: "Actualizado",
             description: "Sitio desplegado en Vercel: https://martinacocina.netlify.app/",
-            previewUrl: banner,
+            previewUrl: "https://img.icons8.com/ios-glyphs/512/internet--v1.png",  // ejemplo de icono web
             downloadUrl: null,
             linkUrl: "https://martinacocina.netlify.app/",
         },
@@ -312,46 +339,35 @@ export const projectDetailFiles = {
         },
 
         {
-            icon: "🌐",
+            icon: "🎥",
             name: "Video Presentación",
             type: "YouTube",
-            date: "25/03/2025 ",
+            date: "25/02/2025 9:06 p.m.",
             size: "Actualizado",
             description: "Recorre el proyecto con un video en YouTube.",
-            previewUrl: banner,
+            previewUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
             downloadUrl: null,
             linkUrl: "https://www.youtube.com/",
         },
         {
-            icon: "🌐",
+            icon: "🐙",
             name: "GitHub",
             type: "GitHub",
-            date: "25/03/2025 ",
+            date: "25/02/2025 9:06 p.m.",
             size: "Actualizado",
             description: "Repositorio del proyecto: https://github.com/ | Instagram: https://www.instagram.com/ | Website: https://martinacocina.netlify.app/",
-            previewUrl: banner,
+            previewUrl: "https://img.icons8.com/ios-glyphs/512/github.png",  // ejemplo de icono GitHub
             downloadUrl: null,
             linkUrl: "https://github.com/",
         },
         {
-            icon: "🌐",
+            icon: "📸",
             name: "Instagram",
             type: "Instagram",
-            date: "25/03/2025 ",
+            date: "25/02/2025 9:06 p.m.",
             size: "Actualizado",
             description: "Instagram oficial: https://www.instagram.com/ | Web: https://martinacocina.netlify.app/",
-            previewUrl: banner,
-            downloadUrl: null,
-            linkUrl: "https://www.instagram.com/",
-        },
-        {
-            icon: "🌐",
-            name: "Spotify",
-            type: "Spotify",
-            date: "25/03/2025 ",
-            size: "Actualizado",
-            description: "Instagram oficial: https://www.instagram.com/ | Web: https://martinacocina.netlify.app/",
-            previewUrl: banner,
+            previewUrl: "https://img.icons8.com/ios-glyphs/512/instagram-new.png",  // ejemplo de icono Instagram
             downloadUrl: null,
             linkUrl: "https://www.instagram.com/",
         },
@@ -359,10 +375,10 @@ export const projectDetailFiles = {
             icon: "🌐",
             name: "Sitio Web (Vercel)",
             type: "Vercel",
-            date: "25/03/2025 ",
+            date: "25/02/2025 9:06 p.m.",
             size: "Actualizado",
             description: "Sitio desplegado en Vercel: https://martinacocina.netlify.app/",
-            previewUrl: banner,
+            previewUrl: "https://img.icons8.com/ios-glyphs/512/internet--v1.png",  // ejemplo de icono web
             downloadUrl: null,
             linkUrl: "https://martinacocina.netlify.app/",
         },
@@ -427,7 +443,7 @@ export const projectDetailFiles = {
             icon: "📑",
             name: "Ficha Técnica",
             type: "Word",
-            date: "25/03/2025 ",
+            date: "01/06/2025",
             size: "Actualizado",
             description: "Ficha técnica descargable en Word.",
             previewUrl: "https://cdn-icons-png.flaticon.com/512/732/732223.png",
@@ -436,46 +452,35 @@ export const projectDetailFiles = {
         },
 
         {
-            icon: "🌐",
+            icon: "🎥",
             name: "Video Presentación",
             type: "YouTube",
-            date: "25/03/2025 ",
+            date: "01/06/2025",
             size: "Actualizado",
             description: "Recorre el proyecto con un video en YouTube.",
-            previewUrl: banner,
+            previewUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
             downloadUrl: null,
             linkUrl: "https://www.youtube.com/",
         },
         {
-            icon: "🌐",
+            icon: "🐙",
             name: "GitHub",
             type: "GitHub",
-            date: "25/03/2025 ",
+            date: "01/06/2025",
             size: "Actualizado",
             description: "Repositorio del proyecto: https://github.com/ | Instagram: https://www.instagram.com/ | Website: https://martinacocina.netlify.app/",
-            previewUrl: banner,
+            previewUrl: "https://img.icons8.com/ios-glyphs/512/github.png",  // ejemplo de icono GitHub
             downloadUrl: null,
             linkUrl: "https://github.com/",
         },
         {
-            icon: "🌐",
+            icon: "📸",
             name: "Instagram",
             type: "Instagram",
-            date: "25/03/2025 ",
+            date: "01/06/2025",
             size: "Actualizado",
             description: "Instagram oficial: https://www.instagram.com/ | Web: https://martinacocina.netlify.app/",
-            previewUrl: banner,
-            downloadUrl: null,
-            linkUrl: "https://www.instagram.com/",
-        },
-        {
-            icon: "🌐",
-            name: "Spotify",
-            type: "Spotify",
-            date: "25/03/2025 ",
-            size: "Actualizado",
-            description: "Instagram oficial: https://www.instagram.com/ | Web: https://martinacocina.netlify.app/",
-            previewUrl: banner,
+            previewUrl: "https://img.icons8.com/ios-glyphs/512/instagram-new.png",  // ejemplo de icono Instagram
             downloadUrl: null,
             linkUrl: "https://www.instagram.com/",
         },
@@ -483,10 +488,10 @@ export const projectDetailFiles = {
             icon: "🌐",
             name: "Sitio Web (Vercel)",
             type: "Vercel",
-            date: "25/03/2025 ",
+            date: "01/06/2025",
             size: "Actualizado",
             description: "Sitio desplegado en Vercel: https://martinacocina.netlify.app/",
-            previewUrl: banner,
+            previewUrl: "https://img.icons8.com/ios-glyphs/512/internet--v1.png",  // ejemplo de icono web
             downloadUrl: null,
             linkUrl: "https://martinacocina.netlify.app/",
         },
@@ -563,55 +568,56 @@ export const projectDetailFiles = {
         },
 
     ],
-    framermotionlab: [
+    trainittrello: [
         {
             icon: "📄",
             name: "Descripción del Proyecto",
-            type: "Información",
-            date: "11/09/2025 12:47 a.m.",
+            type: "Texto",
+            date: "15/10/2025 ",
             size: "Actualizado",
-            description: "Mister Soldo es una plataforma musical diseñada...",
-            previewUrl: Guau,
+            description: "EN DESARROLLO",
+            previewUrl: null,
             downloadUrl: null,
             linkUrl: null,
         },
         {
             icon: "🖼️",
-            name: "Imagen 1",
+            name: "TrainIT",
             type: "Imagen",
-            date: "11/09/2025 12:50 a.m.",
+            date: "15/10/2025 ",
             size: "Actualizado",
             description: null,
-            previewUrl: Guau2,
+            previewUrl: trainit,
             downloadUrl: null,
             linkUrl: null,
         },
         {
             icon: "🖼️",
-            name: "Imagen 2",
+            name: "TrainIT (2)",
             type: "Imagen",
-            date: "11/09/2025 12:51 a.m.",
+            date: "15/10/2025  ",
             size: "Actualizado",
-            description: null,
-            previewUrl: Guau3,
+            description: "Pronto a entregar software.",
+            previewUrl: trainit2,
             downloadUrl: null,
             linkUrl: null,
         },
+
         {
             icon: "💻",
             name: "Tecnologías Usadas",
-            type: "Documento",
-            date: "11/09/2025 12:55 a.m.",
+            type: "Texto e imagen",
+            date: "1/06/2025 ",
             size: "Actualizado",
             description: `
-                <div style="display: flex; flex-wrap: wrap; gap: 16px; align-items: center;">
-                    <img src="https://cdn-icons-png.flaticon.com/512/1126/1126012.png" alt="React" style="width: 48px; height: 48px;" title="React.js" />
-                    <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" style="width: 48px; height: 48px;" title="YouTube API" />
-                    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968672.png" alt="Vite" style="width: 48px; height: 48px;" title="Vite" />
-                    <span style="font-size: 14px; color: #555;">Swiper.js, Vercel</span>
-                </div>
-            `,
-            previewUrl: "https://cdn-icons-png.flaticon.com/512/2920/2920277.png",
+    <div style="display: flex; flex-wrap: wrap; gap: 16px; align-items: center;">
+        <img src="${react}" alt="React" style="width: auto; height: 48px;" title="React.js" />
+        <img src="${css}" alt="CSS3" style="width: auto; height: 48px;" title="CSS3" />
+        <img src="${js}" alt="JavaScript" style="width: auto; height: 48px;" title="JavaScript" />
+        <span style="font-size: 14px; color: #555;">Mobile Design</span>
+    </div>
+`,
+            previewUrl: null,
             downloadUrl: null,
             linkUrl: null,
         },
@@ -619,7 +625,7 @@ export const projectDetailFiles = {
             icon: "📑",
             name: "Ficha Técnica",
             type: "Word",
-            date: "11/09/2025 12:58 a.m.",
+            date: "1/07/2025",
             size: "Actualizado",
             description: "Ficha técnica descargable en Word.",
             previewUrl: "https://cdn-icons-png.flaticon.com/512/732/732223.png",
@@ -627,6 +633,93 @@ export const projectDetailFiles = {
             linkUrl: null,
         },
     ],
+    framermotionlab: [
+        {
+            icon: "📄",
+            name: "Descripción del Proyecto",
+            type: "Texto",
+            date: "1/06/2025 ",
+            size: "Actualizado",
+            description: "EN DESARROLLO",
+            previewUrl: null,
+            downloadUrl: null,
+            linkUrl: null,
+        },
+        {
+            icon: "🖼️",
+            name: "Home",
+            type: "Imagen",
+            date: "20/06/2025 ",
+            size: "Actualizado",
+            description: "BREVE DESCRICIPN DE HOME",
+            previewUrl: fm,
+            downloadUrl: null,
+            linkUrl: null,
+        },
+        {
+            icon: "🖼️",
+            name: "Dashboard de Animaciones",
+            type: "Imagen",
+            date: "20/06/2025 ",
+            size: "Actualizado",
+            description: "animaciones y temas principales...",
+            previewUrl: fm1,
+            downloadUrl: null,
+            linkUrl: null,
+        },
+        {
+            icon: "🖼️",
+            name: "Explicaciones y Detalles",
+            type: "Imagen",
+            date: "20/06/2025 ",
+            size: "Actualizado",
+            description: "animaciones y temas principales...",
+            previewUrl: fm2,
+            downloadUrl: null,
+            linkUrl: null,
+        },
+        {
+            icon: "🖼️",
+            name: "Crear tu animacion",
+            type: "Imagen",
+            date: "20/06/2025 ",
+            size: "Actualizado",
+            description: "panel que permite configurar y crear animaciones directas",
+            previewUrl: fm3,
+            downloadUrl: null,
+            linkUrl: null,
+        },
+        {
+            icon: "💻",
+            name: "Tecnologías Usadas",
+            type: "Texto e imagen",
+            date: "1/06/2025 ",
+            size: "Actualizado",
+            description: `
+    <div style="display: flex; flex-wrap: wrap; gap: 16px; align-items: center;">
+        <img src="${react}" alt="React" style="width: auto; height: 48px;" title="React.js" />
+        <img src="${css}" alt="CSS3" style="width: auto; height: 48px;" title="CSS3" />
+        <img src="${js}" alt="JavaScript" style="width: auto; height: 48px;" title="JavaScript" />
+        <span style="font-size: 14px; color: #555;">Mobile Design</span>
+    </div>
+`,
+            previewUrl: null,
+            downloadUrl: null,
+            linkUrl: null,
+        },
+        {
+            icon: "📑",
+            name: "Ficha Técnica",
+            type: "Word",
+            date: "1/07/2025",
+            size: "Actualizado",
+            description: "Ficha técnica descargable en Word.",
+            previewUrl: "https://cdn-icons-png.flaticon.com/512/732/732223.png",
+            downloadUrl: "/ExampleWord.docx",
+            linkUrl: null,
+        },
+    ],
+
 
 
 };
