@@ -348,36 +348,6 @@
 
 
 
-.iconsStack {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  padding: 10px;
-  border-right: 1px solid gray;
-  margin-left: 5px;
-  flex: 1; /* 🔹 ocupa el resto de la barra */
-}
-
-.iconsStack p {
-  font-size: 14px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  margin-right: 5px;
-}
-
-.iconsStack .icon {
-  width: 18px;
-  height: 18px;
-  cursor: pointer;
-  transition: transform 0.2s ease, filter 0.2s ease;
-}
-
-.iconsStack .icon:hover {
-  transform: scale(1.1);
-  filter: brightness(1.2);
-}
-
-
-
 /* Fila seleccionada */
 .selectedRow {
   background-color: #e6f0ff;
