@@ -3,6 +3,7 @@ import martina1 from "@/assets/images/martina1.webp";
 import martina2 from "@/assets/images/martina2.webp";
 import martina3 from "@/assets/images/martina3.webp";
 import martina4 from "@/assets/images/martina4.webp";
+import martina5 from "@/assets/images/martina5.png";
 
 import banner from "@/assets/images/banner.webp";
 import ai from "@/assets/images/ai.png";
@@ -24,7 +25,7 @@ import Guau3 from "@/assets/images/Guau3.png";
 export const projectsList = [
     {
         icon: "📁",
-        name: "MartinaClandestina",
+        name: "Martina Clandestina",
         type: "Proyecto Freelance",
         date: "20/09/2025 9:06 p.m.",
         size: "Completado",
@@ -119,19 +120,19 @@ export const projectDetailFiles = {
         {
             icon: "📄",
             name: "Descripción del Proyecto",
-            type: "Información",
-            date: "20/09/2025 9:06 p.m.",
+            type: "Texto",
+            date: "15/01/2025 ",
             size: "Actualizado",
             description: "Desarrollé una carta digital dinámica con enfoque Mobile First para una marca de almuerzos local. El sistema permite navegar por los menús de cada día de la semana, señalando automáticamente el día actual, y facilita la realización de pedidos directos vía WhatsApp con autocompletado de datos del cliente y del pedido. La interfaz es ligera, clara y funcional, con animaciones sutiles y rutas dinámicas, optimizada para celulares. El contenido del menú se gestiona fácilmente desde un archivo data.js, eliminando la necesidad de bases de datos o paneles complejos, reduciendo costos y aumentando la autonomía de la marca.",
-            previewUrl: martina4,
+            previewUrl: null,
             downloadUrl: null,
-            linkUrl: "https://example.com/nn",
+            linkUrl: null,
         },
         {
             icon: "🖼️",
-            name: "Imagen 1",
+            name: "Martina Clandestina",
             type: "Imagen",
-            date: "20/09/2025 9:15 p.m.",
+            date: "30/01/2025",
             size: "Actualizado",
             description: null,
             previewUrl: martina3,
@@ -140,9 +141,9 @@ export const projectDetailFiles = {
         },
         {
             icon: "🖼️",
-            name: "Imagen 2",
+            name: "Cocina Martina",
             type: "Imagen",
-            date: "20/09/2025 9:16 p.m.",
+            date: "15/02/2025",
             size: "Actualizado",
             description: null,
             previewUrl: martina2,
@@ -151,12 +152,12 @@ export const projectDetailFiles = {
         },
         {
             icon: "🖼️",
-            name: "Imagen 3",
+            name: "Cocina Martina (1)",
             type: "Imagen",
             date: "20/09/2025 9:16 p.m.",
             size: "Actualizado",
             description: null,
-            previewUrl: martina1,
+            previewUrl: martina5,
             downloadUrl: null,
             linkUrl: null,
         },
@@ -175,7 +176,7 @@ export const projectDetailFiles = {
                     <span style="font-size: 14px; color: #555;">Responsive Design</span>
                 </div>
             `,
-            previewUrl: ai,
+            previewUrl: martina4,
             downloadUrl: null,
             linkUrl: null,
         },
@@ -333,7 +334,71 @@ export const projectDetailFiles = {
             linkUrl: null,
         },
     ],
-     guau: [
+    guau: [
+        {
+            icon: "📄",
+            name: "Descripción del Proyecto",
+            type: "Información",
+            date: "11/09/2025 12:47 a.m.",
+            size: "Actualizado",
+            description: "Mister Soldo es una plataforma musical diseñada...",
+            previewUrl: Guau,
+            downloadUrl: null,
+            linkUrl: null,
+        },
+        {
+            icon: "🖼️",
+            name: "Imagen 1",
+            type: "Imagen",
+            date: "11/09/2025 12:50 a.m.",
+            size: "Actualizado",
+            description: null,
+            previewUrl: Guau2,
+            downloadUrl: null,
+            linkUrl: null,
+        },
+        {
+            icon: "🖼️",
+            name: "Imagen 2",
+            type: "Imagen",
+            date: "11/09/2025 12:51 a.m.",
+            size: "Actualizado",
+            description: null,
+            previewUrl: Guau3,
+            downloadUrl: null,
+            linkUrl: null,
+        },
+        {
+            icon: "💻",
+            name: "Tecnologías Usadas",
+            type: "Documento",
+            date: "11/09/2025 12:55 a.m.",
+            size: "Actualizado",
+            description: `
+                <div style="display: flex; flex-wrap: wrap; gap: 16px; align-items: center;">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1126/1126012.png" alt="React" style="width: 48px; height: 48px;" title="React.js" />
+                    <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" style="width: 48px; height: 48px;" title="YouTube API" />
+                    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968672.png" alt="Vite" style="width: 48px; height: 48px;" title="Vite" />
+                    <span style="font-size: 14px; color: #555;">Swiper.js, Vercel</span>
+                </div>
+            `,
+            previewUrl: "https://cdn-icons-png.flaticon.com/512/2920/2920277.png",
+            downloadUrl: null,
+            linkUrl: null,
+        },
+        {
+            icon: "📑",
+            name: "Ficha Técnica",
+            type: "Word",
+            date: "11/09/2025 12:58 a.m.",
+            size: "Actualizado",
+            description: "Ficha técnica descargable en Word.",
+            previewUrl: "https://cdn-icons-png.flaticon.com/512/732/732223.png",
+            downloadUrl: "/ExampleWord.docx",
+            linkUrl: null,
+        },
+    ],
+    framermotionlab: [
         {
             icon: "📄",
             name: "Descripción del Proyecto",

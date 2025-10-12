@@ -217,25 +217,16 @@
 .details {
   font-size: 14px;
   line-height: 1.4;
-
-  display: -webkit-box;       
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 10;      
-  
-  display: box;               
-  box-orient: vertical;
-
-  line-clamp: 10;             
-  
-  overflow: hidden;
-  text-overflow: ellipsis;
+  overflow: visible;
+  text-overflow: unset;
+  display: block; 
 }
 
 .details p {
   font-size: 15px;
   font-weight: 100;
-  
 }
+
 
 .details h3 {
   margin-bottom: 10px;
