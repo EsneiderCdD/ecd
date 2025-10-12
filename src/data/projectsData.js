@@ -5,8 +5,13 @@ import martina3 from "@/assets/images/martina3.webp";
 import martina4 from "@/assets/images/martina4.webp";
 import martina5 from "@/assets/images/martina5.png";
 
+
+import css from "@/assets/stack/css.png";
+import js from "@/assets/stack/js.png";
+import react from "@/assets/stack/react.png";
+
 import banner from "@/assets/images/banner.webp";
-import ai from "@/assets/images/ai.png";
+
 
 
 import mr from "@/assets/images/mr.png";
@@ -123,7 +128,7 @@ export const projectDetailFiles = {
             type: "Texto",
             date: "15/01/2025 ",
             size: "Actualizado",
-            description: "Desarrollé una carta digital dinámica con enfoque Mobile First para una marca de almuerzos local. El sistema permite navegar por los menús de cada día de la semana, señalando automáticamente el día actual, y facilita la realización de pedidos directos vía WhatsApp con autocompletado de datos del cliente y del pedido. La interfaz es ligera, clara y funcional, con animaciones sutiles y rutas dinámicas, optimizada para celulares. El contenido del menú se gestiona fácilmente desde un archivo data.js, eliminando la necesidad de bases de datos o paneles complejos, reduciendo costos y aumentando la autonomía de la marca.",
+            description: "Desarrollé una carta digital dinámica con enfoque Mobile First para una marca de almuerzos local. El sistema permite na-egar por los menús de cada día de la semana, señalando automáticamente el día actual, y facilita la realización de pedidos directos vía WhatsApp con autocompletado de datos del cliente y del pedido. La interfaz es ligera, clara y funcional, con animaciones sutiles y rutas dinámicas, optimizada para celulares. El contenido del menú se gestiona fácilmente desde un archivo data.js, eliminando la necesidad de bases de datos o paneles complejos, reduciendo costos y aumentando la autonomía de la marca.",
             previewUrl: null,
             downloadUrl: null,
             linkUrl: null,
@@ -154,7 +159,7 @@ export const projectDetailFiles = {
             icon: "🖼️",
             name: "Cocina Martina (1)",
             type: "Imagen",
-            date: "20/09/2025 9:16 p.m.",
+            date: "15/02/2025 ",
             size: "Actualizado",
             description: null,
             previewUrl: martina5,
@@ -165,44 +170,66 @@ export const projectDetailFiles = {
             icon: "💻",
             name: "Tecnologías Usadas",
             type: "Documento",
-            date: "20/09/2025 9:20 p.m.",
+            date: "25/02/2025 ",
             size: "Actualizado",
             description: `
-                <div style="display: flex; flex-wrap: wrap; gap: 16px; align-items: center;">
-                    <img src="https://cdn-icons-png.flaticon.com/512/1126/1126012.png" alt="React" style="width: 48px; height: 48px;" title="React.js" />
-                    <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS3" style="width: 48px; height: 48px;" title="CSS3" />
-                    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" style="width: 48px; height: 48px;" title="WhatsApp API" />
-                    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968672.png" alt="Vite" style="width: 48px; height: 48px;" title="Vite" />
-                    <span style="font-size: 14px; color: #555;">Responsive Design</span>
-                </div>
-            `,
-            previewUrl: martina4,
+    <div style="display: flex; flex-wrap: wrap; gap: 16px; align-items: center;">
+        <img src="${react}" alt="React" style="width: auto; height: 48px;" title="React.js" />
+        <img src="${css}" alt="CSS3" style="width: auto; height: 48px;" title="CSS3" />
+        <img src="${js}" alt="JavaScript" style="width: auto; height: 48px;" title="JavaScript" />
+        <span style="font-size: 14px; color: #555;">Mobile Design</span>
+    </div>
+`,
+            previewUrl: null,
             downloadUrl: null,
             linkUrl: null,
         },
 
         {
-            icon: "📄",
-            name: "Contribuciones",
-            type: "Información",
-            date: "20/09/2025 9:06 p.m.",
+            icon: "🎥",
+            name: "Video Presentación",
+            type: "YouTube",
+            date: "25/02/2025 9:06 p.m.",
             size: "Actualizado",
-            description: "Desarrollé una carta digital dinámica para una marca de almuerzos local usando React.js, Vite, React Router y CSS, con enfoque Mobile First para facilitar el acceso desde celulares. Implementé navegación por días de la semana con señalización automática del día actual y un sistema de pedidos directo vía WhatsApp con autocompletado de datos del cliente y del pedido, simplificando la experiencia. La interfaz es ligera, clara y funcional, con animaciones sutiles y rutas dinámicas, y el contenido del menú se gestiona fácilmente desde un archivo data.js, evitando bases de datos o paneles complejos, reduciendo costos y aumentando la autonomía de la marca.",
+            description: "Recorre el proyecto con un video en YouTube.",
             previewUrl: banner,
             downloadUrl: null,
-            linkUrl: null,
+            linkUrl: "https://www.youtube.com/",
         },
         {
-            icon: "📑",
-            name: "Ficha Técnica",
-            type: "Word",
-            date: "20/09/2025 9:25 p.m.",
+            icon: "🐙",
+            name: "GitHub",
+            type: "GitHub",
+            date: "25/02/2025 9:06 p.m.",
             size: "Actualizado",
-            description: "Descarga la ficha técnica en formato Word.",
-            previewUrl: "https://cdn-icons-png.flaticon.com/512/732/732223.png",
-            downloadUrl: "/ExampleWord.docx",
-            linkUrl: null,
+            description: "Repositorio del proyecto: https://github.com/ | Instagram: https://www.instagram.com/ | Website: https://martinacocina.netlify.app/",
+            previewUrl: banner,
+            downloadUrl: null,
+            linkUrl: "https://github.com/",
         },
+        {
+            icon: "📸",
+            name: "Instagram",
+            type: "Instagram",
+            date: "25/02/2025 9:06 p.m.",
+            size: "Actualizado",
+            description: "Instagram oficial: https://www.instagram.com/ | Web: https://martinacocina.netlify.app/",
+            previewUrl: banner,
+            downloadUrl: null,
+            linkUrl: "https://www.instagram.com/",
+        },
+        {
+            icon: "🌐",
+            name: "Sitio Web (Vercel)",
+            type: "Vercel",
+            date: "25/02/2025 9:06 p.m.",
+            size: "Actualizado",
+            description: "Sitio desplegado en Vercel: https://martinacocina.netlify.app/",
+            previewUrl: banner,
+            downloadUrl: null,
+            linkUrl: "https://martinacocina.netlify.app/",
+        },
+
     ],
 
     mistersoldo: [
