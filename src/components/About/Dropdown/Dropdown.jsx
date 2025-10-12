@@ -1,3 +1,4 @@
+// src/components/About/Dropdown/Dropdown.jsx
 import { useState, useEffect, useRef } from "react";
 import {
   FilePlus,
@@ -10,12 +11,17 @@ import {
   Handshake,
 } from "lucide-react";
 import styles from "./Dropdown.module.css";
+import ContactModal from "@/components/ContactModal/ContactModal";
 
 function Dropdown() {
   const [isOpen, setIsOpen] = useState(false);
+  const [modalConfig, setModalConfig] = useState({
+    isOpen: false,
+    subject: "",
+  });
   const dropdownRef = useRef(null);
 
-  // 🔸 Cerrar menú al hacer clic fuera
+  // Cerrar menú al hacer clic fuera
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
@@ -26,50 +32,92 @@ function Dropdown() {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
+  const handleOptionClick = (subject) => {
+    setModalConfig({
+      isOpen: true,
+      subject: subject,
+    });
+    setIsOpen(false);
+  };
+
+  const closeModal = () => {
+    setModalConfig({
+      isOpen: false,
+      subject: "",
+    });
+  };
+
   return (
-    <div className={styles.dropdown} ref={dropdownRef}>
-      {/* Botón principal */}
-      <div
-        className={styles.dropdownToggle}
-        onClick={() => setIsOpen(!isOpen)}
-      >
-        <FilePlus className={styles.icon} />
-        <p>Nuevo</p>
-        <ChevronDown
-          className={`${styles.chevron} ${isOpen ? styles.rotate : ""}`}
-        />
+    <>
+      <div className={styles.dropdown} ref={dropdownRef}>
+        {/* Botón principal */}
+        <div
+          className={styles.dropdownToggle}
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          <FilePlus className={styles.icon} />
+          <p>Nuevo</p>
+          <ChevronDown
+            className={`${styles.chevron} ${isOpen ? styles.rotate : ""}`}
+          />
+        </div>
+
+        {/* Menú desplegable */}
+        {isOpen && (
+          <div className={styles.dropdownMenu}>
+            <div
+              className={styles.dropdownItem}
+              onClick={() => handleOptionClick("Nueva invitación a colaborar")}
+            >
+              <Users className={styles.itemIcon} />
+              Nueva invitación a colaborar
+            </div>
+            <div
+              className={styles.dropdownItem}
+              onClick={() => handleOptionClick("Nueva propuesta freelance")}
+            >
+              <Briefcase className={styles.itemIcon} />
+              Nueva propuesta freelance
+            </div>
+            <div
+              className={styles.dropdownItem}
+              onClick={() => handleOptionClick("Nueva oferta laboral")}
+            >
+              <FileText className={styles.itemIcon} />
+              Nueva oferta laboral
+            </div>
+            <div
+              className={styles.dropdownItem}
+              onClick={() => handleOptionClick("Nuevo proyecto")}
+            >
+              <FolderPlus className={styles.itemIcon} />
+              Nuevo proyecto
+            </div>
+            <div
+              className={styles.dropdownItem}
+              onClick={() => handleOptionClick("Nueva propuesta")}
+            >
+              <Handshake className={styles.itemIcon} />
+              Nueva propuesta
+            </div>
+            <div
+              className={styles.dropdownItem}
+              onClick={() => handleOptionClick("Nueva conversación")}
+            >
+              <MessageSquare className={styles.itemIcon} />
+              Nueva conversación / amigo :D
+            </div>
+          </div>
+        )}
       </div>
 
-      {/* Menú desplegable */}
-      {isOpen && (
-        <div className={styles.dropdownMenu}>
-          <div className={styles.dropdownItem}>
-            <Users className={styles.itemIcon} />
-            Nueva invitación a colaborar
-          </div>
-          <div className={styles.dropdownItem}>
-            <Briefcase className={styles.itemIcon} />
-            Nueva propuesta freelance
-          </div>
-          <div className={styles.dropdownItem}>
-            <FileText className={styles.itemIcon} />
-            Nueva oferta laboral
-          </div>
-          <div className={styles.dropdownItem}>
-            <FolderPlus className={styles.itemIcon} />
-            Nuevo proyecto
-          </div>
-          <div className={styles.dropdownItem}>
-            <Handshake className={styles.itemIcon} />
-            Nueva propuesta
-          </div>
-          <div className={styles.dropdownItem}>
-            <MessageSquare className={styles.itemIcon} />
-            Nueva conversación / amigo :D
-          </div>
-        </div>
-      )}
-    </div>
+      {/* Modal de contacto */}
+      <ContactModal
+        isOpen={modalConfig.isOpen}
+        onClose={closeModal}
+        subject={modalConfig.subject}
+      />
+    </>
   );
 }
 
