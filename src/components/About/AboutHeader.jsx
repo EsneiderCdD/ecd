@@ -16,20 +16,32 @@ function AboutHeader() {
       {/* Sección: GitHub, LinkedIn, Correo, etc */}
       <div className={styles.icons2}>
         {/* GitHub */}
-        <img
-          src="https://cdn-icons-png.flaticon.com/512/733/733553.png"
-          alt="GitHub"
-          title="GitHub"
-          className={styles.icon}
-        />
+        <a
+          href="https://github.com/EsneiderCdD" 
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/733/733553.png"
+            alt="GitHub"
+            title="GitHub"
+            className={styles.icon}
+          />
+        </a>
 
         {/* LinkedIn */}
-        <img
-          src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
-          alt="LinkedIn"
-          title="LinkedIn"
-          className={styles.icon}
-        />
+        <a
+          href="https://www.linkedin.com/in/esneidercdd/" // 🔹 Cambia por tu perfil real
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
+            alt="LinkedIn"
+            title="LinkedIn"
+            className={styles.icon}
+          />
+        </a>
 
         {/* Correo */}
         <img
