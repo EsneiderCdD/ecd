@@ -10,6 +10,17 @@ import mt3 from "@/assets/images/mt3.png";
 import mt4 from "@/assets/images/mt4.png";
 
 
+import mrs from "@/assets/images/mrs.png";
+import mrs2 from "@/assets/images/mrs2.png";
+import mrs3 from "@/assets/images/mrs3.png";
+import mrs4 from "@/assets/images/mrs4.png";
+import mrs5 from "@/assets/images/mrs5.png";
+import mrs6 from "@/assets/images/mrs6.png";
+
+
+
+
+
 
 import css from "@/assets/stack/css.png";
 import js from "@/assets/stack/js.png";
@@ -17,13 +28,19 @@ import react from "@/assets/stack/react.png";
 
 import banner from "@/assets/images/banner.webp";
 
-import mr from "@/assets/images/mr.png";
-import mr2 from "@/assets/images/mr2.png";
-import mr3 from "@/assets/images/mr3.png";
+
 
 import psicotranspersonal2 from "@/assets/images/psicotranspersonal2.webp";
 import Psicotranspersonal3 from "@/assets/images/Psicotranspersonal3.png";
 import Psicotranspersonal1 from "@/assets/images/Psicotranspersonal1.png";
+import ps1 from "@/assets/images/ps1.png";
+import ps2 from "@/assets/images/ps2.png";
+import ps3 from "@/assets/images/ps3.png";
+import ps4 from "@/assets/images/ps4.png";
+import ps5 from "@/assets/images/ps5.png";
+import ps6 from "@/assets/images/ps6.png";
+import ps7 from "@/assets/images/ps7.png";
+
 
 import fm from "@/assets/images/fm.png";
 import fm1 from "@/assets/images/fm1.png";
@@ -69,7 +86,7 @@ export const projectsList = [
         size: "Completado",
         path: "/projects/mistersoldo",
         description: "Mister Soldo es una plataforma musical diseñada para ofrecer contenido...",
-        previewUrl: mr,
+        previewUrl: mrs,
         downloadUrl: null,
         linkUrl: null,
     },
@@ -81,7 +98,7 @@ export const projectsList = [
         size: "Completado",
         path: "/projects/psicotranspersonal",
         description: "Desarrollé una plataforma web para una psicóloga independiente...",
-        previewUrl: Psicotranspersonal1,
+        previewUrl: ps1,
         downloadUrl: null,
         linkUrl: null,
     },
@@ -202,7 +219,7 @@ export const projectDetailFiles = {
             downloadUrl: null,
             linkUrl: null,
         },
-                {
+        {
             icon: "🖼️",
             name: "Contribución (4)",
             type: "Imagen y texto",
@@ -261,7 +278,7 @@ export const projectDetailFiles = {
             date: "25/02/2025 9:06 p.m.",
             size: "Actualizado",
             description: "Repositorio del proyecto: https://github.com/ | Instagram: https://www.instagram.com/ | Website: https://martinacocina.netlify.app/",
-            previewUrl: "https://img.icons8.com/ios-glyphs/512/github.png",  // ejemplo de icono GitHub
+            previewUrl: "https://img.icons8.com/ios-glyphs/512/github.png",
             downloadUrl: null,
             linkUrl: "https://github.com/",
         },
@@ -272,7 +289,7 @@ export const projectDetailFiles = {
             date: "25/02/2025 9:06 p.m.",
             size: "Actualizado",
             description: "Instagram oficial: https://www.instagram.com/ | Web: https://martinacocina.netlify.app/",
-            previewUrl: "https://img.icons8.com/ios-glyphs/512/instagram-new.png",  // ejemplo de icono Instagram
+            previewUrl: "https://img.icons8.com/ios-glyphs/512/instagram-new.png",
             downloadUrl: null,
             linkUrl: "https://www.instagram.com/",
         },
@@ -283,7 +300,7 @@ export const projectDetailFiles = {
             date: "25/02/2025 9:06 p.m.",
             size: "Actualizado",
             description: "Sitio desplegado en Vercel: https://martinacocina.netlify.app/",
-            previewUrl: "https://img.icons8.com/ios-glyphs/512/internet--v1.png",  // ejemplo de icono web
+            previewUrl: "https://img.icons8.com/ios-glyphs/512/internet--v1.png",
             downloadUrl: null,
             linkUrl: "https://martinacocina.netlify.app/",
         },
@@ -307,30 +324,41 @@ export const projectDetailFiles = {
         },
         {
             icon: "🖼️",
-            name: "Mister Soldo",
+            name: "Contribución (1)",
             type: "Imagen",
             date: "15/02/2025",
             size: "Actualizado",
-            description: null,
-            previewUrl: mr3,
+            description: "Diseñé e implementé una landing page con enfoque mobile",
+            previewUrl: mrs,
             downloadUrl: null,
             linkUrl: null,
         },
         {
             icon: "🖼️",
-            name: "Artista Musical",
+            name: "Contribución (2)",
             type: "Imagen",
             date: "1/03/2025",
             size: "Actualizado",
-            description: null,
-            previewUrl: mr2,
+            description: "Integré carruseles dinámicos con Swiper.js para presentar videos, clips y fotografías de forma fluida y atractiva.",
+            previewUrl: mrs2,
+            downloadUrl: null,
+            linkUrl: null,
+        },
+        {
+            icon: "🖼️",
+            name: "Contribución (3)",
+            type: "Imagen",
+            date: "1/03/2025",
+            size: "Actualizado",
+            description: "Desarrollé una experiencia interactiva con Framer Motion, incorporando gestos drag & drop para explorar álbumes y detalles musicales de manera inmersiva.",
+            previewUrl: mrs6,
             downloadUrl: null,
             linkUrl: null,
         },
 
         {
             icon: "💻",
-            name: "Tecnologías Usadas",
+            name: "Tecnologías Utilizadas",
             type: "Texto e imagen",
             date: "01/04/2025 ",
             size: "Actualizado",
@@ -354,7 +382,7 @@ export const projectDetailFiles = {
             size: "Actualizado",
             description: "Ficha técnica descargable en Word.",
             previewUrl: "https://cdn-icons-png.flaticon.com/512/732/732223.png",
-            downloadUrl: "/ExampleWord.docx",
+            downloadUrl: "/f-mrs.docx",
             linkUrl: null,
         },
 
@@ -376,7 +404,7 @@ export const projectDetailFiles = {
             date: "25/02/2025 9:06 p.m.",
             size: "Actualizado",
             description: "Repositorio del proyecto: https://github.com/ | Instagram: https://www.instagram.com/ | Website: https://martinacocina.netlify.app/",
-            previewUrl: "https://img.icons8.com/ios-glyphs/512/github.png",  // ejemplo de icono GitHub
+            previewUrl: "https://img.icons8.com/ios-glyphs/512/github.png",
             downloadUrl: null,
             linkUrl: "https://github.com/",
         },
@@ -387,7 +415,7 @@ export const projectDetailFiles = {
             date: "25/02/2025 9:06 p.m.",
             size: "Actualizado",
             description: "Instagram oficial: https://www.instagram.com/ | Web: https://martinacocina.netlify.app/",
-            previewUrl: "https://img.icons8.com/ios-glyphs/512/instagram-new.png",  // ejemplo de icono Instagram
+            previewUrl: "https://img.icons8.com/ios-glyphs/512/instagram-new.png",
             downloadUrl: null,
             linkUrl: "https://www.instagram.com/",
         },
@@ -398,7 +426,7 @@ export const projectDetailFiles = {
             date: "25/02/2025 9:06 p.m.",
             size: "Actualizado",
             description: "Sitio desplegado en Vercel: https://martinacocina.netlify.app/",
-            previewUrl: "https://img.icons8.com/ios-glyphs/512/internet--v1.png",  // ejemplo de icono web
+            previewUrl: "https://img.icons8.com/ios-glyphs/512/internet--v1.png",
             downloadUrl: null,
             linkUrl: "https://martinacocina.netlify.app/",
         },
@@ -420,26 +448,50 @@ export const projectDetailFiles = {
         },
         {
             icon: "🖼️",
-            name: "PsicoTranspersonal",
+            name: "Contribución (1)",
             type: "Imagen",
             date: "1/03/2025",
             size: "Actualizado",
-            description: null,
-            previewUrl: psicotranspersonal2,
+            description: "Lideré el proceso de análisis y levantamiento de requerimientos, aplicando entrevistas, sesiones de brainstorming, cuestionarios y encuestas, además de casos de uso y un mapa de calor de requerimientos para priorizar funcionalidades. El proceso incluyó benchmarking y un estudio de color y branding aplicado, definiendo una base visual y estratégica coherente con la identidad profesional de la psicóloga.",
+            previewUrl: ps1,
             downloadUrl: null,
             linkUrl: null,
         },
         {
             icon: "🖼️",
-            name: "Artista Musical",
+            name: "Contribución (2)",
             type: "Imagen",
             date: "1/03/2025",
             size: "Actualizado",
-            description: null,
-            previewUrl: Psicotranspersonal3,
+            description: "Diseñé y desarrollé una estructura web completa y responsiva, compuesta por componentes dinámicos como footer, secciones de servicios, área hero, información profesional, preguntas frecuentes, precios y términos y condiciones.",
+            previewUrl: ps2,
             downloadUrl: null,
             linkUrl: null,
         },
+        {
+            icon: "🖼️",
+            name: "Contribución (3)",
+            type: "Imagen",
+            date: "1/03/2025",
+            size: "Actualizado",
+            description: "Integré una pasarela de pagos segura (PayU) que redujo las comisiones externas del 10 % al 3.5 %, fortaleciendo la autonomía financiera y el control de reservas desde la propia web. Además, incorporé una configuración básica de Google Analytics para el seguimiento de métricas y reconocimiento digital, permitiendo medir el alcance y desempeño del sitio en tiempo real.",
+            previewUrl: ps5,
+            downloadUrl: null,
+            linkUrl: null,
+        },
+        {
+            icon: "🖼️",
+            name: "Contribución (4)",
+            type: "Imagen",
+            date: "1/03/2025",
+            size: "Actualizado",
+            description: "Implementé microinteracciones y animaciones con Framer Motion, aplicando efectos de entrada, transiciones suaves y realces luminosos en botones de acción para guiar la atención del usuario. Incorporé cambios sutiles de color y movimiento en textos y componentes, logrando una interfaz dinámica pero sobria. Complementé la experiencia con Swiper.js, integrando carruseles visuales, tarjetas animadas y una sección de comentarios personalizada según las preferencias de la psicóloga.",
+            previewUrl: ps6,
+            downloadUrl: null,
+            linkUrl: null,
+        },
+
+
 
         {
             icon: "💻",
@@ -467,7 +519,7 @@ export const projectDetailFiles = {
             size: "Actualizado",
             description: "Ficha técnica descargable en Word.",
             previewUrl: "https://cdn-icons-png.flaticon.com/512/732/732223.png",
-            downloadUrl: "/ExampleWord.docx",
+            downloadUrl: "/f-ps.docx",
             linkUrl: null,
         },
 
@@ -645,7 +697,7 @@ export const projectDetailFiles = {
             type: "Texto",
             date: "15/10/2025 ",
             size: "Actualizado",
-            description: "EN DESARROLLO",
+            description: "TrainIT Es un programa educativo y comunidad de simulación laboral gratuito, que ofrece ganar experiencia a través de la participación en MVPs multidisciplinarios sin fines de lucro, acompañados de seniors en diferentes nichos laborales. El objetivo es que los participantes amplíen su portafolios y mejoren su perfil profesional frente a las empresas activas del mercado.",
             previewUrl: null,
             downloadUrl: null,
             linkUrl: null,

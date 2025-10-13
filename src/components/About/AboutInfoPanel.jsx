@@ -116,7 +116,7 @@ function AboutInfoPanel({ file }) {
       {/* Descripción - no mostrar si es imagen sin descripción */}
       {!isImageOnly && file.description && (
         <div className={styles.details}>
-          <h3>Detalles</h3>
+        
           {/* Renderizar como HTML si contiene tags, sino como texto */}
           {typeof file.description === 'string' && file.description.includes('<') ? (
             <div dangerouslySetInnerHTML={{ __html: file.description }} />
