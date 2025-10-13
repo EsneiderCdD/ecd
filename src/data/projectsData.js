@@ -4,6 +4,11 @@ import martina2 from "@/assets/images/martina2.webp";
 import martina3 from "@/assets/images/martina3.webp";
 import martina4 from "@/assets/images/martina4.webp";
 import martina5 from "@/assets/images/martina5.png";
+import mt1 from "@/assets/images/mt1.png";
+import mt2 from "@/assets/images/mt2.png";
+import mt3 from "@/assets/images/mt3.png";
+import mt4 from "@/assets/images/mt4.png";
+
 
 
 import css from "@/assets/stack/css.png";
@@ -36,7 +41,6 @@ import gua3 from "@/assets/images/gua3.png";
 import guau4 from "@/assets/images/guau4.png";
 import guau5 from "@/assets/images/guau5.png";
 import guau6 from "@/assets/images/guau6.png";
-
 
 import Guau from "@/assets/images/Guau.png";
 import nocountry from "@/assets/images/nocountry.jpg";
@@ -167,41 +171,52 @@ export const projectDetailFiles = {
         },
         {
             icon: "🖼️",
-            name: "Martina Clandestina",
-            type: "Imagen",
+            name: "Contribución (1)",
+            type: "Imagen y texto",
             date: "30/01/2025",
             size: "Actualizado",
-            description: null,
-            previewUrl: martina3,
+            description: "Implementé navegación por días de la semana con detección automática del día actual y señalización visual.",
+            previewUrl: mt1,
             downloadUrl: null,
             linkUrl: null,
         },
         {
             icon: "🖼️",
-            name: "Cocina Martina",
-            type: "Imagen",
+            name: "Contribución (2)",
+            type: "Imagen y texto",
             date: "15/02/2025",
             size: "Actualizado",
-            description: null,
-            previewUrl: martina2,
+            description: "Desarrollé una carta digital dinámica con enfoque Mobile.Utilicé React.js, Vite y React Router. ",
+            previewUrl: mt2,
             downloadUrl: null,
             linkUrl: null,
         },
         {
             icon: "🖼️",
-            name: "Cocina Martina (1)",
-            type: "Imagen",
+            name: "Contribución (3)",
+            type: "Imagen y texto",
             date: "15/02/2025 ",
             size: "Actualizado",
-            description: null,
-            previewUrl: martina5,
+            description: "Incorporé animaciones sutiles, transiciones fluidas e identidad visual coherente con la marca, reforzando su narrativa y estilo original.",
+            previewUrl: mt3,
+            downloadUrl: null,
+            linkUrl: null,
+        },
+                {
+            icon: "🖼️",
+            name: "Contribución (4)",
+            type: "Imagen y texto",
+            date: "15/02/2025 ",
+            size: "Actualizado",
+            description: "Integré un sistema de pedidos por WhatsApp con mensajes autocompletados, reduciendo pasos manuales y manteniendo coherencia en la comunicación.",
+            previewUrl: mt4,
             downloadUrl: null,
             linkUrl: null,
         },
         {
             icon: "💻",
             name: "Tecnologías Usadas",
-            type: "Texto e imagen",
+            type: "Imagen y texto",
             date: "25/02/2025 ",
             size: "Actualizado",
             description: `
@@ -220,11 +235,11 @@ export const projectDetailFiles = {
             icon: "📑",
             name: "Ficha Técnica",
             type: "Word",
-            date: "11/09/2025 12:58 a.m.",
+            date: "11/09/2025",
             size: "Actualizado",
             description: "Ficha técnica descargable en Word.",
             previewUrl: "https://cdn-icons-png.flaticon.com/512/732/732223.png",
-            downloadUrl: "/ExampleWord.docx",
+            downloadUrl: "/f-fm.docx",
             linkUrl: null,
         },
 
