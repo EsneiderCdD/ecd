@@ -30,10 +30,15 @@ import trainit from "@/assets/images/trainit.jpg";
 import trainit2 from "@/assets/images/trainit2.jpg";
 
 
-import Guau from "@/assets/images/Guau.png";
-import Guau2 from "@/assets/images/Guau2.png";
-import Guau3 from "@/assets/images/Guau3.png";
+import gua from "@/assets/images/gua.png";
+import gua2 from "@/assets/images/gua2.png";
+import gua3 from "@/assets/images/gua3.png";
+import guau4 from "@/assets/images/guau4.png";
+import guau5 from "@/assets/images/guau5.png";
+import guau6 from "@/assets/images/guau6.png";
 
+
+import Guau from "@/assets/images/Guau.png";
 import nocountry from "@/assets/images/nocountry.jpg";
 import nocountry2 from "@/assets/images/nocountry2.jpg";
 
@@ -95,7 +100,7 @@ export const projectsList = [
         date: "15/10/2025 12:47 a.m.",
         size: "Finalizando",
         path: "/projects/trainittrello",
-        description: "EN DESARROLLO... Plataforma diseñada para centralizar búsqueda y postulación...",
+        description: "Es un programa educativo y comunidad de simulación laboral gratuito, que ofrece ganar experiencia a través de la participación en MVPs multidisciplinarios sin fines de lucro, acompañados de seniors en diferentes nichos laborales. El objetivo es que los participantes amplíen su portafolios y mejoren su perfil profesional frente a las empresas activas del mercado.",
         previewUrl: trainit,
         downloadUrl: null,
         linkUrl: null,
@@ -508,10 +513,55 @@ export const projectDetailFiles = {
             icon: "📄",
             name: "Descripción del Proyecto",
             type: "Información",
-            date: "11/09/2025 12:47 a.m.",
+            date: "11/09/2025",
             size: "Actualizado",
             description: "Plataforma en desarrollo...",
-            previewUrl: Guau,
+            previewUrl: gua,
+            downloadUrl: null,
+            linkUrl: null,
+        },
+        {
+            icon: "🖼️",
+            name: "Home",
+            type: "Imagen",
+            date: "11/09/2025 ",
+            size: "Actualizado",
+            description: "UNA DESCRIPCION DE LA IMAGEN",
+            previewUrl: gua,
+            downloadUrl: null,
+            linkUrl: null,
+        },
+        {
+            icon: "🖼️",
+            name: "Panel de perros para administrador",
+            type: "Imagen",
+            date: "11/09/2025",
+            size: "Actualizado",
+            description: null,
+            previewUrl: gua2,
+            downloadUrl: null,
+            linkUrl: null,
+        },
+        {
+            icon: "🖼️",
+            name: "Listado de perros",
+            type: "Imagen",
+            date: "11/09/2025 ",
+            size: "Actualizado",
+            description: null,
+            previewUrl: gua3,
+            downloadUrl: null,
+            linkUrl: null,
+        },
+
+        {
+            icon: "🖼️",
+            name: "Test de Compatibilidad",
+            type: "Imagen",
+            date: "11/09/2025 .",
+            size: "Actualizado",
+            description: null,
+            previewUrl: guau4,
             downloadUrl: null,
             linkUrl: null,
         },
@@ -519,21 +569,21 @@ export const projectDetailFiles = {
             icon: "🖼️",
             name: "Imagen 1",
             type: "Imagen",
-            date: "11/09/2025 12:50 a.m.",
+            date: "11/09/2025",
             size: "Actualizado",
             description: null,
-            previewUrl: Guau2,
+            previewUrl: guau5,
             downloadUrl: null,
             linkUrl: null,
         },
         {
             icon: "🖼️",
-            name: "Imagen 2",
+            name: "Imagen 1",
             type: "Imagen",
-            date: "11/09/2025 12:51 a.m.",
+            date: "11/09/2025",
             size: "Actualizado",
             description: null,
-            previewUrl: Guau3,
+            previewUrl: guau6,
             downloadUrl: null,
             linkUrl: null,
         },
@@ -568,6 +618,11 @@ export const projectDetailFiles = {
         },
 
     ],
+
+
+
+
+
     trainittrello: [
         {
             icon: "📄",
@@ -633,6 +688,10 @@ export const projectDetailFiles = {
             linkUrl: null,
         },
     ],
+
+
+
+
     framermotionlab: [
         {
             icon: "📄",
@@ -719,6 +778,78 @@ export const projectDetailFiles = {
             linkUrl: null,
         },
     ],
+
+
+
+
+
+
+    nocountry: [
+        {
+            icon: "📄",
+            name: "Descripción del Proyecto",
+            type: "Texto",
+            date: "15/10/2025 ",
+            size: "Actualizado",
+            description: "EN DESARROLLO",
+            previewUrl: null,
+            downloadUrl: null,
+            linkUrl: null,
+        },
+        {
+            icon: "🖼️",
+            name: "TrainIT",
+            type: "Imagen",
+            date: "15/10/2025 ",
+            size: "Actualizado",
+            description: null,
+            previewUrl: nocountry,
+            downloadUrl: null,
+            linkUrl: null,
+        },
+        {
+            icon: "🖼️",
+            name: "TrainIT (2)",
+            type: "Imagen",
+            date: "15/10/2025  ",
+            size: "Actualizado",
+            description: "Pronto a entregar software.",
+            previewUrl: nocountry2,
+            downloadUrl: null,
+            linkUrl: null,
+        },
+
+        {
+            icon: "💻",
+            name: "Tecnologías Usadas",
+            type: "Texto e imagen",
+            date: "1/06/2025 ",
+            size: "Actualizado",
+            description: `
+    <div style="display: flex; flex-wrap: wrap; gap: 16px; align-items: center;">
+        <img src="${react}" alt="React" style="width: auto; height: 48px;" title="React.js" />
+        <img src="${css}" alt="CSS3" style="width: auto; height: 48px;" title="CSS3" />
+        <img src="${js}" alt="JavaScript" style="width: auto; height: 48px;" title="JavaScript" />
+        <span style="font-size: 14px; color: #555;">Mobile Design</span>
+    </div>
+`,
+            previewUrl: null,
+            downloadUrl: null,
+            linkUrl: null,
+        },
+        {
+            icon: "📑",
+            name: "Ficha Técnica",
+            type: "Word",
+            date: "1/07/2025",
+            size: "Actualizado",
+            description: "Ficha técnica descargable en Word.",
+            previewUrl: "https://cdn-icons-png.flaticon.com/512/732/732223.png",
+            downloadUrl: "/ExampleWord.docx",
+            linkUrl: null,
+        },
+    ],
+
 
 
 
