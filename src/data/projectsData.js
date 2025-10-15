@@ -49,7 +49,10 @@ import fm3 from "@/assets/images/fm3.png";
 import fm4 from "@/assets/images/fm4.png";
 
 import trainit from "@/assets/images/trainit.jpg";
-import trainit2 from "@/assets/images/trainit2.jpg";
+import ti1 from "@/assets/images/ti1.png";
+import ti2 from "@/assets/images/ti2.png";
+import ti3 from "@/assets/images/ti3.png";
+
 
 
 import gua from "@/assets/images/gua.png";
@@ -541,7 +544,7 @@ export const projectDetailFiles = {
             date: "01/06/2025",
             size: "Actualizado",
             description: "Repositorio del proyecto: https://github.com/ | Instagram: https://www.instagram.com/ | Website: https://martinacocina.netlify.app/",
-            previewUrl: "https://img.icons8.com/ios-glyphs/512/github.png",  // ejemplo de icono GitHub
+            previewUrl: "https://img.icons8.com/ios-glyphs/512/github.png",  
             downloadUrl: null,
             linkUrl: "https://github.com/",
         },
@@ -552,7 +555,7 @@ export const projectDetailFiles = {
             date: "01/06/2025",
             size: "Actualizado",
             description: "Instagram oficial: https://www.instagram.com/ | Web: https://martinacocina.netlify.app/",
-            previewUrl: "https://img.icons8.com/ios-glyphs/512/instagram-new.png",  // ejemplo de icono Instagram
+            previewUrl: "https://img.icons8.com/ios-glyphs/512/instagram-new.png",  
             downloadUrl: null,
             linkUrl: "https://www.instagram.com/",
         },
@@ -563,8 +566,7 @@ export const projectDetailFiles = {
             date: "01/06/2025",
             size: "Actualizado",
             description: "Sitio desplegado en Vercel: https://martinacocina.netlify.app/",
-            previewUrl: "https://img.icons8.com/ios-glyphs/512/internet--v1.png",  // ejemplo de icono web
-            downloadUrl: null,
+            previewUrl: "https://img.icons8.com/ios-glyphs/512/internet--v1.png",  
             linkUrl: "https://martinacocina.netlify.app/",
         },
 
@@ -693,6 +695,7 @@ export const projectDetailFiles = {
 
 
 
+
     trainittrello: [
         {
             icon: "📄",
@@ -707,23 +710,34 @@ export const projectDetailFiles = {
         },
         {
             icon: "🖼️",
-            name: "TrainIT",
+            name: "Contribución (1)",
             type: "Imagen",
-            date: "15/10/2025 ",
+            date: "1/03/2025",
             size: "Actualizado",
-            description: null,
-            previewUrl: trainit,
+            description: " Mi participación en TrenIT se desarrolló bajo el rol de Full Stack Developer, con un enfoque predominante en el Frontend, aunque también realicé contribuciones sustanciales en el Backend durante las etapas iniciales e intermedias del proyecto. En las primeras fases, colaboré en la definición y aplicación de la arquitectura de estilos basada en System Color, propuesta por el equipo de UX/UI. Esta estructura establecía una jerarquía de colores primitivos y variables globales integradas con Tailwind CSS, lo que permitió mantener la coherencia visual y la escalabilidad del diseño en el desarrollo de los componentes. También participé en la organización inicial de la arquitectura frontend y en la estructuración de carpetas y patrones de diseño, siguiendo el enfoque MVC definido para el proyecto.",
+            previewUrl: ti1,
             downloadUrl: null,
             linkUrl: null,
         },
         {
             icon: "🖼️",
-            name: "TrainIT (2)",
+            name: "Contribución (2)",
             type: "Imagen",
-            date: "15/10/2025  ",
+            date: "1/03/2025",
             size: "Actualizado",
-            description: "Pronto a entregar software.",
-            previewUrl: trainit2,
+            description: "En una fase más avanzada, asumí la responsabilidad de desarrollar y optimizar el módulo de edición de tableros y tarjetas, implementando la funcionalidad de actualización de datos desde el backend y su sincronización con la interfaz. Esta tarea implicó trabajar con endpoints, formularios dinámicos y control de estados, integrando tanto la lógica del servidor como la del cliente.",
+            previewUrl: ti2,
+            downloadUrl: null,
+            linkUrl: null,
+        },
+        {
+            icon: "🖼️",
+            name: "Contribución (3)",
+            type: "Imagen",
+            date: "1/03/2025",
+            size: "Actualizado",
+            description: "Finalmente, participé en el desarrollo del sistema de arrastre y soltado (drag & drop), uno de los componentes más interactivos del proyecto. La implementación se realizó con la librería DndKit, cuidando aspectos de rendimiento como la prevención de re-renderizados innecesarios, el control de bucles infinitos y la optimización de estados locales y globales. Este componente se conectó al backend para mantener la persistencia de la posición y el estado de las tareas, consolidando una funcionalidad clave dentro de la experiencia de usuario.",
+            previewUrl: ti3,
             downloadUrl: null,
             linkUrl: null,
         },
@@ -732,7 +746,7 @@ export const projectDetailFiles = {
             icon: "💻",
             name: "Tecnologías Usadas",
             type: "Texto e imagen",
-            date: "1/06/2025 ",
+            date: "01/04/2025 ",
             size: "Actualizado",
             description: `
     <div style="display: flex; flex-wrap: wrap; gap: 16px; align-items: center;">
@@ -750,15 +764,60 @@ export const projectDetailFiles = {
             icon: "📑",
             name: "Ficha Técnica",
             type: "Word",
-            date: "1/07/2025",
+            date: "01/06/2025",
             size: "Actualizado",
             description: "Ficha técnica descargable en Word.",
             previewUrl: "https://cdn-icons-png.flaticon.com/512/732/732223.png",
-            downloadUrl: "/ExampleWord.docx",
+            downloadUrl: "/f-ps.docx",
             linkUrl: null,
         },
-    ],
 
+        {
+            icon: "🎥",
+            name: "Video Presentación",
+            type: "YouTube",
+            date: "01/06/2025",
+            size: "Actualizado",
+            description: "Recorre el proyecto con un video en YouTube.",
+            previewUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+            downloadUrl: null,
+            linkUrl: "https://www.youtube.com/",
+        },
+        {
+            icon: "🐙",
+            name: "GitHub",
+            type: "GitHub",
+            date: "01/06/2025",
+            size: "Actualizado",
+            description: "Repositorio del proyecto: https://github.com/ | Instagram: https://www.instagram.com/ | Website: https://martinacocina.netlify.app/",
+            previewUrl: "https://img.icons8.com/ios-glyphs/512/github.png",  
+            downloadUrl: null,
+            linkUrl: "https://github.com/",
+        },
+        {
+            icon: "📸",
+            name: "Instagram",
+            type: "Instagram",
+            date: "01/06/2025",
+            size: "Actualizado",
+            description: "Instagram oficial: https://www.instagram.com/ | Web: https://martinacocina.netlify.app/",
+            previewUrl: "https://img.icons8.com/ios-glyphs/512/instagram-new.png", 
+            downloadUrl: null,
+            linkUrl: "https://www.instagram.com/",
+        },
+        {
+            icon: "🌐",
+            name: "Sitio Web (Vercel)",
+            type: "Vercel",
+            date: "01/06/2025",
+            size: "Actualizado",
+            description: "Sitio desplegado en Vercel: https://martinacocina.netlify.app/",
+            previewUrl: "https://img.icons8.com/ios-glyphs/512/internet--v1.png",  
+            downloadUrl: null,
+            linkUrl: "https://martinacocina.netlify.app/",
+        },
+
+    ],
 
 
 
