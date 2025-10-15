@@ -1,45 +1,19 @@
-// src/data/projectsData.js
 import martina1 from "@/assets/images/martina1.webp";
-import martina2 from "@/assets/images/martina2.webp";
-import martina3 from "@/assets/images/martina3.webp";
-import martina4 from "@/assets/images/martina4.webp";
-import martina5 from "@/assets/images/martina5.png";
 import mt1 from "@/assets/images/mt1.png";
 import mt2 from "@/assets/images/mt2.png";
 import mt3 from "@/assets/images/mt3.png";
 import mt4 from "@/assets/images/mt4.png";
-
-
 import mrs from "@/assets/images/mrs.png";
 import mrs2 from "@/assets/images/mrs2.png";
-import mrs3 from "@/assets/images/mrs3.png";
-import mrs4 from "@/assets/images/mrs4.png";
-import mrs5 from "@/assets/images/mrs5.png";
 import mrs6 from "@/assets/images/mrs6.png";
-
-
-
-
-
 
 import css from "@/assets/stack/css.png";
 import js from "@/assets/stack/js.png";
 import react from "@/assets/stack/react.png";
-
-import banner from "@/assets/images/banner.webp";
-
-
-
-import psicotranspersonal2 from "@/assets/images/psicotranspersonal2.webp";
-import Psicotranspersonal3 from "@/assets/images/Psicotranspersonal3.png";
-import Psicotranspersonal1 from "@/assets/images/Psicotranspersonal1.png";
 import ps1 from "@/assets/images/ps1.png";
 import ps2 from "@/assets/images/ps2.png";
-import ps3 from "@/assets/images/ps3.png";
-import ps4 from "@/assets/images/ps4.png";
 import ps5 from "@/assets/images/ps5.png";
 import ps6 from "@/assets/images/ps6.png";
-import ps7 from "@/assets/images/ps7.png";
 
 
 import fm from "@/assets/images/fm.png";
@@ -53,20 +27,14 @@ import ti1 from "@/assets/images/ti1.png";
 import ti2 from "@/assets/images/ti2.png";
 import ti3 from "@/assets/images/ti3.png";
 
-
-
 import gua from "@/assets/images/gua.png";
-import gua2 from "@/assets/images/gua2.png";
+
 import gua3 from "@/assets/images/gua3.png";
 import guau4 from "@/assets/images/guau4.png";
-import guau5 from "@/assets/images/guau5.png";
-import guau6 from "@/assets/images/guau6.png";
 
 import Guau from "@/assets/images/Guau.png";
 import nocountry from "@/assets/images/nocountry.jpg";
-import nocountry2 from "@/assets/images/nocountry2.jpg";
-
-
+import { generateStackHTML } from './stackIcons';
 
 export const projectsList = [
     {
@@ -239,14 +207,7 @@ export const projectDetailFiles = {
             type: "Imagen y texto",
             date: "25/02/2025 ",
             size: "Actualizado",
-            description: `
-    <div style="display: flex; flex-wrap: wrap; gap: 16px; align-items: center;">
-        <img src="${react}" alt="React" style="width: auto; height: 48px;" title="React.js" />
-        <img src="${css}" alt="CSS3" style="width: auto; height: 48px;" title="CSS3" />
-        <img src="${js}" alt="JavaScript" style="width: auto; height: 48px;" title="JavaScript" />
-        <span style="font-size: 14px; color: #555;">Mobile Design</span>
-    </div>
-`,
+            description: generateStackHTML(['react', 'css', 'javascript', 'vite', 'mobileDesign']),
             previewUrl: null,
             downloadUrl: null,
             linkUrl: null,
@@ -365,14 +326,7 @@ export const projectDetailFiles = {
             type: "Texto e imagen",
             date: "01/04/2025 ",
             size: "Actualizado",
-            description: `
-    <div style="display: flex; flex-wrap: wrap; gap: 16px; align-items: center;">
-        <img src="${react}" alt="React" style="width: auto; height: 48px;" title="React.js" />
-        <img src="${css}" alt="CSS3" style="width: auto; height: 48px;" title="CSS3" />
-        <img src="${js}" alt="JavaScript" style="width: auto; height: 48px;" title="JavaScript" />
-        <span style="font-size: 14px; color: #555;">Mobile Design</span>
-    </div>
-`,
+            description: generateStackHTML(['react', 'framerMotion', 'swiper', 'css', 'javascript', 'vercel', 'mobileDesign']),
             previewUrl: null,
             downloadUrl: null,
             linkUrl: null,
@@ -920,30 +874,41 @@ export const projectDetailFiles = {
             type: "Texto",
             date: "15/10/2025 ",
             size: "Actualizado",
-            description: "EN DESARROLLO",
+            description: "TrainIT Es un programa educativo y comunidad de simulación laboral gratuito, que ofrece ganar experiencia a través de la participación en MVPs multidisciplinarios sin fines de lucro, acompañados de seniors en diferentes nichos laborales. El objetivo es que los participantes amplíen su portafolios y mejoren su perfil profesional frente a las empresas activas del mercado.",
             previewUrl: null,
             downloadUrl: null,
             linkUrl: null,
         },
         {
             icon: "🖼️",
-            name: "TrainIT",
+            name: "Contribución (1)",
             type: "Imagen",
-            date: "15/10/2025 ",
+            date: "1/03/2025",
             size: "Actualizado",
-            description: null,
-            previewUrl: nocountry,
+            description: " Asumí un rol de liderazgo en el desarrollo frontend, definiendo la estructura de carpetas, la organización del código y la aplicación de una arquitectura CSS basada en System Color, garantizando coherencia visual y escalabilidad en el diseño.",
+            previewUrl: null,
             downloadUrl: null,
             linkUrl: null,
         },
         {
             icon: "🖼️",
-            name: "TrainIT (2)",
+            name: "Contribución (2)",
             type: "Imagen",
-            date: "15/10/2025  ",
+            date: "1/03/2025",
             size: "Actualizado",
-            description: "Pronto a entregar software.",
-            previewUrl: nocountry2,
+            description: "Desarrollo de componentes reutilizables:Implementé componentes modulares y reutilizables —como botones, tablas y secciones dinámicas— empleando props y lógica adaptable para optimizar la eficiencia y la mantenibilidad del código.",
+            previewUrl: null,
+            downloadUrl: null,
+            linkUrl: null,
+        },
+        {
+            icon: "🖼️",
+            name: "Contribución (3)",
+            type: "Imagen",
+            date: "1/03/2025",
+            size: "Actualizado",
+            description: "Participé activamente en la coordinación del equipo frontend, supervisando integraciones, apoyando la resolución de conflictos y asegurando la correcta implementación de los lineamientos técnicos durante todo el proceso de desarrollo.",
+            previewUrl: null,
             downloadUrl: null,
             linkUrl: null,
         },
@@ -952,7 +917,7 @@ export const projectDetailFiles = {
             icon: "💻",
             name: "Tecnologías Usadas",
             type: "Texto e imagen",
-            date: "1/06/2025 ",
+            date: "01/04/2025 ",
             size: "Actualizado",
             description: `
     <div style="display: flex; flex-wrap: wrap; gap: 16px; align-items: center;">
@@ -970,13 +935,59 @@ export const projectDetailFiles = {
             icon: "📑",
             name: "Ficha Técnica",
             type: "Word",
-            date: "1/07/2025",
+            date: "01/06/2025",
             size: "Actualizado",
             description: "Ficha técnica descargable en Word.",
             previewUrl: "https://cdn-icons-png.flaticon.com/512/732/732223.png",
-            downloadUrl: "/ExampleWord.docx",
+            downloadUrl: "/f-ps.docx",
             linkUrl: null,
         },
+
+        {
+            icon: "🎥",
+            name: "Video Presentación",
+            type: "YouTube",
+            date: "01/06/2025",
+            size: "Actualizado",
+            description: "Recorre el proyecto con un video en YouTube.",
+            previewUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+            downloadUrl: null,
+            linkUrl: "https://www.youtube.com/",
+        },
+        {
+            icon: "🐙",
+            name: "GitHub",
+            type: "GitHub",
+            date: "01/06/2025",
+            size: "Actualizado",
+            description: "Repositorio del proyecto: https://github.com/ | Instagram: https://www.instagram.com/ | Website: https://martinacocina.netlify.app/",
+            previewUrl: "https://img.icons8.com/ios-glyphs/512/github.png",  
+            downloadUrl: null,
+            linkUrl: "https://github.com/",
+        },
+        {
+            icon: "📸",
+            name: "Instagram",
+            type: "Instagram",
+            date: "01/06/2025",
+            size: "Actualizado",
+            description: "Instagram oficial: https://www.instagram.com/ | Web: https://martinacocina.netlify.app/",
+            previewUrl: "https://img.icons8.com/ios-glyphs/512/instagram-new.png", 
+            downloadUrl: null,
+            linkUrl: "https://www.instagram.com/",
+        },
+        {
+            icon: "🌐",
+            name: "Sitio Web (Vercel)",
+            type: "Vercel",
+            date: "01/06/2025",
+            size: "Actualizado",
+            description: "Sitio desplegado en Vercel: https://martinacocina.netlify.app/",
+            previewUrl: "https://img.icons8.com/ios-glyphs/512/internet--v1.png",  
+            downloadUrl: null,
+            linkUrl: "https://martinacocina.netlify.app/",
+        },
+
     ],
 
 
