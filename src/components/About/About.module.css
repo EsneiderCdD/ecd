@@ -251,7 +251,7 @@
 .headerRow .date,
 .headerRow .type,
 .headerRow .size {
-  border-left: 1px solid #ddd;
+  border-left: 1px solid var(--border-light);
   padding-left: 8px;
 }
 
@@ -415,20 +415,6 @@
   opacity: 0.8;
 }
 
-.icons1 {
-  display: flex;
-  width: 115px;
-  border-right: 1px solid var(--border-header);
-  align-items: center;
-  padding: 10px;
-  margin-left: 5px;
-  gap: 5px;
-}
-
-.icons1 p {
-  font-size: 14px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
 
 .icons2 {
   display: flex;
@@ -455,17 +441,6 @@
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.icons4 {
-  display: flex;
-  width: 70px;
-  border-right: 1px solid var(--border-header);
-  gap: 5px;
-}
-
-.icons4 p {
-  font-size: 14px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
 
 .icons5 {
   display: flex;
@@ -479,20 +454,7 @@
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.icons6 {
-  display: flex;
-  min-width: 80px;
-  margin-left: 10px;
-  gap: 5px;
-  align-items: center;
-  font-size: 14px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
 
-/* Fila seleccionada */
-.selectedRow {
-  background-color: var(--selected-row);
-}
 
 /* --- EFECTOS HOVER --- */
 .icons2 a:hover .icon {
@@ -518,20 +480,8 @@
 .orderIcon {
   display: flex;
   align-items: center;
-
-  width: 18px;
-  height: 18px;
-  
-}
-
-
-
-
-
-.orderIcon {
   width: 18px;
   height: 18px;
   transition: transform 0.2s ease, opacity 0.2s ease;
-  transform: translateX(-5px); 
-
+  transform: translateX(-5px);
 }
