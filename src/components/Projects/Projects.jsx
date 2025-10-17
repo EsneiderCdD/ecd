@@ -7,17 +7,19 @@ import AboutInfoPanel from "../About/AboutInfoPanel";
 import styles from "../../components/About/About.module.css";
 import FileTable from "@/components/Common/FileTable";
 import { projectsList } from "@/data/projectsData";
+import { useSorting } from "@/hooks/useSorting";
 
 function Project() {
   const [selectedFile, setSelectedFile] = useState(null);
+  const { sortedData, handleSortChange } = useSorting(projectsList);
 
   return (
     <div className={styles.aboutContainer}>
-      <AboutHeader />
+      <AboutHeader onSortChange={handleSortChange} />
       <div className={styles.mainContent}>
         <AboutSidebar />
         <FileTable
-          files={projectsList}
+          files={sortedData}
           selectedFile={selectedFile}
           setSelectedFile={setSelectedFile}
         />

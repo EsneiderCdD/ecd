@@ -8,6 +8,7 @@ import AboutInfoPanel from "@/components/About/AboutInfoPanel";
 import FileTable from "@/components/common/FileTable";
 import styles from "@/components/About/About.module.css";
 import { projectDetailFiles } from "@/data/projectsData";
+import { useSorting } from "@/hooks/useSorting";
 
 function ProjectDetail() {
   const { projectId } = useParams();
@@ -15,14 +16,15 @@ function ProjectDetail() {
 
   // Obtener los archivos del proyecto actual
   const files = projectDetailFiles[projectId] || [];
+  const { sortedData, handleSortChange } = useSorting(files);
 
   return (
     <div className={styles.aboutContainer}>
-      <AboutHeader />
+      <AboutHeader onSortChange={handleSortChange} />
       <div className={styles.mainContent}>
         <AboutSidebar />
         <FileTable
-          files={files}
+          files={sortedData}
           selectedFile={selectedFile}
           setSelectedFile={setSelectedFile}
         />
