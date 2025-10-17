@@ -135,6 +135,19 @@ export const projectsList = [
         downloadUrl: null,
         linkUrl: null,
     },
+
+    {
+        icon: "📄",
+        name: "Tareas",
+        type: "Notas",
+        date: "16/10/2025",
+        size: "Desarrollo",
+        path: null,
+        description: "(1) Mejorar espaciado, iconos. (2)Completar Stack tecnológico. (3) Blanco y negro. (4) videos, contenido audiovisual. (5) pulir parrafos (6) Hacer postulomania ",
+        previewUrl: "https://cdn-icons-png.flaticon.com/512/3135/3135673.png",
+        downloadUrl: null,
+        linkUrl: null,
+    },
 ];
 
 
@@ -498,7 +511,7 @@ export const projectDetailFiles = {
             date: "01/06/2025",
             size: "Actualizado",
             description: "Repositorio del proyecto: https://github.com/ | Instagram: https://www.instagram.com/ | Website: https://martinacocina.netlify.app/",
-            previewUrl: "https://img.icons8.com/ios-glyphs/512/github.png",  
+            previewUrl: "https://img.icons8.com/ios-glyphs/512/github.png",
             downloadUrl: null,
             linkUrl: "https://github.com/",
         },
@@ -509,7 +522,7 @@ export const projectDetailFiles = {
             date: "01/06/2025",
             size: "Actualizado",
             description: "Instagram oficial: https://www.instagram.com/ | Web: https://martinacocina.netlify.app/",
-            previewUrl: "https://img.icons8.com/ios-glyphs/512/instagram-new.png",  
+            previewUrl: "https://img.icons8.com/ios-glyphs/512/instagram-new.png",
             downloadUrl: null,
             linkUrl: "https://www.instagram.com/",
         },
@@ -520,7 +533,7 @@ export const projectDetailFiles = {
             date: "01/06/2025",
             size: "Actualizado",
             description: "Sitio desplegado en Vercel: https://martinacocina.netlify.app/",
-            previewUrl: "https://img.icons8.com/ios-glyphs/512/internet--v1.png",  
+            previewUrl: "https://img.icons8.com/ios-glyphs/512/internet--v1.png",
             linkUrl: "https://martinacocina.netlify.app/",
         },
 
@@ -744,7 +757,7 @@ export const projectDetailFiles = {
             date: "01/06/2025",
             size: "Actualizado",
             description: "Repositorio del proyecto: https://github.com/ | Instagram: https://www.instagram.com/ | Website: https://martinacocina.netlify.app/",
-            previewUrl: "https://img.icons8.com/ios-glyphs/512/github.png",  
+            previewUrl: "https://img.icons8.com/ios-glyphs/512/github.png",
             downloadUrl: null,
             linkUrl: "https://github.com/",
         },
@@ -755,7 +768,7 @@ export const projectDetailFiles = {
             date: "01/06/2025",
             size: "Actualizado",
             description: "Instagram oficial: https://www.instagram.com/ | Web: https://martinacocina.netlify.app/",
-            previewUrl: "https://img.icons8.com/ios-glyphs/512/instagram-new.png", 
+            previewUrl: "https://img.icons8.com/ios-glyphs/512/instagram-new.png",
             downloadUrl: null,
             linkUrl: "https://www.instagram.com/",
         },
@@ -766,7 +779,7 @@ export const projectDetailFiles = {
             date: "01/06/2025",
             size: "Actualizado",
             description: "Sitio desplegado en Vercel: https://martinacocina.netlify.app/",
-            previewUrl: "https://img.icons8.com/ios-glyphs/512/internet--v1.png",  
+            previewUrl: "https://img.icons8.com/ios-glyphs/512/internet--v1.png",
             downloadUrl: null,
             linkUrl: "https://martinacocina.netlify.app/",
         },
@@ -961,7 +974,7 @@ export const projectDetailFiles = {
             date: "01/06/2025",
             size: "Actualizado",
             description: "Repositorio del proyecto: https://github.com/ | Instagram: https://www.instagram.com/ | Website: https://martinacocina.netlify.app/",
-            previewUrl: "https://img.icons8.com/ios-glyphs/512/github.png",  
+            previewUrl: "https://img.icons8.com/ios-glyphs/512/github.png",
             downloadUrl: null,
             linkUrl: "https://github.com/",
         },
@@ -972,7 +985,7 @@ export const projectDetailFiles = {
             date: "01/06/2025",
             size: "Actualizado",
             description: "Instagram oficial: https://www.instagram.com/ | Web: https://martinacocina.netlify.app/",
-            previewUrl: "https://img.icons8.com/ios-glyphs/512/instagram-new.png", 
+            previewUrl: "https://img.icons8.com/ios-glyphs/512/instagram-new.png",
             downloadUrl: null,
             linkUrl: "https://www.instagram.com/",
         },
@@ -983,14 +996,65 @@ export const projectDetailFiles = {
             date: "01/06/2025",
             size: "Actualizado",
             description: "Sitio desplegado en Vercel: https://martinacocina.netlify.app/",
-            previewUrl: "https://img.icons8.com/ios-glyphs/512/internet--v1.png",  
+            previewUrl: "https://img.icons8.com/ios-glyphs/512/internet--v1.png",
             downloadUrl: null,
             linkUrl: "https://martinacocina.netlify.app/",
         },
 
     ],
+    postulamania: [
+        {
+            icon: "📄",
+            name: "Descripción del Proyecto",
+            type: "Texto",
+            date: "15/10/2025 ",
+            size: "Actualizado",
+            description: "Postulomania esta en desarrolo y es para beneficio personal, scraping y mineria de texto.",
+            previewUrl: null,
+            downloadUrl: null,
+            linkUrl: null,
+        },
+        {
+            icon: "🖼️",
+            name: "Contribución (1)",
+            type: "Imagen",
+            date: "1/03/2025",
+            size: "Actualizado",
+            description: " Postulomania esta en desarrolo y es para beneficio personal, scraping y mineria de texto.",
+            previewUrl: null,
+            downloadUrl: null,
+            linkUrl: null,
+        },
+        {
+            icon: "💻",
+            name: "Tecnologías Usadas",
+            type: "Texto e imagen",
+            date: "01/04/2025 ",
+            size: "Actualizado",
+            description: `
+    <div style="display: flex; flex-wrap: wrap; gap: 16px; align-items: center;">
+        <img src="${react}" alt="React" style="width: auto; height: 48px;" title="React.js" />
+        <img src="${css}" alt="CSS3" style="width: auto; height: 48px;" title="CSS3" />
+        <img src="${js}" alt="JavaScript" style="width: auto; height: 48px;" title="JavaScript" />
+        <span style="font-size: 14px; color: #555;">Mobile Design</span>
+    </div>
+`,
+            previewUrl: null,
+            downloadUrl: null,
+            linkUrl: null,
+        },
+        {
+            icon: "📑",
+            name: "Ficha Técnica",
+            type: "Word",
+            date: "01/06/2025",
+            size: "Actualizado",
+            description: "Ficha técnica descargable en Word.",
+            previewUrl: "https://cdn-icons-png.flaticon.com/512/732/732223.png",
+            downloadUrl: "/f-ps.docx",
+            linkUrl: null,
+        },
 
-
-
-
+       
+    ],
 };
