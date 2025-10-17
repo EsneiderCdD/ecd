@@ -12,6 +12,7 @@
 .mainContent {
   display: flex;
   flex: 1;
+  background-color: var(--bg-primary);
 }
 
 /* Sidebar (izquierda) */
