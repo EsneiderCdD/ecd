@@ -734,7 +734,7 @@ export const projectDetailFiles = {
             description: "Ficha técnica descargable en Word.",
             previewUrl: "https://cdn-icons-png.flaticon.com/512/732/732223.png",
             downloadUrl: "/f-ps.docx",
-            linkUrl: null,
+            linkUrl: "https://drive.google.com/file/d/121q0VBHBzZFUY2NnQRVRooNCw1Lv38jI/view?usp=drive_link",
         },
 
         {
@@ -750,7 +750,7 @@ export const projectDetailFiles = {
         },
         {
             icon: "🐙",
-            name: "GitHub",
+            name: "Repositorio",
             type: "GitHub",
             date: "01/06/2025",
             size: "Actualizado",
@@ -759,28 +759,8 @@ export const projectDetailFiles = {
             downloadUrl: null,
             linkUrl: "https://github.com/",
         },
-        {
-            icon: "📸",
-            name: "Instagram",
-            type: "Instagram",
-            date: "01/06/2025",
-            size: "Actualizado",
-            description: "Instagram oficial: https://www.instagram.com/ | Web: https://martinacocina.netlify.app/",
-            previewUrl: "https://img.icons8.com/ios-glyphs/512/instagram-new.png",
-            downloadUrl: null,
-            linkUrl: "https://www.instagram.com/",
-        },
-        {
-            icon: "🌐",
-            name: "Sitio Web (Vercel)",
-            type: "Vercel",
-            date: "01/06/2025",
-            size: "Actualizado",
-            description: "Sitio desplegado en Vercel: https://martinacocina.netlify.app/",
-            previewUrl: "https://img.icons8.com/ios-glyphs/512/internet--v1.png",
-            downloadUrl: null,
-            linkUrl: "https://martinacocina.netlify.app/",
-        },
+
+
 
     ],
 
