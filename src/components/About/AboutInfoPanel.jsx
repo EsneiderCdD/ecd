@@ -92,7 +92,7 @@ function AboutInfoPanel({ file }) {
       {!isImageOnly && <h2 className={styles.title}>{file.name}</h2>}
 
       {/* Botones - mostrar solo si existen */}
-      {(file.downloadUrl || file.linkUrl) && (
+      {(file.downloadUrl || file.linkUrl || file.links) && (
         <div className={styles.buttons}>
           {file.downloadUrl && (
             <a href={file.downloadUrl} download>
@@ -102,13 +102,26 @@ function AboutInfoPanel({ file }) {
               </button>
             </a>
           )}
-          {file.linkUrl && (
-            <a href={file.linkUrl} target="_blank" rel="noopener noreferrer">
-              <button className={styles.winButton}>
-                <ExternalLink size={16} style={{ marginRight: "6px" }} />
-                Ver
-              </button>
-            </a>
+          {/* Si hay múltiples links como array */}
+          {file.links && Array.isArray(file.links) ? (
+            file.links.map((link, index) => (
+              <a key={index} href={link.url} target="_blank" rel="noopener noreferrer">
+                <button className={styles.winButton}>
+                  <ExternalLink size={16} style={{ marginRight: "6px" }} />
+                  {link.label || "Ver"}
+                </button>
+              </a>
+            ))
+          ) : (
+            /* Link individual (compatibilidad con formato anterior) */
+            file.linkUrl && (
+              <a href={file.linkUrl} target="_blank" rel="noopener noreferrer">
+                <button className={styles.winButton}>
+                  <ExternalLink size={16} style={{ marginRight: "6px" }} />
+                  Ver
+                </button>
+              </a>
+            )
           )}
         </div>
       )}

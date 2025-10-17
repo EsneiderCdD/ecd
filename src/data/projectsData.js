@@ -754,10 +754,13 @@ export const projectDetailFiles = {
             type: "GitHub",
             date: "01/06/2025",
             size: "Actualizado",
-            description: "Repositorio del proyecto: https://github.com/ | Instagram: https://www.instagram.com/ | Website: https://martinacocina.netlify.app/",
+            description: "Enlaces a los repositorios del proyecto TrainIT, incluyendo tanto el Frontend como el Backend desarrollados durante el proyecto.",
             previewUrl: "https://img.icons8.com/ios-glyphs/512/github.png",
             downloadUrl: null,
-            linkUrl: "https://github.com/",
+            links: [
+                { label: "Frontend", url: "https://github.com/Programa-TrainIT-Ar/fe-trelloop-grupo-2/tree/grupo-2" },
+                { label: "Backend", url: "https://github.com/Programa-TrainIT-Ar/be-trelloop-grupo-2/tree/grupo-2" }
+            ],
         },
 
 
