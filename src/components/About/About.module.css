@@ -1,3 +1,83 @@
+.searchContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 14px;
+  
+  width: 23rem ;
+
+  background: #3C3C3C;
+  border-radius: 18px; 
+}
+
+
+.searchIcon {
+  width: 16px;
+  height: 16px;
+  color: #B0B0B0; 
+  flex-shrink: 0;
+  transition: color 0.2s ease;
+}
+
+.searchInput {
+  flex: 1;
+  border: none;
+  background: transparent;
+  color: #FFFFFF; 
+  font-size: 13px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  outline: none;
+  padding: 4px 0;
+  min-width: 0;
+}
+
+.searchInput::placeholder {
+  color: #909090;
+  opacity: 1;
+}
+
+/* Efecto focus */
+.searchContainer:focus-within {
+  background: #424242; 
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2), 
+              0 0 0 1px rgba(255, 255, 255, 0.1);
+}
+
+.searchContainer:focus-within .searchIcon {
+  color: #E0E0E0; 
+}
+
+@media (max-width: 1200px) {
+  .searchContainer {
+    min-width: 280px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .searchContainer {
+    min-width: 220px;
+  }
+}
+
+@media (max-width: 768px) {
+  .searchContainer {
+    min-width: 180px;
+    padding: 5px 10px;
+    gap: 8px;
+  }
+  
+  .searchIcon {
+    width: 14px;
+    height: 14px;
+  }
+  
+  .searchInput {
+    font-size: 12px;
+  }
+}
+
+/* ===== ESTILOS EXISTENTES (mantener) ===== */
+
 .aboutContainer {
   display: flex;
   flex-direction: column;
@@ -7,6 +87,11 @@
 .header {
   height: 50px;
   background-color: var(--bg-header);
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  border-top: 1px solid var(--border-header);
+  border-bottom: 1px solid var(--border-header);
 }
 
 .mainContent {
@@ -31,7 +116,6 @@
   cursor: col-resize;
   position: absolute;
   right: 0;
-  /* ahora va al borde derecho del sidebar */
   top: 0;
   bottom: 0;
   background: transparent;
@@ -40,7 +124,6 @@
 .sidebarResizer:hover {
   background: rgba(0, 0, 0, 0.1);
 }
-
 
 .table {
   flex: 1;
@@ -88,10 +171,8 @@
   padding-left: 5px;
 }
 
-
 .name {
   min-width: 150px;
-
 }
 
 .date {
@@ -118,17 +199,8 @@
   position: relative;
   display: flex;
   flex-direction: column;
-}
-
-/* Línea de arrastre */
-.infoPanel {
-  background: var(--bg-panel);
-  border-left: 1px solid var(--border-color);
-  display: flex;
-  flex-direction: column;
   padding: 16px;
   gap: 16px;
-  position: relative;
 }
 
 .resizer {
@@ -174,7 +246,6 @@
   justify-content: space-between;
 }
 
-
 .winButton {
   display: flex;
   align-items: center;
@@ -215,7 +286,6 @@
   font-weight: 100;
 }
 
-
 .details h3 {
   margin-bottom: 10px;
 }
@@ -239,14 +309,6 @@
   font-weight: bold;
 }
 
-.header {
-  display: flex;
-  gap: 12px;
-  align-items: center;
-  border-top: 1px solid var(--border-header);
-  border-bottom: 1px solid var(--border-header);
-}
-
 .icon {
   width: 15px;
   height: 15px;
@@ -265,7 +327,6 @@
   opacity: 0.8;
 }
 
-
 .icons1 {
   display: flex;
   width: 115px;
@@ -274,17 +335,12 @@
   padding: 10px;
   margin-left: 5px;
   gap: 5px;
-
 }
 
 .icons1 p {
   font-size: 14px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
-
-
-
 
 .icons2 {
   display: flex;
@@ -294,32 +350,29 @@
   margin-left: 7px;
   border-right: 1px solid gray;
   padding-right: 15px;
-
 }
 
 .icons3 {
   display: flex;
   width: 95px;
   margin-left: 5px;
-
   border-right: 1px solid gray;
   gap: 5px;
 }
 
-.icons3 {
+.icons3 p {
   font-size: 14px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .icons4 {
-
   display: flex;
   width: 70px;
   border-right: 1px solid gray;
   gap: 5px;
 }
 
-.icons4 {
+.icons4 p {
   font-size: 14px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -331,7 +384,7 @@
   gap: 5px;
 }
 
-.icons5 {
+.icons5 p {
   font-size: 14px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -346,32 +399,26 @@
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-
-
 /* Fila seleccionada */
 .selectedRow {
   background-color: var(--selected-row);
 }
 
 /* --- EFECTOS HOVER --- */
-
-/* Efecto hover en íconos dentro de enlaces */
 .icons2 a:hover .icon {
   transform: scale(1.5);
   opacity: 0.8;
 }
 
-/* Efecto hover para tema, favorito y soporte */
 .themeIcon:hover .icon,
 .hoverIcon:hover {
   transform: scale(1.5);
   opacity: 0.8;
 }
 
-
 /* --- TAMAÑO ESPECIAL PARA ICONO DE SOPORTE --- */
 .supportIcon {
-  width: 18px;  
-  height: 18px;
-  vertical-align: middle; 
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
 }

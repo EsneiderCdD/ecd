@@ -1,17 +1,26 @@
-import styles from "./About.module.css";
+// src/components/About/AboutHeader.jsx
+import { useState } from "react";
 import {
   ArrowUpDown,
-  Layout,
   List,
   Moon,
   Sun,
+  Search,
 } from "lucide-react";
 
 import Dropdown from "./Dropdown/Dropdown";
 import { useTheme } from "@/context/ThemeContext";
+import styles from "./About.module.css";
 
 function AboutHeader() {
   const { theme, toggleTheme } = useTheme();
+  const [searchQuery, setSearchQuery] = useState("");
+
+  const handleSearchChange = (e) => {
+    setSearchQuery(e.target.value);
+    // TODO: Aquí irá la lógica de búsqueda cuando esté lista
+    // console.log("Buscando:", e.target.value);
+  };
 
   return (
     <div className={styles.header}>
@@ -82,20 +91,33 @@ function AboutHeader() {
           src="/icons/support.png"
           alt="Soporte"
           title="Soporte"
-          className={`${styles.icon} ${styles.hoverIcon} ${styles.supportIcon}` }
+          className={`${styles.icon} ${styles.hoverIcon} ${styles.supportIcon}`}
         />
       </div>
 
-      {/* Ordenar */}
+ 
+
+      {/* BUSCADOR - Reemplaza "Ver" */}
+      <div style={{ display: 'flex', alignItems: 'center', borderRight: '1px solid gray', paddingRight: '8px' }}>
+        <div className={styles.searchContainer}>
+          <Search 
+            className={styles.searchIcon} 
+            title="Buscar" 
+          />
+          <input
+            type="text"
+            placeholder="Buscar..."
+            value={searchQuery}
+            onChange={handleSearchChange}
+            className={styles.searchInput}
+          />
+        </div>
+      </div>
+
+           {/* Ordenar */}
       <div className={styles.icons3}>
         <ArrowUpDown className={styles.icon} title="Ordenar" />
         <p style={{ color: "var(--text-primary)" }}>Ordenar</p>
-      </div>
-
-      {/* Ver */}
-      <div className={styles.icons4}>
-        <Layout className={styles.icon} title="Ver" />
-        <p style={{ color: "var(--text-primary)" }}>Ver</p>
       </div>
 
       {/* Detalles */}
