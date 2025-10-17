@@ -63,3 +63,15 @@
   flex-shrink: 0;
   font-size: 16px;
 }
+
+.dropdownItem.active {
+  background-color: var(--selected-row);
+  color: var(--text-primary);
+}
+
+.checkmark {
+  margin-left: auto;
+  color: var(--text-primary);
+  font-weight: bold;
+  font-size: 14px;
+}

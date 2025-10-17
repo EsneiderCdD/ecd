@@ -15,7 +15,7 @@ import { projectsList, projectDetailFiles } from '@/data/projectsData';
 import { aboutFiles } from '@/data/aboutData';
 import styles from "./About.module.css";
 
-function AboutHeader() {
+function AboutHeader({ onSortChange }) {
   const { theme, toggleTheme } = useTheme();
   const [searchQuery, setSearchQuery] = useState("");
   const [searchResults, setSearchResults] = useState([]);
@@ -216,7 +216,7 @@ function AboutHeader() {
 
       {/* Ordenar */}
       <div className={styles.icons3}>
-        <SortDropdown />
+        <SortDropdown onSortChange={onSortChange} />
       </div>
 
       {/* Detalles */}
