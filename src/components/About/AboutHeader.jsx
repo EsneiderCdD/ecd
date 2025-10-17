@@ -32,7 +32,7 @@ function AboutHeader({ onSortChange }) {
   const handleSearchChange = (e) => {
     const query = e.target.value;
     setSearchQuery(query);
-    
+
     if (query.trim() === "") {
       setSearchResults([]);
       setShowResults(false);
@@ -40,17 +40,17 @@ function AboutHeader({ onSortChange }) {
     }
 
     // Buscar por nombre
-    const results = allSearchableData.filter(item => 
+    const results = allSearchableData.filter(item =>
       item.name.toLowerCase().includes(query.toLowerCase())
     );
-    
+
     setSearchResults(results.slice(0, 10)); // Limitar a 10 resultados
     setShowResults(true);
   };
 
   const handleResultClick = (item) => {
     let targetUrl = null;
-    
+
     if (item.category === 'project' && item.path) {
       // Navegar a la ruta del proyecto (carpeta)
       targetUrl = item.path;
@@ -59,10 +59,10 @@ function AboutHeader({ onSortChange }) {
       targetUrl = '/about';
     } else if (item.category === 'projectFile') {
       // Para archivos de proyectos, necesitamos encontrar a qué proyecto pertenecen
-      const projectKey = Object.keys(projectDetailFiles).find(key => 
+      const projectKey = Object.keys(projectDetailFiles).find(key =>
         projectDetailFiles[key].some(file => file.name === item.name)
       );
-      
+
       if (projectKey) {
         // Navegar a la página del proyecto específico
         const project = projectsList.find(p => p.path === `/projects/${projectKey}`);
@@ -71,12 +71,12 @@ function AboutHeader({ onSortChange }) {
         }
       }
     }
-    
+
     // Navegar si encontramos una URL válida
     if (targetUrl) {
       window.location.href = targetUrl;
     }
-    
+
     // Cerrar los resultados después de navegar
     setShowResults(false);
     setSearchQuery("");
@@ -183,7 +183,7 @@ function AboutHeader({ onSortChange }) {
             className={styles.searchInput}
           />
         </div>
-        
+
         {/* Resultados de búsqueda */}
         {showResults && searchResults.length > 0 && (
           <div className={styles.searchResults}>
@@ -202,9 +202,9 @@ function AboutHeader({ onSortChange }) {
                   <div className={styles.resultInfo}>
                     <div className={styles.resultName}>{item.name}</div>
                     <div className={styles.resultType}>
-                      {item.type} • {item.category === 'project' ? '📁 Proyecto' : 
-                                   item.category === 'about' ? '👤 Sobre mí' : 
-                                   '📄 Archivo'}
+                      {item.type} • {item.category === 'project' ? '📁 Proyecto' :
+                        item.category === 'about' ? '👤 Sobre mí' :
+                          '📄 Archivo'}
                     </div>
                   </div>
                 </div>
@@ -218,11 +218,21 @@ function AboutHeader({ onSortChange }) {
       <div className={styles.icons3}>
         <SortDropdown onSortChange={onSortChange} />
       </div>
+      {/* <img
+          src="https://cdn-icons-png.flaticon.com/512/833/833472.png"
+          alt="Feedback"
+          title="Feedback"
+          className={`${styles.icon} ${styles.hoverIcon}`}
+        /> */}
 
       {/* Detalles */}
       <div className={styles.icons5}>
-        <List className={styles.icon} title="Detalles" />
         <p style={{ color: "var(--text-primary)" }}>Detalles</p>
+        <img src="https://cdn-icons-png.flaticon.com/128/4117/4117081.png"
+          alt="Detalles"
+          title="Detalles"
+          className={styles.icon} />
+
       </div>
     </div>
   );
