@@ -1,13 +1,19 @@
 import styles from "./About.module.css";
 import {
-  ArrowUpDown, // Ordenar
-  Layout,      // Ver
-  List,        // Detalles
+  ArrowUpDown, 
+  Layout,      
+  List,   
+  Moon,
+  Sun,
 } from "lucide-react";
 
 import Dropdown from "./Dropdown/Dropdown";
+import { useTheme } from '@/context/ThemeContext';
 
 function AboutHeader() {
+
+  const { theme, toggleTheme } = useTheme();
+
   return (
     <div className={styles.header}>
       {/* Dropdown */}
@@ -92,6 +98,12 @@ function AboutHeader() {
       <div className={styles.icons5}>
         <List className={styles.icon} title="Detalles" />
         <p>Detalles</p>
+      </div>
+
+      {/* Tema */}
+      <div className={styles.icons6} onClick={toggleTheme} style={{cursor: 'pointer'}}>
+        {theme === 'light' ? <Moon className={styles.icon} title="Modo oscuro" /> : <Sun className={styles.icon} title="Modo claro" />}
+        <p>Tema</p>
       </div>
     </div>
   );
