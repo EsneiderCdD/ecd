@@ -54,19 +54,22 @@ function AboutHeader() {
           {theme === 'light' ? <Moon className={styles.icon} title="Modo oscuro" style={{color: 'var(--text-primary)'}} /> : <Sun className={styles.icon} title="Modo claro" style={{color: 'var(--text-primary)'}} />}
         </div>
 
-        {/* Correo */}
-        <img
-          src="https://cdn-icons-png.flaticon.com/512/732/732200.png"
-          alt="Correo"
-          title="Correo"
-          className={styles.icon}
-        />
+      
 
         {/* ❤️ Favorito */}
         <img
           src="https://cdn-icons-png.flaticon.com/512/833/833472.png"
           alt="Favorito"
           title="Favorito"
+          className={styles.icon}
+          
+        />
+
+          {/* Soporte */}
+        <img
+          src="/icons/support.png"
+          alt="Soporte"
+          title="Soporte"
           className={styles.icon}
         />
 
