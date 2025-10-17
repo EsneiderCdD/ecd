@@ -49,6 +49,11 @@ function AboutHeader() {
           />
         </a>
 
+        {/* Tema */}
+        <div onClick={toggleTheme} style={{cursor: 'pointer'}}>
+          {theme === 'light' ? <Moon className={styles.icon} title="Modo oscuro" /> : <Sun className={styles.icon} title="Modo claro" />}
+        </div>
+
         {/* Correo */}
         <img
           src="https://cdn-icons-png.flaticon.com/512/732/732200.png"
@@ -65,46 +70,26 @@ function AboutHeader() {
           className={styles.icon}
         />
 
-        {/* 📤 Compartir */}
-        <img
-          src="https://cdn-icons-png.flaticon.com/512/2958/2958783.png"
-          alt="Compartir"
-          title="Compartir"
-          className={styles.icon}
-        />
-
-        {/* 💌 Feedback */}
-        <img
-          src="https://cdn-icons-png.flaticon.com/512/2099/2099199.png"
-          alt="Feedback"
-          title="Feedback"
-          className={styles.icon}
-        />
       </div>
 
       {/* Ordenar */}
       <div className={styles.icons3}>
         <ArrowUpDown className={styles.icon} title="Ordenar" />
-        <p>Ordenar</p>
+        <p style={{color: 'var(--text-primary)'}}>Ordenar</p>
       </div>
 
       {/* Ver */}
       <div className={styles.icons4}>
         <Layout className={styles.icon} title="Ver" />
-        <p>Ver</p>
+        <p style={{color: 'var(--text-primary)'}}>Ver</p>
       </div>
 
       {/* Detalles */}
       <div className={styles.icons5}>
         <List className={styles.icon} title="Detalles" />
-        <p>Detalles</p>
+        <p style={{color: 'var(--text-primary)'}}>Detalles</p>
       </div>
 
-      {/* Tema */}
-      <div className={styles.icons6} onClick={toggleTheme} style={{cursor: 'pointer'}}>
-        {theme === 'light' ? <Moon className={styles.icon} title="Modo oscuro" /> : <Sun className={styles.icon} title="Modo claro" />}
-        <p>Tema</p>
-      </div>
     </div>
   );
 }
