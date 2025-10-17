@@ -367,3 +367,11 @@
   transform: scale(1.5);
   opacity: 0.8;
 }
+
+
+/* --- TAMAÑO ESPECIAL PARA ICONO DE SOPORTE --- */
+.supportIcon {
+  width: 20px;   /* o 22px si lo quieres un poco más grande */
+  height: 20px;
+  vertical-align: middle; /* mantiene buena alineación con los otros */
+}

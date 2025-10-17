@@ -72,8 +72,8 @@ function AboutHeader() {
         {/* ❤️ Favorito */}
         <img
           src="https://cdn-icons-png.flaticon.com/512/833/833472.png"
-          alt="Favorito"
-          title="Favorito"
+          alt="Feedback"
+          title="Feedback"
           className={`${styles.icon} ${styles.hoverIcon}`}
         />
 
@@ -82,7 +82,7 @@ function AboutHeader() {
           src="/icons/support.png"
           alt="Soporte"
           title="Soporte"
-          className={`${styles.icon} ${styles.hoverIcon}`}
+          className={`${styles.icon} ${styles.hoverIcon} ${styles.supportIcon}` }
         />
       </div>
 
