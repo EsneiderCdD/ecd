@@ -354,10 +354,10 @@
 
 .icons3 {
   display: flex;
-  width: 95px;
-  margin-left: 5px;
+  align-items: center;      
+  justify-content: center;   
+  width: 52px;
   border-right: 1px solid gray;
-  gap: 5px;
 }
 
 .icons3 p {
@@ -421,4 +421,27 @@
   width: 20px;
   height: 20px;
   vertical-align: middle;
+}
+
+
+/* Tamaño especial para el icono de ordenar */
+.orderIcon {
+  display: flex;
+  align-items: center;
+
+  width: 18px;
+  height: 18px;
+  
+}
+
+
+
+
+
+.orderIcon {
+  width: 18px;
+  height: 18px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  transform: translateX(-5px); 
+
 }

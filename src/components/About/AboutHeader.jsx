@@ -95,14 +95,14 @@ function AboutHeader() {
         />
       </div>
 
- 
+
 
       {/* BUSCADOR - Reemplaza "Ver" */}
       <div style={{ display: 'flex', alignItems: 'center', borderRight: '1px solid gray', paddingRight: '8px' }}>
         <div className={styles.searchContainer}>
-          <Search 
-            className={styles.searchIcon} 
-            title="Buscar" 
+          <Search
+            className={styles.searchIcon}
+            title="Buscar"
           />
           <input
             type="text"
@@ -114,10 +114,14 @@ function AboutHeader() {
         </div>
       </div>
 
-           {/* Ordenar */}
+      {/* Ordenar (solo icono con hover) */}
       <div className={styles.icons3}>
-        <ArrowUpDown className={styles.icon} title="Ordenar" />
-        <p style={{ color: "var(--text-primary)" }}>Ordenar</p>
+        <img
+          src="/icons/order.png"
+          alt="Ordenar"
+          title="Ordenar"
+          className={`${styles.icon} ${styles.hoverIcon} ${styles.orderIcon}`}
+        />
       </div>
 
       {/* Detalles */}
