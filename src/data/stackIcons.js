@@ -1,9 +1,32 @@
 // src/data/stackIcons.js
 
 // Importar iconos locales
-import cssIcon from "@/assets/stack/css.png";
-import jsIcon from "@/assets/stack/js.png";
-import reactIcon from "@/assets/stack/react.png";
+
+import boostrap from "@/assets/stack/boostrap.png";
+import tailwild from "@/assets/stack/tailwild.png";
+import css from "@/assets/stack/css.png"
+import flask from "@/assets/stack/flask.png";
+import googleanalytics from "@/assets/stack/googleanalytics.png";
+import js from "@/assets/stack/js.png";
+import openAI from "@/assets/stack/openAI.png";
+import postgresql from "@/assets/stack/postgresql.png";
+import python from "@/assets/stack/python.png";
+import payu from "@/assets/stack/payu.png";
+import ps from "@/assets/stack/ps.png";
+import react from "@/assets/stack/react.png";
+import swiper from "@/assets/stack/swiper.png";
+import ts from "@/assets/stack/ts.png";
+import next from "@/assets/stack/next.png";
+import zustand from "@/assets/stack/zustand.png";
+import cloudinary from "@/assets/stack/cloudinary.png";
+import discord from "@/assets/stack/discord.webp";
+import dndkit from "@/assets/stack/dndkit.png";
+import figma from "@/assets/stack/figma.png";
+import flasgger from "@/assets/stack/flasgger.png";
+import github from "@/assets/stack/github.webp";
+import git from "@/assets/stack/git.png";
+import pusher from "@/assets/stack/pusher.png";
+import sendgrid from "@/assets/stack/sendgrid.png";
 
 /**
  * Configuración centralizada de iconos del stack tecnológico
@@ -16,43 +39,65 @@ import reactIcon from "@/assets/stack/react.png";
  */
 export const stackIcons = {
   // Frontend
+
+  dndKit: {
+    src: dndkit,
+    alt: "DnD Kit",
+    title: "DnD Kit",
+    size: 48
+  },
+  zustand: {
+    src: zustand,
+    alt: "Zustand",
+    title: "Zustand",
+    size: 48
+  },
+
+  typescript: {
+    src: ts,
+    alt: "TypeScript",
+    title: "TypeScript",
+    size: 48
+  },
+
   react: {
-    src: reactIcon,
+    src: react,
     alt: "React",
     title: "React.js",
     size: 48
   },
+
+  next: {
+    src: next,
+    alt: "Next.js",
+    title: "Next.js",
+    size: 48
+  },
   
   css: {
-    src: cssIcon,
+    src: css,
     alt: "CSS3",
     title: "CSS3",
     size: 48
   },
   
   javascript: {
-    src: jsIcon,
+    src: js,
     alt: "JavaScript",
     title: "JavaScript ES6+",
     size: 48
   },
   
-  html: {
-    src: "https://cdn-icons-png.flaticon.com/512/732/732212.png",
-    alt: "HTML5",
-    title: "HTML5",
-    size: 48
-  },
   
   tailwind: {
-    src: "https://cdn-icons-png.flaticon.com/512/5968/5968672.png",
+    src: tailwild,
     alt: "Tailwind CSS",
     title: "Tailwind CSS",
     size: 48
   },
   
   bootstrap: {
-    src: "https://cdn-icons-png.flaticon.com/512/5968/5968672.png",
+    src: boostrap,
     alt: "Bootstrap",
     title: "Bootstrap",
     size: 48
@@ -73,30 +118,24 @@ export const stackIcons = {
   },
   
   // Backend
-  nodejs: {
-    src: "https://cdn-icons-png.flaticon.com/512/919/919825.png",
-    alt: "Node.js",
-    title: "Node.js",
+  python: {
+    src: python,
+    alt: "Python",
+    title: "Python",
     size: 48
   },
   
-  express: {
-    src: "https://cdn-icons-png.flaticon.com/512/919/919825.png",
-    alt: "Express",
-    title: "Express.js",
+  flask: {
+    src: flask,
+    alt: "Flask",
+    title: "Flask",
     size: 48
   },
-  
+
   // Bases de datos
-  mongodb: {
-    src: "https://cdn-icons-png.flaticon.com/512/919/919836.png",
-    alt: "MongoDB",
-    title: "MongoDB",
-    size: 48
-  },
   
   postgresql: {
-    src: "https://cdn-icons-png.flaticon.com/512/919/919836.png",
+    src: postgresql,
     alt: "PostgreSQL",
     title: "PostgreSQL",
     size: 48
@@ -104,14 +143,20 @@ export const stackIcons = {
   
   // Herramientas
   git: {
-    src: "https://cdn-icons-png.flaticon.com/512/733/733553.png",
+    src: git,
     alt: "Git",
     title: "Git",
     size: 48
   },
+  discord: {
+    src: discord,
+    alt: "Discord",
+    title: "Discord",
+    size: 48
+  },
   
   github: {
-    src: "https://cdn-icons-png.flaticon.com/512/733/733553.png",
+    src: github,
     alt: "GitHub",
     title: "GitHub",
     size: 48
@@ -125,7 +170,7 @@ export const stackIcons = {
   },
   
   figma: {
-    src: "https://cdn-icons-png.flaticon.com/512/5968/5968705.png",
+    src: figma,
     alt: "Figma",
     title: "Figma",
     size: 48
@@ -139,19 +184,31 @@ export const stackIcons = {
   },
   
   // Otros
+  pusher: {
+    src: pusher,
+    alt: "Pusher",
+    title: "Pusher",
+    size: 48
+  },
+  sendgrid: {
+    src: sendgrid,
+    alt: "SendGrid",
+    title: "SendGrid",
+    size: 48
+  },
   responsive: {
     src: "https://cdn-icons-png.flaticon.com/512/2920/2920277.png",
     alt: "Responsive Design",
     title: "Responsive Design",
     size: 48
   },
-  
-  seo: {
-    src: "https://cdn-icons-png.flaticon.com/512/2920/2920277.png",
-    alt: "SEO",
-    title: "SEO",
+  cloudinary: {
+    src: cloudinary,
+    alt: "Cloudinary",
+    title: "Cloudinary",
     size: 48
   },
+  
   
   analytics: {
     src: "https://cdn-icons-png.flaticon.com/512/2920/2920277.png",
@@ -166,25 +223,22 @@ export const stackIcons = {
     title: "Integración de Pagos",
     size: 48
   },
+
   
-  // Librería DnD
-  dndKit: {
-    src: "https://cdn-icons-png.flaticon.com/512/5968/5968672.png",
-    alt: "DnD Kit",
-    title: "DnD Kit",
-    size: 48
-  },
-  
-  // Texto adicional (para casos como "Mobile Design")
+  // Texto adicional
   mobileDesign: {
     text: "Mobile Design",
     size: 14
   },
-  
-  fullStack: {
-    text: "Full Stack",
+  flaskenv: {
+    text: "Migrate, Alembic, CORS, JWT-Extended, Flasgger, Bcrypt, SocketIO",
     size: 14
-  }
+  },
+  fechas: {
+    text: "date-fns, react-datepicker",
+    size: 14
+  },
+  
 };
 
 /**

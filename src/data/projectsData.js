@@ -717,17 +717,10 @@ export const projectDetailFiles = {
         {
             icon: "💻",
             name: "Tecnologías Usadas",
-            type: "Texto e imagen",
-            date: "01/04/2025 ",
+            type: "Imagen y texto",
+            date: "25/02/2025 ",
             size: "Actualizado",
-            description: `
-    <div style="display: flex; flex-wrap: wrap; gap: 16px; align-items: center;">
-        <img src="${react}" alt="React" style="width: auto; height: 48px;" title="React.js" />
-        <img src="${css}" alt="CSS3" style="width: auto; height: 48px;" title="CSS3" />
-        <img src="${js}" alt="JavaScript" style="width: auto; height: 48px;" title="JavaScript" />
-        <span style="font-size: 14px; color: #555;">Mobile Design</span>
-    </div>
-`,
+            description: generateStackHTML([ 'git', 'github', 'figma', 'typescript', 'tailwind', 'fechas', 'next', 'react', 'zustand', 'dndKit', 'python', 'postgresql', 'flask', 'flaskenv', 'pusher', 'sendgrid', 'cloudinary']),
             previewUrl: null,
             downloadUrl: null,
             linkUrl: null,
