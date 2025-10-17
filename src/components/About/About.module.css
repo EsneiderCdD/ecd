@@ -371,7 +371,7 @@
 
 /* --- TAMAÑO ESPECIAL PARA ICONO DE SOPORTE --- */
 .supportIcon {
-  width: 18px;   /* o 22px si lo quieres un poco más grande */
+  width: 18px;  
   height: 18px;
-  vertical-align: middle; /* mantiene buena alineación con los otros */
+  vertical-align: middle; 
 }
