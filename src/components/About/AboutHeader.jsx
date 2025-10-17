@@ -48,15 +48,37 @@ function AboutHeader() {
   };
 
   const handleResultClick = (item) => {
+    let targetUrl = null;
+    
     if (item.category === 'project' && item.path) {
-      // Navegar a la ruta del proyecto
-      window.location.href = item.path;
-    } else {
-      // Mostrar en el panel (esto se manejará en el componente padre)
-      // Por ahora solo cerramos los resultados
-      setShowResults(false);
-      setSearchQuery("");
+      // Navegar a la ruta del proyecto (carpeta)
+      targetUrl = item.path;
+    } else if (item.category === 'about') {
+      // Navegar a la página About donde están los archivos
+      targetUrl = '/about';
+    } else if (item.category === 'projectFile') {
+      // Para archivos de proyectos, necesitamos encontrar a qué proyecto pertenecen
+      const projectKey = Object.keys(projectDetailFiles).find(key => 
+        projectDetailFiles[key].some(file => file.name === item.name)
+      );
+      
+      if (projectKey) {
+        // Navegar a la página del proyecto específico
+        const project = projectsList.find(p => p.path === `/projects/${projectKey}`);
+        if (project) {
+          targetUrl = project.path;
+        }
+      }
     }
+    
+    // Navegar si encontramos una URL válida
+    if (targetUrl) {
+      window.location.href = targetUrl;
+    }
+    
+    // Cerrar los resultados después de navegar
+    setShowResults(false);
+    setSearchQuery("");
   };
 
   // Cerrar resultados al hacer click fuera
@@ -178,7 +200,11 @@ function AboutHeader() {
                   <span className={styles.resultIcon}>{item.icon || '📄'}</span>
                   <div className={styles.resultInfo}>
                     <div className={styles.resultName}>{item.name}</div>
-                    <div className={styles.resultType}>{item.type} • {item.category}</div>
+                    <div className={styles.resultType}>
+                      {item.type} • {item.category === 'project' ? '📁 Proyecto' : 
+                                   item.category === 'about' ? '👤 Sobre mí' : 
+                                   '📄 Archivo'}
+                    </div>
                   </div>
                 </div>
               ))}
