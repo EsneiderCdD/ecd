@@ -116,12 +116,20 @@ function AboutInfoPanel({ file }) {
       {/* Descripción - no mostrar si es imagen sin descripción */}
       {!isImageOnly && file.description && (
         <div className={styles.details}>
-        
-          {/* Renderizar como HTML si contiene tags, sino como texto */}
-          {typeof file.description === 'string' && file.description.includes('<') ? (
-            <div dangerouslySetInnerHTML={{ __html: file.description }} />
+          {/* Si es un array de descripciones, renderizar cada una como párrafo separado */}
+          {Array.isArray(file.description) ? (
+            file.description.map((desc, index) => (
+              <p key={index} className={styles.descriptionParagraph}>
+                {desc}
+              </p>
+            ))
           ) : (
-            <p>{file.description}</p>
+            /* Renderizar como HTML si contiene tags, sino como texto */
+            typeof file.description === 'string' && file.description.includes('<') ? (
+              <div dangerouslySetInnerHTML={{ __html: file.description }} />
+            ) : (
+              <p>{file.description}</p>
+            )
           )}
         </div>
       )}

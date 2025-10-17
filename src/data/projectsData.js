@@ -677,11 +677,14 @@ export const projectDetailFiles = {
         },
         {
             icon: "🖼️",
-            name: "Contribución (1)",
+            name: "Mi rol en TrainIT",
             type: "Imagen",
             date: "1/03/2025",
             size: "Actualizado",
-            description: " Mi participación en TrenIT se desarrolló bajo el rol de Full Stack Developer, con un enfoque predominante en el Frontend, aunque también realicé contribuciones sustanciales en el Backend durante las etapas iniciales e intermedias del proyecto. En las primeras fases, colaboré en la definición y aplicación de la arquitectura de estilos basada en System Color, propuesta por el equipo de UX/UI. Esta estructura establecía una jerarquía de colores primitivos y variables globales integradas con Tailwind CSS, lo que permitió mantener la coherencia visual y la escalabilidad del diseño en el desarrollo de los componentes. También participé en la organización inicial de la arquitectura frontend y en la estructuración de carpetas y patrones de diseño, siguiendo el enfoque MVC definido para el proyecto.",
+            description: [
+                "Mi participación en TrenIT se desarrolló bajo el rol de Full Stack Developer, con un enfoque predominante en el Frontend, aunque también realicé contribuciones sustanciales en el Backend durante las etapas iniciales e intermedias del proyecto.",
+                "En las primeras fases, colaboré en la definición y aplicación de la arquitectura de estilos basada en System Color, propuesta por el equipo de UX/UI. Esta estructura establecía una jerarquía de colores primitivos y variables globales integradas con Tailwind CSS, lo que permitió mantener la coherencia visual y la escalabilidad del diseño en el desarrollo de los componentes. También participé en la organización inicial de la arquitectura frontend y en la estructuración de carpetas y patrones de diseño, siguiendo el enfoque MVC definido para el proyecto."
+            ],
             previewUrl: ti1,
             downloadUrl: null,
             linkUrl: null,
