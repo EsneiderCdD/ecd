@@ -260,6 +260,11 @@
   opacity: 0.8;
 }
 
+.themeIcon:hover .icon {
+  transform: scale(1.5);
+  opacity: 0.8;
+}
+
 
 .icons1 {
   display: flex;
