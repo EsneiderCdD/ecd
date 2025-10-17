@@ -677,13 +677,13 @@ export const projectDetailFiles = {
         },
         {
             icon: "🖼️",
-            name: "Mi rol en TrainIT",
+            name: "Arquitectura Frontend y Componentes",
             type: "Imagen",
             date: "1/03/2025",
             size: "Actualizado",
-            description: [
-                "Mi participación en TrenIT se desarrolló bajo el rol de Full Stack Developer, con un enfoque predominante en el Frontend, aunque también realicé contribuciones sustanciales en el Backend durante las etapas iniciales e intermedias del proyecto.",
-                "En las primeras fases, colaboré en la definición y aplicación de la arquitectura de estilos basada en System Color, propuesta por el equipo de UX/UI. Esta estructura establecía una jerarquía de colores primitivos y variables globales integradas con Tailwind CSS, lo que permitió mantener la coherencia visual y la escalabilidad del diseño en el desarrollo de los componentes. También participé en la organización inicial de la arquitectura frontend y en la estructuración de carpetas y patrones de diseño, siguiendo el enfoque MVC definido para el proyecto."
+            description: ["Desempeñé el rol de Full Stack Developer en TrainIT, con un enfoque principal en el desarrollo Frontend y contribuciones relevantes en el Backend durante las etapas intermedias del proyecto. En las primeras fases, participé activamente en la definición de la arquitectura Frontend, colaborando con el equipo en la estructuración de carpetas, la configuración de librerías y la aplicación del patrón MVC.",
+                "Asimismo, implementé la arquitectura de estilos basada en el sistema de colores diseñado por el equipo de UX/UI, desarrollando un System Color modular compuesto por variables CSS jerárquicas (colores primarios, neutros y semánticos) e integrado con Tailwind CSS, lo que permitió mantener la coherencia visual y la escalabilidad del diseño en todo el proyecto."
+
             ],
             previewUrl: ti1,
             downloadUrl: null,
@@ -691,22 +691,24 @@ export const projectDetailFiles = {
         },
         {
             icon: "🖼️",
-            name: "Contribución (2)",
+            name: "Desarrollo Full-Stack",
             type: "Imagen",
             date: "1/03/2025",
             size: "Actualizado",
-            description: "En una fase más avanzada, asumí la responsabilidad de desarrollar y optimizar el módulo de edición de tableros y tarjetas, implementando la funcionalidad de actualización de datos desde el backend y su sincronización con la interfaz. Esta tarea implicó trabajar con endpoints, formularios dinámicos y control de estados, integrando tanto la lógica del servidor como la del cliente.",
+            description: ["En esta fase, continué desarrollando y refinando componentes del Frontend, incluyendo botones, dropdowns y enlaces interactivos, así como la implementación de diversos elementos del dashboard.",
+                "Posteriormente, participé en la implementación y optimización del módulo de edición de tableros, integrando la sincronización de datos entre backend y frontend. Esto implicó trabajar con endpoints, diseñar formularios dinámicos, modificar o crear nuevos modelos y realizar migraciones en Flask, así como gestionar cada campo de la interfaz (imágenes, etiquetas, miembros)."],
+
             previewUrl: ti2,
             downloadUrl: null,
             linkUrl: null,
         },
         {
             icon: "🖼️",
-            name: "Contribución (3)",
+            name: "Drag & Drop",
             type: "Imagen",
             date: "1/03/2025",
             size: "Actualizado",
-            description: "Finalmente, participé en el desarrollo del sistema de arrastre y soltado (drag & drop), uno de los componentes más interactivos del proyecto. La implementación se realizó con la librería DndKit, cuidando aspectos de rendimiento como la prevención de re-renderizados innecesarios, el control de bucles infinitos y la optimización de estados locales y globales. Este componente se conectó al backend para mantener la persistencia de la posición y el estado de las tareas, consolidando una funcionalidad clave dentro de la experiencia de usuario.",
+            description: "Finalmente, desarrollé el sistema de arrastre y soltado (drag & drop), uno de los componentes más interactivos de la aplicación, utilizando la librería DndKit. Me encargué tanto del Frontend como del Backend, asegurando la persistencia de posiciones y estados de las tarjetas, y gestionando componentes cargados de múltiples estados y efectos. Este desarrollo implicó optimización de renders, control de bucles infinitos y estrategias avanzadas consolidando una experiencia de usuario fluida y confiable en el módulo de administración de tareas.",
             previewUrl: ti3,
             downloadUrl: null,
             linkUrl: null,
@@ -1058,6 +1060,6 @@ export const projectDetailFiles = {
             linkUrl: null,
         },
 
-       
+
     ],
 };
