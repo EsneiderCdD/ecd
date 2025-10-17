@@ -4,7 +4,7 @@ import { Download, ExternalLink } from "lucide-react";
 
 
 function AboutInfoPanel({ file }) {
-  const [width, setWidth] = useState(280);
+  const [width, setWidth] = useState(400);
   const isResizing = useRef(false);
 
   const handleMouseDown = () => {
