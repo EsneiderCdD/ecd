@@ -14,11 +14,12 @@ border-right: 1px solid var(--border-header);
   padding: 10px;
   cursor: pointer;
   width: 100%;
+  transition: all 0.2s ease;
 }
 
 .dropdownToggle:hover {
   background-color: var(--hover-bg);
-  width: 100%;
+
 }
 
 .icon {
