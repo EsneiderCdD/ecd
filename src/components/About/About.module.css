@@ -6,7 +6,7 @@
   
   width: 23rem ;
 
-  background: #3C3C3C;
+  background: var(--bg-secondary);
   border-radius: 18px; 
 }
 
@@ -14,7 +14,7 @@
 .searchIcon {
   width: 16px;
   height: 16px;
-  color: #B0B0B0; 
+  color: var(--text-muted); 
   flex-shrink: 0;
   transition: color 0.2s ease;
 }
@@ -23,7 +23,7 @@
   flex: 1;
   border: none;
   background: transparent;
-  color: #FFFFFF; 
+  color: var(--text-primary); 
   font-size: 13px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   outline: none;
@@ -32,19 +32,19 @@
 }
 
 .searchInput::placeholder {
-  color: #909090;
+  color: var(--text-muted);
   opacity: 1;
 }
 
 /* Efecto focus */
 .searchContainer:focus-within {
-  background: #424242; 
+  background: var(--hover-bg); 
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2), 
-              0 0 0 1px rgba(255, 255, 255, 0.1);
+              0 0 0 1px var(--border-color);
 }
 
 .searchContainer:focus-within .searchIcon {
-  color: #E0E0E0; 
+  color: var(--text-secondary); 
 }
 
 @media (max-width: 1200px) {
