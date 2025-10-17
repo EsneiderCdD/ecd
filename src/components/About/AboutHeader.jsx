@@ -1,17 +1,16 @@
 import styles from "./About.module.css";
 import {
-  ArrowUpDown, 
-  Layout,      
-  List,   
+  ArrowUpDown,
+  Layout,
+  List,
   Moon,
   Sun,
 } from "lucide-react";
 
 import Dropdown from "./Dropdown/Dropdown";
-import { useTheme } from '@/context/ThemeContext';
+import { useTheme } from "@/context/ThemeContext";
 
 function AboutHeader() {
-
   const { theme, toggleTheme } = useTheme();
 
   return (
@@ -23,7 +22,7 @@ function AboutHeader() {
       <div className={styles.icons2}>
         {/* GitHub */}
         <a
-          href="https://github.com/EsneiderCdD" 
+          href="https://github.com/EsneiderCdD"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -37,7 +36,7 @@ function AboutHeader() {
 
         {/* LinkedIn */}
         <a
-          href="https://www.linkedin.com/in/esneidercdd/" // 🔹 Cambia por tu perfil real
+          href="https://www.linkedin.com/in/esneidercdd/"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -49,50 +48,61 @@ function AboutHeader() {
           />
         </a>
 
-        {/* Tema */}
-        <div onClick={toggleTheme} style={{cursor: 'pointer'}} className={styles.themeIcon}>
-          {theme === 'light' ? <Moon className={styles.icon} title="Modo oscuro" style={{color: 'var(--text-primary)'}} /> : <Sun className={styles.icon} title="Modo claro" style={{color: 'var(--text-primary)'}} />}
+        {/* Tema (modo claro/oscuro) */}
+        <div
+          onClick={toggleTheme}
+          style={{ cursor: "pointer" }}
+          className={styles.themeIcon}
+        >
+          {theme === "light" ? (
+            <Moon
+              className={styles.icon}
+              title="Modo oscuro"
+              style={{ color: "var(--text-primary)" }}
+            />
+          ) : (
+            <Sun
+              className={styles.icon}
+              title="Modo claro"
+              style={{ color: "var(--text-primary)" }}
+            />
+          )}
         </div>
-
-      
 
         {/* ❤️ Favorito */}
         <img
           src="https://cdn-icons-png.flaticon.com/512/833/833472.png"
           alt="Favorito"
           title="Favorito"
-          className={styles.icon}
-          
+          className={`${styles.icon} ${styles.hoverIcon}`}
         />
 
-          {/* Soporte */}
+        {/* 🛠️ Soporte */}
         <img
           src="/icons/support.png"
           alt="Soporte"
           title="Soporte"
-          className={styles.icon}
+          className={`${styles.icon} ${styles.hoverIcon}`}
         />
-
       </div>
 
       {/* Ordenar */}
       <div className={styles.icons3}>
         <ArrowUpDown className={styles.icon} title="Ordenar" />
-        <p style={{color: 'var(--text-primary)'}}>Ordenar</p>
+        <p style={{ color: "var(--text-primary)" }}>Ordenar</p>
       </div>
 
       {/* Ver */}
       <div className={styles.icons4}>
         <Layout className={styles.icon} title="Ver" />
-        <p style={{color: 'var(--text-primary)'}}>Ver</p>
+        <p style={{ color: "var(--text-primary)" }}>Ver</p>
       </div>
 
       {/* Detalles */}
       <div className={styles.icons5}>
         <List className={styles.icon} title="Detalles" />
-        <p style={{color: 'var(--text-primary)'}}>Detalles</p>
+        <p style={{ color: "var(--text-primary)" }}>Detalles</p>
       </div>
-
     </div>
   );
 }

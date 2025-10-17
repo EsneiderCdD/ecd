@@ -352,3 +352,18 @@
 .selectedRow {
   background-color: var(--selected-row);
 }
+
+/* --- EFECTOS HOVER --- */
+
+/* Efecto hover en íconos dentro de enlaces */
+.icons2 a:hover .icon {
+  transform: scale(1.5);
+  opacity: 0.8;
+}
+
+/* Efecto hover para tema, favorito y soporte */
+.themeIcon:hover .icon,
+.hoverIcon:hover {
+  transform: scale(1.5);
+  opacity: 0.8;
+}
