@@ -1,5 +1,5 @@
 // src/components/About/AboutHeader.jsx
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import {
   ArrowUpDown,
   List,
@@ -10,17 +10,65 @@ import {
 
 import Dropdown from "./Dropdown/Dropdown";
 import { useTheme } from "@/context/ThemeContext";
+import { projectsList, projectDetailFiles } from '@/data/projectsData';
+import { aboutFiles } from '@/data/aboutData';
 import styles from "./About.module.css";
 
 function AboutHeader() {
   const { theme, toggleTheme } = useTheme();
   const [searchQuery, setSearchQuery] = useState("");
+  const [searchResults, setSearchResults] = useState([]);
+  const [showResults, setShowResults] = useState(false);
+  const searchRef = useRef(null);
+
+  // Combinar todos los datos para búsqueda
+  const allSearchableData = [
+    ...projectsList.map(item => ({ ...item, category: 'project' })),
+    ...aboutFiles.map(item => ({ ...item, category: 'about' })),
+    ...Object.values(projectDetailFiles).flat().map(item => ({ ...item, category: 'projectFile' }))
+  ];
 
   const handleSearchChange = (e) => {
-    setSearchQuery(e.target.value);
-    // TODO: Aquí irá la lógica de búsqueda cuando esté lista
-    // console.log("Buscando:", e.target.value);
+    const query = e.target.value;
+    setSearchQuery(query);
+    
+    if (query.trim() === "") {
+      setSearchResults([]);
+      setShowResults(false);
+      return;
+    }
+
+    // Buscar por nombre
+    const results = allSearchableData.filter(item => 
+      item.name.toLowerCase().includes(query.toLowerCase())
+    );
+    
+    setSearchResults(results.slice(0, 10)); // Limitar a 10 resultados
+    setShowResults(true);
   };
+
+  const handleResultClick = (item) => {
+    if (item.category === 'project' && item.path) {
+      // Navegar a la ruta del proyecto
+      window.location.href = item.path;
+    } else {
+      // Mostrar en el panel (esto se manejará en el componente padre)
+      // Por ahora solo cerramos los resultados
+      setShowResults(false);
+      setSearchQuery("");
+    }
+  };
+
+  // Cerrar resultados al hacer click fuera
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (searchRef.current && !searchRef.current.contains(event.target)) {
+        setShowResults(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
 
   return (
     <div className={styles.header}>
@@ -98,7 +146,7 @@ function AboutHeader() {
 
 
       {/* BUSCADOR - Reemplaza "Ver" */}
-      <div style={{ display: 'flex', alignItems: 'center', borderRight: '1px solid gray', paddingRight: '8px' }}>
+      <div style={{ display: 'flex', alignItems: 'center', borderRight: '1px solid gray', paddingRight: '8px' }} ref={searchRef}>
         <div className={styles.searchContainer}>
           <Search
             className={styles.searchIcon}
@@ -112,6 +160,31 @@ function AboutHeader() {
             className={styles.searchInput}
           />
         </div>
+        
+        {/* Resultados de búsqueda */}
+        {showResults && searchResults.length > 0 && (
+          <div className={styles.searchResults}>
+            <div className={styles.searchResultsHeader}>
+              <span>Resultados de búsqueda</span>
+              <span className={styles.resultsCount}>{searchResults.length}</span>
+            </div>
+            <div className={styles.searchResultsContent}>
+              {searchResults.map((item, index) => (
+                <div
+                  key={index}
+                  className={styles.searchResultItem}
+                  onClick={() => handleResultClick(item)}
+                >
+                  <span className={styles.resultIcon}>{item.icon || '📄'}</span>
+                  <div className={styles.resultInfo}>
+                    <div className={styles.resultName}>{item.name}</div>
+                    <div className={styles.resultType}>{item.type} • {item.category}</div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
       </div>
 
       {/* Ordenar (solo icono con hover) */}
