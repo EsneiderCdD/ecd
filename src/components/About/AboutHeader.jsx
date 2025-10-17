@@ -9,6 +9,7 @@ import {
 } from "lucide-react";
 
 import Dropdown from "./Dropdown/Dropdown";
+import SortDropdown from "./Dropdown/SortDropdown";
 import { useTheme } from "@/context/ThemeContext";
 import { projectsList, projectDetailFiles } from '@/data/projectsData';
 import { aboutFiles } from '@/data/aboutData';
@@ -213,14 +214,9 @@ function AboutHeader() {
         )}
       </div>
 
-      {/* Ordenar (solo icono con hover) */}
+      {/* Ordenar */}
       <div className={styles.icons3}>
-        <img
-          src="/icons/order.png"
-          alt="Ordenar"
-          title="Ordenar"
-          className={`${styles.icon} ${styles.hoverIcon} ${styles.orderIcon}`}
-        />
+        <SortDropdown />
       </div>
 
       {/* Detalles */}
