@@ -51,7 +51,7 @@ function AboutHeader() {
 
         {/* Tema */}
         <div onClick={toggleTheme} style={{cursor: 'pointer'}}>
-          {theme === 'light' ? <Moon className={styles.icon} title="Modo oscuro" /> : <Sun className={styles.icon} title="Modo claro" />}
+          {theme === 'light' ? <Moon className={styles.icon} title="Modo oscuro" style={{color: 'var(--text-primary)'}} /> : <Sun className={styles.icon} title="Modo claro" style={{color: 'var(--text-primary)'}} />}
         </div>
 
         {/* Correo */}
