@@ -1,7 +1,6 @@
 // src/components/About/Dropdown/Dropdown.jsx
 import { useState, useEffect, useRef } from "react";
 import {
-  FilePlus,
   ChevronDown,
   Users,
   Briefcase,
@@ -55,10 +54,10 @@ function Dropdown() {
           className={styles.dropdownToggle}
           onClick={() => setIsOpen(!isOpen)}
         >
-          <FilePlus className={styles.icon} />
-          <p>Nuevo</p>
-          <ChevronDown
-            className={`${styles.chevron} ${isOpen ? styles.rotate : ""}`}
+          <img 
+            src="/icons/add.png" 
+            alt="Nuevo" 
+            className={styles.addIcon}
           />
         </div>
 

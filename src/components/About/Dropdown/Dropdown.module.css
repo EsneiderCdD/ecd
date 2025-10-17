@@ -10,12 +10,10 @@ border-right: 1px solid var(--border-header);
 .dropdownToggle {
   display: flex;
   align-items: center;
-  gap: 5px;
+  justify-content: center;
   padding: 10px;
   cursor: pointer;
-  font-size: 14px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color: var(--text-primary);
+  width: 100%;
 }
 
 .dropdownToggle:hover {
@@ -27,6 +25,12 @@ border-right: 1px solid var(--border-header);
   width: 15px;
   height: 15px;
   margin-right: 5px;
+}
+
+.addIcon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
 }
 
 .dropdownMenu {
