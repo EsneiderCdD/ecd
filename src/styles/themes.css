@@ -18,6 +18,8 @@
   --selected-row: #e6f0ff;
   --header-row-bg: #f0f0f0;
 
+
+  --f-m: 'Marcellus', serif;
   --font-primary: 'Inter Variable', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
   --font-system: 'Segoe UI', system-ui, -apple-system, sans-serif;
   
@@ -68,14 +70,14 @@
 /* ==========================================
    CLASES TIPOGRÁFICAS
    ========================================== */
-   .text-nav {
-    font-family: var(--font-system);
+  
+   .text-navigation {
+    font-family: var(--f-m);
     font-size: var(--text-sm);
     font-weight: var(--font-medium);
-    line-height: var(--leading-tight);
+    line-height: var(--leading-normal);
     letter-spacing: 0.01em;
   }
-  
   .text-table {
     font-family: var(--font-primary);
     font-size: var(--text-sm);

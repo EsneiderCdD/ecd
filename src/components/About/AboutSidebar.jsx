@@ -50,7 +50,7 @@ function AboutSidebar() {
             title="Escritorio"
             className={styles.iconsidebar}
           />
-          <p>Escritorio</p>
+          <p className="text-navigation">Escritorio</p>
         </div>
       </NavLink>
 
@@ -67,7 +67,7 @@ function AboutSidebar() {
             title="Sobre mí"
             className={styles.iconsidebar}
           />
-          <p>Sobre mí</p>
+          <p className="text-navigation">Sobre mí</p>
         </div>
 
       </NavLink>
@@ -85,7 +85,7 @@ function AboutSidebar() {
             title="Proyectos"
             className={styles.iconsidebar}
           />
-          <p>Proyectos</p>
+          <p className="text-navigation">Proyectos</p>
         </div>
 
       </NavLink>
