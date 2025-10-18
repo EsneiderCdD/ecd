@@ -4,7 +4,7 @@ import { useState, useRef, useEffect } from "react";
 import styles from "./About.module.css";
 
 function AboutSidebar() {
-  const [width, setWidth] = useState(200); // ancho inicial
+  const [width, setWidth] = useState(200); 
   const isResizing = useRef(false);
 
   const handleMouseDown = () => {
