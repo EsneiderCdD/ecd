@@ -55,7 +55,7 @@ function Dropdown() {
           onClick={() => setIsOpen(!isOpen)}
         >
           <img 
-            src="/icons/add.png" 
+            src="https://cdn-icons-png.flaticon.com/128/924/924915.png" 
             alt="Nuevo" 
             className={styles.addIcon}
           />

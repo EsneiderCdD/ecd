@@ -494,3 +494,19 @@
   transition: transform 0.2s ease, opacity 0.2s ease;
   transform: translateX(-5px);
 }
+
+
+.iconsidebarContainer {
+  display: flex;
+  flex-direction: row;
+  
+}
+
+
+.iconsidebar {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  margin-right: 5px;
+
+}

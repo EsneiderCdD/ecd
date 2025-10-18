@@ -4,7 +4,7 @@ import { useState, useRef, useEffect } from "react";
 import styles from "./About.module.css";
 
 function AboutSidebar() {
-  const [width, setWidth] = useState(200); 
+  const [width, setWidth] = useState(200);
   const isResizing = useRef(false);
 
   const handleMouseDown = () => {
@@ -43,7 +43,15 @@ function AboutSidebar() {
           isActive ? `${styles.link} ${styles.active}` : styles.link
         }
       >
-        <span role="img" aria-label="Escritorio">🖥️</span> Escritorio
+        <div className={styles.iconsidebarContainer}>
+          <img
+            src="https://cdn-icons-png.flaticon.com/128/2933/2933245.png"
+            alt="Escritorio"
+            title="Escritorio"
+            className={styles.iconsidebar}
+          />
+          <p>Escritorio</p>
+        </div>
       </NavLink>
 
       <NavLink
@@ -52,7 +60,16 @@ function AboutSidebar() {
           isActive ? `${styles.link} ${styles.active}` : styles.link
         }
       >
-        <span role="img" aria-label="Sobre mí">👤</span> Sobre mí
+        <div className={styles.iconsidebarContainer}>
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+            alt="Sobre mí"
+            title="Sobre mí"
+            className={styles.iconsidebar}
+          />
+          <p>Sobre mí</p>
+        </div>
+
       </NavLink>
 
       <NavLink
@@ -61,7 +78,16 @@ function AboutSidebar() {
           isActive ? `${styles.link} ${styles.active}` : styles.link
         }
       >
-        <span role="img" aria-label="Proyectos">📂</span> Proyectos
+        <div className={styles.iconsidebarContainer}>
+          <img
+            src="https://cdn-icons-png.flaticon.com/128/1559/1559881.png"
+            alt="Proyectos"
+            title="Proyectos"
+            className={styles.iconsidebar}
+          />
+          <p>Proyectos</p>
+        </div>
+
       </NavLink>
     </div>
   );
