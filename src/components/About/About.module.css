@@ -479,9 +479,14 @@
 
 /* --- TAMAÑO ESPECIAL PARA ICONO DE SOPORTE --- */
 .supportIcon {
-  width: 20px;
-  height: 20px;
+  width: 21px;
+  height: 21px;
   vertical-align: middle;
+}
+
+.supportIcon:hover {
+  transform: scale(1.6);
+  
 }
 
 

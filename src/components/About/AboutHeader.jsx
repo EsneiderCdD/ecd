@@ -127,6 +127,20 @@ function AboutHeader({ onSortChange }) {
             className={styles.icon}
           />
         </a>
+        
+        {/* 📄 Hoja de Vida - C.V */}
+        <a
+          href="https://flowcv.com/resume/trd93dr5crok"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/337/337946.png"
+            alt="Hoja de Vida"
+            title="Hoja de Vida - C.V"
+            className={`${styles.icon} ${styles.hoverIcon}`}
+          />
+        </a>
 
         {/* Tema (modo claro/oscuro) */}
         <div
