@@ -504,6 +504,8 @@
 .iconsidebarContainer {
   display: flex;
   flex-direction: row;
+  text-align: center;
+  align-items: center;
   
 }
 
@@ -511,7 +513,6 @@
 .iconsidebar {
   width: 20px;
   height: 20px;
-  text-align: center;
-  margin-right: 5px;
+  margin-right: 10%;
 
 }
