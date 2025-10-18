@@ -75,12 +75,9 @@
 .text-navigation {
   font-family: var(--f-asc);
   font-size: var(--text-xl);
-  font-weight: 500;
-  /*peso */
+  font-weight: 600;
   line-height: 1.2;
-  /* más alto */
   letter-spacing: 0.15em;
-  /* más espacio entre letras */
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 

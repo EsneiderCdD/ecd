@@ -539,88 +539,101 @@ export const projectDetailFiles = {
 
     ],
 
-
-
-
-
-
     guau: [
         {
             icon: "📄",
             name: "Descripción del Proyecto",
-            type: "Información",
-            date: "11/09/2025",
+            type: "Texto",
+            date: "15/10/2025",
             size: "Actualizado",
-            description: "Estoy desarrollando una plataforma web especializada en adopción canina, centrada en mejorar la compatibilidad entre adoptantes y perros mediante un enfoque psicométrico y algorítmico. El proyecto busca optimizar la toma de decisiones en adopción a partir de datos observables, eliminando sesgos estéticos y priorizando la afinidad emocional y conductual como base del proceso.",
+            description: [
+                "Estoy construyendo Guau como una plataforma web orientada a optimizar el proceso de adopción canina mediante un sistema de compatibilidad psicométrica. El proyecto combina análisis psicológico, matemática aplicada y desarrollo web en un entorno React",
+          
+            ],
             previewUrl: null,
             downloadUrl: null,
             linkUrl: null,
         },
 
         {
-            icon: "🖼️",
+            icon: "🎨",
             name: "Diseño y Frontend",
-            type: "Imagen",
-            date: "11/09/2025 ",
+            type: "Texto",
+            date: "15/10/2025",
             size: "Actualizado",
-            description: "Estoy diseñando la web bajo un enfoque minimalista y funcional, creando componentes reutilizables (cards, barra de navegación, rutas dinámicas) y páginas de detalle para cada perro; además estoy integrando un chatbot conversacional básico, vistas para el test y planificación de notificaciones y UX diseñadas para enganchar y convertir interés en adopción.",
+            description: [
+                "Estoy diseñando una interfaz limpia, empática y funcional con un enfoque minimalista, priorizando la experiencia de adopción sobre la lógica de negocio. Estoy estructurando componentes reutilizables —cards dinámicas, rutas, modales y pantallas de detalle— que permiten simular el proceso visual de selección y compatibilidad de forma fluida y emocionalmente atractiva.",
+                "Estoy integrando un chatbot funcional que acompaña el test de compatibilidad, actualmente en fase inicial con una escala líquida de 1 a 4. Aunque la experiencia aún es estática, estoy trabajando en una interacción más conversacional y dinámica. A nivel visual, estoy explorando animaciones con Framer Motion y microinteracciones que refuercen la conexión entre el usuario y el proceso de adopción."
+            ],
             previewUrl: gua,
             downloadUrl: null,
             linkUrl: null,
         },
+
         {
-            icon: "🖼️",
-            name: "Backend funcional",
-            type: "Imagen",
-            date: "11/09/2025",
+            icon: "🧩",
+            name: "Backend y Datos",
+            type: "Texto",
+            date: "15/10/2025",
             size: "Actualizado",
-            description: "Estoy construyendo el backend que centraliza la persistencia y las rutas para perros, usuarios y resultados; estoy desarrollando autenticación/registro, endpoints para fetching de datos y APIs que conectan el test con el motor de compatibilidad, dejando al front la presentación mientras el back asume la lógica y seguridad.",
+            description: [
+                "Estoy desarrollando un backend funcional enfocado en la gestión y persistencia de datos de perros, usuarios y administradores. Actualmente incluye autenticación, rutas básicas y un panel de administración visible solo para el administrador, desde el cual es posible registrar, actualizar y gestionar la información de los animales.",
+                "No estoy implementando lógica de negocio compleja porque Guau busca mantenerse adaptable a distintos modelos sociales o institucionales. El backend sirve como soporte estructural para el motor psicométrico, dejando abierta la posibilidad de que futuras versiones integren módulos de compatibilidad, estadísticas o paneles analíticos."
+            ],
             previewUrl: gua3,
             downloadUrl: null,
             linkUrl: null,
         },
+
         {
-            icon: "📄",
-            name: "Psicometétria y Algorítmica",
-            type: "Imagen",
-            date: "11/09/2025 ",
+            icon: "🧠",
+            name: "Psicometría y Algoritmo",
+            type: "Texto",
+            date: "15/10/2025",
             size: "Actualizado",
-            description: "Estoy elaborando dos instrumentos paralelos (Observación Canina y Test de Usuario) que convierten observaciones en vectores normalizados; estoy implementando un motor de compatibilidad que traduce esos vectores en un score (0 a 100%) —versión inicial basada en distancia euclidiana— con interpretación automatizada.",
+            description: [
+                "Estoy elaborando dos instrumentos psicométricos paralelos: el Test de Usuario y la Observación Canina. Cada uno convierte respuestas conductuales en vectores normalizados, que luego se analizan mediante un modelo matemático basado en distancia euclidiana para determinar la compatibilidad entre adoptante y perro.",
+                "Estoy diseñando interpretaciones automáticas del score, visualizaciones y ponderaciones que en el futuro permitirán ajustar la afinidad según dimensiones emocionales o rasgos de comportamiento. Es un trabajo que mezcla psicología aplicada, matemáticas y experiencia de usuario en un mismo entorno digital."
+            ],
             previewUrl: null,
             downloadUrl: null,
-            linkUrl
-                : null,
+            linkUrl: null,
         },
+
         {
             icon: "📑",
             name: "Instrumento de Observación Canina",
             type: "Word",
-            date: "25/03/2025 ",
+            date: "25/03/2025",
             size: "Actualizado",
-            description: "Ficha técnica descargable en Word.",
+            description: "Instrumento técnico descargable en Word con los ítems y dimensiones de observación aplicados a la evaluación conductual de perros.",
             previewUrl: "https://cdn-icons-png.flaticon.com/512/732/732223.png",
             downloadUrl: "/IOC.docx",
             linkUrl: null,
         },
+
         {
             icon: "📑",
-            name: "Algoritmo de compatibilidad",
+            name: "Algoritmo de Compatibilidad",
             type: "Word",
-            date: "25/03/2025 ",
+            date: "25/03/2025",
             size: "Actualizado",
-            description: "Ficha técnica descargable en Word.",
+            description: "Documento técnico con la estructura matemática del modelo de compatibilidad y su interpretación.",
             previewUrl: "https://cdn-icons-png.flaticon.com/512/732/732223.png",
             downloadUrl: "/AC.docx",
             linkUrl: null,
         },
 
         {
-            icon: "🖼️",
-            name: "Proyección técnica",
-            type: "Imagen",
-            date: "11/09/2025 .",
+            icon: "🚀",
+            name: "Proyección Técnica",
+            type: "Texto",
+            date: "15/10/2025",
             size: "Actualizado",
-            description: "Estoy planificando iteraciones que incorporan ponderaciones por dimensión, filtros categóricos (tamaño, salud), ajustes automáticos con datos reales y mejoras del chatbot (procesamiento natural / grafos / modelos avanzados)",
+            description: [
+                "Estoy planificando iteraciones que incorporan ponderaciones por dimensión, filtros por rasgos (tamaño, salud, energía), ajustes automáticos con datos reales y un chatbot más conversacional. Busco integrar un sistema de retroalimentación visual en las cards (animaciones, sonidos, transformaciones de imagen) que genere un entorno más inmersivo.",
+                "En etapas futuras, Guau podrá incorporar redes de grafos, IA generativa para interpretación de resultados y un módulo estadístico para refugios, manteniendo su esencia: hacer de la adopción una experiencia humana guiada por datos."
+            ],
             previewUrl: guau4,
             downloadUrl: null,
             linkUrl: null,
@@ -630,32 +643,33 @@ export const projectDetailFiles = {
             icon: "💻",
             name: "Tecnologías Usadas",
             type: "Texto e imagen",
-            date: "01/04/2025 ",
+            date: "01/04/2025",
             size: "Actualizado",
             description: `
-    <div style="display: flex; flex-wrap: wrap; gap: 16px; align-items: center;">
-        <img src="${react}" alt="React" style="width: auto; height: 48px;" title="React.js" />
-        <img src="${css}" alt="CSS3" style="width: auto; height: 48px;" title="CSS3" />
-        <img src="${js}" alt="JavaScript" style="width: auto; height: 48px;" title="JavaScript" />
-        <span style="font-size: 14px; color: #555;">Mobile Design</span>
-    </div>
-`,
+            <div style="display: flex; flex-wrap: wrap; gap: 16px; align-items: center;">
+                <img src="\${react}" alt="React" style="width: auto; height: 48px;" title="React.js" />
+                <img src="\${vite}" alt="Vite" style="width: auto; height: 48px;" title="Vite" />
+                <img src="\${js}" alt="JavaScript" style="width: auto; height: 48px;" title="JavaScript" />
+                <img src="\${framer}" alt="Framer Motion" style="width: auto; height: 48px;" title="Framer Motion" />
+                <span style="font-size: 14px; color: #555;">Diseño Responsivo y Animaciones Interactivas</span>
+            </div>
+            `,
             previewUrl: null,
             downloadUrl: null,
             linkUrl: null,
         },
+
         {
-            icon: "📑",
+            icon: "📘",
             name: "Ficha Técnica",
             type: "Word",
-            date: "25/03/2025 ",
+            date: "25/03/2025",
             size: "Actualizado",
-            description: "Ficha técnica descargable en Word.",
+            description: "Ficha técnica general del proyecto en formato Word, con especificaciones, contexto y estructura conceptual.",
             previewUrl: "https://cdn-icons-png.flaticon.com/512/732/732223.png",
             downloadUrl: "/f-gu.docx",
             linkUrl: null,
         },
-
     ],
 
 
@@ -720,7 +734,7 @@ export const projectDetailFiles = {
             type: "Imagen y texto",
             date: "25/02/2025 ",
             size: "Actualizado",
-            description: generateStackHTML([ 'git', 'github', 'figma', 'typescript', 'tailwind', 'fechas', 'next', 'react', 'zustand', 'dndKit', 'python', 'postgresql', 'flask', 'flaskenv', 'pusher', 'sendgrid', 'cloudinary']),
+            description: generateStackHTML(['git', 'github', 'figma', 'typescript', 'tailwind', 'fechas', 'next', 'react', 'zustand', 'dndKit', 'python', 'postgresql', 'flask', 'flaskenv', 'pusher', 'sendgrid', 'cloudinary']),
             previewUrl: null,
             downloadUrl: null,
             linkUrl: null,
