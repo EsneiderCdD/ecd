@@ -14,7 +14,7 @@ function AboutSidebar() {
   const handleMouseMove = (e) => {
     if (!isResizing.current) return;
     const newWidth = e.clientX; // medimos desde el borde izquierdo
-    if (newWidth > 150 && newWidth < 400) {
+    if (newWidth > 120 && newWidth < 400) {
       setWidth(newWidth);
     }
   };
