@@ -406,81 +406,94 @@ export const projectDetailFiles = {
 
     psicotranspersonal: [
         {
-            icon: "📄",
+            icon: "📘",
             name: "Descripción del Proyecto",
             type: "Texto",
-            date: "1/03/2025 ",
+            date: "01/03/2025",
             size: "Actualizado",
-            description: "Desarrollé una página web profesional para una psicóloga independiente, utilizando React.js y Framer Motion para crear una interfaz moderna, fluida y alineada con su identidad de marca personal. Implementé un sistema de pagos propio mediante formularios seguros, reduciendo las comisiones de terceros del 10% al 3.5% y mejorando la rentabilidad del servicio. Incorporé métricas con Google Analytics para medir conversiones y analizar el comportamiento de los usuarios, brindando datos estratégicos para optimizar contenido y campañas. El sitio fue optimizado con Vite, logrando tiempos de carga mínimos, excelente rendimiento y una experiencia de navegación ágil tanto en móviles como en escritorio.",
+            description: [
+                "Desarrollé una página web profesional para una psicóloga independiente, utilizando React.js y Framer Motion para crear una interfaz moderna, fluida y alineada con su identidad de marca personal.",
+                "Implementé un sistema de pagos propio mediante formularios seguros, reduciendo las comisiones de terceros del 10% al 3.5% y mejorando la rentabilidad del servicio.",
+                "Incorporé métricas con Google Analytics para medir conversiones y analizar el comportamiento de los usuarios, brindando datos estratégicos para optimizar contenido y campañas.",
+                "El sitio fue optimizado con Vite, logrando tiempos de carga mínimos, excelente rendimiento y una experiencia de navegación ágil tanto en móviles como en escritorio."
+            ],
             previewUrl: null,
             downloadUrl: null,
             linkUrl: null,
         },
+
         {
-            icon: "🖼️",
-            name: "Contribución (1)",
+            icon: "🧭",
+            name: "Análisis y Requerimientos",
             type: "Imagen",
-            date: "1/03/2025",
+            date: "01/03/2025",
             size: "Actualizado",
-            description: "Lideré el proceso de análisis y levantamiento de requerimientos, aplicando entrevistas, sesiones de brainstorming, cuestionarios y encuestas, además de casos de uso y un mapa de calor de requerimientos para priorizar funcionalidades. El proceso incluyó benchmarking y un estudio de color y branding aplicado, definiendo una base visual y estratégica coherente con la identidad profesional de la psicóloga.",
+            description: [
+                "Lideré el proceso de análisis y levantamiento de requerimientos, aplicando entrevistas, sesiones de brainstorming, cuestionarios y encuestas, además de casos de uso y un mapa de calor de requerimientos para priorizar funcionalidades.",
+                "El proceso incluyó benchmarking y un estudio de color y branding aplicado, definiendo una base visual y estratégica coherente con la identidad profesional de la psicóloga."
+            ],
             previewUrl: ps1,
             downloadUrl: null,
             linkUrl: null,
         },
+
         {
-            icon: "🖼️",
-            name: "Contribución (2)",
+            icon: "🧱",
+            name: "Diseño y Estructura Web",
             type: "Imagen",
-            date: "1/03/2025",
+            date: "01/03/2025",
             size: "Actualizado",
-            description: "Diseñé y desarrollé una estructura web completa y responsiva, compuesta por componentes dinámicos como footer, secciones de servicios, área hero, información profesional, preguntas frecuentes, precios y términos y condiciones.",
+            description: [
+                "Diseñé y desarrollé una estructura web completa y responsiva, compuesta por componentes dinámicos como footer, secciones de servicios, área hero, información profesional, preguntas frecuentes, precios y términos y condiciones."
+            ],
             previewUrl: ps2,
             downloadUrl: null,
             linkUrl: null,
         },
+
         {
-            icon: "🖼️",
-            name: "Contribución (3)",
+            icon: "💳",
+            name: "Integración de Pagos y Métricas",
             type: "Imagen",
-            date: "1/03/2025",
+            date: "01/03/2025",
             size: "Actualizado",
-            description: "Integré una pasarela de pagos segura (PayU) que redujo las comisiones externas del 10 % al 3.5 %, fortaleciendo la autonomía financiera y el control de reservas desde la propia web. Además, incorporé una configuración básica de Google Analytics para el seguimiento de métricas y reconocimiento digital, permitiendo medir el alcance y desempeño del sitio en tiempo real.",
+            description: [
+                "Integré una pasarela de pagos segura (PayU) que redujo las comisiones externas del 10 % al 3.5 %, fortaleciendo la autonomía financiera y el control de reservas desde la propia web.",
+                "Además, incorporé una configuración básica de Google Analytics para el seguimiento de métricas y reconocimiento digital, permitiendo medir el alcance y desempeño del sitio en tiempo real."
+            ],
             previewUrl: ps5,
             downloadUrl: null,
             linkUrl: null,
         },
+
         {
-            icon: "🖼️",
-            name: "Contribución (4)",
+            icon: "🎨",
+            name: "Animaciones y Microinteracciones",
             type: "Imagen",
-            date: "1/03/2025",
+            date: "01/03/2025",
             size: "Actualizado",
-            description: "Implementé microinteracciones y animaciones con Framer Motion, aplicando efectos de entrada, transiciones suaves y realces luminosos en botones de acción para guiar la atención del usuario. Incorporé cambios sutiles de color y movimiento en textos y componentes, logrando una interfaz dinámica pero sobria. Complementé la experiencia con Swiper.js, integrando carruseles visuales, tarjetas animadas y una sección de comentarios personalizada según las preferencias de la psicóloga.",
+            description: [
+                "Implementé microinteracciones y animaciones con Framer Motion, aplicando efectos de entrada, transiciones suaves y realces luminosos en botones de acción para guiar la atención del usuario.",
+                "Incorporé cambios sutiles de color y movimiento en textos y componentes, logrando una interfaz dinámica pero sobria.",
+                "Complementé la experiencia con Swiper.js, integrando carruseles visuales, tarjetas animadas y una sección de comentarios personalizada según las preferencias de la psicóloga."
+            ],
             previewUrl: ps6,
             downloadUrl: null,
             linkUrl: null,
         },
 
-
-
         {
             icon: "💻",
             name: "Tecnologías Usadas",
-            type: "Texto e imagen",
-            date: "01/04/2025 ",
+            type: "Imagen y texto",
+            date: "01/04/2025",
             size: "Actualizado",
-            description: `
-    <div style="display: flex; flex-wrap: wrap; gap: 16px; align-items: center;">
-        <img src="${react}" alt="React" style="width: auto; height: 48px;" title="React.js" />
-        <img src="${css}" alt="CSS3" style="width: auto; height: 48px;" title="CSS3" />
-        <img src="${js}" alt="JavaScript" style="width: auto; height: 48px;" title="JavaScript" />
-        <span style="font-size: 14px; color: #555;">Mobile Design</span>
-    </div>
-`,
+            description: generateStackHTML(['react', 'vite', 'framer', 'swiper', 'javascript', 'css', 'google']),
             previewUrl: null,
             downloadUrl: null,
             linkUrl: null,
         },
+
         {
             icon: "📑",
             name: "Ficha Técnica",
@@ -504,9 +517,10 @@ export const projectDetailFiles = {
             downloadUrl: null,
             linkUrl: "https://www.youtube.com/",
         },
+
         {
             icon: "🐙",
-            name: "GitHub",
+            name: "Repositorio GitHub",
             type: "GitHub",
             date: "01/06/2025",
             size: "Actualizado",
@@ -515,9 +529,10 @@ export const projectDetailFiles = {
             downloadUrl: null,
             linkUrl: "https://github.com/",
         },
+
         {
             icon: "📸",
-            name: "Instagram",
+            name: "Instagram Profesional",
             type: "Instagram",
             date: "01/06/2025",
             size: "Actualizado",
@@ -526,6 +541,7 @@ export const projectDetailFiles = {
             downloadUrl: null,
             linkUrl: "https://www.instagram.com/",
         },
+
         {
             icon: "🌐",
             name: "Sitio Web (Vercel)",
@@ -536,8 +552,8 @@ export const projectDetailFiles = {
             previewUrl: "https://img.icons8.com/ios-glyphs/512/internet--v1.png",
             linkUrl: "https://martinacocina.netlify.app/",
         },
-
     ],
+
 
     guau: [
         {
