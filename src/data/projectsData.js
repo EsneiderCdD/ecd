@@ -548,7 +548,7 @@ export const projectDetailFiles = {
             size: "Actualizado",
             description: [
                 "Estoy construyendo Guau como una plataforma web orientada a optimizar el proceso de adopción canina mediante un sistema de compatibilidad psicométrica. El proyecto combina análisis psicológico, matemática aplicada y desarrollo web en un entorno React",
-          
+
             ],
             previewUrl: null,
             downloadUrl: null,
@@ -785,83 +785,94 @@ export const projectDetailFiles = {
 
     framermotionlab: [
         {
-            icon: "📄",
+            icon: "📘",
             name: "Descripción del Proyecto",
             type: "Texto",
-            date: "1/06/2025 ",
+            date: "01/06/2025",
             size: "Actualizado",
-            description: "El sistema está estructurado como una aplicación web educativa e interactiva enfocada en el aprendizaje progresivo de animaciones en Framer Motion. Incluye un catálogo de ejemplos visuales, un sistema de navegación dinámica y un módulo tipo builder que permite experimentar con propiedades de animación en tiempo real. Cada ejemplo presenta simultáneamente el código fuente y su resultado visual, fomentando la comprensión práctica. Concebido como una herramienta pedagógica y un espacio de experimentación autodidacta, el proyecto busca democratizar el conocimiento técnico y al mismo tiempo servir como una plataforma abierta de exploración creativa.",
+            description: [
+                "El sistema está estructurado como una aplicación web educativa e interactiva enfocada en el aprendizaje progresivo de animaciones en Framer Motion. Incluye un catálogo de ejemplos visuales, un sistema de navegación dinámica y un módulo tipo builder que permite experimentar con propiedades de animación en tiempo real.",
+                "Cada ejemplo presenta simultáneamente el código fuente y su resultado visual, fomentando la comprensión práctica. Concebido como una herramienta pedagógica y un espacio de experimentación autodidacta, el proyecto busca democratizar el conocimiento técnico y al mismo tiempo servir como una plataforma abierta de exploración creativa."
+            ],
             previewUrl: null,
             downloadUrl: null,
             linkUrl: null,
         },
+
         {
-            icon: "🖼️",
-            name: "Home",
+            icon: "🏠",
+            name: "Interfaz Principal",
             type: "Imagen",
-            date: "20/06/2025 ",
+            date: "20/06/2025",
             size: "Actualizado",
-            description: "El desarrollo de Framer Motion Lab se estructuró como una experiencia de aprendizaje progresiva, inspirada directamente en la documentación oficial de Framer Motion. Desde su concepción, el proyecto fue diseñado para dividir el conocimiento en tres niveles —Básico, Gestures y Layout—, abordando gradualmente las propiedades más importantes de la animación web. Actualmente, el nivel Básico se encuentra casi completo, mientras que Gestures está en desarrollo e Layout en fase de planeación..",
+            description: [
+                "El desarrollo de Framer Motion Lab se estructuró como una experiencia de aprendizaje progresiva, inspirada directamente en la documentación oficial de Framer Motion.",
+                "Desde su concepción, el proyecto fue diseñado para dividir el conocimiento en tres niveles —Básico, Gestures y Layout—, abordando gradualmente las propiedades más importantes de la animación web. Actualmente, el nivel Básico se encuentra casi completo, mientras que Gestures está en desarrollo y Layout en fase de planeación."
+            ],
             previewUrl: fm,
             downloadUrl: null,
             linkUrl: null,
         },
+
         {
-            icon: "🖼️",
+            icon: "📊",
             name: "Dashboard de Animaciones",
             type: "Imagen",
-            date: "20/06/2025 ",
+            date: "20/06/2025",
             size: "Actualizado",
-            description: "Cada card combina el logotipo de Framer Motion con una breve descripción y una animación demostrativa, permitiendo explorar propiedades como movimiento en eje X y Y, opacidad, rotación, duración y transiciones.",
+            description: [
+                "Cada card combina el logotipo de Framer Motion con una breve descripción y una animación demostrativa, permitiendo explorar propiedades como movimiento en eje X y Y, opacidad, rotación, duración y transiciones."
+            ],
             previewUrl: fm1,
             downloadUrl: null,
             linkUrl: null,
         },
+
         {
-            icon: "🖼️",
+            icon: "📋",
             name: "Explicaciones y Detalles",
             type: "Imagen",
-            date: "20/06/2025 ",
+            date: "20/06/2025",
             size: "Actualizado",
-            description: "Cada card combina el logotipo de Framer Motion con una breve descripción y una animación demostrativa, permitiendo explorar propiedades como movimiento en eje X y Y, opacidad, rotación, duración y transiciones.",
+            description: [
+                "Cada card combina el logotipo de Framer Motion con una breve descripción y una animación demostrativa, permitiendo explorar propiedades como movimiento en eje X y Y, opacidad, rotación, duración y transiciones."
+            ],
             previewUrl: fm2,
             downloadUrl: null,
             linkUrl: null,
         },
+
         {
-            icon: "🖼️",
-            name: "Crear tu animacion",
+            icon: "🧩",
+            name: "LabMotion Builder",
             type: "Imagen",
-            date: "20/06/2025 ",
+            date: "20/06/2025",
             size: "Actualizado",
-            description: "Uno de los módulos más destacados es el Panel Interactivo o LabMotionBuilder, un entorno de experimentación que permite modificar parámetros de animación —como posición, escala, color o duración— y reproducir los resultados en tiempo real.",
+            description: [
+                "Uno de los módulos más destacados es el Panel Interactivo o LabMotionBuilder, un entorno de experimentación que permite modificar parámetros de animación —como posición, escala, color o duración— y reproducir los resultados en tiempo real."
+            ],
             previewUrl: fm3,
             downloadUrl: null,
             linkUrl: null,
         },
+
         {
             icon: "💻",
             name: "Tecnologías Usadas",
-            type: "Texto e imagen",
-            date: "1/06/2025 ",
+            type: "Imagen y texto",
+            date: "01/06/2025",
             size: "Actualizado",
-            description: `
-    <div style="display: flex; flex-wrap: wrap; gap: 16px; align-items: center;">
-        <img src="${react}" alt="React" style="width: auto; height: 48px;" title="React.js" />
-        <img src="${css}" alt="CSS3" style="width: auto; height: 48px;" title="CSS3" />
-        <img src="${js}" alt="JavaScript" style="width: auto; height: 48px;" title="JavaScript" />
-        <span style="font-size: 14px; color: #555;">Mobile Design</span>
-    </div>
-`,
+            description: generateStackHTML(['react', 'css', 'javascript', 'framer', 'vite']),
             previewUrl: null,
             downloadUrl: null,
             linkUrl: null,
         },
+
         {
             icon: "📑",
             name: "Ficha Técnica",
             type: "Word",
-            date: "1/07/2025",
+            date: "01/07/2025",
             size: "Actualizado",
             description: "Ficha técnica descargable en Word.",
             previewUrl: "https://cdn-icons-png.flaticon.com/512/732/732223.png",
@@ -869,8 +880,6 @@ export const projectDetailFiles = {
             linkUrl: null,
         },
     ],
-
-
 
 
 
