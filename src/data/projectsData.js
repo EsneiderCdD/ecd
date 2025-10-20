@@ -171,48 +171,41 @@ export const projectDetailFiles = {
             linkUrl: null,
         },
         {
-            icon: "🖼️",
-            name: "Navegación Dinámica por Días",
-            type: "Imagen y texto",
-            date: "30/01/2025",
+            icon: "📋",
+            name: "Contribuciones/Aportes",
+            type: "Dinámico",
+            date: "15/01/2025",
             size: "Actualizado",
-            description: "Implementé un sistema de navegación semanal con detección automática del día actual, resaltando visualmente la jornada correspondiente y mejorando la experiencia del usuario.",
-            previewUrl: mt1,
+            description: "Navega por mis principales contribuciones y aportes al proyecto Martina Clandestina",
+            previewUrl: null,
             downloadUrl: null,
             linkUrl: null,
-        },
-        {
-            icon: "🖼️",
-            name: "Desarrollo de la Carta Digital",
-            type: "Imagen y texto",
-            date: "15/02/2025",
-            size: "Actualizado",
-            description: "Construí una carta digital dinámica con React.js, Vite y React Router, priorizando la fluidez de carga, el diseño adaptable y la fácil escalabilidad del contenido.",
-            previewUrl: mt2,
-            downloadUrl: null,
-            linkUrl: null,
-        },
-        {
-            icon: "🖼️",
-            name: "Diseño Visual e Identidad de Marca",
-            type: "Imagen y texto",
-            date: "15/02/2025 ",
-            size: "Actualizado",
-            description: "Incorporé animaciones sutiles, transiciones fluidas y una paleta cromática coherente con la marca, reforzando su estilo visual y su narrativa gastronómica local.",
-            previewUrl: mt3,
-            downloadUrl: null,
-            linkUrl: null,
-        },
-        {
-            icon: "🖼️",
-            name: "Sistema de Pedidos Automatizado",
-            type: "Imagen y texto",
-            date: "15/02/2025 ",
-            size: "Actualizado",
-            description: "Integré un sistema de pedidos directos por WhatsApp con mensajes autocompletados, reduciendo errores, pasos manuales y garantizando coherencia en la comunicación con los clientes.",
-            previewUrl: mt4,
-            downloadUrl: null,
-            linkUrl: null,
+            contributions: [
+                {
+                    icon: "🖼️",
+                    name: "Navegación Dinámica por Días",
+                    description: "Implementé un sistema de navegación semanal con detección automática del día actual, resaltando visualmente la jornada correspondiente y mejorando la experiencia del usuario.",
+                    previewUrl: mt1,
+                },
+                {
+                    icon: "🖼️",
+                    name: "Desarrollo de la Carta Digital",
+                    description: "Construí una carta digital dinámica con React.js, Vite y React Router, priorizando la fluidez de carga, el diseño adaptable y la fácil escalabilidad del contenido.",
+                    previewUrl: mt2,
+                },
+                {
+                    icon: "🖼️",
+                    name: "Diseño Visual e Identidad de Marca",
+                    description: "Incorporé animaciones sutiles, transiciones fluidas y una paleta cromática coherente con la marca, reforzando su estilo visual y su narrativa gastronómica local.",
+                    previewUrl: mt3,
+                },
+                {
+                    icon: "🖼️",
+                    name: "Sistema de Pedidos Automatizado",
+                    description: "Integré un sistema de pedidos directos por WhatsApp con mensajes autocompletados, reduciendo errores, pasos manuales y garantizando coherencia en la comunicación con los clientes.",
+                    previewUrl: mt4,
+                }
+            ]
         },
         {
             icon: "💻",
@@ -298,37 +291,35 @@ export const projectDetailFiles = {
             linkUrl: null,
         },
         {
-            icon: "🖼️",
-            name: "Landing Page Mobile First",
-            type: "Imagen",
+            icon: "📋",
+            name: "Contribuciones/Aportes",
+            type: "Dinámico",
             date: "15/02/2025",
             size: "Actualizado",
-            description: "Diseñé e implementé una landing page completamente orientada a dispositivos móviles, optimizando la jerarquía visual y la velocidad de carga para una experiencia fluida.",
-            previewUrl: mrs,
+            description: "Navega por mis principales contribuciones y aportes al proyecto Mister Soldo",
+            previewUrl: null,
             downloadUrl: null,
             linkUrl: null,
-        },
-        {
-            icon: "🖼️",
-            name: "Carruseles Dinámicos con Swiper.js",
-            type: "Imagen",
-            date: "1/03/2025",
-            size: "Actualizado",
-            description: "Integré carruseles dinámicos con Swiper.js para presentar clips, fotografías y videos del artista de manera atractiva y con transiciones suaves.",
-            previewUrl: mrs2,
-            downloadUrl: null,
-            linkUrl: null,
-        },
-        {
-            icon: "🖼️",
-            name: "Interactividad y Movimiento",
-            type: "Imagen",
-            date: "1/03/2025",
-            size: "Actualizado",
-            description: "Desarrollé una experiencia interactiva utilizando Framer Motion, implementando gestos drag & drop que permiten explorar álbumes y contenido musical de forma inmersiva.",
-            previewUrl: mrs6,
-            downloadUrl: null,
-            linkUrl: null,
+            contributions: [
+                {
+                    icon: "🖼️",
+                    name: "Landing Page Mobile First",
+                    description: "Diseñé e implementé una landing page completamente orientada a dispositivos móviles, optimizando la jerarquía visual y la velocidad de carga para una experiencia fluida.",
+                    previewUrl: mrs,
+                },
+                {
+                    icon: "🖼️",
+                    name: "Carruseles Dinámicos con Swiper.js",
+                    description: "Integré carruseles dinámicos con Swiper.js para presentar clips, fotografías y videos del artista de manera atractiva y con transiciones suaves.",
+                    previewUrl: mrs2,
+                },
+                {
+                    icon: "🖼️",
+                    name: "Interactividad y Movimiento",
+                    description: "Desarrollé una experiencia interactiva utilizando Framer Motion, implementando gestos drag & drop que permiten explorar álbumes y contenido musical de forma inmersiva.",
+                    previewUrl: mrs6,
+                }
+            ]
         },
         {
             icon: "💻",
@@ -419,63 +410,53 @@ export const projectDetailFiles = {
         },
 
         {
-            icon: "🧭",
-            name: "Análisis y Requerimientos",
-            type: "Imagen",
+            icon: "📋",
+            name: "Contribuciones/Aportes",
+            type: "Dinámico",
             date: "01/03/2025",
             size: "Actualizado",
-            description: [
-                "Lideré el proceso de análisis y levantamiento de requerimientos, aplicando entrevistas, sesiones de brainstorming, cuestionarios y encuestas, además de casos de uso y un mapa de calor de requerimientos para priorizar funcionalidades.",
-                "El proceso incluyó benchmarking y un estudio de color y branding aplicado, definiendo una base visual y estratégica coherente con la identidad profesional de la psicóloga."
-            ],
-            previewUrl: ps1,
+            description: "Navega por mis principales contribuciones y aportes al proyecto Psicotranspersonal",
+            previewUrl: null,
             downloadUrl: null,
             linkUrl: null,
-        },
-
-        {
-            icon: "🧱",
-            name: "Diseño y Estructura Web",
-            type: "Imagen",
-            date: "01/03/2025",
-            size: "Actualizado",
-            description: [
-                "Diseñé y desarrollé una estructura web completa y responsiva, compuesta por componentes dinámicos como footer, secciones de servicios, área hero, información profesional, preguntas frecuentes, precios y términos y condiciones."
-            ],
-            previewUrl: ps2,
-            downloadUrl: null,
-            linkUrl: null,
-        },
-
-        {
-            icon: "💳",
-            name: "Integración de Pagos y Métricas",
-            type: "Imagen",
-            date: "01/03/2025",
-            size: "Actualizado",
-            description: [
-                "Integré una pasarela de pagos segura (PayU) que redujo las comisiones externas del 10 % al 3.5 %, fortaleciendo la autonomía financiera y el control de reservas desde la propia web.",
-                "Además, incorporé una configuración básica de Google Analytics para el seguimiento de métricas y reconocimiento digital, permitiendo medir el alcance y desempeño del sitio en tiempo real."
-            ],
-            previewUrl: ps5,
-            downloadUrl: null,
-            linkUrl: null,
-        },
-
-        {
-            icon: "🎨",
-            name: "Animaciones y Microinteracciones",
-            type: "Imagen",
-            date: "01/03/2025",
-            size: "Actualizado",
-            description: [
-                "Implementé microinteracciones y animaciones con Framer Motion, aplicando efectos de entrada, transiciones suaves y realces luminosos en botones de acción para guiar la atención del usuario.",
-                "Incorporé cambios sutiles de color y movimiento en textos y componentes, logrando una interfaz dinámica pero sobria.",
-                "Complementé la experiencia con Swiper.js, integrando carruseles visuales, tarjetas animadas y una sección de comentarios personalizada según las preferencias de la psicóloga."
-            ],
-            previewUrl: ps6,
-            downloadUrl: null,
-            linkUrl: null,
+            contributions: [
+                {
+                    icon: "🧭",
+                    name: "Análisis y Requerimientos",
+                    description: [
+                        "Lideré el proceso de análisis y levantamiento de requerimientos, aplicando entrevistas, sesiones de brainstorming, cuestionarios y encuestas, además de casos de uso y un mapa de calor de requerimientos para priorizar funcionalidades.",
+                        "El proceso incluyó benchmarking y un estudio de color y branding aplicado, definiendo una base visual y estratégica coherente con la identidad profesional de la psicóloga."
+                    ],
+                    previewUrl: ps1,
+                },
+                {
+                    icon: "🧱",
+                    name: "Diseño y Estructura Web",
+                    description: [
+                        "Diseñé y desarrollé una estructura web completa y responsiva, compuesta por componentes dinámicos como footer, secciones de servicios, área hero, información profesional, preguntas frecuentes, precios y términos y condiciones."
+                    ],
+                    previewUrl: ps2,
+                },
+                {
+                    icon: "💳",
+                    name: "Integración de Pagos y Métricas",
+                    description: [
+                        "Integré una pasarela de pagos segura (PayU) que redujo las comisiones externas del 10 % al 3.5 %, fortaleciendo la autonomía financiera y el control de reservas desde la propia web.",
+                        "Además, incorporé una configuración básica de Google Analytics para el seguimiento de métricas y reconocimiento digital, permitiendo medir el alcance y desempeño del sitio en tiempo real."
+                    ],
+                    previewUrl: ps5,
+                },
+                {
+                    icon: "🎨",
+                    name: "Animaciones y Microinteracciones",
+                    description: [
+                        "Implementé microinteracciones y animaciones con Framer Motion, aplicando efectos de entrada, transiciones suaves y realces luminosos en botones de acción para guiar la atención del usuario.",
+                        "Incorporé cambios sutiles de color y movimiento en textos y componentes, logrando una interfaz dinámica pero sobria.",
+                        "Complementé la experiencia con Swiper.js, integrando carruseles visuales, tarjetas animadas y una sección de comentarios personalizada según las preferencias de la psicóloga."
+                    ],
+                    previewUrl: ps6,
+                }
+            ]
         },
 
         {
@@ -568,48 +549,53 @@ export const projectDetailFiles = {
         },
 
         {
-            icon: "🎨",
-            name: "Diseño y Frontend",
-            type: "Texto",
+            icon: "📋",
+            name: "Contribuciones/Aportes",
+            type: "Dinámico",
             date: "15/10/2025",
             size: "Actualizado",
-            description: [
-                "Estoy diseñando una interfaz limpia, empática y funcional con un enfoque minimalista, priorizando la experiencia de adopción sobre la lógica de negocio. Estoy estructurando componentes reutilizables —cards dinámicas, rutas, modales y pantallas de detalle— que permiten simular el proceso visual de selección y compatibilidad de forma fluida y emocionalmente atractiva.",
-                "Estoy integrando un chatbot funcional que acompaña el test de compatibilidad, actualmente en fase inicial con una escala líquida de 1 a 4. Aunque la experiencia aún es estática, estoy trabajando en una interacción más conversacional y dinámica. A nivel visual, estoy explorando animaciones con Framer Motion y microinteracciones que refuercen la conexión entre el usuario y el proceso de adopción."
-            ],
-            previewUrl: gua,
-            downloadUrl: null,
-            linkUrl: null,
-        },
-
-        {
-            icon: "🧩",
-            name: "Backend y Datos",
-            type: "Texto",
-            date: "15/10/2025",
-            size: "Actualizado",
-            description: [
-                "Estoy desarrollando un backend funcional enfocado en la gestión y persistencia de datos de perros, usuarios y administradores. Actualmente incluye autenticación, rutas básicas y un panel de administración visible solo para el administrador, desde el cual es posible registrar, actualizar y gestionar la información de los animales.",
-                "No estoy implementando lógica de negocio compleja porque Guau busca mantenerse adaptable a distintos modelos sociales o institucionales. El backend sirve como soporte estructural para el motor psicométrico, dejando abierta la posibilidad de que futuras versiones integren módulos de compatibilidad, estadísticas o paneles analíticos."
-            ],
-            previewUrl: gua3,
-            downloadUrl: null,
-            linkUrl: null,
-        },
-
-        {
-            icon: "🧠",
-            name: "Psicometría y Algoritmo",
-            type: "Texto",
-            date: "15/10/2025",
-            size: "Actualizado",
-            description: [
-                "Estoy elaborando dos instrumentos psicométricos paralelos: el Test de Usuario y la Observación Canina. Cada uno convierte respuestas conductuales en vectores normalizados, que luego se analizan mediante un modelo matemático basado en distancia euclidiana para determinar la compatibilidad entre adoptante y perro.",
-                "Estoy diseñando interpretaciones automáticas del score, visualizaciones y ponderaciones que en el futuro permitirán ajustar la afinidad según dimensiones emocionales o rasgos de comportamiento. Es un trabajo que mezcla psicología aplicada, matemáticas y experiencia de usuario en un mismo entorno digital."
-            ],
+            description: "Navega por mis principales contribuciones y aportes al proyecto Guau",
             previewUrl: null,
             downloadUrl: null,
             linkUrl: null,
+            contributions: [
+                {
+                    icon: "🎨",
+                    name: "Diseño y Frontend",
+                    description: [
+                        "Estoy diseñando una interfaz limpia, empática y funcional con un enfoque minimalista, priorizando la experiencia de adopción sobre la lógica de negocio. Estoy estructurando componentes reutilizables —cards dinámicas, rutas, modales y pantallas de detalle— que permiten simular el proceso visual de selección y compatibilidad de forma fluida y emocionalmente atractiva.",
+                        "Estoy integrando un chatbot funcional que acompaña el test de compatibilidad, actualmente en fase inicial con una escala líquida de 1 a 4. Aunque la experiencia aún es estática, estoy trabajando en una interacción más conversacional y dinámica. A nivel visual, estoy explorando animaciones con Framer Motion y microinteracciones que refuercen la conexión entre el usuario y el proceso de adopción."
+                    ],
+                    previewUrl: gua,
+                },
+                {
+                    icon: "🧩",
+                    name: "Backend y Datos",
+                    description: [
+                        "Estoy desarrollando un backend funcional enfocado en la gestión y persistencia de datos de perros, usuarios y administradores. Actualmente incluye autenticación, rutas básicas y un panel de administración visible solo para el administrador, desde el cual es posible registrar, actualizar y gestionar la información de los animales.",
+                        "No estoy implementando lógica de negocio compleja porque Guau busca mantenerse adaptable a distintos modelos sociales o institucionales. El backend sirve como soporte estructural para el motor psicométrico, dejando abierta la posibilidad de que futuras versiones integren módulos de compatibilidad, estadísticas o paneles analíticos."
+                    ],
+                    previewUrl: gua3,
+                },
+                {
+                    icon: "🧠",
+                    name: "Psicometría y Algoritmo",
+                    description: [
+                        "Estoy elaborando dos instrumentos psicométricos paralelos: el Test de Usuario y la Observación Canina. Cada uno convierte respuestas conductuales en vectores normalizados, que luego se analizan mediante un modelo matemático basado en distancia euclidiana para determinar la compatibilidad entre adoptante y perro.",
+                        "Estoy diseñando interpretaciones automáticas del score, visualizaciones y ponderaciones que en el futuro permitirán ajustar la afinidad según dimensiones emocionales o rasgos de comportamiento. Es un trabajo que mezcla psicología aplicada, matemáticas y experiencia de usuario en un mismo entorno digital."
+                    ],
+                    previewUrl: null,
+                },
+                {
+                    icon: "🚀",
+                    name: "Proyección Técnica",
+                    description: [
+                        "Estoy planificando iteraciones que incorporan ponderaciones por dimensión, filtros por rasgos (tamaño, salud, energía), ajustes automáticos con datos reales y un chatbot más conversacional. Busco integrar un sistema de retroalimentación visual en las cards (animaciones, sonidos, transformaciones de imagen) que genere un entorno más inmersivo.",
+                        "En etapas futuras, Guau podrá incorporar redes de grafos, IA generativa para interpretación de resultados y un módulo estadístico para refugios, manteniendo su esencia: hacer de la adopción una experiencia humana guiada por datos."
+                    ],
+                    previewUrl: guau4,
+                }
+            ]
         },
 
         {
@@ -633,21 +619,6 @@ export const projectDetailFiles = {
             description: "Documento técnico con la estructura matemática del modelo de compatibilidad y su interpretación.",
             previewUrl: "https://cdn-icons-png.flaticon.com/512/732/732223.png",
             downloadUrl: "/AC.docx",
-            linkUrl: null,
-        },
-
-        {
-            icon: "🚀",
-            name: "Proyección Técnica",
-            type: "Texto",
-            date: "15/10/2025",
-            size: "Actualizado",
-            description: [
-                "Estoy planificando iteraciones que incorporan ponderaciones por dimensión, filtros por rasgos (tamaño, salud, energía), ajustes automáticos con datos reales y un chatbot más conversacional. Busco integrar un sistema de retroalimentación visual en las cards (animaciones, sonidos, transformaciones de imagen) que genere un entorno más inmersivo.",
-                "En etapas futuras, Guau podrá incorporar redes de grafos, IA generativa para interpretación de resultados y un módulo estadístico para refugios, manteniendo su esencia: hacer de la adopción una experiencia humana guiada por datos."
-            ],
-            previewUrl: guau4,
-            downloadUrl: null,
             linkUrl: null,
         },
 
@@ -694,42 +665,40 @@ export const projectDetailFiles = {
             linkUrl: null,
         },
         {
-            icon: "🖼️",
-            name: "Arquitectura Frontend y Componentes",
-            type: "Imagen",
-            date: "1/03/2025",
+            icon: "📋",
+            name: "Contribuciones/Aportes",
+            type: "Dinámico",
+            date: "15/10/2025",
             size: "Actualizado",
-            description: ["Desempeñé el rol de Full Stack Developer en TrainIT, con un enfoque principal en el desarrollo Frontend y contribuciones relevantes en el Backend durante las etapas intermedias del proyecto. En las primeras fases, participé activamente en la definición de la arquitectura Frontend, colaborando con el equipo en la estructuración de carpetas, la configuración de librerías y la aplicación del patrón MVC.",
-                "Asimismo, implementé la arquitectura de estilos basada en el sistema de colores diseñado por el equipo de UX/UI, desarrollando un System Color modular compuesto por variables CSS jerárquicas (colores primarios, neutros y semánticos) e integrado con Tailwind CSS, lo que permitió mantener la coherencia visual y la escalabilidad del diseño en todo el proyecto."
+            description: "Navega por mis principales contribuciones y aportes al proyecto TrainIT",
+            previewUrl: null,
+            downloadUrl: null,
+            linkUrl: null,
+            contributions: [
+                {
+                    icon: "🖼️",
+                    name: "Arquitectura Frontend y Componentes",
+                    description: ["Desempeñé el rol de Full Stack Developer en TrainIT, con un enfoque principal en el desarrollo Frontend y contribuciones relevantes en el Backend durante las etapas intermedias del proyecto. En las primeras fases, participé activamente en la definición de la arquitectura Frontend, colaborando con el equipo en la estructuración de carpetas, la configuración de librerías y la aplicación del patrón MVC.",
+                        "Asimismo, implementé la arquitectura de estilos basada en el sistema de colores diseñado por el equipo de UX/UI, desarrollando un System Color modular compuesto por variables CSS jerárquicas (colores primarios, neutros y semánticos) e integrado con Tailwind CSS, lo que permitió mantener la coherencia visual y la escalabilidad del diseño en todo el proyecto."
 
-            ],
-            previewUrl: ti1,
-            downloadUrl: null,
-            linkUrl: null,
-        },
-        {
-            icon: "🖼️",
-            name: "Desarrollo Full-Stack",
-            type: "Imagen",
-            date: "1/03/2025",
-            size: "Actualizado",
-            description: ["En esta fase, continué desarrollando y refinando componentes del Frontend, incluyendo botones, dropdowns y enlaces interactivos, así como la implementación de diversos elementos del dashboard.",
-                "Posteriormente, participé en la implementación y optimización del módulo de edición de tableros, integrando la sincronización de datos entre backend y frontend. Esto implicó trabajar con endpoints, diseñar formularios dinámicos, modificar o crear nuevos modelos y realizar migraciones en Flask, así como gestionar cada campo de la interfaz (imágenes, etiquetas, miembros)."],
+                    ],
+                    previewUrl: ti1,
+                },
+                {
+                    icon: "🖼️",
+                    name: "Desarrollo Full-Stack",
+                    description: ["En esta fase, continué desarrollando y refinando componentes del Frontend, incluyendo botones, dropdowns y enlaces interactivos, así como la implementación de diversos elementos del dashboard.",
+                        "Posteriormente, participé en la implementación y optimización del módulo de edición de tableros, integrando la sincronización de datos entre backend y frontend. Esto implicó trabajar con endpoints, diseñar formularios dinámicos, modificar o crear nuevos modelos y realizar migraciones en Flask, así como gestionar cada campo de la interfaz (imágenes, etiquetas, miembros)."],
 
-            previewUrl: ti2,
-            downloadUrl: null,
-            linkUrl: null,
-        },
-        {
-            icon: "🖼️",
-            name: "Drag & Drop",
-            type: "Imagen",
-            date: "1/03/2025",
-            size: "Actualizado",
-            description: "Finalmente, desarrollé el sistema de arrastre y soltado (drag & drop), uno de los componentes más interactivos de la aplicación, utilizando la librería DndKit. Me encargué tanto del Frontend como del Backend, asegurando la persistencia de posiciones y estados de las tarjetas, y gestionando componentes cargados de múltiples estados y efectos. Este desarrollo implicó optimización de renders, control de bucles infinitos y estrategias avanzadas consolidando una experiencia de usuario fluida y confiable en el módulo de administración de tareas.",
-            previewUrl: ti3,
-            downloadUrl: null,
-            linkUrl: null,
+                    previewUrl: ti2,
+                },
+                {
+                    icon: "🖼️",
+                    name: "Drag & Drop",
+                    description: "Finalmente, desarrollé el sistema de arrastre y soltado (drag & drop), uno de los componentes más interactivos de la aplicación, utilizando la librería DndKit. Me encargué tanto del Frontend como del Backend, asegurando la persistencia de posiciones y estados de las tarjetas, y gestionando componentes cargados de múltiples estados y efectos. Este desarrollo implicó optimización de renders, control de bucles infinitos y estrategias avanzadas consolidando una experiencia de usuario fluida y confiable en el módulo de administración de tareas.",
+                    previewUrl: ti3,
+                }
+            ]
         },
 
         {
@@ -804,60 +773,50 @@ export const projectDetailFiles = {
         },
 
         {
-            icon: "🏠",
-            name: "Interfaz Principal",
-            type: "Imagen",
-            date: "20/06/2025",
-            size: "Actualizado",
-            description: [
-                "El desarrollo de Framer Motion Lab se estructuró como una experiencia de aprendizaje progresiva, inspirada directamente en la documentación oficial de Framer Motion.",
-                "Desde su concepción, el proyecto fue diseñado para dividir el conocimiento en tres niveles —Básico, Gestures y Layout—, abordando gradualmente las propiedades más importantes de la animación web. Actualmente, el nivel Básico se encuentra casi completo, mientras que Gestures está en desarrollo y Layout en fase de planeación."
-            ],
-            previewUrl: fm,
-            downloadUrl: null,
-            linkUrl: null,
-        },
-
-        {
-            icon: "📊",
-            name: "Dashboard de Animaciones",
-            type: "Imagen",
-            date: "20/06/2025",
-            size: "Actualizado",
-            description: [
-                "Cada card combina el logotipo de Framer Motion con una breve descripción y una animación demostrativa, permitiendo explorar propiedades como movimiento en eje X y Y, opacidad, rotación, duración y transiciones."
-            ],
-            previewUrl: fm1,
-            downloadUrl: null,
-            linkUrl: null,
-        },
-
-        {
             icon: "📋",
-            name: "Explicaciones y Detalles",
-            type: "Imagen",
-            date: "20/06/2025",
+            name: "Contribuciones/Aportes",
+            type: "Dinámico",
+            date: "01/06/2025",
             size: "Actualizado",
-            description: [
-                "Cada card combina el logotipo de Framer Motion con una breve descripción y una animación demostrativa, permitiendo explorar propiedades como movimiento en eje X y Y, opacidad, rotación, duración y transiciones."
-            ],
-            previewUrl: fm2,
+            description: "Navega por mis principales contribuciones y aportes al proyecto Framer Motion Lab",
+            previewUrl: null,
             downloadUrl: null,
             linkUrl: null,
-        },
-
-        {
-            icon: "🧩",
-            name: "LabMotion Builder",
-            type: "Imagen",
-            date: "20/06/2025",
-            size: "Actualizado",
-            description: [
-                "Uno de los módulos más destacados es el Panel Interactivo o LabMotionBuilder, un entorno de experimentación que permite modificar parámetros de animación —como posición, escala, color o duración— y reproducir los resultados en tiempo real."
-            ],
-            previewUrl: fm3,
-            downloadUrl: null,
-            linkUrl: null,
+            contributions: [
+                {
+                    icon: "🏠",
+                    name: "Interfaz Principal",
+                    description: [
+                        "El desarrollo de Framer Motion Lab se estructuró como una experiencia de aprendizaje progresiva, inspirada directamente en la documentación oficial de Framer Motion.",
+                        "Desde su concepción, el proyecto fue diseñado para dividir el conocimiento en tres niveles —Básico, Gestures y Layout—, abordando gradualmente las propiedades más importantes de la animación web. Actualmente, el nivel Básico se encuentra casi completo, mientras que Gestures está en desarrollo y Layout en fase de planeación."
+                    ],
+                    previewUrl: fm,
+                },
+                {
+                    icon: "📊",
+                    name: "Dashboard de Animaciones",
+                    description: [
+                        "Cada card combina el logotipo de Framer Motion con una breve descripción y una animación demostrativa, permitiendo explorar propiedades como movimiento en eje X y Y, opacidad, rotación, duración y transiciones."
+                    ],
+                    previewUrl: fm1,
+                },
+                {
+                    icon: "📋",
+                    name: "Explicaciones y Detalles",
+                    description: [
+                        "Cada card combina el logotipo de Framer Motion con una breve descripción y una animación demostrativa, permitiendo explorar propiedades como movimiento en eje X y Y, opacidad, rotación, duración y transiciones."
+                    ],
+                    previewUrl: fm2,
+                },
+                {
+                    icon: "🧩",
+                    name: "LabMotion Builder",
+                    description: [
+                        "Uno de los módulos más destacados es el Panel Interactivo o LabMotionBuilder, un entorno de experimentación que permite modificar parámetros de animación —como posición, escala, color o duración— y reproducir los resultados en tiempo real."
+                    ],
+                    previewUrl: fm3,
+                }
+            ]
         },
 
         {
@@ -901,37 +860,35 @@ export const projectDetailFiles = {
             linkUrl: null,
         },
         {
-            icon: "🖼️",
-            name: "Liderazgo en Desarrollo Frontend",
-            type: "Imagen",
-            date: "1/03/2025",
+            icon: "📋",
+            name: "Contribuciones/Aportes",
+            type: "Dinámico",
+            date: "15/10/2025",
             size: "Actualizado",
-            description: "Asumí un rol de liderazgo en el desarrollo frontend, definiendo la estructura de carpetas, la organización del código y una arquitectura CSS basada en System Color. Esto garantizó coherencia visual, escalabilidad y un diseño limpio y mantenible a largo plazo.",
+            description: "Navega por mis principales contribuciones y aportes al proyecto NoCountry",
             previewUrl: null,
             downloadUrl: null,
             linkUrl: null,
-        },
-        {
-            icon: "🖼️",
-            name: "Componentes Reutilizables y Escalables",
-            type: "Imagen",
-            date: "1/03/2025",
-            size: "Actualizado",
-            description: "Diseñé e implementé componentes modulares y reutilizables —como botones, tablas y secciones dinámicas— aplicando props y lógica adaptable para optimizar la eficiencia, la consistencia visual y la mantenibilidad del código en el proyecto.",
-            previewUrl: null,
-            downloadUrl: null,
-            linkUrl: null,
-        },
-        {
-            icon: "🖼️",
-            name: "Coordinación y Supervisión del Equipo Frontend",
-            type: "Imagen",
-            date: "1/03/2025",
-            size: "Actualizado",
-            description: "Participé activamente en la coordinación del equipo frontend, supervisando integraciones, facilitando la resolución de conflictos y asegurando el cumplimiento de los lineamientos técnicos durante todo el ciclo de desarrollo.",
-            previewUrl: null,
-            downloadUrl: null,
-            linkUrl: null,
+            contributions: [
+                {
+                    icon: "🖼️",
+                    name: "Liderazgo en Desarrollo Frontend",
+                    description: "Asumí un rol de liderazgo en el desarrollo frontend, definiendo la estructura de carpetas, la organización del código y una arquitectura CSS basada en System Color. Esto garantizó coherencia visual, escalabilidad y un diseño limpio y mantenible a largo plazo.",
+                    previewUrl: null,
+                },
+                {
+                    icon: "🖼️",
+                    name: "Componentes Reutilizables y Escalables",
+                    description: "Diseñé e implementé componentes modulares y reutilizables —como botones, tablas y secciones dinámicas— aplicando props y lógica adaptable para optimizar la eficiencia, la consistencia visual y la mantenibilidad del código en el proyecto.",
+                    previewUrl: null,
+                },
+                {
+                    icon: "🖼️",
+                    name: "Coordinación y Supervisión del Equipo Frontend",
+                    description: "Participé activamente en la coordinación del equipo frontend, supervisando integraciones, facilitando la resolución de conflictos y asegurando el cumplimiento de los lineamientos técnicos durante todo el ciclo de desarrollo.",
+                    previewUrl: null,
+                }
+            ]
         },
         {
             icon: "💻",
@@ -1021,15 +978,23 @@ export const projectDetailFiles = {
             linkUrl: null,
         },
         {
-            icon: "🖼️",
-            name: "Contribución Inicial",
-            type: "Imagen",
+            icon: "📋",
+            name: "Contribuciones/Aportes",
+            type: "Dinámico",
             date: "15/10/2025",
             size: "Actualizado",
-            description: "Actualmente en desarrollo. Se están definiendo los primeros componentes y pruebas de scraping, junto con la estructura base del proyecto en React y Vite.",
+            description: "Navega por mis principales contribuciones y aportes al proyecto Postulamania",
             previewUrl: null,
             downloadUrl: null,
             linkUrl: null,
+            contributions: [
+                {
+                    icon: "🖼️",
+                    name: "Contribución Inicial",
+                    description: "Actualmente en desarrollo. Se están definiendo los primeros componentes y pruebas de scraping, junto con la estructura base del proyecto en React y Vite.",
+                    previewUrl: null,
+                }
+            ]
         },
         {
             icon: "💻",

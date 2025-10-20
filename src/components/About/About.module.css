@@ -331,10 +331,64 @@
 /* Título */
 .title {
   font-size: 18px;
-  font-weight: bold;
-  text-align: left;
-  margin-bottom: -10px;
+  font-weight: 600;
   color: var(--text-primary);
+  margin: 0;
+  line-height: 1.3;
+}
+
+/* Navegación de contribuciones */
+.contributionNavigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border-light);
+  margin-bottom: 12px;
+}
+
+.navButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border: 1px solid var(--border-color);
+  background: var(--bg-secondary);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: var(--text-secondary);
+}
+
+.navButton:hover:not(:disabled) {
+  background: var(--hover-bg);
+  border-color: var(--border-hover);
+  color: var(--text-primary);
+}
+
+.navButton:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.contributionCounter {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-muted);
+  background: var(--bg-secondary);
+  padding: 4px 8px;
+  border-radius: 12px;
+  border: 1px solid var(--border-light);
+}
+
+.contributionTitle {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-primary);
+  margin: 0 0 12px 0;
+  line-height: 1.3;
 }
 
 /* Botón */
