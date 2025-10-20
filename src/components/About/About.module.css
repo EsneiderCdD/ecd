@@ -228,21 +228,30 @@
   gap: 10px;
   padding: 13px 0;
   border-bottom: 1px solid var(--border-light);
-  font-size: 13px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-weight: 400;
+  
+  
+  font-family: var(--f-ibm);
+  font-size: var(--text-base);
+  font-weight: var(--font-normal);
+  line-height: var(--leading-tight);
+  letter-spacing: 0.1em;
+  
   color: var(--text-primary);
 }
 
+
 .headerRow {
-  font-weight: bold;
+
+  font-family: var(--f-ibm);
+  font-size: var(--text-base);
+  font-weight: var(--font-semibold);
+  line-height: var(--leading-tight);
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  
   background: var(--header-row-bg);
-  font-size: 13px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-weight: 100;
   color: var(--text-secondary);
 }
-
 .headerRow .name {
   border-left: 2px solid var(--border-color);
   padding-left: 8px;

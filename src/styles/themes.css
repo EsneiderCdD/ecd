@@ -20,9 +20,8 @@
 
 
   --f-asc: 'Amatic SC', serif;
+  --f-ibm: 'IBM Plex Sans', sans-serif;
 
-  --font-primary: 'Inter Variable', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
-  --font-system: 'Segoe UI', system-ui, -apple-system, sans-serif;
 
   /* === TAMAÑOS === */
   --text-xs: 11px;
@@ -82,17 +81,16 @@
   -webkit-font-smoothing: antialiased;
 
 }
-
 .text-table {
-  font-family: var(--font-primary);
+  font-family: var(--f-ibm);
   font-size: var(--text-sm);
   font-weight: var(--font-normal);
   line-height: var(--leading-tight);
-  letter-spacing: 0;
+  letter-spacing: 0.01em;
 }
 
 .text-table-header {
-  font-family: var(--font-primary);
+  font-family: var(--f-ibm);
   font-size: var(--text-sm);
   font-weight: var(--font-semibold);
   line-height: var(--leading-tight);
