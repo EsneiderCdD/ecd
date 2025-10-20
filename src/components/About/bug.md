@@ -1,0 +1,1 @@
+revisar drag y drop vs desarrollo full stack - proyectos- traintrello
