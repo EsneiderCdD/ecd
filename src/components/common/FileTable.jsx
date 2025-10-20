@@ -1,12 +1,38 @@
 // src/components/common/FileTable.jsx
 import { useNavigate } from "react-router-dom";
 import styles from "../About/About.module.css";
+import { getStatusTagConfig, tagVariants } from "../../data/statusTags";
 
 function FileTable({ files, selectedFile, setSelectedFile }) {
   const navigate = useNavigate();
 
   const handleClick = (file) => {
     if (setSelectedFile) setSelectedFile(file);
+  };
+
+  // Función para renderizar el estado con tags especiales
+  const renderStatus = (status) => {
+    const tagConfig = getStatusTagConfig(status);
+    
+    if (tagConfig) {
+      const variant = tagVariants[tagConfig.variant];
+      return (
+        <span 
+          className={styles.statusTag}
+          style={{
+            background: variant.background,
+            color: variant.color,
+            border: variant.border,
+            boxShadow: variant.boxShadow
+          }}
+        >
+          {tagConfig.text}
+        </span>
+      );
+    }
+    
+    // Si no hay configuración especial, mostrar el estado normal
+    return status;
   };
 
   const handleDoubleClick = (file) => {
@@ -56,7 +82,9 @@ function FileTable({ files, selectedFile, setSelectedFile }) {
           </span>
           <span className={styles.date}>{file.date}</span>
           <span className={styles.type}>{file.type}</span>
-          <span className={styles.size}>{file.size}</span>
+          <span className={styles.size}>
+            {renderStatus(file.size)}
+          </span>
         </div>
       ))}
     </div>
