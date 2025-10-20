@@ -121,3 +121,11 @@
   line-height: var(--leading-tight);
   letter-spacing: -0.01em;
 }
+/* POR AHORA NO BORRAR 
+.text-info-panel {
+  font-family: 'Source Code Pro', monospace;
+  font-size: var(--text-sm);
+  font-weight: var(--font-normal);
+  line-height: var(--leading-relaxed);
+  letter-spacing: 0.01em;
+} */
