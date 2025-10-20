@@ -184,25 +184,25 @@ export const projectDetailFiles = {
                 {
                     icon: "🖼️",
                     name: "Navegación Dinámica por Días",
-                    description: "Implementé un sistema de navegación semanal con detección automática del día actual, resaltando visualmente la jornada correspondiente y mejorando la experiencia del usuario.",
+                    description: ["Implementé un sistema de navegación semanal con detección automática del día actual, resaltando visualmente la jornada correspondiente y mejorando la experiencia del usuario."],
                     previewUrl: mt1,
                 },
                 {
                     icon: "🖼️",
                     name: "Desarrollo de la Carta Digital",
-                    description: "Construí una carta digital dinámica con React.js, Vite y React Router, priorizando la fluidez de carga, el diseño adaptable y la fácil escalabilidad del contenido.",
+                    description: ["Construí una carta digital dinámica con React.js, Vite y React Router, priorizando la fluidez de carga, el diseño adaptable y la fácil escalabilidad del contenido."],
                     previewUrl: mt2,
                 },
                 {
                     icon: "🖼️",
                     name: "Diseño Visual e Identidad de Marca",
-                    description: "Incorporé animaciones sutiles, transiciones fluidas y una paleta cromática coherente con la marca, reforzando su estilo visual y su narrativa gastronómica local.",
+                    description: ["Incorporé animaciones sutiles, transiciones fluidas y una paleta cromática coherente con la marca, reforzando su estilo visual y su narrativa gastronómica local."],
                     previewUrl: mt3,
                 },
                 {
                     icon: "🖼️",
                     name: "Sistema de Pedidos Automatizado",
-                    description: "Integré un sistema de pedidos directos por WhatsApp con mensajes autocompletados, reduciendo errores, pasos manuales y garantizando coherencia en la comunicación con los clientes.",
+                    description: ["Integré un sistema de pedidos directos por WhatsApp con mensajes autocompletados, reduciendo errores, pasos manuales y garantizando coherencia en la comunicación con los clientes."],
                     previewUrl: mt4,
                 }
             ]
@@ -304,19 +304,19 @@ export const projectDetailFiles = {
                 {
                     icon: "🖼️",
                     name: "Landing Page Mobile First",
-                    description: "Diseñé e implementé una landing page completamente orientada a dispositivos móviles, optimizando la jerarquía visual y la velocidad de carga para una experiencia fluida.",
+                    description: ["Diseñé e implementé una landing page completamente orientada a dispositivos móviles, optimizando la jerarquía visual y la velocidad de carga para una experiencia fluida."],
                     previewUrl: mrs,
                 },
                 {
                     icon: "🖼️",
                     name: "Carruseles Dinámicos con Swiper.js",
-                    description: "Integré carruseles dinámicos con Swiper.js para presentar clips, fotografías y videos del artista de manera atractiva y con transiciones suaves.",
+                    description: ["Integré carruseles dinámicos con Swiper.js para presentar clips, fotografías y videos del artista de manera atractiva y con transiciones suaves."],
                     previewUrl: mrs2,
                 },
                 {
                     icon: "🖼️",
                     name: "Interactividad y Movimiento",
-                    description: "Desarrollé una experiencia interactiva utilizando Framer Motion, implementando gestos drag & drop que permiten explorar álbumes y contenido musical de forma inmersiva.",
+                    description: ["Desarrollé una experiencia interactiva utilizando Framer Motion, implementando gestos drag & drop que permiten explorar álbumes y contenido musical de forma inmersiva."],
                     previewUrl: mrs6,
                 }
             ]
@@ -695,7 +695,7 @@ export const projectDetailFiles = {
                 {
                     icon: "🖼️",
                     name: "Drag & Drop",
-                    description: "Finalmente, desarrollé el sistema de arrastre y soltado (drag & drop), uno de los componentes más interactivos de la aplicación, utilizando la librería DndKit. Me encargué tanto del Frontend como del Backend, asegurando la persistencia de posiciones y estados de las tarjetas, y gestionando componentes cargados de múltiples estados y efectos. Este desarrollo implicó optimización de renders, control de bucles infinitos y estrategias avanzadas consolidando una experiencia de usuario fluida y confiable en el módulo de administración de tareas.",
+                    description: ["Finalmente, desarrollé el sistema de arrastre y soltado (drag & drop), uno de los componentes más interactivos de la aplicación, utilizando la librería DndKit. Me encargué tanto del Frontend como del Backend, asegurando la persistencia de posiciones y estados de las tarjetas, y gestionando componentes cargados de múltiples estados y efectos. Este desarrollo implicó optimización de renders, control de bucles infinitos y estrategias avanzadas consolidando una experiencia de usuario fluida y confiable en el módulo de administración de tareas."],
                     previewUrl: ti3,
                 }
             ]
@@ -873,19 +873,19 @@ export const projectDetailFiles = {
                 {
                     icon: "🖼️",
                     name: "Liderazgo en Desarrollo Frontend",
-                    description: "Asumí un rol de liderazgo en el desarrollo frontend, definiendo la estructura de carpetas, la organización del código y una arquitectura CSS basada en System Color. Esto garantizó coherencia visual, escalabilidad y un diseño limpio y mantenible a largo plazo.",
+                    description: ["Asumí un rol de liderazgo en el desarrollo frontend, definiendo la estructura de carpetas, la organización del código y una arquitectura CSS basada en System Color. Esto garantizó coherencia visual, escalabilidad y un diseño limpio y mantenible a largo plazo."],
                     previewUrl: null,
                 },
                 {
                     icon: "🖼️",
                     name: "Componentes Reutilizables y Escalables",
-                    description: "Diseñé e implementé componentes modulares y reutilizables —como botones, tablas y secciones dinámicas— aplicando props y lógica adaptable para optimizar la eficiencia, la consistencia visual y la mantenibilidad del código en el proyecto.",
+                    description: ["Diseñé e implementé componentes modulares y reutilizables —como botones, tablas y secciones dinámicas— aplicando props y lógica adaptable para optimizar la eficiencia, la consistencia visual y la mantenibilidad del código en el proyecto."],
                     previewUrl: null,
                 },
                 {
                     icon: "🖼️",
                     name: "Coordinación y Supervisión del Equipo Frontend",
-                    description: "Participé activamente en la coordinación del equipo frontend, supervisando integraciones, facilitando la resolución de conflictos y asegurando el cumplimiento de los lineamientos técnicos durante todo el ciclo de desarrollo.",
+                    description: ["Participé activamente en la coordinación del equipo frontend, supervisando integraciones, facilitando la resolución de conflictos y asegurando el cumplimiento de los lineamientos técnicos durante todo el ciclo de desarrollo."],
                     previewUrl: null,
                 }
             ]
@@ -991,7 +991,7 @@ export const projectDetailFiles = {
                 {
                     icon: "🖼️",
                     name: "Contribución Inicial",
-                    description: "Actualmente en desarrollo. Se están definiendo los primeros componentes y pruebas de scraping, junto con la estructura base del proyecto en React y Vite.",
+                    description: ["Actualmente en desarrollo. Se están definiendo los primeros componentes y pruebas de scraping, junto con la estructura base del proyecto en React y Vite."],
                     previewUrl: null,
                 }
             ]
