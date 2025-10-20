@@ -274,14 +274,20 @@
 
 .date {
   min-width: 120px;
+  font-size: 0.8rem;
+  color: var(--text-muted);
 }
 
 .type {
   min-width: 100px;
+  font-size: 0.8rem;
+  color: var(--text-muted);
 }
 
 .size {
   min-width: 80px;
+  font-size: 0.8rem;
+  color: var(--text-muted);
 }
 
 .tableRow:not(.headerRow):hover {
