@@ -311,6 +311,10 @@
   cursor: pointer;
 }
 
+.selectedRow {
+  background-color: var(--hover-bg);
+}
+
 /* Panel de información */
 .infoPanel {
   background: var(--bg-panel);
