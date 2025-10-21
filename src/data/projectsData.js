@@ -678,26 +678,26 @@ export const projectDetailFiles = {
                 {
                     icon: "🖼️",
                     name: "Arquitectura Frontend y Componentes",
-                    description: ["Desempeñe un rol con enfoque principal Frontend y contribuciones relevantes en el Back. Asimismo, participe en establecer la estructuración de carpetas, la configuración de librerías y patrón de diseño.",
-                        "Implemente la estrategia System Color diseñado por el equipo UX/UI (colores primitivos, neutros, y semánticos) e integrándolo a Tailwind CSS.",
-                        "Construí </Componentes> Integrando colores, iconos, imágenes, posiciones, fondos, botones, tipografía fehacientemente al diseño en Figma."
+                    description: ["Desempeñe un rol con enfoque principal *Frontend* y contribuciones relevantes en el *Backend*. Asimismo, participe en establecer la **estructuración de carpetas**, la **configuración de librerías** y **patrón de diseño**.",
+                        "Implemente la estrategia ***Design System Color*** diseñado por el equipo UX/UI (colores primitivos, neutros, y semánticos) e integrándolo a Tailwind CSS.",
+                        "Construí **componentes** Integrando colores, iconos, imágenes, posiciones, fondos, botones, tipografía fehacientemente al diseño en **Figma.**"
                     ],
                     previewUrl: ti1,
                 },
                 {
                     icon: "🖼️",
                     name: "Desarrollo Full-Stack",
-                    description: ["continué desarrollando componentes del Front, opciones (dropdown), enlaces, y otros detalles complementarios al dashboard.",
-                        "Realice el módulo de edición de tablero realizando ajustes en el modelo, migraciones, lógica de campo de la interfaz (imagen, etiquetas, agregar usuarios...) y generar la conexión desde el Front con sus respectivos componentes y complementariedades."],
+                    description: ["continué desarrollando componentes del Front, opciones *(dropdown)*, enlaces, y otros detalles complementarios al dashboard.",
+                        "Realice el módulo de edición de tablero realizando ajustes en el **modelo**, **migraciones**, **lógica** de campo de la interfaz (imagen, etiquetas, agregar usuarios...) y generar la conexión desde el *Frontend* con sus respectivos componentes"],
 
                     previewUrl: ti2,
                 },
                 {
                     icon: "🖼️",
                     name: "Drag & Drop",
-                    description: ["Finalmente, desarrollé el sistema de arrastre y soltado (drag&drop) ",
+                    description: ["Finalmente, desarrollé el sistema de arrastre y soltado ***(Drag & Drop)*** ",
                         "Aportando coherencia desde el back para la gestión de columnas y posiciones, desplazamiento entre tarjetas y entre columnas, ajustando y reordenando según la zona droppeada.",
-                        "Construí el módulo Listas con sus respectivas tarjetas, submenú y funcionalidades, integrando la librería DndKit y sus propiedades (modifiers, overlay, droppable, etc.). Optimicé el rendimiento y la renderización a medida que se incorporaban nuevas funciones hasta consolidar el MVP."],
+                        "Implementé el sistema ***kanban*** usando ***@dnd-kit/core***, optimizando el flujo de datos mediante estrategias de *sortable context*, *collision detection*  y render condicional con ***React.memo*** para minimizar re-renders durante operaciones CRUD."],
                     previewUrl: ti3,
                 }
             ]
