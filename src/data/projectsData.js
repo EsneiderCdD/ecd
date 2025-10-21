@@ -42,7 +42,7 @@ export const projectsList = [
         name: "Martina Clandestina",
         type: "Proyecto Freelance",
         date: "01/03/2025",
-        size: "Proyecto Favorito",
+        size: "Favorito",
         path: "/projects/martinaclandestina",
         description: "Martina Clandestina es una marca de almuerzos con identidad local...",
         previewUrl: martina1,
@@ -102,7 +102,7 @@ export const projectsList = [
         name: "Guau",
         type: "Proyecto Personal",
         date: "11/11/2025",
-        size: "En Destacado",
+        size: "Destacado",
         path: "/projects/guau",
         description: "EN DESARROLLO... Estoy construyendo Guau como un legado tecnológico con sentido ético: una herramienta que une psicología, matemática y software en favor del bienestar animal. Más allá de la programación, el proyecto busca que la adopción sea un acto consciente, sustentado en ciencia, empatía y datos reales. Si en algún momento un refugio u organización desea integrarlo, estoy dispuesto a adaptarlo como aporte social y de libre implementación.",
         previewUrl: Guau,
@@ -143,7 +143,7 @@ export const projectsList = [
         date: "12/12/2025",
         size: "Urgente",
         path: null,
-        description: "(1) Mejorar espaciado, iconos. (2)Completar Stack tecnológico. (3) Blanco y negro. (4) videos, contenido audiovisual. (5) pulir parrafos (6) Hacer postulomania ",
+        description: "(1) Mejorar espaciado, iconos. (2)Completar Stack tecnológico. (3) refinar TAGS (4) videos, contenido audiovisual. (5) pulir parrafos (6) Hacer postulomania ",
         previewUrl: "https://cdn-icons-png.flaticon.com/512/3135/3135673.png",
         downloadUrl: null,
         linkUrl: null,
@@ -666,7 +666,7 @@ export const projectDetailFiles = {
         },
         {
             icon: "📋",
-            name: "Contribuciones/Aportes",
+            name: "Contribuciones",
             type: "Dinámico",
             date: "15/10/2025",
             size: "Actualizado",
@@ -678,24 +678,26 @@ export const projectDetailFiles = {
                 {
                     icon: "🖼️",
                     name: "Arquitectura Frontend y Componentes",
-                    description: ["Desempeñé el rol de Full Stack Developer en TrainIT, con un enfoque principal en el desarrollo Frontend y contribuciones relevantes en el Backend durante las etapas intermedias del proyecto. En las primeras fases, participé activamente en la definición de la arquitectura Frontend, colaborando con el equipo en la estructuración de carpetas, la configuración de librerías y la aplicación del patrón MVC.",
-                        "Asimismo, implementé la arquitectura de estilos basada en el sistema de colores diseñado por el equipo de UX/UI, desarrollando un System Color modular compuesto por variables CSS jerárquicas (colores primarios, neutros y semánticos) e integrado con Tailwind CSS, lo que permitió mantener la coherencia visual y la escalabilidad del diseño en todo el proyecto."
-
+                    description: ["Desempeñe un rol con enfoque principal Frontend y contribuciones relevantes en el Back. Asimismo, participe en establecer la estructuración de carpetas, la configuración de librerías y patrón de diseño.",
+                        "Implemente la estrategia System Color diseñado por el equipo UX/UI (colores primitivos, neutros, y semánticos) e integrándolo a Tailwind CSS.",
+                        "Construí </Componentes> Integrando colores, iconos, imágenes, posiciones, fondos, botones, tipografía fehacientemente al diseño en Figma."
                     ],
                     previewUrl: ti1,
                 },
                 {
                     icon: "🖼️",
                     name: "Desarrollo Full-Stack",
-                    description: ["En esta fase, continué desarrollando y refinando componentes del Frontend, incluyendo botones, dropdowns y enlaces interactivos, así como la implementación de diversos elementos del dashboard.",
-                        "Posteriormente, participé en la implementación y optimización del módulo de edición de tableros, integrando la sincronización de datos entre backend y frontend. Esto implicó trabajar con endpoints, diseñar formularios dinámicos, modificar o crear nuevos modelos y realizar migraciones en Flask, así como gestionar cada campo de la interfaz (imágenes, etiquetas, miembros)."],
+                    description: ["continué desarrollando componentes del Front, opciones (dropdown), enlaces, y otros detalles complementarios al dashboard.",
+                        "Realice el módulo de edición de tablero realizando ajustes en el modelo, migraciones, lógica de campo de la interfaz (imagen, etiquetas, agregar usuarios...) y generar la conexión desde el Front con sus respectivos componentes y complementariedades."],
 
                     previewUrl: ti2,
                 },
                 {
                     icon: "🖼️",
                     name: "Drag & Drop",
-                    description: ["Finalmente, desarrollé el sistema de arrastre y soltado (drag & drop), uno de los componentes más interactivos de la aplicación, utilizando la librería DndKit. Me encargué tanto del Frontend como del Backend, asegurando la persistencia de posiciones y estados de las tarjetas, y gestionando componentes cargados de múltiples estados y efectos. Este desarrollo implicó optimización de renders, control de bucles infinitos y estrategias avanzadas consolidando una experiencia de usuario fluida y confiable en el módulo de administración de tareas."],
+                    description: ["Finalmente, desarrollé el sistema de arrastre y soltado (drag&drop) ",
+                        "Aportando coherencia desde el back para la gestión de columnas y posiciones, desplazamiento entre tarjetas y entre columnas, ajustando y reordenando según la zona droppeada.",
+                        "Construí el módulo Listas con sus respectivas tarjetas, submenú y funcionalidades, integrando la librería DndKit y sus propiedades (modifiers, overlay, droppable, etc.). Optimicé el rendimiento y la renderización a medida que se incorporaban nuevas funciones hasta consolidar el MVP."],
                     previewUrl: ti3,
                 }
             ]

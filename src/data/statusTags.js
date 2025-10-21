@@ -10,12 +10,12 @@ export const statusTagsConfig = {
   
   // Estados con tags especiales
   special: {
-    "Proyecto Favorito": {
-      text: "Proyecto Favorito ⭐",
+    "Favorito": {
+      text: "Favorito ⭐",
       variant: "favorite"
     },
-    "En Destacado": {
-      text: "En Destacado 🔥",
+    "Destacado": {
+      text: "Destacado 🔥",
       variant: "highlight"
     },
     "Nuevo": {
@@ -27,7 +27,7 @@ export const statusTagsConfig = {
       variant: "urgent"
     },
     "Beta": {
-      text: "Beta 🧪",
+      text: "Divertido 🧪",
       variant: "beta"
     }
   }

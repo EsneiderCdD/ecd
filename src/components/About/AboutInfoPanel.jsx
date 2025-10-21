@@ -123,7 +123,7 @@ function AboutInfoPanel({ file }) {
       )}
 
       {/* Nombre - no mostrar si es imagen sin descripción */}
-      {!isImageOnly && <h2 className={styles.title}>{file.name}</h2>}
+      {/* {!isImageOnly && <h2 className={styles.title}>{file.name}</h2>} */}
 
       {/* Navegación de contribuciones */}
       {showContributionNavigation && (
