@@ -135,19 +135,6 @@ export const projectsList = [
         downloadUrl: null,
         linkUrl: null,
     },
-
-    {
-        icon: "📄",
-        name: "Tareas",
-        type: "Notas",
-        date: "12/12/2025",
-        size: "Urgente",
-        path: null,
-        description: "(1) Mejorar espaciado, iconos. (2)Completar Stack tecnológico. (3) refinar TAGS (4) videos, contenido audiovisual. (5) pulir parrafos (6) Hacer postulomania ",
-        previewUrl: "https://cdn-icons-png.flaticon.com/512/3135/3135673.png",
-        downloadUrl: null,
-        linkUrl: null,
-    },
 ];
 
 
