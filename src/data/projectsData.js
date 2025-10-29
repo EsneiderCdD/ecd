@@ -33,7 +33,6 @@ import gua3 from "@/assets/images/gua3.png";
 import guau4 from "@/assets/images/guau4.png";
 
 import Guau from "@/assets/images/Guau.png";
-import nocountry from "@/assets/images/nocountry.jpg";
 import { generateStackHTML } from './stackIcons';
 
 export const projectsList = [
@@ -109,32 +108,7 @@ export const projectsList = [
         downloadUrl: null,
         linkUrl: null,
     },
-    {
-        icon: "📁",
-        name: "NoCountry",
-        type: "Proyecto Colaborativo",
-        date: "21/11/2025",
-        size: "Desarrollo",
-        path: "/projects/nocountry",
-        description: "EN DESARROLLO... Plataforma diseñada para centralizar búsqueda y postulación...",
-        previewUrl: nocountry,
-        downloadUrl: null,
-        linkUrl: null,
-    },
 
-
-    {
-        icon: "📁",
-        name: "Postulamania",
-        type: "Proyecto Personal",
-        date: "01/12/2025",
-        size: "Desarrollo",
-        path: "/projects/postulamania",
-        description: "EN DESARROLLO... Clon de Trello adaptado para gestión de entrenamientos...",
-        previewUrl: "https://cdn-icons-png.flaticon.com/512/3135/3135673.png",
-        downloadUrl: null,
-        linkUrl: null,
-    },
 ];
 
 
@@ -836,177 +810,7 @@ export const projectDetailFiles = {
 
 
 
-    nocountry: [
-        {
-            icon: "📄",
-            name: "Descripción del Proyecto",
-            type: "Texto",
-            date: "15/10/2025 ",
-            size: "Actualizado",
-            description: "TrainIT es un programa educativo y comunidad de simulación laboral gratuita que brinda experiencia práctica mediante la participación en MVPs multidisciplinarios sin fines de lucro. Los equipos son guiados por profesionales seniors en distintos nichos, ofreciendo a los participantes la oportunidad de fortalecer sus portafolios y mejorar su perfil profesional frente a empresas activas del mercado.",
-            previewUrl: null,
-            downloadUrl: null,
-            linkUrl: null,
-        },
-        {
-            icon: "📋",
-            name: "Contribuciones/Aportes",
-            type: "Dinámico",
-            date: "15/10/2025",
-            size: "Actualizado",
-            description: "Navega por mis principales contribuciones y aportes al proyecto NoCountry",
-            previewUrl: null,
-            downloadUrl: null,
-            linkUrl: null,
-            contributions: [
-                {
-                    icon: "🖼️",
-                    name: "Liderazgo en Desarrollo Frontend",
-                    description: ["Asumí un rol de liderazgo en el desarrollo frontend, definiendo la estructura de carpetas, la organización del código y una arquitectura CSS basada en System Color. Esto garantizó coherencia visual, escalabilidad y un diseño limpio y mantenible a largo plazo."],
-                    previewUrl: null,
-                },
-                {
-                    icon: "🖼️",
-                    name: "Componentes Reutilizables y Escalables",
-                    description: ["Diseñé e implementé componentes modulares y reutilizables —como botones, tablas y secciones dinámicas— aplicando props y lógica adaptable para optimizar la eficiencia, la consistencia visual y la mantenibilidad del código en el proyecto."],
-                    previewUrl: null,
-                },
-                {
-                    icon: "🖼️",
-                    name: "Coordinación y Supervisión del Equipo Frontend",
-                    description: ["Participé activamente en la coordinación del equipo frontend, supervisando integraciones, facilitando la resolución de conflictos y asegurando el cumplimiento de los lineamientos técnicos durante todo el ciclo de desarrollo."],
-                    previewUrl: null,
-                }
-            ]
-        },
-        {
-            icon: "💻",
-            name: "Tecnologías Implementadas",
-            type: "Texto e imagen",
-            date: "01/04/2025 ",
-            size: "Actualizado",
-            description: `
-    <div style="display: flex; flex-wrap: wrap; gap: 16px; align-items: center;">
-        <img src="${react}" alt="React" style="width: auto; height: 48px;" title="React.js" />
-        <img src="${css}" alt="CSS3" style="width: auto; height: 48px;" title="CSS3" />
-        <img src="${js}" alt="JavaScript" style="width: auto; height: 48px;" title="JavaScript" />
-        <span style="font-size: 14px; color: #555;">Mobile Design</span>
-    </div>
-`,
-            previewUrl: null,
-            downloadUrl: null,
-            linkUrl: null,
-        },
-        {
-            icon: "📑",
-            name: "Ficha Técnica",
-            type: "Word",
-            date: "01/06/2025",
-            size: "Actualizado",
-            description: "Ficha técnica descargable en Word con los detalles del proyecto y su arquitectura.",
-            previewUrl: "https://cdn-icons-png.flaticon.com/512/732/732223.png",
-            downloadUrl: "/f-ps.docx",
-            linkUrl: null,
-        },
-        {
-            icon: "🎥",
-            name: "Video Presentación",
-            type: "YouTube",
-            date: "01/06/2025",
-            size: "Actualizado",
-            description: "Recorre las principales funcionalidades y la experiencia del proyecto a través de un video explicativo en YouTube.",
-            previewUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-            downloadUrl: null,
-            linkUrl: "https://www.youtube.com/",
-        },
-        {
-            icon: "🐙",
-            name: "Repositorio y Recursos",
-            type: "GitHub",
-            date: "01/06/2025",
-            size: "Actualizado",
-            description: "Repositorio del proyecto: https://github.com/ | Instagram: https://www.instagram.com/ | Website: https://martinacocina.netlify.app/",
-            previewUrl: "https://img.icons8.com/ios-glyphs/512/github.png",
-            downloadUrl: null,
-            linkUrl: "https://github.com/",
-        },
-        {
-            icon: "📸",
-            name: "Instagram Oficial",
-            type: "Instagram",
-            date: "01/06/2025",
-            size: "Actualizado",
-            description: "Instagram oficial del proyecto: https://www.instagram.com/ | Web: https://martinacocina.netlify.app/",
-            previewUrl: "https://img.icons8.com/ios-glyphs/512/instagram-new.png",
-            downloadUrl: null,
-            linkUrl: "https://www.instagram.com/",
-        },
-        {
-            icon: "🌐",
-            name: "Sitio Web (Vercel)",
-            type: "Vercel",
-            date: "01/06/2025",
-            size: "Actualizado",
-            description: "Proyecto desplegado en Vercel: https://martinacocina.netlify.app/",
-            previewUrl: "https://img.icons8.com/ios-glyphs/512/internet--v1.png",
-            downloadUrl: null,
-            linkUrl: "https://martinacocina.netlify.app/",
-        },
-    ],
 
-    postulamania: [
-        {
-            icon: "📄",
-            name: "Descripción del Proyecto",
-            type: "Texto",
-            date: "15/10/2025",
-            size: "Actualizado",
-            description: "Postulomania es un proyecto personal actualmente en desarrollo, enfocado en el scraping y la minería de texto para el análisis automatizado de ofertas laborales y datos relacionados.",
-            previewUrl: null,
-            downloadUrl: null,
-            linkUrl: null,
-        },
-        {
-            icon: "📋",
-            name: "Contribuciones/Aportes",
-            type: "Dinámico",
-            date: "15/10/2025",
-            size: "Actualizado",
-            description: "Navega por mis principales contribuciones y aportes al proyecto Postulamania",
-            previewUrl: null,
-            downloadUrl: null,
-            linkUrl: null,
-            contributions: [
-                {
-                    icon: "🖼️",
-                    name: "Contribución Inicial",
-                    description: ["Actualmente en desarrollo. Se están definiendo los primeros componentes y pruebas de scraping, junto con la estructura base del proyecto en React y Vite."],
-                    previewUrl: null,
-                }
-            ]
-        },
-        {
-            icon: "💻",
-            name: "Tecnologías Usadas",
-            type: "Texto e imagen",
-            date: "15/10/2025",
-            size: "Actualizado",
-            description: generateStackHTML(['react', 'css', 'javascript', 'framer', 'vite']),
-            previewUrl: null,
-            downloadUrl: null,
-            linkUrl: null,
-        },
-        {
-            icon: "📑",
-            name: "Ficha Técnica",
-            type: "Word",
-            date: "15/10/2025",
-            size: "Actualizado",
-            description: "Ficha técnica descargable (en desarrollo).",
-            previewUrl: "https://cdn-icons-png.flaticon.com/512/732/732223.png",
-            downloadUrl: "/f-ps.docx",
-            linkUrl: null,
-        },
-    ],
+
 
 };

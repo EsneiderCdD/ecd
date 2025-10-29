@@ -10,5 +10,4 @@ export const projectFiles = {
   guau: [],
   framermotionlab: [],
   trainittrello: [],
-  postulamania: [],
 };
