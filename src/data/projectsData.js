@@ -807,10 +807,4 @@ export const projectDetailFiles = {
         },
     ],
 
-
-
-
-
-
-
 };
