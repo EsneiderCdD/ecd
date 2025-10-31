@@ -108,6 +108,18 @@ export const projectsList = [
         downloadUrl: null,
         linkUrl: null,
     },
+    {
+        icon: "📁",
+        name: "Gury",
+        type: "Proyecto Freelance",
+        date: "11/11/2025",
+        size: "Reciente",
+        path: "/projects/gury",
+        description: "EN DESARROLLO... Estoy construyendo Guau como un legado tecnológico con sentido ético: una herramienta que une psicología, matemática y software en favor del bienestar animal. Más allá de la programación, el proyecto busca que la adopción sea un acto consciente, sustentado en ciencia, empatía y datos reales. Si en algún momento un refugio u organización desea integrarlo, estoy dispuesto a adaptarlo como aporte social y de libre implementación.",
+        previewUrl: Guau,
+        downloadUrl: null,
+        linkUrl: null,
+    },
 
 ];
 
@@ -806,5 +818,6 @@ export const projectDetailFiles = {
             linkUrl: null,
         },
     ],
+    
 
 };
