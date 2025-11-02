@@ -533,8 +533,9 @@ export const projectDetailFiles = {
                     icon: "🎨",
                     name: "Diseño y Frontend",
                     description: [
-                        "Estoy diseñando una interfaz limpia, empática y funcional con un enfoque minimalista, priorizando la experiencia de adopción sobre la lógica de negocio. Estoy estructurando componentes reutilizables —cards dinámicas, rutas, modales y pantallas de detalle— que permiten simular el proceso visual de selección y compatibilidad de forma fluida y emocionalmente atractiva.",
-                        "Estoy integrando un chatbot funcional que acompaña el test de compatibilidad, actualmente en fase inicial con una escala líquida de 1 a 4. Aunque la experiencia aún es estática, estoy trabajando en una interacción más conversacional y dinámica. A nivel visual, estoy explorando animaciones con Framer Motion y microinteracciones que refuercen la conexión entre el usuario y el proceso de adopción."
+                        "⦿ Diseñé una interfaz limpia y empática con enfoque minimalista, priorizando la experiencia de adopción sobre la lógica de negocio.",
+                        "⦿ Estructuré componentes reutilizables —cards dinámicas, rutas, modales y pantallas de detalle— que simulan de forma fluida el proceso visual de selección y compatibilidad.",
+                        "⦿ Integré un chatbot funcional para acompañar el test de compatibilidad, actualmente basado en una escala líquida de 1 a 4. Implementé animaciones con **Framer Motion** y microinteracciones que fortalecen la conexión emocional del usuario con el flujo de adopción."
                     ],
                     previewUrl: gua,
                 },
@@ -542,8 +543,9 @@ export const projectDetailFiles = {
                     icon: "🧩",
                     name: "Backend y Datos",
                     description: [
-                        "Estoy desarrollando un backend funcional enfocado en la gestión y persistencia de datos de perros, usuarios y administradores. Actualmente incluye autenticación, rutas básicas y un panel de administración visible solo para el administrador, desde el cual es posible registrar, actualizar y gestionar la información de los animales.",
-                        "No estoy implementando lógica de negocio compleja porque Guau busca mantenerse adaptable a distintos modelos sociales o institucionales. El backend sirve como soporte estructural para el motor psicométrico, dejando abierta la posibilidad de que futuras versiones integren módulos de compatibilidad, estadísticas o paneles analíticos."
+                        "⦿ Desarrollé un backend funcional centrado en la gestión de datos de perros, usuarios y administradores. Incluye autenticación, rutas básicas y un panel de control exclusivo para el administrador.",
+
+                        "⦿ El backend actúa como soporte estructural del motor psicométrico, con proyección hacia módulos futuros de compatibilidad, estadísticas y paneles analíticos."
                     ],
                     previewUrl: gua3,
                 },
@@ -551,8 +553,9 @@ export const projectDetailFiles = {
                     icon: "🧠",
                     name: "Psicometría y Algoritmo",
                     description: [
-                        "Estoy elaborando dos instrumentos psicométricos paralelos: el Test de Usuario y la Observación Canina. Cada uno convierte respuestas conductuales en vectores normalizados, que luego se analizan mediante un modelo matemático basado en distancia euclidiana para determinar la compatibilidad entre adoptante y perro.",
-                        "Estoy diseñando interpretaciones automáticas del score, visualizaciones y ponderaciones que en el futuro permitirán ajustar la afinidad según dimensiones emocionales o rasgos de comportamiento. Es un trabajo que mezcla psicología aplicada, matemáticas y experiencia de usuario en un mismo entorno digital."
+                        "⦿ Desarrollé dos instrumentos psicométricos paralelos: el **Test de Usuario** y la **Observación Canina**, ambos traduciendo respuestas conductuales en vectores normalizados.",
+                        "⦿ Implementé un modelo basado en **distancia euclidiana** para calcular la compatibilidad entre adoptante y perro, integrando matemática aplicada y psicología del comportamiento.",
+                        "⦿ Generé interpretaciones automáticas del puntaje y visualizaciones que permitirán ajustar la afinidad según dimensiones emocionales y rasgos conductuales."
                     ],
                     previewUrl: null,
                 },
@@ -560,8 +563,9 @@ export const projectDetailFiles = {
                     icon: "🚀",
                     name: "Proyección Técnica",
                     description: [
-                        "Estoy planificando iteraciones que incorporan ponderaciones por dimensión, filtros por rasgos (tamaño, salud, energía), ajustes automáticos con datos reales y un chatbot más conversacional. Busco integrar un sistema de retroalimentación visual en las cards (animaciones, sonidos, transformaciones de imagen) que genere un entorno más inmersivo.",
-                        "En etapas futuras, Guau podrá incorporar redes de grafos, IA generativa para interpretación de resultados y un módulo estadístico para refugios, manteniendo su esencia: hacer de la adopción una experiencia humana guiada por datos."
+                        "⦿ Planifiqué iteraciones con filtros por rasgos (tamaño, energía, salud), ponderaciones por dimensión y un chatbot más conversacional.",
+                        "⦿ Busco integrar retroalimentación visual en las cards mediante animaciones, sonidos y transformaciones que refuercen la inmersión del usuario.",
+                        "⦿ En versiones futuras, Guau integrará **IA generativa**, redes de grafos y módulos estadísticos para refugios, manteniendo su propósito: hacer de la adopción una experiencia humana guiada por datos."
                     ],
                     previewUrl: guau4,
                 }
@@ -648,26 +652,26 @@ export const projectDetailFiles = {
                 {
                     icon: "🖼️",
                     name: "Arquitectura Frontend y Componentes",
-                    description: ["Desempeñe un rol con enfoque principal *Frontend* y contribuciones relevantes en el *Backend*. Asimismo, participe en establecer la **estructuración de carpetas**, la **configuración de librerías** y **patrón de diseño**.",
-                        "Implemente la estrategia ***Design System Color*** diseñado por el equipo UX/UI (colores primitivos, neutros, y semánticos) e integrándolo a Tailwind CSS.",
-                        "Construí **componentes** Integrando colores, iconos, imágenes, posiciones, fondos, botones, tipografía fehacientemente al diseño en **Figma.**"
+                    description: ["⦿ Desempeñe un rol con enfoque principal *Frontend* y contribuciones relevantes en el *Backend*. Asimismo, participe en establecer la **estructuración de carpetas**, la **configuración de librerías** y **patrón de diseño**.",
+                        "⦿ Implemente la estrategia ***Design System Color*** diseñado por el equipo UX/UI (colores primitivos, neutros, y semánticos) e integrándolo a Tailwind CSS.",
+                        "⦿ Construí **componentes** Integrando colores, iconos, imágenes, posiciones, fondos, botones, tipografía fehacientemente al diseño en **Figma.**"
                     ],
                     previewUrl: ti1,
                 },
                 {
                     icon: "🖼️",
                     name: "Desarrollo Full-Stack",
-                    description: ["continué desarrollando componentes del Front, opciones *(dropdown)*, enlaces, y otros detalles complementarios al dashboard.",
-                        "Realice el módulo de edición de tablero realizando ajustes en el **modelo**, **migraciones**, **lógica** de campo de la interfaz (imagen, etiquetas, agregar usuarios...) y generar la conexión desde el *Frontend* con sus respectivos componentes"],
+                    description: ["⦿ Continué desarrollando componentes del Front, opciones *(dropdown)*, enlaces, y otros detalles complementarios al dashboard.",
+                        "⦿ Realice el módulo de edición de tablero realizando ajustes en el **modelo**, **migraciones**, **lógica** de campo de la interfaz (backend) y generar la conexión desde el *Frontend* con sus respectivos componentes"],
 
                     previewUrl: ti2,
                 },
                 {
                     icon: "🖼️",
                     name: "Drag & Drop",
-                    description: ["Finalmente, desarrollé el sistema de arrastre y soltado ***(Drag & Drop)*** ",
-                        "Aportando coherencia desde el back para la gestión de columnas y posiciones, desplazamiento entre tarjetas y entre columnas, ajustando y reordenando según la zona droppeada.",
-                        "Implementé el sistema ***kanban*** usando ***@dnd-kit/core***, optimizando el flujo de datos mediante estrategias de *sortable context*, *collision detection*  y render condicional con ***React.memo*** para minimizar re-renders durante operaciones CRUD."],
+                    description: ["⦿ Finalmente, desarrollé el sistema de arrastre y soltado ***(Drag & Drop)*** ",
+                        "⦿ Aportando coherencia desde el back para la gestión de columnas y posiciones, desplazamiento entre tarjetas y entre columnas, ajustando y reordenando según la zona droppeada.",
+                        "⦿ Implementé el sistema ***kanban*** usando ***@dnd-kit/core***, optimizando el flujo de datos mediante estrategias de *sortable context*, *collision detection*  y render condicional con ***React.memo*** para minimizar re-renders durante operaciones CRUD."],
                     previewUrl: ti3,
                 }
             ]
@@ -756,8 +760,8 @@ export const projectDetailFiles = {
                     icon: "🏠",
                     name: "Interfaz Principal",
                     description: [
-                        "El desarrollo de Framer Motion Lab se estructuró como una experiencia de aprendizaje progresiva, inspirada directamente en la documentación oficial de Framer Motion.",
-                        "Desde su concepción, el proyecto fue diseñado para dividir el conocimiento en tres niveles —Básico, Gestures y Layout—, abordando gradualmente las propiedades más importantes de la animación web. Actualmente, el nivel Básico se encuentra casi completo, mientras que Gestures está en desarrollo y Layout en fase de planeación."
+                        "⦿ Diseñé la estructura de la interfaz bajo un enfoque pedagógico progresivo, inspirado en la documentación oficial de Framer Motion.",
+                        "⦿ Organicé el contenido en tres niveles —*Básico*, *Gestures* y *Layout*— para facilitar el aprendizaje escalonado de animaciones web. El nivel *Básico* está casi completo, *Gestures* en desarrollo y *Layout* en planificación."
                     ],
                     previewUrl: fm,
                 },
@@ -765,7 +769,8 @@ export const projectDetailFiles = {
                     icon: "📊",
                     name: "Dashboard de Animaciones",
                     description: [
-                        "Cada card combina el logotipo de Framer Motion con una breve descripción y una animación demostrativa, permitiendo explorar propiedades como movimiento en eje X y Y, opacidad, rotación, duración y transiciones."
+                        "⦿ Desarrollé un panel visual compuesto por *cards* interactivas que muestran ejemplos funcionales de propiedades clave como movimiento, opacidad, rotación, duración y transiciones.",
+                        "⦿ Cada card combina ícono, descripción y animación, permitiendo observar el comportamiento de cada propiedad en tiempo real."
                     ],
                     previewUrl: fm1,
                 },
@@ -773,7 +778,8 @@ export const projectDetailFiles = {
                     icon: "📋",
                     name: "Explicaciones y Detalles",
                     description: [
-                        "Cada card combina el logotipo de Framer Motion con una breve descripción y una animación demostrativa, permitiendo explorar propiedades como movimiento en eje X y Y, opacidad, rotación, duración y transiciones."
+                        "⦿ Elaboré descripciones breves y técnicas en cada card para explicar el uso de propiedades y su efecto en las animaciones.",
+                        "⦿ Incluí visualizaciones paralelas del código fuente y su resultado, reforzando la comprensión entre teoría y práctica."
                     ],
                     previewUrl: fm2,
                 },
@@ -781,11 +787,13 @@ export const projectDetailFiles = {
                     icon: "🧩",
                     name: "LabMotion Builder",
                     description: [
-                        "Uno de los módulos más destacados es el Panel Interactivo o LabMotionBuilder, un entorno de experimentación que permite modificar parámetros de animación —como posición, escala, color o duración— y reproducir los resultados en tiempo real."
+                        "⦿ Implementé el módulo interactivo *LabMotion Builder*, un entorno que permite modificar parámetros de animación —posición, escala, color, duración— y visualizar resultados al instante.",
+                        "⦿ Este sistema funciona como un laboratorio experimental, integrando controles dinámicos para fomentar el aprendizaje práctico de Framer Motion."
                     ],
                     previewUrl: fm3,
                 }
             ]
+
         },
 
         {
