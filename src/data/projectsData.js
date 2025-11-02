@@ -7,6 +7,7 @@ import mrs from "@/assets/images/mrs.png";
 import mrs2 from "@/assets/images/mrs2.png";
 import mrs6 from "@/assets/images/mrs6.png";
 
+
 import ps1 from "@/assets/images/ps1.png";
 import ps2 from "@/assets/images/ps2.png";
 import ps5 from "@/assets/images/ps5.png";
@@ -40,11 +41,12 @@ export const projectsList = [
         date: "01/03/2025",
         size: "Favorito",
         path: "/projects/martinaclandestina",
-        description: "Martina Clandestina es una marca de almuerzos con identidad local...",
+        description: "Martina Clandestina es un proyecto de cocina saludable que rinde homenaje a la bisabuela Martina, una mujer resiliente cuyo legado inspiró a su familia a transformar la tradición en una propuesta culinaria consciente. Liderado por la chef Mónica y sus hijas, el emprendimiento combina recetas caseras, identidad local y servicio cálido para ofrecer experiencias gastronómicas con propósito.",
         previewUrl: martina1,
         downloadUrl: null,
         linkUrl: null,
     },
+
     {
         icon: "📁",
         name: "Mister Soldo",
@@ -141,7 +143,7 @@ export const projectDetailFiles = {
         },
         {
             icon: "📋",
-            name: "Contribuciones/Aportes",
+            name: "Contribuciones",
             type: "Dinámico",
             date: "15/01/2025",
             size: "Actualizado",
@@ -207,9 +209,9 @@ export const projectDetailFiles = {
             date: "11/09/2025",
             size: "Actualizado",
             description: "Ficha técnica descargable en Word.",
-            previewUrl: "https://cdn-icons-png.flaticon.com/512/732/732223.png",
-            downloadUrl: "/f-fm.docx",
-            linkUrl: null,
+            previewUrl: "https://cdn-icons-png.flaticon.com/512/337/337946.png",
+            downloadUrl: "/pdf-martinaclandestina.pdf",
+            linkUrl: "https://drive.google.com/file/d/1nYq8L8k3iRriFXGzonWUlCnG-Z-3WdFh/view?usp=drive_link",
         },
         {
             icon: "🎥",
