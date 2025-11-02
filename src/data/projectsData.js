@@ -7,9 +7,6 @@ import mrs from "@/assets/images/mrs.png";
 import mrs2 from "@/assets/images/mrs2.png";
 import mrs6 from "@/assets/images/mrs6.png";
 
-import css from "@/assets/stack/css.png";
-import js from "@/assets/stack/js.png";
-import react from "@/assets/stack/react.png";
 import ps1 from "@/assets/images/ps1.png";
 import ps2 from "@/assets/images/ps2.png";
 import ps5 from "@/assets/images/ps5.png";
@@ -724,9 +721,6 @@ export const projectDetailFiles = {
                 { label: "Backend", url: "https://github.com/Programa-TrainIT-Ar/be-trelloop-grupo-2/tree/grupo-2" }
             ],
         },
-
-
-
     ],
 
 
@@ -818,6 +812,6 @@ export const projectDetailFiles = {
             linkUrl: null,
         },
     ],
-    
+
 
 };
