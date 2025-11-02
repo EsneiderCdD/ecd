@@ -5,16 +5,16 @@ import { Download, ExternalLink, ChevronLeft, ChevronRight } from "lucide-react"
 // Función para convertir texto con formato markdown a HTML
 const formatText = (text) => {
   if (!text || typeof text !== 'string') return text;
-  
+
   // Convertir ***texto*** a <strong><em>texto</em></strong> (negrilla + cursiva)
   text = text.replace(/\*\*\*(.*?)\*\*\*/g, '<strong><em>$1</em></strong>');
-  
+
   // Convertir **texto** a <strong>texto</strong> (negrilla)
   text = text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
-  
+
   // Convertir *texto* a <em>texto</em> (cursiva)
   text = text.replace(/\*(.*?)\*/g, '<em>$1</em>');
-  
+
   return text;
 };
 
@@ -81,8 +81,8 @@ function AboutInfoPanel({ file }) {
   const isImageOnly = file.type === "Imagen" && !file.description;
 
   // Obtener la contribución actual si es tipo Dinámico
-  const currentContribution = file.type === "Dinámico" && file.contributions 
-    ? file.contributions[currentContributionIndex] 
+  const currentContribution = file.type === "Dinámico" && file.contributions
+    ? file.contributions[currentContributionIndex]
     : null;
 
   // Determinar si mostrar navegación de contribuciones
@@ -116,7 +116,7 @@ function AboutInfoPanel({ file }) {
             if (previewUrl.includes("youtube.com") || previewUrl.includes("youtu.be")) {
               return (
                 <iframe
-                  className={styles.previewImage}
+                  className={styles.previewVideo}  // ← NUEVA CLASE
                   src={getYouTubeEmbedUrl(previewUrl)}
                   title={currentContribution?.name || file.name}
                   frameBorder="0"
@@ -143,8 +143,8 @@ function AboutInfoPanel({ file }) {
       {/* Navegación de contribuciones */}
       {showContributionNavigation && (
         <div className={styles.contributionNavigation}>
-          <button 
-            className={styles.navButton} 
+          <button
+            className={styles.navButton}
             onClick={handlePreviousContribution}
             disabled={currentContributionIndex === 0}
           >
@@ -153,8 +153,8 @@ function AboutInfoPanel({ file }) {
           <span className={styles.contributionCounter}>
             {currentContributionIndex + 1} / {file.contributions.length}
           </span>
-          <button 
-            className={styles.navButton} 
+          <button
+            className={styles.navButton}
             onClick={handleNextContribution}
             disabled={currentContributionIndex === file.contributions.length - 1}
           >
@@ -211,8 +211,8 @@ function AboutInfoPanel({ file }) {
             const description = currentContribution?.description || file.description;
             if (Array.isArray(description)) {
               return description.map((desc, index) => (
-                <p 
-                  key={index} 
+                <p
+                  key={index}
                   className={styles.descriptionParagraph}
                   dangerouslySetInnerHTML={{ __html: formatText(desc) }}
                 />

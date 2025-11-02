@@ -1,4 +1,6 @@
-// src/data/aboutData.js
+import FotoPortafolio from '@/assets/images/FotoPortafolio.png';
+
+
 export const aboutFiles = [
     {
         icon: null,
@@ -8,7 +10,7 @@ export const aboutFiles = [
         size: "Actualizado",
         path: null,
         description: "Mi nombre es Esneider Cadavid, soy técnico en Análisis y Desarrollo de Software con formación complementaria en un Bootcamp en Desarrollo Full-Stack, lo que me ha permitido adquirir una preparación integral tanto técnica como práctica. ",
-        previewUrl: "https://cdn-icons-png.flaticon.com/512/3135/3135715.png",
+        previewUrl: FotoPortafolio,
         downloadUrl: null,
         linkUrl: null,
     },

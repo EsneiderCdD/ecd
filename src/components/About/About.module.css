@@ -354,6 +354,12 @@
   object-fit: contain
 }
 
+.previewVideo {
+  width: 100%;
+  height: 300px; 
+  min-height: 300px;
+  border-radius: 6px;
+}
 /* Título */
 .title {
   font-size: 18px;

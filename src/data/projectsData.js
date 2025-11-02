@@ -141,6 +141,30 @@ export const projectDetailFiles = {
             downloadUrl: null,
             linkUrl: null,
         },
+
+        {
+            icon: "📑",
+            name: "Ficha Técnica",
+            type: "Word",
+            date: "11/09/2025",
+            size: "Actualizado",
+            description: "Ficha técnica descargable en PDF.",
+            previewUrl: "https://cdn-icons-png.flaticon.com/512/337/337946.png",
+            downloadUrl: "/pdf-martinaclandestina.pdf",
+            linkUrl: "https://drive.google.com/file/d/1nYq8L8k3iRriFXGzonWUlCnG-Z-3WdFh/view?usp=drive_link",
+        },
+
+        {
+            icon: "💻",
+            name: "Tecnologías Implementadas",
+            type: "Imagen y texto",
+            date: "25/02/2025 ",
+            size: "Actualizado",
+            description: generateStackHTML(['react', 'css', 'javascript', 'vite', 'mobileDesign']),
+            previewUrl: null,
+            downloadUrl: null,
+            linkUrl: null,
+        },
         {
             icon: "📋",
             name: "Contribuciones",
@@ -191,31 +215,24 @@ export const projectDetailFiles = {
             ]
 
         },
+
+
+
         {
-            icon: "💻",
-            name: "Tecnologías Implementadas",
-            type: "Imagen y texto",
-            date: "25/02/2025 ",
+            icon: "🐙",
+            name: "Repositorio",
+            type: "GitHub",
+            date: "25/02/2025",
             size: "Actualizado",
-            description: generateStackHTML(['react', 'css', 'javascript', 'vite', 'mobileDesign']),
-            previewUrl: null,
+            description: null,
+            previewUrl: "https://img.icons8.com/ios-glyphs/512/github.png",
             downloadUrl: null,
-            linkUrl: null,
+            linkUrl: "https://github.com/EsneiderCdD/MartinaClandestina",
         },
-        {
-            icon: "📑",
-            name: "Ficha Técnica",
-            type: "Word",
-            date: "11/09/2025",
-            size: "Actualizado",
-            description: "Ficha técnica descargable en Word.",
-            previewUrl: "https://cdn-icons-png.flaticon.com/512/337/337946.png",
-            downloadUrl: "/pdf-martinaclandestina.pdf",
-            linkUrl: "https://drive.google.com/file/d/1nYq8L8k3iRriFXGzonWUlCnG-Z-3WdFh/view?usp=drive_link",
-        },
+
         {
             icon: "🎥",
-            name: "Video Presentación",
+            name: "Video",
             type: "YouTube",
             date: "25/02/2025 9:06 p.m.",
             size: "Actualizado",
@@ -224,39 +241,7 @@ export const projectDetailFiles = {
             downloadUrl: null,
             linkUrl: "https://www.youtube.com/",
         },
-        {
-            icon: "🐙",
-            name: "Repositorio y Recursos",
-            type: "GitHub",
-            date: "25/02/2025 9:06 p.m.",
-            size: "Actualizado",
-            description: "Repositorio del proyecto: https://github.com/ | Instagram: https://www.instagram.com/ | Website: https://martinacocina.netlify.app/",
-            previewUrl: "https://img.icons8.com/ios-glyphs/512/github.png",
-            downloadUrl: null,
-            linkUrl: "https://github.com/",
-        },
-        {
-            icon: "📸",
-            name: "Instagram Oficial",
-            type: "Instagram",
-            date: "25/02/2025 9:06 p.m.",
-            size: "Actualizado",
-            description: "Perfil de Instagram oficial: https://www.instagram.com/ | Web: https://martinacocina.netlify.app/",
-            previewUrl: "https://img.icons8.com/ios-glyphs/512/instagram-new.png",
-            downloadUrl: null,
-            linkUrl: "https://www.instagram.com/",
-        },
-        {
-            icon: "🌐",
-            name: "Sitio Web (Vercel)",
-            type: "Vercel",
-            date: "25/02/2025 9:06 p.m.",
-            size: "Actualizado",
-            description: "Sitio desplegado en Vercel: https://martinacocina.netlify.app/",
-            previewUrl: "https://img.icons8.com/ios-glyphs/512/internet--v1.png",
-            downloadUrl: null,
-            linkUrl: "https://martinacocina.netlify.app/",
-        },
+
     ],
 
 
