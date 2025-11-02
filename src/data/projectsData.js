@@ -112,14 +112,13 @@ export const projectsList = [
         date: "11/11/2025",
         size: "Reciente",
         path: "/projects/gury",
-        description: "EN DESARROLLO... Estoy construyendo Guau como un legado tecnológico con sentido ético: una herramienta que une psicología, matemática y software en favor del bienestar animal. Más allá de la programación, el proyecto busca que la adopción sea un acto consciente, sustentado en ciencia, empatía y datos reales. Si en algún momento un refugio u organización desea integrarlo, estoy dispuesto a adaptarlo como aporte social y de libre implementación.",
+        description: "EN DESARROLLO...",
         previewUrl: Guau,
         downloadUrl: null,
         linkUrl: null,
     },
 
 ];
-
 
 
 
@@ -154,28 +153,41 @@ export const projectDetailFiles = {
                 {
                     icon: "🖼️",
                     name: "Navegación Dinámica por Días",
-                    description: ["Implementé un sistema de navegación semanal con detección automática del día actual, resaltando visualmente la jornada correspondiente y mejorando la experiencia del usuario."],
+                    description: [
+                        "⦿ Implementé un sistema de navegación semanal con detección automática del día actual, aplicando resaltado visual dinámico según la jornada.",
+                        "⦿ Optimicé la usabilidad al permitir al usuario identificar rápidamente el menú disponible por fecha y horario."
+                    ],
                     previewUrl: mt1,
                 },
                 {
                     icon: "🖼️",
                     name: "Desarrollo de la Carta Digital",
-                    description: ["Construí una carta digital dinámica con React.js, Vite y React Router, priorizando la fluidez de carga, el diseño adaptable y la fácil escalabilidad del contenido."],
+                    description: [
+                        "⦿ Construí una **carta digital dinámica** con *React.js*, *Vite* y *React Router*, estructurando rutas y componentes reutilizables.",
+                        "⦿ Enfoqué el desarrollo en la **fluidez de carga**, la **adaptabilidad visual** y la **escalabilidad del contenido**, permitiendo actualizaciones rápidas sin comprometer el rendimiento."
+                    ],
                     previewUrl: mt2,
                 },
                 {
                     icon: "🖼️",
                     name: "Diseño Visual e Identidad de Marca",
-                    description: ["Incorporé animaciones sutiles, transiciones fluidas y una paleta cromática coherente con la marca, reforzando su estilo visual y su narrativa gastronómica local."],
+                    description: [
+                        "⦿ Diseñé una interfaz con **animaciones sutiles** y **transiciones fluidas**, reforzando la narrativa gastronómica local.",
+                        "⦿ Apliqué una paleta cromática coherente con la marca y cuidé la jerarquía visual para mejorar la experiencia del usuario."
+                    ],
                     previewUrl: mt3,
                 },
                 {
                     icon: "🖼️",
                     name: "Sistema de Pedidos Automatizado",
-                    description: ["Integré un sistema de pedidos directos por WhatsApp con mensajes autocompletados, reduciendo errores, pasos manuales y garantizando coherencia en la comunicación con los clientes."],
+                    description: [
+                        "⦿ Desarrollé un sistema automatizado de pedidos mediante **WhatsApp API**, con mensajes autocompletados y datos de pedido preconfigurados.",
+                        "⦿ La automatización redujo errores y pasos manuales, mejorando la eficiencia y coherencia en la comunicación con los clientes."
+                    ],
                     previewUrl: mt4,
                 }
             ]
+
         },
         {
             icon: "💻",
@@ -274,22 +286,32 @@ export const projectDetailFiles = {
                 {
                     icon: "🖼️",
                     name: "Landing Page Mobile First",
-                    description: ["Diseñé e implementé una landing page completamente orientada a dispositivos móviles, optimizando la jerarquía visual y la velocidad de carga para una experiencia fluida."],
+                    description: [
+                        "⦿ Diseñé e implementé una *landing page* bajo el enfoque **mobile first**, priorizando la experiencia en dispositivos móviles y optimizando la jerarquía visual.",
+                        "⦿ Mejoré los tiempos de carga y la fluidez general mediante una estructura ligera y componentes visuales adaptativos."
+                    ],
                     previewUrl: mrs,
                 },
                 {
                     icon: "🖼️",
                     name: "Carruseles Dinámicos con Swiper.js",
-                    description: ["Integré carruseles dinámicos con Swiper.js para presentar clips, fotografías y videos del artista de manera atractiva y con transiciones suaves."],
+                    description: [
+                        "⦿ Integré **Swiper.js** para la creación de carruseles dinámicos con clips, fotografías y videos del artista.",
+                        "⦿ Configuré transiciones suaves y navegación táctil, generando una presentación visual coherente con la identidad del proyecto."
+                    ],
                     previewUrl: mrs2,
                 },
                 {
                     icon: "🖼️",
                     name: "Interactividad y Movimiento",
-                    description: ["Desarrollé una experiencia interactiva utilizando Framer Motion, implementando gestos drag & drop que permiten explorar álbumes y contenido musical de forma inmersiva."],
+                    description: [
+                        "⦿ Desarrollé una experiencia inmersiva aplicando **Framer Motion** para animaciones e interactividad avanzada.",
+                        "⦿ Implementé gestos *drag & drop* que permiten explorar álbumes y contenido musical de forma fluida y atractiva."
+                    ],
                     previewUrl: mrs6,
                 }
             ]
+
         },
         {
             icon: "💻",
@@ -394,8 +416,8 @@ export const projectDetailFiles = {
                     icon: "🧭",
                     name: "Análisis y Requerimientos",
                     description: [
-                        "Lideré el proceso de análisis y levantamiento de requerimientos, aplicando entrevistas, sesiones de brainstorming, cuestionarios y encuestas, además de casos de uso y un mapa de calor de requerimientos para priorizar funcionalidades.",
-                        "El proceso incluyó benchmarking y un estudio de color y branding aplicado, definiendo una base visual y estratégica coherente con la identidad profesional de la psicóloga."
+                        "⦿ Lideré el proceso de análisis y levantamiento de requerimientos, aplicando entrevistas, sesiones de brainstorming y cuestionarios estructurados para definir el alcance funcional del sitio.",
+                        "⦿ Elaboré casos de uso, mapas de calor y benchmarking visual, estableciendo una línea de diseño coherente con la identidad profesional de la psicóloga y su posicionamiento digital."
                     ],
                     previewUrl: ps1,
                 },
@@ -403,7 +425,8 @@ export const projectDetailFiles = {
                     icon: "🧱",
                     name: "Diseño y Estructura Web",
                     description: [
-                        "Diseñé y desarrollé una estructura web completa y responsiva, compuesta por componentes dinámicos como footer, secciones de servicios, área hero, información profesional, preguntas frecuentes, precios y términos y condiciones."
+                        "⦿ Diseñé una arquitectura web completamente responsiva basada en componentes modulares y reutilizables.",
+                        "⦿ Implementé secciones clave como *Hero*, *Servicios*, *Preguntas Frecuentes*, *Precios*, *Footer* y *Términos y Condiciones*, asegurando coherencia visual y accesibilidad en todos los dispositivos."
                     ],
                     previewUrl: ps2,
                 },
@@ -411,8 +434,8 @@ export const projectDetailFiles = {
                     icon: "💳",
                     name: "Integración de Pagos y Métricas",
                     description: [
-                        "Integré una pasarela de pagos segura (PayU) que redujo las comisiones externas del 10 % al 3.5 %, fortaleciendo la autonomía financiera y el control de reservas desde la propia web.",
-                        "Además, incorporé una configuración básica de Google Analytics para el seguimiento de métricas y reconocimiento digital, permitiendo medir el alcance y desempeño del sitio en tiempo real."
+                        "⦿ Integré la pasarela de pagos **PayU**, reduciendo comisiones externas del 10 % al 3.5 % y fortaleciendo la autonomía financiera del proyecto.",
+                        "⦿ Incorporé métricas con **Google Analytics** para medir conversiones, analizar el comportamiento de los usuarios y obtener información clave para la toma de decisiones estratégicas."
                     ],
                     previewUrl: ps5,
                 },
@@ -420,13 +443,14 @@ export const projectDetailFiles = {
                     icon: "🎨",
                     name: "Animaciones y Microinteracciones",
                     description: [
-                        "Implementé microinteracciones y animaciones con Framer Motion, aplicando efectos de entrada, transiciones suaves y realces luminosos en botones de acción para guiar la atención del usuario.",
-                        "Incorporé cambios sutiles de color y movimiento en textos y componentes, logrando una interfaz dinámica pero sobria.",
-                        "Complementé la experiencia con Swiper.js, integrando carruseles visuales, tarjetas animadas y una sección de comentarios personalizada según las preferencias de la psicóloga."
+                        "⦿ Implementé microinteracciones y transiciones con **Framer Motion**, aplicando animaciones de entrada, realces en botones y efectos suaves que guían la atención del usuario.",
+                        "⦿ Apliqué sutiles variaciones de color y movimiento para mantener una estética moderna y profesional.",
+                        "⦿ Integré **Swiper.js** para carruseles, tarjetas animadas y secciones de testimonios personalizadas, mejorando la narrativa visual y la experiencia de navegación."
                     ],
                     previewUrl: ps6,
                 }
             ]
+
         },
 
         {
