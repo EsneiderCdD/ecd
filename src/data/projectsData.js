@@ -3,9 +3,13 @@ import mt1 from "@/assets/images/mt1.png";
 import mt2 from "@/assets/images/mt2.png";
 import mt3 from "@/assets/images/mt3.png";
 import mt4 from "@/assets/images/mt4.png";
+
+import mr from "@/assets/images/mr.png";
 import mrs from "@/assets/images/mrs.png";
 import mrs2 from "@/assets/images/mrs2.png";
+import mrs4 from "@/assets/images/mrs4.png";
 import mrs6 from "@/assets/images/mrs6.png";
+import mr7 from "@/assets/images/mr7.png";
 
 
 import ps1 from "@/assets/images/ps1.png";
@@ -51,14 +55,15 @@ export const projectsList = [
         icon: "📁",
         name: "Mister Soldo",
         type: "Proyecto Freelance",
-        date: "01/04/2025 ",
+        date: "01/04/2025",
         size: "Completado",
         path: "/projects/mistersoldo",
-        description: "Mister Soldo es una plataforma musical diseñada para ofrecer contenido...",
-        previewUrl: mrs,
+        description: "Mister Soldo es un artista envigadeño que fusiona el Rap con ritmos urbanos y mensajes de identidad local, justicia social y esperanza. Su música refleja la esencia de Envigado: auténtica, directa y cargada de energía. Con letras honestas y beats contundentes, busca conectar con su comunidad y representar la voz de quienes transforman su realidad a través del arte.",
+        previewUrl: mr,
         downloadUrl: null,
         linkUrl: null,
     },
+
     {
         icon: "📁",
         name: "Psicotranspersonal",
@@ -254,18 +259,30 @@ export const projectDetailFiles = {
             type: "Texto",
             date: "15/02/2025 ",
             size: "Actualizado",
-            description: "Diseñé e implementé una landing page con enfoque Mobile First para el artista Mister Soldo, optimizada para la navegación en smartphones y la visualización rápida de contenido musical. La página organiza la información en secciones claras: un carrusel principal de imágenes, reproductores de video de YouTube, una galería interactiva de álbumes con función drag & drop y un espacio dedicado a su último lanzamiento. Incorporé transiciones suaves y desplazamientos automáticos con Swiper.js para lograr una experiencia inmersiva y visualmente atractiva. El sitio fue desplegado en Vercel, asegurando compatibilidad multiplataforma, tiempos de carga óptimos y un acceso ágil desde cualquier dispositivo.",
+            description: "El desarrollo de la landing page de Mister Soldo logró consolidar en un solo espacio la esencia visual y musical del artista, presentando su recorrido, sus lanzamientos y su identidad bajo una experiencia móvil fluida y directa. El proyecto no buscó reinventar su imagen, sino amplificarla desde la simplicidad técnica, aprovechando recursos ligeros y bien integrados. La combinación entre video, interacción y movimiento permitió transmitir la energía de su propuesta artística sin depender de estructuras complejas. En conjunto, la página cumple su propósito como una vitrina digital accesible, fiel a su estilo urbano y perfectamente alineada con su trayectoria y visión creativa.",
             previewUrl: null,
             downloadUrl: null,
             linkUrl: null,
         },
+
+        {
+            icon: "📑",
+            name: "Ficha Técnica",
+            type: "Word",
+            date: "25/03/2025 ",
+            size: "Actualizado",
+            description: "Ficha técnica descargable en formato PDF.",
+            previewUrl: "https://cdn-icons-png.flaticon.com/512/337/337946.png",
+            downloadUrl: "/pdf-mistersoldo.pdf",
+            linkUrl: "https://drive.google.com/file/d/1wjytbB1STdumzX7tEbU-wLGOnMORURSR/view?usp=drive_link",
+        },
         {
             icon: "📋",
-            name: "Contribuciones/Aportes",
+            name: "Contribuciones",
             type: "Dinámico",
             date: "15/02/2025",
             size: "Actualizado",
-            description: "Navega por mis principales contribuciones y aportes al proyecto Mister Soldo",
+            description: null,
             previewUrl: null,
             downloadUrl: null,
             linkUrl: null,
@@ -274,57 +291,51 @@ export const projectDetailFiles = {
                     icon: "🖼️",
                     name: "Landing Page Mobile First",
                     description: [
-                        "⦿ Diseñé e implementé una *landing page* bajo el enfoque **mobile first**, priorizando la experiencia en dispositivos móviles y optimizando la jerarquía visual.",
-                        "⦿ Mejoré los tiempos de carga y la fluidez general mediante una estructura ligera y componentes visuales adaptativos."
+                        "⦿ Diseñé e implementé una *landing page* bajo el enfoque **mobile first**, priorizando la navegación móvil y optimizando la jerarquía visual para un acceso rápido al contenido multimedia."
                     ],
                     previewUrl: mrs,
                 },
                 {
                     icon: "🖼️",
-                    name: "Carruseles Dinámicos con Swiper.js",
+                    name: "Carruseles Dinámicos y Animaciones",
                     description: [
-                        "⦿ Integré **Swiper.js** para la creación de carruseles dinámicos con clips, fotografías y videos del artista.",
-                        "⦿ Configuré transiciones suaves y navegación táctil, generando una presentación visual coherente con la identidad del proyecto."
+                        "⦿ Integré **Swiper.js** para la creación de carruseles dinámicos que muestran clips, fotografías y videos del artista, complementados con **animaciones sutiles mediante Framer Motion** para suavizar transiciones y entradas de texto.",
+
                     ],
                     previewUrl: mrs2,
                 },
                 {
                     icon: "🖼️",
-                    name: "Interactividad y Movimiento",
+                    name: "Interactividad Avanzada Drag & Drop",
                     description: [
-                        "⦿ Desarrollé una experiencia inmersiva aplicando **Framer Motion** para animaciones e interactividad avanzada.",
-                        "⦿ Implementé gestos *drag & drop* que permiten explorar álbumes y contenido musical de forma fluida y atractiva."
+                        "⦿ Implementé un módulo interactivo con **Framer Motion** que permite explorar la discografía mediante gestos *drag & drop*, actualizando dinámicamente el estado de álbumes y canciones.",
+
                     ],
                     previewUrl: mrs6,
+                },
+                {
+                    icon: "🖼️",
+                    name: "Secciones Complementarias",
+                    description: [
+                        "⦿ Construí secciones adicionales como **Momentos Destacados**, **Últimos Lanzamientos**, **Sobre el Artista** y un **footer con enlaces de contacto y redes**, consolidando una estructura coherente y completa que refuerza la navegación general."
+                    ],
+                    previewUrl: mrs4,
+                },
+                {
+                    icon: "🖼️",
+                    name: "Secciones Complementarias",
+                    description: null,
+                    previewUrl: mr7,
                 }
+
             ]
 
         },
-        {
-            icon: "💻",
-            name: "Tecnologías Implementadas",
-            type: "Texto e imagen",
-            date: "01/04/2025 ",
-            size: "Actualizado",
-            description: generateStackHTML(['react', 'framerMotion', 'swiper', 'css', 'javascript', 'vercel', 'mobileDesign']),
-            previewUrl: null,
-            downloadUrl: null,
-            linkUrl: null,
-        },
-        {
-            icon: "📑",
-            name: "Ficha Técnica",
-            type: "Word",
-            date: "25/03/2025 ",
-            size: "Actualizado",
-            description: "Ficha técnica descargable en formato Word.",
-            previewUrl: "https://cdn-icons-png.flaticon.com/512/732/732223.png",
-            downloadUrl: "/f-mrs.docx",
-            linkUrl: null,
-        },
+
+
         {
             icon: "🎥",
-            name: "Video Presentación",
+            name: "Video",
             type: "YouTube",
             date: "25/02/2025 9:06 p.m.",
             size: "Actualizado",
@@ -335,37 +346,17 @@ export const projectDetailFiles = {
         },
         {
             icon: "🐙",
-            name: "Repositorio y Recursos",
+            name: "Repositorio",
             type: "GitHub",
-            date: "25/02/2025 9:06 p.m.",
+            date: "25/02/2025 ",
             size: "Actualizado",
-            description: "Repositorio del proyecto: https://github.com/ | Instagram: https://www.instagram.com/ | Website: https://martinacocina.netlify.app/",
+            description: null,
             previewUrl: "https://img.icons8.com/ios-glyphs/512/github.png",
             downloadUrl: null,
-            linkUrl: "https://github.com/",
+            linkUrl: "https://github.com/EsneiderCdD/mistersoldo",
         },
-        {
-            icon: "📸",
-            name: "Instagram Oficial",
-            type: "Instagram",
-            date: "25/02/2025 9:06 p.m.",
-            size: "Actualizado",
-            description: "Perfil de Instagram oficial: https://www.instagram.com/ | Web: https://martinacocina.netlify.app/",
-            previewUrl: "https://img.icons8.com/ios-glyphs/512/instagram-new.png",
-            downloadUrl: null,
-            linkUrl: "https://www.instagram.com/",
-        },
-        {
-            icon: "🌐",
-            name: "Sitio Web (Vercel)",
-            type: "Vercel",
-            date: "25/02/2025 9:06 p.m.",
-            size: "Actualizado",
-            description: "Sitio web desplegado en Vercel: https://martinacocina.netlify.app/",
-            previewUrl: "https://img.icons8.com/ios-glyphs/512/internet--v1.png",
-            downloadUrl: null,
-            linkUrl: "https://martinacocina.netlify.app/",
-        },
+
+
     ],
 
 
