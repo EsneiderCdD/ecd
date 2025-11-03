@@ -38,7 +38,11 @@ import ti3 from "@/assets/images/ti3.png";
 import gua from "@/assets/images/gua.png";
 
 import gua3 from "@/assets/images/gua3.png";
+import gua2 from "@/assets/images/gua2.png";
 import guau4 from "@/assets/images/guau4.png";
+import guau5 from "@/assets/images/guau5.png";
+import guau6 from "@/assets/images/guau6.png";
+import guau7 from "@/assets/images/guau7.png";
 
 import Guau from "@/assets/images/Guau.png";
 import { generateStackHTML } from './stackIcons';
@@ -114,7 +118,7 @@ export const projectsList = [
         date: "11/11/2025",
         size: "Destacado",
         path: "/projects/guau",
-        description: "EN DESARROLLO... Estoy construyendo Guau como un legado tecnológico con sentido ético: una herramienta que une psicología, matemática y software en favor del bienestar animal. Más allá de la programación, el proyecto busca que la adopción sea un acto consciente, sustentado en ciencia, empatía y datos reales. Si en algún momento un refugio u organización desea integrarlo, estoy dispuesto a adaptarlo como aporte social y de libre implementación.",
+        description: " Estoy construyendo Guau como un legado tecnológico con sentido ético: una herramienta que une psicología, matemática y software en favor del bienestar animal. Más allá de la programación, el proyecto busca que la adopción sea un acto consciente, sustentado en ciencia, empatía y datos reales. Si en algún momento un refugio u organización desea integrarlo, estoy dispuesto a adaptarlo como aporte social y de libre implementación.",
         previewUrl: Guau,
         downloadUrl: null,
         linkUrl: null,
@@ -786,11 +790,6 @@ export const projectDetailFiles = {
         },
     ],
 
-
-
-
-
-
     guau: [
         {
             icon: "📄",
@@ -799,8 +798,8 @@ export const projectDetailFiles = {
             date: "15/10/2025",
             size: "Actualizado",
             description: [
-                "Estoy construyendo Guau como una plataforma web orientada a optimizar el proceso de adopción canina mediante un sistema de compatibilidad psicométrica. El proyecto combina análisis psicológico, matemática aplicada y desarrollo web en un entorno React",
-
+                "Guau es una plataforma web experimental desarrollada de forma integral —frontend, backend, diseño, psicometría y modelo matemático— para redefinir la adopción canina desde un enfoque científico y emocional.",
+                "El sistema combina pruebas psicométricas diseñadas a medida, un algoritmo de compatibilidad basado en distancia euclidiana y una interfaz construida en **React**, donde cada elemento visual responde a la experiencia del usuario."
             ],
             previewUrl: null,
             downloadUrl: null,
@@ -809,80 +808,73 @@ export const projectDetailFiles = {
 
         {
             icon: "📋",
-            name: "Contribuciones/Aportes",
+            name: "Contribuciones",
             type: "Dinámico",
             date: "15/10/2025",
             size: "Actualizado",
-            description: "Navega por mis principales contribuciones y aportes al proyecto Guau",
+            description: null,
             previewUrl: null,
             downloadUrl: null,
             linkUrl: null,
             contributions: [
                 {
-                    icon: "🎨",
                     name: "Diseño y Frontend",
                     description: [
-                        "⦿ Diseñé una interfaz limpia y empática con enfoque minimalista, priorizando la experiencia de adopción sobre la lógica de negocio.",
-                        "⦿ Estructuré componentes reutilizables —cards dinámicas, rutas, modales y pantallas de detalle— que simulan de forma fluida el proceso visual de selección y compatibilidad.",
-                        "⦿ Integré un chatbot funcional para acompañar el test de compatibilidad, actualmente basado en una escala líquida de 1 a 4. Implementé animaciones con **Framer Motion** y microinteracciones que fortalecen la conexión emocional del usuario con el flujo de adopción."
+                        "⦿ Diseño una interfaz limpia y empática con enfoque minimalista, priorizando la experiencia de adopción sobre la lógica de negocio.",
+                        "⦿ Estructuro componentes reutilizables —cards dinámicas, rutas, modales y pantallas de detalle— que representan visualmente el proceso de compatibilidad y selección."
                     ],
                     previewUrl: gua,
                 },
                 {
-                    icon: "🧩",
-                    name: "Backend y Datos",
+                    name: "Diseño y Frontend",
                     description: [
-                        "⦿ Desarrollé un backend funcional centrado en la gestión de datos de perros, usuarios y administradores. Incluye autenticación, rutas básicas y un panel de control exclusivo para el administrador.",
-
-                        "⦿ El backend actúa como soporte estructural del motor psicométrico, con proyección hacia módulos futuros de compatibilidad, estadísticas y paneles analíticos."
+                        "⦿ Implemento tarjetas dinámicas y componentes clave como *Login*, menú de navegación tipo flechas, secciones de detalle de perros y módulo de tienda, manteniendo coherencia visual y flujo narrativo."
+                    ],
+                    previewUrl: guau7,
+                },
+                {
+                    name: "Diseño y Frontend",
+                    description: null,
+                    previewUrl: guau5,
+                },
+                {
+                    name: "Diseño y Frontend",
+                    description: null,
+                    previewUrl: guau6,
+                },
+                {
+                    name: "Full-Stack",
+                    description: [
+                        "⦿ Implemento una interfaz administrativa que permite gestionar dinámicamente la información de los perros —imágenes, datos y características— optimizando la carga y actualización del contenido."
+                    ],
+                    previewUrl: gua2,
+                },
+                {
+                    name: "Full-Stack",
+                    description: [
+                        "⦿ Desarrollo un backend funcional enfocado en la administración de los perros del refugio. Incluye autenticación básica y un panel que gestiona datos psicométricos, priorizando la organización y el control estructural."
                     ],
                     previewUrl: gua3,
+                },
+
+                {
+                    name: "Asistente Virtual",
+                    description: [
+                        "⦿ Desarrollo un sistema de entrevista interactiva tipo *Likert*, que guía al usuario a través de preguntas de compatibilidad. Aunque actualmente opera bajo un modelo manual y algorítmico, está diseñado para evolucionar hacia un asistente con soporte de **IA** en futuras versiones."
+                    ],
+                    previewUrl: guau4,
                 },
                 {
                     icon: "🧠",
                     name: "Psicometría y Algoritmo",
                     description: [
-                        "⦿ Desarrollé dos instrumentos psicométricos paralelos: el **Test de Usuario** y la **Observación Canina**, ambos traduciendo respuestas conductuales en vectores normalizados.",
-                        "⦿ Implementé un modelo basado en **distancia euclidiana** para calcular la compatibilidad entre adoptante y perro, integrando matemática aplicada y psicología del comportamiento.",
-                        "⦿ Generé interpretaciones automáticas del puntaje y visualizaciones que permitirán ajustar la afinidad según dimensiones emocionales y rasgos conductuales."
+                        "⦿ Desarrolló dos instrumentos psicométricos paralelos: el **Test de Usuario** y la **Observación Canina**, ambos traduciendo respuestas conductuales en vectores normalizados.",
+                        "⦿ Implementa un modelo basado en **distancia euclidiana** para calcular la compatibilidad entre adoptante y perro, integrando matemática aplicada y psicología del comportamiento."
                     ],
                     previewUrl: null,
                 },
-                {
-                    icon: "🚀",
-                    name: "Proyección Técnica",
-                    description: [
-                        "⦿ Planifiqué iteraciones con filtros por rasgos (tamaño, energía, salud), ponderaciones por dimensión y un chatbot más conversacional.",
-                        "⦿ Busco integrar retroalimentación visual en las cards mediante animaciones, sonidos y transformaciones que refuercen la inmersión del usuario.",
-                        "⦿ En versiones futuras, Guau integrará **IA generativa**, redes de grafos y módulos estadísticos para refugios, manteniendo su propósito: hacer de la adopción una experiencia humana guiada por datos."
-                    ],
-                    previewUrl: guau4,
-                }
+
             ]
-        },
-
-        {
-            icon: "📑",
-            name: "Instrumento de Observación Canina",
-            type: "Word",
-            date: "25/03/2025",
-            size: "Actualizado",
-            description: "Instrumento técnico descargable en Word con los ítems y dimensiones de observación aplicados a la evaluación conductual de perros.",
-            previewUrl: "https://cdn-icons-png.flaticon.com/512/732/732223.png",
-            downloadUrl: "/IOC.docx",
-            linkUrl: null,
-        },
-
-        {
-            icon: "📑",
-            name: "Algoritmo de Compatibilidad",
-            type: "Word",
-            date: "25/03/2025",
-            size: "Actualizado",
-            description: "Documento técnico con la estructura matemática del modelo de compatibilidad y su interpretación.",
-            previewUrl: "https://cdn-icons-png.flaticon.com/512/732/732223.png",
-            downloadUrl: "/AC.docx",
-            linkUrl: null,
         },
 
         {
@@ -900,18 +892,58 @@ export const projectDetailFiles = {
         {
             icon: "📘",
             name: "Ficha Técnica",
-            type: "Word",
+            type: "PDF",
             date: "25/03/2025",
             size: "Actualizado",
             description: "Ficha técnica general del proyecto en formato Word, con especificaciones, contexto y estructura conceptual.",
-            previewUrl: "https://cdn-icons-png.flaticon.com/512/732/732223.png",
-            downloadUrl: "/f-gu.docx",
+            previewUrl: "https://cdn-icons-png.flaticon.com/512/337/337946.png",
+            downloadUrl: "/pdf-guau.pdf",
+            linkUrl: "https://drive.google.com/file/d/1irWzIxWnIleUzoG-kna6fYNxj4xeIZRm/view?usp=drive_link",
+        },
+
+
+        {
+            icon: "📑",
+            name: "Inst. de Observación Canina",
+            type: "PDF",
+            date: "25/03/2025",
+            size: "Actualizado",
+            description: "Instrumento técnico descargable en Word con los ítems y dimensiones de observación aplicados a la evaluación conductual de perros.",
+            previewUrl: "https://cdn-icons-png.flaticon.com/512/337/337946.png",
+            downloadUrl: "/pdf-ioc.pdf",
+            linkUrl: "https://drive.google.com/file/d/1SjIptkuFicurXkyi-Gd2TGAavWwOQeGe/view?usp=drive_link",
+        },
+
+        {
+            icon: "📑",
+            name: "Algoritmo de Compatibilidad",
+            type: "PDF",
+            date: "25/03/2025",
+            size: "Actualizado",
+            description: "Documento técnico con la estructura matemática del modelo de compatibilidad y su interpretación.",
+            previewUrl: "https://cdn-icons-png.flaticon.com/512/337/337946.png",
+            downloadUrl: "/pdf-ac.pdf",
+            linkUrl: "https://drive.google.com/file/d/10qjSpFW7ZPsG5o142omG3MbcDLsSmBqJ/view?usp=drive_link",
+        },
+
+        {
+            icon: "🧭",
+            name: "Proyecciones",
+            type: "Texto",
+            date: "01/08/2025",
+            size: "En desarrollo",
+            description: [
+                "El proyecto avanza hacia una experiencia de usuario tipo *matching*, incorporando retroalimentación inmediata mediante notificaciones y microinteracciones que simulan el clásico “Match encontrado”.",
+                "Se está evaluando la evolución del modelo actual —más estático y manual— hacia un enfoque adaptable apoyado en teorías matemáticas como grafos o integraciones ligeras con IA, manteniendo el propósito social y científico de la plataforma."
+            ],
+            previewUrl: null,
+            downloadUrl: null,
             linkUrl: null,
         },
+
+
+
     ],
-
-
-
 
 
 };
