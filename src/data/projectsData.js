@@ -11,11 +11,17 @@ import mrs4 from "@/assets/images/mrs4.png";
 import mrs6 from "@/assets/images/mrs6.png";
 import mr7 from "@/assets/images/mr7.png";
 
-
+import psicotranspersonal1 from "@/assets/images/psicotranspersonal1.png";
 import ps1 from "@/assets/images/ps1.png";
 import ps2 from "@/assets/images/ps2.png";
+import ps3 from "@/assets/images/ps3.png";
+import ps4 from "@/assets/images/ps4.png";
 import ps5 from "@/assets/images/ps5.png";
 import ps6 from "@/assets/images/ps6.png";
+import ps7 from "@/assets/images/ps7.png";
+import ps8 from "@/assets/images/ps8.png";
+import ps9 from "@/assets/images/ps9.png";
+import ps10 from "@/assets/images/ps10.png";
 
 
 import fm from "@/assets/images/fm.png";
@@ -71,8 +77,8 @@ export const projectsList = [
         date: "01/06/2025 ",
         size: "Completado",
         path: "/projects/psicotranspersonal",
-        description: "Desarrollé una plataforma web para una psicóloga independiente...",
-        previewUrl: ps1,
+        description: "Psicotranspersonal es la marca profesional de una psicóloga especializada en acompañamiento terapéutico con enfoque transpersonal. Con una comunidad digital de más de 190 000 seguidores, ha consolidado su presencia en redes sociales compartiendo contenido de bienestar y crecimiento personal. Su proyecto busca centralizar sus servicios, eventos y recursos en una plataforma propia, fortaleciendo su independencia digital y ofreciendo una experiencia más directa y personalizada a su comunidad.",
+        previewUrl: psicotranspersonal1,
         downloadUrl: null,
         linkUrl: null,
     },
@@ -369,10 +375,7 @@ export const projectDetailFiles = {
             date: "01/03/2025",
             size: "Actualizado",
             description: [
-                "Desarrollé una página web profesional para una psicóloga independiente, utilizando React.js y Framer Motion para crear una interfaz moderna, fluida y alineada con su identidad de marca personal.",
-                "Implementé un sistema de pagos propio mediante formularios seguros, reduciendo las comisiones de terceros del 10% al 3.5% y mejorando la rentabilidad del servicio.",
-                "Incorporé métricas con Google Analytics para medir conversiones y analizar el comportamiento de los usuarios, brindando datos estratégicos para optimizar contenido y campañas.",
-                "El sitio fue optimizado con Vite, logrando tiempos de carga mínimos, excelente rendimiento y una experiencia de navegación ágil tanto en móviles como en escritorio."
+                "El proyecto Psicotranspersonal consistió en el desarrollo de un software front-end personalizado para una psicóloga independiente que buscaba autonomía digital y centralización de servicios. El proceso incluyó levantamiento de requerimientos, análisis comparativo y documentación funcional, lo que permitió definir una arquitectura informativa clara y escalable. Se implementó una interfaz modular con navegación dinámica, secciones autogestionables y compatibilidad total en dispositivos móviles. La integración de PayU como pasarela de pago redujo las comisiones externas del 10 % al 3.5 %, y la incorporación de Google Analytics aportó trazabilidad y medición de conversiones. El proyecto se desarrolló bajo principios de optimización de carga, accesibilidad y coherencia con la identidad profesional de la marca."
             ],
             previewUrl: null,
             downloadUrl: null,
@@ -381,11 +384,11 @@ export const projectDetailFiles = {
 
         {
             icon: "📋",
-            name: "Contribuciones/Aportes",
+            name: "Contribuciones",
             type: "Dinámico",
             date: "01/03/2025",
             size: "Actualizado",
-            description: "Navega por mis principales contribuciones y aportes al proyecto Psicotranspersonal",
+            description: null,
             previewUrl: null,
             downloadUrl: null,
             linkUrl: null,
@@ -394,38 +397,101 @@ export const projectDetailFiles = {
                     icon: "🧭",
                     name: "Análisis y Requerimientos",
                     description: [
-                        "⦿ Lideré el proceso de análisis y levantamiento de requerimientos, aplicando entrevistas, sesiones de brainstorming y cuestionarios estructurados para definir el alcance funcional del sitio.",
-                        "⦿ Elaboré casos de uso, mapas de calor y benchmarking visual, estableciendo una línea de diseño coherente con la identidad profesional de la psicóloga y su posicionamiento digital."
+                        "⦿ Lideré el proceso de **análisis funcional y levantamiento de requerimientos**, aplicando entrevistas, encuestas y sesiones de brainstorming para definir el alcance del sistema.",
+                        "⦿ Elaboré **casos de uso y mapas de prioridad** que facilitaron la jerarquización de funcionalidades y el diseño de la estructura informativa."
+                    ],
+                    previewUrl: "https://cdn-icons-png.flaticon.com/128/888/888034.png",
+                },
+                {
+
+                    name: "Diseño y Estructura Web",
+                    description: [
+                        "⦿ Diseñé una arquitectura web responsiva, implementando secciones como *Inicio*, *Sobre mí*, *Servicios*, *Preguntas Frecuentes*, *Testimonios*, *Círculo de Mujeres* y *Términos y Condiciones*, junto con un menú de navegación y un footer."
                     ],
                     previewUrl: ps1,
                 },
+
+
                 {
-                    icon: "🧱",
+
                     name: "Diseño y Estructura Web",
-                    description: [
-                        "⦿ Diseñé una arquitectura web completamente responsiva basada en componentes modulares y reutilizables.",
-                        "⦿ Implementé secciones clave como *Hero*, *Servicios*, *Preguntas Frecuentes*, *Precios*, *Footer* y *Términos y Condiciones*, asegurando coherencia visual y accesibilidad en todos los dispositivos."
-                    ],
+                    description: null,
+                    previewUrl: ps8,
+                },
+
+                {
+
+                    name: "Diseño y Estructura Web",
+                    description: null,
+                    previewUrl: ps4,
+                },
+
+
+                {
+
+                    name: "Diseño y Estructura Web",
+                    description: null,
                     previewUrl: ps2,
                 },
+
                 {
-                    icon: "💳",
+
+                    name: "Diseño y Estructura Web",
+                    description: null,
+                    previewUrl: ps7,
+                },
+
+                {
+
+                    name: "Diseño y Estructura Web",
+                    description: null,
+                    previewUrl: ps9,
+                },
+
+                {
+
+                    name: "Diseño y Estructura Web",
+                    description: null,
+                    previewUrl: ps10,
+                },
+
+
+
+                {
+
+                    name: "Animaciones y Microinteracciones",
+                    description: [
+                        "⦿ Incorporé animaciones suaves y microinteracciones con **Framer Motion**, aplicadas en encabezados, botones, textos y partes de la interfaz. Tambien implementé **Swiper.js** para carruseles  y tarjetas de eventos más interactivas y modernas"
+                    ],
+                    previewUrl: ps6,
+                },
+
+                {
+
+                    name: "Animaciones y Microinteracciones",
+                    description: null,
+                    previewUrl: ps3,
+                },
+
+                {
+
                     name: "Integración de Pagos y Métricas",
                     description: [
-                        "⦿ Integré la pasarela de pagos **PayU**, reduciendo comisiones externas del 10 % al 3.5 % y fortaleciendo la autonomía financiera del proyecto.",
-                        "⦿ Incorporé métricas con **Google Analytics** para medir conversiones, analizar el comportamiento de los usuarios y obtener información clave para la toma de decisiones estratégicas."
+                        "⦿ Integré la pasarela de pagos **PayU**, garantizando seguridad en transacciones y reduciendo comisiones externas del 10 % al 3.5 %. ",
+                        "⦿ Incorporé **Google Analytics** para el seguimiento de conversiones, sesiones y comportamiento de usuarios, facilitando la toma de decisiones basadas en datos.",
+
                     ],
                     previewUrl: ps5,
                 },
+
+
                 {
-                    icon: "🎨",
-                    name: "Animaciones y Microinteracciones",
+
+                    name: "Optimización y Mantenimiento",
                     description: [
-                        "⦿ Implementé microinteracciones y transiciones con **Framer Motion**, aplicando animaciones de entrada, realces en botones y efectos suaves que guían la atención del usuario.",
-                        "⦿ Apliqué sutiles variaciones de color y movimiento para mantener una estética moderna y profesional.",
-                        "⦿ Integré **Swiper.js** para carruseles, tarjetas animadas y secciones de testimonios personalizadas, mejorando la narrativa visual y la experiencia de navegación."
+                        "⦿ Entregué un **manual de usuario** documentado para garantizar autonomía en la actualización y gestión del sitio."
                     ],
-                    previewUrl: ps6,
+                    previewUrl: null,
                 }
             ]
 
@@ -450,14 +516,14 @@ export const projectDetailFiles = {
             date: "01/06/2025",
             size: "Actualizado",
             description: "Ficha técnica descargable en Word.",
-            previewUrl: "https://cdn-icons-png.flaticon.com/512/732/732223.png",
-            downloadUrl: "/f-ps.docx",
-            linkUrl: null,
+            previewUrl: "https://cdn-icons-png.flaticon.com/512/337/337946.png",
+            downloadUrl: "/pdf-psicotranspersonal.pdf",
+            linkUrl: "https://drive.google.com/file/d/1WqjIka-NTDG8fblm5PMVDL7-oI3L4qte/view?usp=drive_link",
         },
 
         {
             icon: "🎥",
-            name: "Video Presentación",
+            name: "Video",
             type: "YouTube",
             date: "01/06/2025",
             size: "Actualizado",
@@ -469,39 +535,114 @@ export const projectDetailFiles = {
 
         {
             icon: "🐙",
-            name: "Repositorio GitHub",
+            name: "Repositorio ",
             type: "GitHub",
             date: "01/06/2025",
             size: "Actualizado",
-            description: "Repositorio del proyecto: https://github.com/ | Instagram: https://www.instagram.com/ | Website: https://martinacocina.netlify.app/",
+            description: null,
             previewUrl: "https://img.icons8.com/ios-glyphs/512/github.png",
             downloadUrl: null,
-            linkUrl: "https://github.com/",
+            linkUrl: "https://github.com/EsneiderCdD/PsicologiaTranspersonal",
         },
 
+
+    ],
+
+
+
+
+    framermotionlab: [
         {
-            icon: "📸",
-            name: "Instagram Profesional",
-            type: "Instagram",
+            icon: "📘",
+            name: "Descripción del Proyecto",
+            type: "Texto",
             date: "01/06/2025",
             size: "Actualizado",
-            description: "Instagram oficial: https://www.instagram.com/ | Web: https://martinacocina.netlify.app/",
-            previewUrl: "https://img.icons8.com/ios-glyphs/512/instagram-new.png",
+            description: [
+                "El sistema está estructurado como una aplicación web educativa e interactiva enfocada en el aprendizaje progresivo de animaciones en Framer Motion. Incluye un catálogo de ejemplos visuales, un sistema de navegación dinámica y un módulo tipo builder que permite experimentar con propiedades de animación en tiempo real.",
+                "Cada ejemplo presenta simultáneamente el código fuente y su resultado visual, fomentando la comprensión práctica. Concebido como una herramienta pedagógica y un espacio de experimentación autodidacta, el proyecto busca democratizar el conocimiento técnico y al mismo tiempo servir como una plataforma abierta de exploración creativa."
+            ],
+            previewUrl: null,
             downloadUrl: null,
-            linkUrl: "https://www.instagram.com/",
+            linkUrl: null,
         },
 
         {
-            icon: "🌐",
-            name: "Sitio Web (Vercel)",
-            type: "Vercel",
+            icon: "📋",
+            name: "Contribuciones/Aportes",
+            type: "Dinámico",
             date: "01/06/2025",
             size: "Actualizado",
-            description: "Sitio desplegado en Vercel: https://martinacocina.netlify.app/",
-            previewUrl: "https://img.icons8.com/ios-glyphs/512/internet--v1.png",
-            linkUrl: "https://martinacocina.netlify.app/",
+            description: "Navega por mis principales contribuciones y aportes al proyecto Framer Motion Lab",
+            previewUrl: null,
+            downloadUrl: null,
+            linkUrl: null,
+            contributions: [
+                {
+                    icon: "🏠",
+                    name: "Interfaz Principal",
+                    description: [
+                        "⦿ Diseñé la estructura de la interfaz bajo un enfoque pedagógico progresivo, inspirado en la documentación oficial de Framer Motion.",
+                        "⦿ Organicé el contenido en tres niveles —*Básico*, *Gestures* y *Layout*— para facilitar el aprendizaje escalonado de animaciones web. El nivel *Básico* está casi completo, *Gestures* en desarrollo y *Layout* en planificación."
+                    ],
+                    previewUrl: fm,
+                },
+                {
+                    icon: "📊",
+                    name: "Dashboard de Animaciones",
+                    description: [
+                        "⦿ Desarrollé un panel visual compuesto por *cards* interactivas que muestran ejemplos funcionales de propiedades clave como movimiento, opacidad, rotación, duración y transiciones.",
+                        "⦿ Cada card combina ícono, descripción y animación, permitiendo observar el comportamiento de cada propiedad en tiempo real."
+                    ],
+                    previewUrl: fm1,
+                },
+                {
+                    icon: "📋",
+                    name: "Explicaciones y Detalles",
+                    description: [
+                        "⦿ Elaboré descripciones breves y técnicas en cada card para explicar el uso de propiedades y su efecto en las animaciones.",
+                        "⦿ Incluí visualizaciones paralelas del código fuente y su resultado, reforzando la comprensión entre teoría y práctica."
+                    ],
+                    previewUrl: fm2,
+                },
+                {
+                    icon: "🧩",
+                    name: "LabMotion Builder",
+                    description: [
+                        "⦿ Implementé el módulo interactivo *LabMotion Builder*, un entorno que permite modificar parámetros de animación —posición, escala, color, duración— y visualizar resultados al instante.",
+                        "⦿ Este sistema funciona como un laboratorio experimental, integrando controles dinámicos para fomentar el aprendizaje práctico de Framer Motion."
+                    ],
+                    previewUrl: fm3,
+                }
+            ]
+
+        },
+
+        {
+            icon: "💻",
+            name: "Tecnologías Usadas",
+            type: "Imagen y texto",
+            date: "01/06/2025",
+            size: "Actualizado",
+            description: generateStackHTML(['react', 'css', 'javascript', 'framer', 'vite']),
+            previewUrl: null,
+            downloadUrl: null,
+            linkUrl: null,
+        },
+
+        {
+            icon: "📑",
+            name: "Ficha Técnica",
+            type: "Word",
+            date: "01/07/2025",
+            size: "Actualizado",
+            description: "Ficha técnica descargable en Word.",
+            previewUrl: "https://cdn-icons-png.flaticon.com/512/732/732223.png",
+            downloadUrl: "/f-fm.docx",
+            linkUrl: null,
         },
     ],
+
 
 
     guau: [
@@ -729,99 +870,6 @@ export const projectDetailFiles = {
         },
     ],
 
-
-
-    framermotionlab: [
-        {
-            icon: "📘",
-            name: "Descripción del Proyecto",
-            type: "Texto",
-            date: "01/06/2025",
-            size: "Actualizado",
-            description: [
-                "El sistema está estructurado como una aplicación web educativa e interactiva enfocada en el aprendizaje progresivo de animaciones en Framer Motion. Incluye un catálogo de ejemplos visuales, un sistema de navegación dinámica y un módulo tipo builder que permite experimentar con propiedades de animación en tiempo real.",
-                "Cada ejemplo presenta simultáneamente el código fuente y su resultado visual, fomentando la comprensión práctica. Concebido como una herramienta pedagógica y un espacio de experimentación autodidacta, el proyecto busca democratizar el conocimiento técnico y al mismo tiempo servir como una plataforma abierta de exploración creativa."
-            ],
-            previewUrl: null,
-            downloadUrl: null,
-            linkUrl: null,
-        },
-
-        {
-            icon: "📋",
-            name: "Contribuciones/Aportes",
-            type: "Dinámico",
-            date: "01/06/2025",
-            size: "Actualizado",
-            description: "Navega por mis principales contribuciones y aportes al proyecto Framer Motion Lab",
-            previewUrl: null,
-            downloadUrl: null,
-            linkUrl: null,
-            contributions: [
-                {
-                    icon: "🏠",
-                    name: "Interfaz Principal",
-                    description: [
-                        "⦿ Diseñé la estructura de la interfaz bajo un enfoque pedagógico progresivo, inspirado en la documentación oficial de Framer Motion.",
-                        "⦿ Organicé el contenido en tres niveles —*Básico*, *Gestures* y *Layout*— para facilitar el aprendizaje escalonado de animaciones web. El nivel *Básico* está casi completo, *Gestures* en desarrollo y *Layout* en planificación."
-                    ],
-                    previewUrl: fm,
-                },
-                {
-                    icon: "📊",
-                    name: "Dashboard de Animaciones",
-                    description: [
-                        "⦿ Desarrollé un panel visual compuesto por *cards* interactivas que muestran ejemplos funcionales de propiedades clave como movimiento, opacidad, rotación, duración y transiciones.",
-                        "⦿ Cada card combina ícono, descripción y animación, permitiendo observar el comportamiento de cada propiedad en tiempo real."
-                    ],
-                    previewUrl: fm1,
-                },
-                {
-                    icon: "📋",
-                    name: "Explicaciones y Detalles",
-                    description: [
-                        "⦿ Elaboré descripciones breves y técnicas en cada card para explicar el uso de propiedades y su efecto en las animaciones.",
-                        "⦿ Incluí visualizaciones paralelas del código fuente y su resultado, reforzando la comprensión entre teoría y práctica."
-                    ],
-                    previewUrl: fm2,
-                },
-                {
-                    icon: "🧩",
-                    name: "LabMotion Builder",
-                    description: [
-                        "⦿ Implementé el módulo interactivo *LabMotion Builder*, un entorno que permite modificar parámetros de animación —posición, escala, color, duración— y visualizar resultados al instante.",
-                        "⦿ Este sistema funciona como un laboratorio experimental, integrando controles dinámicos para fomentar el aprendizaje práctico de Framer Motion."
-                    ],
-                    previewUrl: fm3,
-                }
-            ]
-
-        },
-
-        {
-            icon: "💻",
-            name: "Tecnologías Usadas",
-            type: "Imagen y texto",
-            date: "01/06/2025",
-            size: "Actualizado",
-            description: generateStackHTML(['react', 'css', 'javascript', 'framer', 'vite']),
-            previewUrl: null,
-            downloadUrl: null,
-            linkUrl: null,
-        },
-
-        {
-            icon: "📑",
-            name: "Ficha Técnica",
-            type: "Word",
-            date: "01/07/2025",
-            size: "Actualizado",
-            description: "Ficha técnica descargable en Word.",
-            previewUrl: "https://cdn-icons-png.flaticon.com/512/732/732223.png",
-            downloadUrl: "/f-fm.docx",
-            linkUrl: null,
-        },
-    ],
 
 
 };
