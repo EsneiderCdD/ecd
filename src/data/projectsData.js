@@ -89,7 +89,8 @@ export const projectsList = [
         date: "16/07/2025",
         size: "Beta",
         path: "/projects/framermotionlab",
-        description: "EN DESARROLLO... Laboratorio de animaciones interactivas con Framer Motion...",
+        description: "Proyecto personal orientado al aprendizaje y experimentación con animaciones web en Framer Motion. En desarrollo.",
+
         previewUrl: fm4,
         downloadUrl: null,
         linkUrl: null,
@@ -559,8 +560,8 @@ export const projectDetailFiles = {
             date: "01/06/2025",
             size: "Actualizado",
             description: [
-                "El sistema está estructurado como una aplicación web educativa e interactiva enfocada en el aprendizaje progresivo de animaciones en Framer Motion. Incluye un catálogo de ejemplos visuales, un sistema de navegación dinámica y un módulo tipo builder que permite experimentar con propiedades de animación en tiempo real.",
-                "Cada ejemplo presenta simultáneamente el código fuente y su resultado visual, fomentando la comprensión práctica. Concebido como una herramienta pedagógica y un espacio de experimentación autodidacta, el proyecto busca democratizar el conocimiento técnico y al mismo tiempo servir como una plataforma abierta de exploración creativa."
+                "El sistema se estructura como una **aplicación web educativa e interactiva** enfocada en el aprendizaje progresivo de animaciones en *Framer Motion*. Incluye un catálogo de ejemplos visuales, un sistema de navegación dinámica y un módulo tipo *builder* que permite experimentar con propiedades de animación en tiempo real.",
+                "Cada ejemplo presenta simultáneamente el código fuente y su resultado visual, fomentando la comprensión práctica. Concebido como una **herramienta pedagógica** y un espacio de experimentación autodidacta, el proyecto busca democratizar el conocimiento técnico y servir como una plataforma abierta de exploración creativa."
             ],
             previewUrl: null,
             downloadUrl: null,
@@ -569,7 +570,7 @@ export const projectDetailFiles = {
 
         {
             icon: "📋",
-            name: "Contribuciones/Aportes",
+            name: "Contribuciones",
             type: "Dinámico",
             date: "01/06/2025",
             size: "Actualizado",
@@ -582,8 +583,8 @@ export const projectDetailFiles = {
                     icon: "🏠",
                     name: "Interfaz Principal",
                     description: [
-                        "⦿ Diseñé la estructura de la interfaz bajo un enfoque pedagógico progresivo, inspirado en la documentación oficial de Framer Motion.",
-                        "⦿ Organicé el contenido en tres niveles —*Básico*, *Gestures* y *Layout*— para facilitar el aprendizaje escalonado de animaciones web. El nivel *Básico* está casi completo, *Gestures* en desarrollo y *Layout* en planificación."
+                        "⦿ Diseño la **estructura de la interfaz** bajo un enfoque pedagógico progresivo, inspirado en la documentación oficial de *Framer Motion*.",
+                        "⦿ Organizo el contenido en tres niveles —*Básico*, *Gestures* y *Layout*— para facilitar el aprendizaje escalonado de animaciones web. El nivel *Básico* está casi completo, *Gestures* en desarrollo y *Layout* en planificación."
                     ],
                     previewUrl: fm,
                 },
@@ -591,8 +592,8 @@ export const projectDetailFiles = {
                     icon: "📊",
                     name: "Dashboard de Animaciones",
                     description: [
-                        "⦿ Desarrollé un panel visual compuesto por *cards* interactivas que muestran ejemplos funcionales de propiedades clave como movimiento, opacidad, rotación, duración y transiciones.",
-                        "⦿ Cada card combina ícono, descripción y animación, permitiendo observar el comportamiento de cada propiedad en tiempo real."
+                        "⦿ Desarrollo un **panel visual interactivo** compuesto por *cards* que muestran ejemplos funcionales de propiedades clave como movimiento, opacidad, rotación, duración y transiciones.",
+                        "⦿ Cada *card* combina ícono, descripción y animación, permitiendo observar el comportamiento de cada propiedad en tiempo real."
                     ],
                     previewUrl: fm1,
                 },
@@ -600,8 +601,8 @@ export const projectDetailFiles = {
                     icon: "📋",
                     name: "Explicaciones y Detalles",
                     description: [
-                        "⦿ Elaboré descripciones breves y técnicas en cada card para explicar el uso de propiedades y su efecto en las animaciones.",
-                        "⦿ Incluí visualizaciones paralelas del código fuente y su resultado, reforzando la comprensión entre teoría y práctica."
+                        "⦿ Elaboro **descripciones breves y técnicas** en cada *card* para explicar el uso de propiedades y su efecto en las animaciones.",
+                        "⦿ Incluyo **visualizaciones paralelas** del código fuente y su resultado, reforzando la comprensión entre teoría y práctica."
                     ],
                     previewUrl: fm2,
                 },
@@ -609,13 +610,12 @@ export const projectDetailFiles = {
                     icon: "🧩",
                     name: "LabMotion Builder",
                     description: [
-                        "⦿ Implementé el módulo interactivo *LabMotion Builder*, un entorno que permite modificar parámetros de animación —posición, escala, color, duración— y visualizar resultados al instante.",
-                        "⦿ Este sistema funciona como un laboratorio experimental, integrando controles dinámicos para fomentar el aprendizaje práctico de Framer Motion."
+                        "⦿ Implemento el módulo interactivo **LabMotion Builder**, un entorno que permite modificar parámetros de animación —posición, escala, color, duración— y visualizar resultados al instante.",
+                        "⦿ Este sistema funciona como un **laboratorio experimental**, integrando controles dinámicos para fomentar el aprendizaje práctico de *Framer Motion*."
                     ],
                     previewUrl: fm3,
                 }
             ]
-
         },
 
         {
@@ -634,14 +634,54 @@ export const projectDetailFiles = {
             icon: "📑",
             name: "Ficha Técnica",
             type: "Word",
-            date: "01/07/2025",
+            date: "01/06/2025",
             size: "Actualizado",
             description: "Ficha técnica descargable en Word.",
-            previewUrl: "https://cdn-icons-png.flaticon.com/512/732/732223.png",
-            downloadUrl: "/f-fm.docx",
+            previewUrl: "https://cdn-icons-png.flaticon.com/512/337/337946.png",
+            downloadUrl: "/pdf-framermotion.pdf",
+            linkUrl: "https://drive.google.com/file/d/1oD_JonGQMZBXROHCzDcQoupCwXoIPMae/view?usp=drive_link",
+        },
+
+        {
+            icon: "🎥",
+            name: "Video",
+            type: "YouTube",
+            date: "01/06/2025",
+            size: "Actualizado",
+            description: "Recorre el proyecto con un video en YouTube.",
+            previewUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+            downloadUrl: null,
+            linkUrl: "https://www.youtube.com/",
+        },
+
+        {
+            icon: "🐙",
+            name: "Repositorio ",
+            type: "GitHub",
+            date: "01/06/2025",
+            size: "Actualizado",
+            description: null,
+            previewUrl: "https://img.icons8.com/ios-glyphs/512/github.png",
+            downloadUrl: null,
+            linkUrl: "https://github.com/EsneiderCdD/framer-motion",
+        },
+
+        {
+            icon: "🧭",
+            name: "Proyecciones",
+            type: "Texto",
+            date: "01/08/2025",
+            size: "En desarrollo",
+            description: [
+                "El proyecto avanza hacia un primer MVP centrado en el nivel básico, con el objetivo de hacerlo público y fomentar el networking dentro de la comunidad de desarrolladores. Actualmente se trabaja en la implementación del modo oscuro, la optimización de la experiencia de usuario y la adaptación responsiva para dispositivos móviles. También se evalúa la integración con GitHub para permitir contribuciones abiertas y colaborativas, manteniendo una estructura de código documentada y organizada."
+            ],
+            previewUrl: null,
+            downloadUrl: null,
             linkUrl: null,
         },
+
     ],
+
 
 
 
