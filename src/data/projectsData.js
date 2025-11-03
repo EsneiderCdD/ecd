@@ -685,6 +685,112 @@ export const projectDetailFiles = {
 
 
 
+    trainittrello: [
+        {
+            icon: "📄",
+            name: "Descripción del Proyecto",
+            type: "Texto",
+            date: "15/10/2025 ",
+            size: "Actualizado",
+            description: "TrainIT Es un programa educativo y comunidad de simulación laboral gratuito, que ofrece ganar experiencia a través de la participación en MVPs multidisciplinarios sin fines de lucro, acompañados de seniors en diferentes nichos laborales. El objetivo es que los participantes amplíen su portafolios y mejoren su perfil profesional frente a las empresas activas del mercado.",
+            previewUrl: null,
+            downloadUrl: null,
+            linkUrl: null,
+        },
+        {
+            icon: "📋",
+            name: "Contribuciones",
+            type: "Dinámico",
+            date: "15/10/2025",
+            size: "Actualizado",
+            description: "Navega por mis principales contribuciones y aportes al proyecto TrainIT",
+            previewUrl: null,
+            downloadUrl: null,
+            linkUrl: null,
+            contributions: [
+                {
+                    icon: "🖼️",
+                    name: "Arquitectura Frontend y Componentes",
+                    description: ["⦿ Desempeñe un rol con enfoque principal *Frontend* y contribuciones relevantes en el *Backend*. Asimismo, participe en establecer la **estructuración de carpetas**, la **configuración de librerías** y **patrón de diseño**.",
+                        "⦿ Implemente la estrategia ***Design System Color*** diseñado por el equipo UX/UI (colores primitivos, neutros, y semánticos) e integrándolo a Tailwind CSS.",
+                        "⦿ Construí **componentes** Integrando colores, iconos, imágenes, posiciones, fondos, botones, tipografía fehacientemente al diseño en **Figma.**"
+                    ],
+                    previewUrl: ti1,
+                },
+                {
+                    icon: "🖼️",
+                    name: "Desarrollo Full-Stack",
+                    description: ["⦿ Continué desarrollando componentes del Front, opciones *(dropdown)*, enlaces, y otros detalles complementarios al dashboard.",
+                        "⦿ Realice el módulo de edición de tablero realizando ajustes en el **modelo**, **migraciones**, **lógica** de campo de la interfaz (backend) y generar la conexión desde el *Frontend* con sus respectivos componentes"],
+
+                    previewUrl: ti2,
+                },
+                {
+                    icon: "🖼️",
+                    name: "Drag & Drop",
+                    description: ["⦿ Finalmente, desarrollé el sistema de arrastre y soltado ***(Drag & Drop)*** ",
+                        "⦿ Aportando coherencia desde el back para la gestión de columnas y posiciones, desplazamiento entre tarjetas y entre columnas, ajustando y reordenando según la zona droppeada.",
+                        "⦿ Implementé el sistema ***kanban*** usando ***@dnd-kit/core***, optimizando el flujo de datos mediante estrategias de *sortable context*, *collision detection*  y render condicional con ***React.memo*** para minimizar re-renders durante operaciones CRUD."],
+                    previewUrl: ti3,
+                }
+            ]
+        },
+
+        {
+            icon: "💻",
+            name: "Tecnologías Usadas",
+            type: "Imagen y texto",
+            date: "25/02/2025 ",
+            size: "Actualizado",
+            description: generateStackHTML(['git', 'github', 'figma', 'typescript', 'tailwind', 'fechas', 'next', 'react', 'zustand', 'dndKit', 'python', 'postgresql', 'flask', 'flaskenv', 'pusher', 'sendgrid', 'cloudinary']),
+            previewUrl: null,
+            downloadUrl: null,
+            linkUrl: null,
+        },
+        {
+            icon: "📑",
+            name: "Ficha Técnica",
+            type: "Word",
+            date: "01/06/2025",
+            size: "Actualizado",
+            description: "Ficha técnica descargable en Word.",
+            previewUrl: "https://cdn-icons-png.flaticon.com/512/337/337946.png",
+            downloadUrl: "/pdf-trainit.pdf",
+            linkUrl: "https://drive.google.com/file/d/1Dk_TQTiWyCHIBgiaQuMFA5x1altQpCwq/view?usp=drive_link",
+        },
+
+        {
+            icon: "🎥",
+            name: "Video",
+            type: "YouTube",
+            date: "01/06/2025",
+            size: "Actualizado",
+            description: "Recorre el proyecto con un video en YouTube.",
+            previewUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+            downloadUrl: null,
+            linkUrl: "https://www.youtube.com/",
+        },
+        {
+            icon: "🐙",
+            name: "Repositorio",
+            type: "GitHub",
+            date: "01/06/2025",
+            size: "Actualizado",
+            description: "Enlaces a los repositorios del proyecto TrainIT, incluyendo tanto el Frontend como el Backend desarrollados durante el proyecto.",
+            previewUrl: "https://img.icons8.com/ios-glyphs/512/github.png",
+            downloadUrl: null,
+            links: [
+                { label: "Frontend", url: "https://github.com/Programa-TrainIT-Ar/fe-trelloop-grupo-2/tree/grupo-2" },
+                { label: "Backend", url: "https://github.com/Programa-TrainIT-Ar/be-trelloop-grupo-2/tree/grupo-2" }
+            ],
+        },
+    ],
+
+
+
+
+
+
     guau: [
         {
             icon: "📄",
@@ -805,110 +911,6 @@ export const projectDetailFiles = {
     ],
 
 
-
-
-
-
-    trainittrello: [
-        {
-            icon: "📄",
-            name: "Descripción del Proyecto",
-            type: "Texto",
-            date: "15/10/2025 ",
-            size: "Actualizado",
-            description: "TrainIT Es un programa educativo y comunidad de simulación laboral gratuito, que ofrece ganar experiencia a través de la participación en MVPs multidisciplinarios sin fines de lucro, acompañados de seniors en diferentes nichos laborales. El objetivo es que los participantes amplíen su portafolios y mejoren su perfil profesional frente a las empresas activas del mercado.",
-            previewUrl: null,
-            downloadUrl: null,
-            linkUrl: null,
-        },
-        {
-            icon: "📋",
-            name: "Contribuciones",
-            type: "Dinámico",
-            date: "15/10/2025",
-            size: "Actualizado",
-            description: "Navega por mis principales contribuciones y aportes al proyecto TrainIT",
-            previewUrl: null,
-            downloadUrl: null,
-            linkUrl: null,
-            contributions: [
-                {
-                    icon: "🖼️",
-                    name: "Arquitectura Frontend y Componentes",
-                    description: ["⦿ Desempeñe un rol con enfoque principal *Frontend* y contribuciones relevantes en el *Backend*. Asimismo, participe en establecer la **estructuración de carpetas**, la **configuración de librerías** y **patrón de diseño**.",
-                        "⦿ Implemente la estrategia ***Design System Color*** diseñado por el equipo UX/UI (colores primitivos, neutros, y semánticos) e integrándolo a Tailwind CSS.",
-                        "⦿ Construí **componentes** Integrando colores, iconos, imágenes, posiciones, fondos, botones, tipografía fehacientemente al diseño en **Figma.**"
-                    ],
-                    previewUrl: ti1,
-                },
-                {
-                    icon: "🖼️",
-                    name: "Desarrollo Full-Stack",
-                    description: ["⦿ Continué desarrollando componentes del Front, opciones *(dropdown)*, enlaces, y otros detalles complementarios al dashboard.",
-                        "⦿ Realice el módulo de edición de tablero realizando ajustes en el **modelo**, **migraciones**, **lógica** de campo de la interfaz (backend) y generar la conexión desde el *Frontend* con sus respectivos componentes"],
-
-                    previewUrl: ti2,
-                },
-                {
-                    icon: "🖼️",
-                    name: "Drag & Drop",
-                    description: ["⦿ Finalmente, desarrollé el sistema de arrastre y soltado ***(Drag & Drop)*** ",
-                        "⦿ Aportando coherencia desde el back para la gestión de columnas y posiciones, desplazamiento entre tarjetas y entre columnas, ajustando y reordenando según la zona droppeada.",
-                        "⦿ Implementé el sistema ***kanban*** usando ***@dnd-kit/core***, optimizando el flujo de datos mediante estrategias de *sortable context*, *collision detection*  y render condicional con ***React.memo*** para minimizar re-renders durante operaciones CRUD."],
-                    previewUrl: ti3,
-                }
-            ]
-        },
-
-        {
-            icon: "💻",
-            name: "Tecnologías Usadas",
-            type: "Imagen y texto",
-            date: "25/02/2025 ",
-            size: "Actualizado",
-            description: generateStackHTML(['git', 'github', 'figma', 'typescript', 'tailwind', 'fechas', 'next', 'react', 'zustand', 'dndKit', 'python', 'postgresql', 'flask', 'flaskenv', 'pusher', 'sendgrid', 'cloudinary']),
-            previewUrl: null,
-            downloadUrl: null,
-            linkUrl: null,
-        },
-        {
-            icon: "📑",
-            name: "Ficha Técnica",
-            type: "Word",
-            date: "01/06/2025",
-            size: "Actualizado",
-            description: "Ficha técnica descargable en Word.",
-            previewUrl: "https://cdn-icons-png.flaticon.com/512/732/732223.png",
-            downloadUrl: "/f-ps.docx",
-            linkUrl: "https://drive.google.com/file/d/121q0VBHBzZFUY2NnQRVRooNCw1Lv38jI/view?usp=drive_link",
-        },
-
-        {
-            icon: "🎥",
-            name: "Video Presentación",
-            type: "YouTube",
-            date: "01/06/2025",
-            size: "Actualizado",
-            description: "Recorre el proyecto con un video en YouTube.",
-            previewUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-            downloadUrl: null,
-            linkUrl: "https://www.youtube.com/",
-        },
-        {
-            icon: "🐙",
-            name: "Repositorio",
-            type: "GitHub",
-            date: "01/06/2025",
-            size: "Actualizado",
-            description: "Enlaces a los repositorios del proyecto TrainIT, incluyendo tanto el Frontend como el Backend desarrollados durante el proyecto.",
-            previewUrl: "https://img.icons8.com/ios-glyphs/512/github.png",
-            downloadUrl: null,
-            links: [
-                { label: "Frontend", url: "https://github.com/Programa-TrainIT-Ar/fe-trelloop-grupo-2/tree/grupo-2" },
-                { label: "Backend", url: "https://github.com/Programa-TrainIT-Ar/be-trelloop-grupo-2/tree/grupo-2" }
-            ],
-        },
-    ],
 
 
 
