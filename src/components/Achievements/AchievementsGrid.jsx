@@ -1,6 +1,6 @@
 // src/components/Achievements/AchievementsGrid.jsx
 import { useAchievements } from '@/context/AchievementsContext';
-import { achievementsConfig } from '@/data/achievementsData';
+import { achievementsConfig, rarityColors } from '@/data/achievementsData';
 import styles from './AchievementsGrid.module.css';
 
 function AchievementsGrid({ onAchievementSelect, selectedAchievement }) {
@@ -18,37 +18,63 @@ function AchievementsGrid({ onAchievementSelect, selectedAchievement }) {
         {Object.values(achievementsConfig).map((achievement) => {
           const isUnlocked = unlockedAchievements.includes(achievement.id);
           const isSelected = selectedAchievement?.id === achievement.id;
+          const rarityStyle = rarityColors[achievement.rarity];
 
           return (
             <div
               key={achievement.id}
               className={`${styles.achievementCard} ${
-                isUnlocked ? '' : styles.locked
+                isUnlocked ? styles.unlocked : styles.locked
               } ${isSelected ? styles.selected : ''}`}
               onClick={() => handleClick(achievement)}
             >
-              {/* Icono del logro */}
-              <div className={styles.achievementImage}>
-                {isUnlocked ? achievement.icon : '🔒'}
-              </div>
-
-              {/* Información del logro */}
-              <div className={styles.achievementTitle}>
-                {isUnlocked ? achievement.title : '???'}
-              </div>
-
-              <div className={styles.achievementDescription}>
-                {isUnlocked ? achievement.description : 'Logro bloqueado'}
-              </div>
-
-              {/* Footer con rareza y puntos */}
-              <div className={styles.achievementFooter}>
-                <span className={`${styles.rarityBadge} ${styles[`rarity${achievement.rarity.charAt(0).toUpperCase() + achievement.rarity.slice(1)}`]}`}>
-                  {isUnlocked ? achievement.rarity : '???'}
+              {/* Contenedor del icono con fondo blanco */}
+              <div 
+                className={styles.cardImage}
+                style={{
+                  background: isUnlocked ? '#ffffff' : 'var(--bg-secondary)'
+                }}
+              >
+                {isUnlocked ? (
+                  <img 
+                    src={achievement.icon} 
+                    alt={achievement.title}
+                    className={styles.achievementIcon}
+                    onError={(e) => {
+                      e.target.style.display = 'none';
+                      e.target.nextSibling.style.display = 'flex';
+                    }}
+                  />
+                ) : (
+                  <span className={styles.lockIcon}>🔒</span>
+                )}
+                {/* Fallback para cuando la imagen no carga */}
+                <span 
+                  className={styles.fallbackIcon}
+                  style={{ display: 'none' }}
+                >
+                  {achievement.icon}
                 </span>
-                <span className={styles.pointsBadge}>
-                  {isUnlocked ? `${achievement.points} pts` : '???'}
-                </span>
+              </div>
+
+              {/* Información del logro - Solo título y rareza */}
+              <div className={styles.cardContent}>
+                <div className={styles.achievementTitle}>
+                  {isUnlocked ? achievement.title : '???'}
+                </div>
+
+                {/* Footer solo con rareza - sin descripción y sin puntos */}
+                <div className={styles.cardFooter}>
+                  <span 
+                    className={styles.rarityBadge}
+                    style={{
+                      background: isUnlocked ? `${rarityStyle.border}20` : 'var(--bg-tertiary)',
+                      color: isUnlocked ? rarityStyle.border : 'var(--text-muted)'
+                    }}
+                  >
+                    {isUnlocked ? achievement.rarity : '???'}
+                  </span>
+                </div>
               </div>
             </div>
           );
