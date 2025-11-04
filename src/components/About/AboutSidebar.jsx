@@ -1,4 +1,4 @@
-// src/components/About/AboutSidebar.jsx
+// src/components/About/AboutSidebar.jsx (ACTUALIZADO)
 import { NavLink } from "react-router-dom";
 import { useState, useRef, useEffect } from "react";
 import styles from "./About.module.css";
@@ -13,7 +13,7 @@ function AboutSidebar() {
 
   const handleMouseMove = (e) => {
     if (!isResizing.current) return;
-    const newWidth = e.clientX; // medimos desde el borde izquierdo
+    const newWidth = e.clientX;
     if (newWidth > 120 && newWidth < 400) {
       setWidth(newWidth);
     }
@@ -34,61 +34,84 @@ function AboutSidebar() {
 
   return (
     <div className={styles.sidebar} style={{ width: `${width}px` }}>
-      {/* Resizer handle */}
       <div className={styles.sidebarResizer} onMouseDown={handleMouseDown} />
 
-      <NavLink
-        to="/"
-        className={({ isActive }) =>
-          isActive ? `${styles.link} ${styles.active}` : styles.link
-        }
-      >
-        <div className={styles.iconsidebarContainer}>
-          <img
-            src="https://cdn-icons-png.flaticon.com/128/2933/2933245.png"
-            alt="Escritorio"
-            title="Escritorio"
-            className={styles.iconsidebar}
-          />
-          <p className="text-navigation">Escritorio</p>
-        </div>
-      </NavLink>
+      {/* Sección principal de navegación */}
+      <div className={styles.mainNavSection}>
+        <NavLink
+          to="/"
+          className={({ isActive }) =>
+            isActive ? `${styles.link} ${styles.active}` : styles.link
+          }
+        >
+          <div className={styles.iconsidebarContainer}>
+            <img
+              src="https://cdn-icons-png.flaticon.com/128/2933/2933245.png"
+              alt="Escritorio"
+              title="Escritorio"
+              className={styles.iconsidebar}
+            />
+            <p className="text-navigation">Escritorio</p>
+          </div>
+        </NavLink>
 
-      <NavLink
-        to="/about"
-        className={({ isActive }) =>
-          isActive ? `${styles.link} ${styles.active}` : styles.link
-        }
-      >
-        <div className={styles.iconsidebarContainer}>
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
-            alt="Sobre mí"
-            title="Sobre mí"
-            className={styles.iconsidebar}
-          />
-          <p className="text-navigation">Sobre mí</p>
-        </div>
+        <NavLink
+          to="/about"
+          className={({ isActive }) =>
+            isActive ? `${styles.link} ${styles.active}` : styles.link
+          }
+        >
+          <div className={styles.iconsidebarContainer}>
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+              alt="Sobre mí"
+              title="Sobre mí"
+              className={styles.iconsidebar}
+            />
+            <p className="text-navigation">Sobre mí</p>
+          </div>
+        </NavLink>
 
-      </NavLink>
+        <NavLink
+          to="/projects"
+          className={({ isActive }) =>
+            isActive ? `${styles.link} ${styles.active}` : styles.link
+          }
+        >
+          <div className={styles.iconsidebarContainer}>
+            <img
+              src="https://cdn-icons-png.flaticon.com/128/1559/1559881.png"
+              alt="Proyectos"
+              title="Proyectos"
+              className={styles.iconsidebar}
+            />
+            <p className="text-navigation">Proyectos</p>
+          </div>
+        </NavLink>
+      </div>
 
-      <NavLink
-        to="/projects"
-        className={({ isActive }) =>
-          isActive ? `${styles.link} ${styles.active}` : styles.link
-        }
-      >
-        <div className={styles.iconsidebarContainer}>
-          <img
-            src="https://cdn-icons-png.flaticon.com/128/1559/1559881.png"
-            alt="Proyectos"
-            title="Proyectos"
-            className={styles.iconsidebar}
-          />
-          <p className="text-navigation">Proyectos</p>
-        </div>
+      {/* Separador visual */}
+      <div className={styles.sidebarDivider}></div>
 
-      </NavLink>
+      {/* Sección de logros (separada) */}
+      <div className={styles.achievementsSection}>
+        <NavLink
+          to="/achievements"
+          className={({ isActive }) =>
+            isActive ? `${styles.link} ${styles.active}` : styles.link
+          }
+        >
+          <div className={styles.iconsidebarContainer}>
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/1041/1041935.png"
+              alt="Logros"
+              title="Logros"
+              className={styles.iconsidebar}
+            />
+            <p className="text-navigation">Logros</p>
+          </div>
+        </NavLink>
+      </div>
     </div>
   );
 }
