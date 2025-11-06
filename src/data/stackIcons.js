@@ -27,6 +27,9 @@ import github from "@/assets/stack/github.webp";
 import git from "@/assets/stack/git.png";
 import pusher from "@/assets/stack/pusher.png";
 import sendgrid from "@/assets/stack/sendgrid.png";
+import mobiledesing from "@/assets/stack/mobiledesing.png";
+import responsive from "@/assets/stack/responsive.png";
+import vite from "@/assets/stack/vite.jpg";
 
 /**
  * Configuración centralizada de iconos del stack tecnológico
@@ -111,7 +114,7 @@ export const stackIcons = {
   },
   
   vite: {
-    src: "https://cdn-icons-png.flaticon.com/512/5968/5968672.png",
+    src: vite,
     alt: "Vite",
     title: "Vite",
     size: 48
@@ -184,6 +187,16 @@ export const stackIcons = {
   },
   
   // Otros
+
+
+  mobileDesign: {
+   src: mobiledesing,
+   alt: "Mobile Design",
+   title: "Mobile Design",
+   size: 48
+  },
+
+
   pusher: {
     src: pusher,
     alt: "Pusher",
@@ -197,7 +210,7 @@ export const stackIcons = {
     size: 48
   },
   responsive: {
-    src: "https://cdn-icons-png.flaticon.com/512/2920/2920277.png",
+    src: responsive,
     alt: "Responsive Design",
     title: "Responsive Design",
     size: 48
@@ -226,10 +239,7 @@ export const stackIcons = {
 
   
   // Texto adicional
-  mobileDesign: {
-    text: "Mobile Design",
-    size: 14
-  },
+
   flaskenv: {
     text: "Migrate, Alembic, CORS, JWT-Extended, Flasgger, Bcrypt, SocketIO",
     size: 14
