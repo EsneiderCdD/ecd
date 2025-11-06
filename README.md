@@ -45,6 +45,7 @@ Un portfolio personal moderno construido con React y Vite, que simula una experi
 ### Desarrollo
 - **ESLint** - Linting y calidad de código
 - **TypeScript Types** - Tipado estático para React
+ - **Sistema de Logros** - Context API + UI de notificaciones
 
 ## 📁 Estructura del Proyecto
 
@@ -62,9 +63,11 @@ src/
 │   ├── DraggableFolder/ # Carpetas arrastrables
 │   ├── DroppableCell/   # Celdas donde se pueden soltar carpetas
 │   ├── Folder/          # Componente base de carpeta
+│   ├── Achievements/    # Componentes de logros y notificaciones
 │   └── Projects/        # Componentes de proyectos
 ├── context/             # Contextos de React
 │   └── ThemeContext.jsx # Gestión del tema (light/dark)
+│   └── AchievementsContext.jsx # Gestión de logros y notificaciones
 ├── data/                # Datos estáticos
 │   ├── aboutData.js     # Información personal
 │   ├── projectsData.js  # Datos de proyectos
@@ -75,6 +78,7 @@ src/
 │   ├── DesktopFolder/   # Explorador de escritorio
 │   ├── Projects/        # Lista de proyectos
 │   └── ProjectDetail/   # Detalle de proyecto individual
+│   └── Achievements/    # Página de logros y notificaciones
 ├── routes/              # Configuración de rutas
 │   └── AppRouter.jsx    # Router principal
 ├── styles/              # Estilos globales
@@ -88,7 +92,7 @@ src/
 ## 🚀 Instalación y Uso
 
 ### Prerrequisitos
-- Node.js (versión 16 o superior)
+- Node.js (versión 18 o superior)
 - npm o yarn
 
 ### Instalación
@@ -150,6 +154,7 @@ El proyecto implementa un sistema completo de dark mode con:
 - **`/about`** - Portfolio detallado con información personal
 - **`/projects`** - Galería de proyectos
 - **`/projects/:projectId`** - Detalle individual de proyecto
+- **`/achievements`** - Sistema de logros y notificaciones
 
 ## 🔧 Configuración
 
@@ -158,6 +163,7 @@ El proyecto usa alias `@` para imports relativos:
 ```javascript
 import Component from '@/components/Component'
 ```
+Configurado en `vite.config.js` dentro de `resolve.alias`.
 
 ### Variables de Entorno
 Para EmailJS, crear archivo `.env`:
