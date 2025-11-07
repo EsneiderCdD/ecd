@@ -152,7 +152,9 @@ export const projectDetailFiles = {
             type: "Texto",
             date: "15/01/2025 ",
             size: "Actualizado",
-            description: "Desarrollé una carta digital dinámica con enfoque Mobile First para una marca local de almuerzos. El sistema permite navegar fácilmente entre los menús de cada día de la semana, destacando automáticamente el día actual. Además, facilita pedidos directos vía WhatsApp con mensajes autocompletados que incluyen datos del cliente y del pedido. La interfaz, ligera y funcional, incorpora animaciones suaves y rutas dinámicas optimizadas para dispositivos móviles. El contenido del menú se gestiona desde un archivo data.js, eliminando la necesidad de bases de datos o paneles administrativos, reduciendo costos y mejorando la autonomía del negocio.",
+            description: ["Desarrollé una carta digital dinámica con enfoque Mobile First para una marca local de almuerzos.",
+                "El sistema permite navegar fácilmente entre los menús de cada día de la semana, destacando automáticamente el día actual. Además, facilita pedidos directos vía WhatsApp con mensajes autocompletados que incluyen datos del cliente y del pedido. La interfaz, ligera y funcional, incorpora animaciones suaves y rutas dinámicas optimizadas para dispositivos móviles.",
+                "El contenido del menú se gestiona desde un archivo data.js, eliminando la necesidad de bases de datos o paneles administrativos, reduciendo costos y mejorando la autonomía del negocio."],
             previewUrl: null,
             downloadUrl: null,
             linkUrl: null,
@@ -270,7 +272,9 @@ export const projectDetailFiles = {
             type: "Texto",
             date: "15/02/2025 ",
             size: "Actualizado",
-            description: "El desarrollo de la landing page de Mister Soldo logró consolidar en un solo espacio la esencia visual y musical del artista, presentando su recorrido, sus lanzamientos y su identidad bajo una experiencia móvil fluida y directa. El proyecto no buscó reinventar su imagen, sino amplificarla desde la simplicidad técnica, aprovechando recursos ligeros y bien integrados. La combinación entre video, interacción y movimiento permitió transmitir la energía de su propuesta artística sin depender de estructuras complejas. En conjunto, la página cumple su propósito como una vitrina digital accesible, fiel a su estilo urbano y perfectamente alineada con su trayectoria y visión creativa.",
+            description: ["El desarrollo de la landing page de Mister Soldo logró consolidar en un solo espacio la esencia visual y musical del artista, presentando su recorrido, sus lanzamientos y su identidad bajo una experiencia móvil fluida y directa.",
+                "El proyecto no buscó reinventar su imagen, sino amplificarla desde la simplicidad técnica, aprovechando recursos ligeros y bien integrados. La combinación entre video, interacción y movimiento permitió transmitir la energía de su propuesta artística sin depender de estructuras complejas.",
+                "En conjunto, la página cumple su propósito como una vitrina digital accesible, fiel a su estilo urbano y perfectamente alineada con su trayectoria y visión creativa."],
             previewUrl: null,
             downloadUrl: null,
             linkUrl: null,
@@ -286,6 +290,18 @@ export const projectDetailFiles = {
             previewUrl: "https://cdn-icons-png.flaticon.com/512/337/337946.png",
             downloadUrl: "/pdf-mistersoldo.pdf",
             linkUrl: "https://drive.google.com/file/d/1wjytbB1STdumzX7tEbU-wLGOnMORURSR/view?usp=drive_link",
+        },
+
+        {
+            icon: "💻",
+            name: "Tecnologías Implementadas",
+            type: "Imagen y texto",
+            date: "25/02/2025 ",
+            size: "Actualizado",
+            description: generateStackHTML(['react', 'css', 'javascript', 'vite', 'mobileDesign']),
+            previewUrl: null,
+            downloadUrl: null,
+            linkUrl: null,
         },
         {
             icon: "📋",
@@ -343,18 +359,6 @@ export const projectDetailFiles = {
 
         },
 
-
-        {
-            icon: "🎥",
-            name: "Video",
-            type: "YouTube",
-            date: "25/02/2025 9:06 p.m.",
-            size: "Actualizado",
-            description: "Descubre la landing page en acción mediante un video de presentación en YouTube.",
-            previewUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-            downloadUrl: null,
-            linkUrl: "https://www.youtube.com/",
-        },
         {
             icon: "🐙",
             name: "Repositorio",
@@ -365,6 +369,17 @@ export const projectDetailFiles = {
             previewUrl: "https://img.icons8.com/ios-glyphs/512/github.png",
             downloadUrl: null,
             linkUrl: "https://github.com/EsneiderCdD/mistersoldo",
+        },
+        {
+            icon: "🎥",
+            name: "Video",
+            type: "YouTube",
+            date: "25/02/2025 9:06 p.m.",
+            size: "Actualizado",
+            description: "Descubre la landing page en acción mediante un video de presentación en YouTube.",
+            previewUrl: "https://www.youtube.com/watch?v=vR1ugXdPhRA",
+            downloadUrl: null,
+            linkUrl: "https://youtube.com/shorts/vR1ugXdPhRA?feature=share",
         },
 
 
