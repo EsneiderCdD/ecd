@@ -395,7 +395,9 @@ export const projectDetailFiles = {
             date: "01/03/2025",
             size: "Actualizado",
             description: [
-                "El proyecto Psicotranspersonal consistió en el desarrollo de un software front-end personalizado para una psicóloga independiente que buscaba autonomía digital y centralización de servicios. El proceso incluyó levantamiento de requerimientos, análisis comparativo y documentación funcional, lo que permitió definir una arquitectura informativa clara y escalable. Se implementó una interfaz modular con navegación dinámica, secciones autogestionables y compatibilidad total en dispositivos móviles. La integración de PayU como pasarela de pago redujo las comisiones externas del 10 % al 3.5 %, y la incorporación de Google Analytics aportó trazabilidad y medición de conversiones. El proyecto se desarrolló bajo principios de optimización de carga, accesibilidad y coherencia con la identidad profesional de la marca."
+                "El proyecto Psicotranspersonal consistió en el desarrollo de un software front-end personalizado para una psicóloga independiente que buscaba autonomía digital y centralización de servicios.",
+                "El proceso incluyó levantamiento de requerimientos, análisis comparativo y documentación funcional, lo que permitió definir una arquitectura informativa clara y escalable. Se implementó una interfaz modular con navegación dinámica, secciones autogestionables y compatibilidad total en dispositivos móviles.", 
+                "La integración de PayU como pasarela de pago redujo las comisiones externas del 10 % al 3.5 %, y la incorporación de Google Analytics aportó trazabilidad y medición de conversiones. El proyecto se desarrolló bajo principios de optimización de carga, accesibilidad y coherencia con la identidad profesional de la marca."
             ],
             previewUrl: null,
             downloadUrl: null,
@@ -523,7 +525,7 @@ export const projectDetailFiles = {
             type: "Imagen y texto",
             date: "01/04/2025",
             size: "Actualizado",
-            description: generateStackHTML(['react', 'vite', 'framer', 'swiper', 'javascript', 'css', 'google']),
+            description: generateStackHTML(['react', 'vite', 'framermotion', 'swiper', 'javascript', 'css', 'analytics', 'payu']),
             previewUrl: null,
             downloadUrl: null,
             linkUrl: null,
@@ -548,9 +550,9 @@ export const projectDetailFiles = {
             date: "01/06/2025",
             size: "Actualizado",
             description: "Recorre el proyecto con un video en YouTube.",
-            previewUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+            previewUrl: "https://www.youtube.com/watch?v=JhMosVbo7Dw",
             downloadUrl: null,
-            linkUrl: "https://www.youtube.com/",
+            linkUrl: "https://youtu.be/JhMosVbo7Dw",
         },
 
         {

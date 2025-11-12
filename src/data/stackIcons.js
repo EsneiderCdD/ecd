@@ -30,6 +30,8 @@ import sendgrid from "@/assets/stack/sendgrid.png";
 import mobiledesing from "@/assets/stack/mobiledesing.png";
 import responsive from "@/assets/stack/responsive.png";
 import vite from "@/assets/stack/vite.jpg";
+import framermotion from "@/assets/stack/framermotion.png"
+import swiperjs from "@/assets/stack/swiperjs.png"
 
 /**
  * Configuración centralizada de iconos del stack tecnológico
@@ -106,8 +108,8 @@ export const stackIcons = {
     size: 48
   },
   
-  framerMotion: {
-    src: "https://cdn-icons-png.flaticon.com/512/5968/5968350.png",
+  framermotion: {
+    src: framermotion,
     alt: "Framer Motion",
     title: "Framer Motion",
     size: 48
@@ -180,7 +182,7 @@ export const stackIcons = {
   },
   
   swiper: {
-    src: "https://cdn-icons-png.flaticon.com/512/5968/5968672.png",
+    src: swiperjs,
     alt: "Swiper.js",
     title: "Swiper.js",
     size: 48
@@ -224,14 +226,14 @@ export const stackIcons = {
   
   
   analytics: {
-    src: "https://cdn-icons-png.flaticon.com/512/2920/2920277.png",
+    src: googleanalytics,
     alt: "Google Analytics",
     title: "Google Analytics",
     size: 48
   },
   
-  payments: {
-    src: "https://cdn-icons-png.flaticon.com/512/2920/2920277.png",
+  payu: {
+    src: payu,
     alt: "Integración de Pagos",
     title: "Integración de Pagos",
     size: 48
