@@ -645,7 +645,7 @@ export const projectDetailFiles = {
             type: "Imagen y texto",
             date: "01/06/2025",
             size: "Actualizado",
-            description: generateStackHTML(['react', 'css', 'javascript', 'framer', 'vite']),
+            description: generateStackHTML(['react', 'css', 'javascript', 'framermotion', 'vite']),
             previewUrl: null,
             downloadUrl: null,
             linkUrl: null,
@@ -670,9 +670,9 @@ export const projectDetailFiles = {
             date: "01/06/2025",
             size: "Actualizado",
             description: "Recorre el proyecto con un video en YouTube.",
-            previewUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+            previewUrl: "https://www.youtube.com/watch?v=BprPVV6Pl8E",
             downloadUrl: null,
-            linkUrl: "https://www.youtube.com/",
+            linkUrl: "https://youtu.be/BprPVV6Pl8E",
         },
 
         {
