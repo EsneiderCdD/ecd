@@ -12,7 +12,9 @@ export function AchievementsProvider({ children }) {
         pdfsDownloaded: 0,
         collaborationInvites: 0,
         visitedProjects: [], // Para trackear proyectos únicos
-        visitedPdfs: [] // Para trackear fichas técnicas vistas (únicas)
+        visitedPdfs: [], // Para trackear fichas técnicas vistas (únicas)
+        visitedVideos: [], // Para trackear videos vistos (únicos)
+        videosWatched: 0
     });
 
     // Logros desbloqueados
@@ -103,6 +105,24 @@ export function AchievementsProvider({ children }) {
         });
     }, [checkAchievements, unlockedAchievements]);
 
+        // Registrar vista de video (contabiliza vistas únicas)
+        // videoId puede ser construido a partir del file.name o del previewUrl
+        const trackVideoView = useCallback((videoId) => {
+            if (!videoId) return;
+            setUserProgress(prev => {
+                if (prev.visitedVideos && prev.visitedVideos.includes(videoId)) return prev;
+
+                const newVisited = [...(prev.visitedVideos || []), videoId];
+                const newProgress = {
+                    ...prev,
+                    visitedVideos: newVisited,
+                    videosWatched: (prev.videosWatched || 0) + 1
+                };
+                checkAchievements(newProgress, unlockedAchievements);
+                return newProgress;
+            });
+        }, [checkAchievements, unlockedAchievements]);
+
     // Remover notificación de la cola
     const dismissNotification = useCallback((achievementId) => {
         setPendingNotifications(prev =>
@@ -116,6 +136,7 @@ export function AchievementsProvider({ children }) {
         pendingNotifications,
         trackProjectVisit,
         trackPdfDownload,
+            trackVideoView,
         trackCollaborationInvite,
         dismissNotification,
         achievementsConfig

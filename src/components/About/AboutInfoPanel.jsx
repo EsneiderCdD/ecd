@@ -20,10 +20,11 @@ const formatText = (text) => {
 };
 
 function AboutInfoPanel({ file }) {
-  const { trackPdfDownload } = useAchievements();
+  const { trackPdfDownload, trackVideoView } = useAchievements();
   const [width, setWidth] = useState(400);
   const [currentContributionIndex, setCurrentContributionIndex] = useState(0);
   const isResizing = useRef(false);
+  const [videoOverlayActive, setVideoOverlayActive] = useState(true);
 
   const handleMouseDown = () => {
     isResizing.current = true;
@@ -59,6 +60,11 @@ function AboutInfoPanel({ file }) {
     setCurrentContributionIndex(0);
   }, [file]);
 
+  // Reset overlay cuando cambia el archivo o la contribución
+  useEffect(() => {
+    setVideoOverlayActive(true);
+  }, [file, currentContributionIndex]);
+
   useEffect(() => {
     window.addEventListener("mousemove", handleMouseMove);
     window.addEventListener("mouseup", handleMouseUp);
@@ -90,6 +96,10 @@ function AboutInfoPanel({ file }) {
   // Determinar si mostrar navegación de contribuciones
   const showContributionNavigation = file.type === "Dinámico" && file.contributions && file.contributions.length > 1;
 
+  // Resolver previewUrl actual (contribución o file)
+  const resolvedPreviewUrl = currentContribution?.previewUrl || file.previewUrl || '';
+  const isVideoFile = typeof resolvedPreviewUrl === 'string' && (resolvedPreviewUrl.includes('youtube.com') || resolvedPreviewUrl.includes('youtu.be') || file.type === 'YouTube');
+
   const getYouTubeEmbedUrl = (url) => {
     try {
       if (url.includes("youtu.be")) {
@@ -116,15 +126,37 @@ function AboutInfoPanel({ file }) {
           {(() => {
             const previewUrl = currentContribution?.previewUrl || file.previewUrl;
             if (previewUrl.includes("youtube.com") || previewUrl.includes("youtu.be")) {
+              // Envolver el iframe en un contenedor relativo y colocar una
+              // capa clickable que captura el primer click para contabilizar la vista
               return (
-                <iframe
-                  className={styles.previewVideo}  // ← NUEVA CLASE
-                  src={getYouTubeEmbedUrl(previewUrl)}
-                  title={currentContribution?.name || file.name}
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                />
+                <div style={{ position: 'relative', width: '100%', height: '100%' }}>
+                  <iframe
+                    className={styles.previewVideo}
+                    src={getYouTubeEmbedUrl(previewUrl)}
+                    title={currentContribution?.name || file.name}
+                    frameBorder="0"
+                    style={{ width: '100%', height: '100%' }}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                  {videoOverlayActive && (
+                    <div
+                      onClick={() => {
+                        try {
+                          const videoId = `${file.name}||${previewUrl}`;
+                          trackVideoView(videoId);
+                        } catch (e) {}
+                        setVideoOverlayActive(false);
+                      }}
+                      style={{
+                        position: 'absolute',
+                        inset: 0,
+                        cursor: 'pointer',
+                        background: 'transparent'
+                      }}
+                    />
+                  )}
+                </div>
               );
             } else {
               return (
@@ -171,18 +203,33 @@ function AboutInfoPanel({ file }) {
       )}
 
       {/* Botones - mostrar solo si existen */}
-      {(file.linkUrl || file.links) && (
+      {(!isVideoFile && (file.linkUrl || file.links)) && (
         <div className={styles.buttons}>
           {/* Si hay múltiples links como array */}
           {file.links && Array.isArray(file.links) ? (
-            file.links.map((link, index) => (
-              <a key={index} href={link.url} target="_blank" rel="noopener noreferrer">
-                <button className={styles.winButton}>
-                  <ExternalLink size={16} style={{ marginRight: "6px" }} />
-                  {link.label || "Ver"}
-                </button>
-              </a>
-            ))
+            file.links.map((link, index) => {
+              // Saltar enlaces a YouTube si existieran aquí
+              if (typeof link.url === 'string' && (link.url.includes('youtube.com') || link.url.includes('youtu.be'))) return null;
+              return (
+                <a
+                  key={index}
+                  href={link.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => {
+                    if (file.type === 'PDF' || file.type === 'Word') {
+                      const fileId = `${file.name}||${file.date}||${index}`;
+                      try { trackPdfDownload(fileId); } catch (e) {}
+                    }
+                  }}
+                >
+                  <button className={styles.winButton}>
+                    <ExternalLink size={16} style={{ marginRight: "6px" }} />
+                    {link.label || "Ver"}
+                  </button>
+                </a>
+              );
+            })
           ) : (
             /* Link individual (compatibilidad con formato anterior) */
             file.linkUrl && (

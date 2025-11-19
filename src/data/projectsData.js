@@ -256,7 +256,7 @@ export const projectDetailFiles = {
             description: "Explora el proyecto a través de una presentación visual en YouTube.",
             previewUrl: "https://youtube.com/watch?v=qpW1ZaVSyI8",
             downloadUrl: null,
-            linkUrl: "https://youtube.com/shorts/qpW1ZaVSyI8",
+            linkUrl: null,
         },
 
     ],
@@ -377,7 +377,7 @@ export const projectDetailFiles = {
             description: "Descubre la landing page en acción mediante un video de presentación en YouTube.",
             previewUrl: "https://www.youtube.com/watch?v=vR1ugXdPhRA",
             downloadUrl: null,
-            linkUrl: "https://youtube.com/shorts/vR1ugXdPhRA?feature=share",
+            linkUrl: null,
         },
 
 
@@ -549,7 +549,7 @@ export const projectDetailFiles = {
             description: "Recorre el proyecto con un video en YouTube.",
             previewUrl: "https://www.youtube.com/watch?v=JhMosVbo7Dw",
             downloadUrl: null,
-            linkUrl: "https://youtu.be/JhMosVbo7Dw",
+            linkUrl: null,
         },
 
         {
@@ -668,7 +668,7 @@ export const projectDetailFiles = {
             description: "Recorre el proyecto con un video en YouTube.",
             previewUrl: "https://www.youtube.com/watch?v=BprPVV6Pl8E",
             downloadUrl: null,
-            linkUrl: "https://youtu.be/BprPVV6Pl8E",
+            linkUrl: null,
         },
 
         {
@@ -784,7 +784,7 @@ export const projectDetailFiles = {
             description: "Recorre el proyecto con un video en YouTube.",
             previewUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
             downloadUrl: null,
-            linkUrl: "https://www.youtube.com/",
+            linkUrl: null,
         },
         {
             icon: "🐙",

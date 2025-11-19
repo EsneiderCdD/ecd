@@ -74,6 +74,53 @@ export const achievementsConfig = {
     points: 100
   }
 
+  ,
+  // Logro por revisar 5 documentos técnicos
+  bibliotecario: {
+    id: 'bibliotecario',
+    title: 'Bibliotecario',
+    description: 'Revisaste 5 documentos técnicos',
+    icon: 'https://cdn-icons-png.flaticon.com/512/1087/1087815.png',
+    category: 'files',
+    condition: (state) => (state.pdfsDownloaded || 0) >= 5,
+    rarity: 'legendary',
+    points: 120
+  },
+
+  // Achievements por ver videos (YouTube) en proyectos
+  cineasta: {
+    id: 'cineasta',
+    title: 'Cineasta',
+    description: 'Viste tu primer video del portafolio',
+    icon: 'https://cdn-icons-png.flaticon.com/512/1384/1384060.png',
+    category: 'media',
+    condition: (state) => (state.videosWatched || 0) >= 1,
+    rarity: 'common',
+    points: 8
+  },
+
+  director: {
+    id: 'director',
+    title: 'Director',
+    description: 'Viste 3 videos del portafolio',
+    icon: 'https://cdn-icons-png.flaticon.com/512/3523/3523063.png',
+    category: 'media',
+    condition: (state) => (state.videosWatched || 0) >= 3,
+    rarity: 'rare',
+    points: 30
+  },
+
+  cineastaMaestro: {
+    id: 'cineastaMaestro',
+    title: 'Cineasta Maestro',
+    description: 'Viste 5 videos del portafolio',
+    icon: 'https://cdn-icons-png.flaticon.com/512/616/616408.png',
+    category: 'media',
+    condition: (state) => (state.videosWatched || 0) >= 5,
+    rarity: 'legendary',
+    points: 90
+  }
+
 };
 
 // Categorías de logros para organización futura
