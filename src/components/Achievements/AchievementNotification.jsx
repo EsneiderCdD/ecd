@@ -3,14 +3,19 @@ import { useEffect, useState } from 'react';
 import { Trophy } from 'lucide-react';
 import styles from './AchievementNotification.module.css';
 import { rarityColors } from '@/data/achievementsData';
+import { useAchievementSound } from '@/hooks/useAchievementSound';
 
 function AchievementNotification({ achievement, onDismiss, autoDismiss = true, className = '', style = {} }) {
   const [isVisible, setIsVisible] = useState(false);
   const [isLeaving, setIsLeaving] = useState(false);
+  const { playSound } = useAchievementSound();
 
   const rarityStyle = rarityColors[achievement.rarity] || rarityColors.common;
 
   useEffect(() => {
+    // Reproducir sonido cuando aparece la notificación
+    playSound();
+
     // Entrada animada
     setTimeout(() => setIsVisible(true), 100);
 
