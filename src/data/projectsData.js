@@ -168,7 +168,6 @@ export const projectDetailFiles = {
             size: "Actualizado",
             description: "Ficha técnica descargable en PDF.",
             previewUrl: "https://cdn-icons-png.flaticon.com/512/337/337946.png",
-            downloadUrl: "/pdf-martinaclandestina.pdf",
             linkUrl: "https://drive.google.com/file/d/1nYq8L8k3iRriFXGzonWUlCnG-Z-3WdFh/view?usp=drive_link",
         },
 
@@ -288,7 +287,6 @@ export const projectDetailFiles = {
             size: "Actualizado",
             description: "Ficha técnica descargable en formato PDF.",
             previewUrl: "https://cdn-icons-png.flaticon.com/512/337/337946.png",
-            downloadUrl: "/pdf-mistersoldo.pdf",
             linkUrl: "https://drive.google.com/file/d/1wjytbB1STdumzX7tEbU-wLGOnMORURSR/view?usp=drive_link",
         },
 
@@ -539,7 +537,6 @@ export const projectDetailFiles = {
             size: "Actualizado",
             description: "Ficha técnica descargable en Word.",
             previewUrl: "https://cdn-icons-png.flaticon.com/512/337/337946.png",
-            downloadUrl: "/pdf-psicotranspersonal.pdf",
             linkUrl: "https://drive.google.com/file/d/1WqjIka-NTDG8fblm5PMVDL7-oI3L4qte/view?usp=drive_link",
         },
 
@@ -659,7 +656,6 @@ export const projectDetailFiles = {
             size: "Actualizado",
             description: "Ficha técnica descargable en Word.",
             previewUrl: "https://cdn-icons-png.flaticon.com/512/337/337946.png",
-            downloadUrl: "/pdf-framermotion.pdf",
             linkUrl: "https://drive.google.com/file/d/1oD_JonGQMZBXROHCzDcQoupCwXoIPMae/view?usp=drive_link",
         },
 
@@ -776,7 +772,6 @@ export const projectDetailFiles = {
             size: "Actualizado",
             description: "Ficha técnica descargable en Word.",
             previewUrl: "https://cdn-icons-png.flaticon.com/512/337/337946.png",
-            downloadUrl: "/pdf-trainit.pdf",
             linkUrl: "https://drive.google.com/file/d/1Dk_TQTiWyCHIBgiaQuMFA5x1altQpCwq/view?usp=drive_link",
         },
 
@@ -914,7 +909,6 @@ export const projectDetailFiles = {
             size: "Actualizado",
             description: "Ficha técnica general del proyecto en formato Word, con especificaciones, contexto y estructura conceptual.",
             previewUrl: "https://cdn-icons-png.flaticon.com/512/337/337946.png",
-            downloadUrl: "/pdf-guau.pdf",
             linkUrl: "https://drive.google.com/file/d/1irWzIxWnIleUzoG-kna6fYNxj4xeIZRm/view?usp=drive_link",
         },
 
@@ -927,7 +921,6 @@ export const projectDetailFiles = {
             size: "Actualizado",
             description: "Instrumento técnico descargable en Word con los ítems y dimensiones de observación aplicados a la evaluación conductual de perros.",
             previewUrl: "https://cdn-icons-png.flaticon.com/512/337/337946.png",
-            downloadUrl: "/pdf-ioc.pdf",
             linkUrl: "https://drive.google.com/file/d/1SjIptkuFicurXkyi-Gd2TGAavWwOQeGe/view?usp=drive_link",
         },
 
@@ -939,7 +932,6 @@ export const projectDetailFiles = {
             size: "Actualizado",
             description: "Documento técnico con la estructura matemática del modelo de compatibilidad y su interpretación.",
             previewUrl: "https://cdn-icons-png.flaticon.com/512/337/337946.png",
-            downloadUrl: "/pdf-ac.pdf",
             linkUrl: "https://drive.google.com/file/d/10qjSpFW7ZPsG5o142omG3MbcDLsSmBqJ/view?usp=drive_link",
         },
 

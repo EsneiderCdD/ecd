@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import styles from "./About.module.css";
-import { Download, ExternalLink, ChevronLeft, ChevronRight } from "lucide-react";
+import { ExternalLink, ChevronLeft, ChevronRight } from "lucide-react";
 
 // Función para convertir texto con formato markdown a HTML
 const formatText = (text) => {
@@ -169,16 +169,8 @@ function AboutInfoPanel({ file }) {
       )}
 
       {/* Botones - mostrar solo si existen */}
-      {(file.downloadUrl || file.linkUrl || file.links) && (
+      {(file.linkUrl || file.links) && (
         <div className={styles.buttons}>
-          {file.downloadUrl && (
-            <a href={file.downloadUrl} download>
-              <button className={styles.winButton}>
-                <Download size={16} style={{ marginRight: "6px" }} />
-                Descargar
-              </button>
-            </a>
-          )}
           {/* Si hay múltiples links como array */}
           {file.links && Array.isArray(file.links) ? (
             file.links.map((link, index) => (
