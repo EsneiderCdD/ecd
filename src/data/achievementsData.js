@@ -13,7 +13,7 @@ export const achievementsConfig = {
     icon: 'https://cdn-icons-png.flaticon.com/512/3135/3135715.png',
     category: 'projects',
     condition: (state) => state.projectsOpened >= 1,
-    rarity: 'rare', // common, rare, epic, legendary
+    rarity: 'common',
     points: 10
   },
 
@@ -26,7 +26,7 @@ export const achievementsConfig = {
     icon: 'https://cdn-icons-png.flaticon.com/512/2919/2919600.png',
     category: 'projects',
     condition: (state) => state.projectsOpened >= 3,
-    rarity: 'epic',
+    rarity: 'rare',
     points: 25
   },
 
@@ -44,8 +44,8 @@ export const achievementsConfig = {
   reader: {
     id: 'reader',
     title: 'Lector',
-    description: 'Descargaste tu primer PDF',
-    icon: 'https://cdn-icons-png.flaticon.com/512/...',
+    description: 'Revisaste tu primer documento técnico',
+    icon: 'https://cdn-icons-png.flaticon.com/512/3143/3143615.png',
     category: 'files',
     condition: (state) => state.pdfsDownloaded >= 1,
     rarity: 'common',
@@ -70,7 +70,7 @@ export const achievementsConfig = {
     icon: 'https://cdn-icons-png.flaticon.com/512/...',
     category: 'interaction',
     condition: (state) => state.collaborationInvites >= 1,
-    rarity: 'epic',
+    rarity: 'rare',
     points: 100
   }
 
@@ -95,16 +95,11 @@ export const achievementCategories = {
 // Colores según rareza
 export const rarityColors = {
   common: {
-    border: '#95a5a6',
-    glow: 'rgba(149, 165, 166, 0.3)',
-    background: 'linear-gradient(135deg, #ecf0f1, #bdc3c7)'
-  },
-  rare: {
     border: '#3498db',
     glow: 'rgba(52, 152, 219, 0.4)',
     background: 'linear-gradient(135deg, #5dade2, #3498db)'
   },
-  epic: {
+  rare: {
     border: '#9b59b6',
     glow: 'rgba(155, 89, 182, 0.5)',
     background: 'linear-gradient(135deg, #bb8fce, #9b59b6)'
