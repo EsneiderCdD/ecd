@@ -4,7 +4,7 @@ import { Trophy } from 'lucide-react';
 import styles from './AchievementNotification.module.css';
 import { rarityColors } from '@/data/achievementsData';
 
-function AchievementNotification({ achievement, onDismiss }) {
+function AchievementNotification({ achievement, onDismiss, autoDismiss = true, className = '', style = {} }) {
   const [isVisible, setIsVisible] = useState(false);
   const [isLeaving, setIsLeaving] = useState(false);
 
@@ -14,38 +14,40 @@ function AchievementNotification({ achievement, onDismiss }) {
     // Entrada animada
     setTimeout(() => setIsVisible(true), 100);
 
-    // Auto-dismiss después de 5 segundos
-    const timer = setTimeout(() => {
-      handleDismiss();
-    }, 5000);
-
-    return () => clearTimeout(timer);
-  }, []);
+    if (autoDismiss) {
+      // Auto-dismiss después de 5 segundos
+      const timer = setTimeout(() => {
+        handleDismiss();
+      }, 5000);
+      return () => clearTimeout(timer);
+    }
+  }, [autoDismiss]);
 
   const handleDismiss = () => {
     setIsLeaving(true);
     setTimeout(() => {
-      onDismiss(achievement.id);
+      if (onDismiss) onDismiss(achievement.id);
     }, 400);
   };
 
   return (
-    <div 
-      className={`${styles.notification} ${isVisible ? styles.visible : ''} ${isLeaving ? styles.leaving : ''}`}
+    <div
+      className={`${styles.notification} ${isVisible ? styles.visible : ''} ${isLeaving ? styles.leaving : ''} ${className}`}
       onClick={handleDismiss}
       style={{
         borderColor: rarityStyle.border,
-        boxShadow: `0 4px 20px ${rarityStyle.glow}`
+        boxShadow: `0 4px 20px ${rarityStyle.glow}`,
+        ...style
       }}
     >
       <div className={styles.content}>
         <div className={styles.iconContainer}>
-          <Trophy 
+          <Trophy
             className={styles.trophyIcon}
             style={{ color: rarityStyle.border }}
           />
         </div>
-        
+
         <div className={styles.textContent}>
           <div className={styles.header}>
             <span className={styles.badge}>¡Logro Desbloqueado!</span>
@@ -55,12 +57,12 @@ function AchievementNotification({ achievement, onDismiss }) {
           <div className={styles.points}>+{achievement.points} puntos</div>
         </div>
 
-        <div 
+        <div
           className={styles.achievementImage}
           style={{ background: rarityStyle.background }}
         >
-          <img 
-            src={achievement.icon} 
+          <img
+            src={achievement.icon}
             alt={achievement.title}
             className={styles.icon}
           />

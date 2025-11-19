@@ -111,6 +111,23 @@ function AboutSidebar() {
             <p className="text-navigation">Logros</p>
           </div>
         </NavLink>
+
+        <NavLink
+          to="/notifications"
+          className={({ isActive }) =>
+            isActive ? `${styles.link} ${styles.active}` : styles.link
+          }
+        >
+          <div className={styles.iconsidebarContainer}>
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/1827/1827349.png"
+              alt="Notificaciones"
+              title="Notificaciones"
+              className={styles.iconsidebar}
+            />
+            <p className="text-navigation">Notificaciones</p>
+          </div>
+        </NavLink>
       </div>
     </div>
   );
