@@ -6,11 +6,13 @@ const AchievementsContext = createContext();
 
 export function AchievementsProvider({ children }) {
     // Estado inicial SIN localStorage (temporal, no persistente)
+    // Añadimos visitedPdfs para contabilizar vistas únicas de fichas técnicas
     const [userProgress, setUserProgress] = useState({
         projectsOpened: 0,
         pdfsDownloaded: 0,
         collaborationInvites: 0,
-        visitedProjects: [] // Para trackear proyectos únicos
+        visitedProjects: [], // Para trackear proyectos únicos
+        visitedPdfs: [] // Para trackear fichas técnicas vistas (únicas)
     });
 
     // Logros desbloqueados
@@ -70,12 +72,19 @@ export function AchievementsProvider({ children }) {
         });
     }, [checkAchievements, unlockedAchievements]);
 
-    // Registrar descarga de PDF
-    const trackPdfDownload = useCallback(() => {
+    // Registrar "ver" de una ficha técnica (contabiliza vistas únicas)
+    // fileId debe ser un identificador único para la ficha (ej: `${file.name}|${file.date}`)
+    const trackPdfDownload = useCallback((fileId) => {
+        if (!fileId) return;
         setUserProgress(prev => {
+            // Si ya fue contabilizado, no hacer nada
+            if (prev.visitedPdfs && prev.visitedPdfs.includes(fileId)) return prev;
+
+            const newVisited = [...(prev.visitedPdfs || []), fileId];
             const newProgress = {
                 ...prev,
-                pdfsDownloaded: prev.pdfsDownloaded + 1
+                visitedPdfs: newVisited,
+                pdfsDownloaded: (prev.pdfsDownloaded || 0) + 1
             };
             checkAchievements(newProgress, unlockedAchievements);
             return newProgress;

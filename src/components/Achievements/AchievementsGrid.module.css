@@ -121,20 +121,16 @@
 }
 
 .rarityComun {
-  background: rgba(156, 163, 175, 0.1);
-  color: #9ca3af;
+  /* Azul - nivel básico */
+  background: rgba(52, 152, 219, 0.08);
+  color: #3498db;
 }
 
 .rarityRaro {
-  background: rgba(59, 130, 246, 0.1);
-  color: #3b82f6;
+  /* Violeta - nivel medio */
+  background: rgba(168, 85, 247, 0.08);
+  color: #9b59b6;
 }
-
-.rarityEpico {
-  background: rgba(168, 85, 247, 0.1);
-  color: #a855f7;
-}
-
 .rarityLegendario {
   background: rgba(245, 158, 11, 0.1);
   color: #f59e0b;

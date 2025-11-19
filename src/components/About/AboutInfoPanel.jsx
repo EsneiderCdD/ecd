@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import styles from "./About.module.css";
 import { ExternalLink, ChevronLeft, ChevronRight } from "lucide-react";
+import { useAchievements } from "@/context/AchievementsContext";
 
 // Función para convertir texto con formato markdown a HTML
 const formatText = (text) => {
@@ -19,6 +20,7 @@ const formatText = (text) => {
 };
 
 function AboutInfoPanel({ file }) {
+  const { trackPdfDownload } = useAchievements();
   const [width, setWidth] = useState(400);
   const [currentContributionIndex, setCurrentContributionIndex] = useState(0);
   const isResizing = useRef(false);
@@ -184,7 +186,18 @@ function AboutInfoPanel({ file }) {
           ) : (
             /* Link individual (compatibilidad con formato anterior) */
             file.linkUrl && (
-              <a href={file.linkUrl} target="_blank" rel="noopener noreferrer">
+              <a
+                href={file.linkUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => {
+                  // Si es una ficha técnica (PDF o Word), contar vista única
+                  if (file.type === 'PDF' || file.type === 'Word') {
+                    const fileId = `${file.name}||${file.date}`;
+                    try { trackPdfDownload(fileId); } catch (e) { /* silent */ }
+                  }
+                }}
+              >
                 <button className={styles.winButton}>
                   <ExternalLink size={16} style={{ marginRight: "6px" }} />
                   Ver
