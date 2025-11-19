@@ -13,12 +13,12 @@ export const achievementsConfig = {
     icon: 'https://cdn-icons-png.flaticon.com/512/3135/3135715.png',
     category: 'projects',
     condition: (state) => state.projectsOpened >= 1,
-    rarity: 'common', // common, rare, epic, legendary
+    rarity: 'rare', // common, rare, epic, legendary
     points: 10
   },
-  
+
   // Ejemplos de logros futuros (comentados para no implementar aún)
-  
+
   snooper: {
     id: 'snooper',
     title: 'Husmeador',
@@ -26,10 +26,10 @@ export const achievementsConfig = {
     icon: 'https://cdn-icons-png.flaticon.com/512/2919/2919600.png',
     category: 'projects',
     condition: (state) => state.projectsOpened >= 3,
-    rarity: 'common',
+    rarity: 'epic',
     points: 25
   },
-  
+
   interested: {
     id: 'interested',
     title: 'Interesado',
@@ -37,10 +37,10 @@ export const achievementsConfig = {
     icon: 'https://cdn-icons-png.flaticon.com/512/2919/2919622.png',
     category: 'projects',
     condition: (state) => state.projectsOpened >= 5,
-    rarity: 'rare',
+    rarity: 'legendary',
     points: 50
   },
-  
+
   reader: {
     id: 'reader',
     title: 'Lector',
@@ -51,7 +51,7 @@ export const achievementsConfig = {
     rarity: 'common',
     points: 15
   },
-  
+
   scientist: {
     id: 'scientist',
     title: 'Científico',
@@ -62,7 +62,7 @@ export const achievementsConfig = {
     rarity: 'rare',
     points: 40
   },
-  
+
   collaborator: {
     id: 'collaborator',
     title: 'Colaborador',
@@ -73,7 +73,7 @@ export const achievementsConfig = {
     rarity: 'epic',
     points: 100
   }
-  
+
 };
 
 // Categorías de logros para organización futura
