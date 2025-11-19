@@ -900,7 +900,7 @@ export const projectDetailFiles = {
             type: "Texto e imagen",
             date: "01/04/2025",
             size: "Actualizado",
-            description: generateStackHTML(['react', 'css', 'javascript', 'framer', 'vite']),
+            description: generateStackHTML(['react', 'css', 'javascript', 'framer', 'vite','python','flask','postgresql']),
             previewUrl: null,
             downloadUrl: null,
             linkUrl: null,
