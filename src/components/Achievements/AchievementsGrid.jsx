@@ -28,11 +28,11 @@ function AchievementsGrid({ onAchievementSelect, selectedAchievement }) {
               } ${isSelected ? styles.selected : ''}`}
               onClick={() => handleClick(achievement)}
             >
-              {/* Contenedor del icono con fondo blanco */}
+              {/* Contenedor del icono con fondo tonalizado según rareza */}
               <div 
                 className={styles.cardImage}
                 style={{
-                  background: isUnlocked ? '#ffffff' : 'var(--bg-secondary)'
+                  background: isUnlocked ? `${rarityStyle.background}` : 'var(--bg-secondary)'
                 }}
               >
                 {isUnlocked ? (
