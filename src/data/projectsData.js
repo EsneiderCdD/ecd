@@ -1,4 +1,5 @@
 import martina1 from "@/assets/images/martina1.webp";
+import menunav from "@/assets/images/menunav.png";
 import mt1 from "@/assets/images/mt1.png";
 import mt2 from "@/assets/images/mt2.png";
 import mt3 from "@/assets/images/mt3.png";
@@ -148,13 +149,13 @@ export const projectDetailFiles = {
     martinaclandestina: [
         {
             icon: "📄",
-            name: "Descripción del Proyecto",
+            name: "Descripción",
             type: "Texto",
             date: "15/01/2025 ",
             size: "Actualizado",
             description: ["Desarrollé una carta digital dinámica con enfoque Mobile First para una marca local de almuerzos.",
                 "El sistema permite navegar fácilmente entre los menús de cada día de la semana, destacando automáticamente el día actual. Además, facilita pedidos directos vía WhatsApp con mensajes autocompletados que incluyen datos del cliente y del pedido. La interfaz, ligera y funcional, incorpora animaciones suaves y rutas dinámicas optimizadas para dispositivos móviles.",
-                "El contenido del menú se gestiona desde un archivo data.js, eliminando la necesidad de bases de datos o paneles administrativos, reduciendo costos y mejorando la autonomía del negocio."],
+            ],
             previewUrl: null,
             downloadUrl: null,
             linkUrl: null,
@@ -166,22 +167,11 @@ export const projectDetailFiles = {
             type: "PDF",
             date: "11/09/2025",
             size: "Actualizado",
-            description: "Ficha técnica descargable en PDF.",
+            description: "Ficha técnica en PDF.",
             previewUrl: "https://cdn-icons-png.flaticon.com/512/337/337946.png",
-            linkUrl: "https://drive.google.com/file/d/1nYq8L8k3iRriFXGzonWUlCnG-Z-3WdFh/view?usp=drive_link",
+            linkUrl: "https://drive.google.com/file/d/1_nlNyZxcjeX07M7wO4XdmQvDOzDw7bAk/view?usp=drive_link",
         },
 
-        {
-            icon: "💻",
-            name: "Tecnologías Implementadas",
-            type: "Imagen y texto",
-            date: "25/02/2025 ",
-            size: "Actualizado",
-            description: generateStackHTML(['react', 'css', 'javascript', 'vite', 'mobileDesign']),
-            previewUrl: null,
-            downloadUrl: null,
-            linkUrl: null,
-        },
         {
             icon: "📋",
             name: "Contribuciones",
@@ -197,17 +187,15 @@ export const projectDetailFiles = {
                     icon: "🖼️",
                     name: "Navegación Dinámica por Días",
                     description: [
-                        "⦿ Implementé un sistema de navegación semanal con detección automática del día actual, aplicando resaltado visual dinámico según la jornada.",
-                        "⦿ Optimicé la usabilidad al permitir al usuario identificar rápidamente el menú disponible por fecha y horario."
+                        "⦿ Implementé un sistema de navegación semanal con detección automática del día actual, aplicando resaltado visual dinámico según la jornada ayudando a los usuarios a identificar rápidamente el menú disponible por fecha y horario.",
                     ],
-                    previewUrl: mt1,
+                    previewUrl: menunav,
                 },
                 {
                     icon: "🖼️",
                     name: "Desarrollo de la Carta Digital",
                     description: [
                         "⦿ Construí una **carta digital dinámica** con *React.js*, *Vite* y *React Router*, estructurando rutas y componentes reutilizables.",
-                        "⦿ Enfoqué el desarrollo en la **fluidez de carga**, la **adaptabilidad visual** y la **escalabilidad del contenido**, permitiendo actualizaciones rápidas sin comprometer el rendimiento."
                     ],
                     previewUrl: mt2,
                 },
@@ -216,7 +204,7 @@ export const projectDetailFiles = {
                     name: "Diseño Visual e Identidad de Marca",
                     description: [
                         "⦿ Diseñé una interfaz con **animaciones sutiles** y **transiciones fluidas**, reforzando la narrativa gastronómica local.",
-                        "⦿ Apliqué una paleta cromática coherente con la marca y cuidé la jerarquía visual para mejorar la experiencia del usuario."
+                        "⦿ Apliqué una paleta cromática coherente con la marca y cuidé la jerarquía visual."
                     ],
                     previewUrl: mt3,
                 },
@@ -232,6 +220,21 @@ export const projectDetailFiles = {
             ]
 
         },
+        {
+            icon: "💻",
+            name: "Tecnologías Implementadas",
+            type: "Iconos",
+            date: "25/02/2025 ",
+            size: "Actualizado",
+            description: generateStackHTML(['react', 'vite', 'javascript', 'css', 'mobileDesign']),
+            previewUrl: null,
+            downloadUrl: null,
+            linkUrl: null,
+        },
+
+
+
+
 
 
 
@@ -253,8 +256,8 @@ export const projectDetailFiles = {
             type: "YouTube",
             date: "25/02/2025 ",
             size: "Actualizado",
-            description: "Explora el proyecto a través de una presentación visual en YouTube.",
-            previewUrl: "https://youtube.com/watch?v=qpW1ZaVSyI8",
+            description: "Explora el proyecto con un video corto en YouTube.",
+            previewUrl: "https://youtube.com/watch?v=RT-zmBqt-qQ",
             downloadUrl: null,
             linkUrl: null,
         },
@@ -394,7 +397,7 @@ export const projectDetailFiles = {
             size: "Actualizado",
             description: [
                 "El proyecto Psicotranspersonal consistió en el desarrollo de un software front-end personalizado para una psicóloga independiente que buscaba autonomía digital y centralización de servicios.",
-                "El proceso incluyó levantamiento de requerimientos, análisis comparativo y documentación funcional, lo que permitió definir una arquitectura informativa clara y escalable. Se implementó una interfaz modular con navegación dinámica, secciones autogestionables y compatibilidad total en dispositivos móviles.", 
+                "El proceso incluyó levantamiento de requerimientos, análisis comparativo y documentación funcional, lo que permitió definir una arquitectura informativa clara y escalable. Se implementó una interfaz modular con navegación dinámica, secciones autogestionables y compatibilidad total en dispositivos móviles.",
                 "La integración de PayU como pasarela de pago redujo las comisiones externas del 10 % al 3.5 %, y la incorporación de Google Analytics aportó trazabilidad y medición de conversiones. El proyecto se desarrolló bajo principios de optimización de carga, accesibilidad y coherencia con la identidad profesional de la marca."
             ],
             previewUrl: null,
@@ -895,7 +898,7 @@ export const projectDetailFiles = {
             type: "Texto e imagen",
             date: "01/04/2025",
             size: "Actualizado",
-            description: generateStackHTML(['react', 'css', 'javascript', 'framer', 'vite','python','flask','postgresql']),
+            description: generateStackHTML(['react', 'css', 'javascript', 'framer', 'vite', 'python', 'flask', 'postgresql']),
             previewUrl: null,
             downloadUrl: null,
             linkUrl: null,

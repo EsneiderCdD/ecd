@@ -4,14 +4,14 @@
 
 import boostrap from "@/assets/stack/boostrap.png";
 import tailwild from "@/assets/stack/tailwild.png";
-import css from "@/assets/stack/css.png"
+import css from "@/assets/stack/css.webp"
 import flask from "@/assets/stack/flask.png";
-import googleanalytics from "@/assets/stack/googleanalytics.png";
-import js from "@/assets/stack/js.png";
+import googleanalytics from "@/assets/stack/googleanalytics.webp";
+import js from "@/assets/stack/js.webp";
 import openAI from "@/assets/stack/openAI.png";
 import postgresql from "@/assets/stack/postgresql.png";
 import python from "@/assets/stack/python.png";
-import payu from "@/assets/stack/payu.png";
+import payu from "@/assets/stack/payu.webp";
 import ps from "@/assets/stack/ps.png";
 import react from "@/assets/stack/react.png";
 import swiper from "@/assets/stack/swiper.png";
@@ -27,11 +27,11 @@ import github from "@/assets/stack/github.webp";
 import git from "@/assets/stack/git.png";
 import pusher from "@/assets/stack/pusher.png";
 import sendgrid from "@/assets/stack/sendgrid.png";
-import mobiledesing from "@/assets/stack/mobiledesing.png";
+import mobiledesing from "@/assets/stack/mobiledesing.webp";
 import responsive from "@/assets/stack/responsive.png";
-import vite from "@/assets/stack/vite.jpg";
+import vite from "@/assets/stack/vite.webp";
 import framermotion from "@/assets/stack/framermotion.png"
-import swiperjs from "@/assets/stack/swiperjs.png"
+import swiperjs from "@/assets/stack/swiper.webp"
 
 /**
  * Configuración centralizada de iconos del stack tecnológico
