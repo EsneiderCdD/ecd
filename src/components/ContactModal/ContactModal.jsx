@@ -14,6 +14,7 @@ function ContactModal({ isOpen, onClose, subject }) {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState(null);
+  const [contactError, setContactError] = useState(false);
 
   const handleChange = (e) => {
     setFormData({
@@ -26,8 +27,21 @@ function ContactModal({ isOpen, onClose, subject }) {
     e.preventDefault();
     setIsSubmitting(true);
     setSubmitStatus(null);
+    setContactError(false);
 
     try {
+      // Validación adicional (no solo HTML): nombre, mensaje y al menos un contacto
+      const nameValid = formData.name.trim().length > 0;
+      const messageValid = formData.message.trim().length > 0;
+      const contactValid = Boolean(formData.email || formData.phone || formData.website);
+
+      if (!nameValid || !messageValid || !contactValid) {
+        setContactError(!contactValid);
+        setSubmitStatus("error");
+        setIsSubmitting(false);
+        return;
+      }
+
       // Configuración de EmailJS
       const templateParams = {
         from_name: formData.name,
@@ -84,7 +98,8 @@ function ContactModal({ isOpen, onClose, subject }) {
         {/* Body del modal */}
         <form className={styles.body} onSubmit={handleSubmit}>
           <div className={styles.formGroup}>
-            <label htmlFor="name">Nombre *</label>
+            <h4>¿Como te llamas? *</h4>
+            <label htmlFor="name"></label>
             <input
               type="text"
               id="name"
@@ -92,20 +107,24 @@ function ContactModal({ isOpen, onClose, subject }) {
               value={formData.name}
               onChange={handleChange}
               required
-              placeholder="Tu nombre completo"
+              placeholder="Tu nombre"
             />
           </div>
 
           <div className={styles.formGroup}>
-            <label htmlFor="email">Correo Electrónico *</label>
+            <h4>¿Donde te puedo responder? minimo una opcion.</h4>
+            <p style={{ fontSize: "12px", color: "var(--text-muted)", margin: "6px 0 10px" }}>
+              Puedes dejar tu correo, teléfono o una red social. Con una opción es suficiente.
+            </p>
+        
+            <label htmlFor="email">Correo Electrónico</label>
             <input
               type="email"
               id="email"
               name="email"
               value={formData.email}
               onChange={handleChange}
-              required
-              placeholder="tu@email.com"
+              placeholder="tu@email.com (opcional)"
             />
           </div>
 
@@ -129,14 +148,21 @@ function ContactModal({ isOpen, onClose, subject }) {
                 id="website"
                 name="website"
                 value={formData.website}
-                onChange={handleChange}
-                placeholder="linkedin.com/in/tuperfil"
-              />
-            </div>
+              onChange={handleChange}
+              placeholder="linkedin.com/in/tuperfil"
+            />
+          </div>
           </div>
 
+          {contactError && (
+            <div className={styles.errorMessage} style={{ marginTop: 6 }}>
+              ✗ Por favor, indica al menos un método de contacto (email, teléfono o red social).
+            </div>
+          )}
+
           <div className={styles.formGroup}>
-            <label htmlFor="message">Mensaje *</label>
+            <h4>Mensaje *</h4>
+            <label htmlFor="message"></label>
             <textarea
               id="message"
               name="message"
