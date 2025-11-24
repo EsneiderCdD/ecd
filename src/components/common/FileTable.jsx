@@ -6,6 +6,15 @@ import { getStatusTagConfig, tagVariants } from "../../data/statusTags";
 function FileTable({ files, selectedFile, setSelectedFile }) {
   const navigate = useNavigate();
 
+  const isIconUrl = (url) => {
+    if (!url || typeof url !== "string") return false;
+    const u = url.toLowerCase();
+    return (
+      (u.includes("flaticon.com") || u.includes("icons8.com")) &&
+      (u.endsWith(".png") || u.endsWith(".svg") || u.includes("/png") || u.includes("/svg"))
+    );
+  };
+
   const handleClick = (file) => {
     if (setSelectedFile) setSelectedFile(file);
   };
@@ -77,7 +86,15 @@ function FileTable({ files, selectedFile, setSelectedFile }) {
           onDoubleClick={() => handleDoubleClick(file)}
         >
           <span className={styles.name}>
-            <span className={styles.icon}>{file.icon}</span>
+            <span className={styles.rowIcon}>
+              {file.iconUrl ? (
+                <img src={file.iconUrl} alt="" />
+              ) : isIconUrl(file.previewUrl) ? (
+                <img src={file.previewUrl} alt="" />
+              ) : (
+                <span>{file.icon}</span>
+              )}
+            </span>
             {file.name}
           </span>
           <span className={styles.date}>{file.date}</span>

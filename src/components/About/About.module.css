@@ -114,6 +114,13 @@
   text-align: center;
 }
 
+.resultIconImg {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  display: inline-block;
+}
+
 .resultInfo {
   flex: 1;
   min-width: 0;
@@ -271,6 +278,27 @@
 
 .name {
   min-width: 150px;
+}
+
+.rowIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+.rowIcon img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+
+.rowIcon span {
+  font-size: 16px;
+  line-height: 1;
 }
 
 .date {

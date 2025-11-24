@@ -222,7 +222,7 @@ export const projectDetailFiles = {
         },
         {
             icon: "💻",
-            name: "Tecnologías Implementadas",
+            name: "Tecnologías",
             type: "Iconos",
             date: "25/02/2025 ",
             size: "Actualizado",
@@ -245,7 +245,8 @@ export const projectDetailFiles = {
             date: "25/02/2025",
             size: "Actualizado",
             description: null,
-            previewUrl: "https://img.icons8.com/ios-glyphs/512/github.png",
+            previewUrl: "https://cdn-icons-png.flaticon.com/512/733/733553.png",
+            iconUrl: "https://cdn-icons-png.flaticon.com/512/733/733553.png",
             downloadUrl: null,
             linkUrl: "https://github.com/EsneiderCdD/MartinaClandestina",
         },
@@ -258,6 +259,7 @@ export const projectDetailFiles = {
             size: "Actualizado",
             description: "Explora el proyecto con un video corto en YouTube.",
             previewUrl: "https://youtube.com/watch?v=RT-zmBqt-qQ",
+            iconUrl: "https://cdn-icons-png.flaticon.com/512/1384/1384060.png",
             downloadUrl: null,
             linkUrl: null,
         },
@@ -270,13 +272,11 @@ export const projectDetailFiles = {
     mistersoldo: [
         {
             icon: "📄",
-            name: "Descripción del Proyecto",
+            name: "Descripción",
             type: "Texto",
             date: "15/02/2025 ",
             size: "Actualizado",
-            description: ["El desarrollo de la landing page de Mister Soldo logró consolidar en un solo espacio la esencia visual y musical del artista, presentando su recorrido, sus lanzamientos y su identidad bajo una experiencia móvil fluida y directa.",
-                "El proyecto no buscó reinventar su imagen, sino amplificarla desde la simplicidad técnica, aprovechando recursos ligeros y bien integrados. La combinación entre video, interacción y movimiento permitió transmitir la energía de su propuesta artística sin depender de estructuras complejas.",
-                "En conjunto, la página cumple su propósito como una vitrina digital accesible, fiel a su estilo urbano y perfectamente alineada con su trayectoria y visión creativa."],
+            description: ["El desarrollo de la landing page de Mister Soldo logra consolidar en un solo espacio la esencia visual y musical del artista, presentando su recorrido, sus lanzamientos y su identidad bajo una experiencia móvil."],
             previewUrl: null,
             downloadUrl: null,
             linkUrl: null,
@@ -288,21 +288,9 @@ export const projectDetailFiles = {
             type: "Word",
             date: "25/03/2025 ",
             size: "Actualizado",
-            description: "Ficha técnica descargable en formato PDF.",
+            description: "Ficha técnica en PDF.",
             previewUrl: "https://cdn-icons-png.flaticon.com/512/337/337946.png",
-            linkUrl: "https://drive.google.com/file/d/1wjytbB1STdumzX7tEbU-wLGOnMORURSR/view?usp=drive_link",
-        },
-
-        {
-            icon: "💻",
-            name: "Tecnologías Implementadas",
-            type: "Imagen y texto",
-            date: "25/02/2025 ",
-            size: "Actualizado",
-            description: generateStackHTML(['react', 'css', 'javascript', 'vite', 'mobileDesign']),
-            previewUrl: null,
-            downloadUrl: null,
-            linkUrl: null,
+            linkUrl: "https://drive.google.com/file/d/16Ky9jV9CPXR_i1JMdbEQuzLM1N8cZU2y/view?usp=drive_link",
         },
         {
             icon: "📋",
@@ -319,7 +307,7 @@ export const projectDetailFiles = {
                     icon: "🖼️",
                     name: "Landing Page Mobile First",
                     description: [
-                        "⦿ Diseñé e implementé una *landing page* bajo el enfoque **mobile first**, priorizando la navegación móvil y optimizando la jerarquía visual para un acceso rápido al contenido multimedia."
+                        "⦿ Diseñé e implementé una *landing page* bajo el enfoque **mobile first**, priorizando la navegación móvil y optimizando la jerarquía visual."
                     ],
                     previewUrl: mrs,
                 },
@@ -327,7 +315,7 @@ export const projectDetailFiles = {
                     icon: "🖼️",
                     name: "Carruseles Dinámicos y Animaciones",
                     description: [
-                        "⦿ Integré **Swiper.js** para la creación de carruseles dinámicos que muestran clips, fotografías y videos del artista, complementados con **animaciones sutiles mediante Framer Motion** para suavizar transiciones y entradas de texto.",
+                        "⦿ Integré **Swiper.js** para la creación de carruseles dinámicos que muestran clips, fotografías y videos del artista.",
 
                     ],
                     previewUrl: mrs2,
@@ -336,7 +324,7 @@ export const projectDetailFiles = {
                     icon: "🖼️",
                     name: "Interactividad Avanzada Drag & Drop",
                     description: [
-                        "⦿ Implementé un módulo interactivo con **Framer Motion** que permite explorar la discografía mediante gestos *drag & drop*, actualizando dinámicamente el estado de álbumes y canciones.",
+                        "⦿ Implementé un módulo interactivo *drag & drop* que permite explorar actualizando dinámicamente el estado de álbumes y canciones. ",
 
                     ],
                     previewUrl: mrs6,
@@ -345,13 +333,13 @@ export const projectDetailFiles = {
                     icon: "🖼️",
                     name: "Secciones Complementarias",
                     description: [
-                        "⦿ Construí secciones adicionales como **Momentos Destacados**, **Últimos Lanzamientos**, **Sobre el Artista** y un **footer con enlaces de contacto y redes**, consolidando una estructura coherente y completa que refuerza la navegación general."
+                        "⦿ Construí secciones adicionales como **Momentos Destacados**, **Últimos Lanzamientos**, **Sobre el Artista** y un **footer con enlaces de contacto y redes**."
                     ],
                     previewUrl: mrs4,
                 },
                 {
                     icon: "🖼️",
-                    name: "Secciones Complementarias",
+                    name: null,
                     description: null,
                     previewUrl: mr7,
                 }
@@ -361,13 +349,27 @@ export const projectDetailFiles = {
         },
 
         {
+            icon: "💻",
+            name: "Tecnologías",
+            type: "Imagen y texto",
+            date: "25/02/2025 ",
+            size: "Actualizado",
+            description: generateStackHTML(['react', 'vite', 'javascript', 'css', 'framermotion', 'mobileDesign']),
+            previewUrl: null,
+            downloadUrl: null,
+            linkUrl: null,
+        },
+
+
+        {
             icon: "🐙",
             name: "Repositorio",
             type: "GitHub",
             date: "25/02/2025 ",
             size: "Actualizado",
             description: null,
-            previewUrl: "https://img.icons8.com/ios-glyphs/512/github.png",
+            previewUrl: "https://cdn-icons-png.flaticon.com/512/733/733553.png",
+            iconUrl: "https://cdn-icons-png.flaticon.com/512/733/733553.png",
             downloadUrl: null,
             linkUrl: "https://github.com/EsneiderCdD/mistersoldo",
         },
@@ -377,8 +379,9 @@ export const projectDetailFiles = {
             type: "YouTube",
             date: "25/02/2025 9:06 p.m.",
             size: "Actualizado",
-            description: "Descubre la landing page en acción mediante un video de presentación en YouTube.",
+            description: "Explora el proyecto con un video corto en YouTube.",
             previewUrl: "https://www.youtube.com/watch?v=vR1ugXdPhRA",
+            iconUrl: "https://cdn-icons-png.flaticon.com/512/1384/1384060.png",
             downloadUrl: null,
             linkUrl: null,
         },
@@ -551,6 +554,7 @@ export const projectDetailFiles = {
             size: "Actualizado",
             description: "Recorre el proyecto con un video en YouTube.",
             previewUrl: "https://www.youtube.com/watch?v=JhMosVbo7Dw",
+            iconUrl: "https://cdn-icons-png.flaticon.com/512/1384/1384060.png",
             downloadUrl: null,
             linkUrl: null,
         },
@@ -562,7 +566,8 @@ export const projectDetailFiles = {
             date: "01/06/2025",
             size: "Actualizado",
             description: null,
-            previewUrl: "https://img.icons8.com/ios-glyphs/512/github.png",
+            previewUrl: "https://cdn-icons-png.flaticon.com/512/733/733553.png",
+            iconUrl: "https://cdn-icons-png.flaticon.com/512/733/733553.png",
             downloadUrl: null,
             linkUrl: "https://github.com/EsneiderCdD/PsicologiaTranspersonal",
         },
@@ -670,6 +675,7 @@ export const projectDetailFiles = {
             size: "Actualizado",
             description: "Recorre el proyecto con un video en YouTube.",
             previewUrl: "https://www.youtube.com/watch?v=BprPVV6Pl8E",
+            iconUrl: "https://cdn-icons-png.flaticon.com/512/1384/1384060.png",
             downloadUrl: null,
             linkUrl: null,
         },
@@ -681,7 +687,8 @@ export const projectDetailFiles = {
             date: "01/06/2025",
             size: "Actualizado",
             description: null,
-            previewUrl: "https://img.icons8.com/ios-glyphs/512/github.png",
+            previewUrl: "https://cdn-icons-png.flaticon.com/512/733/733553.png",
+            iconUrl: "https://cdn-icons-png.flaticon.com/512/733/733553.png",
             downloadUrl: null,
             linkUrl: "https://github.com/EsneiderCdD/framer-motion",
         },
@@ -786,6 +793,7 @@ export const projectDetailFiles = {
             size: "Actualizado",
             description: "Recorre el proyecto con un video en YouTube.",
             previewUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+            iconUrl: "https://cdn-icons-png.flaticon.com/512/1384/1384060.png",
             downloadUrl: null,
             linkUrl: null,
         },
@@ -796,7 +804,8 @@ export const projectDetailFiles = {
             date: "01/06/2025",
             size: "Actualizado",
             description: "Enlaces a los repositorios del proyecto TrainIT, incluyendo tanto el Frontend como el Backend desarrollados durante el proyecto.",
-            previewUrl: "https://img.icons8.com/ios-glyphs/512/github.png",
+            previewUrl: "https://cdn-icons-png.flaticon.com/512/733/733553.png",
+            iconUrl: "https://cdn-icons-png.flaticon.com/512/733/733553.png",
             downloadUrl: null,
             links: [
                 { label: "Frontend", url: "https://github.com/Programa-TrainIT-Ar/fe-trelloop-grupo-2/tree/grupo-2" },

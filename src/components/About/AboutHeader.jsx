@@ -22,6 +22,15 @@ function AboutHeader({ onSortChange }) {
   const [showResults, setShowResults] = useState(false);
   const searchRef = useRef(null);
 
+  const isIconUrl = (url) => {
+    if (!url || typeof url !== "string") return false;
+    const u = url.toLowerCase();
+    return (
+      (u.includes("flaticon.com") || u.includes("icons8.com")) &&
+      (u.endsWith(".png") || u.endsWith(".svg") || u.includes("/png") || u.includes("/svg"))
+    );
+  };
+
   // Combinar todos los datos para búsqueda
   const allSearchableData = [
     ...projectsList.map(item => ({ ...item, category: 'project' })),
@@ -212,7 +221,13 @@ function AboutHeader({ onSortChange }) {
                   className={styles.searchResultItem}
                   onClick={() => handleResultClick(item)}
                 >
-                  <span className={styles.resultIcon}>{item.icon || '📄'}</span>
+                  {item.iconUrl ? (
+                    <img src={item.iconUrl} alt="" className={styles.resultIconImg} />
+                  ) : isIconUrl(item.previewUrl) ? (
+                    <img src={item.previewUrl} alt="" className={styles.resultIconImg} />
+                  ) : (
+                    <span className={styles.resultIcon}>{item.icon || '📄'}</span>
+                  )}
                   <div className={styles.resultInfo}>
                     <div className={styles.resultName}>{item.name}</div>
                     <div className={styles.resultType}>
