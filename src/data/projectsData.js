@@ -394,18 +394,30 @@ export const projectDetailFiles = {
     psicotranspersonal: [
         {
             icon: "📘",
-            name: "Descripción del Proyecto",
+            name: "Descripción",
             type: "Texto",
             date: "01/03/2025",
             size: "Actualizado",
             description: [
-                "El proyecto Psicotranspersonal consistió en el desarrollo de un software front-end personalizado para una psicóloga independiente que buscaba autonomía digital y centralización de servicios.",
-                "El proceso incluyó levantamiento de requerimientos, análisis comparativo y documentación funcional, lo que permitió definir una arquitectura informativa clara y escalable. Se implementó una interfaz modular con navegación dinámica, secciones autogestionables y compatibilidad total en dispositivos móviles.",
-                "La integración de PayU como pasarela de pago redujo las comisiones externas del 10 % al 3.5 %, y la incorporación de Google Analytics aportó trazabilidad y medición de conversiones. El proyecto se desarrolló bajo principios de optimización de carga, accesibilidad y coherencia con la identidad profesional de la marca."
+                "El proyecto Psicotranspersonal consistió en el desarrollo de un software front-end personalizado para una psicóloga independiente.",
+                " El proceso incluyó levantamiento de requerimientos, diseño responsive, integración de PayU como pasarela de pago y la incorporación de Google Analytics."
             ],
             previewUrl: null,
             downloadUrl: null,
             linkUrl: null,
+        },
+
+
+
+        {
+            icon: "📑",
+            name: "Ficha Técnica",
+            type: "Word",
+            date: "01/06/2025",
+            size: "Actualizado",
+            description: "Ficha técnica descargable en Word.",
+            previewUrl: "https://cdn-icons-png.flaticon.com/512/337/337946.png",
+            linkUrl: "https://drive.google.com/file/d/1WqjIka-NTDG8fblm5PMVDL7-oI3L4qte/view?usp=drive_link",
         },
 
         {
@@ -423,16 +435,15 @@ export const projectDetailFiles = {
                     icon: "🧭",
                     name: "Análisis y Requerimientos",
                     description: [
-                        "⦿ Lideré el proceso de **análisis funcional y levantamiento de requerimientos**, aplicando entrevistas, encuestas y sesiones de brainstorming para definir el alcance del sistema.",
-                        "⦿ Elaboré **casos de uso y mapas de prioridad** que facilitaron la jerarquización de funcionalidades y el diseño de la estructura informativa."
+                        "⦿ Desarrollé el proceso completo de levantamiento y análisis de requerimientos, aplicando técnicas como entrevistas, encuestas, análisis funcional, casos de uso, sesiones de brainstorming, benchmarking y elaboración de heat maps."
                     ],
                     previewUrl: "https://cdn-icons-png.flaticon.com/128/888/888034.png",
                 },
                 {
 
-                    name: "Diseño y Estructura Web",
+
                     description: [
-                        "⦿ Diseñé una arquitectura web responsiva, implementando secciones como *Inicio*, *Sobre mí*, *Servicios*, *Preguntas Frecuentes*, *Testimonios*, *Círculo de Mujeres* y *Términos y Condiciones*, junto con un menú de navegación y un footer."
+                        "⦿ Diseñé una arquitectura web responsiva, incorporando una página de inicio y un menú de navegación con secciones como: Sobre mí, Psicotranspersonal, Círculo de Mujeres y Términos y Condiciones, entre otras."
                     ],
                     previewUrl: ps1,
                 },
@@ -440,43 +451,43 @@ export const projectDetailFiles = {
 
                 {
 
-                    name: "Diseño y Estructura Web",
+
                     description: null,
                     previewUrl: ps8,
                 },
 
                 {
 
-                    name: "Diseño y Estructura Web",
-                    description: null,
+
+                    description: "⦿ También desarrollé los componentes complementarios: testimonios, servicios, pago, preguntas frecuentes (FAQ), términos y condiciones, carrusel, tarjeta dinámica y el footer.",
                     previewUrl: ps4,
                 },
 
 
                 {
 
-                    name: "Diseño y Estructura Web",
+
                     description: null,
                     previewUrl: ps2,
                 },
 
                 {
 
-                    name: "Diseño y Estructura Web",
-                    description: null,
+
                     previewUrl: ps7,
+                    description: "⦿ Incorporé animaciones y microinteracciones con Framer Motion en encabezados, botones, textos y componentes dinámicos, aplicando efectos y transiciones que optimizan la experiencia del usuario."
                 },
 
                 {
 
-                    name: "Diseño y Estructura Web",
+
                     description: null,
                     previewUrl: ps9,
                 },
 
                 {
 
-                    name: "Diseño y Estructura Web",
+
                     description: null,
                     previewUrl: ps10,
                 },
@@ -485,16 +496,14 @@ export const projectDetailFiles = {
 
                 {
 
-                    name: "Animaciones y Microinteracciones",
-                    description: [
-                        "⦿ Incorporé animaciones suaves y microinteracciones con **Framer Motion**, aplicadas en encabezados, botones, textos y partes de la interfaz. Tambien implementé **Swiper.js** para carruseles  y tarjetas de eventos más interactivas y modernas"
-                    ],
+
+
                     previewUrl: ps6,
                 },
 
                 {
 
-                    name: "Animaciones y Microinteracciones",
+
                     description: null,
                     previewUrl: ps3,
                 },
@@ -508,24 +517,16 @@ export const projectDetailFiles = {
 
                     ],
                     previewUrl: ps5,
-                },
-
-
-                {
-
-                    name: "Optimización y Mantenimiento",
-                    description: [
-                        "⦿ Entregué un **manual de usuario** documentado para garantizar autonomía en la actualización y gestión del sitio."
-                    ],
-                    previewUrl: null,
                 }
+
+
             ]
 
         },
 
         {
             icon: "💻",
-            name: "Tecnologías Usadas",
+            name: "Tecnologías",
             type: "Imagen y texto",
             date: "01/04/2025",
             size: "Actualizado",
@@ -535,16 +536,19 @@ export const projectDetailFiles = {
             linkUrl: null,
         },
 
-        {
-            icon: "📑",
-            name: "Ficha Técnica",
-            type: "Word",
+             {
+            icon: "🐙",
+            name: "Repositorio ",
+            type: "GitHub",
             date: "01/06/2025",
             size: "Actualizado",
-            description: "Ficha técnica descargable en Word.",
-            previewUrl: "https://cdn-icons-png.flaticon.com/512/337/337946.png",
-            linkUrl: "https://drive.google.com/file/d/1WqjIka-NTDG8fblm5PMVDL7-oI3L4qte/view?usp=drive_link",
+            description: null,
+            previewUrl: "https://cdn-icons-png.flaticon.com/512/733/733553.png",
+            iconUrl: "https://cdn-icons-png.flaticon.com/512/733/733553.png",
+            downloadUrl: null,
+            linkUrl: "https://github.com/EsneiderCdD/PsicologiaTranspersonal",
         },
+
 
         {
             icon: "🎥",
@@ -559,18 +563,7 @@ export const projectDetailFiles = {
             linkUrl: null,
         },
 
-        {
-            icon: "🐙",
-            name: "Repositorio ",
-            type: "GitHub",
-            date: "01/06/2025",
-            size: "Actualizado",
-            description: null,
-            previewUrl: "https://cdn-icons-png.flaticon.com/512/733/733553.png",
-            iconUrl: "https://cdn-icons-png.flaticon.com/512/733/733553.png",
-            downloadUrl: null,
-            linkUrl: "https://github.com/EsneiderCdD/PsicologiaTranspersonal",
-        },
+   
 
 
     ],
