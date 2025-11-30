@@ -82,7 +82,7 @@ export const projectsList = [
         date: "01/06/2025 ",
         size: "Completado",
         path: "/projects/psicotranspersonal",
-        description: "Psicotranspersonal es la marca profesional de una psicóloga especializada en acompañamiento terapéutico con enfoque transpersonal. Con una comunidad digital de más de 190 000 seguidores, ha consolidado su presencia en redes sociales compartiendo contenido de bienestar y crecimiento personal. Su proyecto busca centralizar sus servicios, eventos y recursos en una plataforma propia, fortaleciendo su independencia digital y ofreciendo una experiencia más directa y personalizada a su comunidad.",
+        description: "Psicotranspersonal es la marca profesional de una psicóloga especializada en acompañamiento terapéutico con enfoque transpersonal. Con una comunidad digital de más de 190 000 seguidores, ha consolidado su presencia en redes sociales compartiendo contenido de bienestar y crecimiento personal.",
         previewUrl: psicotranspersonal1,
         downloadUrl: null,
         linkUrl: null,
@@ -433,9 +433,8 @@ export const projectDetailFiles = {
             contributions: [
                 {
                     icon: "🧭",
-                    name: "Análisis y Requerimientos",
                     description: [
-                        "⦿ Desarrollé el proceso completo de levantamiento y análisis de requerimientos, aplicando técnicas como entrevistas, encuestas, análisis funcional, casos de uso, sesiones de brainstorming, benchmarking y elaboración de heat maps."
+                        "⦿ Desarrollé el proceso completo de análisis de requerimientos, aplicando técnicas como entrevistas, encuestas, análisis funcional, casos de uso, sesiones de brainstorming, benchmarking y elaboración de heat maps."
                     ],
                     previewUrl: "https://cdn-icons-png.flaticon.com/128/888/888034.png",
                 },
@@ -443,7 +442,7 @@ export const projectDetailFiles = {
 
 
                     description: [
-                        "⦿ Diseñé una arquitectura web responsiva, incorporando una página de inicio y un menú de navegación con secciones como: Sobre mí, Psicotranspersonal, Círculo de Mujeres y Términos y Condiciones, entre otras."
+                        "⦿ Diseñé una arquitectura web responsiva, incorporando una página de inicio y un menú de navegación con secciones como: Agendar, Sobre mi, Psicotranspersonal, Círculo de Mujeres, Términos y Condiciones."
                     ],
                     previewUrl: ps1,
                 },
@@ -459,7 +458,7 @@ export const projectDetailFiles = {
                 {
 
 
-                    description: "⦿ También desarrollé los componentes complementarios: testimonios, servicios, pago, preguntas frecuentes (FAQ), términos y condiciones, carrusel, tarjeta dinámica y el footer.",
+                    description: "⦿ También desarrollé los componentes complementarios: Mensajes(testimonios), Servicios, Pago, Preguntas Frecuentes, Términos, Condiciones, Carrusel, Tarjetas dinámicas y el footer.",
                     previewUrl: ps4,
                 },
 
@@ -513,7 +512,7 @@ export const projectDetailFiles = {
                     name: "Integración de Pagos y Métricas",
                     description: [
                         "⦿ Integré la pasarela de pagos **PayU**, garantizando seguridad en transacciones y reduciendo comisiones externas del 10 % al 3.5 %. ",
-                        "⦿ Incorporé **Google Analytics** para el seguimiento de conversiones, sesiones y comportamiento de usuarios, facilitando la toma de decisiones basadas en datos.",
+                        "⦿ Incorporé **Google Analytics** para el seguimiento de conversiones, sesiones y comportamiento de usuarios.",
 
                     ],
                     previewUrl: ps5,
