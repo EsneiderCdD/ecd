@@ -385,11 +385,7 @@ export const projectDetailFiles = {
             downloadUrl: null,
             linkUrl: null,
         },
-
-
     ],
-
-
 
     psicotranspersonal: [
         {
@@ -406,20 +402,16 @@ export const projectDetailFiles = {
             downloadUrl: null,
             linkUrl: null,
         },
-
-
-
         {
             icon: "📑",
             name: "Ficha Técnica",
-            type: "Word",
+            type: "PDF",
             date: "01/06/2025",
             size: "Actualizado",
-            description: "Ficha técnica descargable en Word.",
+            description: "Ficha técnica en PDF.",
             previewUrl: "https://cdn-icons-png.flaticon.com/512/337/337946.png",
-            linkUrl: "https://drive.google.com/file/d/1WqjIka-NTDG8fblm5PMVDL7-oI3L4qte/view?usp=drive_link",
+            linkUrl: "https://drive.google.com/file/d/1MnGMxClkHvNImD_fFuwAgZfivNrqahMR/view?usp=drive_link",
         },
-
         {
             icon: "📋",
             name: "Contribuciones",
@@ -439,104 +431,66 @@ export const projectDetailFiles = {
                     previewUrl: "https://cdn-icons-png.flaticon.com/128/888/888034.png",
                 },
                 {
-
-
                     description: [
                         "⦿ Diseñé una arquitectura web responsiva, incorporando una página de inicio y un menú de navegación con secciones como: Agendar, Sobre mi, Psicotranspersonal, Círculo de Mujeres, Términos y Condiciones."
                     ],
                     previewUrl: ps1,
                 },
-
-
                 {
-
-
                     description: null,
                     previewUrl: ps8,
                 },
-
                 {
-
-
                     description: "⦿ También desarrollé los componentes complementarios: Mensajes(testimonios), Servicios, Pago, Preguntas Frecuentes, Términos, Condiciones, Carrusel, Tarjetas dinámicas y el footer.",
                     previewUrl: ps4,
                 },
-
-
                 {
-
-
                     description: null,
                     previewUrl: ps2,
                 },
 
                 {
-
-
                     previewUrl: ps7,
                     description: "⦿ Incorporé animaciones y microinteracciones con Framer Motion en encabezados, botones, textos y componentes dinámicos, aplicando efectos y transiciones que optimizan la experiencia del usuario."
                 },
 
                 {
-
-
                     description: null,
                     previewUrl: ps9,
                 },
-
                 {
-
-
                     description: null,
                     previewUrl: ps10,
                 },
-
-
-
                 {
-
-
-
                     previewUrl: ps6,
                 },
-
                 {
-
-
                     description: null,
                     previewUrl: ps3,
                 },
-
                 {
-
                     name: "Integración de Pagos y Métricas",
                     description: [
                         "⦿ Integré la pasarela de pagos **PayU**, garantizando seguridad en transacciones y reduciendo comisiones externas del 10 % al 3.5 %. ",
                         "⦿ Incorporé **Google Analytics** para el seguimiento de conversiones, sesiones y comportamiento de usuarios.",
-
                     ],
                     previewUrl: ps5,
                 }
-
-
             ]
-
         },
-
         {
             icon: "💻",
             name: "Tecnologías",
             type: "Imagen y texto",
             date: "01/04/2025",
             size: "Actualizado",
-            description: generateStackHTML(['react', 'vite', 'framermotion', 'swiper', 'javascript', 'css', 'analytics', 'payu']),
+            description: generateStackHTML(['react', 'vite', 'framermotion', 'swiper', 'javascript', 'css', 'analytics', 'payu', 'responsive']),
             previewUrl: null,
             downloadUrl: null,
             linkUrl: null,
         },
-
-             {
-            icon: "🐙",
+        {
             name: "Repositorio ",
             type: "GitHub",
             date: "01/06/2025",
@@ -547,8 +501,6 @@ export const projectDetailFiles = {
             downloadUrl: null,
             linkUrl: "https://github.com/EsneiderCdD/PsicologiaTranspersonal",
         },
-
-
         {
             icon: "🎥",
             name: "Video",
@@ -561,10 +513,6 @@ export const projectDetailFiles = {
             downloadUrl: null,
             linkUrl: null,
         },
-
-   
-
-
     ],
 
 

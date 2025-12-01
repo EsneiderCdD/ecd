@@ -215,7 +215,7 @@ export const stackIcons = {
     src: responsive,
     alt: "Responsive Design",
     title: "Responsive Design",
-    size: 48
+    size: 52
   },
   cloudinary: {
     src: cloudinary,
