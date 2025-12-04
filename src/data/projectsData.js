@@ -94,7 +94,7 @@ export const projectsList = [
         date: "16/07/2025",
         size: "Beta",
         path: "/projects/framermotionlab",
-        description: "Proyecto personal orientado al aprendizaje y experimentación con animaciones web en Framer Motion. En desarrollo.",
+        description: "Proyecto personal orientado al aprendizaje y experimentación con animaciones web en Framer Motion.",
 
         previewUrl: fm4,
         downloadUrl: null,
@@ -510,7 +510,7 @@ export const projectDetailFiles = {
     framermotionlab: [
         {
             icon: "📘",
-            name: "Descripción del Proyecto",
+            name: "Descripción",
             type: "Texto",
             date: "01/06/2025",
             size: "Actualizado",
@@ -521,6 +521,16 @@ export const projectDetailFiles = {
             previewUrl: null,
             downloadUrl: null,
             linkUrl: null,
+        },
+              {
+            icon: "📑",
+            name: "Ficha Técnica",
+            type: "Word",
+            date: "01/06/2025",
+            size: "Actualizado",
+            description: "Ficha técnica descargable en Word.",
+            previewUrl: "https://cdn-icons-png.flaticon.com/512/337/337946.png",
+            linkUrl: "https://drive.google.com/file/d/1oD_JonGQMZBXROHCzDcQoupCwXoIPMae/view?usp=drive_link",
         },
 
         {
@@ -538,8 +548,7 @@ export const projectDetailFiles = {
                     icon: "🏠",
                     name: "Interfaz Principal",
                     description: [
-                        "⦿ Diseño la **estructura de la interfaz** bajo un enfoque pedagógico progresivo, inspirado en la documentación oficial de *Framer Motion*.",
-                        "⦿ Organizo el contenido en tres niveles —*Básico*, *Gestures* y *Layout*— para facilitar el aprendizaje escalonado de animaciones web. El nivel *Básico* está casi completo, *Gestures* en desarrollo y *Layout* en planificación."
+                        "⦿ Diseño inspirado en la documentación oficial de *Framer Motion*.",
                     ],
                     previewUrl: fm,
                 },
@@ -565,8 +574,7 @@ export const projectDetailFiles = {
                     icon: "🧩",
                     name: "LabMotion Builder",
                     description: [
-                        "⦿ Implemento el módulo interactivo **LabMotion Builder**, un entorno que permite modificar parámetros de animación —posición, escala, color, duración— y visualizar resultados al instante.",
-                        "⦿ Este sistema funciona como un **laboratorio experimental**, integrando controles dinámicos para fomentar el aprendizaje práctico de *Framer Motion*."
+                        "⦿ Implemento el módulo interactivo **LabMotion Builder**, un entorno que permite modificar parámetros de animación. Este sistema funciona como un **laboratorio experimental**, integrando controles dinámicos para fomentar el aprendizaje práctico de *Framer Motion*."
                     ],
                     previewUrl: fm3,
                 }
@@ -575,7 +583,7 @@ export const projectDetailFiles = {
 
         {
             icon: "💻",
-            name: "Tecnologías Usadas",
+            name: "Tecnologías",
             type: "Imagen y texto",
             date: "01/06/2025",
             size: "Actualizado",
@@ -585,16 +593,7 @@ export const projectDetailFiles = {
             linkUrl: null,
         },
 
-        {
-            icon: "📑",
-            name: "Ficha Técnica",
-            type: "Word",
-            date: "01/06/2025",
-            size: "Actualizado",
-            description: "Ficha técnica descargable en Word.",
-            previewUrl: "https://cdn-icons-png.flaticon.com/512/337/337946.png",
-            linkUrl: "https://drive.google.com/file/d/1oD_JonGQMZBXROHCzDcQoupCwXoIPMae/view?usp=drive_link",
-        },
+  
 
         {
             icon: "🎥",
