@@ -124,18 +124,7 @@ export const projectsList = [
         downloadUrl: null,
         linkUrl: null,
     },
-    {
-        icon: "📁",
-        name: "Gury",
-        type: "Proyecto Freelance",
-        date: "11/11/2025",
-        size: "Reciente",
-        path: "/projects/gury",
-        description: "EN DESARROLLO...",
-        previewUrl: Guau,
-        downloadUrl: null,
-        linkUrl: null,
-    },
+
 
 ];
 
