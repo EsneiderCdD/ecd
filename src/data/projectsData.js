@@ -522,15 +522,15 @@ export const projectDetailFiles = {
             downloadUrl: null,
             linkUrl: null,
         },
-              {
+        {
             icon: "📑",
             name: "Ficha Técnica",
-            type: "Word",
+            type: "PDF",
             date: "01/06/2025",
             size: "Actualizado",
-            description: "Ficha técnica descargable en Word.",
+            description: "Ficha técnica en PDF.",
             previewUrl: "https://cdn-icons-png.flaticon.com/512/337/337946.png",
-            linkUrl: "https://drive.google.com/file/d/1oD_JonGQMZBXROHCzDcQoupCwXoIPMae/view?usp=drive_link",
+            linkUrl: "https://drive.google.com/file/d/1u-zZ3B0FGTEvUh5QrDfagLNKLTfhw-eN/view?usp=drive_link",
         },
 
         {
@@ -593,20 +593,9 @@ export const projectDetailFiles = {
             linkUrl: null,
         },
 
-  
 
-        {
-            icon: "🎥",
-            name: "Video",
-            type: "YouTube",
-            date: "01/06/2025",
-            size: "Actualizado",
-            description: "Recorre el proyecto con un video en YouTube.",
-            previewUrl: "https://www.youtube.com/watch?v=BprPVV6Pl8E",
-            iconUrl: "https://cdn-icons-png.flaticon.com/512/1384/1384060.png",
-            downloadUrl: null,
-            linkUrl: null,
-        },
+
+
 
         {
             icon: "🐙",
@@ -622,19 +611,30 @@ export const projectDetailFiles = {
         },
 
         {
-            icon: "🧭",
-            name: "Proyecciones",
-            type: "Texto",
-            date: "01/08/2025",
-            size: "En desarrollo",
-            description: [
-                "El proyecto avanza hacia un primer MVP centrado en el nivel básico, con el objetivo de hacerlo público y fomentar el networking dentro de la comunidad de desarrolladores. Actualmente se trabaja en la implementación del modo oscuro, la optimización de la experiencia de usuario y la adaptación responsiva para dispositivos móviles. También se evalúa la integración con GitHub para permitir contribuciones abiertas y colaborativas, manteniendo una estructura de código documentada y organizada."
-            ],
-            previewUrl: null,
+            icon: "🎥",
+            name: "Video",
+            type: "YouTube",
+            date: "01/06/2025",
+            size: "Actualizado",
+            description: "Recorre el proyecto con un video en YouTube.",
+            previewUrl: "https://www.youtube.com/watch?v=BprPVV6Pl8E",
+            iconUrl: "https://cdn-icons-png.flaticon.com/512/1384/1384060.png",
             downloadUrl: null,
             linkUrl: null,
         },
-
+        // {
+        //     icon: "🧭",
+        //     name: "Proyecciones",
+        //     type: "Texto",
+        //     date: "01/08/2025",
+        //     size: "En desarrollo",
+        //     description: [
+        //         "El proyecto avanza hacia un primer MVP centrado en el nivel básico, con el objetivo de hacerlo público y fomentar el networking dentro de la comunidad de desarrolladores. Actualmente se trabaja en la implementación del modo oscuro, la optimización de la experiencia de usuario y la adaptación responsiva para dispositivos móviles. También se evalúa la integración con GitHub para permitir contribuciones abiertas y colaborativas, manteniendo una estructura de código documentada y organizada."
+        //     ],
+        //     previewUrl: null,
+        //     downloadUrl: null,
+        //     linkUrl: null,
+        // },
     ],
 
 
