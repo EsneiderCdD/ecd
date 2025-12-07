@@ -24,7 +24,6 @@ import ps8 from "@/assets/images/ps8.png";
 import ps9 from "@/assets/images/ps9.png";
 import ps10 from "@/assets/images/ps10.png";
 
-
 import fm from "@/assets/images/fm.png";
 import fm1 from "@/assets/images/fm1.png";
 import fm2 from "@/assets/images/fm2.png";
@@ -35,7 +34,7 @@ import trainit from "@/assets/images/trainit.jpg";
 import ti1 from "@/assets/images/ti1.png";
 import ti2 from "@/assets/images/ti2.png";
 import ti3 from "@/assets/images/ti3.png";
-
+import constanciatrain from "@/assets/images/constanciatrain.png"
 import gua from "@/assets/images/gua.png";
 
 import gua3 from "@/assets/images/gua3.png";
@@ -127,12 +126,6 @@ export const projectsList = [
 
 
 ];
-
-
-
-
-
-
 
 export const projectDetailFiles = {
     martinaclandestina: [
@@ -637,21 +630,29 @@ export const projectDetailFiles = {
         // },
     ],
 
-
-
-
     trainittrello: [
         {
             icon: "📄",
-            name: "Descripción del Proyecto",
-            type: "Texto",
+            name: "Descripción",
+            type: "Texto e Imagen",
             date: "15/10/2025 ",
             size: "Actualizado",
             description: "TrainIT Es un programa educativo y comunidad de simulación laboral gratuito, que ofrece ganar experiencia a través de la participación en MVPs multidisciplinarios sin fines de lucro, acompañados de seniors en diferentes nichos laborales. El objetivo es que los participantes amplíen su portafolios y mejoren su perfil profesional frente a las empresas activas del mercado.",
-            previewUrl: null,
+            previewUrl: constanciatrain,
             downloadUrl: null,
             linkUrl: null,
         },
+                {
+            icon: "📑",
+            name: "Ficha Técnica",
+            type: "Word",
+            date: "01/06/2025",
+            size: "Actualizado",
+            description: "Ficha técnica descargable en Word.",
+            previewUrl: "https://cdn-icons-png.flaticon.com/512/337/337946.png",
+            linkUrl: "https://drive.google.com/file/d/1Dk_TQTiWyCHIBgiaQuMFA5x1altQpCwq/view?usp=drive_link",
+        },
+
         {
             icon: "📋",
             name: "Contribuciones",
@@ -666,7 +667,7 @@ export const projectDetailFiles = {
                 {
                     icon: "🖼️",
                     name: "Arquitectura Frontend y Componentes",
-                    description: ["⦿ Desempeñe un rol con enfoque principal *Frontend* y contribuciones relevantes en el *Backend*. Asimismo, participe en establecer la **estructuración de carpetas**, la **configuración de librerías** y **patrón de diseño**.",
+                    description: ["⦿ Desempeñe un rol FullStack. Asimismo, participe en establecer la **estructuración de carpetas**, la **configuración de librerías** y **patrón de diseño**.",
                         "⦿ Implemente la estrategia ***Design System Color*** diseñado por el equipo UX/UI (colores primitivos, neutros, y semánticos) e integrándolo a Tailwind CSS.",
                         "⦿ Construí **componentes** Integrando colores, iconos, imágenes, posiciones, fondos, botones, tipografía fehacientemente al diseño en **Figma.**"
                     ],
@@ -683,9 +684,8 @@ export const projectDetailFiles = {
                 {
                     icon: "🖼️",
                     name: "Drag & Drop",
-                    description: ["⦿ Finalmente, desarrollé el sistema de arrastre y soltado ***(Drag & Drop)*** ",
-                        "⦿ Aportando coherencia desde el back para la gestión de columnas y posiciones, desplazamiento entre tarjetas y entre columnas, ajustando y reordenando según la zona droppeada.",
-                        "⦿ Implementé el sistema ***kanban*** usando ***@dnd-kit/core***, optimizando el flujo de datos mediante estrategias de *sortable context*, *collision detection*  y render condicional con ***React.memo*** para minimizar re-renders durante operaciones CRUD."],
+                    description: ["⦿ Implementé el sistema ***kanban*** usando ***@dnd-kit/core***, optimizando el flujo de datos mediante estrategias de *sortable context*, *collision detection*  y render condicional con ***React.memo*** para minimizar re-renders durante operaciones CRUD.",
+                        "⦿ Aportando coherencia desde el back para la gestión de columnas y posiciones, desplazamiento entre tarjetas y entre columnas, ajustando y reordenando según la zona droppeada."],
                     previewUrl: ti3,
                 }
             ]
@@ -693,24 +693,14 @@ export const projectDetailFiles = {
 
         {
             icon: "💻",
-            name: "Tecnologías Usadas",
+            name: "Tecnologías",
             type: "Imagen y texto",
             date: "25/02/2025 ",
             size: "Actualizado",
-            description: generateStackHTML(['git', 'github', 'figma', 'typescript', 'tailwind', 'fechas', 'next', 'react', 'zustand', 'dndKit', 'python', 'postgresql', 'flask', 'flaskenv', 'pusher', 'sendgrid', 'cloudinary']),
+            description: generateStackHTML(['git', 'github', 'figma', 'typescript', 'tailwind', 'datefns', 'next', 'react', 'zustand', 'dndKit', 'python', 'postgresql', 'flask', 'flasgger', 'pusher', 'cloudinary', 'sendgrid',]),
             previewUrl: null,
             downloadUrl: null,
             linkUrl: null,
-        },
-        {
-            icon: "📑",
-            name: "Ficha Técnica",
-            type: "Word",
-            date: "01/06/2025",
-            size: "Actualizado",
-            description: "Ficha técnica descargable en Word.",
-            previewUrl: "https://cdn-icons-png.flaticon.com/512/337/337946.png",
-            linkUrl: "https://drive.google.com/file/d/1Dk_TQTiWyCHIBgiaQuMFA5x1altQpCwq/view?usp=drive_link",
         },
 
         {
@@ -720,18 +710,19 @@ export const projectDetailFiles = {
             date: "01/06/2025",
             size: "Actualizado",
             description: "Recorre el proyecto con un video en YouTube.",
-            previewUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+            previewUrl: "https://www.youtube.com/watch?v=_X2ihdxtjEU",
             iconUrl: "https://cdn-icons-png.flaticon.com/512/1384/1384060.png",
             downloadUrl: null,
             linkUrl: null,
         },
+        
         {
             icon: "🐙",
             name: "Repositorio",
             type: "GitHub",
             date: "01/06/2025",
             size: "Actualizado",
-            description: "Enlaces a los repositorios del proyecto TrainIT, incluyendo tanto el Frontend como el Backend desarrollados durante el proyecto.",
+            description: null,
             previewUrl: "https://cdn-icons-png.flaticon.com/512/733/733553.png",
             iconUrl: "https://cdn-icons-png.flaticon.com/512/733/733553.png",
             downloadUrl: null,
@@ -828,7 +819,7 @@ export const projectDetailFiles = {
 
             ]
         },
-
+        
         {
             icon: "💻",
             name: "Tecnologías Usadas",

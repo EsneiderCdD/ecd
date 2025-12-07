@@ -32,6 +32,7 @@ import responsive from "@/assets/stack/responsive.png";
 import vite from "@/assets/stack/vite.webp";
 import framermotion from "@/assets/stack/framermotion.png"
 import swiperjs from "@/assets/stack/swiper.webp"
+import datefns from "@/assets/stack/datefns.png"
 
 /**
  * Configuración centralizada de iconos del stack tecnológico
@@ -136,6 +137,12 @@ export const stackIcons = {
     title: "Flask",
     size: 48
   },
+  flasgger: {
+    src: flasgger,
+    alt: "Flasgger",
+    title: "Flasgger",
+    size: 48
+  },
 
   // Bases de datos
   
@@ -238,19 +245,13 @@ export const stackIcons = {
     title: "Integración de Pagos",
     size: 48
   },
-
-  
-  // Texto adicional
-
-  flaskenv: {
-    text: "Migrate, Alembic, CORS, JWT-Extended, Flasgger, Bcrypt, SocketIO",
-    size: 14
+    datefns: {
+    src: datefns,
+    alt: "Integración de Pagos",
+    title: "Integración de Pagos",
+    size: 48
   },
-  fechas: {
-    text: "date-fns, react-datepicker",
-    size: 14
-  },
-  
+
 };
 
 /**
