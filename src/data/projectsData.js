@@ -645,12 +645,12 @@ export const projectDetailFiles = {
                 {
             icon: "📑",
             name: "Ficha Técnica",
-            type: "Word",
+            type: "PDF",
             date: "01/06/2025",
             size: "Actualizado",
-            description: "Ficha técnica descargable en Word.",
+            description: "Ficha técnica en PDF.",
             previewUrl: "https://cdn-icons-png.flaticon.com/512/337/337946.png",
-            linkUrl: "https://drive.google.com/file/d/1Dk_TQTiWyCHIBgiaQuMFA5x1altQpCwq/view?usp=drive_link",
+            linkUrl: "https://drive.google.com/file/d/1yTCNzHmn36eF3XeRi-UAtqDe3Vre3qNc/view?usp=drive_link",
         },
 
         {
