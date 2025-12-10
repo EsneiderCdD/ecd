@@ -736,13 +736,12 @@ export const projectDetailFiles = {
     guau: [
         {
             icon: "📄",
-            name: "Descripción del Proyecto",
+            name: "Descripción",
             type: "Texto",
             date: "15/10/2025",
             size: "Actualizado",
             description: [
-                "Guau es una plataforma web experimental desarrollada de forma integral —frontend, backend, diseño, psicometría y modelo matemático— para redefinir la adopción canina desde un enfoque científico y emocional.",
-                "El sistema combina pruebas psicométricas diseñadas a medida, un algoritmo de compatibilidad basado en distancia euclidiana y una interfaz construida en **React**, donde cada elemento visual responde a la experiencia del usuario."
+                "Guau es una plataforma web que combina pruebas psicométricas diseñadas a medida, un algoritmo de compatibilidad basado en distancia euclidiana y una interfaz construida en **React**, donde cada elemento visual responde a la experiencia del usuario.",
             ],
             previewUrl: null,
             downloadUrl: null,
