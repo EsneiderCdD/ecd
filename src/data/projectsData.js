@@ -214,12 +214,6 @@ export const projectDetailFiles = {
             linkUrl: null,
         },
 
-
-
-
-
-
-
         {
             icon: "🐙",
             name: "Repositorio",
@@ -642,7 +636,7 @@ export const projectDetailFiles = {
             downloadUrl: null,
             linkUrl: null,
         },
-                {
+        {
             icon: "📑",
             name: "Ficha Técnica",
             type: "PDF",
@@ -715,7 +709,7 @@ export const projectDetailFiles = {
             downloadUrl: null,
             linkUrl: null,
         },
-        
+
         {
             icon: "🐙",
             name: "Repositorio",
@@ -741,7 +735,7 @@ export const projectDetailFiles = {
             date: "15/10/2025",
             size: "Actualizado",
             description: [
-                "Guau es una plataforma web que combina pruebas psicométricas diseñadas a medida, un algoritmo de compatibilidad basado en distancia euclidiana y una interfaz construida en **React**, donde cada elemento visual responde a la experiencia del usuario.",
+                "Guau es una plataforma web que combina pruebas psicométricas, un algoritmo de compatibilidad basado en distancia euclidiana y una interfaz construida en **React**, donde cada elemento visual responde a la experiencia del usuario.",
             ],
             previewUrl: null,
             downloadUrl: null,
@@ -762,37 +756,37 @@ export const projectDetailFiles = {
                 {
                     name: "Diseño y Frontend",
                     description: [
-                        "⦿ Diseño una interfaz limpia y empática con enfoque minimalista, priorizando la experiencia de adopción sobre la lógica de negocio.",
-                        "⦿ Estructuro componentes reutilizables —cards dinámicas, rutas, modales y pantallas de detalle— que representan visualmente el proceso de compatibilidad y selección."
+                        "⦿ Diseño una interfaz priorizando la experiencia de adopción sobre la lógica de negocio.",
+                        "⦿ Estructuro componentes reutilizables cards dinámicas, rutas, modales y pantallas de detalle."
                     ],
                     previewUrl: gua,
                 },
                 {
-                    name: "Diseño y Frontend",
+                   
                     description: [
-                        "⦿ Implemento tarjetas dinámicas y componentes clave como *Login*, menú de navegación tipo flechas, secciones de detalle de perros y módulo de tienda, manteniendo coherencia visual y flujo narrativo."
+                        "⦿ Implemento tarjetas dinámicas y componentes clave como *Login*, menú de navegación tipo flechas, secciones de detalle de perros y módulo de tienda."
                     ],
                     previewUrl: guau7,
                 },
                 {
-                    name: "Diseño y Frontend",
+                
                     description: null,
                     previewUrl: guau5,
                 },
                 {
-                    name: "Diseño y Frontend",
+                    
                     description: null,
                     previewUrl: guau6,
                 },
                 {
-                    name: "Full-Stack",
+                 
                     description: [
                         "⦿ Implemento una interfaz administrativa que permite gestionar dinámicamente la información de los perros —imágenes, datos y características— optimizando la carga y actualización del contenido."
                     ],
                     previewUrl: gua2,
                 },
                 {
-                    name: "Full-Stack",
+                    
                     description: [
                         "⦿ Desarrollo un backend funcional enfocado en la administración de los perros del refugio. Incluye autenticación básica y un panel que gestiona datos psicométricos, priorizando la organización y el control estructural."
                     ],
@@ -818,7 +812,7 @@ export const projectDetailFiles = {
 
             ]
         },
-        
+
         {
             icon: "💻",
             name: "Tecnologías Usadas",
