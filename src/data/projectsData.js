@@ -579,11 +579,6 @@ export const projectDetailFiles = {
             downloadUrl: null,
             linkUrl: null,
         },
-
-
-
-
-
         {
             icon: "🐙",
             name: "Repositorio ",
@@ -742,6 +737,19 @@ export const projectDetailFiles = {
             linkUrl: null,
         },
 
+        
+        {
+            icon: "📘",
+            name: "Ficha Técnica",
+            type: "PDF",
+            date: "25/03/2025",
+            size: "Actualizado",
+            description: "Ficha técnica general del proyecto en formato Word, con especificaciones, contexto y estructura conceptual.",
+            previewUrl: "https://cdn-icons-png.flaticon.com/512/337/337946.png",
+            linkUrl: "https://drive.google.com/file/d/1irWzIxWnIleUzoG-kna6fYNxj4xeIZRm/view?usp=drive_link",
+        },
+
+
         {
             icon: "📋",
             name: "Contribuciones",
@@ -823,17 +831,6 @@ export const projectDetailFiles = {
             previewUrl: null,
             downloadUrl: null,
             linkUrl: null,
-        },
-
-        {
-            icon: "📘",
-            name: "Ficha Técnica",
-            type: "PDF",
-            date: "25/03/2025",
-            size: "Actualizado",
-            description: "Ficha técnica general del proyecto en formato Word, con especificaciones, contexto y estructura conceptual.",
-            previewUrl: "https://cdn-icons-png.flaticon.com/512/337/337946.png",
-            linkUrl: "https://drive.google.com/file/d/1irWzIxWnIleUzoG-kna6fYNxj4xeIZRm/view?usp=drive_link",
         },
 
 
