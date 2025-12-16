@@ -247,22 +247,8 @@ function AboutHeader({ onSortChange }) {
       <div className={styles.icons3}>
         <SortDropdown onSortChange={onSortChange} />
       </div>
-      {/* <img
-          src="https://cdn-icons-png.flaticon.com/512/833/833472.png"
-          alt="Feedback"
-          title="Feedback"
-          className={`${styles.icon} ${styles.hoverIcon}`}
-        /> */}
 
-      {/* Detalles */}
-      <div className={styles.icons5}>
-        <p style={{ color: "var(--text-primary)" }}>Detalles</p>
-        <img src="https://cdn-icons-png.flaticon.com/128/4117/4117081.png"
-          alt="Detalles"
-          title="Detalles"
-          className={styles.icon} />
 
-      </div>
     </div>
   );
 }
