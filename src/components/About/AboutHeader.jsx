@@ -13,7 +13,7 @@ import SortDropdown from "./Dropdown/SortDropdown";
 import { useTheme } from "@/context/ThemeContext";
 import { projectsList, projectDetailFiles } from '@/data/projectsData';
 import { aboutFiles } from '@/data/aboutData';
-import styles from "./About.module.css";
+import styles from "./AboutHeader.module.css";
 
 function AboutHeader({ onSortChange }) {
   const { theme, toggleTheme } = useTheme();
@@ -136,7 +136,7 @@ function AboutHeader({ onSortChange }) {
             className={styles.icon}
           />
         </a>
-        
+
         {/* 📄 Hoja de Vida - C.V */}
         <a
           href="https://flowcv.com/resume/trd93dr5crok"
