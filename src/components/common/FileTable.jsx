@@ -1,6 +1,6 @@
 // src/components/common/FileTable.jsx
 import { useNavigate } from "react-router-dom";
-import styles from "../About/About.module.css";
+import styles from "../About/AboutTable.module.css";
 import { getStatusTagConfig, tagVariants } from "../../data/statusTags";
 
 function FileTable({ files, selectedFile, setSelectedFile }) {
@@ -22,11 +22,11 @@ function FileTable({ files, selectedFile, setSelectedFile }) {
   // Función para renderizar el estado con tags especiales
   const renderStatus = (status) => {
     const tagConfig = getStatusTagConfig(status);
-    
+
     if (tagConfig) {
       const variant = tagVariants[tagConfig.variant];
       return (
-        <span 
+        <span
           className={styles.statusTag}
           style={{
             background: variant.background,
@@ -39,22 +39,22 @@ function FileTable({ files, selectedFile, setSelectedFile }) {
         </span>
       );
     }
-    
+
     // Si no hay configuración especial, mostrar el estado normal
     return status;
   };
 
   const handleDoubleClick = (file) => {
-  
+
     if (file.path) {
       navigate(file.path);
       return;
     }
 
     if (file.linkUrl) {
-    window.open(file.linkUrl, "_blank");
-    return;
-  }
+      window.open(file.linkUrl, "_blank");
+      return;
+    }
 
     if (file.type === "Carpeta" || file.type === "Carpeta de archivos") {
       const projectId = file.name
@@ -79,9 +79,8 @@ function FileTable({ files, selectedFile, setSelectedFile }) {
       {files.map((file, index) => (
         <div
           key={index}
-          className={`${styles.tableRow} ${
-            selectedFile?.name === file.name ? styles.selectedRow : ""
-          }`}
+          className={`${styles.tableRow} ${selectedFile?.name === file.name ? styles.selectedRow : ""
+            }`}
           onClick={() => handleClick(file)}
           onDoubleClick={() => handleDoubleClick(file)}
         >

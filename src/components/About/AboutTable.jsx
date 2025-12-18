@@ -1,5 +1,5 @@
 import { useState } from "react";
-import styles from "../../components/About/About.module.css";
+import styles from "./AboutTable.module.css";
 import FileTable from "@/components/Common/FileTable"
 import MC from "@/assets/images/MC.png"
 import MisterSoldo from "@/assets/images/MisterSoldo.png"
