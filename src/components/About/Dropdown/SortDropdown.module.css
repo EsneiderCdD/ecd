@@ -75,3 +75,15 @@
   font-weight: bold;
   font-size: 14px;
 }
+
+/* Responsive */
+@media (max-width: 400px) {
+  .dropdownToggle {
+    padding: 6px;
+  }
+
+  .sortIcon {
+    width: 15px;
+    height: 15px;
+  }
+}

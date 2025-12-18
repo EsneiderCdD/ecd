@@ -19,7 +19,6 @@
 
 .dropdownToggle:hover {
   background-color: var(--hover-bg);
-
 }
 
 .icon {
@@ -37,7 +36,6 @@
 .dropdownMenu {
   position: absolute;
   top: calc(100% + 7px);
-  /* lo baja */
   left: -5px;
   width: 280px;
   background: var(--bg-primary);
@@ -82,4 +80,27 @@
 
 .rotate {
   transform: rotate(180deg);
+}
+
+/* Responsive */
+@media (max-width: 400px) {
+  .dropdown {
+    width: 2.5rem;
+    margin-left: 2px;
+  }
+
+  .dropdownToggle {
+    padding: 6px;
+  }
+
+  .addIcon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .chevron {
+    width: 12px;
+    height: 12px;
+    margin-left: 2px;
+  }
 }

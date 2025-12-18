@@ -1,3 +1,4 @@
+/* src/components/About/AboutHeader.module.css */
 /* Header Structure */
 .header {
     height: 50px;
@@ -218,54 +219,86 @@
     text-overflow: ellipsis;
 }
 
-
 .resultType {
     font-size: 12px;
     color: var(--text-muted);
     text-transform: capitalize;
 }
 
-/* --- RESPONSIVE SUGGESTIONS (Starting Point < 900px) --- */
+/* Responsive */
 @media (max-width: 900px) {
-
-    /* 1. Header: Ajustar espaciado general */
     .header {
         gap: 6px;
-      
+        justify-content: space-between;
     }
 
-
-    /* 2. Grupo de Iconos (Social): Reducir espacio reservado */
     .icons2 {
         min-width: auto;
-        /* min-width: 265px; */
         padding-right: 8px;
-        /* padding-right: 15px; */
-        gap: 10px;
-        /* gap: 5px; */
+        gap: 0;
+        flex: 1;
+        justify-content: space-between;
     }
 
-    /* 3. Buscador: Hacerlo más compacto */
     .searchContainer {
         width: 14rem;
-        /* width: 30rem; */
         padding: 4px 8px;
-        /* padding: 6px 14px; */
     }
 
-    /* 4. Textos de iconos: Ocultarlos para ganar espacio visualmente */
     .icons3 p,
     .icons5 p {
         display: none;
-        /* display: block; */
     }
 
-    /* 5. Ajustar contenedor de iconos pequeños */
     .icons3,
     .icons5 {
         width: auto;
-        /* .icons3 width: 52px; */
         min-width: auto;
-        /* .icons5 min-width: 100px; */
+    }
+}
+
+/* Responsive < 600px */
+@media (max-width: 600px) {
+    .icons2 {
+        gap: 3px;
+    }
+
+    .searchContainer {
+        width: 7rem;
+    }
+}
+
+/* Responsive < 400px */
+@media (max-width: 400px) {
+    .icon {
+        width: 15px;
+        height: 15px;
+        margin-right: 4px;
+    }
+
+    .supportIcon {
+        width: 18px;
+        height: 18px;
+    }
+
+    .icons2 {
+        padding-right: 6px;
+        gap: 3px;
+    }
+
+    .icons3 {
+        padding-right: 4px;
+        min-width: 35px;
+    }
+
+    .searchContainer {
+        width: 6.5rem;
+        padding: 4px 8px;
+        border-radius: 14px;
+    }
+
+    .searchIcon {
+        width: 14px;
+        height: 14px;
     }
 }
