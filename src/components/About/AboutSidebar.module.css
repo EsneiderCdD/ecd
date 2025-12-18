@@ -88,3 +88,48 @@
     margin-top: auto;
     padding-bottom: 10px;
 }
+
+/* --- RESPONSIVE < 1000px --- */
+@media (max-width: 1000px) {
+    .sidebar {
+        width: 100% !important;
+        /* Override inline style set by JS resizer */
+        flex-direction: row;
+        border-right: none;
+        border-bottom: 1px solid var(--border-color);
+        align-items: center;
+        justify-content: space-between;
+        overflow-x: auto;
+        /* Permite scroll horizontal si es necesario */
+        padding: 10px 15px;
+    }
+
+    .sidebarResizer {
+        display: none;
+        /* Disable resizing in horizontal mode */
+    }
+
+    .mainNavSection {
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .achievementsSection {
+        flex-direction: row;
+        margin-top: 0;
+        padding-bottom: 0;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .sidebarDivider {
+        display: none;
+        /* Hide divider in horizontal layout */
+    }
+
+    /* Optional: Adjust icons margin for horizontal layout */
+    .iconsidebar {
+        margin-right: 5px;
+    }
+}
