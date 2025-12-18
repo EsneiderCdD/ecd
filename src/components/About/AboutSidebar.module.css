@@ -1,0 +1,90 @@
+/* src/components/About/AboutSidebar.module.css */
+
+.sidebar {
+    background: var(--bg-sidebar);
+    border-right: 1px solid var(--border-color);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+    gap: 12px;
+    padding: 10px;
+}
+
+/* Línea de arrastre en el borde derecho */
+.sidebarResizer {
+    width: 5px;
+    cursor: col-resize;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: transparent;
+}
+
+.sidebarResizer:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+/* Enlaces de navegación */
+.link {
+    text-decoration: none;
+    color: var(--text-primary);
+    padding: 6px 8px;
+    border-radius: 4px;
+}
+
+.active {
+    background-color: var(--hover-bg);
+    font-weight: bold;
+}
+
+/* Iconos del sidebar */
+.iconsidebarContainer {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+}
+
+.iconsidebar {
+    width: 20px;
+    height: 20px;
+    margin-right: 10%;
+}
+
+/* Sección principal de navegación */
+.mainNavSection {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Separador entre secciones */
+.sidebarDivider {
+    height: 1px;
+    background: var(--border-light);
+    margin: 20px 10px;
+    position: relative;
+}
+
+.sidebarDivider::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 3px;
+    background: var(--border-color);
+    border-radius: 2px;
+}
+
+/* Sección de logros (al final) */
+.achievementsSection {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: auto;
+    padding-bottom: 10px;
+}

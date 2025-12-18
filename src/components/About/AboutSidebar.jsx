@@ -1,7 +1,7 @@
 // src/components/About/AboutSidebar.jsx (ACTUALIZADO)
 import { NavLink } from "react-router-dom";
 import { useState, useRef, useEffect } from "react";
-import styles from "./About.module.css";
+import styles from "./AboutSidebar.module.css";
 
 function AboutSidebar() {
   const [width, setWidth] = useState(200);
