@@ -126,3 +126,104 @@
     transition: transform 0.2s ease, opacity 0.2s ease;
     transform: translateX(-5px);
 }
+
+/* --- RESPONSIVE < 900px --- */
+@media (max-width: 900px) {
+    .tableRow {
+        gap: 8px;
+        /* Reducido de 10px */
+        padding: 10px 0;
+        /* Reducido de 13px */
+        font-size: 0.9rem;
+        /* Reducción ligera */
+        grid-template-columns: 220px 1.5fr 1.5fr 0.5fr 0.5fr;
+        /* Columna nombre ajustada */
+    }
+
+    .rowIcon {
+        width: 18px;
+        height: 18px;
+        margin-right: 4px;
+    }
+
+    .name {
+        min-width: 130px;
+        /* Reducido de 150px */
+    }
+
+    .date,
+    .type,
+    .size {
+        font-size: 0.75rem;
+        /* Ajuste sutil */
+    }
+}
+
+/* --- RESPONSIVE < 700px --- */
+@media (max-width: 700px) {
+
+    /* Ocultar columna FECHA */
+    .date {
+        display: none;
+    }
+
+    /* Reajustar Grid: Eliminamos la 2da columna (Fecha) */
+    /* Antes: 220px 1.5fr 1.5fr 0.5fr 0.5fr (5 columnas) */
+    /* Ahora: 1.5fr 1fr 0.6fr 0.6fr (4 columnas: Nombre, Tipo, vacio?, Estado) */
+    /* Corrección: La estructura original es: Nombre | Fecha | Tipo | (Vacio/Iconos?) | Estado */
+    /* Estructura deseada: Nombre | Tipo | Estado */
+    .tableRow {
+        grid-template-columns: 2fr 1.5fr 0.5fr 0.5fr;
+        /* Nombre (mas espacio) | Tipo | (espacio extra) | Estado */
+    }
+
+    .name {
+        min-width: unset;
+        /* Dejar que fluya con el fr */
+    }
+}
+
+/* --- RESPONSIVE < 500px --- */
+@media (max-width: 500px) {
+    .table {
+        overflow-x: auto;
+        /* Habilitar scroll horizontal */
+        display: block;
+        /* Asegurar que el contenedor permita scroll */
+    }
+
+    .tableRow {
+        min-width: 500px;
+        /* Forzar un ancho mínimo para activar el scroll */
+        /* Mantener el grid de 700px pero con ancho forzado */
+    }
+
+    .headerRow {
+        position: sticky;
+        /* Opcional: Para UX, mantener header visible si se pudiera, pero row block lo rompe a veces */
+        top: 0;
+        min-width: 500px;
+    }
+
+    /* Estilización del Scrollbar para modo oscuro/integrado */
+    .table::-webkit-scrollbar {
+        height: 8px;
+        /* Altura de la barra horizontal */
+    }
+
+    .table::-webkit-scrollbar-track {
+        background: transparent;
+        /* Fondo transparente para integrarse */
+    }
+
+    .table::-webkit-scrollbar-thumb {
+        background-color: rgba(128, 128, 128, 0.5);
+        /* Gris medio semi-transparente: visible en dark y light mode */
+        border-radius: 4px;
+    }
+
+    .table::-webkit-scrollbar-thumb:hover {
+        background-color: rgba(128, 128, 128, 0.7);
+        /* Gris más sólido al interactuar */
+    }
+}
