@@ -159,11 +159,12 @@ function AboutInfoPanel({ file }) {
                 </div>
               );
             } else {
+              const isIcon = previewUrl.includes("flaticon.com") || previewUrl.includes("icons8.com") || previewUrl.includes("icon");
               return (
                 <img
                   src={previewUrl}
                   alt={`Vista previa de ${currentContribution?.name || file.name}`}
-                  className={styles.previewImage}
+                  className={`${styles.previewImage} ${isIcon ? styles.previewIcon : ''}`}
                 />
               );
             }
