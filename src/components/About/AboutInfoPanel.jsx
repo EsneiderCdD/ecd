@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from "react";
-import styles from "./About.module.css";
+import styles from "./AboutInfoPanel.module.css";
 import { ExternalLink, ChevronLeft, ChevronRight } from "lucide-react";
 import { useAchievements } from "@/context/AchievementsContext";
 
@@ -145,7 +145,7 @@ function AboutInfoPanel({ file }) {
                         try {
                           const videoId = `${file.name}||${previewUrl}`;
                           trackVideoView(videoId);
-                        } catch (e) {}
+                        } catch (e) { }
                         setVideoOverlayActive(false);
                       }}
                       style={{
@@ -219,7 +219,7 @@ function AboutInfoPanel({ file }) {
                   onClick={() => {
                     if (file.type === 'PDF' || file.type === 'Word') {
                       const fileId = `${file.name}||${file.date}||${index}`;
-                      try { trackPdfDownload(fileId); } catch (e) {}
+                      try { trackPdfDownload(fileId); } catch (e) { }
                     }
                   }}
                 >
