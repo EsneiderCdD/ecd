@@ -174,3 +174,25 @@
 .details h3 {
     margin-bottom: 10px;
 }
+
+/* --- RESPONSIVE < 1000px --- */
+@media (max-width: 1000px) {
+    .infoPanel {
+        width: 100% !important;
+        /* Override JS inline styles */
+        height: auto;
+        /* Dejar que crezca con el contenido */
+        border-left: none;
+        /* Eliminar borde izquierdo que divide */
+        border-top: 1px solid var(--border-color);
+        /* Agregar divisor superior */
+        padding: 20px;
+        position: static;
+        /* Resetear posición si es necesario */
+    }
+
+    .resizer {
+        display: none;
+        /* Deshabilitar resizing en layout vertical */
+    }
+}
