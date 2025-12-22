@@ -80,7 +80,7 @@
   .dropdownMenu {
     width: 220px;
     top: calc(115%);
-    left: -110px;
+    left: -168px;
   }
 }
 
@@ -101,7 +101,7 @@
   .dropdownMenu {
     width: 220px;
     top: calc(115%);
-    left: -110px;
+    left: -168px;
     background: var(--bg-primary);
     border: 1px solid var(--border-color);
     border-radius: 4px;
@@ -139,9 +139,9 @@
   }
 
   .dropdownMenu {
-    width: 200px;
-    top: calc(110%);
-    left: -110px;
+    width: 175px;
+    top: calc(125%);
+    left: -130px;
     background: var(--bg-primary);
     border: 1px solid var(--border-color);
     border-radius: 4px;
