@@ -1,12 +1,6 @@
 // src/components/About/Dropdown/Dropdown.jsx
 import { useState, useEffect, useRef } from "react";
 import {
-  ChevronDown,
-  Users,
-  Briefcase,
-  FileText,
-  MessageSquare,
-  FolderPlus,
   Handshake,
 } from "lucide-react";
 import styles from "./Dropdown.module.css";
@@ -67,10 +61,10 @@ function Dropdown() {
 
             <div
               className={styles.dropdownItem}
-              onClick={() => handleOptionClick("Nueva propuesta")}
+              onClick={() => handleOptionClick("Hacer una Propuesta")}
             >
               <Handshake className={styles.itemIcon} />
-              Nueva propuesta
+              Hacer una Propuesta
             </div>
 
           </div>
