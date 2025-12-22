@@ -84,124 +84,126 @@ function ContactModal({ isOpen, onClose, subject }) {
   return (
     <div className={styles.overlay} onClick={onClose}>
       <div className={styles.modal} onClick={(e) => e.stopPropagation()}>
-        {/* Header estilo Windows */}
-        <div className={styles.header}>
-          <div className={styles.headerTitle}>
-            <span className={styles.icon}>✉️</span>
-            <span>{subject}</span>
-          </div>
-          <button className={styles.closeButton} onClick={onClose}>
-            <X size={16} />
-          </button>
-        </div>
-
-        {/* Body del modal */}
+        {/* Body del modal - Diseño inspirado en formulario moderno */}
         <form className={styles.body} onSubmit={handleSubmit}>
-          <div className={styles.formGroup}>
-            <h4>¿Como te llamas? *</h4>
-            <label htmlFor="name"></label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
-              required
-              placeholder="Tu nombre"
-            />
-          </div>
-
-          <div className={styles.formGroup}>
-            <h4>¿Donde te puedo responder? minimo una opcion.</h4>
-            <p style={{ fontSize: "12px", color: "var(--text-muted)", margin: "6px 0 10px" }}>
-              Puedes dejar tu correo, teléfono o una red social. Con una opción es suficiente.
-            </p>
-        
-            <label htmlFor="email">Correo Electrónico</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-              placeholder="tu@email.com (opcional)"
-            />
-          </div>
-
-          <div className={styles.formRow}>
-            <div className={styles.formGroup}>
-              <label htmlFor="phone">Teléfono</label>
-              <input
-                type="tel"
-                id="phone"
-                name="phone"
-                value={formData.phone}
-                onChange={handleChange}
-                placeholder="+57 300 123 4567"
-              />
+          <div className={styles.card}>
+            <div className={styles.cardHeader}>
+              <h2 className={styles.title}>{subject}</h2>
+              <button className={styles.closeButton} onClick={onClose} type="button">
+                <X size={16} />
+              </button>
             </div>
 
-            <div className={styles.formGroup}>
-              <label htmlFor="website">Sitio Web / Red Social</label>
+            {/* Campo Nombre */}
+            <div className={styles.inputBox}>
               <input
                 type="text"
-                id="website"
-                name="website"
-                value={formData.website}
-              onChange={handleChange}
-              placeholder="linkedin.com/in/tuperfil"
-            />
-          </div>
-          </div>
-
-          {contactError && (
-            <div className={styles.errorMessage} style={{ marginTop: 6 }}>
-              ✗ Por favor, indica al menos un método de contacto (email, teléfono o red social).
+                id="name"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                required
+                className={formData.name ? styles.filled : ""}
+              />
+              <span className={styles.label}>¿Como te llamas?</span>
             </div>
-          )}
 
-          <div className={styles.formGroup}>
-            <h4>Mensaje *</h4>
-            <label htmlFor="message"></label>
-            <textarea
-              id="message"
-              name="message"
-              value={formData.message}
-              onChange={handleChange}
-              required
-              rows="6"
-              placeholder="Cuéntame sobre tu proyecto o propuesta..."
-            />
-          </div>
+            {/* Sección de Contacto */}
+            <div className={styles.contactSection}>
+              <p className={styles.contactHint}>¿Donde te puedo responder? (Mínimo una opción)</p>
 
-          {submitStatus === "success" && (
-            <div className={styles.successMessage}>
-              ✓ Mensaje enviado correctamente
+              {/* Email */}
+              <div className={styles.inputBox}>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  className={formData.email ? styles.filled : ""}
+                />
+                <span className={styles.label}>Correo Electrónico</span>
+              </div>
+
+              {/* Teléfono y Website en grid */}
+              <div className={styles.gridInputs}>
+                <div className={styles.inputBox}>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    value={formData.phone}
+                    onChange={handleChange}
+                    className={formData.phone ? styles.filled : ""}
+                  />
+                  <span className={styles.label}>Teléfono</span>
+                </div>
+
+                <div className={styles.inputBox}>
+                  <input
+                    type="text"
+                    id="website"
+                    name="website"
+                    value={formData.website}
+                    onChange={handleChange}
+                    className={formData.website ? styles.filled : ""}
+                  />
+                  <span className={styles.label}>Red Social / Web</span>
+                </div>
+              </div>
+
+              {contactError && (
+                <div className={styles.errorMessage}>
+                  ✗ Por favor, indica al menos un método de contacto.
+                </div>
+              )}
             </div>
-          )}
 
-          {submitStatus === "error" && (
-            <div className={styles.errorMessage}>
-              ✗ Error al enviar. Intenta nuevamente
+            {/* Campo Mensaje */}
+            <div className={styles.inputBox}>
+              <textarea
+                id="message"
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
+                required
+                rows="4"
+                className={formData.message ? styles.filled : ""}
+              />
+              <span className={styles.label}>Tu mensaje</span>
             </div>
-          )}
 
-          <div className={styles.footer}>
-            <button
-              type="button"
-              className={styles.cancelButton}
-              onClick={onClose}
-              disabled={isSubmitting}
-            >
-              Cancelar
-            </button>
-            <button
-              type="submit"
-              className={styles.sendButton}
-              disabled={isSubmitting}
-            >
-              {isSubmitting ? "Enviando..." : "Enviar"}
-            </button>
+            {/* Mensajes de estado */}
+            {submitStatus === "success" && (
+              <div className={styles.successMessage}>
+                ✓ Mensaje enviado correctamente
+              </div>
+            )}
+
+            {submitStatus === "error" && (
+              <div className={styles.errorMessage}>
+                ✗ Error al enviar. Intenta nuevamente
+              </div>
+            )}
+
+            {/* Botones */}
+            <div className={styles.buttonsContainer}>
+              <button
+                type="button"
+                className={styles.cancelBtn}
+                onClick={onClose}
+                disabled={isSubmitting}
+              >
+                Cancelar
+              </button>
+              <button
+                type="submit"
+                className={styles.submitBtn}
+                disabled={isSubmitting}
+              >
+                {isSubmitting ? "Enviando..." : "Enviar"}
+              </button>
+            </div>
           </div>
         </form>
       </div>

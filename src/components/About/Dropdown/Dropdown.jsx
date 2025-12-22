@@ -66,10 +66,10 @@ function Dropdown() {
           <div className={styles.dropdownMenu}>
             <div
               className={styles.dropdownItem}
-              onClick={() => handleOptionClick("Nueva invitación a colaborar")}
+              onClick={() => handleOptionClick("Invitar a colaborar")}
             >
               <Users className={styles.itemIcon} />
-              Nueva invitación a colaborar
+              Invitar a colaborar
             </div>
             <div
               className={styles.dropdownItem}

@@ -24,9 +24,10 @@
 }
 
 .modal {
+  border: #e81123 1px solid;
   background: var(--bg-primary);
   color: var(--text-primary);
-  width: 90%;
+ 
   max-width: 560px;
   border: 1px solid var(--border-color);
   border-radius: 12px;
@@ -46,27 +47,47 @@
   }
 }
 
-.header {
-  background: linear-gradient(to bottom, var(--bg-header), var(--bg-secondary));
-  color: var(--text-primary);
-  padding: 10px 14px;
+/* Body */
+.body {
+  padding: 20px;
+  background: var(--bg-panel);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+}
+
+/* Card Principal - Diseño moderno inspirado en UIverse */
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 420px;
+}
+
+/* Header del Card - Título + Botón Cerrar */
+.cardHeader {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid var(--border-header);
+  width: 100%;
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--text-primary);
 }
 
-.headerTitle {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 14px;
-  font-weight: 600;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.icon {
-  font-size: 18px;
+.title {
+  color: var(--text-primary);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: block;
+  font-weight: bold;
+  font-size: 1.4em;
+  margin: 0;
+  text-align: left;
+  flex: 1;
 }
 
 .closeButton {
@@ -74,146 +95,209 @@
   border: none;
   color: var(--text-primary);
   width: 32px;
-  height: 28px;
+  height: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   border-radius: 6px;
-  transition: background-color 0.15s ease;
+  transition: all 0.3s ease;
+  padding: 0;
+  flex-shrink: 0;
 }
 
 .closeButton:hover {
-  background: #e81123;
-  color: #ffffff;
+  background: rgba(255, 0, 0, 0.2);
+  color: #ef4444;
+  transform: scale(1.1);
 }
 
-/* Body */
-.body {
-  padding: 20px;
-  background: var(--bg-panel);
-}
-
-.formGroup {
-  margin-bottom: 16px;
-}
-
-.formGroup label {
-  display: block;
-  font-size: 13px;
-  font-weight: 500;
-  margin-bottom: 6px;
-  color: var(--text-secondary);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.formGroup input,
-.formGroup textarea {
+/* Input Box - Estilo moderno con label animado */
+.inputBox {
+  position: relative;
   width: 100%;
-  padding: 10px 12px;
-  border: 1px solid var(--border-color);
-  font-size: 13px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: var(--bg-primary);
-  color: var(--text-primary);
-  border-radius: 8px;
-  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.06);
-  transition: border-color 0.2s, box-shadow 0.2s, background-color 0.2s;
 }
 
-.formGroup input:focus,
-.formGroup textarea:focus {
+.inputBox input,
+.inputBox textarea {
+  width: 100%;
+  padding: 12px 10px;
   outline: none;
-  border-color: #0a84ff;
-  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.08), 0 0 0 2px rgba(10, 132, 255, 0.35);
+  border: none;
+  color: var(--text-primary);
+  font-size: 1em;
+  background: transparent;
+  border-left: 2px solid var(--text-primary);
+  border-bottom: 2px solid var(--text-primary);
+  transition: all 0.3s ease;
+  border-bottom-left-radius: 6px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.formGroup textarea {
+.inputBox textarea {
   resize: vertical;
-  min-height: 110px;
+  min-height: 100px;
+  border-left: 2px solid var(--text-primary);
+  border-bottom: 2px solid var(--text-primary);
+  border-bottom-left-radius: 6px;
 }
 
-.formRow {
+/* Label animado */
+.inputBox span {
+  margin-top: 5px;
+  position: absolute;
+  left: 0;
+  transform: translateY(-4px);
+  margin-left: 10px;
+  padding: 8px 10px;
+  pointer-events: none;
+  font-size: 11px;
+  color: var(--text-primary);
+  text-transform: uppercase;
+  transition: all 0.5s ease;
+  letter-spacing: 2px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+/* Animación del label cuando el input está enfocado o tiene valor */
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span,
+.inputBox input.filled ~ span,
+.inputBox textarea:valid ~ span,
+.inputBox textarea:focus ~ span,
+.inputBox textarea.filled ~ span {
+  transform: translateX(95px) translateY(-20px);
+  font-size: 0.75em;
+  padding: 6px 8px;
+  background: var(--text-primary);
+  letter-spacing: 0.1em;
+  color: var(--bg-primary);
+  border: none;
+}
+
+/* Estilos cuando el input está enfocado */
+.inputBox input:valid,
+.inputBox input:focus,
+.inputBox textarea:valid,
+.inputBox textarea:focus {
+  border-left: 2px solid var(--text-primary);
+  border-bottom: 2px solid var(--text-primary);
+  border-bottom-left-radius: 6px;
+  box-shadow: inset 0 0 8px rgba(10, 132, 255, 0.1);
+}
+
+/* Sección de contacto */
+.contactSection {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contactHint {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+/* Grid para teléfono y website */
+.gridInputs {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 12px;
+  gap: 16px;
+  width: 100%;
+}
+
+.gridInputs .inputBox {
+  width: 100%;
 }
 
 /* Mensajes de estado */
 .successMessage,
 .errorMessage {
-  padding: 10px;
-  margin-bottom: 16px;
-  border-radius: 8px;
+  padding: 12px;
+  border-radius: 6px;
   font-size: 13px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  border: 1px solid var(--border-light);
+  border-left: 4px solid;
+  width: 100%;
+  text-align: center;
+  animation: slideIn 0.3s ease;
 }
 
 .successMessage {
-  background: #dff6dd;
-  color: #0f5132;
+  background: rgba(34, 197, 94, 0.1);
+  color: #22c55e;
+  border-left-color: #22c55e;
 }
 
 .errorMessage {
-  background: #f8d7da;
-  color: #842029;
+  background: rgba(239, 68, 68, 0.1);
+  color: #ef4444;
+  border-left-color: #ef4444;
 }
 
-/* Footer con botones */
-.footer {
+/* Contenedor de botones */
+.buttonsContainer {
   display: flex;
-  justify-content: flex-end;
-  gap: 8px;
-  margin-top: 20px;
+  gap: 12px;
+  justify-content: center;
+  width: 100%;
+  margin-top: 10px;
 }
 
-.cancelButton,
-.sendButton {
-  padding: 10px 20px;
-  font-size: 13px;
-  font-weight: 600;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  border: 1px solid var(--border-color);
+/* Botones */
+.cancelBtn,
+.submitBtn {
+  height: 45px;
+  padding: 0 25px;
+  border-radius: 6px;
+  border: 2px solid var(--text-primary);
   cursor: pointer;
-  transition: background-color 0.15s ease, box-shadow 0.15s ease, transform 0.08s ease;
-  min-width: 100px;
-  border-radius: 8px;
-}
-
-.cancelButton {
-  background: var(--bg-secondary);
+  background-color: transparent;
+  transition: all 0.4s ease;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: var(--text-primary);
 }
 
-.cancelButton:hover:not(:disabled) {
-  background: var(--hover-bg);
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+.cancelBtn:hover:not(:disabled) {
+  background-color: transparent;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-.cancelButton:active:not(:disabled) {
-  transform: translateY(1px);
+.cancelBtn:active:not(:disabled) {
+  transform: translateY(0);
 }
 
-.sendButton {
-  background: #0a84ff;
-  color: #ffffff;
-  border-color: #075ecb;
+.submitBtn {
+  background-color: var(--text-primary);
+  color: var(--bg-primary);
+  border-color: var(--text-primary);
 }
 
-.sendButton:hover:not(:disabled) {
-  background: #0a76e5;
-  box-shadow: 0 4px 10px rgba(10, 118, 229, 0.35);
+.submitBtn:hover:not(:disabled) {
+  background-color: var(--text-primary);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+  filter: brightness(0.9);
 }
 
-.sendButton:active:not(:disabled) {
-  background: #085db6;
-  transform: translateY(1px);
+.submitBtn:active:not(:disabled) {
+  transform: translateY(0);
 }
 
-.sendButton:disabled,
-.cancelButton:disabled {
-  opacity: 0.6;
+.cancelBtn:disabled,
+.submitBtn:disabled {
+  opacity: 0.5;
   cursor: not-allowed;
 }
 
@@ -225,11 +309,19 @@
     overflow-y: auto;
   }
 
-  .formRow {
+  .gridInputs {
     grid-template-columns: 1fr;
   }
 
   .body {
     padding: 16px;
+  }
+
+  .card {
+    gap: 16px;
+  }
+
+  .title {
+    font-size: 1.1em;
   }
 }
