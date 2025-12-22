@@ -7,6 +7,7 @@ import styles from "./ContactModal.module.css";
 function ContactModal({ isOpen, onClose, subject }) {
   const [formData, setFormData] = useState({
     name: "",
+    proposalType: "labor",
     contactType: "email",
     contactValue: "",
     message: "",
@@ -40,10 +41,11 @@ function ContactModal({ isOpen, onClose, subject }) {
 
       const templateParams = {
         from_name: formData.name,
+        proposal_type: formData.proposalType,
         contact_type: formData.contactType,
         contact_value: formData.contactValue,
+        message: `${formData.message}\n\n---\nTipo de contacto: ${formData.contactType}\nDato de contacto: ${formData.contactValue}`,
         subject,
-        message: formData.message,
       };
 
       await emailjs.send(
@@ -58,6 +60,7 @@ function ContactModal({ isOpen, onClose, subject }) {
         onClose();
         setFormData({
           name: "",
+          proposalType: "labor",
           contactType: "email",
           contactValue: "",
           message: "",
@@ -103,7 +106,56 @@ function ContactModal({ isOpen, onClose, subject }) {
 
             <div className={styles.contactSection}>
               <p className={styles.contactHint}>
-                ¿Dónde te puedo responder? (Elegí una opción)
+                Selecciona un tipo de propuesta:
+              </p>
+
+              <div className={styles.contactSelector}>
+                <button
+                  type="button"
+                  className={`${styles.selectorBtn} ${formData.proposalType === "labor" ? styles.active : ""
+                    }`}
+                  onClick={() =>
+                    setFormData({ ...formData, proposalType: "labor" })
+                  }
+                >
+                  Oferta Laboral
+                </button>
+                <button
+                  type="button"
+                  className={`${styles.selectorBtn} ${formData.proposalType === "freelance" ? styles.active : ""
+                    }`}
+                  onClick={() =>
+                    setFormData({ ...formData, proposalType: "freelance" })
+                  }
+                >
+                  Proyecto Freelance
+                </button>
+                <button
+                  type="button"
+                  className={`${styles.selectorBtn} ${formData.proposalType === "colaborativo" ? styles.active : ""
+                    }`}
+                  onClick={() =>
+                    setFormData({ ...formData, proposalType: "colaborativo" })
+                  }
+                >
+                  Proyecto Colaborativo
+                </button>
+                <button
+                  type="button"
+                  className={`${styles.selectorBtn} ${formData.proposalType === "otro" ? styles.active : ""
+                    }`}
+                  onClick={() =>
+                    setFormData({ ...formData, proposalType: "otro" })
+                  }
+                >
+                  Otro
+                </button>
+              </div>
+            </div>
+
+            <div className={styles.contactSection}>
+              <p className={styles.contactHint}>
+                ¿Dónde te puedo responder?
               </p>
 
               <div className={styles.contactSelector}>
