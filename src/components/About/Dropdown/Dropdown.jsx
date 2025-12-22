@@ -54,9 +54,9 @@ function Dropdown() {
           className={styles.dropdownToggle}
           onClick={() => setIsOpen(!isOpen)}
         >
-          <img 
-            src="https://cdn-icons-png.flaticon.com/128/924/924915.png" 
-            alt="Nuevo" 
+          <img
+            src="https://cdn-icons-png.flaticon.com/128/924/924915.png"
+            alt="Nuevo"
             className={styles.addIcon}
           />
         </div>
@@ -64,34 +64,7 @@ function Dropdown() {
         {/* Menú desplegable */}
         {isOpen && (
           <div className={styles.dropdownMenu}>
-            <div
-              className={styles.dropdownItem}
-              onClick={() => handleOptionClick("Invitar a colaborar")}
-            >
-              <Users className={styles.itemIcon} />
-              Invitar a colaborar
-            </div>
-            <div
-              className={styles.dropdownItem}
-              onClick={() => handleOptionClick("Nueva propuesta freelance")}
-            >
-              <Briefcase className={styles.itemIcon} />
-              Nueva propuesta freelance
-            </div>
-            <div
-              className={styles.dropdownItem}
-              onClick={() => handleOptionClick("Nueva oferta laboral")}
-            >
-              <FileText className={styles.itemIcon} />
-              Nueva oferta laboral
-            </div>
-            <div
-              className={styles.dropdownItem}
-              onClick={() => handleOptionClick("Nuevo proyecto")}
-            >
-              <FolderPlus className={styles.itemIcon} />
-              Nuevo proyecto
-            </div>
+
             <div
               className={styles.dropdownItem}
               onClick={() => handleOptionClick("Nueva propuesta")}
@@ -99,13 +72,7 @@ function Dropdown() {
               <Handshake className={styles.itemIcon} />
               Nueva propuesta
             </div>
-            <div
-              className={styles.dropdownItem}
-              onClick={() => handleOptionClick("Nueva conversación")}
-            >
-              <MessageSquare className={styles.itemIcon} />
-              Nueva conversación / amigo :D
-            </div>
+
           </div>
         )}
       </div>
