@@ -1,4 +1,3 @@
-// src/components/ContactModal/ContactModal.jsx
 import { useState } from "react";
 import { X } from "lucide-react";
 import emailjs from "@emailjs/browser";
@@ -109,7 +108,7 @@ function ContactModal({ isOpen, onClose, subject }) {
                 Selecciona un tipo de propuesta:
               </p>
 
-              <div className={styles.contactSelector}>
+              <div className={`${styles.contactSelector} ${styles.proposalGrid}`}>
                 <button
                   type="button"
                   className={`${styles.selectorBtn} ${formData.proposalType === "labor" ? styles.active : ""
