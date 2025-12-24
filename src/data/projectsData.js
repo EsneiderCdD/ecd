@@ -746,7 +746,7 @@ export const projectDetailFiles = {
             size: "Actualizado",
             description: "Ficha técnica general del proyecto en formato Word, con especificaciones, contexto y estructura conceptual.",
             previewUrl: "https://cdn-icons-png.flaticon.com/512/337/337946.png",
-            linkUrl: "https://drive.google.com/file/d/1irWzIxWnIleUzoG-kna6fYNxj4xeIZRm/view?usp=drive_link",
+            linkUrl: "https://drive.google.com/file/d/1JHFImbpIbGpLePg7q3u_gDrvDs6EZ_c8/view?usp=drive_link",
         },
 
 
