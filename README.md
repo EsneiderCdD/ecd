@@ -209,5 +209,3 @@ Este proyecto es de uso personal. Todos los derechos reservados.
 - LinkedIn: [esneidercdd](https://www.linkedin.com/in/esneidercdd/)
 
 ---
-
-⭐ Si te gusta este proyecto, no olvides darle una estrella!

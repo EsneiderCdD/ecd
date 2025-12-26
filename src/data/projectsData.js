@@ -102,7 +102,7 @@ export const projectsList = [
     {
         icon: "📁",
         name: "TrainIT",
-        type: "Proyecto Colaborativo",
+        type: "Simulación Laboral",
         date: "15/10/2025",
         size: "Completado",
         path: "/projects/trainittrello",
@@ -705,6 +705,7 @@ export const projectDetailFiles = {
             linkUrl: null,
         },
 
+
         {
             icon: "🐙",
             name: "Repositorio",
@@ -840,9 +841,9 @@ export const projectDetailFiles = {
             type: "PDF",
             date: "25/03/2025",
             size: "Actualizado",
-            description: "Instrumento técnico descargable en Word con los ítems y dimensiones de observación aplicados a la evaluación conductual de perros.",
+            description: "EN DESARROLLO - Instrumento técnico con los ítems y dimensiones de observación aplicados a la evaluación conductual de perros.",
             previewUrl: "https://cdn-icons-png.flaticon.com/512/337/337946.png",
-            linkUrl: "https://drive.google.com/file/d/1SjIptkuFicurXkyi-Gd2TGAavWwOQeGe/view?usp=drive_link",
+          
         },
 
         {
@@ -851,9 +852,9 @@ export const projectDetailFiles = {
             type: "PDF",
             date: "25/03/2025",
             size: "Actualizado",
-            description: "Documento técnico con la estructura matemática del modelo de compatibilidad y su interpretación.",
+            description: "EN DESARROLLO - Documento técnico con la estructura matemática del modelo de compatibilidad y su interpretación.",
             previewUrl: "https://cdn-icons-png.flaticon.com/512/337/337946.png",
-            linkUrl: "https://drive.google.com/file/d/10qjSpFW7ZPsG5o142omG3MbcDLsSmBqJ/view?usp=drive_link",
+           
         },
 
         {
@@ -867,6 +868,18 @@ export const projectDetailFiles = {
                 "Se está evaluando la evolución del modelo actual —más estático y manual— hacia un enfoque adaptable apoyado en teorías matemáticas como grafos o integraciones ligeras con IA, manteniendo el propósito social y científico de la plataforma."
             ],
             previewUrl: null,
+            downloadUrl: null,
+            linkUrl: null,
+        },
+        {
+            icon: "🎥",
+            name: "Video",
+            type: "YouTube",
+            date: "01/06/2025",
+            size: "Actualizado",
+            description: "Recorre el proyecto con un video en YouTube.",
+            previewUrl: "https://www.youtube.com/watch?v=EuduHNDPPdE",
+            iconUrl: "https://cdn-icons-png.flaticon.com/512/1384/1384060.png",
             downloadUrl: null,
             linkUrl: null,
         },
