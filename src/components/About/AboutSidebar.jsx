@@ -95,22 +95,7 @@ function AboutSidebar() {
 
       {/* Sección de logros (separada) */}
       <div className={styles.achievementsSection}>
-        <NavLink
-          to="/achievements"
-          className={({ isActive }) =>
-            isActive ? `${styles.link} ${styles.active}` : styles.link
-          }
-        >
-          <div className={styles.iconsidebarContainer}>
-            <img
-              src="https://cdn-icons-png.flaticon.com/512/1041/1041935.png"
-              alt="Logros"
-              title="Logros"
-              className={styles.iconsidebar}
-            />
-            <p className="text-navigation">Logros</p>
-          </div>
-        </NavLink>
+       
 
         <NavLink
           to="/notifications"

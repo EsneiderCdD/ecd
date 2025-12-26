@@ -5,7 +5,7 @@ import About from "../pages/About/About";
 import DesktopFolder from "../pages/DesktopFolder/DesktopFolder";
 import Projects from "../pages/Projects/Projects.jsx";
 import ProjectDetail from "../pages/ProjectDetail/ProjectDetail.jsx";
-import Achievements from "../pages/Achievements/Achievements.jsx";
+
 import Notifications from "../pages/Notifications/Notifications.jsx";
 
 function AppRouter() {
@@ -16,7 +16,7 @@ function AppRouter() {
       <Route path="/about" element={<About />} />
       <Route path="/projects" element={<Projects />} />
       <Route path="/projects/:projectId" element={<ProjectDetail />} />
-      <Route path="/achievements" element={<Achievements />} />
+    
       <Route path="/notifications" element={<Notifications />} />
     </Routes>
   );
