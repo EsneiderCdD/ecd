@@ -1,29 +1,31 @@
-// src/data/achievementsData.js
 
-/**
- * Sistema de logros del portafolio
- * Estructura escalable para agregar nuevos logros fácilmente
- */
+import stiker1 from '@/assets/stiker/stiker1.png';
+import stiker2 from '@/assets/stiker/stiker2.png';
+import stiker3 from '@/assets/stiker/stiker3.png';
+import stiker4 from '@/assets/stiker/stiker4.png';
+import stiker5 from '@/assets/stiker/stiker5.png';
+import stiker6 from '@/assets/stiker/stiker6.png';
+import stiker7 from '@/assets/stiker/stiker7.png';
+import stiker8 from '@/assets/stiker/stiker8.png';
+import stiker9 from '@/assets/stiker/stiker9.png';
 
 export const achievementsConfig = {
   explorer: {
     id: 'explorer',
-    title: 'Explorador',
+    title: 'Turista Digital',
     description: 'Abriste tu primer proyecto',
-    icon: 'https://cdn-icons-png.flaticon.com/512/3135/3135715.png',
+    icon: stiker1,
     category: 'projects',
     condition: (state) => state.projectsOpened >= 1,
     rarity: 'common',
     points: 10
   },
 
-  // Ejemplos de logros futuros (comentados para no implementar aún)
-
   snooper: {
     id: 'snooper',
-    title: 'Husmeador',
+    title: 'Cazador de Proyectos',
     description: 'Abriste 3 proyectos diferentes',
-    icon: 'https://cdn-icons-png.flaticon.com/512/2919/2919600.png',
+    icon: stiker2,
     category: 'projects',
     condition: (state) => state.projectsOpened >= 3,
     rarity: 'rare',
@@ -32,9 +34,9 @@ export const achievementsConfig = {
 
   interested: {
     id: 'interested',
-    title: 'Interesado',
-    description: 'Abriste 5 proyectos',
-    icon: 'https://cdn-icons-png.flaticon.com/512/2919/2919622.png',
+    title: 'Cartógrafo del Portafolio',
+    description: 'Abriste 5 proyectos diferentes',
+    icon: stiker3,
     category: 'projects',
     condition: (state) => state.projectsOpened >= 5,
     rarity: 'legendary',
@@ -43,9 +45,9 @@ export const achievementsConfig = {
 
   reader: {
     id: 'reader',
-    title: 'Lector',
+    title: 'Ex-Analfabeta',
     description: 'Revisaste tu primer documento técnico',
-    icon: 'https://cdn-icons-png.flaticon.com/512/3143/3143615.png',
+    icon: stiker4,
     category: 'files',
     condition: (state) => state.pdfsDownloaded >= 1,
     rarity: 'common',
@@ -54,33 +56,20 @@ export const achievementsConfig = {
 
   scientist: {
     id: 'scientist',
-    title: 'Científico',
-    description: 'Revisaste 3 fichas técnicas',
-    icon: 'https://cdn-icons-png.flaticon.com/512/...',
+    title: 'Bibliotecario Digital',
+    description: 'Revisaste 3 fichas técnicas diferentes',
+    icon: stiker5,
     category: 'files',
     condition: (state) => state.pdfsDownloaded >= 3,
     rarity: 'rare',
     points: 40
   },
 
-  collaborator: {
-    id: 'collaborator',
-    title: 'Colaborador',
-    description: 'Enviaste una invitación a colaborar',
-    icon: 'https://cdn-icons-png.flaticon.com/512/...',
-    category: 'interaction',
-    condition: (state) => state.collaborationInvites >= 1,
-    rarity: 'rare',
-    points: 100
-  }
-
-  ,
-  // Logro por revisar 5 documentos técnicos
   bibliotecario: {
     id: 'bibliotecario',
-    title: 'Bibliotecario',
+    title: 'PDF-ílo',
     description: 'Revisaste 5 documentos técnicos',
-    icon: 'https://cdn-icons-png.flaticon.com/512/1087/1087815.png',
+    icon: stiker6,
     category: 'files',
     condition: (state) => (state.pdfsDownloaded || 0) >= 5,
     rarity: 'legendary',
@@ -92,7 +81,7 @@ export const achievementsConfig = {
     id: 'cineasta',
     title: 'Cineasta',
     description: 'Viste tu primer video del portafolio',
-    icon: 'https://cdn-icons-png.flaticon.com/512/1384/1384060.png',
+    icon: stiker7,
     category: 'media',
     condition: (state) => (state.videosWatched || 0) >= 1,
     rarity: 'common',
@@ -101,9 +90,9 @@ export const achievementsConfig = {
 
   director: {
     id: 'director',
-    title: 'Director',
+    title: 'Trilogía del Play',
     description: 'Viste 3 videos del portafolio',
-    icon: 'https://cdn-icons-png.flaticon.com/512/3523/3523063.png',
+    icon: stiker8,
     category: 'media',
     condition: (state) => (state.videosWatched || 0) >= 3,
     rarity: 'rare',
@@ -112,18 +101,16 @@ export const achievementsConfig = {
 
   cineastaMaestro: {
     id: 'cineastaMaestro',
-    title: 'Cineasta Maestro',
+    title: 'Maratón Youtubero',
     description: 'Viste 5 videos del portafolio',
-    icon: 'https://cdn-icons-png.flaticon.com/512/616/616408.png',
+    icon: stiker9,
     category: 'media',
     condition: (state) => (state.videosWatched || 0) >= 5,
     rarity: 'legendary',
     points: 90
   }
-
 };
 
-// Categorías de logros para organización futura
 export const achievementCategories = {
   projects: {
     name: 'Exploración',
@@ -139,7 +126,6 @@ export const achievementCategories = {
   }
 };
 
-// Colores según rareza
 export const rarityColors = {
   common: {
     border: '#3498db',

@@ -58,7 +58,10 @@ function AchievementNotification({ achievement, onDismiss, autoDismiss = true, c
 
         <div className={styles.textContent}>
           <div className={styles.header}>
-            <span className={styles.badge}>¡Logro Desbloqueado!</span>
+            <span
+              className={styles.badge}
+              style={{ background: rarityStyle.border, color: '#fff' }}
+            >¡Logro Desbloqueado!</span>
           </div>
           <h3 className={styles.title}>{achievement.title}</h3>
           <p className={styles.description}>{achievement.description}</p>

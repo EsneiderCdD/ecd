@@ -6,7 +6,7 @@ export const useAchievementSound = () => {
   const playSound = useCallback(() => {
     try {
       const audio = new Audio(notificationSuccessSound);
-      audio.volume = 0.5;
+      audio.volume = 0.1;
       audio.play().catch(err => {
         // Silencio si falla (navegador bloqueó autoplay, etc.)
         console.debug('Audio playback prevented:', err);
