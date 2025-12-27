@@ -1,6 +1,5 @@
 // src/components/Achievements/AchievementNotification.jsx
 import { useEffect, useState } from 'react';
-import { Trophy } from 'lucide-react';
 import styles from './AchievementNotification.module.css';
 import { rarityColors } from '@/data/achievementsData';
 import { useAchievementSound } from '@/hooks/useAchievementSound';
@@ -46,22 +45,6 @@ function AchievementNotification({ achievement, onDismiss, autoDismiss = true, c
       }}
     >
       <div className={styles.content}>
-        <div className={styles.iconContainer}>
-          <Trophy
-            className={styles.trophyIcon}
-            style={{ color: rarityStyle.border }}
-          />
-        </div>
-
-        <div className={styles.textContent}>
-          <div className={styles.header}>
-            <span className={styles.badge}>¡Logro Desbloqueado!</span>
-          </div>
-          <h3 className={styles.title}>{achievement.title}</h3>
-          <p className={styles.description}>{achievement.description}</p>
-          <div className={styles.points}>+{achievement.points} puntos</div>
-        </div>
-
         <div
           className={styles.achievementImage}
           style={{ background: rarityStyle.background }}
@@ -71,6 +54,14 @@ function AchievementNotification({ achievement, onDismiss, autoDismiss = true, c
             alt={achievement.title}
             className={styles.icon}
           />
+        </div>
+
+        <div className={styles.textContent}>
+          <div className={styles.header}>
+            <span className={styles.badge}>¡Logro Desbloqueado!</span>
+          </div>
+          <h3 className={styles.title}>{achievement.title}</h3>
+          <p className={styles.description}>{achievement.description}</p>
         </div>
       </div>
 

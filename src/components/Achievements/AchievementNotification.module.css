@@ -12,6 +12,7 @@
   background: var(--bg-primary);
   border: 2px solid;
   border-radius: 12px;
+  padding-bottom: 4px;
   
   overflow: hidden;
   cursor: pointer;
@@ -37,52 +38,21 @@
   position: relative;
 }
 
-.iconContainer {
+/* left-side image (circular) */
+.achievementImage {
   flex-shrink: 0;
   width: 50px;
   height: 50px;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--bg-secondary);
-  border-radius: 50%;
-  animation: pulse 2s ease-in-out infinite;
-}
-
-@keyframes pulse {
-  0%, 100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.05);
-  }
-}
-
-.trophyIcon {
-  width: 28px;
-  height: 28px;
-  animation: rotate 3s ease-in-out infinite;
-}
-
-@keyframes rotate {
-  0%, 100% {
-    transform: rotate(-5deg);
-  }
-  50% {
-    transform: rotate(5deg);
-  }
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
 }
 
 .textContent {
   flex: 1;
   min-width: 0;
-}
-
-.header {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-bottom: 4px;
 }
 
 .badge {
@@ -121,38 +91,20 @@
   border-radius: 4px;
 }
 
-.achievementImage {
-  flex-shrink: 0;
-  width: 70px;
-  height: 70px;
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  animation: float 3s ease-in-out infinite;
-}
-
-@keyframes float {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-5px);
-  }
-}
-
 .icon {
-  width: 45px;
-  height: 45px;
+  width: 34px;
+  height: 34px;
   object-fit: contain;
-  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.15));
 }
 
 .progressBar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
   height: 4px;
   background: var(--bg-secondary);
-  position: relative;
   overflow: hidden;
 }
 
