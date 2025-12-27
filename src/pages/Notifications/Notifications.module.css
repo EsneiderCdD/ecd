@@ -38,12 +38,12 @@
 }
 
 .staticNotification {
-    position: relative !important;
-    bottom: auto !important;
-    left: auto !important;
-    transform: none !important;
-    width: 100% !important;
-    max-width: 100% !important;
-    margin: 0 !important;
-    z-index: 1 !important;
+    position: relative;
+    bottom: auto;
+    left: auto;
+    transform: none;
+    width: auto;
+    max-width: 340px;
+    margin: 0 auto;
+    z-index: 1;
 }
