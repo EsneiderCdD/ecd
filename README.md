@@ -1,12 +1,12 @@
 # ECD - Portfolio Personal
 
-Un portfolio personal moderno construido con React y Vite, que simula una experiencia de escritorio interactiva con funcionalidades de drag & drop y un sistema completo de dark mode.
+Un portfolio personal moderno construido con React y Vite, que simula una experiencia de escritorio interactiva con un sistema completo de dark mode.
 
 ## 🚀 Características
 
 ### ✨ Funcionalidades Principales
 - **🏠 Página de Inicio**: Landing page con presentación personal
-- **📁 Explorador de Escritorio**: Simulación de un sistema de archivos con carpetas arrastrables
+- **📁 Explorador de Escritorio**: Simulación de un sistema de archivos con carpetas organizadas
 - **👤 Sección Acerca de**: Portfolio detallado con tabla de archivos y panel de información
 - **💼 Proyectos**: Galería de proyectos con detalles individuales
 - **🌙 Dark Mode**: Sistema completo de cambio de tema con persistencia
@@ -18,7 +18,6 @@ Un portfolio personal moderno construido con React y Vite, que simula una experi
 - **Tema Unificado**: Variables CSS personalizadas para fácil mantenimiento
 
 ### 🛠️ Funcionalidades Técnicas
-- **Drag & Drop**: Implementado con @dnd-kit para interactividad avanzada
 - **Enrutamiento**: React Router para navegación SPA
 - **Gestión de Estado**: Context API para el tema
 - **Formularios**: Integración con EmailJS para contacto
@@ -31,13 +30,6 @@ Un portfolio personal moderno construido con React y Vite, que simula una experi
 - **Vite 7.1.6** - Herramienta de construcción y desarrollo
 - **React Router DOM 7.9.1** - Enrutamiento
 - **Lucide React 0.544.0** - Iconografía
-
-### Interactividad
-- **@dnd-kit** - Sistema completo de drag & drop
-  - `@dnd-kit/core`
-  - `@dnd-kit/sortable`
-  - `@dnd-kit/modifiers`
-  - `@dnd-kit/utilities`
 
 ### Servicios
 - **EmailJS 4.4.1** - Envío de emails desde el frontend
@@ -60,8 +52,7 @@ src/
 │   ├── ContactModal/    # Modal para formulario de contacto
 │   ├── Desktop/         # Componentes del explorador de escritorio
 │   ├── DesktopFolder/   # Carpetas del escritorio
-│   ├── DraggableFolder/ # Carpetas arrastrables
-│   ├── DroppableCell/   # Celdas donde se pueden soltar carpetas
+│   ├── DraggableFolder/ # Carpetas del sistema
 │   ├── Folder/          # Componente base de carpeta
 │   ├── Achievements/    # Componentes de logros y notificaciones
 │   └── Projects/        # Componentes de proyectos

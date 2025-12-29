@@ -1,25 +1,4 @@
-// src/components/DroppableCell/DroppableCell.jsx
-import { useDroppable } from '@dnd-kit/core';
-import styles from './DroppableCell.module.css';
+// Este componente ya no se utiliza
+// Se ha removido la funcionalidad de drag & drop con DND-KIT
 
-function DroppableCell({ id, col, row, isOccupied }) {
-  const { isOver, setNodeRef } = useDroppable({
-    id: id,
-    disabled: isOccupied,
-  });
-
-  const cellStyle = {
-    gridColumn: col,
-    gridRow: row,
-  };
-
-  return (
-    <div
-      ref={setNodeRef}
-      style={cellStyle}
-      className={`${styles.cell} ${isOver && !isOccupied ? styles.cellOver : ''} ${isOccupied ? styles.cellOccupied : ''}`}
-    />
-  );
-}
-
-export default DroppableCell;
+export default null;
