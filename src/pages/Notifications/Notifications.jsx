@@ -1,4 +1,4 @@
-import { achievementsConfig } from '@/context/achievements/data/achievementsData';
+import { achievementsConfig } from '@/context/achievements/data/achievementsConfig';
 import AchievementNotification from '@/components/Achievements/AchievementNotification';
 import styles from './Notifications.module.css';
 

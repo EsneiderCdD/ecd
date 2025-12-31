@@ -1,4 +1,3 @@
-
 import stiker1 from '@/assets/stiker/stiker1.png';
 import stiker2 from '@/assets/stiker/stiker2.png';
 import stiker3 from '@/assets/stiker/stiker3.png';
@@ -107,38 +106,5 @@ export const achievementsConfig = {
 		condition: (state) => (state.videosWatched || 0) >= 5,
 		rarity: 'legendary',
 		points: 90
-	}
-};
-
-export const achievementCategories = {
-	projects: {
-		name: 'Exploración',
-		color: '#4ecdc4'
-	},
-	files: {
-		name: 'Investigación',
-		color: '#ffd700'
-	},
-	interaction: {
-		name: 'Colaboración',
-		color: '#ff6b6b'
-	}
-};
-
-export const rarityColors = {
-	common: {
-		border: '#3498db',
-		glow: 'rgba(52, 152, 219, 0.4)',
-		background: 'linear-gradient(135deg, #5dade2, #3498db)'
-	},
-	rare: {
-		border: '#9b59b6',
-		glow: 'rgba(155, 89, 182, 0.5)',
-		background: 'linear-gradient(135deg, #bb8fce, #9b59b6)'
-	},
-	legendary: {
-		border: '#f39c12',
-		glow: 'rgba(243, 156, 18, 0.6)',
-		background: 'linear-gradient(135deg, #f5b041, #f39c12)'
 	}
 };

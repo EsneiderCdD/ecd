@@ -1,6 +1,7 @@
 // src/components/Achievements/AchievementsGrid.jsx
 import { useAchievements } from '@/context/AchievementsContext';
-import { achievementsConfig, rarityColors } from '@/data/achievementsData';
+import { achievementsConfig } from '@/context/achievements/data/achievementsConfig';
+import { rarityColors } from '@/styles/rarityColors';
 import styles from './AchievementsGrid.module.css';
 
 function AchievementsGrid({ onAchievementSelect, selectedAchievement }) {

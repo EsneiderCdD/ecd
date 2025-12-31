@@ -1,5 +1,5 @@
 import { useState, useCallback, useRef } from 'react';
-import { achievementsConfig } from '../data/achievementsData';
+import { achievementsConfig } from '../data/achievementsConfig';
 import { checkNewlyUnlockedAchievements } from '../utils/achievementChecker';
 
 export function useAchievementsLogic() {
