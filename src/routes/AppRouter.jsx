@@ -1,8 +1,8 @@
 // src/routes/AppRouter.jsx (ACTUALIZADO)
 import { Routes, Route } from "react-router-dom";
-import Home from "../pages/Home/Home";
+// import Home from "../pages/Home/Home";
 import AboutMe from "../pages/AboutMe";
-import DesktopFolder from "../pages/DesktopFolder/DesktopFolder";
+import Home from "../pages/Home";
 import Projects from "../pages/Projects/Projects.jsx";
 import ProjectDetail from "../pages/ProjectDetail/ProjectDetail.jsx";
 
@@ -12,7 +12,6 @@ function AppRouter() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/desktop" element={<DesktopFolder />} />
       <Route path="/about" element={<AboutMe />} />
       <Route path="/projects" element={<Projects />} />
       <Route path="/projects/:projectId" element={<ProjectDetail />} />
