@@ -1,7 +1,7 @@
 // src/components/Achievements/AchievementsGrid.jsx
 import { useAchievements } from '@/context/AchievementsContext';
 import { achievementsConfig } from '@/context/achievements/data/achievementsConfig';
-import { rarityColors } from '@/styles/rarityColors';
+import { achievementsColors } from '@/styles/achievementsColors';
 import styles from './AchievementsGrid.module.css';
 
 function AchievementsGrid({ onAchievementSelect, selectedAchievement }) {
@@ -19,7 +19,7 @@ function AchievementsGrid({ onAchievementSelect, selectedAchievement }) {
         {Object.values(achievementsConfig).map((achievement) => {
           const isUnlocked = unlockedAchievements.includes(achievement.id);
           const isSelected = selectedAchievement?.id === achievement.id;
-          const rarityStyle = rarityColors[achievement.rarity];
+          const rarityStyle = achievementsColors[achievement.rarity];
 
           return (
             <div

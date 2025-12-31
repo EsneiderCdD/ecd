@@ -1,4 +1,4 @@
-export const rarityColors = {
+export const achievementsColors = {
 	common: {
 		border: '#3498db',
 		glow: 'rgba(52, 152, 219, 0.4)',

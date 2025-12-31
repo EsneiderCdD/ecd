@@ -1,7 +1,7 @@
 // src/components/Achievements/AchievementNotification.jsx
 import { useEffect, useState } from 'react';
 import styles from './AchievementNotification.module.css';
-import { rarityColors } from '@/styles/rarityColors';
+import { achievementsColors } from '@/styles/achievementsColors';
 import { useAchievementSound } from '@/hooks/useAchievementSound';
 
 function AchievementNotification({ achievement, onDismiss, autoDismiss = true, className = '', style = {} }) {
@@ -9,7 +9,7 @@ function AchievementNotification({ achievement, onDismiss, autoDismiss = true, c
   const [isLeaving, setIsLeaving] = useState(false);
   const { playSound } = useAchievementSound();
 
-  const rarityStyle = rarityColors[achievement.rarity] || rarityColors.common;
+  const rarityStyle = achievementsColors[achievement.rarity] || achievementsColors.common;
 
   useEffect(() => {
     // Reproducir sonido cuando aparece la notificación

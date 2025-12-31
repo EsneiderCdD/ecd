@@ -28,7 +28,7 @@ export function AchievementsProvider({ children }) {
         pendingNotifications,
         trackProjectVisit,
         trackPdfDownload,
-            trackVideoView,
+        trackVideoView,
         trackCollaborationInvite,
         dismissNotification,
         achievementsConfig
