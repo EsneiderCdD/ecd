@@ -14,10 +14,8 @@ export const achievementsConfig = {
 		title: 'Turista Digital',
 		description: 'Abriste tu primer proyecto',
 		icon: stiker1,
-		category: 'projects',
 		condition: (state) => state.projectsOpened >= 1,
-		rarity: 'common',
-		points: 10
+		rarity: 'common'
 	},
 
 	snooper: {
@@ -25,10 +23,8 @@ export const achievementsConfig = {
 		title: 'Cazador de Proyectos',
 		description: 'Abriste 3 proyectos diferentes',
 		icon: stiker2,
-		category: 'projects',
 		condition: (state) => state.projectsOpened >= 3,
-		rarity: 'rare',
-		points: 25
+		rarity: 'rare'
 	},
 
 	interested: {
@@ -36,10 +32,8 @@ export const achievementsConfig = {
 		title: 'Cartógrafo del Portafolio',
 		description: 'Abriste 5 proyectos diferentes',
 		icon: stiker3,
-		category: 'projects',
 		condition: (state) => state.projectsOpened >= 5,
-		rarity: 'legendary',
-		points: 50
+		rarity: 'legendary'
 	},
 
 	reader: {
@@ -47,10 +41,8 @@ export const achievementsConfig = {
 		title: 'Ex-Analfabeta',
 		description: 'Revisaste tu primer documento técnico',
 		icon: stiker4,
-		category: 'files',
 		condition: (state) => state.pdfsDownloaded >= 1,
-		rarity: 'common',
-		points: 15
+		rarity: 'common'
 	},
 
 	scientist: {
@@ -58,10 +50,8 @@ export const achievementsConfig = {
 		title: 'Bibliotecario Digital',
 		description: 'Revisaste 3 fichas técnicas diferentes',
 		icon: stiker5,
-		category: 'files',
 		condition: (state) => state.pdfsDownloaded >= 3,
-		rarity: 'rare',
-		points: 40
+		rarity: 'rare'
 	},
 
 	bibliotecario: {
@@ -69,10 +59,8 @@ export const achievementsConfig = {
 		title: 'PDF-ílo',
 		description: 'Revisaste 5 documentos técnicos',
 		icon: stiker6,
-		category: 'files',
 		condition: (state) => (state.pdfsDownloaded || 0) >= 5,
-		rarity: 'legendary',
-		points: 120
+		rarity: 'legendary'
 	},
 
 	cineasta: {
@@ -80,10 +68,8 @@ export const achievementsConfig = {
 		title: 'Cineasta',
 		description: 'Viste tu primer video del portafolio',
 		icon: stiker7,
-		category: 'media',
 		condition: (state) => (state.videosWatched || 0) >= 1,
-		rarity: 'common',
-		points: 8
+		rarity: 'common'
 	},
 
 	director: {
@@ -91,10 +77,8 @@ export const achievementsConfig = {
 		title: 'Trilogía del Play',
 		description: 'Viste 3 videos del portafolio',
 		icon: stiker8,
-		category: 'media',
 		condition: (state) => (state.videosWatched || 0) >= 3,
-		rarity: 'rare',
-		points: 30
+		rarity: 'rare'
 	},
 
 	cineastaMaestro: {
@@ -102,9 +86,7 @@ export const achievementsConfig = {
 		title: 'Maratón Youtubero',
 		description: 'Viste 5 videos del portafolio',
 		icon: stiker9,
-		category: 'media',
 		condition: (state) => (state.videosWatched || 0) >= 5,
-		rarity: 'legendary',
-		points: 90
+		rarity: 'legendary'
 	}
 };
