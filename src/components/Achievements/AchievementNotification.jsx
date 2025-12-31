@@ -1,7 +1,7 @@
 // src/components/Achievements/AchievementNotification.jsx
 import { useEffect, useState } from 'react';
 import styles from './AchievementNotification.module.css';
-import { rarityColors } from '@/data/achievementsData';
+import { rarityColors } from '@/context/achievements/data/achievementsData';
 import { useAchievementSound } from '@/hooks/useAchievementSound';
 
 function AchievementNotification({ achievement, onDismiss, autoDismiss = true, className = '', style = {} }) {

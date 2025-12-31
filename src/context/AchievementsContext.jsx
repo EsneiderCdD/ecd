@@ -1,5 +1,5 @@
 import { createContext, useContext } from 'react';
-import { achievementsConfig } from '@/data/achievementsData';
+import { achievementsConfig } from './achievements/data/achievementsData';
 import { useAchievementsLogic } from './achievements/hooks/useAchievementsLogic';
 import { useAchievementTracking } from './achievements/hooks/useAchievementTracking';
 

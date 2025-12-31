@@ -1,5 +1,5 @@
-import { achievementsConfig } from '../../data/achievementsData';
-import AchievementNotification from '../../components/Achievements/AchievementNotification';
+import { achievementsConfig } from '@/context/achievements/data/achievementsData';
+import AchievementNotification from '@/components/Achievements/AchievementNotification';
 import styles from './Notifications.module.css';
 
 function Notifications() {
