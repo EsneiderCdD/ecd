@@ -1,15 +1,14 @@
-// src/components/About/About.jsx
+// src/pages/AboutMe.jsx
 import { useState } from "react";
-import AboutHeader from "./AboutHeader";
-import AboutSidebar from "./AboutSidebar";
-import AboutInfoPanel from "./AboutInfoPanel";
-
-import styles from "./About.module.css";
+import AboutHeader from "@/components/About/AboutHeader";
+import AboutSidebar from "@/components/About/AboutSidebar";
+import AboutInfoPanel from "@/components/About/AboutInfoPanel";
+import styles from "@/components/About/About.module.css";
 import FileTable from "@/components/Common/FileTable";
 import { aboutFiles } from "@/data/aboutData";
 import { useSorting } from "@/hooks/useSorting";
 
-function About() {
+function AboutMe() {
   const [selectedFile, setSelectedFile] = useState(null);
   const { sortedData, handleSortChange } = useSorting(aboutFiles);
 
@@ -25,9 +24,8 @@ function About() {
         />
         <AboutInfoPanel file={selectedFile} />
       </div>
-  
     </div>
   );
 }
 
-export default About;
+export default AboutMe;
