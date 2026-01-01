@@ -15,7 +15,7 @@ function AppRouter() {
       <Route path="/about" element={<AboutMe />} />
       <Route path="/projects" element={<Projects />} />
       <Route path="/projects/:projectId" element={<ProjectDetail />} />
-    
+      
       <Route path="/notifications" element={<Notifications />} />
     </Routes>
   );
