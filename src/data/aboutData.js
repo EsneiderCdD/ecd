@@ -1,6 +1,5 @@
 import FotoPortafolio from '@/assets/images/FotoPortafolio.png';
 
-
 export const aboutFiles = [
     {
         icon: null,

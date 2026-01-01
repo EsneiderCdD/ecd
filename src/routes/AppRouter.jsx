@@ -4,7 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import AboutMe from "../pages/AboutMe";
 import Home from "../pages/Home";
 import Projects from "../pages/Projects.jsx";
-import ProjectDetail from "../pages/ProjectDetail/ProjectDetail.jsx";
+import ProjectDetail from "../pages/ProjectDetail.jsx";
 
 import Notifications from "../pages/Notifications/Notifications.jsx";
 
