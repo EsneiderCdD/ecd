@@ -1,15 +1,13 @@
-// src/components/Projects/Projects.jsx
 import { useState } from "react";
-import AboutHeader from "../About/AboutHeader";
-import AboutSidebar from "../About/AboutSidebar";
-import AboutInfoPanel from "../About/AboutInfoPanel";
-
-import styles from "../../components/About/About.module.css";
+import AboutHeader from "../components/About/AboutHeader";
+import AboutSidebar from "../components/About/AboutSidebar";
+import AboutInfoPanel from "../components/About/AboutInfoPanel";
+import styles from "../components/About/About.module.css";
 import FileTable from "@/components/Common/FileTable";
 import { projectsList } from "@/data/projectsData";
 import { useSorting } from "@/hooks/useSorting";
 
-function Project() {
+function Projects() {
   const [selectedFile, setSelectedFile] = useState(null);
   const { sortedData, handleSortChange } = useSorting(projectsList);
 
@@ -25,9 +23,8 @@ function Project() {
         />
         <AboutInfoPanel file={selectedFile} />
       </div>
-    
     </div>
   );
 }
 
-export default Project;
+export default Projects;
