@@ -35,7 +35,7 @@ export function useAchievementsLogic() {
             setPendingNotifications(newlyUnlocked);
         }
 
-        isCheckingRef = false;
+        isCheckingRef.current = false;
     }, []);
 
     const dismissNotification = useCallback((achievementId) => {
