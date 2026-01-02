@@ -13,6 +13,7 @@ function NotificationManager() {
 
     return (
         <div className={styles.container}>
+            {/* Notifications List */}
             {pendingNotifications.map((achievement) => (
                 <NotificationToast
                     key={achievement.id}

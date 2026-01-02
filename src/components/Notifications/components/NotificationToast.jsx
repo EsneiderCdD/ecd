@@ -1,39 +1,18 @@
-import { useEffect, useState } from 'react';
 import styles from '../styles/NotificationToast.module.css';
 import { achievementsColors } from '@/styles/achievementsColors';
-import { useAchievementSound } from '@/hooks/useAchievementSound';
+import { useNotificationLogic } from '../hooks/useNotificationLogic';
 
 function NotificationToast({ achievement, onDismiss, autoDismiss = true, className = '', style = {} }) {
-    const [isVisible, setIsVisible] = useState(false);
-    const [isLeaving, setIsLeaving] = useState(false);
-    const { playSound } = useAchievementSound();
+    // Logic
+    const isStatic = className.includes('static');
+    const { isVisible, isLeaving, handleDismiss } = useNotificationLogic({
+        achievementId: achievement.id,
+        onDismiss,
+        autoDismiss,
+        isStatic
+    });
 
     const rarityStyle = achievementsColors[achievement.rarity] || achievementsColors.common;
-
-    useEffect(() => {
-        // Play sound when notification appears
-        if (!className.includes('static')) { // Avoid sound for static notifications in grid
-            playSound();
-        }
-
-        // Animated entry
-        setTimeout(() => setIsVisible(true), 100);
-
-        if (autoDismiss) {
-            // Auto-dismiss after 5 seconds
-            const timer = setTimeout(() => {
-                handleDismiss();
-            }, 5000);
-            return () => clearTimeout(timer);
-        }
-    }, [autoDismiss]);
-
-    const handleDismiss = () => {
-        setIsLeaving(true);
-        setTimeout(() => {
-            if (onDismiss) onDismiss(achievement.id);
-        }, 400);
-    };
 
     return (
         <div
@@ -45,7 +24,9 @@ function NotificationToast({ achievement, onDismiss, autoDismiss = true, classNa
                 ...style
             }}
         >
+            {/* Content Wrapper */}
             <div className={styles.content}>
+                {/* Icon */}
                 <div
                     className={styles.achievementImage}
                     style={{ background: rarityStyle.background }}
@@ -57,6 +38,7 @@ function NotificationToast({ achievement, onDismiss, autoDismiss = true, classNa
                     />
                 </div>
 
+                {/* Text Details */}
                 <div className={styles.textContent}>
                     <div className={styles.header}>
                         <span
@@ -69,6 +51,7 @@ function NotificationToast({ achievement, onDismiss, autoDismiss = true, classNa
                 </div>
             </div>
 
+            {/* Progress Bar */}
             <div className={styles.progressBar}>
                 <div className={styles.progressFill} style={{ background: rarityStyle.border }} />
             </div>
