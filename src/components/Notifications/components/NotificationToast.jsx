@@ -24,7 +24,6 @@ function NotificationToast({ achievement, onDismiss, autoDismiss = true, classNa
                 ...style
             }}
         >
-            {/* Content Wrapper */}
             <div className={styles.content}>
                 {/* Icon */}
                 <div
