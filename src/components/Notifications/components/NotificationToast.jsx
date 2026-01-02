@@ -1,9 +1,7 @@
 import styles from '../styles/NotificationToast.module.css';
-import { achievementsColors } from '@/styles/achievementsColors';
 import { useNotificationLogic } from '../hooks/useNotificationLogic';
 
 function NotificationToast({ achievement, onDismiss, autoDismiss = true, className = '', style = {} }) {
-    // Logic
     const isStatic = className.includes('static');
     const { isVisible, isLeaving, handleDismiss } = useNotificationLogic({
         achievementId: achievement.id,
@@ -12,24 +10,17 @@ function NotificationToast({ achievement, onDismiss, autoDismiss = true, classNa
         isStatic
     });
 
-    const rarityStyle = achievementsColors[achievement.rarity] || achievementsColors.common;
+    const rarityClass = styles[achievement.rarity] || styles.common;
 
     return (
         <div
-            className={`${styles.notification} ${isVisible ? styles.visible : ''} ${isLeaving ? styles.leaving : ''} ${className}`}
+            className={`${styles.notification} ${rarityClass} ${isVisible ? styles.visible : ''} ${isLeaving ? styles.leaving : ''} ${className}`}
             onClick={handleDismiss}
-            style={{
-                borderColor: rarityStyle.border,
-                boxShadow: `0 4px 20px ${rarityStyle.glow}`,
-                ...style
-            }}
+            style={style}
         >
             <div className={styles.content}>
                 {/* Icon */}
-                <div
-                    className={styles.achievementImage}
-                    style={{ background: rarityStyle.background }}
-                >
+                <div className={styles.achievementImage}>
                     <img
                         src={achievement.icon}
                         alt={achievement.title}
@@ -40,10 +31,7 @@ function NotificationToast({ achievement, onDismiss, autoDismiss = true, classNa
                 {/* Text Details */}
                 <div className={styles.textContent}>
                     <div className={styles.header}>
-                        <span
-                            className={styles.badge}
-                            style={{ background: rarityStyle.border, color: '#fff' }}
-                        >¡Logro Desbloqueado!</span>
+                        <span className={styles.badge}>¡Logro Desbloqueado!</span>
                     </div>
                     <h3 className={styles.title}>{achievement.title}</h3>
                     <p className={styles.description}>{achievement.description}</p>
@@ -52,7 +40,7 @@ function NotificationToast({ achievement, onDismiss, autoDismiss = true, classNa
 
             {/* Progress Bar */}
             <div className={styles.progressBar}>
-                <div className={styles.progressFill} style={{ background: rarityStyle.border }} />
+                <div className={styles.progressFill} />
             </div>
         </div>
     );

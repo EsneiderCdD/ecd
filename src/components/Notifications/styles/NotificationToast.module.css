@@ -1,25 +1,45 @@
-/* src/components/Achievements/AchievementNotification.module.css */
-
 .notification {
+  --border: #3498db;
+  --glow: rgba(52, 152, 219, 0.4);
+  --bg-gradient: linear-gradient(135deg, #5dade2, #3498db);
+
   position: fixed;
   bottom: 30px;
   left: 50%;
   transform: translateX(-50%) translateY(150%);
-  
+
   width: 68%;
   max-width: 340px;
-  
+
   background: var(--bg-primary);
-  border: 2px solid;
+  border: 2px solid var(--border);
+  box-shadow: 0 4px 20px var(--glow);
   border-radius: 12px;
   padding-bottom: 4px;
 
-  /* allow badge to overlap top border */
   overflow: visible;
   cursor: pointer;
-  
+
   transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   z-index: 10000;
+}
+
+.common {
+  --border: #3498db;
+  --glow: rgba(52, 152, 219, 0.4);
+  --bg-gradient: linear-gradient(135deg, #5dade2, #3498db);
+}
+
+.rare {
+  --border: #9b59b6;
+  --glow: rgba(155, 89, 182, 0.5);
+  --bg-gradient: linear-gradient(135deg, #bb8fce, #9b59b6);
+}
+
+.legendary {
+  --border: #f39c12;
+  --glow: rgba(243, 156, 18, 0.6);
+  --bg-gradient: linear-gradient(135deg, #f5b041, #f39c12);
 }
 
 .notification.visible {
@@ -39,7 +59,6 @@
   position: relative;
 }
 
-/* left-side image (circular) */
 .achievementImage {
   flex-shrink: 0;
   width: 60px;
@@ -48,7 +67,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  background: var(--bg-gradient);
 }
 
 .textContent {
@@ -73,6 +93,9 @@
   max-width: calc(100% - 40px);
   overflow: hidden;
   text-overflow: ellipsis;
+
+  background: var(--border);
+  color: #fff;
 }
 
 .title {
@@ -121,18 +144,19 @@
   height: 100%;
   width: 100%;
   animation: progress 5s linear;
+  background: var(--border);
 }
 
 @keyframes progress {
   from {
     transform: translateX(0);
   }
+
   to {
     transform: translateX(-100%);
   }
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .notification {
     width: 95%;
