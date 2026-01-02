@@ -16,7 +16,6 @@ export function useSearch(searchRef) {
         );
     };
 
-    // Combinar todos los datos para búsqueda
     const allSearchableData = [
         ...projectsList.map(item => ({ ...item, category: 'project' })),
         ...aboutFiles.map(item => ({ ...item, category: 'about' })),
@@ -33,12 +32,11 @@ export function useSearch(searchRef) {
             return;
         }
 
-        // Buscar por nombre
         const results = allSearchableData.filter(item =>
             item.name.toLowerCase().includes(query.toLowerCase())
         );
 
-        setSearchResults(results.slice(0, 10)); // Limitar a 10 resultados
+        setSearchResults(results.slice(0, 10));
         setShowResults(true);
     };
 
@@ -46,19 +44,15 @@ export function useSearch(searchRef) {
         let targetUrl = null;
 
         if (item.category === 'project' && item.path) {
-            // Navegar a la ruta del proyecto (carpeta)
             targetUrl = item.path;
         } else if (item.category === 'about') {
-            // Navegar a la página About donde están los archivos
             targetUrl = '/about';
         } else if (item.category === 'projectFile') {
-            // Para archivos de proyectos, necesitamos encontrar a qué proyecto pertenecen
             const projectKey = Object.keys(projectDetailFiles).find(key =>
                 projectDetailFiles[key].some(file => file.name === item.name)
             );
 
             if (projectKey) {
-                // Navegar a la página del proyecto específico
                 const project = projectsList.find(p => p.path === `/projects/${projectKey}`);
                 if (project) {
                     targetUrl = project.path;
@@ -66,17 +60,14 @@ export function useSearch(searchRef) {
             }
         }
 
-        // Navegar si encontramos una URL válida
         if (targetUrl) {
             window.location.href = targetUrl;
         }
 
-        // Cerrar los resultados después de navegar
         setShowResults(false);
         setSearchQuery("");
     };
 
-    // Cerrar resultados al hacer click fuera
     useEffect(() => {
         const handleClickOutside = (event) => {
             if (searchRef.current && !searchRef.current.contains(event.target)) {

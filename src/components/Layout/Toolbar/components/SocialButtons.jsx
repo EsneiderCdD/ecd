@@ -35,7 +35,7 @@ function SocialButtons() {
                 />
             </a>
 
-            {/* 📄 Hoja de Vida - C.V */}
+            {/* C.V */}
             <a
                 href="https://flowcv.com/resume/trd93dr5crok"
                 target="_blank"
@@ -49,7 +49,7 @@ function SocialButtons() {
                 />
             </a>
 
-            {/* Tema (modo claro/oscuro) */}
+            {/* Theme */}
             <div
                 onClick={toggleTheme}
                 style={{ cursor: "pointer" }}
@@ -70,7 +70,7 @@ function SocialButtons() {
                 )}
             </div>
 
-            {/* ❤️ Favorito */}
+            {/* Feedback */}
             <img
                 src="https://cdn-icons-png.flaticon.com/512/833/833472.png"
                 alt="Feedback"
@@ -78,7 +78,7 @@ function SocialButtons() {
                 className={`${styles.icon} ${styles.hoverIcon}`}
             />
 
-            {/* 🛠️ Soporte */}
+            {/* Support */}
             <img
                 src="/icons/support.png"
                 alt="Soporte"

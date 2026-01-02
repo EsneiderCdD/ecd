@@ -11,7 +11,6 @@ function SearchBar() {
         showResults,
         handleSearchChange,
         handleResultClick,
-        setShowResults,
         isIconUrl
     } = useSearch(searchRef);
 

@@ -7,16 +7,9 @@ import SearchBar from "./components/SearchBar";
 function Toolbar({ onSortChange }) {
     return (
         <div className={styles.header}>
-            {/* Dropdown */}
             <Dropdown />
-
-            {/* Sección: GitHub, LinkedIn, Correo, etc */}
             <SocialButtons />
-
-            {/* BUSCADOR */}
             <SearchBar />
-
-            {/* Ordenar */}
             <div className={styles.icons3}>
                 <SortDropdown onSortChange={onSortChange} />
             </div>
