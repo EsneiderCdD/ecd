@@ -1,12 +1,12 @@
-import stiker1 from '@/assets/stiker/stiker1.png';
-import stiker2 from '@/assets/stiker/stiker2.png';
-import stiker3 from '@/assets/stiker/stiker3.png';
-import stiker4 from '@/assets/stiker/stiker4.png';
-import stiker5 from '@/assets/stiker/stiker5.png';
-import stiker6 from '@/assets/stiker/stiker6.png';
-import stiker7 from '@/assets/stiker/stiker7.png';
-import stiker8 from '@/assets/stiker/stiker8.png';
-import stiker9 from '@/assets/stiker/stiker9.png';
+import stiker1 from '@/assets/stickers/stiker1.png';
+import stiker2 from '@/assets/stickers/stiker2.png';
+import stiker3 from '@/assets/stickers/stiker3.png';
+import stiker4 from '@/assets/stickers/stiker4.png';
+import stiker5 from '@/assets/stickers/stiker5.png';
+import stiker6 from '@/assets/stickers/stiker6.png';
+import stiker7 from '@/assets/stickers/stiker7.png';
+import stiker8 from '@/assets/stickers/stiker8.png';
+import stiker9 from '@/assets/stickers/stiker9.png';
 
 export const achievementsConfig = {
 	explorer: {
