@@ -2,7 +2,7 @@
 import { useState } from "react";
 import Toolbar from "@/components/Layout/Toolbar/Toolbar";
 import AboutSidebar from "@/components/Layout/AboutSidebar";
-import AboutInfoPanel from "@/components/Layout/AboutInfoPanel";
+import InfoPanel from "@/components/Layout/InfoPanel/InfoPanel";
 import styles from "@/components/Layout/About.module.css";
 import FileTable from "@/components/Common/FileTable";
 import { aboutFiles } from "@/data/aboutData";
@@ -22,7 +22,7 @@ function AboutMe() {
           selectedFile={selectedFile}
           setSelectedFile={setSelectedFile}
         />
-        <AboutInfoPanel file={selectedFile} />
+        <InfoPanel file={selectedFile} />
       </div>
     </div>
   );

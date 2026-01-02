@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { useParams } from "react-router-dom";
 import Toolbar from "../components/Layout/Toolbar/Toolbar";
 import AboutSidebar from "../components/Layout/AboutSidebar";
-import AboutInfoPanel from "../components/Layout/AboutInfoPanel";
+import InfoPanel from "../components/Layout/InfoPanel/InfoPanel";
 import FileTable from "@/components/common/FileTable";
 import styles from "../components/Layout/About.module.css";
 import { projectDetailFiles } from "@/data/projectsData";
@@ -37,7 +37,7 @@ function ProjectDetail() {
           selectedFile={selectedFile}
           setSelectedFile={setSelectedFile}
         />
-        <AboutInfoPanel file={selectedFile} />
+        <InfoPanel file={selectedFile} />
       </div>
     </div>
   );
