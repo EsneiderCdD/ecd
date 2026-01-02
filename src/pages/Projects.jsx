@@ -4,7 +4,7 @@ import Toolbar from "../components/Layout/Toolbar/Toolbar";
 import Sidebar from "../components/Layout/Sidebar/Sidebar";
 import InfoPanel from "../components/Layout/InfoPanel/InfoPanel";
 import styles from "../components/Layout/About.module.css";
-import FileTable from "@/components/Common/FileTable";
+import DesktopTable from "../components/Layout/DesktopTable/DesktopTable";
 import { projectsList } from "@/data/projectsData";
 import { useSorting } from "@/hooks/useSorting";
 
@@ -17,7 +17,7 @@ function Projects() {
       <Toolbar onSortChange={handleSortChange} />
       <div className={styles.mainContent}>
         <Sidebar />
-        <FileTable
+        <DesktopTable
           files={sortedData}
           selectedFile={selectedFile}
           setSelectedFile={setSelectedFile}

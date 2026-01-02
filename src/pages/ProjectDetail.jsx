@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import Toolbar from "../components/Layout/Toolbar/Toolbar";
 import Sidebar from "../components/Layout/Sidebar/Sidebar";
 import InfoPanel from "../components/Layout/InfoPanel/InfoPanel";
-import FileTable from "@/components/common/FileTable";
+import DesktopTable from "../components/Layout/DesktopTable/DesktopTable";
 import styles from "../components/Layout/About.module.css";
 import { projectDetailFiles } from "@/data/projectsData";
 import { useSorting } from "@/hooks/useSorting";
@@ -32,7 +32,7 @@ function ProjectDetail() {
       <Toolbar onSortChange={handleSortChange} />
       <div className={styles.mainContent}>
         <Sidebar />
-        <FileTable
+        <DesktopTable
           files={sortedData}
           selectedFile={selectedFile}
           setSelectedFile={setSelectedFile}
