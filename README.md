@@ -1,6 +1,6 @@
 # ECD - Portfolio Personal
 
-Un portfolio personal moderno construido con React y Vite, que simula una experiencia de escritorio interactiva con un sistema completo de dark mode.
+Un portfolio personal moderno construido con React y Vite, que simula una experiencia de escritorio interactiva con un sistema completo de dark mode y arquitectura modular.
 
 ## 🚀 Características
 
@@ -10,74 +10,67 @@ Un portfolio personal moderno construido con React y Vite, que simula una experi
 - **👤 Sección Acerca de**: Portfolio detallado con tabla de archivos y panel de información
 - **💼 Proyectos**: Galería de proyectos con detalles individuales
 - **🌙 Dark Mode**: Sistema completo de cambio de tema con persistencia
+- **🏆 Sistema de Logros**: Gamificación con notificaciones interactivas
 
 ### 🎨 Interfaz de Usuario
 - **Diseño Responsivo**: Adaptable a diferentes tamaños de pantalla
 - **Animaciones Suaves**: Transiciones y efectos hover elegantes
-- **Iconografía Moderna**: Uso de Lucide React para iconos consistentes
-- **Tema Unificado**: Variables CSS personalizadas para fácil mantenimiento
+- **Iconografía Moderna**: Uso de Lucide React y assets optimizados
+- **Tema Unificado**: Variables CSS personalizadas y módulos CSS
 
-### 🛠️ Funcionalidades Técnicas
-- **Enrutamiento**: React Router para navegación SPA
-- **Gestión de Estado**: Context API para el tema
-- **Formularios**: Integración con EmailJS para contacto
-- **Organización Modular**: Componentes reutilizables y bien estructurados
+### 🛠️ Arquitectura Técnica
+- **Diseño Modular**: Separación clara de responsabilidades (Data, UI, Features)
+- **Data-Driven**: Contenido gestionado a través de archivos de datos estructurados
+- **CSS Modules**: Estilos encapsulados para evitar colisiones
+- **Optimización de Assets**: Gestión eficiente de imágenes y recursos estáticos
 
 ## 🏗️ Tecnologías Utilizadas
 
 ### Frontend
-- **React 19.1.1** - Biblioteca principal
-- **Vite 7.1.6** - Herramienta de construcción y desarrollo
-- **React Router DOM 7.9.1** - Enrutamiento
-- **Lucide React 0.544.0** - Iconografía
+- **React** - Biblioteca principal
+- **Vite** - Herramienta de construcción y desarrollo
+- **React Router DOM** - Enrutamiento
+- **Lucide React** - Iconografía
 
 ### Servicios
-- **EmailJS 4.4.1** - Envío de emails desde el frontend
+- **EmailJS** - Envío de emails desde el frontend
 
 ### Desarrollo
 - **ESLint** - Linting y calidad de código
-- **TypeScript Types** - Tipado estático para React
- - **Sistema de Logros** - Context API + UI de notificaciones
+- **CSS Vars & Modules** - Gestión avanzada de estilos
 
 ## 📁 Estructura del Proyecto
 
 ```
 src/
-├── components/           # Componentes reutilizables
-│   ├── About/           # Componentes específicos de la sección About
-│   │   ├── Dropdown/    # Menú desplegable con modal de contacto
-│   │   ├── AboutHeader.jsx
-│   │   ├── AboutSidebar.jsx
-│   │   └── AboutTable.jsx
-│   ├── ContactModal/    # Modal para formulario de contacto
-│   ├── Desktop/         # Componentes del explorador de escritorio
-│   ├── DesktopFolder/   # Carpetas del escritorio
-│   ├── DraggableFolder/ # Carpetas del sistema
-│   ├── Folder/          # Componente base de carpeta
-│   ├── Achievements/    # Componentes de logros y notificaciones
-│   └── Projects/        # Componentes de proyectos
-├── context/             # Contextos de React
-│   └── ThemeContext.jsx # Gestión del tema (light/dark)
-│   └── AchievementsContext.jsx # Gestión de logros y notificaciones
-├── data/                # Datos estáticos
-│   ├── aboutData.js     # Información personal
-│   ├── projectsData.js  # Datos de proyectos
-│   └── stackIcons.js    # Iconos de tecnologías
-├── pages/               # Páginas principales
-│   ├── Home/            # Página de inicio
-│   ├── About/           # Página acerca de
-│   ├── DesktopFolder/   # Explorador de escritorio
-│   ├── Projects/        # Lista de proyectos
-│   └── ProjectDetail/   # Detalle de proyecto individual
-│   └── Achievements/    # Página de logros y notificaciones
+├── assets/              # Recursos estáticos gestionados por Vite
+│   ├── background/      # Fondos de pantalla
+│   ├── icons/           # Iconos de UI
+│   ├── images/          # Imágenes de proyectos
+│   ├── stack/           # Logos de tecnologías
+│   └── stickers/        # Assets para gamificación
+├── components/          # Componentes de presentación reutilizables
+│   ├── Layout/          # Componentes estructurales (Sidebar, Toolbar, InfoPanel, etc.)
+│   └── Notifications/   # Componentes de notificación (Toasts)
+├── context/             # Contextos de React (Estado Global)
+│   ├── ThemeContext.jsx 
+│   └── AchievementsContext.jsx
+├── data/                # Capa de Datos (Modularizada)
+│   ├── aboutMe/         # Información personal
+│   ├── projects/        # Datos individuales de cada proyecto
+│   ├── statusTags/      # Configuración de etiquetas de estado
+│   └── techStack/       # Catálogo de tecnologías e iconos
+├── features/            # Módulos funcionales completos
+│   └── ContactModal/    # Feature de contacto (Lógica + UI + Data)
+├── pages/               # Páginas principales (Vistas)
+│   ├── Home.jsx
+│   ├── AboutMe.jsx
+│   ├── Projects.jsx
+│   ├── ProjectDetail.jsx
+│   └── Notifications/   # Vista de notificaciones
 ├── routes/              # Configuración de rutas
-│   └── AppRouter.jsx    # Router principal
-├── styles/              # Estilos globales
-│   └── themes.css       # Variables CSS para temas
-└── assets/              # Recursos estáticos
-    ├── images/          # Imágenes del portfolio
-    ├── icons/           # Iconos personalizados
-    └── stack/           # Logos de tecnologías
+└── styles/              # Estilos globales y temas
+    └── themes.css
 ```
 
 ## 🚀 Instalación y Uso
@@ -109,52 +102,22 @@ src/
    http://localhost:5173
    ```
 
-### Scripts Disponibles
-
-```bash
-# Desarrollo
-npm run dev          # Inicia servidor de desarrollo
-
-# Producción
-npm run build        # Construye para producción
-npm run preview      # Previsualiza build de producción
-
-# Calidad de código
-npm run lint         # Ejecuta ESLint
-```
-
 ## 🎨 Sistema de Temas
 
-El proyecto implementa un sistema completo de dark mode con:
+El proyecto implementa un sistema completo de dark mode con variables CSS globales y persistencia local.
 
 ### Variables CSS
 - **Colores de fondo**: `--bg-primary`, `--bg-secondary`, `--bg-header`
 - **Colores de texto**: `--text-primary`, `--text-secondary`, `--text-muted`
 - **Bordes**: `--border-color`, `--border-light`, `--border-header`
-- **Estados**: `--hover-bg`, `--selected-row`
-
-### Persistencia
-- El tema se guarda en `localStorage`
-- Se aplica automáticamente al cargar la página
-- Toggle disponible en el header
-
-## 📱 Páginas y Rutas
-
-- **`/`** - Página de inicio con presentación
-- **`/desktop`** - Explorador de escritorio interactivo
-- **`/about`** - Portfolio detallado con información personal
-- **`/projects`** - Galería de proyectos
-- **`/projects/:projectId`** - Detalle individual de proyecto
-- **`/achievements`** - Sistema de logros y notificaciones
 
 ## 🔧 Configuración
 
 ### Alias de Importación
-El proyecto usa alias `@` para imports relativos:
+El proyecto usa alias `@` para imports relativos, facilitando la importación desde `src/`:
 ```javascript
-import Component from '@/components/Component'
+import { data } from '@/data/projects';
 ```
-Configurado en `vite.config.js` dentro de `resolve.alias`.
 
 ### Variables de Entorno
 Para EmailJS, crear archivo `.env`:
@@ -163,23 +126,6 @@ VITE_EMAILJS_SERVICE_ID=tu_service_id
 VITE_EMAILJS_TEMPLATE_ID=tu_template_id
 VITE_EMAILJS_PUBLIC_KEY=tu_public_key
 ```
-
-## 🎯 Características Destacadas
-
-### Drag & Drop
-- Carpetas completamente arrastrables
-- Feedback visual durante el arrastre
-- Validación de zonas de drop
-
-### Modal de Contacto
-- Formulario integrado con EmailJS
-- Múltiples opciones de contacto
-- Validación de campos
-
-### Responsive Design
-- Adaptable a móviles y tablets
-- Grid layouts flexibles
-- Componentes escalables
 
 ## 🤝 Contribución
 
