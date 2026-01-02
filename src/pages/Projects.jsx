@@ -5,7 +5,7 @@ import Sidebar from "../components/Layout/Sidebar/Sidebar";
 import InfoPanel from "../components/Layout/InfoPanel/InfoPanel";
 import styles from "./AboutMe.module.css";
 import DesktopTable from "../components/Layout/DesktopTable/DesktopTable";
-import { projectsList } from "@/data/projectsData";
+import { projectsList } from "@/data/projects";
 import { useSorting } from "@/hooks/useSorting";
 
 function Projects() {

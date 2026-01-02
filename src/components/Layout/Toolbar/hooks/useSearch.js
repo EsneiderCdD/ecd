@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import { projectsList, projectDetailFiles } from '@/data/projectsData';
-import { aboutFiles } from '@/data/aboutData';
+import { projectsList, projectDetailFiles } from '@/data/projects';
+import { aboutFiles } from '@/data/aboutMe/aboutMe';
 
 export function useSearch(searchRef) {
     const [searchQuery, setSearchQuery] = useState("");

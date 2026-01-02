@@ -5,7 +5,7 @@ import Sidebar from "@/components/Layout/Sidebar/Sidebar";
 import InfoPanel from "@/components/Layout/InfoPanel/InfoPanel";
 import styles from "./AboutMe.module.css";
 import DesktopTable from "@/components/Layout/DesktopTable/DesktopTable";
-import { aboutFiles } from "@/data/aboutData";
+import { aboutFiles } from "@/data/aboutMe/aboutMe";
 import { useSorting } from "@/hooks/useSorting";
 
 function AboutMe() {
