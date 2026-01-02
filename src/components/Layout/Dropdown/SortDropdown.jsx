@@ -1,6 +1,7 @@
 // src/components/About/Dropdown/SortDropdown.jsx
 import { useState, useEffect, useRef } from "react";
 import styles from "./SortDropdown.module.css";
+import orderIcon from '@/assets/icons/order.png';
 
 function SortDropdown({ onSortChange }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,7 +21,7 @@ function SortDropdown({ onSortChange }) {
 
   const handleOptionClick = (option) => {
     let newSort = null;
-    
+
     if (option === "Nombre") {
       // Toggle: si está activo, desactivar; si no, activar
       newSort = activeSort === 'name' ? null : 'name';
@@ -32,14 +33,14 @@ function SortDropdown({ onSortChange }) {
       setIsOpen(false);
       return;
     }
-    
+
     setActiveSort(newSort);
-    
+
     // Llamar a la función padre para aplicar el ordenamiento
     if (onSortChange) {
       onSortChange(newSort);
     }
-    
+
     setIsOpen(false);
   };
 
@@ -51,7 +52,7 @@ function SortDropdown({ onSortChange }) {
         onClick={() => setIsOpen(!isOpen)}
       >
         <img
-          src="/icons/order.png"
+          src={orderIcon}
           alt="Ordenar"
           title="Ordenar"
           className={styles.sortIcon}

@@ -1,6 +1,7 @@
 import { Moon, Sun } from "lucide-react";
 import styles from "../styles/Toolbar.module.css";
 import { useTheme } from "@/context/ThemeContext";
+import supportIcon from '@/assets/icons/support.png';
 
 function SocialButtons() {
     const { theme, toggleTheme } = useTheme();
@@ -80,7 +81,7 @@ function SocialButtons() {
 
             {/* Support */}
             <img
-                src="/icons/support.png"
+                src={supportIcon}
                 alt="Soporte"
                 title="Soporte"
                 className={`${styles.icon} ${styles.hoverIcon} ${styles.supportIcon}`}
