@@ -3,7 +3,7 @@ import menunav from "@/assets/images/menunav.png";
 import mt2 from "@/assets/images/mt2.png";
 import mt3 from "@/assets/images/mt3.png";
 import mt4 from "@/assets/images/mt4.png";
-import { generateStackHTML } from '../stackIcons';
+import { generateStackHTML } from '../techStack/techStack';
 
 export const martinaData = {
     id: "martinaclandestina",

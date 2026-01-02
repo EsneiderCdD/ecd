@@ -9,7 +9,7 @@ import ps7 from "@/assets/images/ps7.png";
 import ps8 from "@/assets/images/ps8.png";
 import ps9 from "@/assets/images/ps9.png";
 import ps10 from "@/assets/images/ps10.png";
-import { generateStackHTML } from '../stackIcons';
+import { generateStackHTML } from '../techStack/techStack';
 
 export const psicotranspersonalData = {
     id: "psicotranspersonal",

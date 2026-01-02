@@ -4,7 +4,7 @@ import mrs2 from "@/assets/images/mrs2.png";
 import mrs4 from "@/assets/images/mrs4.png";
 import mrs6 from "@/assets/images/mrs6.png";
 import mr7 from "@/assets/images/mr7.png";
-import { generateStackHTML } from '../stackIcons';
+import { generateStackHTML } from '../techStack/techStack';
 
 export const misterSoldoData = {
     id: "mistersoldo",

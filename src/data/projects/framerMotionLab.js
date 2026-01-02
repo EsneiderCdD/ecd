@@ -3,7 +3,7 @@ import fm1 from "@/assets/images/fm1.png";
 import fm2 from "@/assets/images/fm2.png";
 import fm3 from "@/assets/images/fm3.png";
 import fm4 from "@/assets/images/fm4.png";
-import { generateStackHTML } from '../stackIcons';
+import { generateStackHTML } from '../techStack/techStack';
 
 export const framerMotionData = {
     id: "framermotionlab",

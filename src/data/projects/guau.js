@@ -4,7 +4,7 @@ import guau5 from "@/assets/images/guau5.png";
 import guau6 from "@/assets/images/guau6.png";
 import guau7 from "@/assets/images/guau7.png";
 import Guau from "@/assets/images/Guau.png";
-import { generateStackHTML } from '../stackIcons';
+import { generateStackHTML } from '../techStack/techStack';
 
 export const guauData = {
     id: "guau",

@@ -3,7 +3,7 @@ import ti1 from "@/assets/images/ti1.png";
 import ti2 from "@/assets/images/ti2.png";
 import ti3 from "@/assets/images/ti3.png";
 import constanciatrain from "@/assets/images/constanciatrain.png"
-import { generateStackHTML } from '../stackIcons';
+import { generateStackHTML } from '../techStack/techStack';
 
 export const trainItData = {
     id: "trainittrello",
