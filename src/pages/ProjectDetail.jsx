@@ -4,7 +4,7 @@ import Toolbar from "../components/Layout/Toolbar/Toolbar";
 import Sidebar from "../components/Layout/Sidebar/Sidebar";
 import InfoPanel from "../components/Layout/InfoPanel/InfoPanel";
 import DesktopTable from "../components/Layout/DesktopTable/DesktopTable";
-import styles from "../components/Layout/About.module.css";
+import styles from "./AboutMe.module.css";
 import { projectDetailFiles } from "@/data/projectsData";
 import { useSorting } from "@/hooks/useSorting";
 import { useAchievements } from "@/context/AchievementsContext";

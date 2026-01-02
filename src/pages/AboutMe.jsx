@@ -3,7 +3,7 @@ import { useState } from "react";
 import Toolbar from "@/components/Layout/Toolbar/Toolbar";
 import Sidebar from "@/components/Layout/Sidebar/Sidebar";
 import InfoPanel from "@/components/Layout/InfoPanel/InfoPanel";
-import styles from "@/components/Layout/About.module.css";
+import styles from "./AboutMe.module.css";
 import DesktopTable from "@/components/Layout/DesktopTable/DesktopTable";
 import { aboutFiles } from "@/data/aboutData";
 import { useSorting } from "@/hooks/useSorting";
