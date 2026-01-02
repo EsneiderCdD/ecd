@@ -1,27 +1,20 @@
-import { getStatusTagConfig, tagVariants } from "@/data/statusTags";
-import styles from "../styles/DesktopTable.module.css";
+import { getStatusTagConfig } from "@/data/statusTags/statusTags";
+import styles from "../styles/StatusTag.module.css";
 
 function StatusTag({ status }) {
-    const tagConfig = getStatusTagConfig(status);
+    const config = getStatusTagConfig(status);
 
-    if (tagConfig) {
-        const variant = tagVariants[tagConfig.variant];
-        return (
-            <span
-                className={styles.statusTag}
-                style={{
-                    background: variant.background,
-                    color: variant.color,
-                    border: variant.border,
-                    boxShadow: variant.boxShadow
-                }}
-            >
-                {tagConfig.text}
-            </span>
-        );
+    if (!config) {
+        return <span>{status}</span>;
     }
 
-    return status;
+    return (
+        <span
+            className={`${styles.tag} ${styles[config.variant]}`}
+        >
+            {config.text}
+        </span>
+    );
 }
 
 export default StatusTag;
