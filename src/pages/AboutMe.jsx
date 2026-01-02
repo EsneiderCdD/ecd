@@ -1,6 +1,6 @@
 // src/pages/AboutMe.jsx
 import { useState } from "react";
-import AboutHeader from "@/components/Layout/AboutHeader";
+import Toolbar from "@/components/Layout/Toolbar/Toolbar";
 import AboutSidebar from "@/components/Layout/AboutSidebar";
 import AboutInfoPanel from "@/components/Layout/AboutInfoPanel";
 import styles from "@/components/Layout/About.module.css";
@@ -14,7 +14,7 @@ function AboutMe() {
 
   return (
     <div className={styles.aboutContainer}>
-      <AboutHeader onSortChange={handleSortChange} />
+      <Toolbar onSortChange={handleSortChange} />
       <div className={styles.mainContent}>
         <AboutSidebar />
         <FileTable
