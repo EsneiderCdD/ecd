@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 import Toolbar from "../components/Layout/Toolbar/Toolbar";
-import AboutSidebar from "../components/Layout/AboutSidebar";
+import Sidebar from "../components/Layout/Sidebar/Sidebar";
 import InfoPanel from "../components/Layout/InfoPanel/InfoPanel";
 import styles from "../components/Layout/About.module.css";
 import FileTable from "@/components/Common/FileTable";
@@ -16,7 +16,7 @@ function Projects() {
     <div className={styles.aboutContainer}>
       <Toolbar onSortChange={handleSortChange} />
       <div className={styles.mainContent}>
-        <AboutSidebar />
+        <Sidebar />
         <FileTable
           files={sortedData}
           selectedFile={selectedFile}

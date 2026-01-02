@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { useParams } from "react-router-dom";
 import Toolbar from "../components/Layout/Toolbar/Toolbar";
-import AboutSidebar from "../components/Layout/AboutSidebar";
+import Sidebar from "../components/Layout/Sidebar/Sidebar";
 import InfoPanel from "../components/Layout/InfoPanel/InfoPanel";
 import FileTable from "@/components/common/FileTable";
 import styles from "../components/Layout/About.module.css";
@@ -31,7 +31,7 @@ function ProjectDetail() {
     <div className={styles.aboutContainer}>
       <Toolbar onSortChange={handleSortChange} />
       <div className={styles.mainContent}>
-        <AboutSidebar />
+        <Sidebar />
         <FileTable
           files={sortedData}
           selectedFile={selectedFile}
