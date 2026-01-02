@@ -1,5 +1,5 @@
 import { achievementsConfig } from '@/context/achievements/data/achievementsConfig';
-import AchievementNotification from '@/components/Achievements/AchievementNotification';
+import NotificationToast from '@/components/Notifications/components/NotificationToast';
 import styles from './Notifications.module.css';
 
 function Notifications() {
@@ -17,7 +17,7 @@ function Notifications() {
             <div className={styles.grid}>
                 {achievements.map((achievement) => (
                     <div key={achievement.id} className={styles.notificationWrapper}>
-                        <AchievementNotification
+                        <NotificationToast
                             achievement={achievement}
                             autoDismiss={false}
                             className={styles.staticNotification}

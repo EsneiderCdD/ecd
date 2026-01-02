@@ -1,0 +1,79 @@
+import { useEffect, useState } from 'react';
+import styles from '../styles/NotificationToast.module.css';
+import { achievementsColors } from '@/styles/achievementsColors';
+import { useAchievementSound } from '@/hooks/useAchievementSound';
+
+function NotificationToast({ achievement, onDismiss, autoDismiss = true, className = '', style = {} }) {
+    const [isVisible, setIsVisible] = useState(false);
+    const [isLeaving, setIsLeaving] = useState(false);
+    const { playSound } = useAchievementSound();
+
+    const rarityStyle = achievementsColors[achievement.rarity] || achievementsColors.common;
+
+    useEffect(() => {
+        // Play sound when notification appears
+        if (!className.includes('static')) { // Avoid sound for static notifications in grid
+            playSound();
+        }
+
+        // Animated entry
+        setTimeout(() => setIsVisible(true), 100);
+
+        if (autoDismiss) {
+            // Auto-dismiss after 5 seconds
+            const timer = setTimeout(() => {
+                handleDismiss();
+            }, 5000);
+            return () => clearTimeout(timer);
+        }
+    }, [autoDismiss]);
+
+    const handleDismiss = () => {
+        setIsLeaving(true);
+        setTimeout(() => {
+            if (onDismiss) onDismiss(achievement.id);
+        }, 400);
+    };
+
+    return (
+        <div
+            className={`${styles.notification} ${isVisible ? styles.visible : ''} ${isLeaving ? styles.leaving : ''} ${className}`}
+            onClick={handleDismiss}
+            style={{
+                borderColor: rarityStyle.border,
+                boxShadow: `0 4px 20px ${rarityStyle.glow}`,
+                ...style
+            }}
+        >
+            <div className={styles.content}>
+                <div
+                    className={styles.achievementImage}
+                    style={{ background: rarityStyle.background }}
+                >
+                    <img
+                        src={achievement.icon}
+                        alt={achievement.title}
+                        className={styles.icon}
+                    />
+                </div>
+
+                <div className={styles.textContent}>
+                    <div className={styles.header}>
+                        <span
+                            className={styles.badge}
+                            style={{ background: rarityStyle.border, color: '#fff' }}
+                        >¡Logro Desbloqueado!</span>
+                    </div>
+                    <h3 className={styles.title}>{achievement.title}</h3>
+                    <p className={styles.description}>{achievement.description}</p>
+                </div>
+            </div>
+
+            <div className={styles.progressBar}>
+                <div className={styles.progressFill} style={{ background: rarityStyle.border }} />
+            </div>
+        </div>
+    );
+}
+
+export default NotificationToast;
