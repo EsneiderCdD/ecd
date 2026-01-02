@@ -1,4 +1,4 @@
-import Folder from '../components/Folder/Folder';
+import Folder from '@/features/Folder/Folder';
 import styles from './Home.module.css';
 
 function Home() {

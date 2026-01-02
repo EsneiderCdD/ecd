@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   margin: 0.5rem 1rem;
-  width: 80px; /* similar a iconos de Windows */
+  width: 80px; 
 }
 
 .link {
@@ -15,7 +15,7 @@
 }
 
 .icon {
-  width: 48px;   /* más realista */
+  width: 48px;   
   height: 48px;
   margin-bottom: 0.3rem;
   background: url("https://cdn-icons-png.flaticon.com/512/716/716784.png") 
@@ -24,7 +24,7 @@
 }
 
 .label {
-  font-size: 12px; /* más compacto */
+  font-size: 12px; 
   text-align: center;
   word-wrap: break-word;
   max-width: 80px;
