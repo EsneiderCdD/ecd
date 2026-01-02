@@ -4,7 +4,7 @@ import {
   Handshake,
 } from "lucide-react";
 import styles from "./Dropdown.module.css";
-import ContactModal from "@/components/ContactModal/ContactModal";
+import ContactModal from "@/features/ContactModal/ContactModal";
 
 function Dropdown() {
   const [isOpen, setIsOpen] = useState(false);
