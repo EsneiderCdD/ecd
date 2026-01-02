@@ -1,9 +1,9 @@
 // src/pages/AboutMe.jsx
 import { useState } from "react";
-import AboutHeader from "@/components/About/AboutHeader";
-import AboutSidebar from "@/components/About/AboutSidebar";
-import AboutInfoPanel from "@/components/About/AboutInfoPanel";
-import styles from "@/components/About/About.module.css";
+import AboutHeader from "@/components/Layout/AboutHeader";
+import AboutSidebar from "@/components/Layout/AboutSidebar";
+import AboutInfoPanel from "@/components/Layout/AboutInfoPanel";
+import styles from "@/components/Layout/About.module.css";
 import FileTable from "@/components/Common/FileTable";
 import { aboutFiles } from "@/data/aboutData";
 import { useSorting } from "@/hooks/useSorting";

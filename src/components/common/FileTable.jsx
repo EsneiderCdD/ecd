@@ -1,6 +1,6 @@
 // src/components/common/FileTable.jsx
 import { useNavigate } from "react-router-dom";
-import styles from "../About/AboutTable.module.css";
+import styles from "../Layout/AboutTable.module.css";
 import { getStatusTagConfig, tagVariants } from "../../data/statusTags";
 
 function FileTable({ files, selectedFile, setSelectedFile }) {

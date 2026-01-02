@@ -1,10 +1,10 @@
 import { useState, useEffect, useRef } from "react";
 import { useParams } from "react-router-dom";
-import AboutHeader from "../components/About/AboutHeader";
-import AboutSidebar from "../components/About/AboutSidebar";
-import AboutInfoPanel from "../components/About/AboutInfoPanel";
+import AboutHeader from "../components/Layout/AboutHeader";
+import AboutSidebar from "../components/Layout/AboutSidebar";
+import AboutInfoPanel from "../components/Layout/AboutInfoPanel";
 import FileTable from "@/components/common/FileTable";
-import styles from "../components/About/About.module.css";
+import styles from "../components/Layout/About.module.css";
 import { projectDetailFiles } from "@/data/projectsData";
 import { useSorting } from "@/hooks/useSorting";
 import { useAchievements } from "@/context/AchievementsContext";
