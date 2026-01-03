@@ -47,12 +47,12 @@
 @media (max-width: 500px) {
     .container {
         border-right: 1px solid var(--border-header);
-        margin-left: 3px;
+        margin-left: 0px;
         width: 95px;
     }
 
     .button {
-        padding: 8px;
+        padding: 0px;
     }
 
     .icon {

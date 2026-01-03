@@ -1,4 +1,4 @@
-import SortDropdown from "../Dropdown/SortDropdown";
+import SortDropdown from "@/features/SortDropdown/SortDropdown";
 import styles from "./styles/Toolbar.module.css";
 import SocialButtons from "./components/SocialButtons";
 import SearchBar from "./components/SearchBar";
