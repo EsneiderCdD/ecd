@@ -1,37 +1,37 @@
 /* src/components/About/AboutTable.module.css */
 
 .table {
-    flex: 1;
-    padding: 10px;
-    height: 85vh;
     background: var(--bg-table);
     color: var(--text-primary);
+    flex: 1;
+    height: 85vh;
+    padding: 10px;
 }
 
 .tableRow {
-    display: grid;
-    grid-template-columns: 275px 1.75fr 1.75fr 0.5fr 0.5fr;
     align-items: center;
-    gap: 10px;
-    padding: 13px 0;
     border-bottom: 1px solid var(--border-light);
+    color: var(--text-primary);
+    display: grid;
     font-family: var(--f-ibm);
     font-size: var(--text-base);
     font-weight: var(--font-normal);
-    line-height: var(--leading-tight);
+    gap: 10px;
+    grid-template-columns: 275px 1.75fr 1.75fr 0.5fr 0.5fr;
     letter-spacing: 0.1em;
-    color: var(--text-primary);
+    line-height: var(--leading-tight);
+    padding: 13px 0;
 }
 
 .headerRow {
+    background: var(--header-row-bg);
+    color: var(--text-secondary);
     font-family: var(--f-ibm);
     font-size: var(--text-base);
     font-weight: var(--font-semibold);
-    line-height: var(--leading-tight);
     letter-spacing: 0.01em;
+    line-height: var(--leading-tight);
     text-transform: uppercase;
-    background: var(--header-row-bg);
-    color: var(--text-secondary);
 }
 
 .headerRow .name {
@@ -55,19 +55,19 @@
 }
 
 .rowIcon {
-    display: inline-flex;
     align-items: center;
-    justify-content: center;
-    width: 20px;
+    display: inline-flex;
     height: 20px;
+    justify-content: center;
     margin-right: 6px;
     vertical-align: middle;
+    width: 20px;
 }
 
 .rowIcon img {
-    width: 18px;
     height: 18px;
     object-fit: contain;
+    width: 18px;
 }
 
 .rowIcon span {
@@ -76,36 +76,36 @@
 }
 
 .date {
-    min-width: 120px;
-    font-size: 0.8rem;
     color: var(--text-muted);
+    font-size: 0.8rem;
+    min-width: 120px;
 }
 
 .type {
-    min-width: 100px;
-    font-size: 0.8rem;
     color: var(--text-muted);
+    font-size: 0.8rem;
+    min-width: 100px;
 }
 
 .size {
-    min-width: 80px;
-    font-size: 0.8rem;
     color: var(--text-muted);
+    font-size: 0.8rem;
+    min-width: 80px;
 }
 
 .statusTag {
-    display: inline-block;
-    padding: 0px;
     border-radius: 50px;
-    width: 125%;
+    display: inline-block;
+    letter-spacing: 0.3px;
+    padding: 0px;
     text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5);
     transition: all 0.2s ease;
-    letter-spacing: 0.3px;
+    width: 125%;
 }
 
 .statusTag:hover {
-    transform: translateY(-1px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-1px);
 }
 
 .tableRow:not(.headerRow):hover {
@@ -119,34 +119,34 @@
 
 /* Tamaño especial para el icono de ordenar */
 .orderIcon {
-    display: flex;
     align-items: center;
-    width: 18px;
+    display: flex;
     height: 18px;
-    transition: transform 0.2s ease, opacity 0.2s ease;
     transform: translateX(-5px);
+    transition: transform 0.2s ease, opacity 0.2s ease;
+    width: 18px;
 }
 
 /* Responsive */
 @media (max-width: 1000px) {
     .table {
-        height: auto;
         flex: none;
+        height: auto;
     }
 }
 
 @media (max-width: 900px) {
     .tableRow {
-        gap: 8px;
-        padding: 10px 0;
         font-size: 0.9rem;
+        gap: 8px;
         grid-template-columns: 220px 1.5fr 1.5fr 0.5fr 0.5fr;
+        padding: 10px 0;
     }
 
     .rowIcon {
-        width: 18px;
         height: 18px;
         margin-right: 4px;
+        width: 18px;
     }
 
     .name {
@@ -177,8 +177,8 @@
 
 @media (max-width: 500px) {
     .table {
-        overflow-x: auto;
         display: block;
+        overflow-x: auto;
     }
 
     .tableRow {
@@ -186,9 +186,9 @@
     }
 
     .headerRow {
+        min-width: 500px;
         position: sticky;
         top: 0;
-        min-width: 500px;
     }
 
     /* Scrollbar styles */

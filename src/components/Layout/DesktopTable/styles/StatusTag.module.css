@@ -1,47 +1,47 @@
 .tag {
-    display: inline-flex;
     align-items: center;
-    justify-content: center;
-    padding: 4px 12px;
     border-radius: 20px;
+    display: inline-flex;
     font-size: 0.85rem;
     font-weight: 500;
-    white-space: nowrap;
+    justify-content: center;
+    padding: 4px 12px;
     transition: all 0.3s ease;
+    white-space: nowrap;
 }
 
 /* Variantes de Estado */
 .favorite {
     background: linear-gradient(135deg, #ffd700, #ffed4e);
-    color: #8b4513;
     border: 1px solid #ffd700;
     box-shadow: 0 2px 4px rgba(255, 215, 0, 0.3);
+    color: #8b4513;
 }
 
 .highlight {
     background: linear-gradient(135deg, #ff6b6b, #ff8e8e);
-    color: #ffffff;
     border: 1px solid #ff6b6b;
     box-shadow: 0 2px 4px rgba(255, 107, 107, 0.3);
+    color: #ffffff;
 }
 
 .new {
     background: linear-gradient(135deg, #4ecdc4, #6dd5ed);
-    color: #ffffff;
     border: 1px solid #4ecdc4;
     box-shadow: 0 2px 4px rgba(78, 205, 196, 0.3);
+    color: #ffffff;
 }
 
 .urgent {
     background: linear-gradient(135deg, #ff4757, #ff6b7a);
-    color: #ffffff;
     border: 1px solid #ff4757;
     box-shadow: 0 2px 4px rgba(255, 71, 87, 0.3);
+    color: #ffffff;
 }
 
 .beta {
     background: linear-gradient(135deg, #a55eea, #c084fc);
-    color: #ffffff;
     border: 1px solid #a55eea;
     box-shadow: 0 2px 4px rgba(165, 94, 234, 0.3);
+    color: #ffffff;
 }

@@ -1,45 +1,45 @@
 .notification {
+  --bg-gradient: linear-gradient(135deg, #5dade2, #3498db);
   --border: #3498db;
   --glow: rgba(52, 152, 219, 0.4);
-  --bg-gradient: linear-gradient(135deg, #5dade2, #3498db);
-
-  position: fixed;
-  bottom: 30px;
-  left: 50%;
-  transform: translateX(-50%) translateY(150%);
-
-  width: 68%;
-  max-width: 340px;
-
   background: var(--bg-primary);
   border: 2px solid var(--border);
-  box-shadow: 0 4px 20px var(--glow);
   border-radius: 12px;
-  padding-bottom: 4px;
-
-  overflow: visible;
+  bottom: 30px;
+  box-shadow: 0 4px 20px var(--glow);
   cursor: pointer;
-
+  left: 50%;
+  max-width: 340px;
+  overflow: visible;
+  padding-bottom: 4px;
+  position: fixed;
+  transform: translateX(-50%) translateY(150%);
   transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  width: 68%;
   z-index: 10000;
+
+
+
+
+
 }
 
 .common {
+  --bg-gradient: linear-gradient(135deg, #5dade2, #3498db);
   --border: #3498db;
   --glow: rgba(52, 152, 219, 0.4);
-  --bg-gradient: linear-gradient(135deg, #5dade2, #3498db);
 }
 
 .rare {
+  --bg-gradient: linear-gradient(135deg, #bb8fce, #9b59b6);
   --border: #9b59b6;
   --glow: rgba(155, 89, 182, 0.5);
-  --bg-gradient: linear-gradient(135deg, #bb8fce, #9b59b6);
 }
 
 .legendary {
+  --bg-gradient: linear-gradient(135deg, #f5b041, #f39c12);
   --border: #f39c12;
   --glow: rgba(243, 156, 18, 0.6);
-  --bg-gradient: linear-gradient(135deg, #f5b041, #f39c12);
 }
 
 .notification.visible {
@@ -47,28 +47,28 @@
 }
 
 .notification.leaving {
-  transform: translateX(-50%) translateY(150%);
   opacity: 0;
+  transform: translateX(-50%) translateY(150%);
 }
 
 .content {
-  display: flex;
   align-items: center;
+  display: flex;
   gap: 16px;
   padding: 16px;
   position: relative;
 }
 
 .achievementImage {
-  flex-shrink: 0;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  display: flex;
   align-items: center;
-  justify-content: center;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
   background: var(--bg-gradient);
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-shrink: 0;
+  height: 60px;
+  justify-content: center;
+  width: 60px;
 }
 
 .textContent {
@@ -77,74 +77,74 @@
 }
 
 .badge {
-  position: absolute;
-  top: 0;
-  right: 12px;
-  left: auto;
-  transform: translateY(-50%);
-  z-index: 10001;
+  background: var(--border);
+  border-radius: 6px;
+  color: #fff;
   font-size: 11px;
   font-weight: 600;
-  text-transform: uppercase;
+  left: auto;
   letter-spacing: 0.5px;
-  padding: 6px 14px;
-  border-radius: 6px;
-  white-space: nowrap;
   max-width: calc(100% - 40px);
   overflow: hidden;
+  padding: 6px 14px;
+  position: absolute;
+  right: 12px;
   text-overflow: ellipsis;
+  text-transform: uppercase;
+  top: 0;
+  transform: translateY(-50%);
+  white-space: nowrap;
+  z-index: 10001;
 
-  background: var(--border);
-  color: #fff;
 }
 
 .title {
+  color: var(--text-primary);
   font-size: 18px;
   font-weight: 700;
-  color: var(--text-primary);
-  margin: 0 0 4px 0;
   line-height: 1.2;
+  margin: 0 0 4px 0;
 }
 
 .description {
-  font-size: 13px;
   color: var(--text-secondary);
-  margin: 0 0 6px 0;
+  font-size: 13px;
   line-height: 1.4;
+  margin: 0 0 6px 0;
 }
 
 .points {
-  font-size: 12px;
-  font-weight: 600;
+  background: var(--hover-bg);
+  border-radius: 4px;
   color: var(--text-muted);
   display: inline-block;
-  background: var(--hover-bg);
+  font-size: 12px;
+  font-weight: 600;
   padding: 2px 8px;
-  border-radius: 4px;
 }
 
 .icon {
-  width: 60px;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.15));
   height: 60px;
   object-fit: contain;
-  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.15));
+  width: 60px;
 }
 
 .progressBar {
-  position: absolute;
-  left: 0;
-  right: 0;
+  background: var(--bg-secondary);
   bottom: 0;
   height: 4px;
-  background: var(--bg-secondary);
+  left: 0;
   overflow: hidden;
+  position: absolute;
+  right: 0;
 }
 
 .progressFill {
-  height: 100%;
-  width: 100%;
   animation: progress 5s linear;
   background: var(--border);
+  height: 100%;
+  width: 100%;
 }
 
 @keyframes progress {
@@ -159,34 +159,34 @@
 
 @media (max-width: 768px) {
   .notification {
-    width: 95%;
-    max-width: none;
     bottom: 20px;
+    max-width: none;
+    width: 95%;
   }
 
   .content {
-    padding: 12px;
     gap: 12px;
+    padding: 12px;
   }
 
   .iconContainer {
-    width: 40px;
     height: 40px;
+    width: 40px;
   }
 
   .trophyIcon {
-    width: 24px;
     height: 24px;
+    width: 24px;
   }
 
   .achievementImage {
-    width: 50px;
     height: 50px;
+    width: 50px;
   }
 
   .icon {
-    width: 45px;
     height: 45px;
+    width: 45px;
   }
 
   .title {

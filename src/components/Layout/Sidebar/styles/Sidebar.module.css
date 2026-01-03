@@ -3,22 +3,22 @@
 .sidebar {
     background: var(--bg-sidebar);
     border-right: 1px solid var(--border-color);
-    position: relative;
     display: flex;
     flex-direction: column;
-    min-width: 200px;
     gap: 12px;
+    min-width: 200px;
     padding: 10px;
+    position: relative;
 }
 
 .sidebarResizer {
-    width: 5px;
+    background: transparent;
+    bottom: 0;
     cursor: col-resize;
     position: absolute;
     right: 0;
     top: 0;
-    bottom: 0;
-    background: transparent;
+    width: 5px;
 }
 
 .sidebarResizer:hover {
@@ -26,10 +26,10 @@
 }
 
 .link {
-    text-decoration: none;
+    border-radius: 4px;
     color: var(--text-primary);
     padding: 6px 8px;
-    border-radius: 4px;
+    text-decoration: none;
 }
 
 .active {
@@ -38,16 +38,16 @@
 }
 
 .iconsidebarContainer {
+    align-items: center;
     display: flex;
     flex-direction: row;
     text-align: center;
-    align-items: center;
 }
 
 .iconsidebar {
-    width: 20px;
     height: 20px;
     margin-right: 10%;
+    width: 20px;
 }
 
 .mainNavSection {
@@ -57,22 +57,22 @@
 }
 
 .sidebarDivider {
-    height: 1px;
     background: var(--border-light);
+    height: 1px;
     margin: 20px 10px;
     position: relative;
 }
 
 .sidebarDivider::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 30px;
-    height: 3px;
     background: var(--border-color);
     border-radius: 2px;
+    content: '';
+    height: 3px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 30px;
 }
 
 .achievementsSection {
@@ -86,14 +86,14 @@
 /* Responsive */
 @media (max-width: 1000px) {
     .sidebar {
-        width: 100% !important;
-        flex-direction: row;
-        border-right: none;
-        border-bottom: 1px solid var(--border-color);
         align-items: center;
+        border-bottom: 1px solid var(--border-color);
+        border-right: none;
+        flex-direction: row;
         justify-content: space-between;
         overflow: hidden;
         padding: 5px 7px;
+        width: 100% !important;
     }
 
     .sidebarResizer {
@@ -101,17 +101,17 @@
     }
 
     .mainNavSection {
-        flex-direction: row;
         align-items: center;
+        flex-direction: row;
         gap: 15px;
     }
 
     .achievementsSection {
+        align-items: center;
         flex-direction: row;
+        gap: 15px;
         margin-top: 0;
         padding-bottom: 0;
-        align-items: center;
-        gap: 15px;
     }
 
     .sidebarDivider {
@@ -124,8 +124,8 @@
 
     .link {
         font-size: 14px;
-        white-space: nowrap;
         padding: 6px 8px;
+        white-space: nowrap;
     }
 }
 

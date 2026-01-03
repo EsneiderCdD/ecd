@@ -1,31 +1,31 @@
 .folder {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   margin: 0.5rem 1rem;
   width: 80px; 
 }
 
 .link {
-  text-decoration: none;
+  align-items: center;
   color: black;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  text-decoration: none;
 }
 
 .icon {
-  width: 48px;   
+  background: url("https://cdn-icons-png.flaticon.com/512/716/716784.png") 
+  background-size: contain; 
   height: 48px;
   margin-bottom: 0.3rem;
-  background: url("https://cdn-icons-png.flaticon.com/512/716/716784.png") 
+  width: 48px;   
               no-repeat center center;
-  background-size: contain; 
 }
 
 .label {
   font-size: 12px; 
+  max-width: 80px;
   text-align: center;
   word-wrap: break-word;
-  max-width: 80px;
 }

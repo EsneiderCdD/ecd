@@ -1,81 +1,81 @@
 /* Header Structure */
 .header {
-    height: 50px;
+    align-items: center;
     background-color: var(--bg-header);
+    border-bottom: 1px solid var(--border-header);
+    border-top: 1px solid var(--border-header);
     display: flex;
     gap: 12px;
-    align-items: center;
-    border-top: 1px solid var(--border-header);
-    border-bottom: 1px solid var(--border-header);
+    height: 50px;
 }
 
 /* Icons & Navigation Groups */
 .icons2 {
-    display: flex;
-    min-width: 265px;
-    justify-content: space-between;
-    gap: 5px;
-    margin-left: 7px;
     border-right: 1px solid var(--border-header);
+    display: flex;
+    gap: 5px;
+    justify-content: space-between;
+    margin-left: 7px;
+    min-width: 265px;
     padding-right: 15px;
     padding-top: 1px;
 }
 
 .icons3 {
-    display: flex;
     align-items: center;
-    justify-content: center;
-    width: 52px;
     border-right: 1px solid var(--border-header);
+    display: flex;
+    justify-content: center;
     padding-right: 12px;
+    width: 52px;
 }
 
 .icons3 p {
-    font-size: 14px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
 }
 
 .icons5 {
     display: flex;
-    min-width: 100px;
-    margin-left: auto;
     gap: 5px;
+    margin-left: auto;
+    min-width: 100px;
 }
 
 .icons5 p {
-    font-size: 14px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
 }
 
 /* Individual Icon Styles */
 .icon {
-    width: 17px;
     height: 17px;
-    text-align: center;
     margin-right: 5px;
+    text-align: center;
     transition: transform 0.2s ease, opacity 0.2s ease;
+    width: 17px;
 }
 
 .supportIcon {
-    width: 21px;
     height: 21px;
     vertical-align: middle;
+    width: 21px;
 }
 
 /* Icon Interactions & Hovers */
 .icons2 a:hover .icon {
-    transform: scale(1.5);
     opacity: 0.8;
+    transform: scale(1.5);
 }
 
 .themeIcon:hover .icon {
-    transform: scale(1.5);
     opacity: 0.8;
+    transform: scale(1.5);
 }
 
 .hoverIcon:hover {
-    transform: scale(1.5);
     opacity: 0.8;
+    transform: scale(1.5);
 }
 
 .supportIcon:hover {
@@ -84,14 +84,14 @@
 
 /* Search Styles */
 .searchContainer {
-    display: flex;
     align-items: center;
-    gap: 10px;
-    padding: 6px 14px;
-    width: 30rem;
     background: var(--bg-secondary);
     border-radius: 18px;
+    display: flex;
+    gap: 10px;
+    padding: 6px 14px;
     position: relative;
+    width: 30rem;
 }
 
 /* Focus effects */
@@ -102,11 +102,11 @@
 }
 
 .searchIcon {
-    width: 16px;
-    height: 16px;
     color: var(--text-muted);
     flex-shrink: 0;
+    height: 16px;
     transition: color 0.2s ease;
+    width: 16px;
 }
 
 .searchContainer:focus-within .searchIcon {
@@ -114,15 +114,15 @@
 }
 
 .searchInput {
-    flex: 1;
-    border: none;
     background: transparent;
+    border: none;
     color: var(--text-primary);
-    font-size: 13px;
+    flex: 1;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13px;
+    min-width: 0;
     outline: none;
     padding: 4px 0;
-    min-width: 0;
 }
 
 .searchInput::placeholder {
@@ -132,39 +132,39 @@
 
 /* Search Results */
 .searchResults {
-    position: fixed;
-    top: 55px;
-    left: 43%;
-    transform: translateX(-50%);
-    width: 30rem;
-    max-width: 90vw;
     background: var(--bg-primary);
     border: 1px solid var(--border-color);
     border-radius: 8px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    left: 43%;
     max-height: 400px;
+    max-width: 90vw;
     overflow: hidden;
+    position: fixed;
+    top: 55px;
+    transform: translateX(-50%);
+    width: 30rem;
     z-index: 9999;
 }
 
 .searchResultsHeader {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 12px 16px;
     background: var(--bg-secondary);
     border-bottom: 1px solid var(--border-light);
+    color: var(--text-secondary);
+    display: flex;
     font-size: 12px;
     font-weight: 500;
-    color: var(--text-secondary);
+    justify-content: space-between;
+    padding: 12px 16px;
 }
 
 .resultsCount {
     background: var(--hover-bg);
-    padding: 2px 8px;
     border-radius: 12px;
-    font-size: 11px;
     color: var(--text-muted);
+    font-size: 11px;
+    padding: 2px 8px;
 }
 
 .searchResultsContent {
@@ -173,13 +173,13 @@
 }
 
 .searchResultItem {
-    display: flex;
     align-items: center;
+    border-bottom: 1px solid var(--border-light);
+    cursor: pointer;
+    display: flex;
     gap: 12px;
     padding: 12px 16px;
-    cursor: pointer;
     transition: background-color 0.2s ease;
-    border-bottom: 1px solid var(--border-light);
 }
 
 .searchResultItem:hover {
@@ -192,15 +192,15 @@
 
 .resultIcon {
     font-size: 18px;
-    width: 24px;
     text-align: center;
+    width: 24px;
 }
 
 .resultIconImg {
-    width: 24px;
+    display: inline-block;
     height: 24px;
     object-fit: contain;
-    display: inline-block;
+    width: 24px;
 }
 
 .resultInfo {
@@ -209,18 +209,18 @@
 }
 
 .resultName {
+    color: var(--text-primary);
     font-size: 14px;
     font-weight: 500;
-    color: var(--text-primary);
     margin-bottom: 2px;
-    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .resultType {
-    font-size: 12px;
     color: var(--text-muted);
+    font-size: 12px;
     text-transform: capitalize;
 }
 
@@ -232,16 +232,16 @@
     }
 
     .icons2 {
+        flex: 1;
+        gap: 0;
+        justify-content: space-between;
         min-width: auto;
         padding-right: 8px;
-        gap: 0;
-        flex: 1;
-        justify-content: space-between;
     }
 
     .searchContainer {
-        width: 14rem;
         padding: 4px 8px;
+        width: 14rem;
     }
 
     .icons3 p,
@@ -251,8 +251,8 @@
 
     .icons3,
     .icons5 {
-        width: auto;
         min-width: auto;
+        width: auto;
     }
 }
 
@@ -270,34 +270,34 @@
 /* Responsive < 400px */
 @media (max-width: 400px) {
     .icon {
-        width: 15px;
         height: 15px;
         margin-right: 4px;
+        width: 15px;
     }
 
     .supportIcon {
-        width: 18px;
         height: 18px;
+        width: 18px;
     }
 
     .icons2 {
-        padding-right: 6px;
         gap: 3px;
+        padding-right: 6px;
     }
 
     .icons3 {
-        padding-right: 4px;
         min-width: 35px;
+        padding-right: 4px;
     }
 
     .searchContainer {
-        width: 6.5rem;
-        padding: 4px 8px;
         border-radius: 14px;
+        padding: 4px 8px;
+        width: 6.5rem;
     }
 
     .searchIcon {
-        width: 14px;
         height: 14px;
+        width: 14px;
     }
 }

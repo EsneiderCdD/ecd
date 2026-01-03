@@ -1,9 +1,9 @@
 .container {
-    padding: 2rem;
-    width: 100%;
+    background-color: var(--bg-primary);
     height: 100vh;
     overflow-y: auto;
-    background-color: var(--bg-primary);
+    padding: 2rem;
+    width: 100%;
 }
 
 .header {
@@ -11,9 +11,9 @@
 }
 
 .title {
+    color: var(--text-primary);
     font-size: 2rem;
     font-weight: bold;
-    color: var(--text-primary);
     margin-bottom: 0.5rem;
 }
 
@@ -24,26 +24,26 @@
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     padding-bottom: 2rem;
 }
 
 .notificationWrapper {
-    position: relative;
-    /* Ensure the notification takes up space in the grid */
-    min-height: 120px;
     display: flex;
     justify-content: center;
+    min-height: 120px;
+    position: relative;
+    /* Ensure the notification takes up space in the grid */
 }
 
 .staticNotification {
-    position: relative;
     bottom: auto;
     left: auto;
+    margin: 0 auto;
+    max-width: 340px;
+    position: relative;
     transform: none;
     width: auto;
-    max-width: 340px;
-    margin: 0 auto;
     z-index: 1;
 }
