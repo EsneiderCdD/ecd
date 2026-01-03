@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   margin: 0.5rem 1rem;
-  width: 80px; 
+  width: 80px;
 }
 
 .link {
@@ -15,16 +15,15 @@
 }
 
 .icon {
-  background: url("https://cdn-icons-png.flaticon.com/512/716/716784.png") 
-  background-size: contain; 
+  background: url("https://cdn-icons-png.flaticon.com/512/716/716784.png") no-repeat center center;
+  background-size: contain;
   height: 48px;
   margin-bottom: 0.3rem;
-  width: 48px;   
-              no-repeat center center;
+  width: 48px;
 }
 
 .label {
-  font-size: 12px; 
+  font-size: 12px;
   max-width: 80px;
   text-align: center;
   word-wrap: break-word;
