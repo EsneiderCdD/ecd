@@ -1,6 +1,7 @@
 import { useState } from "react";
 import ContactModal from "@/features/ContactModal/ContactModal";
 import styles from "../styles/ProposalButton.module.css";
+import supportIcon from '@/assets/icons/support.png';
 
 function ProposalButton() {
     const [modalConfig, setModalConfig] = useState({
@@ -31,7 +32,7 @@ function ProposalButton() {
                     title="Hacer una Propuesta"
                 >
                     <img
-                        src="https://cdn-icons-png.flaticon.com/128/924/924915.png"
+                        src={supportIcon}
                         alt="Nuevo"
                         className={styles.icon}
                     />
