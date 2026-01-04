@@ -11,7 +11,7 @@ export const framerMotionData = {
         icon: "📁",
         name: "Framer Motion Lab",
         type: "Proyecto Personal",
-        date: "16/07/2025",
+        date: "01/07/2025",
         size: "En Curso",
         path: "/projects/framermotionlab",
         description: "Proyecto personal orientado al aprendizaje y experimentación con animaciones web en Framer Motion.",
@@ -94,7 +94,7 @@ export const framerMotionData = {
         {
             icon: "💻",
             name: "Tecnologías",
-            type: "Imagen y texto",
+            type: "Iconos",
             date: "01/06/2025",
             size: "Actualizado",
             description: generateStackHTML(['react', 'css', 'javascript', 'framermotion', 'vite']),

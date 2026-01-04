@@ -11,23 +11,19 @@
     white-space: nowrap;
 }
 
-/* Variantes de Estado */
-
-/* Actualizado: Azul profesional/sistema */
+/* Status Variants */
 .updated {
     background-color: rgba(59, 130, 246, 0.1);
     border: 1px solid rgba(59, 130, 246, 0.3);
     color: #3b82f6;
 }
 
-/* Completado: Verde éxito */
 .completed {
     background-color: rgba(16, 185, 129, 0.1);
     border: 1px solid rgba(16, 185, 129, 0.3);
     color: #10b981;
 }
 
-/* En Desarrollo: Naranja advertencia/trabajo */
 .dev {
     background-color: rgba(245, 158, 11, 0.1);
     border: 1px solid rgba(245, 158, 11, 0.3);
