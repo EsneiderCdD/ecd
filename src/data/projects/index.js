@@ -5,6 +5,7 @@ import { framerMotionData } from './framerMotionLab';
 import { trainItData } from './trainIt';
 import { guauData } from './guau';
 import { kromeeData } from './kromee';
+import { portafolioData } from './portafolio';
 
 // Projects Aggregation
 const allProjects = [
@@ -14,7 +15,9 @@ const allProjects = [
     framerMotionData,
     trainItData,
     guauData,
+    portafolioData,
     kromeeData,
+
 ];
 
 // Summaries List
