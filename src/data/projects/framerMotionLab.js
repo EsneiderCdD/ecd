@@ -1,3 +1,4 @@
+import banner from "@/assets/images/Banner.png";
 import fm from "@/assets/images/fm.png";
 import fm1 from "@/assets/images/fm1.png";
 import fm2 from "@/assets/images/fm2.png";
@@ -15,7 +16,7 @@ export const framerMotionData = {
         size: "En Curso",
         path: "/projects/framermotionlab",
         description: "Proyecto personal orientado al aprendizaje y experimentación con animaciones web en Framer Motion.",
-        previewUrl: fm4,
+        previewUrl: banner,
         downloadUrl: null,
         linkUrl: null,
     },
@@ -27,10 +28,9 @@ export const framerMotionData = {
             date: "01/06/2025",
             size: "Actualizado",
             description: [
-                "El sistema se estructura como una **aplicación web educativa e interactiva** enfocada en el aprendizaje progresivo de animaciones en *Framer Motion*. Incluye un catálogo de ejemplos visuales, un sistema de navegación dinámica y un módulo tipo *builder* que permite experimentar con propiedades de animación en tiempo real.",
-                "Cada ejemplo presenta simultáneamente el código fuente y su resultado visual, fomentando la comprensión práctica. Concebido como una **herramienta pedagógica** y un espacio de experimentación autodidacta, el proyecto busca democratizar el conocimiento técnico y servir como una plataforma abierta de exploración creativa."
+                "Framer Motion Lab como una **aplicación web educativa e interactiva** enfocada en el aprendizaje progresivo de animaciones en *Framer Motion*. Incluye un catálogo de ejemplos visuales, un sistema de navegación dinámica y un módulo tipo *builder* que permite experimentar con propiedades de animación en tiempo real. El sistema se estructura como una **herramienta pedagógica** y un espacio de experimentación autodidacta."
             ],
-            previewUrl: null,
+            previewUrl: fm4,
             downloadUrl: null,
             linkUrl: null,
         },

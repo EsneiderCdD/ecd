@@ -1,3 +1,4 @@
+import banner from "@/assets/images/Banner.png";
 import gua from "@/assets/images/gua.png";
 import gua2 from "@/assets/images/gua2.png";
 import guau5 from "@/assets/images/guau5.png";
@@ -16,7 +17,7 @@ export const guauData = {
         size: "En Curso",
         path: "/projects/guau",
         description: " Estoy construyendo Guau como un legado tecnológico con sentido ético: una herramienta que une psicología, matemática y software en favor del bienestar animal. Más allá de la programación, el proyecto busca que la adopción sea un acto consciente, sustentado en ciencia, empatía y datos reales. Si en algún momento un refugio u organización desea integrarlo, estoy dispuesto a adaptarlo como aporte social y de libre implementación.",
-        previewUrl: Guau,
+        previewUrl: banner,
         downloadUrl: null,
         linkUrl: null,
     },
@@ -30,7 +31,7 @@ export const guauData = {
             description: [
                 "Guau es una plataforma web que combina pruebas psicométricas, un algoritmo de compatibilidad basado en distancia euclidiana y una interfaz construida en **React**, donde cada elemento visual responde a la experiencia del usuario.",
             ],
-            previewUrl: null,
+            previewUrl: Guau,
             downloadUrl: null,
             linkUrl: null,
         },
