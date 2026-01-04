@@ -4,6 +4,7 @@ import { psicotranspersonalData } from './psicotranspersonal';
 import { framerMotionData } from './framerMotionLab';
 import { trainItData } from './trainIt';
 import { guauData } from './guau';
+import { kromeeData } from './kromee';
 
 // Projects Aggregation
 const allProjects = [
@@ -12,7 +13,8 @@ const allProjects = [
     psicotranspersonalData,
     framerMotionData,
     trainItData,
-    guauData
+    guauData,
+    kromeeData,
 ];
 
 // Summaries List
