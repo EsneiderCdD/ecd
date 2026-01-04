@@ -57,9 +57,7 @@ export const portafolioData = {
             previewUrl: "https://cdn-icons-png.flaticon.com/512/733/733553.png",
             iconUrl: "https://cdn-icons-png.flaticon.com/512/733/733553.png",
             downloadUrl: null,
-            links: [
-                { label: "Frontend", url: "https://github.com/Programa-TrainIT-Ar/fe-trelloop-grupo-2/tree/grupo-2" },
-            ],
+            linkUrl: "https://github.com/EsneiderCdD/ecd",
         },
     ]
 
