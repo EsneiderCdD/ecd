@@ -1,47 +1,39 @@
 .tag {
     align-items: center;
-    border-radius: 20px;
+    border-radius: 4px;
     display: inline-flex;
-    font-size: 0.85rem;
+    font-family: var(--f-ibm);
+    font-size: 0.75rem;
     font-weight: 500;
     justify-content: center;
-    padding: 4px 12px;
-    transition: all 0.3s ease;
+    padding: 2px 8px;
+    transition: all 0.2s ease;
     white-space: nowrap;
 }
 
 /* Variantes de Estado */
-.favorite {
-    background: linear-gradient(135deg, #ffd700, #ffed4e);
-    border: 1px solid #ffd700;
-    box-shadow: 0 2px 4px rgba(255, 215, 0, 0.3);
-    color: #8b4513;
+
+/* Actualizado: Azul profesional/sistema */
+.updated {
+    background-color: rgba(59, 130, 246, 0.1);
+    border: 1px solid rgba(59, 130, 246, 0.3);
+    color: #3b82f6;
 }
 
-.highlight {
-    background: linear-gradient(135deg, #ff6b6b, #ff8e8e);
-    border: 1px solid #ff6b6b;
-    box-shadow: 0 2px 4px rgba(255, 107, 107, 0.3);
-    color: #ffffff;
+/* Completado: Verde éxito */
+.completed {
+    background-color: rgba(16, 185, 129, 0.1);
+    border: 1px solid rgba(16, 185, 129, 0.3);
+    color: #10b981;
 }
 
-.new {
-    background: linear-gradient(135deg, #4ecdc4, #6dd5ed);
-    border: 1px solid #4ecdc4;
-    box-shadow: 0 2px 4px rgba(78, 205, 196, 0.3);
-    color: #ffffff;
+/* En Desarrollo: Naranja advertencia/trabajo */
+.dev {
+    background-color: rgba(245, 158, 11, 0.1);
+    border: 1px solid rgba(245, 158, 11, 0.3);
+    color: #f59e0b;
 }
 
-.urgent {
-    background: linear-gradient(135deg, #ff4757, #ff6b7a);
-    border: 1px solid #ff4757;
-    box-shadow: 0 2px 4px rgba(255, 71, 87, 0.3);
-    color: #ffffff;
-}
-
-.beta {
-    background: linear-gradient(135deg, #a55eea, #c084fc);
-    border: 1px solid #a55eea;
-    box-shadow: 0 2px 4px rgba(165, 94, 234, 0.3);
-    color: #ffffff;
+.tag:hover {
+    filter: brightness(1.1);
 }

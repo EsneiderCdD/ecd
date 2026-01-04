@@ -1,4 +1,3 @@
-/* src/components/About/AboutTable.module.css */
 
 .table {
     background: var(--bg-table);
@@ -59,7 +58,7 @@
     display: inline-flex;
     height: 20px;
     justify-content: center;
-    margin-right: 6px;
+    margin-right: 14px;
     vertical-align: middle;
     width: 20px;
 }

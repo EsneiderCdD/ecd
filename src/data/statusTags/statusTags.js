@@ -1,38 +1,18 @@
 export const statusTagsConfig = {
-  default: {
-    "Completado": null,
-    "Pausado": null,
-    "Desarrollo": null,
-    "Actualizado": null
+  "Actualizado": {
+    text: "Actualizado",
+    variant: "updated"
   },
-
-  special: {
-    "Favorito": {
-      text: "Favorito ⭐",
-      variant: "favorite"
-    },
-    "Destacado": {
-      text: "Destacado 🔥",
-      variant: "highlight"
-    },
-    "Nuevo": {
-      text: "Nuevo ✨",
-      variant: "new"
-    },
-    "Urgente": {
-      text: "Urgente ⚡",
-      variant: "urgent"
-    },
-    "Beta": {
-      text: "Divertido 🧪",
-      variant: "beta"
-    }
+  "Completado": {
+    text: "Completado",
+    variant: "completed"
+  },
+  "En Curso": {
+    text: "En Curso",
+    variant: "dev"
   }
 };
 
 export const getStatusTagConfig = (status) => {
-  if (statusTagsConfig.special[status]) {
-    return statusTagsConfig.special[status];
-  }
-  return null;
+  return statusTagsConfig[status] || null;
 };

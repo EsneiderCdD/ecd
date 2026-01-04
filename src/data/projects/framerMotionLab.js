@@ -12,7 +12,7 @@ export const framerMotionData = {
         name: "Framer Motion Lab",
         type: "Proyecto Personal",
         date: "16/07/2025",
-        size: "Beta",
+        size: "En Curso",
         path: "/projects/framermotionlab",
         description: "Proyecto personal orientado al aprendizaje y experimentación con animaciones web en Framer Motion.",
         previewUrl: fm4,
