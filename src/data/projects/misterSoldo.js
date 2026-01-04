@@ -1,4 +1,4 @@
-import mr from "@/assets/images/mr.png";
+import mrsld from "@/assets/images/mrsld.png";
 import mrs from "@/assets/images/mrs.png";
 import mrs2 from "@/assets/images/mrs2.png";
 import mrs4 from "@/assets/images/mrs4.png";
@@ -16,7 +16,7 @@ export const misterSoldoData = {
         size: "Completado",
         path: "/projects/mistersoldo",
         description: "Mister Soldo es un artista envigadeño que fusiona el Rap con ritmos urbanos y mensajes de identidad local, justicia social y esperanza. Su música refleja la esencia de Envigado: auténtica, directa y cargada de energía. Con letras honestas y beats contundentes, busca conectar con su comunidad y representar la voz de quienes transforman su realidad a través del arte.",
-        previewUrl: mr,
+        previewUrl: mrsld,
         downloadUrl: null,
         linkUrl: null,
     },

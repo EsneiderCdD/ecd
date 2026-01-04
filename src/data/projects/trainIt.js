@@ -10,7 +10,7 @@ export const trainItData = {
     summary: {
         icon: "📁",
         name: "TrainIT",
-        type: "Simulación Laboral",
+        type: "Experiencia Laboral",
         date: "01/06/2025",
         size: "Completado",
         path: "/projects/trainittrello",
@@ -90,18 +90,6 @@ export const trainItData = {
             linkUrl: null,
         },
         {
-            icon: "🎥",
-            name: "Video",
-            type: "YouTube",
-            date: "01/06/2025",
-            size: "Actualizado",
-            description: "Recorre el proyecto con un video en YouTube.",
-            previewUrl: "https://www.youtube.com/watch?v=_X2ihdxtjEU",
-            iconUrl: "https://cdn-icons-png.flaticon.com/512/1384/1384060.png",
-            downloadUrl: null,
-            linkUrl: null,
-        },
-        {
             icon: "🐙",
             name: "Repositorio",
             type: "GitHub",
@@ -116,5 +104,18 @@ export const trainItData = {
                 { label: "Backend", url: "https://github.com/Programa-TrainIT-Ar/be-trelloop-grupo-2/tree/grupo-2" }
             ],
         },
+        {
+            icon: "🎥",
+            name: "Video",
+            type: "YouTube",
+            date: "01/06/2025",
+            size: "Actualizado",
+            description: "Recorre el proyecto con un video en YouTube.",
+            previewUrl: "https://www.youtube.com/watch?v=_X2ihdxtjEU",
+            iconUrl: "https://cdn-icons-png.flaticon.com/512/1384/1384060.png",
+            downloadUrl: null,
+            linkUrl: null,
+        },
+
     ]
 };

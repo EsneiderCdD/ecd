@@ -106,19 +106,6 @@ export const guauData = {
             downloadUrl: null,
             linkUrl: null,
         },
-
-        {
-            icon: "🎥",
-            name: "Video",
-            type: "YouTube",
-            date: "01/09/2025",
-            size: "Actualizado",
-            description: "Recorre el proyecto con un video en YouTube.",
-            previewUrl: "https://www.youtube.com/watch?v=s5tN4uF9tqM",
-            iconUrl: "https://cdn-icons-png.flaticon.com/512/1384/1384060.png",
-            downloadUrl: null,
-            linkUrl: null,
-        },
         {
             icon: "🐙",
             name: "Repositorio",
@@ -131,5 +118,18 @@ export const guauData = {
             downloadUrl: null,
             linkUrl: "https://github.com/EsneiderCdD/Guau",
         },
+        {
+            icon: "🎥",
+            name: "Video",
+            type: "YouTube",
+            date: "01/09/2025",
+            size: "Actualizado",
+            description: "Recorre el proyecto con un video en YouTube.",
+            previewUrl: "https://www.youtube.com/watch?v=s5tN4uF9tqM",
+            iconUrl: "https://cdn-icons-png.flaticon.com/512/1384/1384060.png",
+            downloadUrl: null,
+            linkUrl: null,
+        },
+
     ]
 };

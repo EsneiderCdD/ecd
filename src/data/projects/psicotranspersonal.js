@@ -1,4 +1,4 @@
-import psicotranspersonal1 from "@/assets/images/psicotranspersonal1.png";
+import psicotranspl from "@/assets/images/psicotranspl.webp";
 import ps1 from "@/assets/images/ps1.png";
 import ps2 from "@/assets/images/ps2.png";
 import ps3 from "@/assets/images/ps3.png";
@@ -21,7 +21,7 @@ export const psicotranspersonalData = {
         size: "Completado",
         path: "/projects/psicotranspersonal",
         description: "Psicotranspersonal es la marca profesional de una psicóloga especializada en acompañamiento terapéutico con enfoque transpersonal. Con una comunidad digital de más de 190 000 seguidores, ha consolidado su presencia en redes sociales compartiendo contenido de bienestar y crecimiento personal.",
-        previewUrl: psicotranspersonal1,
+        previewUrl: psicotranspl,
         downloadUrl: null,
         linkUrl: null,
     },
