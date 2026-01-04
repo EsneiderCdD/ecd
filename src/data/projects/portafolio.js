@@ -21,7 +21,7 @@ export const portafolioData = {
             type: "Texto e Imagen",
             date: "01/11/2025",
             size: "Actualizado",
-            description: "TrainIT Es un programa educativo y comunidad de simulación laboral gratuito, que ofrece ganar experiencia a través de la participación en MVPs multidisciplinarios sin fines de lucro, acompañados de seniors en diferentes nichos laborales. El objetivo es que los participantes amplíen su portafolios y mejoren su perfil profesional frente a las empresas activas del mercado.",
+            description: "Esta es una plataforma web en evolución continua que organiza y presenta mi trabajo dentro de un entorno digital propio, dinámico y personalizado. Surge como respuesta a la necesidad de estructurar la experiencia y los proyectos acumulados, combinando organización, experimentación frontend y preparación para escenarios profesionales como networking o presentación de trayectoria. Más que un sitio estático, funciona como un espacio vivo que crece junto a mi desarrollo profesional.",
             previewUrl: banner,
             downloadUrl: null,
             linkUrl: null,
