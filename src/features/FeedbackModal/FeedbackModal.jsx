@@ -37,13 +37,13 @@ function FeedbackModal({ isOpen, onClose }) {
                             “Cada comentario es una pequeña hoja que ayuda a dar forma a este proyecto. Déjame tu comentario.”
                         </p>
 
-                        {/* Name Field (Optional) */}
+                        {/* Name Field */}
                         <FeedbackInput
                             name="name"
                             value={formData.name}
                             onChange={handleChange}
-                            label="Nombre (Opcional)"
-                            required={false}
+                            label="Tu Nombre"
+                            required={true}
                         />
 
                         {/* Message (Required) */}
@@ -63,7 +63,7 @@ function FeedbackModal({ isOpen, onClose }) {
 
                         {submitStatus === "error" && (
                             <div className={styles.errorMessage}>
-                                ✗ Por favor escribe un mensaje
+                                ✗ Por favor completa todos los campos
                             </div>
                         )}
 

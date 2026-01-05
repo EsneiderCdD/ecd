@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { feedbackService } from "../../../services/feedbackService";
 
 export function useFeedbackForm({ onClose }) {
     const [formData, setFormData] = useState({
@@ -22,19 +23,16 @@ export function useFeedbackForm({ onClose }) {
         setSubmitStatus(null);
 
         try {
+            const nameValid = formData.name.trim().length > 0;
             const messageValid = formData.message.trim().length > 0;
 
-            if (!messageValid) {
+            if (!nameValid || !messageValid) {
                 setSubmitStatus("error");
                 setIsSubmitting(false);
                 return;
             }
 
-            // Simulación de envío al backend
-            // Aquí se conectará con messageService en el futuro
-            await new Promise(resolve => setTimeout(resolve, 1500));
-
-            console.log("Feedback enviado:", formData);
+            await feedbackService.sendFeedback(formData);
 
             setSubmitStatus("success");
             setTimeout(() => {
