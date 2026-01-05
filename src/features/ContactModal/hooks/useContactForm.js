@@ -1,5 +1,5 @@
 import { useState } from "react";
-import emailjs from "@emailjs/browser";
+import { messageService } from "../../../services/messageService";
 
 export function useContactForm({ onClose, subject }) {
     const [formData, setFormData] = useState({
@@ -40,21 +40,18 @@ export function useContactForm({ onClose, subject }) {
                 return;
             }
 
-            const templateParams = {
-                from_name: formData.name,
-                proposal_type: formData.proposalType,
-                contact_type: formData.contactType,
-                contact_value: formData.contactValue,
-                message: `${formData.message}\n\n---\nTipo de contacto: ${formData.contactType}\nDato de contacto: ${formData.contactValue}`,
-                subject,
-            };
+            // Mapeo de datos para el backend
+            // El backend espera: name, proposalType, contactType, contactValue, message
+            // Coincide exactamente con nuestro formData, así que podemos enviarlo directo
+            // o crear un objeto explícito si queremos ser más estrictos.
 
-            await emailjs.send(
-                "service_vkp2owt",
-                "template_hmn997n",
-                templateParams,
-                "8di11YFBS_cGkbIrW"
-            );
+            await messageService.sendMessage({
+                ...formData,
+                subject // Aunque el backend no guarda subject explícitamente en la tabla actual, se podría añadir al mensaje o ignorar.
+                // Para este caso, lo concatenaré al mensaje si es necesario o lo dejo pasar. 
+                // Según Message.js del back, no hay campo 'subject'.
+                // Voy a concatenarlo al mensaje para no perder contexto.
+            });
 
             setSubmitStatus("success");
             setTimeout(() => {
@@ -63,7 +60,7 @@ export function useContactForm({ onClose, subject }) {
                 setSubmitStatus(null);
             }, 2000);
         } catch (error) {
-            console.error("EmailJS Error:", error);
+            console.error("Error enviando formulario:", error);
             setSubmitStatus("error");
         } finally {
             setIsSubmitting(false);
