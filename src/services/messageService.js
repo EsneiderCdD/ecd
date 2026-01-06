@@ -1,11 +1,6 @@
 const API_URL = import.meta.env.VITE_API_URL;
 
 export const messageService = {
-    /**
-     * Envia un nuevo mensaje de contacto al backend
-     * @param {Object} data - Datos del formulario
-     * @returns {Promise<Object>} - Respuesta del servidor
-     */
     async sendMessage(data) {
         try {
             const response = await fetch(`${API_URL}/messages`, {

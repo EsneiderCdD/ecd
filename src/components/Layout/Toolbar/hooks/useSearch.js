@@ -1,20 +1,14 @@
 import { useState, useEffect } from "react";
 import { projectsList, projectDetailFiles } from '@/data/projects';
 import { aboutFiles } from '@/data/aboutMe/aboutMe';
+import { isIconUrl } from '@/utils/fileHelpers';
 
 export function useSearch(searchRef) {
     const [searchQuery, setSearchQuery] = useState("");
     const [searchResults, setSearchResults] = useState([]);
     const [showResults, setShowResults] = useState(false);
 
-    const isIconUrl = (url) => {
-        if (!url || typeof url !== "string") return false;
-        const u = url.toLowerCase();
-        return (
-            (u.includes("flaticon.com") || u.includes("icons8.com")) &&
-            (u.endsWith(".png") || u.endsWith(".svg") || u.includes("/png") || u.includes("/svg"))
-        );
-    };
+
 
     const allSearchableData = [
         ...projectsList.map(item => ({ ...item, category: 'project' })),

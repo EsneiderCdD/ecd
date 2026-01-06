@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import styles from "../styles/DesktopTable.module.css";
 import StatusTag from "./StatusTag";
-import { isIconUrl } from "../utils/fileHelpers";
+import { isIconUrl } from "@/utils/fileHelpers";
 
 function FileRow({ file, isSelected, onClick }) {
     const navigate = useNavigate();

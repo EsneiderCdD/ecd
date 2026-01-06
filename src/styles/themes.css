@@ -31,18 +31,6 @@
   --text-sm: 12px;
   --text-xl: 18px;
   --text-xs: 11px;
-
-
-
-
-
-
-
-  /* === TAMAÑOS === */
-
-  /* === PESOS === */
-
-  /* === ALTURAS DE LÍNEA === */
 }
 
 [data-theme="dark"] {
@@ -82,6 +70,7 @@
   text-rendering: optimizeLegibility;
 
 }
+
 .text-table {
   font-family: var(--f-ibm);
   font-size: var(--text-sm);
@@ -122,11 +111,3 @@
   letter-spacing: -0.01em;
   line-height: var(--leading-tight);
 }
-/* POR AHORA NO BORRAR 
-.text-info-panel {
-  font-family: 'Source Code Pro', monospace;
-  font-size: var(--text-sm);
-  font-weight: var(--font-normal);
-  letter-spacing: 0.01em;
-  line-height: var(--leading-relaxed);
-} */
