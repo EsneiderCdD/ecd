@@ -2,7 +2,7 @@ import { X } from "lucide-react";
 import styles from "./styles/FeedbackModal.module.css";
 import { useFeedbackForm } from "./hooks/useFeedbackForm";
 import { FeedbackInput, FeedbackTextArea } from "./components/FeedbackFields";
-import ConfettiExplosion from "../../components/Effects/components/ConfettiExplosion";
+import ConfettiExplosion from "../../components/Effects/ConfettiExplosion";
 
 function FeedbackModal({ isOpen, onClose }) {
     const {
