@@ -30,16 +30,7 @@ function Sidebar() {
                 />
             </div>
 
-            <div className={styles.sidebarDivider}></div>
 
-            {/* Secondary Navigation */}
-            <div className={styles.achievementsSection}>
-                <NavigationLink
-                    to="/notifications"
-                    icon="https://cdn-icons-png.flaticon.com/512/1827/1827349.png"
-                    label="Notificaciones"
-                />
-            </div>
         </div>
     );
 }

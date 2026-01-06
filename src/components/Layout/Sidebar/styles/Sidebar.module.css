@@ -56,32 +56,11 @@
     gap: 12px;
 }
 
-.sidebarDivider {
-    background: var(--border-light);
-    height: 1px;
-    margin: 20px 10px;
-    position: relative;
-}
 
-.sidebarDivider::before {
-    background: var(--border-color);
-    border-radius: 2px;
-    content: '';
-    height: 3px;
-    left: 50%;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 30px;
-}
 
-.achievementsSection {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    margin-top: auto;
-    padding-bottom: 10px;
-}
+
+
+
 
 /* Responsive */
 @media (max-width: 1000px) {
@@ -106,17 +85,9 @@
         gap: 15px;
     }
 
-    .achievementsSection {
-        align-items: center;
-        flex-direction: row;
-        gap: 15px;
-        margin-top: 0;
-        padding-bottom: 0;
-    }
 
-    .sidebarDivider {
-        display: none;
-    }
+
+
 
     .iconsidebar {
         display: none;

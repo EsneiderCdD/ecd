@@ -11,10 +11,8 @@ export function useNotificationLogic({ achievementId, onDismiss, autoDismiss, is
         if (!isStatic) {
             playSound();
         }
-
         // Animation Entry
         setTimeout(() => setIsVisible(true), 100);
-
         // Auto Dismiss
         if (autoDismiss) {
             const timer = setTimeout(() => {

@@ -3,7 +3,7 @@ import AboutMe from "../pages/AboutMe";
 import Home from "../pages/Home";
 import Projects from "../pages/Projects.jsx";
 import ProjectDetail from "../pages/ProjectDetail.jsx";
-import Notifications from "../pages/Notifications/Notifications.jsx";
+
 
 function AppRouter() {
   return (
@@ -12,8 +12,6 @@ function AppRouter() {
       <Route path="/about" element={<AboutMe />} />
       <Route path="/projects" element={<Projects />} />
       <Route path="/projects/:projectId" element={<ProjectDetail />} />
-      
-      <Route path="/notifications" element={<Notifications />} />
     </Routes>
   );
 }
