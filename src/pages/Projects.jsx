@@ -1,5 +1,4 @@
 import { useState } from "react";
-
 import Toolbar from "../components/Layout/Toolbar/Toolbar";
 import Sidebar from "../components/Layout/Sidebar/Sidebar";
 import InfoPanel from "../components/Layout/InfoPanel/InfoPanel";
@@ -10,7 +9,7 @@ import { useSorting } from "@/hooks/useSorting";
 
 function Projects() {
   const [selectedFile, setSelectedFile] = useState(null);
-  const { sortedData, handleSortChange } = useSorting(projectsList);
+  const {sortedData, handleSortChange } = useSorting(projectsList);
 
   return (
     <div className={styles.aboutContainer}>

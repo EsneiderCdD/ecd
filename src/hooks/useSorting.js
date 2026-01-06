@@ -1,4 +1,3 @@
-// src/hooks/useSorting.js
 import { useState, useMemo } from 'react';
 
 export const useSorting = (data, defaultSort = null) => {
@@ -8,22 +7,20 @@ export const useSorting = (data, defaultSort = null) => {
     if (!data || data.length === 0) return data;
     
     if (sortType === 'name') {
-      // Ordenar alfabéticamente por nombre
+      // Name
       return [...data].sort((a, b) => {
         const nameA = a.name?.toLowerCase() || '';
         const nameB = b.name?.toLowerCase() || '';
         return nameA.localeCompare(nameB);
       });
     } else if (sortType === 'date') {
-      // Ordenar por fecha (más recientes primero)
+      // Date
       return [...data].sort((a, b) => {
         const dateA = new Date(a.date || '');
         const dateB = new Date(b.date || '');
-        return dateB - dateA; // Más reciente primero
+        return dateB - dateA;
       });
     }
-    
-    // Retornar datos en orden original (default)
     return data;
   }, [data, sortType]);
 
