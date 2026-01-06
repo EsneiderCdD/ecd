@@ -9,6 +9,7 @@ export function useFeedbackForm({ onClose }) {
 
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [submitStatus, setSubmitStatus] = useState(null);
+    const [showConfetti, setShowConfetti] = useState(false);
 
     const handleChange = (e) => {
         setFormData({
@@ -35,10 +36,12 @@ export function useFeedbackForm({ onClose }) {
             await feedbackService.sendFeedback(formData);
 
             setSubmitStatus("success");
+            setShowConfetti(true);
             setTimeout(() => {
                 onClose();
                 resetForm();
                 setSubmitStatus(null);
+                setShowConfetti(false);
             }, 2000);
         } catch (error) {
             console.error("Error enviando feedback:", error);
@@ -60,6 +63,7 @@ export function useFeedbackForm({ onClose }) {
         isSubmitting,
         submitStatus,
         handleChange,
-        handleSubmit
+        handleSubmit,
+        showConfetti
     };
 }
