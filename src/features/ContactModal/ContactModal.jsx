@@ -4,6 +4,7 @@ import { useContactForm } from "./hooks/useContactForm";
 import { FormInput, FormTextArea } from "./components/FormFields";
 import { TypeSelector } from "./components/TypeSelectors";
 import { proposalOptions, contactOptions, getContactLabel } from "./data/formConfig";
+import ConfettiExplosion from "../../components/Effects/components/ConfettiExplosion";
 
 function ContactModal({ isOpen, onClose, subject }) {
     // Logic
@@ -13,13 +14,15 @@ function ContactModal({ isOpen, onClose, subject }) {
         submitStatus,
         handleChange,
         handleTypeChange,
-        handleSubmit
+        handleSubmit,
+        showConfetti
     } = useContactForm({ onClose, subject });
 
     if (!isOpen) return null;
 
     return (
         <div className={styles.overlay} onClick={onClose}>
+            {showConfetti && <ConfettiExplosion />}
             <div className={styles.modal} onClick={(e) => e.stopPropagation()}>
                 <form className={styles.body} onSubmit={handleSubmit}>
                     <div className={styles.card}>

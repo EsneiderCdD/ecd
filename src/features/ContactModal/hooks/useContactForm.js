@@ -12,6 +12,7 @@ export function useContactForm({ onClose, subject }) {
 
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [submitStatus, setSubmitStatus] = useState(null);
+    const [showConfetti, setShowConfetti] = useState(false);
 
     const handleChange = (e) => {
         setFormData({
@@ -48,16 +49,15 @@ export function useContactForm({ onClose, subject }) {
             await messageService.sendMessage({
                 ...formData,
                 subject // Aunque el backend no guarda subject explícitamente en la tabla actual, se podría añadir al mensaje o ignorar.
-                // Para este caso, lo concatenaré al mensaje si es necesario o lo dejo pasar. 
-                // Según Message.js del back, no hay campo 'subject'.
-                // Voy a concatenarlo al mensaje para no perder contexto.
             });
 
             setSubmitStatus("success");
+            setShowConfetti(true);
             setTimeout(() => {
                 onClose();
                 resetForm();
                 setSubmitStatus(null);
+                setShowConfetti(false);
             }, 2000);
         } catch (error) {
             console.error("Error enviando formulario:", error);
@@ -83,6 +83,7 @@ export function useContactForm({ onClose, subject }) {
         submitStatus,
         handleChange,
         handleTypeChange,
-        handleSubmit
+        handleSubmit,
+        showConfetti
     };
 }

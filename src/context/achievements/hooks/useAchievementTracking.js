@@ -62,10 +62,23 @@ export function useAchievementTracking(userProgress, setUserProgress, checkAchie
         });
     }, [checkAchievements, unlockedAchievements, setUserProgress]);
 
+    const trackMessageSent = useCallback(() => {
+        setUserProgress(prev => {
+            const newProgress = {
+                ...prev,
+                messagesSent: (prev.messagesSent || 0) + 1
+            };
+            checkAchievements(newProgress, unlockedAchievements);
+            return newProgress;
+        });
+    }, [checkAchievements, unlockedAchievements, setUserProgress]);
+
     return {
         trackProjectVisit,
         trackPdfDownload,
         trackCollaborationInvite,
-        trackVideoView
+        trackCollaborationInvite,
+        trackVideoView,
+        trackMessageSent
     };
 }

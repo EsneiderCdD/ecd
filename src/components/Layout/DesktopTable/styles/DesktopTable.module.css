@@ -116,7 +116,7 @@
     background-color: var(--hover-bg);
 }
 
-/* Tamaño especial para el icono de ordenar */
+/* Icono : ordenar */
 .orderIcon {
     align-items: center;
     display: flex;
@@ -144,7 +144,7 @@
 
     .rowIcon {
         height: 18px;
-        margin-right: 4px;
+        margin-right: 14px;
         width: 18px;
     }
 

@@ -19,7 +19,8 @@ export function AchievementsProvider({ children }) {
         trackProjectVisit,
         trackPdfDownload,
         trackCollaborationInvite,
-        trackVideoView
+        trackVideoView,
+        trackMessageSent
     } = useAchievementTracking(userProgress, setUserProgress, checkAchievements, unlockedAchievements);
 
     const value = {
@@ -30,6 +31,7 @@ export function AchievementsProvider({ children }) {
         trackPdfDownload,
         trackVideoView,
         trackCollaborationInvite,
+        trackMessageSent,
         dismissNotification,
         achievementsConfig
     };
