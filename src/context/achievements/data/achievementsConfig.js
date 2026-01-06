@@ -1,19 +1,13 @@
-import stiker1 from '@/assets/stickers/stiker1.png';
-import stiker2 from '@/assets/stickers/stiker2.png';
-import stiker3 from '@/assets/stickers/stiker3.png';
-import stiker4 from '@/assets/stickers/stiker4.png';
-import stiker5 from '@/assets/stickers/stiker5.png';
-import stiker6 from '@/assets/stickers/stiker6.png';
-import stiker7 from '@/assets/stickers/stiker7.png';
-import stiker8 from '@/assets/stickers/stiker8.png';
-import stiker9 from '@/assets/stickers/stiker9.png';
+import bronzeMedal from '@/assets/icons/bronze-medal.png';
+import silverMedal from '@/assets/icons/silver-medal.png';
+import goldMedal from '@/assets/icons/gold-medal.png';
 
 export const achievementsConfig = {
 	explorer: {
 		id: 'explorer',
 		title: 'Turista Digital',
 		description: 'Abriste tu primer proyecto',
-		icon: stiker1,
+		icon: bronzeMedal,
 		condition: (state) => state.projectsOpened >= 1,
 		rarity: 'common'
 	},
@@ -22,7 +16,7 @@ export const achievementsConfig = {
 		id: 'snooper',
 		title: 'Cazador de Proyectos',
 		description: 'Abriste 3 proyectos diferentes',
-		icon: stiker2,
+		icon: silverMedal,
 		condition: (state) => state.projectsOpened >= 3,
 		rarity: 'rare'
 	},
@@ -31,7 +25,7 @@ export const achievementsConfig = {
 		id: 'interested',
 		title: 'Cartógrafo del Portafolio',
 		description: 'Abriste 5 proyectos diferentes',
-		icon: stiker3,
+		icon: goldMedal,
 		condition: (state) => state.projectsOpened >= 5,
 		rarity: 'legendary'
 	},
@@ -40,7 +34,7 @@ export const achievementsConfig = {
 		id: 'reader',
 		title: 'Ex-Analfabeta',
 		description: 'Revisaste tu primer documento técnico',
-		icon: stiker4,
+		icon: bronzeMedal,
 		condition: (state) => state.pdfsDownloaded >= 1,
 		rarity: 'common'
 	},
@@ -49,7 +43,7 @@ export const achievementsConfig = {
 		id: 'scientist',
 		title: 'Bibliotecario Digital',
 		description: 'Revisaste 3 fichas técnicas diferentes',
-		icon: stiker5,
+		icon: silverMedal,
 		condition: (state) => state.pdfsDownloaded >= 3,
 		rarity: 'rare'
 	},
@@ -58,7 +52,7 @@ export const achievementsConfig = {
 		id: 'bibliotecario',
 		title: 'PDF-ílo',
 		description: 'Revisaste 5 documentos técnicos',
-		icon: stiker6,
+		icon: goldMedal,
 		condition: (state) => (state.pdfsDownloaded || 0) >= 5,
 		rarity: 'legendary'
 	},
@@ -67,7 +61,7 @@ export const achievementsConfig = {
 		id: 'cineasta',
 		title: 'Cineasta',
 		description: 'Viste tu primer video del portafolio',
-		icon: stiker7,
+		icon: bronzeMedal,
 		condition: (state) => (state.videosWatched || 0) >= 1,
 		rarity: 'common'
 	},
@@ -76,7 +70,7 @@ export const achievementsConfig = {
 		id: 'director',
 		title: 'Trilogía del Play',
 		description: 'Viste 3 videos del portafolio',
-		icon: stiker8,
+		icon: silverMedal,
 		condition: (state) => (state.videosWatched || 0) >= 3,
 		rarity: 'rare'
 	},
@@ -85,8 +79,9 @@ export const achievementsConfig = {
 		id: 'cineastaMaestro',
 		title: 'Maratón Youtubero',
 		description: 'Viste 5 videos del portafolio',
-		icon: stiker9,
+		icon: goldMedal,
 		condition: (state) => (state.videosWatched || 0) >= 5,
 		rarity: 'legendary'
 	}
 };
+

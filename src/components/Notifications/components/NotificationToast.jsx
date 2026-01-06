@@ -21,11 +21,15 @@ function NotificationToast({ achievement, onDismiss, autoDismiss = true, classNa
             <div className={styles.content}>
                 {/* Icon */}
                 <div className={styles.achievementImage}>
-                    <img
-                        src={achievement.icon}
-                        alt={achievement.title}
-                        className={styles.icon}
-                    />
+                    {typeof achievement.icon === 'function' ? (
+                        <achievement.icon rarity={achievement.rarity} />
+                    ) : (
+                        <img
+                            src={achievement.icon}
+                            alt={achievement.title}
+                            className={styles.icon}
+                        />
+                    )}
                 </div>
 
                 {/* Text Details */}
