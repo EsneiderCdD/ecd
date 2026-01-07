@@ -35,7 +35,14 @@ export function useContactForm({ onClose, subject }) {
             const messageValid = formData.message.trim().length > 0;
             const contactValid = formData.contactValue.trim().length > 0;
 
-            if (!nameValid || !messageValid || !contactValid) {
+            // Email Validation if applicable
+            let emailValid = true;
+            if (formData.contactType === 'email') {
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                emailValid = emailRegex.test(formData.contactValue);
+            }
+
+            if (!nameValid || !messageValid || !contactValid || !emailValid) {
                 setSubmitStatus("error");
                 setIsSubmitting(false);
                 return;
