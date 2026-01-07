@@ -1,9 +1,9 @@
 import { useState, useEffect, useRef } from "react";
 import { useParams } from "react-router-dom";
-import Toolbar from "../components/Layout/Toolbar/Toolbar";
-import Sidebar from "../components/Layout/Sidebar/Sidebar";
-import InfoPanel from "../components/Layout/InfoPanel/InfoPanel";
-import DesktopTable from "../components/Layout/DesktopTable/DesktopTable";
+import Toolbar from "../reusable/Layout/Toolbar/Toolbar";
+import Sidebar from "../reusable/Layout/Sidebar/Sidebar";
+import InfoPanel from "../reusable/Layout/InfoPanel/InfoPanel";
+import DesktopTable from "../reusable/Layout/DesktopTable/DesktopTable";
 import styles from "./AboutMe.module.css";
 import { projectDetailFiles } from "@/data/projects";
 import { useSorting } from "@/hooks/useSorting";

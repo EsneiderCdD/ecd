@@ -4,7 +4,7 @@ import { useContactForm } from "./hooks/useContactForm";
 import { FormInput, FormTextArea } from "./components/FormFields";
 import { TypeSelector } from "./components/TypeSelectors";
 import { proposalOptions, contactOptions, getContactLabel } from "./data/formConfig";
-import ConfettiExplosion from "../../components/Effects/ConfettiExplosion";
+import ConfettiExplosion from "../../reusable/Effects/ConfettiExplosion";
 
 function ContactModal({ isOpen, onClose, subject }) {
     // Logic

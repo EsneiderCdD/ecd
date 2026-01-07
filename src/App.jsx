@@ -1,5 +1,5 @@
 import AppRouter from './routes/AppRouter'
-import NotificationManager from './components/Notifications/NotificationManager'
+import NotificationManager from './reusable/Notifications/NotificationManager'
 
 function App() {
   return (
