@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Moon, Sun } from "lucide-react";
 import styles from "../styles/Toolbar.module.css";
 import { useTheme } from "@/context/ThemeContext";
@@ -87,13 +88,15 @@ function SocialButtons() {
                     />
                 </div>
 
-                {/* Support */}
-                <img
-                    src="https://cdn-icons-png.flaticon.com/512/6581/6581211.png "
-                    alt="Próximamente..."
-                    title="Próximamente..."
-                    className={`${styles.icon} ${styles.hoverIcon} ${styles.supportIcon}`}
-                />
+                {/* Support - Próximamente */}
+                <Link to="/coming-soon" style={{ display: 'flex' }}>
+                    <img
+                        src="https://cdn-icons-png.flaticon.com/512/6581/6581211.png "
+                        alt="Próximamente..."
+                        title="Próximamente..."
+                        className={`${styles.icon} ${styles.hoverIcon} ${styles.supportIcon}`}
+                    />
+                </Link>
             </div>
 
             <FeedbackModal

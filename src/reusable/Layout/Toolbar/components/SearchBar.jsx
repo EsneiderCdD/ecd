@@ -58,7 +58,7 @@ function SearchBar() {
                                     <div className={styles.resultName}>{item.name}</div>
                                     <div className={styles.resultType}>
                                         {item.type} • {item.category === 'project' ? '📁 Proyecto' :
-                                            item.category === 'about' ? '👤 Sobre mí' :
+                                            item.category === 'about' ? '📁 Sobre mí' :
                                                 '📄 Archivo'}
                                     </div>
                                 </div>
