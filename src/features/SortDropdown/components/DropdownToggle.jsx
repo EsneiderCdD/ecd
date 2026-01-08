@@ -1,4 +1,4 @@
-import orderIcon from '@/assets/icons/order.png';
+import orderIcon from '@/assets/icons/order.webp';
 import styles from '../styles/SortDropdown.module.css';
 
 function DropdownToggle({ onClick }) {

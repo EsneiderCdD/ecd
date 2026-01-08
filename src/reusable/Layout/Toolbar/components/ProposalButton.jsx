@@ -1,7 +1,7 @@
 import { useState } from "react";
 import ContactModal from "@/features/ContactModal/ContactModal";
 import styles from "../styles/ProposalButton.module.css";
-import supportIcon from '@/assets/icons/support.png';
+import supportIcon from '@/assets/icons/support.webp';
 
 function ProposalButton() {
     const [modalConfig, setModalConfig] = useState({

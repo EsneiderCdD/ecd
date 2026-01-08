@@ -1,6 +1,6 @@
-import bronzeMedal from '@/assets/icons/bronze-medal.png';
-import silverMedal from '@/assets/icons/silver-medal.png';
-import goldMedal from '@/assets/icons/gold-medal.png';
+import bronzeMedal from '@/assets/icons/bronze-medal.webp';
+import silverMedal from '@/assets/icons/silver-medal.webp';
+import goldMedal from '@/assets/icons/gold-medal.webp';
 
 export const achievementsConfig = {
 	explorer: {
