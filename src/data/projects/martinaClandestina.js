@@ -1,8 +1,8 @@
 import martina1 from "@/assets/images/martina1.webp";
-import menunav from "@/assets/images/menunav.png";
-import mt2 from "@/assets/images/mt2.png";
-import mt3 from "@/assets/images/mt3.png";
-import mt4 from "@/assets/images/mt4.png";
+import menunav from "@/assets/images/menunav.webp";
+import mt2 from "@/assets/images/mt2.webp";
+import mt3 from "@/assets/images/mt3.webp";
+import mt4 from "@/assets/images/mt4.webp";
 import { generateStackHTML } from '../techStack/techStack';
 
 export const martinaData = {

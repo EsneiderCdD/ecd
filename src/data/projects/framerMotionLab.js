@@ -1,9 +1,9 @@
-import banner from "@/assets/images/Banner.png";
-import fm from "@/assets/images/fm.png";
-import fm1 from "@/assets/images/fm1.png";
-import fm2 from "@/assets/images/fm2.png";
-import fm3 from "@/assets/images/fm3.png";
-import fm4 from "@/assets/images/fm4.png";
+import banner from "@/assets/images/Banner.webp";
+import fm from "@/assets/images/fm.webp";
+import fm1 from "@/assets/images/fm1.webp";
+import fm2 from "@/assets/images/fm2.webp";
+import fm3 from "@/assets/images/fm3.webp";
+import fm4 from "@/assets/images/fm4.webp";
 import { generateStackHTML } from '../techStack/techStack';
 
 export const framerMotionData = {

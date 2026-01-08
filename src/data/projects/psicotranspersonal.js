@@ -1,14 +1,14 @@
 import psicotranspl from "@/assets/images/psicotranspl.webp";
-import ps1 from "@/assets/images/ps1.png";
-import ps2 from "@/assets/images/ps2.png";
-import ps3 from "@/assets/images/ps3.png";
-import ps4 from "@/assets/images/ps4.png";
-import ps5 from "@/assets/images/ps5.png";
-import ps6 from "@/assets/images/ps6.png";
-import ps7 from "@/assets/images/ps7.png";
-import ps8 from "@/assets/images/ps8.png";
-import ps9 from "@/assets/images/ps9.png";
-import ps10 from "@/assets/images/ps10.png";
+import ps1 from "@/assets/images/ps1.webp";
+import ps2 from "@/assets/images/ps2.webp";
+import ps3 from "@/assets/images/ps3.webp";
+import ps4 from "@/assets/images/ps4.webp";
+import ps5 from "@/assets/images/ps5.webp";
+import ps6 from "@/assets/images/ps6.webp";
+import ps7 from "@/assets/images/ps7.webp";
+import ps8 from "@/assets/images/ps8.webp";
+import ps9 from "@/assets/images/ps9.webp";
+import ps10 from "@/assets/images/ps10.webp";
 import { generateStackHTML } from '../techStack/techStack';
 
 export const psicotranspersonalData = {

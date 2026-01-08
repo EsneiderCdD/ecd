@@ -1,5 +1,5 @@
 import { generateStackHTML } from '../techStack/techStack';
-import Kromee from "@/assets/images/kromee.jpg";
+import Kromee from "@/assets/images/Kromee.webp";
 
 export const kromeeData = {
     id: "kromee",

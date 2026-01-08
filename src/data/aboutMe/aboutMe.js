@@ -1,4 +1,4 @@
-import FotoPortafolio from '@/assets/images/FotoPortafolio.png';
+import FotoPortafolio from '@/assets/images/FotoPortafolio.webp';
 
 export const aboutFiles = [
     {

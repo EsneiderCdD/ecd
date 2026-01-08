@@ -1,8 +1,8 @@
-import trainit from "@/assets/images/trainit.jpg";
-import ti1 from "@/assets/images/ti1.png";
-import ti2 from "@/assets/images/ti2.png";
-import ti3 from "@/assets/images/ti3.png";
-import constanciatrain from "@/assets/images/constanciatrain.png"
+import trainit from "@/assets/images/trainit.webp";
+import ti1 from "@/assets/images/ti1.webp";
+import ti2 from "@/assets/images/ti2.webp";
+import ti3 from "@/assets/images/ti3.webp";
+import constanciatrain from "@/assets/images/constanciatrain.webp"
 import { generateStackHTML } from '../techStack/techStack';
 
 export const trainItData = {

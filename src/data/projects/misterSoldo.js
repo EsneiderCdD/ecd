@@ -1,9 +1,9 @@
-import mrsld from "@/assets/images/mrsld.png";
-import mrs from "@/assets/images/mrs.png";
-import mrs2 from "@/assets/images/mrs2.png";
-import mrs4 from "@/assets/images/mrs4.png";
-import mrs6 from "@/assets/images/mrs6.png";
-import mr7 from "@/assets/images/mr7.png";
+import mrsld from "@/assets/images/mrsld.webp";
+import mrs from "@/assets/images/mrs.webp";
+import mrs2 from "@/assets/images/mrs2.webp";
+import mrs4 from "@/assets/images/mrs4.webp";
+import mrs6 from "@/assets/images/mrs6.webp";
+import mr7 from "@/assets/images/mr7.webp";
 import { generateStackHTML } from '../techStack/techStack';
 
 export const misterSoldoData = {

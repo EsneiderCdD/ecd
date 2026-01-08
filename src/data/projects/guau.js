@@ -1,10 +1,10 @@
-import banner from "@/assets/images/Banner.png";
-import gua from "@/assets/images/gua.png";
-import gua2 from "@/assets/images/gua2.png";
-import guau5 from "@/assets/images/guau5.png";
-import guau6 from "@/assets/images/guau6.png";
-import guau7 from "@/assets/images/guau7.png";
-import Guau from "@/assets/images/Guau.png";
+import banner from "@/assets/images/Banner.webp";
+import gua from "@/assets/images/gua.webp";
+import gua2 from "@/assets/images/gua2.webp";
+import guau5 from "@/assets/images/guau5.webp";
+import guau6 from "@/assets/images/guau6.webp";
+import guau7 from "@/assets/images/guau7.webp";
+import Guau from "@/assets/images/Guau.webp";
 import { generateStackHTML } from '../techStack/techStack';
 
 export const guauData = {
