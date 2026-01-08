@@ -3,7 +3,7 @@ import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadConfettiPreset } from "@tsparticles/preset-confetti";
 import { confettiOptions, explosionSequence } from "./config/confettiConfig";
 
-function ConfettiExplosion({ customOptions }) {
+function ConfettiExplosion() {
     const [init, setInit] = useState(false);
 
     useEffect(() => {
@@ -17,9 +17,6 @@ function ConfettiExplosion({ customOptions }) {
     const particlesLoaded = async (container) => {
         if (!container) return;
 
-        // Use sequence from options or fallback to default exported sequence
-        // Note: customOptions passed from Playground might NOT have the sequence if it was just a copy of confettiOptions.
-        // But since we want "surgical" control, we rely on the exported explosionSequence here.
         const sequence = explosionSequence;
 
         sequence.forEach((emitterConfig) => {
@@ -35,7 +32,7 @@ function ConfettiExplosion({ customOptions }) {
         <Particles
             id="tsparticles"
             particlesLoaded={particlesLoaded}
-            options={customOptions || confettiOptions}
+            options={confettiOptions}
         />
     );
 }
