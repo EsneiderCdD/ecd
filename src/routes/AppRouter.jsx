@@ -4,6 +4,8 @@ import Home from "../pages/Home";
 import Projects from "../pages/Projects.jsx";
 import ProjectDetail from "../pages/ProjectDetail.jsx";
 
+import EffectsPlayground from "../pages/EffectsPlayground.jsx";
+
 
 function AppRouter() {
   return (
@@ -12,6 +14,7 @@ function AppRouter() {
       <Route path="/about" element={<AboutMe />} />
       <Route path="/projects" element={<Projects />} />
       <Route path="/projects/:projectId" element={<ProjectDetail />} />
+      <Route path="/playground" element={<EffectsPlayground />} />
     </Routes>
   );
 }
