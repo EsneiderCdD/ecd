@@ -13,7 +13,7 @@ export function useContactForm({ onClose, subject }) {
 
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [submitStatus, setSubmitStatus] = useState(null);
-    const { triggerConfetti } = useEffects();
+    const { triggerCelebration } = useEffects();
 
     const handleChange = (e) => {
         setFormData({
@@ -36,7 +36,6 @@ export function useContactForm({ onClose, subject }) {
             const messageValid = formData.message.trim().length > 0;
             const contactValid = formData.contactValue.trim().length > 0;
 
-            // Email Validation if applicable
             let emailValid = true;
             if (formData.contactType === 'email') {
                 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -49,24 +48,19 @@ export function useContactForm({ onClose, subject }) {
                 return;
             }
 
-            // Mapeo de datos para el backend
-            // El backend espera: name, proposalType, contactType, contactValue, message
-            // Coincide exactamente con nuestro formData, así que podemos enviarlo directo
-            // o crear un objeto explícito si queremos ser más estrictos.
-
             await messageService.sendMessage({
                 ...formData,
-                subject // Aunque el backend no guarda subject explícitamente en la tabla actual, se podría añadir al mensaje o ignorar.
+                subject 
             });
 
             setSubmitStatus("success");
-            triggerConfetti();
+            triggerCelebration();
 
             setTimeout(() => {
                 onClose();
                 resetForm();
                 setSubmitStatus(null);
-            }, 1000); // 1.0s delay just to read the "Success" message quickly
+            }, 1000); 
         } catch (error) {
             console.error("Error enviando formulario:", error);
             setSubmitStatus("error");

@@ -1,20 +1,26 @@
 import { createContext, useContext, useState } from "react";
+import applauseSound from "../assets/audio/applause-cheer.mp3";
 
 const EffectsContext = createContext();
 
 export function EffectsProvider({ children }) {
     const [isConfettiPlaying, setIsConfettiPlaying] = useState(false);
 
-    const triggerConfetti = () => {
+    const triggerCelebration = () => {
+        //Confetti (Visual)
         setIsConfettiPlaying(true);
-        // Auto-reset after duration to allow re-triggering
         setTimeout(() => {
             setIsConfettiPlaying(false);
         }, 8000);
+
+        //Audio (Sound)
+        const audio = new Audio(applauseSound);
+        audio.volume = 0.5; 
+        audio.play().catch(e => console.error("Audio play failed:", e));
     };
 
     return (
-        <EffectsContext.Provider value={{ isConfettiPlaying, triggerConfetti }}>
+        <EffectsContext.Provider value={{ isConfettiPlaying, triggerCelebration }}>
             {children}
         </EffectsContext.Provider>
     );

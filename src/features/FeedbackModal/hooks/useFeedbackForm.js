@@ -10,7 +10,7 @@ export function useFeedbackForm({ onClose }) {
 
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [submitStatus, setSubmitStatus] = useState(null);
-    const { triggerConfetti } = useEffects();
+    const { triggerCelebration } = useEffects();
 
     const handleChange = (e) => {
         setFormData({
@@ -37,7 +37,7 @@ export function useFeedbackForm({ onClose }) {
             await feedbackService.sendFeedback(formData);
 
             setSubmitStatus("success");
-            triggerConfetti();
+            triggerCelebration();
 
             setTimeout(() => {
                 onClose();
