@@ -12,7 +12,7 @@ export function useContactForm({ onClose, subject }) {
     });
 
     const [isSubmitting, setIsSubmitting] = useState(false);
-    const [submitStatus, setSubmitStatus] = useState(null);
+    const [errorMessage, setErrorMessage] = useState(null);
     const { triggerCelebration } = useEffects();
 
     const handleChange = (e) => {
@@ -20,6 +20,7 @@ export function useContactForm({ onClose, subject }) {
             ...formData,
             [e.target.name]: e.target.value,
         });
+        if (errorMessage) setErrorMessage(null);
     };
 
     const handleTypeChange = (field, value) => {
@@ -29,41 +30,47 @@ export function useContactForm({ onClose, subject }) {
     const handleSubmit = async (e) => {
         e.preventDefault();
         setIsSubmitting(true);
-        setSubmitStatus(null);
+        setErrorMessage(null);
 
         try {
-            const nameValid = formData.name.trim().length > 0;
-            const messageValid = formData.message.trim().length > 0;
-            const contactValid = formData.contactValue.trim().length > 0;
-
-            let emailValid = true;
+            if (!formData.name.trim()) {
+                setErrorMessage("Error en el campo Nombre");
+                setIsSubmitting(false);
+                return;
+            }
+            if (!formData.contactValue.trim()) {
+                setErrorMessage(`Error en el campo ${formData.contactType === 'email' ? 'Email' : 'Telefono'}`);
+                setIsSubmitting(false);
+                return;
+            }
             if (formData.contactType === 'email') {
                 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-                emailValid = emailRegex.test(formData.contactValue);
+                if (!emailRegex.test(formData.contactValue)) {
+                    setErrorMessage("Error en el campo Email (formato inválido)");
+                    setIsSubmitting(false);
+                    return;
+                }
             }
-
-            if (!nameValid || !messageValid || !contactValid || !emailValid) {
-                setSubmitStatus("error");
+            if (!formData.message.trim()) {
+                setErrorMessage("Error en el campo Mensaje");
                 setIsSubmitting(false);
                 return;
             }
 
             await messageService.sendMessage({
                 ...formData,
-                subject 
+                subject
             });
 
-            setSubmitStatus("success");
             triggerCelebration();
 
             setTimeout(() => {
                 onClose();
                 resetForm();
-                setSubmitStatus(null);
-            }, 1000); 
+            }, 1000);
         } catch (error) {
             console.error("Error enviando formulario:", error);
-            setSubmitStatus("error");
+            setErrorMessage("Error al enviar el formulario");
         } finally {
             setIsSubmitting(false);
         }
@@ -82,7 +89,7 @@ export function useContactForm({ onClose, subject }) {
     return {
         formData,
         isSubmitting,
-        submitStatus,
+        errorMessage,
         handleChange,
         handleTypeChange,
         handleSubmit,

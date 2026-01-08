@@ -9,7 +9,7 @@ export function useFeedbackForm({ onClose }) {
     });
 
     const [isSubmitting, setIsSubmitting] = useState(false);
-    const [submitStatus, setSubmitStatus] = useState(null);
+    const [errorMessage, setErrorMessage] = useState(null);
     const { triggerCelebration } = useEffects();
 
     const handleChange = (e) => {
@@ -17,36 +17,37 @@ export function useFeedbackForm({ onClose }) {
             ...formData,
             [e.target.name]: e.target.value,
         });
+        if (errorMessage) setErrorMessage(null);
     };
 
     const handleSubmit = async (e) => {
         e.preventDefault();
         setIsSubmitting(true);
-        setSubmitStatus(null);
+        setErrorMessage(null);
 
         try {
-            const nameValid = formData.name.trim().length > 0;
-            const messageValid = formData.message.trim().length > 0;
-
-            if (!nameValid || !messageValid) {
-                setSubmitStatus("error");
+            if (!formData.name.trim()) {
+                setErrorMessage("Error en el campo Nombre");
+                setIsSubmitting(false);
+                return;
+            }
+            if (!formData.message.trim()) {
+                setErrorMessage("Error en el campo Mensaje");
                 setIsSubmitting(false);
                 return;
             }
 
             await feedbackService.sendFeedback(formData);
 
-            setSubmitStatus("success");
             triggerCelebration();
 
             setTimeout(() => {
                 onClose();
                 resetForm();
-                setSubmitStatus(null);
             }, 1000);
         } catch (error) {
             console.error("Error enviando feedback:", error);
-            setSubmitStatus("error");
+            setErrorMessage("Error enviando feedback");
         } finally {
             setIsSubmitting(false);
         }
@@ -62,7 +63,7 @@ export function useFeedbackForm({ onClose }) {
     return {
         formData,
         isSubmitting,
-        submitStatus,
+        errorMessage,
         handleChange,
         handleSubmit,
 

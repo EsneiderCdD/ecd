@@ -11,7 +11,7 @@ function ContactModal({ isOpen, onClose, subject }) {
     const {
         formData,
         isSubmitting,
-        submitStatus,
+        errorMessage,
         handleChange,
         handleTypeChange,
         handleSubmit,
@@ -80,16 +80,9 @@ function ContactModal({ isOpen, onClose, subject }) {
                             label="Tu mensaje"
                         />
 
-                        {/* Feedback Messages */}
-                        {submitStatus === "success" && (
-                            <div className={styles.successMessage}>
-                                ✓ Mensaje enviado correctamente
-                            </div>
-                        )}
-
-                        {submitStatus === "error" && (
+                        {errorMessage && (
                             <div className={styles.errorMessage}>
-                                ✗ Completá todos los campos requeridos
+                                ✗ {errorMessage}
                             </div>
                         )}
 

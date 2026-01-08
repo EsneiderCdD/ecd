@@ -8,7 +8,7 @@ function FeedbackModal({ isOpen, onClose }) {
     const {
         formData,
         isSubmitting,
-        submitStatus,
+        errorMessage,
         handleChange,
         handleSubmit,
 
@@ -56,16 +56,9 @@ function FeedbackModal({ isOpen, onClose }) {
                             label="Tu mensaje de feedback"
                         />
 
-                        {/* Feedback Messages */}
-                        {submitStatus === "success" && (
-                            <div className={styles.successMessage}>
-                                ✓ Gracias por tu feedback
-                            </div>
-                        )}
-
-                        {submitStatus === "error" && (
+                        {errorMessage && (
                             <div className={styles.errorMessage}>
-                                ✗ Por favor completa todos los campos
+                                ✗ {errorMessage}
                             </div>
                         )}
 

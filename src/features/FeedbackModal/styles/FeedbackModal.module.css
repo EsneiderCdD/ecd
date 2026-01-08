@@ -99,10 +99,10 @@
   border-top: 2px solid #000000;
 }
 
-.inputBox input:focus ~ span,
-.inputBox textarea:focus ~ span,
-.inputBox input.filled ~ span,
-.inputBox textarea.filled ~ span {
+.inputBox input:focus~span,
+.inputBox textarea:focus~span,
+.inputBox input.filled~span,
+.inputBox textarea.filled~span {
   background: #000000;
   border-radius: 4px;
   color: #fafafa;
@@ -152,22 +152,11 @@
   color: #ffffff;
 }
 
-.successMessage,
 .errorMessage {
-  border-left: 4px solid;
+  color: #ef4444;
   font-size: 13px;
   padding: 12px;
   text-align: center;
-}
-
-.successMessage {
-  border-color: #22c55e;
-  color: #22c55e;
-}
-
-.errorMessage {
-  border-color: #ef4444;
-  color: #ef4444;
 }
 
 .buttonsContainer {
