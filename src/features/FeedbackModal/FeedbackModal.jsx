@@ -2,7 +2,7 @@ import { X } from "lucide-react";
 import styles from "./styles/FeedbackModal.module.css";
 import { useFeedbackForm } from "./hooks/useFeedbackForm";
 import { FeedbackInput, FeedbackTextArea } from "./components/FeedbackFields";
-import ConfettiExplosion from "../../reusable/Effects/ConfettiExplosion";
+
 
 function FeedbackModal({ isOpen, onClose }) {
     const {
@@ -11,14 +11,13 @@ function FeedbackModal({ isOpen, onClose }) {
         submitStatus,
         handleChange,
         handleSubmit,
-        showConfetti
+
     } = useFeedbackForm({ onClose });
 
     if (!isOpen) return null;
 
     return (
         <div className={styles.overlay} onClick={onClose}>
-            {showConfetti && <ConfettiExplosion />}
             <div className={styles.modal} onClick={(e) => e.stopPropagation()}>
                 <form className={styles.body} onSubmit={handleSubmit}>
                     <div className={styles.card}>

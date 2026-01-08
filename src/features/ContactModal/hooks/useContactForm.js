@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { messageService } from "../../../services/messageService";
+import { useEffects } from "../../../context/EffectsContext";
 
 export function useContactForm({ onClose, subject }) {
     const [formData, setFormData] = useState({
@@ -12,7 +13,7 @@ export function useContactForm({ onClose, subject }) {
 
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [submitStatus, setSubmitStatus] = useState(null);
-    const [showConfetti, setShowConfetti] = useState(false);
+    const { triggerConfetti } = useEffects();
 
     const handleChange = (e) => {
         setFormData({
@@ -59,13 +60,13 @@ export function useContactForm({ onClose, subject }) {
             });
 
             setSubmitStatus("success");
-            setShowConfetti(true);
+            triggerConfetti();
+
             setTimeout(() => {
                 onClose();
                 resetForm();
                 setSubmitStatus(null);
-                setShowConfetti(false);
-            }, 2000);
+            }, 1000); // 1.0s delay just to read the "Success" message quickly
         } catch (error) {
             console.error("Error enviando formulario:", error);
             setSubmitStatus("error");
@@ -91,6 +92,6 @@ export function useContactForm({ onClose, subject }) {
         handleChange,
         handleTypeChange,
         handleSubmit,
-        showConfetti
+
     };
 }

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { feedbackService } from "../../../services/feedbackService";
+import { useEffects } from "../../../context/EffectsContext";
 
 export function useFeedbackForm({ onClose }) {
     const [formData, setFormData] = useState({
@@ -9,7 +10,7 @@ export function useFeedbackForm({ onClose }) {
 
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [submitStatus, setSubmitStatus] = useState(null);
-    const [showConfetti, setShowConfetti] = useState(false);
+    const { triggerConfetti } = useEffects();
 
     const handleChange = (e) => {
         setFormData({
@@ -36,13 +37,13 @@ export function useFeedbackForm({ onClose }) {
             await feedbackService.sendFeedback(formData);
 
             setSubmitStatus("success");
-            setShowConfetti(true);
+            triggerConfetti();
+
             setTimeout(() => {
                 onClose();
                 resetForm();
                 setSubmitStatus(null);
-                setShowConfetti(false);
-            }, 2000);
+            }, 1000);
         } catch (error) {
             console.error("Error enviando feedback:", error);
             setSubmitStatus("error");
@@ -64,6 +65,6 @@ export function useFeedbackForm({ onClose }) {
         submitStatus,
         handleChange,
         handleSubmit,
-        showConfetti
+
     };
 }

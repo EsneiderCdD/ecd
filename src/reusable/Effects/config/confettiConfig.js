@@ -28,7 +28,7 @@ export const confettiOptions = {
         },
         move: {
             enable: true,
-            speed: { min: 10, max: 30 },
+            speed: { min: 25, max: 60 }, 
             direction: "none",
             random: false,
             straight: false,
@@ -40,55 +40,55 @@ export const confettiOptions = {
             }
         }
     },
-    emitters: [] // Ensure preset defaults don't fire automatically
+    emitters: [] 
 };
 
 export const explosionSequence = [
     {
         direction: "none",
-        rate: { quantity: 15, delay: 0.1 },
+        rate: { quantity: 30, delay: 0.1 }, 
         size: { width: 0, height: 0 },
-        position: { x: 50, y: 45 }, // Slightly higher than center
+        position: { x: 50, y: 45 },
         life: { count: 1, duration: 0.1 },
         delay: 0
     },
     {
         direction: "none",
-        rate: { quantity: 20, delay: 0.1 },
+        rate: { quantity: 45, delay: 0.1 }, 
         size: { width: 0, height: 0 },
-        position: { x: 15, y: 10 }, // High top-left corner
+        position: { x: 15, y: 10 },
         life: { count: 1, duration: 0.1 },
         delay: 1200
     },
     {
         direction: "none",
-        rate: { quantity: 20, delay: 0.1 },
+        rate: { quantity: 45, delay: 0.1 }, 
         size: { width: 0, height: 0 },
-        position: { x: 80, y: 30 }, // Mid-high right
+        position: { x: 80, y: 30 },
         life: { count: 1, duration: 0.1 },
         delay: 2500
     },
     {
         direction: "none",
-        rate: { quantity: 25, delay: 0.1 },
+        rate: { quantity: 55, delay: 0.1 },
         size: { width: 0, height: 0 },
-        position: { x: 30, y: 70 }, // Bottom left
+        position: { x: 30, y: 70 },
         life: { count: 1, duration: 0.1 },
         delay: 3800
     },
     {
         direction: "none",
-        rate: { quantity: 25, delay: 0.1 },
+        rate: { quantity: 55, delay: 0.1 }, 
         size: { width: 0, height: 0 },
-        position: { x: 85, y: 15 }, // Very high top-right corner
+        position: { x: 85, y: 15 },
         life: { count: 1, duration: 0.1 },
         delay: 4500
     },
     {
         direction: "none",
-        rate: { quantity: 40, delay: 0.1 },
+        rate: { quantity: 100, delay: 0.1 }, 
         size: { width: 0, height: 0 },
-        position: { x: 50, y: 10 }, // Top center explosion
+        position: { x: 50, y: 10 },
         life: { count: 1, duration: 0.1 },
         delay: 6000
     }

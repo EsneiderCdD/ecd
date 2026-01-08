@@ -8,6 +8,7 @@ import '@fontsource/ibm-plex-sans'
 import './index.css'
 import { ThemeProvider } from './context/ThemeContext.jsx'
 import { AchievementsProvider } from './context/AchievementsContext.jsx'
+import { EffectsProvider } from './context/EffectsContext.jsx'
 import './styles/themes.css'
 import App from './App.jsx'
 
@@ -16,7 +17,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <BrowserRouter>
       <ThemeProvider>
         <AchievementsProvider>
-          <App />
+          <EffectsProvider>
+            <App />
+          </EffectsProvider>
         </AchievementsProvider>
       </ThemeProvider>
     </BrowserRouter>
