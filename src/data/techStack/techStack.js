@@ -21,6 +21,7 @@ import next from "@/assets/stack/next.webp";
 import nodejs from "@/assets/stack/nodejs.webp";
 import openai from "@/assets/stack/openai.webp";
 import payu from "@/assets/stack/payu.webp";
+import pixabay from "@/assets/stack/pixabay.webp";
 import postgresql from "@/assets/stack/postgresql.webp";
 import pusher from "@/assets/stack/pusher.webp";
 import python from "@/assets/stack/python.webp";
@@ -58,6 +59,7 @@ export const stackIcons = {
   nodejs: { src: nodejs, alt: "Node.js", title: "Node.js", size: 48 },
   openai: { src: openai, alt: "OpenAI", title: "OpenAI", size: 48 },
   payu: { src: payu, alt: "Integración de Pagos", title: "Integración de Pagos", size: 48 },
+  pixabay: { src: pixabay, alt: "Pixabay", title: "Pixabay", size: 48 },
   postgresql: { src: postgresql, alt: "PostgreSQL", title: "PostgreSQL", size: 48 },
   pusher: { src: pusher, alt: "Pusher", title: "Pusher", size: 48 },
   python: { src: python, alt: "Python", title: "Python", size: 48 },

@@ -34,7 +34,7 @@ export const portafolioData = {
             size: "Actualizado",
             description: "Ficha técnica en PDF.",
             previewUrl: "https://cdn-icons-png.flaticon.com/512/337/337946.png",
-            linkUrl: "https://drive.google.com/file/d/15jmB_Gu39xoOJU2SUZ4IuhIYp0QIkFxn/view?usp=drive_link",
+            linkUrl: "https://drive.google.com/file/d/1VbajNtfTanNIaFVGZStn9kFzmZfze0_p/view?usp=drive_link",
         },
         {
             icon: "💻",
@@ -42,7 +42,7 @@ export const portafolioData = {
             type: "Imagen y texto",
             date: "01/11/2025",
             size: "Actualizado",
-            description: generateStackHTML(['vite', 'react', 'javascript', 'css', 'emailjs', 'uiverse', 'flaticon', 'gemini']),
+            description: generateStackHTML(['vite', 'react', 'javascript', 'css', 'nodejs','express','uiverse', 'flaticon', 'pixabay', 'gemini']),
             previewUrl: null,
             downloadUrl: null,
             linkUrl: null,

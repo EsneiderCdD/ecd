@@ -2,21 +2,20 @@ import { useState } from "react";
 import Toolbar from "../reusable/Layout/Toolbar/Toolbar";
 import Sidebar from "../reusable/Layout/Sidebar/Sidebar";
 import InfoPanel from "../reusable/Layout/InfoPanel/InfoPanel";
-import styles from "./AboutMe.module.css"; // Reutilizamos los estilos existentes
-
+import styles from "./AboutMe.module.css"; 
 function ComingSoon() {
-    // InfoPanel espera un archivo seleccionado, aquí será null por defecto
+
     const [selectedFile] = useState(null);
 
     return (
         <div className={styles.aboutContainer}>
-            {/* Toolbar presente pero sin función de ordenamiento real */}
+           
             <Toolbar onSortChange={() => { }} />
 
             <div className={styles.mainContent}>
                 <Sidebar />
 
-                {/* Contenedor central que reemplaza la tabla */}
+    
                 <div style={{
                     flex: 1,
                     display: 'flex',
