@@ -126,7 +126,7 @@ export const guauData = {
             date: "01/09/2025",
             size: "Actualizado",
             description: "Recorre el proyecto con un video en YouTube.",
-            previewUrl: "https://www.youtube.com/watch?v=s5tN4uF9tqM",
+            previewUrl: "https://www.youtube.com/watch?v=EuduHNDPPdE",
             iconUrl: "https://cdn-icons-png.flaticon.com/512/1384/1384060.png",
             downloadUrl: null,
             linkUrl: null,
