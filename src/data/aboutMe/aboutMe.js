@@ -12,15 +12,15 @@ export const aboutFiles = [
     },
     {
         date: "01/01/2026",
-        description: "Recientemente finalicé mi participación en TrainIT (4 meses) y actualmente participo en una pasantía laboral en Kromee, con una duración de 6 meses. En ambas experiencias me he desempeñado en un rol full-stack desenvolviéndome en entornos de trabajo colaborativo bajo metodologías ágiles, fortaleciendo mis habilidades comunicativas y contribución al proceso de construcción de software.",
+        description: "Recientemente finalicé mi participación en TrainIT (4 meses) y actualmente participo en una experiencia laboral en SwaplyAr, con una duración de 6 meses. En ambas experiencias me he desempeñado en un rol full-stack desenvolviéndome en entornos de trabajo colaborativo bajo metodologías ágiles, fortaleciendo mis habilidades comunicativas y contribución al proceso de construcción de software.",
         name: "Experiencia Laboral",
         previewUrl: "https://cdn-icons-png.flaticon.com/512/3281/3281289.png",
-        size: "Actualizado",
+        size: "En Curso",
         type: "Información",
     },
     {
         date: "01/01/2026",
-        description: "Además, he participado en proyectos reales como el desarrollo web para la psicóloga Susana Santamaría (Psicología Transpersonal), Mister Soldo (artista musical) y Martina Clandestina (emprendimiento local). En estos proyectos he contribuido en el desarrollo web y la ingeniería de requerimientos, realizando entrevistas, encuestas, analisis funcional, heatmaps y acompañamiento al cliente durante el proyecto.",
+        description: "Además, he participado en proyectos reales contribuyendo en el desarrollo web y la ingeniería de requerimientos, realizando entrevistas, encuestas, analisis funcional, heatmaps y acompañamiento al cliente durante el proyecto.",
         iconUrl: "https://cdn-icons-png.flaticon.com/512/4157/4157361.png ",
         name: "Proyectos Freelance",
         previewUrl: "https://cdn-icons-png.flaticon.com/512/4157/4157361.png ",
@@ -29,7 +29,7 @@ export const aboutFiles = [
     },
     {
         date: "01/01/2026",
-        description: "En mis tiempos libres continúo fortaleciendo mis competencias mediante proyectos personales como Guau, una aplicación para adopción de perros basada en pruebas psicométricas, y Framer Motion Lab, una aplicación educativa enfocada en animaciones.",
+        description: "En mis tiempos libres continúo fortaleciendo mis competencias mediante proyectos personales como Guau, una aplicación para adopción de perros basada en pruebas psicométricas.",
         iconUrl: "https://cdn-icons-png.flaticon.com/512/15757/15757011.png ",
         name: "Proyectos Personales",
         previewUrl: "https://cdn-icons-png.flaticon.com/512/15757/15757011.png ",
