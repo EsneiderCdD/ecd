@@ -15,18 +15,18 @@ export const achievementsConfig = {
 	snooper: {
 		id: 'snooper',
 		title: 'Cazador de Proyectos',
-		description: 'Abriste 3 proyectos diferentes',
+		description: 'Abriste 2 proyectos diferentes',
 		icon: silverMedal,
-		condition: (state) => state.projectsOpened >= 3,
+		condition: (state) => state.projectsOpened >= 2,
 		rarity: 'rare'
 	},
 
 	interested: {
 		id: 'interested',
 		title: 'Cartógrafo del Portafolio',
-		description: 'Abriste 5 proyectos diferentes',
+		description: 'Abriste 3 proyectos diferentes',
 		icon: goldMedal,
-		condition: (state) => state.projectsOpened >= 5,
+		condition: (state) => state.projectsOpened >= 3,
 		rarity: 'legendary'
 	},
 
@@ -42,18 +42,18 @@ export const achievementsConfig = {
 	scientist: {
 		id: 'scientist',
 		title: 'Bibliotecario Digital',
-		description: 'Revisaste 3 fichas técnicas diferentes',
+		description: 'Revisaste 2 fichas técnicas diferentes',
 		icon: silverMedal,
-		condition: (state) => state.pdfsDownloaded >= 3,
+		condition: (state) => state.pdfsDownloaded >= 2,
 		rarity: 'rare'
 	},
 
 	bibliotecario: {
 		id: 'bibliotecario',
 		title: 'PDF-ílo',
-		description: 'Revisaste 5 documentos técnicos',
+		description: 'Revisaste 3 documentos técnicos',
 		icon: goldMedal,
-		condition: (state) => (state.pdfsDownloaded || 0) >= 5,
+		condition: (state) => (state.pdfsDownloaded || 0) >= 3,
 		rarity: 'legendary'
 	},
 
@@ -61,27 +61,27 @@ export const achievementsConfig = {
 		id: 'cineasta',
 		title: 'Cineasta',
 		description: 'Viste tu primer video del portafolio',
-		icon: bronzeMedal,
+		icon: silverMedal,
 		condition: (state) => (state.videosWatched || 0) >= 1,
-		rarity: 'common'
+		rarity: 'rare'
 	},
 
 	director: {
 		id: 'director',
-		title: 'Trilogía del Play',
-		description: 'Viste 3 videos del portafolio',
-		icon: silverMedal,
-		condition: (state) => (state.videosWatched || 0) >= 3,
-		rarity: 'rare'
+		title: 'Dúo Dinámico',
+		description: 'Viste los 2 videos principales',
+		icon: goldMedal,
+		condition: (state) => (state.videosWatched || 0) >= 2,
+		rarity: 'legendary'
 	},
 
-	cineastaMaestro: {
+	/* cineastaMaestro: {
 		id: 'cineastaMaestro',
 		title: 'Maratón Youtubero',
 		description: 'Viste 5 videos del portafolio',
 		icon: goldMedal,
 		condition: (state) => (state.videosWatched || 0) >= 5,
 		rarity: 'legendary'
-	}
+	} */
 };
 

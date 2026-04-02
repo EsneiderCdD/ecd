@@ -2,17 +2,17 @@ import FotoPortafolio from '@/assets/images/FotoPortafolio.webp';
 
 export const aboutFiles = [
     {
-        date: "01/01/2026",
-        description: "Mi nombre es Esneider Cadavid, soy técnico en análisis y desarrollo de software con formación complementaria en un bootcamp en desarrollo full-stack lo que me ha permitido fortalecer mis bases técnicas y adquirir herramientas actualizadas acordes a las necesidades del mercado. ",
-        iconUrl: "   https://cdn-icons-png.flaticon.com/512/8955/8955270.png ",
+        date: "02/04/2026",
+        description: "Soy Esneider Cadavid, Full-Stack Developer con 2 años de formación y 8 meses de experiencia real. Enfocado en frontend con autonomía en backend. Planificador y curioso, me destaco por mi rápida adaptación a entornos profesionales y una formación constante alineada a la demanda operativa actual.",
+        iconUrl: "https://cdn-icons-png.flaticon.com/512/8955/8955270.png",
         name: "Perfil Personal",
         previewUrl: FotoPortafolio,
         size: "Actualizado",
         type: "Información",
     },
     {
-        date: "01/01/2026",
-        description: "Recientemente finalicé mi participación en TrainIT (4 meses) y actualmente participo en una experiencia laboral en SwaplyAr, con una duración de 6 meses. En ambas experiencias me he desempeñado en un rol full-stack desenvolviéndome en entornos de trabajo colaborativo bajo metodologías ágiles, fortaleciendo mis habilidades comunicativas y contribución al proceso de construcción de software.",
+        date: "02/04/2026",
+        description: "Participé en TrainIT (4 meses) y actualmente colaboro en SwaplyAr (4 meses). En ambos entornos Full-Stack he trabajado bajo metodologías ágiles, contribuyendo a la construcción de software escalable, integrando interfaces basadas en Figma y gestionando desde la lógica de APIs hasta migraciones en PostgreSQL.",
         name: "Experiencia Laboral",
         previewUrl: "https://cdn-icons-png.flaticon.com/512/3281/3281289.png",
         size: "En Curso",

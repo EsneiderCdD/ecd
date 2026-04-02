@@ -1,23 +1,25 @@
 import { useCallback } from 'react';
 
-export function useAchievementTracking(userProgress, setUserProgress, checkAchievements, unlockedAchievements) {
+export function useAchievementTracking(userProgress, setUserProgress, checkAchievements, unlockedAchievements, allProjectsData) {
     const trackProjectVisit = useCallback((projectId) => {
         setUserProgress(prev => {
             const isNewProject = !prev.visitedProjects.includes(projectId);
-
             if (!isNewProject) return prev;
+
+            const projectData = allProjectsData[projectId];
+            const shouldCount = projectData && !projectData.isComingSoon;
 
             const newProgress = {
                 ...prev,
                 visitedProjects: [...prev.visitedProjects, projectId],
-                projectsOpened: prev.projectsOpened + 1
+                projectsOpened: shouldCount ? prev.projectsOpened + 1 : prev.projectsOpened
             };
 
             checkAchievements(newProgress, unlockedAchievements);
 
             return newProgress;
         });
-    }, [checkAchievements, unlockedAchievements, setUserProgress]);
+    }, [checkAchievements, unlockedAchievements, setUserProgress, allProjectsData]);
 
     const trackPdfDownload = useCallback((fileId) => {
         if (!fileId) return;
