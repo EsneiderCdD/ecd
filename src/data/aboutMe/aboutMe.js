@@ -3,19 +3,35 @@ import FotoPortafolio from '@/assets/images/FotoPortafolio.webp';
 export const aboutFiles = [
     {
         date: "02/04/2026",
-        description: "Soy Esneider Cadavid, Full-Stack Developer con 2 años de formación y 8 meses de experiencia real. Enfocado en frontend con autonomía en backend. Planificador y curioso, me destaco por mi rápida adaptación a entornos profesionales y una formación constante alineada a la demanda operativa actual.",
+        description: "Conocé más sobre mi perfil profesional y personal",
         iconUrl: "https://cdn-icons-png.flaticon.com/512/8955/8955270.png",
-        name: "Perfil Personal",
-        previewUrl: FotoPortafolio,
+        name: "Perfil Profesional",
+        previewUrl: null,
         size: "Actualizado",
-        type: "Información",
+        type: "Dinámico",
+        contributions: [
+            {
+                name: "Perfil Profesional",
+                description: [
+                    "Soy Esneider Cadavid, 29 años, Full-Stack Developer con +2 años de formación (continuando) y 8 meses de experiencia laboral. Enfocado en frontend con autonomía en backend. Planificador y curioso, me destaco por mi rápida adaptación a entornos profesionales y una formación constante alineada a la demanda operativa actual."
+                ],
+                previewUrl: FotoPortafolio,
+            },
+            {
+                name: "Manifiesto",
+                description: [
+                    "Soy una persona introvertida, con pasado en Oratoria, Psicología, Derecho y habilidades comunicativas, que hoy prefiere vivir una filosofía de \"conócete a ti mismo\". Bohemio, \"Do It Yourself\", organizado, planificador. Tengo un entorno privilegiado: una familia que me ama y un entorno que me permite dedicarme a lo que más me apasiona. Nunca una vida perfecta, solo que prefiero, a modo de conclusión, vivir en la psicología positiva, una perspectiva desde las oportunidades y el potencial humano y no desde su problema. Creativo, alguien a quien cumplir sus sueños lo saca de su zona de confort —que por ahora son imaginación— pero que vio en el desarrollo de software esa posibilidad, y desde ahí su obsesión, el camino, la apuesta de poder trazar una realidad diferente. Yo lo llamo destino."
+                ],
+                previewUrl: FotoPortafolio,
+            }
+        ]
     },
     {
-        date: "02/04/2026",
-        description: "Participé en TrainIT (4 meses) y actualmente colaboro en SwaplyAr (4 meses). En ambos entornos Full-Stack he trabajado bajo metodologías ágiles, contribuyendo a la construcción de software escalable, integrando interfaces basadas en Figma y gestionando desde la lógica de APIs hasta migraciones en PostgreSQL.",
+        date: "01/06/2025",
+        description: ["⦿ TrainIT — Desarrollador Full Stack — 4 meses. Simulación laboral con +10 devs, equipo UI/UX, PM, QA, área administrativa y rol cliente. Entorno con feedbacks cruzados y revisiones colaborativas.", "⦿ SwaplyAr — Desarrollador Full Stack — 4 meses. Experiencia con exigencias corporativas reales, code review, +8 devs, metodologías ágiles, UI/UX definida en Figma y revisión de PR a cargo de un senior."],
         name: "Experiencia Laboral",
         previewUrl: "https://cdn-icons-png.flaticon.com/512/3281/3281289.png",
-        size: "En Curso",
+        size: "Actualizado",
         type: "Información",
     },
     {
