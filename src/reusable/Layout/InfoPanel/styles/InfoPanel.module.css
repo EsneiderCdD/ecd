@@ -166,6 +166,19 @@
     margin-bottom: 10px;
 }
 
+.stackContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    align-items: center;
+}
+
+.stackContainer img {
+    object-fit: contain;
+    width: 64px;
+    height: 64px;
+}
+
 /* Responsive */
 @media (max-width: 1000px) {
     .infoPanel {

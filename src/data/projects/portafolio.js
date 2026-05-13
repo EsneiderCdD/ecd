@@ -1,4 +1,3 @@
-import { generateStackHTML } from '../techStack/techStack';
 import banner from '@/assets/images/Banner.webp'
 export const portafolioData = {
     id: "portafolio",
@@ -42,7 +41,8 @@ export const portafolioData = {
             type: "Imagen y texto",
             date: "01/11/2025",
             size: "Actualizado",
-            description: generateStackHTML(['vite', 'react', 'javascript', 'css', 'nodejs','express','uiverse', 'flaticon', 'pixabay', 'gemini']),
+            description: null,
+            stack: ['vite', 'react', 'javascript', 'css', 'nodejs', 'express', 'uiverse', 'flaticon', 'pixabay', 'gemini'],
             previewUrl: null,
             downloadUrl: null,
             linkUrl: null,

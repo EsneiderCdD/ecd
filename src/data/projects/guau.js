@@ -5,7 +5,6 @@ import guau5 from "@/assets/images/guau5.webp";
 import guau6 from "@/assets/images/guau6.webp";
 import guau7 from "@/assets/images/guau7.webp";
 import Guau from "@/assets/images/Guau.webp";
-import { generateStackHTML } from '../techStack/techStack';
 
 export const guauData = {
     id: "guau",
@@ -102,7 +101,8 @@ export const guauData = {
             type: "Iconos",
             date: "01/09/2025",
             size: "Actualizado",
-            description: generateStackHTML(['react', 'javascript', 'css', 'python', 'flask', 'sqlalchemy', 'postgresql']),
+            description: null,
+            stack: ['react', 'javascript', 'css', 'python', 'flask', 'sqlalchemy', 'postgresql'],
             previewUrl: null,
             downloadUrl: null,
             linkUrl: null,

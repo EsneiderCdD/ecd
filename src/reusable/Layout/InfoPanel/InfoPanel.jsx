@@ -5,6 +5,7 @@ import MediaPreview from "./components/MediaPreview";
 import ContributionNav from "./components/ContributionNav";
 import ActionButtons from "./components/ActionButtons";
 import Description from "./components/Description";
+import { stackIcons } from "@/data/techStack/techStack";
 
 function InfoPanel({ file }) {
     const { width, handleMouseDown } = usePanelResizer();
@@ -69,6 +70,17 @@ function InfoPanel({ file }) {
                 <Description
                     content={currentContribution?.description || file.description}
                 />
+            )}
+
+            {/* Tech Stack */}
+            {file.stack && (
+                <div className={styles.stackContainer}>
+                    {file.stack.map(key => {
+                        const icon = stackIcons[key];
+                        if (!icon) return null;
+                        return <img key={key} src={icon.src} alt={icon.alt} title={icon.title} />;
+                    })}
+                </div>
             )}
         </div>
     );
