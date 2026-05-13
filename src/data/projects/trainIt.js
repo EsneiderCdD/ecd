@@ -93,8 +93,7 @@ export const trainItData = {
             linkUrl: null,
         },
         {
-            icon: "🐙",
-            name: "Repositorio",
+            name: "Repositorios",
             type: "GitHub",
             date: "01/06/2025",
             size: "Actualizado",

@@ -2,6 +2,7 @@ import { trainItData } from './trainIt';
 import { guauData } from './guau';
 import { swaplyArData } from './swaplyAr';
 import { portafolioData } from './portafolio';
+import { postulomaniacoData } from './postulomaniaco';
 
 // Projects Aggregation
 const allProjects = [
@@ -9,6 +10,7 @@ const allProjects = [
     guauData,
     portafolioData,
     swaplyArData,
+    postulomaniacoData,
 ];
 
 // Summaries List
