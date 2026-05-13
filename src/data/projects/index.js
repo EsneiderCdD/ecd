@@ -6,11 +6,11 @@ import { postulomaniacoData } from './postulomaniaco';
 
 // Projects Aggregation
 const allProjects = [
-    trainItData,
-    guauData,
     portafolioData,
+    trainItData,
     swaplyArData,
     postulomaniacoData,
+    guauData, 
 ];
 
 // Summaries List

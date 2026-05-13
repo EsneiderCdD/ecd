@@ -10,7 +10,7 @@ function DesktopTable({ files, selectedFile, setSelectedFile }) {
             {/* Header */}
             <div className={`${styles.tableRow} ${styles.headerRow}`}>
                 <span className={styles.name}>Nombre</span>
-                <span className={styles.date}>Fecha de modificación</span>
+                <span className={styles.date}>Fecha de inicio</span>
                 <span className={styles.type}>Tipo</span>
                 <span className={styles.size}>Estado</span>
             </div>

@@ -5,7 +5,7 @@ export const postulomaniacoData = {
         icon: "📁",
         name: "Postulomaniaco",
         type: "Proyecto Personal",
-        date: "01/06/2026",
+        date: "15/04/2026",
         size: "En Curso",
         path: "/projects/postulomaniaco",
         description: "Proximamente...",

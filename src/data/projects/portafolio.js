@@ -5,7 +5,7 @@ export const portafolioData = {
         icon: "📁",
         name: "Portafolio",
         type: "Proyecto Personal",
-        date: "01/11/2025",
+        date: "15/05/2026",
         size: "Completado",
         path: "/projects/portafolio",
         description: "Portafolio personal diseñado para mostrar mis proyectos y habilidades profesionales.",
