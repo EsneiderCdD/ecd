@@ -59,18 +59,19 @@ function InfoPanel({ file }) {
                 <h3 className={styles.contributionTitle}>{currentContribution.name}</h3>
             )}
 
-            {/* Buttons */}
-            <ActionButtons
-                file={file}
-                isVideoFile={isVideoFile}
-            />
-
             {/* Description */}
             {!isImageOnly && (
                 <Description
                     content={currentContribution?.description || file.description}
                 />
             )}
+
+            {/* Buttons */}
+            <ActionButtons
+                file={file}
+                currentContribution={currentContribution}
+                isVideoFile={isVideoFile}
+            />
 
             {/* Tech Stack */}
             {file.stack && (
