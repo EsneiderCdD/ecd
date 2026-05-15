@@ -28,6 +28,11 @@
     justify-content: center;
 }
 
+.chartContainer {
+    height: 280px;
+    width: 100%;
+}
+
 .previewImage {
     border-radius: 6px;
     max-height: 300px;

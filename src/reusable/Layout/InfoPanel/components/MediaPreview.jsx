@@ -2,18 +2,28 @@ import { useState, useEffect } from "react";
 import styles from "../styles/InfoPanel.module.css";
 import { getYouTubeEmbedUrl } from "../utils/videoHelpers";
 import { useAchievements } from "@/context/AchievementsContext";
+import RadarChartComponent from "./RadarChartComponent";
 
 function MediaPreview({ file, currentContribution }) {
     const { trackVideoView } = useAchievements();
     const [videoOverlayActive, setVideoOverlayActive] = useState(true);
 
     const previewUrl = currentContribution?.previewUrl || file.previewUrl;
+    const chartData = file.chartData;
 
     useEffect(() => {
         setVideoOverlayActive(true);
     }, [file, currentContribution]);
 
-    if (!previewUrl) return null;
+    if (!previewUrl && !chartData) return null;
+
+    if (chartData) {
+        return (
+            <div className={styles.imageBox}>
+                <RadarChartComponent data={chartData.data} />
+            </div>
+        );
+    }
 
     const isYouTube = previewUrl.includes("youtube.com") || previewUrl.includes("youtu.be");
 

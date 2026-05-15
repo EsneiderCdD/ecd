@@ -119,12 +119,31 @@ export const aboutFiles = [
     },
     {
         date: "01/01/2026",
-        description: "Manejo tecnologías base como HTML, CSS, JavaScript y TypeScript, sobre las que desarrollo aplicaciones frontend con React.js y Next.js, utilizando Tailwind y Bootstrap para la maquetación y el diseño de interfaces. En el backend trabajo con Python (Flask), Node.js y PostgreSQL, además de contar con experiencia en plataformas low-code como Supabase.",
+        description: "Autoevaluación de competencias técnicas en escala Likert (0-5). Cada valor refleja el dominio actual de la tecnología según proyecto, formación y experiencia real acumulada.",
         iconUrl: "https://cdn-icons-png.flaticon.com/512/1055/1055687.png",
         name: "Habilidades Técnicas",
-        previewUrl: "https://cdn-icons-png.flaticon.com/512/1055/1055687.png",
+        previewUrl: null,
         size: "Actualizado",
         type: "Información",
+        chartData: {
+            type: "radar",
+            data: [
+                { subject: "HTML", value: 4.0 },
+                { subject: "CSS", value: 4.0 },
+                { subject: "JavaScript", value: 2.5 },
+                { subject: "TypeScript", value: 2.5 },
+                { subject: "React", value: 2.5 },
+                { subject: "Tailwind", value: 3.0 },
+                { subject: "Next.js", value: 1.5 },
+                { subject: "Python", value: 2.0 },
+                { subject: "Flask", value: 2.0 },
+                { subject: "REST API", value: 2.5 },
+                { subject: "PostgreSQL", value: 2.5 },
+                { subject: "MongoDB", value: 1.5 },
+                { subject: "Git", value: 2.0 },
+                { subject: "Docker", value: 0.5 },
+            ]
+        }
     },
     {
         date: "01/01/2026",
