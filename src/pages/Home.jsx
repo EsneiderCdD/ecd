@@ -8,6 +8,7 @@ import {
   ResponsiveContainer,
 } from 'recharts';
 import FotoPortafolio from '@/assets/images/FotoPortafolio-removebg.png';
+import frame2 from '@/assets/marco_guias.png';
 import styles from './Home.module.css';
 
 const radarData = [
@@ -33,7 +34,7 @@ function Home() {
   return (
     <div className={styles.background}>
       <div className={styles.card}>
-        <div className={styles.frame}>
+        <div className={styles.frame} style={{ backgroundImage: `url(${frame2})` }}>
           <div className={styles.cardBody}>
             <div className={styles.header}>
               <span className={styles.posLabel}>POS</span>
@@ -87,14 +88,14 @@ function Home() {
             </div>
 
             <div className={styles.roles}>
-              <div className={styles.rolesLeft}>
-                <h1 className={styles.name}>Esneider Cadavid</h1>
-              </div>
               <div className={styles.rolesRight}>
                 <img className={styles.badgeImg} src="https://i.imgur.com/68u42OA.png" alt="Trainit" />
                 <img className={styles.badgeImg} src="https://i.imgur.com/arhQjJJ.png" alt="Antioquia" />
-                <img className={styles.badgeImg} src="https://i.imgur.com/GTbKiFo.png" alt="Swaply" />
-                <img className={styles.badgeImg} src="https://i.imgur.com/ZYW9Xeo.png" alt="badge" />
+                <img className={styles.badgeImg} src="https://i.imgur.com/WrpdhzV.png" alt="Swaply" />
+                <img className={styles.badgeImg} src="https://i.imgur.com/KDCOEW3.png" alt="badge" />
+              </div>
+              <div className={styles.rolesLeft}>
+                <h1 className={styles.name}>Esneider Cadavid</h1>
               </div>
             </div>
 
