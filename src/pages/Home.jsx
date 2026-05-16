@@ -12,11 +12,12 @@ import styles from './Home.module.css';
 
 const radarData = [
   { subject: 'Frontend', value: 4.0 },
-  { subject: 'Backend', value: 2.8 },
+  { subject: 'Backend', value: 3.7 },
   { subject: 'BDatos', value: 2.8 },
-  { subject: 'DevOps', value: 1.3 },
+  { subject: 'DevOps', value: 1.5 },
   { subject: 'UI/UX', value: 3.0 },
-  { subject: 'Ágil', value: 3.5 },
+  { subject: 'Data', value: 2.5 },
+  { subject: 'Soft Skills', value: 4.1 },
 ];
 
 const stats = [
@@ -35,10 +36,10 @@ function Home() {
         <div className={styles.frame}>
           <div className={styles.cardBody}>
             <div className={styles.header}>
-              <h1 className={styles.name}>Esneider Cadavid</h1>
-              <div className={styles.country}>
-                <span className={styles.flag}>🇨🇴</span>
-                <span>Colombia</span>
+              <span className={styles.posLabel}>POS</span>
+              <div className={styles.rolesText}>
+                <span className={styles.role}>Desarrollador FullStack</span>
+                <span className={styles.roleSecondary}>Analista de Datos</span>
               </div>
             </div>
 
@@ -56,13 +57,13 @@ function Home() {
                   <ResponsiveContainer width="100%" height="100%">
                     <RadarChart
                       data={radarData}
-                      margin={{ top: 5, right: 15, bottom: 5, left: 15 }}
+                      margin={{ top: 8, right: 20, bottom: 8, left: 20 }}
                     >
                       <PolarGrid stroke="rgba(255,255,255,0.1)" />
                       <PolarAngleAxis
                         dataKey="subject"
                         tick={{
-                          fontSize: 9,
+                          fontSize: 8,
                           fill: 'rgba(255,255,255,0.5)',
                           fontFamily: "'IBM Plex Sans', sans-serif",
                         }}
@@ -86,8 +87,15 @@ function Home() {
             </div>
 
             <div className={styles.roles}>
-              <span className={styles.role}>Desarrollador FullStack</span>
-              <span className={styles.roleSecondary}>Analista de Datos</span>
+              <div className={styles.rolesLeft}>
+                <h1 className={styles.name}>Esneider Cadavid</h1>
+              </div>
+              <div className={styles.rolesRight}>
+                <img className={styles.flagImg} src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Colombia.svg/250px-Flag_of_Colombia.svg.png?utm_source=es.wikiquote.org&utm_campaign=parser&utm_content=thumbnail" alt="Colombia" />
+                <img className={styles.flagImg} src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAADFBMVEX///8AlkWlz7IAkTml4K/wAAAAy0lEQVR4nO3QsQHAIAzAsED//7l7PLNJJ2gGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAZy7bfGxz2JyUk3JSTspJOSkn5aSclJNyUk7KSTkpJ+WknJSTclJOykk5KSflpJyUk3JSTspJOSkn5aSclJNyUk7KSTkpJ+WknJSTclJOykk5KSflpJyUk3JSTspJOSkn5aSclJNyUk7KSTkpJ+WknJSTclJOykk5KSflpJyUk3JSTspJOSkn5aSclJNyUk7KSTkpJ+WknNQP0OhmDrkmUc0AAAAASUVORK5CYII=" alt="flag" />
+                <img className={styles.iconImg} src="https://i.imgur.com/coSKEb4.png" alt="icon" />
+                <img className={styles.iconImg} src="https://i.imgur.com/te2Fb7a.png" alt="icon" />
+              </div>
             </div>
 
             <div className={styles.statsGrid}>
