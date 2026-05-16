@@ -141,16 +141,9 @@
   gap: 8px;
 }
 
-.flagImg {
+.badgeImg {
   border-radius: 3px;
-  height: 26px;
-  object-fit: contain;
-  width: auto;
-}
-
-.iconImg {
-  border-radius: 3px;
-  height: 36px;
+  height: 27px;
   object-fit: contain;
   width: auto;
 }
@@ -190,43 +183,48 @@
 
 /* ── stats grid ── */
 .statsGrid {
-  display: grid;
-  gap: 6px;
-  grid-template-columns: repeat(3, 1fr);
-  padding: 10px 20px 14px;
-}
-
-.statBox {
-  align-items: center;
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.07);
-  border-radius: 10px;
   display: flex;
+  gap: 0;
+  padding: 12px 20px 14px;
+}
+
+.statsCol {
+  align-items: center;
+  display: flex;
+  flex: 1;
   flex-direction: column;
-  justify-content: center;
-  padding: 8px 4px;
-  transition: background 0.2s;
+  gap: 4px;
 }
 
-.statBox:hover {
-  background: rgba(201, 168, 76, 0.1);
-  border-color: rgba(201, 168, 76, 0.25);
+.separator {
+  background: rgba(201, 168, 76, 0.25);
+  margin: 0 14px;
+  width: 1px;
 }
 
-.statValue {
+.statRow {
+  align-items: baseline;
+  display: flex;
+  gap: 4px;
+}
+
+.statNum {
   color: #ffffff;
   font-family: var(--f-ibm);
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 700;
   line-height: 1;
+  min-width: 26px;
+  text-align: right;
 }
 
-.statLabel {
-  color: rgba(255, 255, 255, 0.45);
-  font-family: var(--f-ibm);
-  font-size: 9px;
-  letter-spacing: 0.05em;
-  margin-top: 3px;
+.statName {
+  color: rgba(255, 255, 255, 0.55);
+  font-family: var(--f-asc);
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  line-height: 1;
   text-transform: uppercase;
 }
 

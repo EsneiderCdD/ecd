@@ -91,20 +91,43 @@ function Home() {
                 <h1 className={styles.name}>Esneider Cadavid</h1>
               </div>
               <div className={styles.rolesRight}>
-                <img className={styles.flagImg} src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Colombia.svg/250px-Flag_of_Colombia.svg.png?utm_source=es.wikiquote.org&utm_campaign=parser&utm_content=thumbnail" alt="Colombia" />
-                <img className={styles.flagImg} src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAADFBMVEX///8AlkWlz7IAkTml4K/wAAAAy0lEQVR4nO3QsQHAIAzAsED//7l7PLNJJ2gGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAZy7bfGxz2JyUk3JSTspJOSkn5aSclJNyUk7KSTkpJ+WknJSTclJOykk5KSflpJyUk3JSTspJOSkn5aSclJNyUk7KSTkpJ+WknJSTclJOykk5KSflpJyUk3JSTspJOSkn5aSclJNyUk7KSTkpJ+WknJSTclJOykk5KSflpJyUk3JSTspJOSkn5aSclJNyUk7KSTkpJ+WknNQP0OhmDrkmUc0AAAAASUVORK5CYII=" alt="flag" />
-                <img className={styles.iconImg} src="https://i.imgur.com/coSKEb4.png" alt="icon" />
-                <img className={styles.iconImg} src="https://i.imgur.com/te2Fb7a.png" alt="icon" />
+                <img className={styles.badgeImg} src="https://i.imgur.com/68u42OA.png" alt="Trainit" />
+                <img className={styles.badgeImg} src="https://i.imgur.com/arhQjJJ.png" alt="Antioquia" />
+                <img className={styles.badgeImg} src="https://i.imgur.com/GTbKiFo.png" alt="Swaply" />
+                <img className={styles.badgeImg} src="https://i.imgur.com/ZYW9Xeo.png" alt="badge" />
               </div>
             </div>
 
             <div className={styles.statsGrid}>
-              {stats.map((s) => (
-                <div key={s.label} className={styles.statBox}>
-                  <span className={styles.statValue}>{s.value}</span>
-                  <span className={styles.statLabel}>{s.label}</span>
+              <div className={styles.statsCol}>
+                <div className={styles.statRow}>
+                  <span className={styles.statNum}>{stats[0].value}</span>
+                  <span className={styles.statName}>{stats[0].label}</span>
                 </div>
-              ))}
+                <div className={styles.statRow}>
+                  <span className={styles.statNum}>{stats[1].value}</span>
+                  <span className={styles.statName}>{stats[1].label}</span>
+                </div>
+                <div className={styles.statRow}>
+                  <span className={styles.statNum}>{stats[2].value}</span>
+                  <span className={styles.statName}>{stats[2].label}</span>
+                </div>
+              </div>
+              <div className={styles.separator} />
+              <div className={styles.statsCol}>
+                <div className={styles.statRow}>
+                  <span className={styles.statNum}>{stats[3].value}</span>
+                  <span className={styles.statName}>{stats[3].label}</span>
+                </div>
+                <div className={styles.statRow}>
+                  <span className={styles.statNum}>{stats[4].value}</span>
+                  <span className={styles.statName}>{stats[4].label}</span>
+                </div>
+                <div className={styles.statRow}>
+                  <span className={styles.statNum}>{stats[5].value}</span>
+                  <span className={styles.statName}>{stats[5].label}</span>
+                </div>
+              </div>
             </div>
 
             <div className={styles.actions}>
