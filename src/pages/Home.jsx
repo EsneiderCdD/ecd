@@ -8,7 +8,7 @@ import {
   ResponsiveContainer,
 } from 'recharts';
 import FotoPortafolio from '@/assets/images/FotoPortafolio-removebg.png';
-import frame2 from '@/assets/escudo_con_dis.png';
+import frame2 from '@/assets/hOME.png';
 import styles from './Home.module.css';
 
 const radarData = [
@@ -21,12 +21,9 @@ const radarData = [
 ];
 
 const stats = [
-  { label: 'años', value: 21 },
+  { label: 'años', value: 29 },
   { label: 'Formación', value: 2 },
   { label: 'Meses Exp.', value: 8 },
-  { label: 'Frontend', value: 81 },
-  { label: 'Backend', value: 76 },
-  { label: 'B. Datos', value: 77 },
 ];
 
 function Home() {
@@ -99,7 +96,7 @@ function Home() {
 
             <div className={styles.statsGrid}>
               <div className={styles.statsCol}>
-                <div className={styles.statRow}>
+                <div className={styles.statRow} style={{ marginLeft: 12 }}>
                   <span className={styles.statNum}>{stats[0].value}</span>
                   <span className={styles.statName}>{stats[0].label}</span>
                 </div>
@@ -114,28 +111,21 @@ function Home() {
               </div>
               <div className={styles.separator} />
               <div className={styles.statsCol}>
-                <div className={styles.statRow}>
-                  <span className={styles.statNum}>{stats[3].value}</span>
-                  <span className={styles.statName}>{stats[3].label}</span>
-                </div>
-                <div className={styles.statRow}>
-                  <span className={styles.statNum}>{stats[4].value}</span>
-                  <span className={styles.statName}>{stats[4].label}</span>
-                </div>
-                <div className={styles.statRow}>
-                  <span className={styles.statNum}>{stats[5].value}</span>
-                  <span className={styles.statName}>{stats[5].label}</span>
+                <Link to="/about" className={styles.btn}>
+                  Sobre mí
+                </Link>
+                <Link to="/projects" className={`${styles.btn} ${styles.btnOutline}`}>
+                  Proyectos
+                </Link>
+                <div className={styles.statRow} style={{ visibility: 'hidden' }}>
+                  <span className={styles.statNum}>00</span>
+                  <span className={styles.statName}>----</span>
                 </div>
               </div>
             </div>
-
             <div className={styles.actions}>
-              <Link to="/about" className={styles.btn}>
-                Sobre mí
-              </Link>
-              <Link to="/projects" className={`${styles.btn} ${styles.btnOutline}`}>
-                Proyectos
-              </Link>
+              <span className={styles.btn} style={{ visibility: 'hidden' }}>Sobre mí</span>
+              <span className={`${styles.btn} ${styles.btnOutline}`} style={{ visibility: 'hidden' }}>Proyectos</span>
             </div>
           </div>
         </div>
