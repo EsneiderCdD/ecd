@@ -111,16 +111,12 @@ function Home() {
               </div>
               <div className={styles.separator} />
               <div className={styles.statsCol}>
-                <Link to="/about" className={styles.btn}>
+                <Link to="/about" className={styles.ctaBtn}>
                   Sobre mí
                 </Link>
-                <Link to="/projects" className={`${styles.btn} ${styles.btnOutline}`}>
+                <Link to="/projects" className={`${styles.ctaBtn} ${styles.ctaBtnIndent}`}>
                   Proyectos
                 </Link>
-                <div className={styles.statRow} style={{ visibility: 'hidden' }}>
-                  <span className={styles.statNum}>00</span>
-                  <span className={styles.statName}>----</span>
-                </div>
               </div>
             </div>
             <div className={styles.actions}>
