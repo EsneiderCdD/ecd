@@ -8,7 +8,7 @@ import {
   ResponsiveContainer,
 } from 'recharts';
 import FotoPortafolio from '@/assets/images/FotoPortafolio-removebg.png';
-import frame2 from '@/assets/marco_guias.png';
+import frame2 from '@/assets/escudo_con_dis.png';
 import styles from './Home.module.css';
 
 const radarData = [
