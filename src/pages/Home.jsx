@@ -12,22 +12,21 @@ import frame2 from '@/assets/escudo_con_dis.png';
 import styles from './Home.module.css';
 
 const radarData = [
-  { subject: 'Frontend', value: 4.0 },
-  { subject: 'Backend', value: 3.7 },
-  { subject: 'BDatos', value: 2.8 },
+  { subject: 'Frontend', value: 3.9 },
+  { subject: 'Backend', value: 3.5 },
+  { subject: 'BDatos', value: 2.5 },
   { subject: 'DevOps', value: 1.5 },
   { subject: 'UI/UX', value: 3.0 },
-  { subject: 'Data', value: 2.5 },
-  { subject: 'Soft Skills', value: 4.1 },
+  { subject: 'Data', value: 3.0 },
 ];
 
 const stats = [
+  { label: 'años', value: 21 },
+  { label: 'Formación', value: 2 },
+  { label: 'Meses Exp.', value: 8 },
   { label: 'Frontend', value: 81 },
   { label: 'Backend', value: 76 },
   { label: 'B. Datos', value: 77 },
-  { label: 'M. Ágiles', value: 80 },
-  { label: 'Comunic.', value: 90 },
-  { label: 'Data', value: 72 },
 ];
 
 function Home() {
@@ -89,10 +88,9 @@ function Home() {
 
             <div className={styles.roles}>
               <div className={styles.rolesRight}>
-                <img className={styles.badgeImg} src="https://i.imgur.com/68u42OA.png" alt="Trainit" />
-                <img className={styles.badgeImg} src="https://i.imgur.com/arhQjJJ.png" alt="Antioquia" />
-                <img className={styles.badgeImg} src="https://i.imgur.com/WrpdhzV.png" alt="Swaply" />
-                <img className={styles.badgeImg} src="https://i.imgur.com/KDCOEW3.png" alt="badge" />
+                <img className={styles.badgeImg} src="https://i.imgur.com/3oz6RoD.png" alt="badge" />
+                <img className={styles.badgeImg} src="https://i.imgur.com/fQVgalb.png" alt="badge" />
+                <img className={styles.badgeImg} src="https://i.imgur.com/dQEmfjc.png" alt="badge" />
               </div>
               <div className={styles.rolesLeft}>
                 <h1 className={styles.name}>Esneider Cadavid</h1>
