@@ -3,14 +3,17 @@
   margin: 0;
   padding: 0;
 }
+
+html,
+body {
+  background-color: var(--bg-primary);
+  overflow-x: hidden;
+}
+
 /* Principal Container */
 #root {
   margin: 0 auto;
   max-width: 1550px;
   position: relative;
   width: 100%;
-}
-
-body {
-  overflow-x: hidden;
 }

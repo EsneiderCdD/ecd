@@ -38,10 +38,10 @@
   border-radius: 14px 14px 0 0;
   display: flex;
   flex-direction: row;
-  gap: 4px;
+  gap: 25px;
   justify-content: flex-start;
   padding: 14px 20px 10px;
-  transform: translateX(32px);
+  transform: translateX(40px);
 }
 
 .name {
@@ -49,10 +49,19 @@
   font-family: var(--f-asc);
   font-size: 31px;
   font-weight: 600;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   transform: translateY(6px);
   white-space: nowrap;
+}
+
+.nameBadge {
+  background: rgba(18, 17, 15, 0.85);
+  border: 1px solid rgba(139, 106, 50, 0.5);
+  border-right: none;
+  color: #C9A84C;
+  margin-right: -18px;
+  padding: 4px 4px;
 }
 
 .country {
@@ -180,9 +189,10 @@
 
 /* ── stats grid ── */
 .statsGrid {
+  border-top: 1px solid rgba(201, 168, 76, 0.25);
   display: flex;
   gap: 0;
-  padding: 8px 0;
+  padding: 12px 0 8px;
 }
 
 .statsCol {
@@ -302,6 +312,18 @@
 
 .ctaBtnIndent:hover {
   margin-left: 0;
+}
+
+.ctaBtnPrimary {
+  background: linear-gradient(135deg, #A07A3A 0%, #8B6A32 100%);
+  border-bottom: 1px solid #12110F;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  color: #12110F;
+}
+
+.ctaBtnPrimary:hover {
+  background: linear-gradient(135deg, rgba(160, 122, 58, 0.85), rgba(139, 106, 50, 0.85));
+  color: #12110F;
 }
 
 /* ── entrance animation ── */

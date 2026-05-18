@@ -7,7 +7,7 @@ import {
   Radar,
   ResponsiveContainer,
 } from 'recharts';
-import FotoPortafolio from '@/assets/images/FotoPortafolio-removebg.png';
+import FotoPortafolio from '@/assets/ft_produccion.png';
 import frame2 from '@/assets/hOME.png';
 import styles from './Home.module.css';
 
@@ -90,7 +90,7 @@ function Home() {
                 <img className={styles.badgeImg} src="https://i.imgur.com/dQEmfjc.png" alt="badge" />
               </div>
               <div className={styles.rolesLeft}>
-                <h1 className={styles.name}>Esneider Cadavid</h1>
+                <h1 className={`${styles.name} ${styles.nameBadge}`}>Esneider Cadavid</h1>
               </div>
             </div>
 
@@ -111,7 +111,7 @@ function Home() {
               </div>
               <div className={styles.separator} />
               <div className={styles.statsCol}>
-                <Link to="/about" className={styles.ctaBtn}>
+                <Link to="/about" className={`${styles.ctaBtn} ${styles.ctaBtnPrimary}`}>
                   Sobre mí
                 </Link>
                 <Link to="/projects" className={`${styles.ctaBtn} ${styles.ctaBtnIndent}`}>
