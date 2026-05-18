@@ -1,6 +1,5 @@
 export const postulomaniacoData = {
     id: "postulomaniaco",
-    isComingSoon: true,
     summary: {
         icon: "📁",
         name: "Postulomaniaco",
@@ -8,7 +7,7 @@ export const postulomaniacoData = {
         date: "15/04/2026",
         size: "En Curso",
         path: "/projects/postulomaniaco",
-        description: "Proximamente...",
+        description: "",
         previewUrl: null,
         downloadUrl: null,
         linkUrl: null,

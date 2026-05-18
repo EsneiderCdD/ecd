@@ -109,7 +109,7 @@
 .buttons {
     display: flex;
     flex-wrap: nowrap;
-    justify-content: flex-start;
+    justify-content: space-between;
 }
 
 .winButton {

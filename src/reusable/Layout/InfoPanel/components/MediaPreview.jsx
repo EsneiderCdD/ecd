@@ -9,7 +9,7 @@ function MediaPreview({ file, currentContribution }) {
     const [videoOverlayActive, setVideoOverlayActive] = useState(true);
 
     const previewUrl = currentContribution?.previewUrl || file.previewUrl;
-    const chartData = file.chartData;
+    const chartData = currentContribution?.chartData || file.chartData;
 
     useEffect(() => {
         setVideoOverlayActive(true);

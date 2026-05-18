@@ -42,7 +42,25 @@ export const aboutFiles = [
                 description: [
                     "Mi formación comenzó hace dos años de forma autodidacta. Sin título formal aún, pero con orden, disciplina y práctica constante que, desde mi experiencia, potencializan y aceleran el aprendizaje significativamente. Mi enfoque ha sido claro: vinculación laboral temprana mientras valido conocimientos con certificaciones durante el camino. A continuación, los certificados, formación actual y aspiraciones académicas que respaldan este recorrido: "
                 ],
-                previewUrl: "https://i.imgur.com/XDP0kC9.png",
+                chartData: {
+                    type: "radar",
+                    data: [
+                        { subject: "HTML", value: 4.0 },
+                        { subject: "CSS", value: 4.0 },
+                        { subject: "JavaScript", value: 2.5 },
+                        { subject: "TypeScript", value: 2.5 },
+                        { subject: "React", value: 2.5 },
+                        { subject: "Tailwind", value: 3.0 },
+                        { subject: "Next.js", value: 1.5 },
+                        { subject: "Python", value: 2.0 },
+                        { subject: "Flask", value: 2.0 },
+                        { subject: "REST API", value: 2.5 },
+                        { subject: "PostgreSQL", value: 2.5 },
+                        { subject: "MongoDB", value: 1.5 },
+                        { subject: "Git", value: 2.0 },
+                        { subject: "Docker", value: 0.5 },
+                    ]
+                },
             },
             {
                 name: "Desarrollador Full-Stack — 4Geeks Academy",
@@ -116,41 +134,5 @@ export const aboutFiles = [
         previewUrl: "https://i.imgur.com/jcrQZOK.png",
         size: "Actualizado",
         type: "Información",
-    },
-    {
-        date: "01/01/2026",
-        description: "Autoevaluación de competencias técnicas en escala Likert (0-5). Cada valor refleja el dominio actual de la tecnología según proyecto, formación y experiencia real acumulada.",
-        iconUrl: "https://cdn-icons-png.flaticon.com/512/1055/1055687.png",
-        name: "Habilidades Técnicas",
-        previewUrl: null,
-        size: "Actualizado",
-        type: "Información",
-        chartData: {
-            type: "radar",
-            data: [
-                { subject: "HTML", value: 4.0 },
-                { subject: "CSS", value: 4.0 },
-                { subject: "JavaScript", value: 2.5 },
-                { subject: "TypeScript", value: 2.5 },
-                { subject: "React", value: 2.5 },
-                { subject: "Tailwind", value: 3.0 },
-                { subject: "Next.js", value: 1.5 },
-                { subject: "Python", value: 2.0 },
-                { subject: "Flask", value: 2.0 },
-                { subject: "REST API", value: 2.5 },
-                { subject: "PostgreSQL", value: 2.5 },
-                { subject: "MongoDB", value: 1.5 },
-                { subject: "Git", value: 2.0 },
-                { subject: "Docker", value: 0.5 },
-            ]
-        }
-    },
-    {
-        date: "01/01/2026",
-        description: "Mis objetivos profesionales se enfocan en reforzar mi dominio técnico mediante práctica constante y proyectos aplicados, mientras continúo formándome de manera estratégica con certificaciones y estudios complementarios. Además de mis proyectos actuales, exploro animación web 3D, automatización e integración de IA para mejorar mis desarrollos. Mi meta es finalizar mis proyectos personales, avanzar hacia colaboraciones y networking sin intermediarios, lograr un empleo remunerado y seguir creciendo en freelance, reforzando mi inglés para ampliar oportunidades.",
-        name: "Objetivos Profesionales",
-        previewUrl: "https://cdn-icons-png.flaticon.com/512/2821/2821747.png",
-        size: "Actualizado",
-        type: "Información",
-    },
+    }
 ];

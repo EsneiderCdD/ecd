@@ -9,7 +9,7 @@ export const portafolioData = {
         size: "Completado",
         path: "/projects/portafolio",
         description: "Portafolio personal diseñado para mostrar mis proyectos y habilidades profesionales.",
-        previewUrl: banner,
+        previewUrl: "https://i.imgur.com/iWVeX7H.png",
         downloadUrl: null,
         linkUrl: null,
     },

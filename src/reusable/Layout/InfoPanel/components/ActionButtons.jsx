@@ -1,4 +1,5 @@
 import { ExternalLink } from "lucide-react";
+import { Link } from "react-router-dom";
 import styles from "../styles/InfoPanel.module.css";
 import { useAchievements } from "@/context/AchievementsContext";
 
@@ -6,8 +7,9 @@ function ActionButtons({ file, currentContribution, isVideoFile }) {
     const { trackPdfDownload } = useAchievements();
 
     const contributionLink = currentContribution?.linkUrl;
+    const projectPath = file.path;
 
-    if (isVideoFile || (!file.linkUrl && !file.links && !contributionLink)) return null;
+    if (isVideoFile || (!file.linkUrl && !file.links && !contributionLink && !projectPath)) return null;
 
     return (
         <div className={styles.buttons}>
@@ -15,7 +17,7 @@ function ActionButtons({ file, currentContribution, isVideoFile }) {
                 <a href={contributionLink}>
                     <button className={styles.winButton}>
                         <ExternalLink size={16} style={{ marginRight: "6px" }} />
-                        Saber más
+                        Ver
                     </button>
                 </a>
             )}
@@ -62,6 +64,13 @@ function ActionButtons({ file, currentContribution, isVideoFile }) {
                         </button>
                     </a>
                 )
+            )}
+            {projectPath && (
+                <Link to={projectPath}>
+                    <button className={styles.winButton}>
+                        Ver
+                    </button>
+                </Link>
             )}
         </div>
     );
