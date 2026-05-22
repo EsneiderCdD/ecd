@@ -1,0 +1,45 @@
+.footer {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  padding: 14px 20px 24px;
+}
+
+.footerButton {
+  align-items: center;
+  background: none;
+  border: none;
+  color: #c9a84c;
+  cursor: pointer;
+  display: flex;
+  font-family: var(--f-asc);
+  font-size: 18px;
+  font-weight: 700;
+  justify-content: center;
+  letter-spacing: 0.04em;
+  padding: 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: opacity 0.15s;
+}
+
+.footerButton:hover {
+  opacity: 0.8;
+}
+
+.footerButtonOutline {
+  background: none;
+  border: none;
+  color: #c9a84c;
+}
+
+.footerButtonOutline:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 400px) {
+  .footerButton {
+    font-size: 11px;
+    padding: 8px 16px;
+  }
+}

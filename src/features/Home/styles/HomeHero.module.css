@@ -1,0 +1,66 @@
+.heroSection {
+  min-height: 150px;
+  position: relative;
+}
+
+.profilePhotoLayer {
+  align-items: center;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translate(23px, -11px);
+  width: 52%;
+  z-index: 1;
+}
+
+.profilePhoto {
+  display: block;
+  height: auto;
+  mask-image: linear-gradient(to bottom, black 20%, transparent 100%);
+  max-height: 190px;
+  object-fit: contain;
+  width: 100%;
+}
+
+.radarOverlay {
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  position: absolute;
+  top: 24px;
+  transform: translate(-14px, -23px);
+  width: 52%;
+  z-index: 2;
+}
+
+.radarContainer {
+  height: 150px;
+  overflow: visible;
+  width: 100%;
+}
+
+@media (max-width: 400px) {
+  .heroSection {
+    min-height: 175px;
+  }
+
+  .profilePhotoLayer {
+    width: 50%;
+  }
+
+  .profilePhoto {
+    max-height: 165px;
+  }
+
+  .radarOverlay {
+    padding: 0 8px 6px;
+    width: 50%;
+  }
+
+  .radarContainer {
+    height: 140px;
+  }
+}
