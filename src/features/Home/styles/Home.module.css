@@ -40,9 +40,9 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   .cardContainer {
     max-width: 95vw;
-    width: 355px;
   }
 }
+

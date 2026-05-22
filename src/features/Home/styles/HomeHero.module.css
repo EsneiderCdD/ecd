@@ -42,25 +42,3 @@
   width: 100%;
 }
 
-@media (max-width: 400px) {
-  .heroSection {
-    min-height: 175px;
-  }
-
-  .profilePhotoLayer {
-    width: 50%;
-  }
-
-  .profilePhoto {
-    max-height: 165px;
-  }
-
-  .radarOverlay {
-    padding: 0 8px 6px;
-    width: 50%;
-  }
-
-  .radarContainer {
-    height: 140px;
-  }
-}
