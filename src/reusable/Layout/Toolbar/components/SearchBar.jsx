@@ -1,10 +1,11 @@
-import { useRef } from "react";
+import { useRef, useState, useEffect } from "react";
 import { Search } from "lucide-react";
 import styles from "../styles/Toolbar.module.css";
 import { useSearch } from "../hooks/useSearch";
 
 function SearchBar() {
     const searchRef = useRef(null);
+    const inputRef = useRef(null);
     const {
         searchQuery,
         searchResults,
@@ -14,23 +15,58 @@ function SearchBar() {
         isIconUrl
     } = useSearch(searchRef);
 
+    const [isExpanded, setIsExpanded] = useState(false);
+
+    useEffect(() => {
+        if (!isExpanded) return;
+        const handleClickOutside = (e) => {
+            if (searchRef.current && !searchRef.current.contains(e.target)) {
+                setIsExpanded(false);
+            }
+        };
+        document.addEventListener("mousedown", handleClickOutside);
+        return () => document.removeEventListener("mousedown", handleClickOutside);
+    }, [isExpanded]);
+
+    useEffect(() => {
+        if (isExpanded && inputRef.current) {
+            inputRef.current.focus();
+        }
+    }, [isExpanded]);
+
+    const handleToggle = () => {
+        setIsExpanded(prev => !prev);
+    };
+
     return (
         <div
-            style={{ display: 'flex', alignItems: 'center', borderRight: '1px solid gray', paddingRight: '8px' }}
+            style={{ display: 'flex', alignItems: 'center' }}
             ref={searchRef}
         >
-            <div className={styles.searchContainer}>
-                <Search
-                    className={styles.searchIcon}
-                    title="Buscar"
-                />
-                <input
-                    type="text"
-                    placeholder="Buscar..."
-                    value={searchQuery}
-                    onChange={handleSearchChange}
-                    className={styles.searchInput}
-                />
+            {!isExpanded && (
+                <div className={styles.searchToggle} onClick={handleToggle}>
+                    <Search
+                        className={styles.searchIcon}
+                        title="Buscar"
+                    />
+                </div>
+            )}
+
+            <div className={`${styles.searchWrapper} ${isExpanded ? styles.searchExpanded : ''}`}>
+                <div className={styles.searchContainer}>
+                    <Search
+                        className={styles.searchIcon}
+                        title="Buscar"
+                    />
+                    <input
+                        ref={inputRef}
+                        type="text"
+                        placeholder="Buscar..."
+                        value={searchQuery}
+                        onChange={handleSearchChange}
+                        className={styles.searchInput}
+                    />
+                </div>
             </div>
 
             {/* Resultados de búsqueda */}
