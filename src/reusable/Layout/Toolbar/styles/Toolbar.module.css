@@ -255,9 +255,9 @@
 /* Responsive < 400px */
 @media (max-width: 400px) {
     .icon {
-        height: 15px;
+        height: 16px;
         margin-right: 8px;
-        width: 15px;
+        width: 16px;
     }
 
     .supportIcon {
