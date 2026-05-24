@@ -10,7 +10,7 @@ function ComingSoon() {
     return (
         <div className={styles.aboutContainer}>
            
-            <Toolbar onSortChange={() => { }} />
+            <Toolbar />
 
             <div className={styles.mainContent}>
                 <Sidebar />

@@ -6,7 +6,6 @@ import InfoPanel from "../reusable/Layout/InfoPanel/InfoPanel";
 import DesktopTable from "../reusable/Layout/DesktopTable/DesktopTable";
 import styles from "./AboutMe.module.css";
 import { projectDetailFiles, allProjectsData } from "@/data/projects";
-import { useSorting } from "@/hooks/useSorting";
 import { useAchievements } from "@/context/AchievementsContext";
 
 function ProjectDetail() {
@@ -15,10 +14,8 @@ function ProjectDetail() {
   const { trackProjectVisit } = useAchievements();
   const hasTrackedRef = useRef(false);
 
-  // Get project data and details
   const project = allProjectsData[projectId];
   const files = projectDetailFiles[projectId] || [];
-  const { sortedData, handleSortChange } = useSorting(files);
 
   useEffect(() => {
     if (projectId && !hasTrackedRef.current) {
@@ -32,7 +29,7 @@ function ProjectDetail() {
 
   return (
     <div className={styles.aboutContainer}>
-      <Toolbar onSortChange={handleSortChange} />
+      <Toolbar />
       <div className={styles.mainContent}>
         <Sidebar />
         {project?.isComingSoon ? (
@@ -67,7 +64,7 @@ function ProjectDetail() {
           </div>
         ) : (
           <DesktopTable
-            files={sortedData}
+            files={files}
             selectedFile={selectedFile}
             setSelectedFile={setSelectedFile}
           />

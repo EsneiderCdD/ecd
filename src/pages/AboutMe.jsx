@@ -5,19 +5,17 @@ import InfoPanel from "@/reusable/Layout/InfoPanel/InfoPanel";
 import styles from "./AboutMe.module.css";
 import DesktopTable from "@/reusable/Layout/DesktopTable/DesktopTable";
 import { aboutFiles } from "@/data/aboutMe/aboutMe";
-import { useSorting } from "@/hooks/useSorting";
 
 function AboutMe() {
   const [selectedFile, setSelectedFile] = useState(null);
-  const { sortedData, handleSortChange } = useSorting(aboutFiles);
 
   return (
     <div className={styles.aboutContainer}>
-      <Toolbar onSortChange={handleSortChange} />
+      <Toolbar />
       <div className={styles.mainContent}>
         <Sidebar />
         <DesktopTable
-          files={sortedData}
+          files={aboutFiles}
           selectedFile={selectedFile}
           setSelectedFile={setSelectedFile}
         />
