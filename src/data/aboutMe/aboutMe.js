@@ -15,14 +15,14 @@ export const aboutFiles = [
             {
                 name: "Desarrollador Full-Stack",
                 description: [
-                    "Soy Esneider Cadavid, 29 años, Full-Stack Developer con +2 años de formación (continuando) y 8 meses de experiencia laboral. Enfocado en frontend con autonomía en backend. Planificador y curioso, me destaco por mi rápida adaptación a entornos profesionales y una formación constante alineada a la demanda operativa actual."
+                    "Soy Esneider Cadavid, 29 años, Full-Stack Developer con 3 años de formación y 8 meses de experiencia laboral. Con más horas acumuladas en frontend, pero con autonomía en backend."
                 ],
                 previewUrl: FotoPortafolio,
             },
             {
                 name: "Manifiesto",
                 description: [
-                    "Soy una persona introvertida, con pasado en Oratoria, Psicología, Derecho y habilidades comunicativas, que hoy prefiere vivir una filosofía de \"conócete a ti mismo\". Bohemio, \"Do It Yourself\", organizado, planificador. Tengo un entorno privilegiado: una familia que me ama y un entorno que me permite dedicarme a lo que más me apasiona. Nunca una vida perfecta, solo que prefiero, a modo de conclusión, vivir en la psicología positiva, una perspectiva desde las oportunidades y el potencial humano y no desde su problema. Creativo, alguien a quien cumplir sus sueños lo saca de su zona de confort —que por ahora son imaginación— pero que vio en el desarrollo de software esa posibilidad, y desde ahí su obsesión, el camino, la apuesta de poder trazar una realidad diferente. Yo lo llamo destino."
+                    "Introvertido, con pasado en derecho, oratoria y psicología, aplicador de \"conócete a ti mismo\" y \"Do It Yourself\". Tengo un entorno privilegiado: una familia que me ama y las condiciones para dedicarme a lo que más me apasiona. Nunca una vida perfecta, solo que prefiero, a modo de conclusión, vivir en una perspectiva desde las oportunidades y el potencial humano y no desde su problema."
                 ],
                 previewUrl: "https://i.imgur.com/0qjzt1j.png",
             }
