@@ -1,6 +1,8 @@
 import FotoPortafolio from '@/assets/images/FotoPortafolio.webp';
 import TrainitLogo from '@/assets/images/trainit.webp';
 import SwaplyArLogo from '@/assets/images/SwaplyAr.webp';
+import Sqlassociate from '@/assets/images/sqlassociate.webp';
+import Datascientist from '@/assets/images/datascientist.webp';
 
 export const aboutFiles = [
     {
@@ -32,31 +34,32 @@ export const aboutFiles = [
         date: "01/06/2024",
         description: "Un recorrido por mi formación académica, certificaciones y aspiraciones profesionales.",
         iconUrl: "https://cdn-icons-png.flaticon.com/512/3135/3135755.png",
-        name: "Formación y Aspiraciones",
+        name: "Formación",
         previewUrl: null,
         size: "Actualizado",
         type: "Dinámico",
         contributions: [
             {
-                name: "Camino Autodidacta",
+                name: "Herramientas",
                 description: [
-                    "Mi formación comenzó hace dos años de forma autodidacta. Sin título formal aún, pero con orden, disciplina y práctica constante que, desde mi experiencia, potencializan y aceleran el aprendizaje significativamente. Mi enfoque ha sido claro: vinculación laboral temprana mientras valido conocimientos con certificaciones durante el camino. A continuación, los certificados, formación actual y aspiraciones académicas que respaldan este recorrido: "
+                    "Stack principal: MongoDB, Node.js, Express, React y CSS.",
+                    "Stack secundario: PostgreSQL, Next.js, Tailwind CSS, Python y TypeScript."
                 ],
                 chartData: {
                     type: "radar",
                     data: [
-                        { subject: "HTML", value: 4.0 },
                         { subject: "CSS", value: 4.0 },
-                        { subject: "JavaScript", value: 2.5 },
-                        { subject: "TypeScript", value: 2.5 },
-                        { subject: "React", value: 2.5 },
+                        { subject: "JavaScript", value: 3.5 },
+                        { subject: "TypeScript", value: 3.0 },
+                        { subject: "React", value: 3.5 },
                         { subject: "Tailwind", value: 3.0 },
-                        { subject: "Next.js", value: 1.5 },
-                        { subject: "Python", value: 2.0 },
+                        { subject: "Next.js", value: 2.5 },
+                        { subject: "Express", value: 2.5 },
+                        { subject: "Python", value: 3.0 },
                         { subject: "Flask", value: 2.0 },
-                        { subject: "REST API", value: 2.5 },
+                        { subject: "REST API", value: 3.0 },
                         { subject: "PostgreSQL", value: 2.5 },
-                        { subject: "MongoDB", value: 1.5 },
+                        { subject: "MongoDB", value: 3.0 },
                         { subject: "Git", value: 2.0 },
                         { subject: "Docker", value: 0.5 },
                     ]
@@ -66,25 +69,25 @@ export const aboutFiles = [
                 name: "Desarrollador Full-Stack — 4Geeks Academy",
                 description: [
                     "01/10/2024 - 01/03/2025.",
-                    "Institución respaldada por el Florida Department of Education (EE. UU.), con reconocimiento en formación digital —incluso universidades inscriben a sus estudiantes aquí—. Cinco meses de formación intensiva Full-Stack: Python, Flask, PostgreSQL, React, APIs y Bootstrap, partiendo de HTML, CSS y JavaScript."
+                    "Institución respaldada por el Florida Department of Education (EE. UU.). Cinco meses de formación intensiva Full-Stack: Python, Flask, PostgreSQL, React, APIs y Bootstrap, partiendo de HTML, CSS y JavaScript."
                 ],
                 previewUrl: "https://i.imgur.com/vSehqsd.jpeg",
             },
             {
-                name: "Análisis de Datos y Ciencia de Datos — DataCamp",
+                name: "Associate Data Scientist — DataCamp",
                 description: [
-                    "01/03/2026 - 01/01/2027.",
-                    "Beca completa en DataCamp otorgada por PyLadies Cochabamba. DataCamp destaca por su enfoque especializado en datos y su reconocimiento global. Formación continua en Data Analytics, Machine Learning y Bases de Datos, fortaleciendo mis fundamentos en estadística, lógica y ciencia de datos aplicada a mis proyectos."
+                    "03/2025 - 06/2025.",
+                    "Certificación en ciencia de datos: estadística, lógica, análisis exploratorio y fundamentos de machine learning aplicado."
                 ],
-                previewUrl: "https://i.imgur.com/1IsApLc.png",
+                previewUrl: Datascientist,
             },
             {
-                name: "Aspiraciones",
+                name: "SQL Associate — DataCamp",
                 description: [
-                    "2026 - 2027.",
-                    "Tengo opciones de formación por beca: freeCodeCamp con certificaciones modulares; Generation Colombia para expandir hacia Unity o reforzar Java; el SENA con tecnólogo en bases de datos o desarrollo de software; y Jala University, Ingeniería completa (postulado 01/2027). Evalúo cada alternativa según empleabilidad, calidad y modalidad remota, manteniendo el control sobre mi futuro. Paralelamente, LinkedIn, pasantías, freelance y contribuciones open source enriquecen mi formación. Formalizar y trabajar no se excluyen: es un paso natural."
+                    "06/2025 - 08/2025.",
+                    "Certificación en SQL: consultas, manipulación de datos, subconsultas y manejo de bases de datos relacionales."
                 ],
-                previewUrl: "https://i.imgur.com/OMAU6CQ.png",
+                previewUrl: Sqlassociate,
             }
         ]
     },
