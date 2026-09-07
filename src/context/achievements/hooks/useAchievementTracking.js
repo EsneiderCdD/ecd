@@ -21,22 +21,6 @@ export function useAchievementTracking(userProgress, setUserProgress, checkAchie
         });
     }, [checkAchievements, unlockedAchievements, setUserProgress, allProjectsData]);
 
-    const trackPdfDownload = useCallback((fileId) => {
-        if (!fileId) return;
-        setUserProgress(prev => {
-            if (prev.visitedPdfs && prev.visitedPdfs.includes(fileId)) return prev;
-
-            const newVisited = [...(prev.visitedPdfs || []), fileId];
-            const newProgress = {
-                ...prev,
-                visitedPdfs: newVisited,
-                pdfsDownloaded: (prev.pdfsDownloaded || 0) + 1
-            };
-            checkAchievements(newProgress, unlockedAchievements);
-            return newProgress;
-        });
-    }, [checkAchievements, unlockedAchievements, setUserProgress]);
-
     const trackCollaborationInvite = useCallback(() => {
         setUserProgress(prev => {
             const newProgress = {
@@ -77,8 +61,6 @@ export function useAchievementTracking(userProgress, setUserProgress, checkAchie
 
     return {
         trackProjectVisit,
-        trackPdfDownload,
-        trackCollaborationInvite,
         trackCollaborationInvite,
         trackVideoView,
         trackMessageSent

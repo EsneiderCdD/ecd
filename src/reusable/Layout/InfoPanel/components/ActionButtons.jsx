@@ -1,10 +1,8 @@
 import { ExternalLink } from "lucide-react";
 import { Link } from "react-router-dom";
 import styles from "../styles/InfoPanel.module.css";
-import { useAchievements } from "@/context/AchievementsContext";
 
 function ActionButtons({ file, currentContribution, isVideoFile }) {
-    const { trackPdfDownload } = useAchievements();
 
     const contributionLink = currentContribution?.linkUrl;
     const projectPath = file.path;
@@ -31,12 +29,6 @@ function ActionButtons({ file, currentContribution, isVideoFile }) {
                             href={link.url}
                             target="_blank"
                             rel="noopener noreferrer"
-                            onClick={() => {
-                                if (file.type === 'PDF' || file.type === 'Word') {
-                                    const fileId = `${file.name}||${file.date}||${index}`;
-                                    try { trackPdfDownload(fileId); } catch (e) { }
-                                }
-                            }}
                         >
                             <button className={styles.winButton}>
                                 <ExternalLink size={16} style={{ marginRight: "6px" }} />
@@ -51,12 +43,6 @@ function ActionButtons({ file, currentContribution, isVideoFile }) {
                         href={file.linkUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        onClick={() => {
-                            if (file.type === 'PDF' || file.type === 'Word') {
-                                const fileId = `${file.name}||${file.date}`;
-                                try { trackPdfDownload(fileId); } catch (e) { }
-                            }
-                        }}
                     >
                         <button className={styles.winButton}>
                             <ExternalLink size={16} style={{ marginRight: "6px" }} />

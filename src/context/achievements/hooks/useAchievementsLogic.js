@@ -5,10 +5,8 @@ import { checkNewlyUnlockedAchievements } from '../utils/achievementChecker';
 export function useAchievementsLogic() {
     const [userProgress, setUserProgress] = useState({
         projectsOpened: 0,
-        pdfsDownloaded: 0,
         collaborationInvites: 0,
         visitedProjects: [],
-        visitedPdfs: [],
         visitedVideos: [],
         videosWatched: 0
     });

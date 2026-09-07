@@ -18,7 +18,6 @@ export function AchievementsProvider({ children }) {
 
     const {
         trackProjectVisit,
-        trackPdfDownload,
         trackCollaborationInvite,
         trackVideoView,
         trackMessageSent
@@ -29,7 +28,6 @@ export function AchievementsProvider({ children }) {
         unlockedAchievements,
         pendingNotifications,
         trackProjectVisit,
-        trackPdfDownload,
         trackVideoView,
         trackCollaborationInvite,
         trackMessageSent,

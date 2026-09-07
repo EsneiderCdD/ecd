@@ -45,25 +45,20 @@ export const trainItData = {
                 {
 
                     name: "Arquitectura Frontend y Componentes",
-                    description: ["⦿ Desempeñe un rol FullStack. Asimismo, participe en establecer la **estructuración de carpetas**, la **configuración de librerías** y **patrón de diseño**.",
-                        "⦿ Implemente la estrategia ***Design System Color*** diseñado por el equipo UX/UI (colores primitivos, neutros, y semánticos) e integrándolo a Tailwind CSS.",
-                        "⦿ Construí **componentes** Integrando colores, iconos, imágenes, posiciones, fondos, botones, tipografía fehacientemente al diseño en **Figma.**"
-                    ],
+                    description: ["⦿ Participé en la estructuración de carpetas, configuración de librerías y patrones de diseño. Implementé Design System Color del equipo UX/UI en Tailwind CSS. Construí componentes fieles al diseño en Figma."],
                     previewUrl: ti1,
                 },
                 {
 
                     name: "Desarrollo Full-Stack",
-                    description: ["⦿ Continué desarrollando componentes del Front, opciones *(dropdown)*, enlaces, y otros detalles complementarios al dashboard.",
-                        "⦿ Realice el módulo de edición de tablero realizando ajustes en el **modelo**, **migraciones**, **lógica** de campo de la interfaz (backend) y generar la conexión desde el *Frontend* con sus respectivos componentes"],
+                    description: ["⦿ Desarrollé múltiples componentes Front y el módulo Tableros (carga de imágenes, inputs, rutas). Participé en backend: migraciones, lógica de negocio y conexión de rutas al Frontend."],
 
                     previewUrl: ti2,
                 },
                 {
 
                     name: "Drag & Drop",
-                    description: ["⦿ Implementé el sistema ***kanban*** usando ***@dnd-kit/core***, optimizando el flujo de datos mediante estrategias de *sortable context*, *collision detection*  y render condicional con ***React.memo*** para minimizar re-renders durante operaciones CRUD.",
-                        "⦿ Aportando coherencia desde el back para la gestión de columnas y posiciones, desplazamiento entre tarjetas y entre columnas, ajustando y reordenando según la zona droppeada."],
+                    description: ["⦿ Sistema kanban con drag-and-drop (@dnd-kit/core). Gestión de columnas, posiciones y reordenamiento conectado al backend."],
                     previewUrl: ti3,
                 }
             ]

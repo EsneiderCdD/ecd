@@ -30,33 +30,6 @@ export const achievementsConfig = {
 		rarity: 'legendary'
 	},
 
-	reader: {
-		id: 'reader',
-		title: 'Ex-Analfabeta',
-		description: 'Revisaste tu primer documento técnico',
-		icon: bronzeMedal,
-		condition: (state) => state.pdfsDownloaded >= 1,
-		rarity: 'common'
-	},
-
-	scientist: {
-		id: 'scientist',
-		title: 'Bibliotecario Digital',
-		description: 'Revisaste 2 fichas técnicas diferentes',
-		icon: silverMedal,
-		condition: (state) => state.pdfsDownloaded >= 2,
-		rarity: 'rare'
-	},
-
-	bibliotecario: {
-		id: 'bibliotecario',
-		title: 'PDF-ílo',
-		description: 'Revisaste 3 documentos técnicos',
-		icon: goldMedal,
-		condition: (state) => (state.pdfsDownloaded || 0) >= 3,
-		rarity: 'legendary'
-	},
-
 	cineasta: {
 		id: 'cineasta',
 		title: 'Cineasta',
