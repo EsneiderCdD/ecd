@@ -140,7 +140,7 @@ export const aboutFiles = [
                     "Empresa Antioqueña dedicada a la operación logística para eventos y fiestas."
                 ],
                 previewUrl: Rentoldos,
-                linkUrl: "#",
+                linkUrl: "/projects/rentoldos",
                 buttonLabel: "Saber Más",
             }
         ]
@@ -161,7 +161,7 @@ export const aboutFiles = [
                     "Desarrollo Postulomaníaco, un sistema de inteligencia laboral que automatiza la extracción y filtrado de ofertas en plataformas colombianas, cruzándolas con mi perfil mediante un algoritmo de compatibilidad."
                 ],
                 previewUrl: MascotaColor,
-                linkUrl: "#",
+                linkUrl: "/projects/postulomaniaco",
                 buttonLabel: "Saber Más",
             }
         ]
