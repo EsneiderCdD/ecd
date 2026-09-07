@@ -4,6 +4,7 @@ import SwaplyArLogo from '@/assets/images/SwaplyAr.webp';
 import Sqlassociate from '@/assets/images/sqlassociate.webp';
 import Datascientist from '@/assets/images/datascientist.webp';
 import Rentoldos from '@/assets/images/rentoldos.webp';
+import MascotaColor from '@/assets/images/mascota_color.webp';
 
 export const aboutFiles = [
     {
@@ -146,11 +147,23 @@ export const aboutFiles = [
     },
     {
         date: "01/01/2026",
-        description: "Desarrollo Postulomaníaco, un sistema de inteligencia laboral que automatiza la extracción y filtrado de ofertas en plataformas colombianas, cruzándolas con mi perfil mediante un algoritmo de compatibilidad. Incluye métricas de respuesta real del mercado —empresas que convierten, tecnologías que conviene reforzar— y una interfaz tipo mapa para visualizar oportunidades. Construido con Next.js, FastAPI, Python, PostgreSQL y Playwright. Mi proyecto voluntario más ambicioso, impulsado por la beca DataCamp y con vocación open source.",
-        iconUrl: "https://cdn-icons-png.flaticon.com/512/15757/15757011.png ",
+        description: "Proyecto personal en desarrollo.",
+        iconUrl: "https://cdn-icons-png.flaticon.com/512/15757/15757011.png",
         name: "Proyectos Personales",
-        previewUrl: "https://i.imgur.com/jcrQZOK.png",
+        previewUrl: null,
         size: "Actualizado",
-        type: "Información",
+        type: "Dinámico",
+        contributions: [
+            {
+                name: "Postulomaníaco",
+                description: [
+                    "01/2026 - Fecha indefinida.",
+                    "Desarrollo Postulomaníaco, un sistema de inteligencia laboral que automatiza la extracción y filtrado de ofertas en plataformas colombianas, cruzándolas con mi perfil mediante un algoritmo de compatibilidad."
+                ],
+                previewUrl: MascotaColor,
+                linkUrl: "#",
+                buttonLabel: "Saber Más",
+            }
+        ]
     }
 ];
