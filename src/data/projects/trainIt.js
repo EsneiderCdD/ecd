@@ -88,20 +88,6 @@ export const trainItData = {
             linkUrl: null,
         },
         {
-            name: "Repositorios",
-            type: "GitHub",
-            date: "01/06/2025",
-            size: "Actualizado",
-            description: null,
-            previewUrl: "https://cdn-icons-png.flaticon.com/512/733/733553.png",
-            iconUrl: "https://cdn-icons-png.flaticon.com/512/733/733553.png",
-            downloadUrl: null,
-            links: [
-                { label: "Frontend", url: "https://github.com/Programa-TrainIT-Ar/fe-trelloop-grupo-2/tree/grupo-2" },
-                { label: "Backend", url: "https://github.com/Programa-TrainIT-Ar/be-trelloop-grupo-2/tree/grupo-2" }
-            ],
-        },
-        {
             icon: "📑",
             name: "Ficha Técnica",
             type: "PDF",
