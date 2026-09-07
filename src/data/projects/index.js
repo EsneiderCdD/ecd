@@ -1,5 +1,4 @@
 import { trainItData } from './trainIt';
-import { guauData } from './guau';
 import { swaplyArData } from './swaplyAr';
 import { portafolioData } from './portafolio';
 import { postulomaniacoData } from './postulomaniaco';
@@ -10,7 +9,6 @@ const allProjects = [
     trainItData,
     swaplyArData,
     postulomaniacoData,
-    guauData, 
 ];
 
 // Summaries List
