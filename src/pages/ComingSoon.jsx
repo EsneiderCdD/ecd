@@ -37,13 +37,6 @@ function ComingSoon() {
                             filter: 'drop-shadow(0 4px 6px rgba(0,0,0,0.1))'
                         }}
                     />
-                    <h2 style={{
-                        fontSize: '1.8rem',
-                        fontWeight: 'bold',
-                        letterSpacing: '1px',
-                    }}>
-                        Proximamente...
-                    </h2>
                 </div>
 
                 <InfoPanel file={selectedFile} />

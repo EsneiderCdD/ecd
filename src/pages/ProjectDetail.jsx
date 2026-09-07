@@ -32,7 +32,7 @@ function ProjectDetail() {
       <Toolbar />
       <div className={styles.mainContent}>
         <Sidebar />
-        {project?.isComingSoon ? (
+        {project?.isComingSoon || files.length === 0 ? (
           <div style={{
             flex: 1,
             display: 'flex',
@@ -54,13 +54,6 @@ function ProjectDetail() {
                 filter: 'drop-shadow(0 4px 6px rgba(0,0,0,0.1))'
               }}
             />
-            <h2 style={{
-              fontSize: '1.8rem',
-              fontWeight: 'bold',
-              letterSpacing: '1px',
-            }}>
-              Proximamente...
-            </h2>
           </div>
         ) : (
           <DesktopTable

@@ -39,30 +39,13 @@ export const swaplyArData = {
             contributions: [
                 {
                     name: "Backend",
-                    description: [
-                        "⦿ Continué y finalicé desarrollos del backend en NestJS con TypeScript, realizando ajustes, corrección de bugs, calibración de módulos y auditoría de modelos TypeORM. Aseguré buenas prácticas eliminando tipos `any`, configurando ESLint y completando DTOs con class-validator. Documenté endpoints con Swagger (OpenAPI) y mantuve entornos con Docker & Docker Compose."
-                    ],
+                    description: ["⦿ Backend NestJS/TypeScript: ajustes, bugs, auditoría TypeORM. Prácticas limpias con ESLint y class-validator. Swagger para documentación, Docker para entornos."],
                 },
                 {
                     name: "Frontend",
-                    description: [
-                        "⦿ Implementé la visualización de datos en tablas y módulos del área administrativa, consumiendo rutas del backend para poblar información de usuarios, estados y datos respectivos, basándome en los diseños establecidos en Figma.",
-                        "⦿ Desarrollé la sincronización entre el repositorio administrativo y el público, llevando datos creados por otros devs en base de datos hasta la ruta de consumo en el frontend público, incluyendo banners decorativos e informativos publicados desde el panel admin."
-                    ],
+                    description: ["⦿ Frontend React/Next.js/Tailwind CSS: componentes reutilizables, consumo de API y diseño en Figma."],
                 }
             ]
-        },
-        {
-            icon: "💻",
-            name: "Tecnologías",
-            type: "Iconos",
-            date: "01/01/2026",
-            size: "Actualizado",
-            description: null,
-            stack: ['nestjs', 'swagger', 'docker', 'postgresql', 'next', 'react', 'tailwind', 'typescript'],
-            previewUrl: null,
-            downloadUrl: null,
-            linkUrl: null,
         },
     ]
 };
