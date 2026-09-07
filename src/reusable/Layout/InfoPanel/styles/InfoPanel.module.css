@@ -112,6 +112,10 @@
     justify-content: space-between;
 }
 
+.buttons a {
+    text-decoration: none;
+}
+
 .winButton {
     align-items: center;
     background-color: var(--bg-secondary);
@@ -125,6 +129,7 @@
     font-weight: 500;
     gap: 4px;
     padding: 6px 12px;
+    text-decoration: none;
     transition: background-color 0.2s, box-shadow 0.2s;
 }
 

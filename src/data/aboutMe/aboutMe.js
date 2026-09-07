@@ -139,6 +139,7 @@ export const aboutFiles = [
                     "Empresa Antioqueña dedicada a la operación logística para eventos y fiestas."
                 ],
                 previewUrl: Rentoldos,
+                linkUrl: "#",
                 buttonLabel: "Saber Más",
             }
         ]
