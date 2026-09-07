@@ -9,7 +9,7 @@ export const swaplyArData = {
         date: "01/01/2026",
         size: "Completado",
         path: "/projects/swaplyar",
-        description: "SwaplyAr es una empresa de tecnología financiera dedicada a transformar el intercambio de divisas y facilitar las transacciones internacionales. Con un enfoque en la eficiencia, transparencia, seguridad e innovación, proporcionamos soluciones que permiten a nuestros usuarios gestionar sus finanzas de manera más efectiva. Desde la conversión de dólares de PayPal a pesos argentinos hasta la recarga de cuentas de Payoneer, estamos aquí para ayudar a nuestros usuarios a maximizar sus beneficios y simplificar sus transacciones.",
+        description: "SwaplyAr es una empresa de tecnología financiera dedicada a transformar el intercambio de divisas y facilitar las transacciones internacionales. Con un enfoque en la eficiencia, transparencia, seguridad e innovación, proporcionamos soluciones que permiten a nuestros usuarios gestionar sus finanzas de manera más efectiva.",
         previewUrl: SwaplyAr,
         downloadUrl: null,
         linkUrl: null,
