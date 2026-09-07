@@ -69,164 +69,6 @@
     transform: scale(1.6);
 }
 
-/* Search Styles */
-.searchContainer {
-    align-items: center;
-    background: var(--bg-secondary);
-    border-radius: 18px;
-    display: flex;
-    gap: 10px;
-    padding: 6px 14px;
-    position: relative;
-    width: 30rem;
-}
-
-/* Focus effects */
-.searchContainer:focus-within {
-    background: var(--hover-bg);
-    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2),
-        0 0 0 1px var(--border-color);
-}
-
-.searchIcon {
-    color: var(--text-muted);
-    flex-shrink: 0;
-    height: 16px;
-    transition: color 0.2s ease;
-    width: 16px;
-}
-
-.searchContainer:focus-within .searchIcon {
-    color: var(--text-secondary);
-}
-
-.searchInput {
-    background: transparent;
-    border: none;
-    color: var(--text-primary);
-    flex: 1;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 13px;
-    min-width: 0;
-    outline: none;
-    padding: 4px 0;
-}
-
-.searchInput::placeholder {
-    color: var(--text-muted);
-    opacity: 1;
-}
-
-/* Search toggle (icon-only, visible at ≤500px when collapsed) */
-.searchToggle {
-    align-items: center;
-    cursor: pointer;
-    display: none;
-    justify-content: center;
-}
-
-.searchToggle:hover {
-    background-color: var(--hover-bg);
-}
-
-.searchWrapper {
-    display: flex;
-}
-
-/* Search Results */
-.searchResults {
-    background: var(--bg-primary);
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
-    left: 43%;
-    max-height: 400px;
-    max-width: 90vw;
-    overflow: hidden;
-    position: fixed;
-    top: 55px;
-    transform: translateX(-50%);
-    width: 30rem;
-    z-index: 9999;
-}
-
-.searchResultsHeader {
-    align-items: center;
-    background: var(--bg-secondary);
-    border-bottom: 1px solid var(--border-light);
-    color: var(--text-secondary);
-    display: flex;
-    font-size: 12px;
-    font-weight: 500;
-    justify-content: space-between;
-    padding: 12px 16px;
-}
-
-.resultsCount {
-    background: var(--hover-bg);
-    border-radius: 12px;
-    color: var(--text-muted);
-    font-size: 11px;
-    padding: 2px 8px;
-}
-
-.searchResultsContent {
-    max-height: 300px;
-    overflow-y: auto;
-}
-
-.searchResultItem {
-    align-items: center;
-    border-bottom: 1px solid var(--border-light);
-    cursor: pointer;
-    display: flex;
-    gap: 12px;
-    padding: 12px 16px;
-    transition: background-color 0.2s ease;
-}
-
-.searchResultItem:hover {
-    background-color: var(--hover-bg);
-}
-
-.searchResultItem:last-child {
-    border-bottom: none;
-}
-
-.resultIcon {
-    font-size: 18px;
-    text-align: center;
-    width: 24px;
-}
-
-.resultIconImg {
-    display: inline-block;
-    height: 24px;
-    object-fit: contain;
-    width: 24px;
-}
-
-.resultInfo {
-    flex: 1;
-    min-width: 0;
-}
-
-.resultName {
-    color: var(--text-primary);
-    font-size: 14px;
-    font-weight: 500;
-    margin-bottom: 2px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-
-.resultType {
-    color: var(--text-muted);
-    font-size: 12px;
-    text-transform: capitalize;
-}
-
 /* Responsive */
 @media (max-width: 900px) {
     .header {
@@ -240,11 +82,6 @@
         justify-content: space-between;
         min-width: auto;
         padding-right: 8px;
-    }
-
-    .searchContainer {
-        padding: 4px 8px;
-        width: 14rem;
     }
 
     .icons5 p {
@@ -261,31 +98,6 @@
 @media (max-width: 600px) {
     .icons2 {
         gap: 3px;
-    }
-
-    .searchContainer {
-        width: 7rem;
-    }
-}
-
-/* Responsive ≤500px: search collapsible */
-@media (max-width: 500px) {
-    .searchToggle {
-        display: flex;
-        padding: 4px 6px;
-    }
-
-    .searchToggle .searchIcon {
-        height: 18px;
-        width: 18px;
-    }
-
-    .searchWrapper:not(.searchExpanded) .searchContainer {
-        display: none;
-    }
-
-    .searchWrapper.searchExpanded .searchContainer {
-        display: flex;
     }
 }
 
@@ -305,16 +117,5 @@
     .icons2 {
         gap: 3px;
         padding-right: 6px;
-    }
-
-    .searchContainer {
-        border-radius: 14px;
-        padding: 4px 8px;
-        width: 6.5rem;
-    }
-
-    .searchIcon {
-        height: 14px;
-        width: 14px;
     }
 }
