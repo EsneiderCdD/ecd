@@ -17,7 +17,7 @@ function ActionButtons({ file, currentContribution, isVideoFile }) {
                 <a href={contributionLink}>
                     <button className={styles.winButton}>
                         <ExternalLink size={16} style={{ marginRight: "6px" }} />
-                        Ver
+                        {currentContribution?.buttonLabel || "Ver"}
                     </button>
                 </a>
             )}
@@ -60,7 +60,7 @@ function ActionButtons({ file, currentContribution, isVideoFile }) {
                     >
                         <button className={styles.winButton}>
                             <ExternalLink size={16} style={{ marginRight: "6px" }} />
-                            Ver
+                            {file.buttonLabel || "Ver"}
                         </button>
                     </a>
                 )

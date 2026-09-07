@@ -3,6 +3,7 @@ import TrainitLogo from '@/assets/images/trainit.webp';
 import SwaplyArLogo from '@/assets/images/SwaplyAr.webp';
 import Sqlassociate from '@/assets/images/sqlassociate.webp';
 import Datascientist from '@/assets/images/datascientist.webp';
+import Rentoldos from '@/assets/images/rentoldos.webp';
 
 export const aboutFiles = [
     {
@@ -101,33 +102,46 @@ export const aboutFiles = [
         type: "Dinámico",
         contributions: [
             {
-                name: "TrainIT",
+                name: "TrainIT — 4 meses",
                 description: [
                     "01/06/2025 - 01/10/2025.",
                     "Simulación laboral con +10 devs, equipo UI/UX, PM, QA, área administrativa y rol cliente. Entorno con feedbacks cruzados y revisiones colaborativas."
                 ],
                 previewUrl: TrainitLogo,
                 linkUrl: "/projects/trainittrello",
+                buttonLabel: "Saber Más",
             },
             {
-                name: "SwaplyAr",
+                name: "SwaplyAr — 4 meses",
                 description: [
                     "01/01/2026 - 04/01/2026.",
                     "Experiencia con exigencias corporativas reales, code review, +8 devs, metodologías ágiles, UI/UX definida en Figma y revisión de PR a cargo de un senior."
                 ],
                 previewUrl: SwaplyArLogo,
                 linkUrl: "/projects/swaplyar",
+                buttonLabel: "Saber Más",
             }
         ]
     },
     {
-        date: "01/06/2025",
-        description: ["Pequeños proyectos freelance acumulados: landing pages, portafolios y servicios web con ingeniería de requerimientos, entrevistas y acompañamiento al cliente.", "⦿ En construcción: propuesta comercial para \"La Coca de Jacks\" (2027).", "⦿ Guau: prototipo de adopción de mascotas con estadísticas de compatibilidad y frontend atractivo, pausado hasta encontrar una fundación aliada que reciba la donación tecnológica."],
-        iconUrl: "https://cdn-icons-png.flaticon.com/512/4157/4157361.png ",
+        date: "15/09/2026",
+        description: "Proyecto freelance reciente.",
+        iconUrl: "https://cdn-icons-png.flaticon.com/512/4157/4157361.png",
         name: "Proyectos Freelance",
-        previewUrl: "https://i.imgur.com/iWVeX7H.png",
+        previewUrl: null,
         size: "Actualizado",
-        type: "Información",
+        type: "Dinámico",
+        contributions: [
+            {
+                name: "Rentoldos — 2 meses",
+                description: [
+                    "15/07/2026 - 15/09/2026.",
+                    "Empresa Antioqueña dedicada a la operación logística para eventos y fiestas."
+                ],
+                previewUrl: Rentoldos,
+                buttonLabel: "Saber Más",
+            }
+        ]
     },
     {
         date: "01/01/2026",
